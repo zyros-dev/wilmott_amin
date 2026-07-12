@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 175 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=6c443e75ce24f4a32e602d6dbe9fafa3" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=6c443e75ce24f4a32e602d6dbe9fafa3?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=6c443e75ce24f4a32e602d6dbe9fafa3?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=6c443e75ce24f4a32e602d6dbe9fafa3?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2610" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="6c443e75ce24f4a32e602d6dbe9fafa3" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=6c443e75ce24f4a32e602d6dbe9fafa3" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="6c443e75ce24f4a32e602d6dbe9fafa3" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=6c443e75ce24f4a32e602d6dbe9fafa3" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2610%26t%3D99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2610&amp;t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" />
+<input type="hidden" name="creation_time" value="1768907863" />
+<input type="hidden" name="form_token" value="575c73936a0edd75f05bf9a1026206130849f1ea" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2610&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2610&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="6c443e75ce24f4a32e602d6dbe9fafa3" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;6c443e75ce24f4a32e602d6dbe9fafa3" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2580" role="button">173</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" role="button">174</a></li>
+							<li class="active"><span>175</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" role="button">176</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2640" role="button">177</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885698">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885698">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885698">
+
+			<h3 class="first"><a href="#p885698">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885698&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885698" title="Post #2611">#2611</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 25th, 2025, 12:22 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I want to explain yesterday's post a bit more. I am copying the older post on top of this page so we can easily reference it. I will make my comments in the next post. Here we only have yesterday's copied post.<br>
+<br>
+<br>
+Friends, we have to move to real stocks data in a few days so I had been brainstorming about various indicators in the markets and other things related to algorithmic trading. <br>
+<br>
+<br>
+We would be thinking about algorithmic trading and divide the whole thing into three parts.<br>
+<br>
+<span style="font-size: 120%; line-height: normal">1. Know your Market Type.</span><br>
+<span style="font-size: 120%; line-height: normal">2. What type of strategies to use for various market types.</span><br>
+<span style="font-size: 120%; line-height: normal">3. What are the most suitable instruments for particular type of market types and particular market strategies.</span><br>
+<br>
+<br>
+We will first work for more than a month mostly trying to understand the market type so I will give very brief thoughts about it. These ideas are initial and tentative and once we deal with real data many of these things would slightly change. But these are ideas from initial brainstorming as we embark on the project.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Know Your Market Type.</span><br>
+<br>
+I want to make a multi-dimensional indicator for the market.  We will calculate these indicators and their variances. First dimension could be whether market is bearish or bullish on a scale of -1 to +1. Second dimension could be whether market is low volatility or high volatility on a scale of zero to 1. Third dimension would be whether market is low mean-reverting or high mean reverting on similar scale possibly zero to one. There could be other dimensions like volume and liquidity in both sides of the market. <br>
+<br>
+We will use various indicators including our recent work on moments to give a single statistic to all of the above dimensions related to market type and also calculate variance of each statistic.<br>
+<br>
+As a background and in order to get oriented, I would request friends to read the follwing two posts: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431</a>  and <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455</a><br>
+<br>
+<br>
+let us suppose we have financial data of equities on a 15 sec grid (My data is for 41 working days from May and June of 2021). We have a universe of M stocks and The price of mth stock at time t is given as [$]X_m(t)[$]. We convert these stock values into log returns so they are easy to use in our set up.<br>
+<br>
+[$]R_m(t)\,=\, \log(X_m(t))\,-\, \log(X_m(t-1))[$]<br>
+<br>
+We can make very intelligent indicators using log returns from universe of M stocks.<br>
+<br>
+We can make an indicator for market across the M stocks over four 15 second periods as<br>
+<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}[$] <br>
+<br>
+<br>
+The above indicator has sum of returns of each stock in numerator and square root of their variance in denominator. But while making a single statistic for market state, we would also have to alter the weights of the stocks and make them inversely proportional to square root of variance of statistic of each stock in the sample so that low standard deviation stock statistics get high weight and high standard deviation statistics of stocks get a low weight when we form a single market indicator. This is done by defining  [$]w_m[$]  as<br>
+<br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}}[$]  <br>
+<br>
+We can write the above indicator in shorthand as<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{E \left[ R_m\right]\,}{\sqrt{\, Var\left[R_m\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}}[$]  <br>
+<br>
+We can have indicators for variance, skew and kurtosis of the market based like just the above indicator. For example indicator for market variance could be given as<br>
+<br>
+[$]IM_{var}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{2,m} \, \Large{ \frac{Var \left[ R_m\right]\,}{\sqrt{\, Var\left[Var\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{2,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Var\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Var\left[R_m\right]\right]}}}}[$]<br>
+<br>
+Similarly for skew and kurtosis, we could have<br>
+<br>
+[$]IM_{skew}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{3,m} \, \Large{ \frac{Skew \left[ R_m\right]\,}{\sqrt{\, Var\left[Skew\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{3,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Skew\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Skew\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and<br>
+<br>
+[$]IM_{kurtosis}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{4,m} \, \Large{ \frac{Kurtosis \left[ R_m\right]\,}{\sqrt{\, Var\left[Kurtosis\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{4,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Kurtosis\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Kurtosis\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and for the intensity of mean reversion, we want to use a special indicator<br>
+ <br>
+<br>
+[$]IM_{MR}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{5,m} \, \Large{ \frac{   \frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{5,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}{ \sum\limits_{m=1}^{M} \,\, \sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$]<br>
+<br>
+We can also calculate variances of above indicators in both time and across the stock spectrum and use associated standard deviations for confidence limits.<br>
+<br>
+Friends, these are tentatively brainstormed form of indicators and are framed analogously to our first order indicator to market state and these indicators might undergo many changes as we play with data and our final version might be very different.</div>
+
+			
+									
+									<div id="sig885698" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885703">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885703">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885703">
+
+			<h3 ><a href="#p885703">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885703&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885703" title="Post #2612">#2612</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 25th, 2025, 6:16 am</span></p>
+			
+			
+			
+			<div class="content">Friends, we might have to make small changes in yesterday's suggested indicators as shown in the above post. <br>
+<br>
+Let us consider the variance indicator. For example indicator for market variance could be given as<br>
+<br>
+\[IM_{var}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{2,m} \, \Large{ \frac{Var \left[ R_m\right]\,}{\sqrt{\, Var\left[Var\left[R_m\right]\right]}}}\]<br>
+<br>
+and <br>
+<br>
+\[\, w_{2,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Var\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Var\left[R_m\right]\right]}}}}\]<br>
+<br>
+In the main indicator equation, we have taken  \(Var \left[ R_m\right]\,\) but we are already dealing with log-returns. Recalling the definition of \(R_m\), we have <br>
+<br>
+\[R_m(t)\,=\, \log(X_m(t))\,-\, \log(X_m(t-1))\]<br>
+<br>
+So Variance of the market is obviously better reflected by second moment of log-returns as opposed to variance of log-returns. We also have to consider that calculating variance takes out one degree of freedom out and calculating variance of variance takes out two degrees of freedom out in a small sample. So a better suggested form of market indicator could be one of the following<br>
+<br>
+\[IM_{var}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{2,m} \, \Large{ \frac{E \left[ {R_m}^2\right]\,}{\sqrt{\, Var\left[{R_m}^2\,\right]}}}\] <br>
+<br>
+where<br>
+\[ E \left[ {R_m}^2\right]\,=\,\frac{\sum\limits_{k=0}^{Lag-1} \, {R_m}^2(t-k)\,}{\, Lag} \]<br>
+and<br>
+\[ Var \left[ {R_m}^2\right]\,=\,\frac{\sum\limits_{k=0}^{Lag-1} \, \left[{R_m}^2(t-k)\,-\,E \left[ {R_m}^2\right]\, \right]^2}{\, Lag}\]<br>
+and <br>
+\[\, w_{2,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[ {R_m}^2\,\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[{R_m}^2\,\right]}}}}\]<br>
+<br>
+<br>
+Similarly, we would like to slightly alter the previous indicators of skew and kurtosis as  <br>
+<br>
+ \[IM_{skew}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{3,m} \, \Large{ \frac{E \left[ {R_m}^3\right]\,}{\sqrt{\, Var\left[{R_m}^3\,\right]}}}\] <br>
+<br>
+and <br>
+<br>
+\[\, w_{3,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[E\left[{R_m}^3\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ {R_m}^3\,\right]}}}}\]<br>
+<br>
+and<br>
+<br>
+\[IM_{kurtosis}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{4,m} \, \Large{ \frac{E \left[ {R_m}^4\right]\,}{\sqrt{\, Var\left[{R_m}^4\,\right]}}}\] <br>
+<br>
+and <br>
+<br>
+\[\, w_{4,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[E\left[{R_m}^4\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[{R_m}^4\right]}}}}\]<br>
+<br>
+and for the intensity of mean reversion, we want to use a special indicator<br>
+ <br>
+<br>
+\[IM_{MR}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{5,m} \, \Large{ \frac{   \frac{E \left[ {R_m}^4\right]\,}{E \left[ {R_m}^2\right]\,}}{\sqrt{\, Var\left[\frac{E \left[ {R_m}^4\right]\,}{E \left[ {R_m}^2\right]\,}\right]}}}\] <br>
+<br>
+and <br>
+<br>
+\[\, w_{5,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[\frac{E \left[ {R_m}^4\right]\,}{E \left[ {R_m}^2\right]\,}\right]}}}{ \sum\limits_{m=1}^{M} \,\, \sqrt{\, Var\left[\frac{E \left[ {R_m}^4\right]\,}{E \left[ {R_m}^2\right]\,}\right]}}}\]<br>
+<br>
+Friends, sorry for this mistake in the earlier post as I confused variance of market with variance of \{R_m\} which is already a log difference.<br>
+As I had earlier suggested that there could be further changes in these indicators as we work with real data and I also suggest to friends to think of their own possible improvements.</div>
+
+			
+									
+									<div id="sig885703" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885706">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885706">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885706">
+
+			<h3 ><a href="#p885706">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885706&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885706" title="Post #2613">#2613</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 25th, 2025, 9:29 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I kept brainstorming today about different ways to get more information about the market type. I will get an antipsychotic Fluanxol injection tomorrow and a lot of lucidity of thought will go away for more than a week to ten days only to recover slowly later so I wanted to think of good ideas when I have enough strength in my brain. I was able to think of sort of raw version of two different numerical procedures. I will try to think of more later today. After the injections, I will do more mechanical work of setting up data and applying numerical procedures that I have already thought of.<br>
+<br>
+One simple raw idea that I had that we could take market high and market low possibly in terms of logarithms (especially if we want to aggregate across stocks). Then we could measure the "average volatility(SD of variance)" or "local volatility" weighted distance between market high and market low and make a comparison with respect to its probability density or average across the days. If this volatility weighted distance is high compared to average over the days, it would mean that market is trending around more than average so we could use algorithmic strategies associated more with trending markets. If this volatility weighted distance is low, we could know that market is moving in a small band and highly mean reverting depending upon the values of our statistic on a comparative scale. <br>
+<br>
+We could repeat the above procedure on scale of an hour or on different scales to know local nature of market.<br>
+<br>
+Another idea is to calculate "occupation time probability" of the market over some pre-specified time. We could divide the stock axis between maximum and low (over our time range interval) into an equi-spaced grid or equi-spaced bin. We suppose that there are N intervals of time \(\Delta t\). We start from starting time and add 1/N in the appropriate bin based on the values of X at the end of first interval. If this value of  stock X at the end of first interval is \(X_1\), we add 1/N in the grid cell/bin in which \(X_1\) lies. And so for all values of \(X_n(t_n)\) at the end of time \(t_n\) we continue to add weight 1/N in the appropriate bin based on which bin \(X_n\) falls in. So this way, we would have a density of relative time spent in each grid cell/bin over the time involved and we could also graph relative time spent VS stock value anywhere between high and low.<br>
+<br>
+We could also calculate occupation time density of stocks on all sort of recent time intervals from a few days to 5-10 minutes.     <br>
+<br>
+We will use all these ideas in our algorithmic trading later starting a few  days.</div>
+
+			
+									
+									<div id="sig885706" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885709">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885709">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885709">
+
+			<h3 ><a href="#p885709">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885709&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885709" title="Post #2614">#2614</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 25th, 2025, 6:00 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have been thinking more about determining mean-reversion in the market. I have some raw thoughts and I think lot of this would have to be finessed when I would deal with actual data.<br>
+<br>
+First we have to take a toy example of addition of variance of a stochastic process across two periods. Suppose we call first interval part of stochastic process as \(X_{t_1}\) and the stochastic process across second part as \(X_{t_2}\). If we add variance across two parts of the stochastic process the resulting formula is<br>
+<br>
+\[ Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,=\,Var\left[X_{t_1}\right] \,+\,Var\left[X_{t_2}\right] \,+2\,\rho_{X_{t_1},X_{t_2}}\,\,Var\left[X_{t_1}\right] \,\,Var\left[X_{t_2}\right] \, \]<br>
+<br>
+If we can devise a numerical algorithm that can calculate all of the variances \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\), we can calculate the correlation and associated mean reversion. Specifically if market is highly mean-reverting and correlation would be significiantly smaller smaller than zero and in that case  \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), would be significantly smaller than sum of the two variances given by \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\) and vice versa. <br>
+<br>
+We can devise a numerical method around above algorithm that finds mean reversion by calculating variances in multiple intervals and their sum as described in the above post. Most important thing would be that we would have to aggregate across all stocks to find an average mean reversion indicative of mean-reversion regime and and strength of mean reversion prevailing in the whole market. We would also have to determine mean-reversion on different scales.</div>
+
+			
+									
+									<div id="sig885709" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885711">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885711">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885711">
+
+			<h3 ><a href="#p885711">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885711&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885711" title="Post #2615">#2615</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 25th, 2025, 6:29 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, today I remained at home till the evening and thought about my research. In the evening, I went out for one and a half hour but there was nothing very special. After coming back, I continued to work and brainstorm and made the above post.<br>
+<br>
+Tomorrow might have more details since I will get an antipsychotic injection and it is also the day for me to go out into they city to do food shopping and get good water. I will be away from home for anywhere between 3-5 hours.</div>
+
+			
+									
+									<div id="sig885711" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885719">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885719">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885719">
+
+			<h3 ><a href="#p885719">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885719&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885719" title="Post #2616">#2616</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 26th, 2025, 5:42 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I have been thinking more about determining mean-reversion in the market. I have some raw thoughts and I think lot of this would have to be finessed when I would deal with actual data.<br>
+<br>
+First we have to take a toy example of addition of variance of a stochastic process across two periods. Suppose we call first interval part of stochastic process as \(X_{t_1}\) and the stochastic process across second part as \(X_{t_2}\). If we add variance across two parts of the stochastic process the resulting formula is<br>
+<br>
+\[ Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,=\,Var\left[X_{t_1}\right] \,+\,Var\left[X_{t_2}\right] \,+2\,\rho_{X_{t_1},X_{t_2}}\,\,Var\left[X_{t_1}\right] \,\,Var\left[X_{t_2}\right] \, \]<br>
+<br>
+If we can devise a numerical algorithm that can calculate all of the variances \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\), we can calculate the correlation and associated mean reversion. Specifically if market is highly mean-reverting and correlation would be significiantly smaller smaller than zero and in that case  \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), would be significantly smaller than sum of the two variances given by \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\) and vice versa. <br>
+<br>
+We can devise a numerical method around above algorithm that finds mean reversion by calculating variances in multiple intervals and their sum as described in the above post. Most important thing would be that we would have to aggregate across all stocks to find an average mean reversion indicative of mean-reversion regime and and strength of mean reversion prevailing in the whole market. We would also have to determine mean-reversion on different scales.
+</div></blockquote>
+.<br>
+.<br>
+.<br>
+Friends, as I had earlier suggested that some of these ideas will change once I go to real data in coming week. But still here are some thoughts. Let us try to look for mean reversion in asset X first and apply variance equations directly to asset X. if \(X(t_n)\) denotes the price of an asset at time \(t_n\), then we can calculate variance of asset in first N periods as<br>
+<br>
+\[Var_1\,=\,\frac{\,\sum\limits_{n=1}^{N}\, {\left(X(t_n)\,-\,E\left[X\right]\right)}^2}{N}\]<br>
+\[Var_2\,=\,\frac{\sum\limits_{n=N+1}^{2N}\, {\left(X(t_n)\,-\,E\left[X\right]\right)}^2}{N}\]<br>
+\[Var_{12}\,=\,\frac{\sum\limits_{n=1}^{2N}\, {\left(X(t_n)\,-\,E\left[X\right]\right)}^2}{2N}\]<br>
+<br>
+So we can compare the variances \(Var_1\), \(Var_2\) and \(Var_{12}\) to approximately find the level of mean reversion and associated average correlation. If we want to aggregate across all stocks to find mean reversion regime in the market we would have to deal with variance analytics in terms of \(\log(X)\) instead of dealing directly with X.<br>
+<br>
+We apply similar logic to dynamics of \(\Delta X_{t}\) and see if variance of \(\Delta X_{t}\) increases appropriately with time. Mostly it does not and its mean reversion is rather high. And we can use that for calculation of mean reversion regime in the market by appropriately aggregating the log-dynamics across all major stocks of interest. We would try to see in a few days what is average mean reversion in the market and what are mean-reversion bands for a trading strategy and what are critical mean-reversion limits at which we would have to alter our trading style.</div>
+
+			
+									
+									<div id="sig885719" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885726">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885726">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885726">
+
+			<h3 ><a href="#p885726">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885726&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885726" title="Post #2617">#2617</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 26th, 2025, 3:51 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, in the morning I received an IM antipsychotic injection in my arm. Since today was my day  to go out and buy food and get water, I left after getting the injection. I felt there could be quite a few people trying to drug food but I did not make a big deal about it at all. I would not waste friends' time with unnecessary details but I visited Shadman, Mall Road, Shalamar Road and later Harbanspura area. I was able to get good food. <br>
+<br>
+I am trying to sit down today and for next two days to get some work done. I am preparing my programs to work with real stocks data. And I will come back when I would have made some progress.</div>
+
+			
+									
+									<div id="sig885726" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885749">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885749">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885749">
+
+			<h3 ><a href="#p885749">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885749&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885749" title="Post #2618">#2618</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 27th, 2025, 2:50 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I have been thinking more about determining mean-reversion in the market. I have some raw thoughts and I think lot of this would have to be finessed when I would deal with actual data.<br>
+<br>
+First we have to take a toy example of addition of variance of a stochastic process across two periods. Suppose we call first interval part of stochastic process as \(X_{t_1}\) and the stochastic process across second part as \(X_{t_2}\). If we add variance across two parts of the stochastic process the resulting formula is<br>
+<br>
+\[ Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,=\,Var\left[X_{t_1}\right] \,+\,Var\left[X_{t_2}\right] \,+2\,\rho_{X_{t_1},X_{t_2}}\,\,Var\left[X_{t_1}\right] \,\,Var\left[X_{t_2}\right] \, \]<br>
+<br>
+If we can devise a numerical algorithm that can calculate all of the variances \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\), we can calculate the correlation and associated mean reversion. Specifically if market is highly mean-reverting and correlation would be significiantly smaller smaller than zero and in that case  \(Var \left[\,X_{t_1}\,+\,X_{t_2}\,\right]\,\), would be significantly smaller than sum of the two variances given by \(Var \left[\,X_{t_1}\,\right]\,\) and  \(Var \left[\,X_{t_2}\,\right]\,\) and vice versa. <br>
+<br>
+We can devise a numerical method around above algorithm that finds mean reversion by calculating variances in multiple intervals and their sum as described in the above post. Most important thing would be that we would have to aggregate across all stocks to find an average mean reversion indicative of mean-reversion regime and and strength of mean reversion prevailing in the whole market. We would also have to determine mean-reversion on different scales.
+</div></blockquote>
+.<br>
+.<br>
+<br>
+Friends, sorry for gross errors in so basic formulas. I have some reasonable sense of what I am doing but I continue to make gross mistakes and I have no conception that I made any mistake or did anything wrong. I need to sort of consolidate again and try to be sure of everything I am doing. I hope to come back tomorrow. Sorry, but when they continue to try to alter my brain stubbornly all the time, such things are probably bound to happen. It is not easy to live under mind control. However, I am steadfast and truly hope to take my research to a very good conclusion. Please pardon these mistakes.</div>
+
+			
+									
+									<div id="sig885749" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885750">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885750">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885750">
+
+			<h3 ><a href="#p885750">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885750&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885750" title="Post #2619">#2619</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 27th, 2025, 3:14 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I deleted a slightly different version of this post a little ago since I was alarmed that I was doing a lot of things wrong without knowing anything about errors in them.<br>
+<br>
+I am however reposting it but hope there are no errors in it.<br>
+<br>
+Friends, even though first order statistics that I called Market State that we calculated last year and gave a reference now in first two posts of this page, worked excellently, it is not possible to make calculation of descriptive statistic of higher market moments without including hermite correlations and hermite polynomials (or some other appropriate form of correlations) and we simply cannot do univariate type of additions for higher moments analogously to what we did for first order moment. <br>
+<br>
+I intend to calculate market variance and standardized market skew and standardized market kurtosis and these three higher moments when combined with our earlier calculated market state statistic, should be reasonably enough to know our market type and comparisons across similar statistics of each stock. For example when standardized skew is above or below a threshold with significant value of market state  in that direction (and reasonably high standardized kurtosis), we could tell that market is trending. Specially larger market kurtosis with large enough skew could mean that market is trending. Similarly very small value of standardized kurtosis would mean that market is mean-reverting and mean-reversion in market could be inversely proportional to standardized kurtosis while keeping other factors fixed. Similarly larger positive skew but very small value of market State(mean) would mean that there are large amount of very small negative innovations(or transition increments) and small amounts of very large deviations so that net mean is zero but skew is high positive. The four descriptive statistics for the market could explain a very large portion of market movements. After we have found the standardized market state, standardized market skew and standardized market kurtosis, we could do a full-span least squares regression on these four variables(including some other possibly necessary variables) to explain the categorical variable whether we should trade or not (since a combination of market moments could mean that trades are rather risky and we should avoid trading) and if the result of our full span regression is that we need to trade, we could further use another regression to explain whether we should trade in mean-reverting style or trending style. Using the answer from this second regression and based on market variables, we could find out whether we should go long or short vanilla assets.<br>
+<br>
+I am trying to see what is the best way to do this in our framework.</div>
+
+			
+									
+									<div id="sig885750" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885756">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885756">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885756">
+
+			<h3 ><a href="#p885756">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885756&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885756" title="Post #2620">#2620</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 27th, 2025, 4:27 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, this post is about calculation of moments of a weighted basket of stocks that we would need in our analytics. When data is given, we need to find all correlations and expectations involved from the data to find data moments. <br>
+<br>
+For example, please consider three random variables W, X and Y.<br>
+<br>
+\[E{\left[W\,+\,X\,+\,Y\right]^2} \,=\,E\left[W^2 \,\right]\, + 2 E\left[W X\,\right]\, + E\left[X^2\,\right]\, + 2 E\left[W Y\,\right]\, + 2 E\left[X Y\,\right]\, + E\left[Y^2\,\right]\,\]<br>
+<br>
+and <br>
+<br>
+\[E{\left[W\,+\,X\,+\,Y\right]^3} \,=\,E\left[W^3\,\right]\,+3 E\left[W^2 X\,\right]\,+3 E\left[W X^2\,\right]\,+E\left[X^3\,\right]\,+3 E\left[W^2 Y\,\right]\,+6 E\left[W X Y\,\right]\,\\+3 E\left[X^2 Y\,\right]\,+3 E\left[W Y^2\,\right]\,+3 E\left[X Y^2\,\right]\,+E\left[Y^3\,\right]\,\]<br>
+<br>
+and so on for higher moments.<br>
+<br>
+All the expectations of variables and products of variables on the Right Hand Side of above equations can be calculated from data observations as summations over data observations divided by number of observations. When above variables are changing all the time, in order to calculate exact values of moments, we need to find all the above expectations from the given relevant data observations involved. Any pre-calculated expectations or correlations would alter the calculated moment values on LHS of above equations from true moments corresponding to data observations. We can find these expectations from data to calculate the exact values of moments on LHS of above equations.<br>
+<br>
+In context of stock trading, we would like to find the above moments and involved expectations from data of most recent observations as we did earlier for finding market state.</div>
+
+			
+									
+									<div id="sig885756" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885810">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885810">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885810">
+
+			<h3 ><a href="#p885810">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885810&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885810" title="Post #2621">#2621</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 29th, 2025, 3:03 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, we have to start working with real stocks data. I have some tick and 15 seconds stocks data that is several years old. In order to make friends properly oriented, I will upload my matlab programs for a strategy based on logic of  mean reversion of single stocks towards composite market  on a 15 seconds grid by tomorrow evening. I will also upload my data for key stocks involved in the trading strategy. But this is only a recall of old work that I did last Summers. Once friends download the program tomorrow with data, it would be easier for them to get oriented in the framework I have used in the past.<br>
+<br>
+The program I mentioned above is on a fifteen seconds grid, but we want to find out profitable trading strategies on a longer time frame of ten minutes to thirty minutes trade holding periods. But I do not expect it to be easy and it could take several months before we are very comfortable with trading strategies on such a longer time frame. I hope that some time by end of march, we would be comfortable with longer time frame trading.<br>
+<br>
+Today was my day to go out and buy food. It went well. I have not tried everything but I hope that I have got good food. <br>
+<br>
+Mind control agents still continue to try to deter me from my research and try to make me drowsy when I am working. Even though, they did not repeat the microwave torture on me that was done on night of 20th January, they still continue to target my hands with microwaves when I am sleeping.<br>
+<br>
+Again, please do not forget to download and play with the matlab program that I post later tomorrow. I will also upload relevant data as part of non-profit research activity as I am not making any money out of it at all.</div>
+
+			
+									
+									<div id="sig885810" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885824">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885824">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885824">
+
+			<h3 ><a href="#p885824">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885824&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885824" title="Post #2622">#2622</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 29th, 2025, 7:01 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, a lot of my readers on Wilmott might be more familiar with many of the ideas I suggest but still there may be many more readers who want to learn everything like I myself want to do. I continue to think about many of these things randomly with the intention to collect them and put them together in a perfect manner later so that everything fits together.<br>
+<br>
+I was thinking that most of the stocks have a large part that is perfectly correlated with the market and their sector. And in order to predict this part, we need a prediction strategy of the market and the sector. We would try to do that from our knowledge of state of the market and its moments among other factors. We can represent the collective market, all sectors in the market, and each stock with univariate-hermite series of their own. However, all of these hermite series would be correlated with each other. Using these hermite-series and their correlations, we can find the correlated part of each stock (that is correlated with the common market and with its sectors) and an idiosyncratic part of the stock. In fact, we can find the state of each idiosyncratic part (just like stock state) and all moments and standardized moments of the idiosyncratic part. Using hermite series, we can find time series of values of idiosyncratic part and do other analytics on it as well. And since complete dynamics of the stock depend upon dynamics of both correlated part and idiosyncratic part, I think behavior of this idiosyncratic part is very important to determine when friends are picking stocks on a longer term and in other cases where they want to predict the future path of the stock.<br>
+<br>
+You can also consider idiosyncratic part of a stock found from hermite series and their correlations in terms of pairs trading as suggested by Late Prof. Avellaneda in his celebrated paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1153505" class="postlink" target="_blank" rel="noopener noreferrer">Statistical Arbitrage in the U.S. Equities Market</a> , Only difference is that we want to rely on hermite polynomials and their correlations in addition to our special definition of the market as we constructed while he used principle component analysis with some trading weighted value of time as I recall.</div>
+
+			
+									
+									<div id="sig885824" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885825">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885825">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885825">
+
+			<h3 ><a href="#p885825">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885825&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885825" title="Post #2623">#2623</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 29th, 2025, 8:07 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I was thinking that when trading fast, our strategies need a feedback loop from profits to the strategy parameters and when the profits of the strategy are optimal, we can further emphasize the core logic of the strategy and if a strategy does not create profits, we can continue to later it. Just like as in AI, this feedback loop should help us slowly alter the strategy towards a more profitable version. May be we could collapse the dimensionality regarding trading decision on just one or two parameters and while live trading in the market based on a strategy, we can run a paper sort of trading strategy with trading decision based on perturbed parameters and then switch to parameters with enhanced trading profits. Regardless, I would suggest that their should be some sort of backwards feedback loop from profits that affects our choice of trading strategy parameters and related decision making</div>
+
+			
+									
+									<div id="sig885825" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885863">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885863">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885863">
+
+			<h3 ><a href="#p885863">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885863&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885863" title="Post #2624">#2624</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 30th, 2025, 7:03 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am making some changes to program to make it more simple to use. And I was slightly hit by a programming bug that took some more time. I want to make a few interesting changes in the program. So will have to post it on Friday, tomorrow. Sorry for this delay. </div>
+
+			
+									
+									<div id="sig885863" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885876">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885876">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885876">
+
+			<h3 ><a href="#p885876">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885876&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885876" title="Post #2625">#2625</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 31st, 2025, 5:37 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, here is the program. In order to understand it, you would have to read the following two posts: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431</a>  and <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455</a><br>
+<br>
+This program is about mean reversion towards market. I found that when it is applied to AMZN, or GOOG, or some other stocks, it works very well but when applied to MSFT, or APPL, they do very poorly and lose money since these last two stocks make the market and not follow it.<br>
+<br>
+The matlab program constructs market from ten specified stocks and trades one stock that follows the broader market index. Please try constructing your own versions of the market with more appropriate stocks or larger number of stocks. Not all stocks make money on this trading logic and some stocks actually lose money.<br>
+<br>
+We will try to improve the dynamics of  part of stock that follows the broader market(mean reversion towards market) and also work on finding the dynamics of uncorrelated(idiosyncratic part) part of stock and then we would join analytics from both correlated and uncorrelated parts to make better informed decisions  about the market.<br>
+<br>
+In the program, you can specify a trading notional. You can also specify trade comissions. But it does not account for slippage or market impact on the trading activity. All trades are made with respect to mid-market between bid price and ask price. If you trade with limit orders in reality, you can possibly also earn bid-ask spread on top of mid-market trading profits.<br>
+<br>
+Here are the programs.<br>
+<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = AlgoTradingProjectBaseNewNotionalUni()
+
+
+pathstring="C:\Users\Lenovo\Documents\MATLAB\MATLAB1\ReadDates0.txt";
+T = readtable(pathstring);
+StockDate(1:41)=table2array(T(1:41,1));
+
+%Above read data about stocks dates from a file.
+
+
+NoOfDates=41;
+
+
+StockSymbol0="GOOG"  %This is stock symbol for trading
+%StockSymbol0="AMZN"  %This is stock symbol for trading.Uncomment for AMZN
+%trading. Specify any out of ten symbols below.I have posted data of only ten
+%stocks.
+
+
+
+%Ten stocks below to construct a market towards the above stock would mean
+%revert according to trading algorithm.
+StockSymbol(1)="NVDA"
+StockSymbol(2)="GOOGL"
+StockSymbol(3)="GOOG"
+StockSymbol(4)="AMZN"
+StockSymbol(5)="FB"
+StockSymbol(6)="AVGO"
+StockSymbol(7)="NFLX"
+StockSymbol(8)="AAPL"
+StockSymbol(9)="MSFT"
+StockSymbol(10)="TSLA"
+
+
+EPeriods=1;%Periods for calculation of log differences.
+
+NStocks=10; %Total Stocks in the market.
+
+NoOfTrades00=0;   %Total Number of trades over our 41 working days period
+Profit00=0;%Total profit over all trades in our 41 working days period
+StockComission=.0035;%One side stock comission for limit orders.
+%IB has a rate of .0035 cents per share(with other conditions like order
+%size and total volume).
+
+for nDate=1:NoOfDates
+    nDate
+    mCount=0;
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    for mSymbol=1:NStocks %Loop over market symbols to read their data from disk.
+        nDate
+        mSymbol
+        StockDate(nDate)
+        StockSymbol(mSymbol)
+        try
+            SData=StocksClassW(StockSymbol(mSymbol),StockDate(nDate),EPeriods);
+            TradeFlag(nDate,mSymbol)=1;
+        catch
+            mCount=mCount+1;
+        end
+        StockReturns(1:1560,mSymbol,nDate)=SData.LogReturns(1:1560);
+        %StockPrice(1:1560,mSymbol,nDate)=SData.StockPrice0Series(1:1560);
+        %StockVolumeSeries0(1:1560,mSymbol,nDate)=SData.StockVolumeSeries(1:1560);
+        %delete(SData);
+    end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %Now read the particular stock data from disk for trades purpose.
+    try
+        SData0=StocksClassW(StockSymbol0,StockDate(nDate),EPeriods);
+        TradeFlag0(nDate)=1;
+    catch
+        mCount=mCount+1;
+        TradeFlag0(nDate)=0;   
+    end
+    StockReturns0(1:1560,nDate)=SData0.LogReturns(1:1560);
+    StockPrice0(1:1560,nDate)=SData0.StockPrice0Series(1:1560);    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    %Below assign a notional proportional to stock price. This is crucial since large 
+    %brokers charge comission per stock and not per given dollar volume.
+    %But you can specify other notional proportional to stock price or even specify a fixed notional.
+    
+    if(nDate==1)
+        Notional=StockPrice0(1,nDate);
+        NotionalInitial=Notional;
+    end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55    
+    if(nDate&gt;1)
+       %NoOfTrades0=0;
+        %Profit0=0;
+        for mSymbol=1:1
+            %for mSymbol=1:1
+            %if ((mSymbol~=1)&amp;&amp;(mSymbol~=2)&amp;&amp;(mSymbol~=7)&amp;&amp;(mSymbol~=8)&amp;&amp;(mSymbol&lt;=20))
+            if(TradeFlag0(nDate)==1) 
+                StockDate(nDate)% Print stock date while running the program.
+        
+                %The matlab function below calculates profit or loss in a single
+                %day's trading on the specified stock. The algo trading strategy is 
+                %specified inside the function. It takes data of stocks returns to
+                %construct the "market state" and it also takes the data of
+                %original stock to construct the "stock state"
+                [Profit(nDate),NoOfTrades(nDate),Notional(mSymbol)] = BacktestTheStrategy09D2CUni(StockReturns0(1:1560,nDate),StockReturns(1:1560,:,nDate),StockPrice0(1:1560,nDate),NStocks,Notional,StockComission);
+
+    
+                  %NoOfTrades0=NoOfTrades0+NoOfTrades;
+        
+                if(isnan(Profit(nDate))==1)
+                    Profit(nDate)=0;
+                end
+            else
+                Profit(nDate)=0;
+                %NoOfTrades=0;
+            end
+        end
+    
+        %PProfit(nDate)=Profit;
+        Profit00=Profit00+Profit(nDate);
+        NoOfTrades00=NoOfTrades00+NoOfTrades(nDate);
+        nDate
+        Profit(nDate)
+    
+    end
+    
+end
+        
+%TradeFlag(nDate,mSymbol)
+
+Profit
+
+Profit00
+
+NoOfTrades00
+
+
+ProfitPerTrade=Profit00/NoOfTrades00
+ProportionalGainInNotional=Notional./NotionalInitial
+
+clf;
+
+plot((2:41),Profit(2:41),'g');
+ xlabel('Day count on a grid with 41 days')
+  ylabel('Market Trading Profit on that Day')
+  title('Market Strategy Profit/Loss over April and May 2021')
+str=input("Look at profit graphs")
+
+
+end
+
+</code></pre></div>
+ .<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Profit,NoOfTrades,Notional] = BacktestTheStrategy09D2CUni(LogRSeries0,LogRSeries1,StockPrice0,NStocks,Notional,StockComission)
+ 
+%LogRSeries1 are multidimensional array carrying data of Log Returns of 
+%Nstocks number of stocks in order to construct Market Staete from these stocks.
+%LogRSeries and StockPrice0 carry data of stock to be traded. This is log
+%returns data and stock price data. Stock price and Log returns are
+%caclulated from mid-market prices between bid and ask prices.
+
+
+Sell=0; %If Sell is one, a sell trade is open.
+Buy=0;  %If Buy  is one, a buy trade is open.
+%Sell and buy cannot be simultaneously one.
+Trade=0;%If Trade is one, a trade(either sell or buy ) is open.
+%If Trade is one, either Sell or Buy is one. If Trade is zero, both 
+%sell and buy are zero 
+
+NoOfTrades=0;
+Profit=0;
+
+for tt=4:1560
+    
+    StopLossProfit=-StockPrice0(tt)/100;
+    TakeProfit=StockPrice0(tt)/50;
+    TimeEndFlag=0;
+    if(tt==1560)
+        TimeEndFlag=1;
+    end
+
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    %Calculation of Stock State in this block. Is04 stands for stock state 
+    %indicator over four intervals.  
+    Is04(tt)=0;
+    Lag=4;
+    if(tt&lt;Lag)
+        Lag=tt;
+    end
+    Id=0;
+    In=0;
+    for ll=0:Lag-1
+        Id=Id+LogRSeries0(tt-ll).^2;
+        In=In+LogRSeries0(tt-ll);
+    end
+    
+    Is04(tt)=In/sqrt(Id/Lag-(In/Lag)^2)/Lag;
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    %Calculation of Stock State in this block. Im04 stands for market state 
+    %indicator over four intervals. 
+    %Im004(tt)=0;
+    Im04(tt)=0;
+    Lag=4;
+    if(tt&lt;Lag)
+        Lag=tt;
+    end
+    Isum=0;
+    for mm=1:NStocks
+        Id=0;
+        In=0;
+        for ll=0:Lag-1
+        Id=Id+LogRSeries1(tt-ll,mm).^2;
+        In=In+LogRSeries1(tt-ll,mm);
+        end
+        
+        %Im004(tt)=Im004(tt)+ 1/NStocks*In/sqrt(Id);
+%        Idd(mm)=sqrt(1/(Id/Lag-(In/Lag)^2));
+        Iss04(mm)=In/sqrt(Id/Lag-(In/Lag)^2);
+%        Isum=Isum+Idd(mm);
+    end
+    
+    
+    for mm=1:NStocks
+    %Im04(tt)=Im04(tt)+Idd(mm)/Isum*Iss04(mm);
+    Im04(tt)=Im04(tt)+1/sqrt(NStocks)*Iss04(mm);
+    end
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%Calculation of Stock Trading decision criteria    
+ 
+
+ 
+    StMove0=0;
+    StMove1=0;
+
+
+    %Mean Reversion Towards Market Critieria
+    bb(tt+1)=-Is04(tt)-(Is04(tt)-Im04(tt));
+
+    %Calculation of StMove0. If StMove0 is one and no trade is open, a buy trade
+    %will be opened.If StMove0 is negative one and no trade is open, a sell trade
+    %will be opened. 
+    if(bb(tt+1)&gt;2) %
+        StMove0=1;
+    elseif(bb(tt+1)&lt;-2) %.525    
+        StMove0=-1;
+    else
+        StMove0=0;
+    end
+
+
+    %Calculation of StMove1. If StMove1 is one and a sell trade is open, an ending buy trade
+    %will be opened to close the deal.If StMove0 is negative one and a buy trade is open, a sell trade
+    %will be opened to complete the other side of trade. 
+
+    if(bb(tt+1)&gt;.7) %.7
+        StMove1=1;
+    elseif(bb(tt+1)&lt;-.7) %.525
+        StMove1=-1;
+    else
+        StMove1=0;
+    end
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %Calculation of Trades and profits in this code block. 
+
+    if((Sell==1) &amp;&amp; (Buy==1))
+        str=input("There is an error.Both sell or buy trades cannot be open simultaneously.")
+    end
+    if((Sell==1) &amp;&amp; (Buy==0)&amp;&amp;(Trade==1))
+
+        SProfit=SellPrice-StockPrice0(tt);
+
+        if(SProfit&lt;StopLossProfit) %Ending Old Trade: Stop Loss
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            BuyPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0;  
+        end
+
+        if((SProfit&gt;TakeProfit) )%Ending Old Trade: Take Profit
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            BuyPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0; 
+        end
+    end
+
+
+    if( (Sell==0) &amp;&amp; (Buy==1)&amp;&amp;(Trade==1))
+        SProfit=StockPrice0(tt)-BuyPrice;
+        if(SProfit&lt;StopLossProfit)%Ending Old Trade: Stop Loss
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            SellPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0;  
+        end
+        if((SProfit&gt;TakeProfit))%Ending Old Trade: Take Profit
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            %SellPrice=LogRSeries(tt,1);
+            SellPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0;    
+        end
+
+    end
+
+    if((StMove1==1) || (TimeEndFlag==1))  
+        if((Sell==1) &amp;&amp; (Buy==0)&amp;&amp;(Trade==1))%Ending Old Trade
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            BuyPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0;
+        end
+    end 
+
+    if((StMove1==-1) || (TimeEndFlag==1))    
+        if( (Sell==0) &amp;&amp; (Buy==1)&amp;&amp;(Trade==1))%Ending Old Trade
+            Buy=0;
+            Sell=0;
+            Trade=0;
+            SellPrice=StockPrice0(tt);
+            Profit0=SShares*(SellPrice-BuyPrice)-2*SShares*StockComission;
+            Profit=Profit+Profit0;
+            NoOfTrades=NoOfTrades+1;
+            Notional=Notional+Profit0;
+        end
+
+     end
+    if((StMove0==-1) &amp;&amp; (Sell==0) &amp;&amp; (Buy==0) &amp;&amp; (Trade==0)) %Entering New Trade         
+
+        Buy=0;
+        Sell=1;
+        Trade=1;
+        SellPrice=StockPrice0(tt);
+        SShares=Notional./StockPrice0(tt);
+
+    end
+    if((StMove0==1)&amp;&amp;(Sell==0) &amp;&amp; (Buy==0) &amp;&amp; (Trade==0)) %Entering New Trade       
+
+        Buy=1;
+        Sell=0;
+        Trade=1;
+        BuyPrice=StockPrice0(tt);
+        SShares=Notional./StockPrice0(tt);
+
+    end
+
+  Profit1(tt)=Profit;  
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5 
+    
+end
+
+
+
+clf;
+yyaxis left
+
+ylabel('StockPrice')
+xlabel('Time Intervals')
+
+plot((3:1560),StockPrice0(3:1560),'g')
+hold on
+yyaxis right
+plot((3:1560),Is04(3:1560),'r')
+%str=input('Look at graph---1');
+
+hold on
+yyaxis right
+ylabel('StockState')
+xlabel('Time Intervals')
+plot((3:1560),Im04(3:1560),'b')
+%str=input('Look at graph---2');
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">classdef StocksClassW
+   properties
+      StockSymbol=0;
+      StockDate=0;
+      EPeriods=0;
+      
+      %StockPriceSeries(1561,1)=0;
+      StockPrice0Series(1561,1)=0;
+      StockBidSeries(1561,1)=0;
+      StockAskSeries(1561,1)=0;
+      StockVolumeSeries(1561,1)=0;
+      %StockReturnSeries(1561,1)=0;
+      LogReturns(1561,1)=0;
+      %LogReturns04(1561,1)=0;
+      %LogReturns08(1561,1)=0;
+      %LogReturns12(1561,1)=0;
+      %LogReturns16(1561,1)=0;
+      %LogReturnsT(1561,1)=0;
+      %TotalVolume=0;
+      LRMean;
+      LRVar;
+      %LRSD;
+      
+   end
+   methods
+       % function obj=StocksClass()
+       %     obj.StockSymbol=StockSymbol0;
+       % end
+       function obj=StocksClassW(StockSymbol0,StockDate0,EPeriods)
+      %     StockSymbol0
+            obj.StockSymbol=StockSymbol0;
+            obj.StockDate=datetime(StockDate0,'InputFormat','dd\MM\yyyy');
+            obj.EPeriods=EPeriods;
+            str1=string(obj.StockDate, "yyyy_MM_dd");
+            %str0="C:\Users\Lenovo\Documents\DailyData\";
+            str2="C:\Users\Lenovo\Documents\WilmottData\";
+            %pathstring=str0+ str1 + '\' + str1 + '_' + string(obj.StockSymbol);
+            pathstring=str2+ str1 + '\' + str1 + '_' + string(obj.StockSymbol);
+            %pathstring=str0+ '\' + str1 + '_' + string(obj.StockSymbol);
+            %pathstring2=str2+ str1 + '\' + str1 + '_' + string(obj.StockSymbol);
+            %pathstring20=str2+ str1;
+            
+            
+            
+            T = readtable(pathstring);
+            
+% %             [status, msg, msgID] =mkdir(str2,str1)
+% %             
+% %            
+% %             pathstring=str0+ str1 + '\';
+% %             %pathstring=str0+ '\' + str1 + '_' + string(obj.StockSymbol);
+% %             pathstring2=str2+ str1 + '\';
+% %             
+% %             
+% %             p1 = pathstring;
+% %             p1
+% %             pdest = pathstring2;
+% %             pdest
+% %             filename = str1 + '_' + string(obj.StockSymbol)+'.txt';
+% %             filename
+% %             
+% %             source = fullfile(p1,filename);
+% %             source
+% %             destination = fullfile(pdest,filename);
+% %             destination
+% %             [status,msg,msgID]=copyfile(source,destination)
+            
+            
+            
+            
+            obj.StockBidSeries(1:1561,1)=table2array(T(1:1561,4));
+            obj.StockAskSeries(1:1561,1)=table2array(T(1:1561,5));
+            obj.StockPrice0Series(1:1561,1)=.5*obj.StockBidSeries(1:1561,1)+.5*obj.StockAskSeries(1:1561,1);
+            obj.StockVolumeSeries(1:1561,1)=table2array(T(1:1561,6));
+            
+            obj.LogReturns(1)=0;
+            for nn=2:1561
+                obj.LogReturns(nn,1)=log(obj.StockPrice0Series(nn,1))-log(obj.StockPrice0Series(nn-1,1));
+            end
+%             obj.LogReturns04(1:4)=0;
+%             for nn=5:1561
+%                 obj.LogReturns04(nn,1)=log(obj.StockPrice0Series(nn,1))-log(obj.StockPrice0Series(nn-4,1));
+%             end
+%             obj.LogReturns08(1:8)=0;
+%             for nn=9:1561
+%                 obj.LogReturns08(nn,1)=log(obj.StockPrice0Series(nn,1))-log(obj.StockPrice0Series(nn-8,1));
+%             end
+%             obj.LogReturns12(1:12)=0;
+%             for nn=13:1561
+%                 obj.LogReturns12(nn,1)=log(obj.StockPrice0Series(nn,1))-log(obj.StockPrice0Series(nn-12,1));
+%             end
+%             
+%             
+%             for nn=1:1561-obj.EPeriods
+%                 obj.LogReturnsT(nn,1)=log(obj.StockPrice0Series(nn+obj.EPeriods,1))-log(obj.StockPrice0Series(nn,1));
+%             end
+%                 
+%                 
+%        %     obj.TotalVolume=sum(obj.StockVolumeSeries(:,1));
+%             
+%             obj.LRMean=sum(obj.LogReturns(:,1))/1560;
+%             obj.LRVar=sum((obj.LogReturns(:,1).^2-obj.LRMean.^2))/1560;
+%        %     obj.LRSD=sqrt(obj.LRVar);
+       
+       end
+      
+   end
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=10541&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">ReadDates0.txt</a></dt>
+						<dd>(490 Bytes) Downloaded 6 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+.<br>
+.<br>
+.<br>
+The example of profits from GOOG is rather unrealistic since you cannot trade a lot of hundred shares (I just specified a commission of .35 cents which might not apply in the case of smaller lots.) Especially market impact is not accounted for. And markets now might have moved from dynamics several years ago when I bought this data. GOOG had a large share price and trading it in sizable lots would really move its market, so this has to be accounted for.<br>
+So please try the program with your own version of market (constituent stocks in the calculation of market), and your own likely commissions and you could possibly add impact in the profit calculation equations to account for all these variables.<br>
+<br>
+For a stock to be viable for fast trading profit per trade should be a bit larger than one cent if you could easily trade hundred shares lots. The only requirement is that two way trade profits in the market exceed the commissions. IB charges .35 cents, so if you can maintain more than seventy cents in the live market or maintain per trade profits larger than any other relevant commission structure, you would be making money.<br>
+.<br>
+.<br>
+Here is the output when you run the above files. This is only result of 41 working days (two months) of data from March 2021 to May 31,2021.<br>
+<br>
+Profit =<br>
+   1.0e+02 *<br>
+  Columns 1 through 3<br>
+                   0  -0.118505893163862   1.067201657329395<br>
+  Columns 4 through 6<br>
+   0.653746624178112   0.558351121006410   0.633892896892807<br>
+  Columns 7 through 9<br>
+   0.544836325123528   0.376206569588806   0.614318291542017<br>
+  Columns 10 through 12<br>
+   0.709614359411799   0.697394179205419   1.969015416628868<br>
+  Columns 13 through 15<br>
+   1.445395160020671   1.170713150059073   2.055078376148132<br>
+  Columns 16 through 18<br>
+   0.196732609357355   0.972971534509158   0.953390018230620<br>
+  Columns 19 through 21<br>
+   1.806535680450452   1.300813683384379   1.145906883626667<br>
+  Columns 22 through 24<br>
+   0.923556826089234   1.838747708390151   2.391066527228306<br>
+  Columns 25 through 27<br>
+   2.872491051330524   1.383536055815609   2.482661199579407<br>
+  Columns 28 through 30<br>
+   2.296963312692581   3.184268816283607   3.588513038955986<br>
+  Columns 31 through 33<br>
+   1.030220619985985   2.235558614359159   2.614466175710559<br>
+  Columns 34 through 36<br>
+   3.927347544115453   2.165962167643784   2.442092815076415<br>
+  Columns 37 through 39<br>
+   1.227259996935169   2.522833763532246   1.589543426978588<br>
+  Columns 40 through 41<br>
+   0.689187349372965   1.231181201118716<br>
+Profit00 =<br>
+     6.139106685472426e+03<br>
+NoOfTrades00 =<br>
+        8733<br>
+ProfitPerTrade =<br>
+   0.702977978412049<br>
+ProportionalGainInNotional =<br>
+   3.931690592618337<br>
+<br>
+<br>
+Please note that profit in graph below is not cumulative profit, the graph shows profit on each day. In order to find cumulative profit, you would have to integrate(sum) the profits shown in graph below.<br>
+<br>
+<br>
+.<br>
+<a href="https://postimg.cc/NL2PK068" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/Wp5RfFty/GOOGTrade.png" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig885876" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;6c443e75ce24f4a32e602d6dbe9fafa3" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2580" role="button">173</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" role="button">174</a></li>
+							<li class="active"><span>175</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" role="button">176</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2640" role="button">177</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2610&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;6c443e75ce24f4a32e602d6dbe9fafa3" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2580" role="button">173</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2595" role="button">174</a></li>
+							<li class="active"><span>175</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" role="button">176</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2640" role="button">177</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3&amp;start=2625" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2610&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=6c443e75ce24f4a32e602d6dbe9fafa3"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=6c443e75ce24f4a32e602d6dbe9fafa3" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#ec8d88818582ac9b858081839898c28f8381">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>175</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=6c443e75ce24f4a32e602d6dbe9fafa3";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=6c443e75ce24f4a32e602d6dbe9fafa3";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2a50effb97c5","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

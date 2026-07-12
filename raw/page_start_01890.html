@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 127 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=d5afc0241eb7011287532331a9b6530e" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=d5afc0241eb7011287532331a9b6530e?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=d5afc0241eb7011287532331a9b6530e?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=d5afc0241eb7011287532331a9b6530e?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1890" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=d5afc0241eb7011287532331a9b6530e" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="d5afc0241eb7011287532331a9b6530e" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=d5afc0241eb7011287532331a9b6530e" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=d5afc0241eb7011287532331a9b6530e" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=d5afc0241eb7011287532331a9b6530e" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="d5afc0241eb7011287532331a9b6530e" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=d5afc0241eb7011287532331a9b6530e" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=d5afc0241eb7011287532331a9b6530e"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=d5afc0241eb7011287532331a9b6530e"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=d5afc0241eb7011287532331a9b6530e" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1890%26t%3D99702&amp;sid=d5afc0241eb7011287532331a9b6530e" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=d5afc0241eb7011287532331a9b6530e" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1890&amp;t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" />
+<input type="hidden" name="creation_time" value="1768908017" />
+<input type="hidden" name="form_token" value="2e474df646e358f951814dda003499e4aeadccad" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=d5afc0241eb7011287532331a9b6530e" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1890&amp;sid=d5afc0241eb7011287532331a9b6530e">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1890&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=d5afc0241eb7011287532331a9b6530e">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="d5afc0241eb7011287532331a9b6530e" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d5afc0241eb7011287532331a9b6530e" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1860" role="button">125</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" role="button">126</a></li>
+							<li class="active"><span>127</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" role="button">128</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1920" role="button">129</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p876169">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876169">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876169">
+
+			<h3 class="first"><a href="#p876169">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876169&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876169" title="Post #1891">#1891</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 22nd, 2023, 6:17 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, please read the last three posts on the previous page that I made a few hours earlier about my persecution and mind control. I really need help and favors from good people everywhere.<br>
+This is the last fourth week after the antipsychotic injection(mixed with mind control chemicals) and I have enough stimulation in my brain now to think of more interesting things. I have always been trying to think and brainstorm about better ideas to find Z-series density representation when the data is given. The current method requires optimization that does not work many times. I think I have more concrete ideas now to be able to construct Z-series using explicit algebra and some calculus. I have yet to put idea to computer but I am extremely sure that I would be able to make this work. <br>
+Briefly I want to use lagrange polynomial or order anywhere between 10 to 20 ( I would have to see what works well and if it works we might be able to improve it later) to interpolate data points. Since data is usually far larger than just ten to twenty points, we would have to first do another algorithm that would lump together ten, twenty, thirty (or something like that) data points and replace them with a judiciously chosen single point so that the single point represents average of all their moments(of locally lumped points). When only 15 to 20 representative points would be left, we would use lagrange interpolation between them to calculate derivatives at median which would be used to construct the Z-series. <br>
+I will start work on coding the algorithm tonight and if the method works well, hope to post the matlab program in another two to three days.<br>
+I will first try to code the first part of algorithm that uses lagrange polynomial interpolation on 15 to 20 data points. And then try writing the second algorithm to lump together specific number of data points locally and replace them with a single representative data point so that moments of first eight order are perfectly matched.</div>
+
+			
+									
+									<div id="sig876169" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p876171">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876171">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876171">
+
+			<h3 ><a href="#p876171">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876171&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876171" title="Post #1892">#1892</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 23rd, 2023, 12:47 am</span></p>
+			
+			
+			
+			<div class="content">I was not able to solve the problem of fitting moments to Z-series with lagrange interpolation but I was able to improve an earlier program to make it very good. I will post it in the evening today with some examples. But for this program to work, you need raw data and you just cannot input moments to this program. It takes data set of values as input and returns a Z-series. I will post it later today and hope that many friends would find it useful.</div>
+
+			
+									
+									<div id="sig876171" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876174">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876174">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876174">
+
+			<h3 ><a href="#p876174">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876174&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876174" title="Post #1893">#1893</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 23rd, 2023, 11:09 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I will post the new program tomorrow.<br>
+<br>
+This evening when I went out, I went to my bank to withdraw money from ATM machine. When I inserted my Debit card in ATM machine, it told me that my card was not authorized for any transactions. I tried again and was able to get through and see my balance on the ATM machine. I then went ahead and asked the machine to withdraw 10,000 Pak Rupees. But then it refused to give any cash. I was worried that there might be no money in the ATM machine or some other malfunction though I knew when ATM machine has no money, it always explicitly tells that there is no cash. I went to another branch of the bank three or four kilometres apart and tried to withdraw money but it again explicitly stated that my card did not have transaction rights and it was not authorized to do any transactions after I had input the pin number. My bank account is with MCB bank in johar town.<br>
+I knew something was wrong and my card was blocked to do any transactions. It has happened to me several times earlier for example once in 2008, I left my family and went to Karachi on my car and my card was then blocked on orders of Pakistan army. Incidentally, I was stopped by police van that approached my car and was taken to a police station in clifton. Police officer slapped me there and said my car(that was bought with my own money as I had a job with a Japanese company that paid 100,000 dollars a year) was stolen. Then four navy jeeps came to police station and took me to a Navy intelligence compound and locked me in a cellar at night. In the morning, my brother in law came to Navy compound and signed some documents that said that I was mentally deranged and Navy had helped them in getting my custody. So I was handed over to my family who again detained me a psychiatrist in Lahore(my brother took me from air port and dropped me at a mental health facility) for several months. My car was sent on a truck to Lahore by Navy crooks. So basically my attempt at gaining independence from my family was successfully thwarted.<br>
+When I came home tonight, I called the bank help line and told them that every cash machine continues to tell me that I have no transaction rights. But the staff said that my card was active and there should be no problem.<br>
+Here I want to tell friends about another incident by crooks at MCB bank. These crooks at MCB are totally controlled in turn by crooks at Pakistan army. When I went to UK in 2010, roughly a year before that I had given roughly 80,000 dollars to an immigration firm. I was making a lot of money by Pakistani standards and my tier one visa was ensured without anybody's help but  the immigration firm CEO told me that he would get me a more special visa that would allow me to spend any amount of time in Pakistan or britain and will have no strings attached. That guy gave large entire page ads in several of the biggest Pakistani newspapers and his wife was a member of parliament so I trusted him and a recently retired lieutenant General of the army was president of the immigration firm). I had given him money with four different cheques and one of them was a 2,500 dollars cheque. He received all of the money but could not withdraw 2,500 dollars since my account with MCB was dormant (if one does not have any transaction in account for a year or so, it becomes dormant and it has to be explicitly activated by the account holder and as long as account remains dormant no cheque can be withdrawn and no money can be deposited). When I paid the 2,500 dollars cheque I was not aware that my account had gone dormant already. The CEO of immigration firm later told me that my 2,500 dollars cheque had bounced because my account was dormant. At that point, I had slightly become suspicious of the immigration firm and I did not activate my account. It was not a very big deal anyway since he had already taken most of the money. He continued to call me from time to time after several weeks asking to activate my account but I did not care. This was a year before I went to UK finally on a Tier one visa. That guy never returned my money and I got no special visa. He was basically a swindler who had contacts with Pakistan army who continuously protected him from victims like me. Later when a large number of cases piled up against him and it was difficult for army to protect him, he fled to UK and started living there. <br>
+Anyway when I was in UK in 2010, I spent very large amount of money to ensure good food and my freedom. I probably spent more than 150,000 dollars there in seven months including rent on a reasonably expensive apartment( I was not aware that I would be so brutally treated and rented a decent apartment thinking I will continue to pay from job I will find at London. I spent most of the time travelling and living in hotels and my apartment was not a very big use other than in early days only. I would continue to travel since they would drug any place I would live for a bit). I had already told people that mind control agencies made a supposedly most secure and trusted UK  bank steal my 1000 pounds and made a hotel take a charge of 1500 pounds on my card several days after I had returned keys saying I had damaged their room door. Mind control agencies were trying to bleed me close to end so that I would somehow run out of money and then become their victim. Well, I was looking for my sources of money and I recalled that I had money in a MCB foreign currency account (it was in a DHA branch and I had moved to Johar town for several years and had not paid any visit to DHA branch where I lived earlier for two years. It was not a lot of money anyway and just stayed in account) that was dormant for several years. It was the same account for which I had paid the check that could not be cashed and the guy continued to ask me several times to activate the account. <br>
+When I sent a cheque to withdraw  the money from DHA branch of MCB bank, I came to realization that cheque I had given the CEO of immigration firm had been withdrawn in back dates despite that my account was dormant and I knew very well that my cheque had not cashed since CEO kept calling me from time to time for the cheque. When I needed money crooks of Pakistan army connived with crooks of MCB bank and arranged for the cheque to be withdrawn in back dates so I could not gt any money. I was in UK so I could not do anything. If I am wrong, I want to invite crooks at MCB bank to sue me for defaming them on internet.<br>
+I would also want to invite the supposedly trustworthy British bank to sue me for defaming them (people know which bank it is since I publicly discussed it when I was in UK) after throwing some insult at them in public but I really do not want to annoy everyone therefore I have remained silent about them.<br>
+So I think that crooks at MCB banks have again blocked my ATM card on insistence of crooks in Pakistan army who is in turn bribed by scum in American army. Since I have put my foot on tails of scum generals in American army, they would have contacted scum in Pakistan army. Scum knows each other everywhere.<br>
+Since I told friends that I spent a lot of money to stay free from ind control drugs and antipsychotics in UK, I would want to mention that I never regretted that. During my seven months in Uk, a lot of my neurotransmitters that mind control agencies had blocked for a decade came back and could never be properly controlled ever after that. Though it still took me a lot of time to do good research, I was always mentally better after I came back from UK.<br>
+This is funny that CEO of immigration firm that stole millions of dollars from a large number of people is living a happy life in UK while I who just wanted to work hard and excel by doing something good in the right way was made an example by UK authorities. I Was trying to go to other countries from UK but UK authorities made sure I could not get visa to any country and would have to go back to Pakistan though in the end, I think I am finally happy that I am living in my country. I just do not want to be abused by pigs of American army trying to find favours from rich jews.</div>
+
+			
+									
+									<div id="sig876174" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876175">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876175">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876175">
+
+			<h3 ><a href="#p876175">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876175&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876175" title="Post #1894">#1894</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 23rd, 2023, 11:41 pm</span></p>
+			
+			
+			
+			<div class="content">Since this came up, I opened my old emails to MCB Bank. They sent me an email in UK saying they had not done anything wrong completely circumventing any mention that account was dormant.<br>
+<br>
+1. They cleared my cheque in backdates.<br>
+2. There could be no transaction according to banking rules since the account was dormant for several years.<br>
+3. I visited the bank two years later in 2012 and they admitted that account was dormant but continued to lie on my face that they were not keeping record of dormant accounts which was again a lie. Bank officer said that this would go out of my pocket and I cannot pay you anything. I did not want to put up a fight in face of his stark refusal.<br>
+<br>
+Here is my email to bank.
+<blockquote class="uncited"><div class="blockquote__inner">Dear Aqsa,<br>
+<br>
+<br>
+I just checked with MCB Johar Town about how much money I have in my MCB Defence dollar account 0280. I was informed that I have just seventy five dollars in my account. I know that in my account there must be, at least, more than 2500 dollars to 3500 dollars. I wrote a cheque to Future Concern Associates in 2009 and I explicitly checked that payable amount was available in my account when I wrote the cheque. I only forgot to know, at the time of writing that cheque, that my account was dormant. People at Future concern associates also mentioned that my cheque was returned since my account is dormant. I did not make my account active even when FCA told me about my dormant account. I also know with all certainty that I had not operated that account since I transferred money to my MCB Johar Town account so it must be dormant when I wrote the cheque to Future Concern Associates. I want to know how balance in that account is just seventy five dollars now.<br>
+<br>
+ <br>
+I would request you to please explain this anamoly. Is the bank manipulating my accounts on some foreign hand's requests who Pakistanis are habitually accustomed to bow?<br>
+<br>
+<br>
+Kind regards,<br>
+<br>
+<br>
+Ahsan Amin<br>
+<br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="font-size: 120%; line-height: normal"><span style="font-family:Times New Roman"> </span></span></span></span></div></blockquote>
+Here is a formal reply that bank gave me while I was in UK. Bank did not talk anything about dormancy of account in the mail and totally circumvented this mention since mentioning anything about it would create problems for them. Obviously it was my check and signed by me and bank repeated the same obvious thing in the email. But according to banking rules, it could never be cashed when account would be dormant. Of course MCB crooks never wanted to admit that they had settled everything in backdates on insistence of Pak army crooks.<br>
+
+<blockquote class="uncited"><div class="blockquote__inner"><span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">Dear Sir,</span></span></span></span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"> </span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">We have reviewed transactional details of your account. The transactions executed in your account have been duly authorized by yourself. Please review the following:</span></span></span></span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"> </span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">Check #: 0341201 was duly signed and made payable dated October 10, 2009. This check was issued by you from a check book which was collected by you in person according to the check book issuance register. </span></span></span><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">The transaction was carried out keeping in view the normal banking procedures. Signatures of the person collecting the payment are also duly endorsed on back of the check. As a norm customers are aware of the issuance of the checks, additionally most of the checks which are paid to a specific source are crossed and paid in party's name.</span></span></span></span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"> </span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">We value your patronage and always honor the payments which are made by you, these can be made to anyone as per your liking and the bank has no deciding authority to give or hold any payments to anyone. A banker only checks the instrument at the time of payment and the check in question is of a authentic, normal and  genuine tender on which the payment cannot be stopped unless / until instructed formally by the account holder in writing in advance.</span></span></span></span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"> </span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">This is for your information.</span></span></span></span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"> </span></span><br>
+<span style="color:#1d2228"><span style="font-size: 100%; line-height: normal"><span style="color:#0000ff"><span style="font-size: 100%; line-height: normal"><span style="font-family:Arial">Best,</span></span></span></span></span></div></blockquote>
+.<br>
+.<br>
+.<br>
+Here is my bank statement to support my claim.<br>
+<a href="https://postimg.cc/sMGg5cqD" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/K8J3Sp5L/0059956641000280.png" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig876175" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876176">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876176">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876176">
+
+			<h3 ><a href="#p876176">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876176&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876176" title="Post #1895">#1895</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 24th, 2023, 12:00 am</span></p>
+			
+			
+			
+			<div class="content">I have posted the original PDF document of bank statement I received from the bank (as an attachement) when I was in UK.<br>
+
+<div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=10207&amp;sid=d5afc0241eb7011287532331a9b6530e">0059956641000280.pdf</a></dt>
+						<dd>(14.42 KiB) Downloaded 60 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+
+I think it is a good thing for the society since crooks and MCB bank and others would be more careful before deceiving their customers.</div>
+
+			
+									
+									<div id="sig876176" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876177">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876177">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876177">
+
+			<h3 ><a href="#p876177">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876177&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876177" title="Post #1896">#1896</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 24th, 2023, 4:32 am</span></p>
+			
+			
+			
+			<div class="content">The email that was sent to the bank about inquiry was titled "<strong><span style="color:#000000"><span style="font-size: 100%; line-height: normal"><span style="font-family:Tahoma">Subject:</span></span></span></strong><span style="color:#000000"><span style="font-size: 100%; line-height: normal"><span style="font-family:Tahoma"> Customer Complaint for Dormant Account". </span></span></span><br>
+I had asked the concerned bank manager how money could be withdrawn from my account while it was dormant. Please notice that due to obvious wrong doing by the bank, (in the blue email) the officer never mentioned dormant account anywhere and rehashed the obvious things that it was my own cheque signed by me. But he did not touch the topic of dormant account since that is where bank's wrongdoing was obvious.<br>
+<br>
+In Pakistan's banking rules, when an account is not operated for one year in any form, it becomes dormant and then no transaction can be made in the account. My cheques should continue to bounce back until the account become active again. And the only way to activate the account is that I personally go to the bank and make a small token deposit and ask the staff to activate the account. And then normal banking and clearing of cheques could resume.<br>
+<br>
+Please note that transaction under dispute of 2500 dollars is listed on 05-Nov-09.<br>
+Immediately previous transaction is listed on date 27-Jun-08 which is an internal withdrawal of 10,000 dollars. I did not go to the bank even on 27-Jun-08 and transferred money internally to another account by approaching the other branch of the bank.<br>
+After this last withdrawal on 27-Jun-08, the account should become dormant on 27-Jun-09, after one year of inactivity.<br>
+The only way to activate the account is that I go to the bank myself and make a small token deposit and that deposit transaction should reflect in the bank statement.<br>
+Until I activate the account myself, all cheques should bounce back after 27-Jun-09. <br>
+However cheque on 05-Nov-09 is cashed after an inactivity period of more than one year without any transaction in between. This cannot happen when the account as dormant. It cannot happen without somebody at bank manually overridden the system.<br>
+<br>
+Now what is the true story. I clearly recall the in January and February of 2010, CEO of immigration firm had called me requesting me to activate the bank account but I had known his intentions so did not activate it. Contrast this with the bank statement that says that cheque was withdrawn on 05-Nov-09. <br>
+What happened was that is very late November or December of 2010, when I started running out of money in UK, mind control agencies wanted to quickly end my money and they knew I had money in the account and they also knew I had written a cheque that bounced back. So mind control agencies simply asked Pak army to arrange for clearing of cheque. MCB Bank obliged powerful army by clearing the cheque in back dates. Since they had altered the books, there was no way they could have simultaneously take care for dormant account and now that should be a problem for the bank. <br>
+Please ask other Pakistani banking experts about it and take their opinion. <br>
+<br>
+A bank computer system would never allow a cheque to pass through when the account is dormant until it is overridden by the bank staff. But bank tweaked the system in back dates and passed the cheque.<br>
+<br>
+So this is how crooks at MCB bank deceived me to strip me of my $2500.</div>
+
+			
+									
+									<div id="sig876177" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876178">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876178">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876178">
+
+			<h3 ><a href="#p876178">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876178&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876178" title="Post #1897">#1897</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 24th, 2023, 8:21 am</span></p>
+			
+			
+			
+			<div class="content">Friends, as I mentioned yesterday, I have worked on an older program to calculate the Z-series from data and improved it. It is based on regression and equi-probable normal values. I had written a relatively informal program like this earlier but I improved the older program and expanded central moments about mean using regression. Mean is always known with precision but median(as earlier program was based on expansion around median) is not known always known with certainty in a distributional sense. I tried to use the program on monte carlo SDE data and the program works reasonably well but still eighth moment is a bit off. I would try to post this program later today.<br>
+<br>
+I have been able to think of a better program and want to share its details with the friends. Suppose we are given eight moments and we want to find a Z-series representing it. We could find eight discrete representative points so that eight moments are matched. We could write eight equations for eight raw moments with eight discrete points/variables and solve these eight non-linear equations. Please note that these are eight equations and eight unknown variables. <br>
+We would have to solve these equations with multidimensional newton method. We have to explore the feasibility of the method if Newton method behaves well or we could find starting seeds that help Newton convergence or any other possibilities that could help us easily solve for eight non-linear equations. So at the moment I want to explore the possible feasibility  and possible ease of the method.<br>
+<br>
+A representative equation for nth moment would be<br>
+<br>
+[$]{x_1}^n \, + \,{x_2}^n \, + \,{x_3}^n \, + \,{x_4}^n \, + \,{x_5}^n \, + \,{x_6}^n \, + \,{x_7}^n \, + \,{x_8}^n \, = \, \mu_n [$] <br>
+<br>
+If eight moment equations could easily be solved for eight discrete points, we know that these points would be on an equi-probable grid by default as opposed to haphazard data that comes out of simulations and observations of stochastic processes and where we have to do a regression with equi-probble grid since data itself is not on equi-probable grid. Again since the eight discrete representative points when found would be on an equi-probable grid, we could assign each of them an appropriate value of underlying Z directly by CDF matching. <br>
+<br>
+Once we have found eight discrete representative points and their associated Z-values, we could do an eighth order Lagrange interpolation to find eight derivatives around mean(we could use mean instead of median and it would also work well as I have already done it in some cases and found it to work well) which can then be converted to coefficients of Z-series that has the same moments as the input moments.<br>
+<br>
+Only question is trying to see and explore the possibility if the algorithm proves more feasible as compared to the other method.</div>
+
+			
+									
+									<div id="sig876178" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876181">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876181">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876181">
+
+			<h3 ><a href="#p876181">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876181&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876181" title="Post #1898">#1898</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 26th, 2023, 3:06 am</span></p>
+			
+			
+			
+			<div class="content">I have made this post earlier but re-posting again.<br>
+<br>
+I am very afraid that after reading my yesterday's post many friends would think that it is all my fault since I did not struggle enough to get me out of this and tried to leave my family.  I am writing this post to dispel that impression.<br>
+First important thing is that Pakistan army manages CIA's mind control in Pakistan. Pakistan army facilitates all mind control in Pakistan in return for huge bribes that are paid to generals by CIA. I tried to escape my family several times, but Pakistan army made sure that I was forcefully placed in control of my family every time. Most psychiatrists also follow military's orders, and these psychiatrists also have their own uneducated personnel that are very willing to use force to detain and control the mind control victims and police only helps the most influential people. I also tried several human rights organizations in Pakistan and found out that they were very aware of mind control and drugging of entire markets in the city but made no big deal about it and never were willing to help me. Yes, one psychiatrist tried to help me somewhat, but my family made sure that I was detained whenever I insisted on seeing that psychiatrist. <br>
+Here I will describe a few times when I tried to escape my family and how it finally worked out.<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">One incident is from 2009, as I recall. I did not want to live with my family in Lahore, so I left the city and drove to </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> by car. Upon arrival in </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">, my ATM card was disabled upon orders of army. I was stopped and repeatedly harassed by police in </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">. I was stopped in Clifton by a police car and they took me to Clifton police station on 23rd of February 2009. Police checked my car and said two front seat belts of your car carry different manufacturing dates so "your car must be stolen, and we have to verify it" and reported me to their boss. I asked them to go ahead and also requested that police had repeatedly asked me the same thing that my car must be stolen in past two days so once you have verified, please write me a written statement so I can just show it to police everywhere once they would stop me in future. The Police officer agreed to that and asked me to wait in the other room. I waited there for about half an hour and the officer came again and violently slapped me several times. He said," You are over-educated, and you think of yourself as something." I was surprised since I had not told him anything personal at all. I was seriously humiliated, but I knew they would beat and lock me if I responded in force. I waited another hour sitting next to locker room of the police station. After some time, Navy personnel came in three jeeps to the police station and asked me to accompany them. I was taken to compound of PNS Nigran(Navy) in </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> where they locked me in the Navy jail. The next morning, I was taken to open compound, and I was circled by more than ten people who wanted to give me injections by force. I seriously tried to resist but they continued to ask me to take injections. They were human enough to not beat me for that. I asked again and again that they were not even telling me what the injection was, but they finally forcefully injected me. And sent me back to Lahore with my brother-in-law. Upon my arrival in Lahore, I was detained for six months by a psychiatrist.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Here I want to tell friends one interesting incident that happened when I was driving towards Karachi. I had entered Sindh province and was normally driving my car listening to music. All of a sudden, I noticed that my right arm was getting paralyzed. It was becoming very difficult to move my arm even very slightly. I knew at once that it had to do with mind control, and I realized that I had to urgently do something. I somehow figured that something (gas) was going into my nose. I had some raw cotton handy on the other seat (as I would force compressed cotton into my ears to decrease the effect of mind control something that I used before 2010) and I put some cotton in my nose using my left hand, and all of a sudden, my right arm was perfectly alright. Cotton probably altered the frequencies of waves going into the nose and they were not effective after that. I am sure if I had not pulled this trick, they would have said later that Amin was a psychiatric patient who escaped his home and ran away and was later found in poor condition helpless. And then psychiatrists would have restricted my free movement.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Another time when I decided to live on my own away from my family was in year 2011 when I returned from London. <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">When I came back to </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> from London, I </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">wanted to rent a house in Karachi and live alone away from my family who was in Lahore. Pakistan army continued to threaten people to not rent me a house. I continued to call my family everyday despite what they had earlier done to me. My brother-in-law and his friends called me and posed as brokers interested in arranging housing for me over the phone and asked me to come to a thinly populated area. I asked the taxi driver to reach the place they mentioned. My brother-in-law started forcing me to go with him. I continued to ask him that we could talk and settle everything nicely, but he was belligerent. They forced me off me feet on the road and tied both my hands and legs. He wanted to blindfold me in the car by putting a cover on my head, but I forced my head against the roof of the car (my hands and legs were tied) and he could not blindfold me. They took me to a house in DHA </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Karachi</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> and locked the main gate. Some people continued to come and go from the smaller gate. They gave me some injections and I would fall asleep. I would doze for about half an hour to hour after every injection and when I would wake up, they would give me some other injection. Basically, they were giving me some injection and would wait for about one hour to see the effect of that injection and then would give me another injection after seeing effect of previous injection. They gave me five or six different injections over the course of the day. In the afternoon they gave me some food to eat. While I was eating, a woman I never knew and never had seen before, and all her breasts were exposed came and started eating in the same plate I was eating. I continued to answer what she said but did not do anything at all. They continued to give me more injections after I had taken food and, in the evening, they gave me a final injection and I woke up at a psychiatrist's facility next day. Doctor did not interview me for several days and my heavy medication started again. I was threatened to comply. One of the other patients told me that some people took me out of my room unconscious at night and brought me back in the morning. I told Doctor I to make sure that nobody entered my room when I were sleeping, and doctor agreed. I noticed that people continued to enter my room at night when I was sleeping. After a lot of those incidents and protests, Doctor changed his line and said that we really have to enter your room at night because of your safety. Doctor kept me detained in his facility for more than nine months and only in early 2012, I was allowed to leave his facility. Earlier I had told the doctor that I did not want to live with my family and wanted to live alone but doctor told me that he would free me only if I agreed to live with my family and otherwise detain me indefinitely. </span></span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I had to live with drug addicts and in a very unprofessional environment. He allowed me to leave after nine months when I knew that there was no other way but to live with my family in Lahore.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I had received HSMP work visa for UK in 2010. In my fool's paradise, I thought that British are the most civilized people on earth and once I would go to London all the mind control will end and I would live happily ever after. During my three days in Pakistan prior to arrival in London, I had very little food thinking that I would eat better undrugged food once I reach London. Though my first week was better, I started getting hit with drugged food right after my first week in UK. At one stage after a month, all drinks and beverages manufactured by Britvic were drugged. There are five or six large departmental store chains in UK who manufacture their own drinks and beverages and all of them were manufacturing drugged beverages. It was extremely difficult to get a good drink in London.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">When I was in London, I posted on a Chinese LinkedIn group about mutual cooperation. A contact in China wanted to start a high performance computing firm targeting finance and he wanted me to work for him in China and did all the required official work for me to get </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Chinese</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> visa. The visa agency first asked me for extra documents, but my Chinese friends arranged all the documents. When all documents were complete, Visa agency changed their line saying that I had to apply for visa in Pakistan although I was a legal resident in UK with a work visa and their website mentioned that Pakistanis on UK work visa could apply for </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Chinese</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> visa from London. <span style="color:#000000"><span style="font-family:Arial, Trebuchet MS, Helvetica, sans-serif"> I later went to </span></span><span style="color:#000000"><span style="font-family:Arial, Trebuchet MS, Helvetica, sans-serif">Chinese</span></span><span style="color:#000000"><span style="font-family:Arial, Trebuchet MS, Helvetica, sans-serif"> embassy, but they told me that they had relegated all visa matters to visa collection firm. I had to abandon the idea of going to China since </span></span><span style="color:#000000"><span style="font-family:Arial, Trebuchet MS, Helvetica, sans-serif">Chinese</span></span><span style="color:#000000"><span style="font-family:Arial, Trebuchet MS, Helvetica, sans-serif"> embassy was not willing to annoy British for a random Pakistani trying to get to China. </span></span>Of course, some influential people in UK wanted my persecution to continue and </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Chinese</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> diplomatic staff had far more regard for their British hosts and had no special sympathies with me.</span></span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Lot of times such machinations worked since some influential people in UK were telling blatant lies about me.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Later when in UK, I also applied for German visa which was promptly refused. And I figured the hard truth that it was not worth applying to any Schengen country's visa after that. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">In 2005, <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I was asked by my Japanese employer to come to Tokyo (2005) and work in their office there(I was earlier working from Lahore). Japanese authorities drugged large number of places in Tokyo city and mad e my life absolute hell and I resigned only after one month of stay in Tokyo. I did not want to return to Pakistan due to huge persecution by my family and the army so I decided to go somewhere where US military could not go and got Iranian visit visa from Tokyo and went to </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">. <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Crooks in US defense gave huge amount of money to Iranian crooks(crooks everywhere know each other well) and they used huge microwave and gases torture on me.</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> I could never imagine that mind control could ever follow me in Tehran but I had seen extremely unlikely things happen in my life earlier. For that reason, when I reached Tehran and on my first night in Tehran, I again wore an aluminium shield in the hotel and then extreme torture stated. They had already made all preparations for my arrival in Iran. They directed extreme microwaves on me and due to extreme pain, I left the hotel somewhat after midnight and they continued to direct microwaves on me and there was extreme physical pain and I ran on deserted streets to somehow be able to avoid mircrowave torture. I still recall that my hotel was in close vicinity to major government buildings since I still have some memory that some of the buildings I noticed were important places but I forgot the particular details.</span></span></span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">And one very interesting incident happened in Iran. I was walking in the city and I came across a major building with tank stationed outside. I thought I may be able to get some possible help and walked inside and asked for help. I was taken to a guy inside the office and he said that he wanted another person who knows English well to write down everything I have to say. Actually they were following me everywhere and that guy had already been told what to say before I was taken to him by security at the gate. Then they took me to a meeting room with a large table and the two people sat on the other side of the table from me. I started telling them about my persecution and the person who knew English started writing and then tea came. They asked me to take tea. I just had a sip of tea that I started to completely lose my mind and orientation due to mind control drugs in the tea but there were several sugar cubes and I realized that sugar must be good and I swallowed several sugar cubes right away and I was slightly better. I told the Iranians there that I really needed to go to wash room. I walked out of the room and went towards the wash room and in the gallery I noticed that one room had a door wide open and there was a refrigerator there. I opened the refrigerator door and drank plenty of water and I was far better. When I went back to the meeting room and started telling my story again, both guys were no longer interested in anything and told me that they could not help me.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">There was a large amount of drugged food in central </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> and I surely believe that it must have been drugged at the spot by a large number of people at stores and food places when I would get closer or arrive there. I was hit by drugged food again and again.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">One of the hotels Azadi Hotel which was located in outskirts of </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> was a bit better and I started living there but they asked me to leave saying that they had an upcoming conference and they could no longer let me live there. I recall that some Iranian agents came to hotel and told me they had come from Iranian president but it was obvious that they were Iranian intelligence and they wanted me to work for Iran. I knew the meanings of getting associated with Iranian intelligence would spoil my life forever and I just told them that I wanted to live and work in Iran as an ordinary citizen.</span></span></span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Just after two or three days in </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">, I was trying to find refuge in embassies like Vatican in </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> asking them to help me on human grounds. I left </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> after one week and flew back to Pakistan. I still recall that I arrived at </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Tehran</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> airport a lot earlier than flight departure. I had previously protested somewhere against unnecessary removal of shoes of Muslim passengers and it was known to mind control agencies. They asked Iranians security on airport who approached me inside the departure lounge and took me to a room and asked me to remove my shoes and had my body search.</span></span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Those eight days I lived in Tehran were literally some of the most difficult days in my life and I really decided to leave quickly after a week.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Since during all this, mind control agencies could not control me well and several of my neurotransmitters were coming back, they had extremely huge amount of gases in washrooms in Dubai airport where I would stop for transit while going to Karachi. No wonder ultra conservative crooks in US army align so well with Saudi (who dissolve their criticizers in acid) and Dubai.</span></span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I had earlier faced mind control in Singapore and Hong Kong towards the end of year 2000.</span></div>
+
+			
+									
+									<div id="sig876181" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876182">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876182">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876182">
+
+			<h3 ><a href="#p876182">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876182&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876182" title="Post #1899">#1899</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 26th, 2023, 3:28 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I did not want to talk about the British Bank. But then I have decided to change my mind. I will still not name the bank but this is for believers who think that banks never cheat anyone. I would request people to understand if somebody tells them that a bank cheated on someone (especially when a motive like a secret service or someone influential/powerful is behind.) to please do not make fun of the person in disbelief and  rather try to investigate. I am sure these things are happening to a lot of victims in our society.<br>
+Here is an old post.<br>
+<br>
+When I was in Britain, a British bank that I was banking with stole my 1000 pounds. I was travelling everywhere and exhausting money rather quickly but British secret services were already vexed because it was becoming very difficult to drug the food everywhere and I would just take a taxi and roam around and then take food from some random place. So British secret services arranged for my bank to steal my 1000 pounds. I had always used credit card by that time for my transactions. And a bogus 1000 pounds transaction appeared on my statement and this transaction was made without credit card or cheque book and the bank later told me that I had shown my ID at the bank branch and withdrawn money using withdrawal slip. I was not even aware of any such mode of withdrawal since I was from Pakistan where we always had to use a cheque or credit card. <br>
+<br>
+Again when I complained to the bank, the bank refused to discuss anything with me in writing at all and told me that they would have to talk to me in person or over the phone. (The bank later showed me a withdrawal slip that carried my counterfeit signatures when I visited them in Bradford branch. I Insisted it was a fraud but they told me that they will look at cameras and make further investigations but the bank never told me anything about investigations with cameras and my last few weeks in Britiain were very difficult and I failed to pursue the matter in a solid way. Bank also refused to discuss anything with me in writing. This thing remained on internet with the bank name and the bank or anybody else never cared). Again as I told friends that I was not even aware at that time that I could withdraw money using a walk-in withdrawal sip. I always used a credit card and I had not used my cheque book at all by that time. I made the following posts on internet when I came to know by fraud by the bank.<br>
+ <br>
+I wrote a few posts on internet and I remove reference to bank and post the rest here.<br>
+here is my post written on <span style="font-size: 85%; line-height: normal"><span style="font-family:Verdana, Arial, Helvetica">Thu Apr 07, 11 12:34 PM.</span></span><br>
+<br>
+
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal"><br>
+I was in Birmingham today and needed some money so I went to (British Bank) close to New Street. I withdrew some money and asked the branch to give me my bank statement of past two months. I noticed that one entry in last month when I was in Bradford mentioned a withdrawal of 1000 pounds saying H'GATE BRADFORD which had not occured. I noticed it and talked to staff at the bank. ******* , an employee, of the bank spoke to me and said it was a withdrawal at (British Bank) Bradford. I knew I did not go to the bank at Bradford to withdraw any money though I was there in those dates. I also noticed that entry in the statement carried no refernce to my credit card. Since I opened my bank account, I have never made a transaction with cheques, phone banking or internet banking(without my card). Bank staff said that they would investigate the matter. I requested them to make all statements after investigation through internet for my records but they plainly refused to do that and said they would only explain the matter over phone or in person. I again stressed that I did not go to the bank in Bradford and the entry in statement did not mention my card at all so it must be bogus. Though I would be reluctant to openly blame the bank, and I would like to see the result of their investigations, I still see an extremely strong possibility of involvement of British Secret Services especially since a precedent of manipulation of my accounts by (A Pakistani Bank) has already occured. I will let people know of the result of the investigation by the bank.</span></div></blockquote>
+Here I want to tell friends that bank completely refused to give me any statement in writing on paper or through internet. Bank staff were evasive and would not even give me their cards and would say they had run out of their cards.  <br>
+When I visited Bradford city again a week or two later, I went to city center branch of the bank where fraud had occurred. They refused to talk to me inside the bank and an officer walked with me out of the bank and we stood at the other side of the road across the bank where he discussed the matter with me. He said they would investigate the matter but he was not willing to write anything on paper at all and told me that they would not communicate on internet.<br>
+<br>
+.<br>
+Here is the second post I made about it on Fri Apr 08, 11 01:11 PM. I really do not have the scanned copy on me now that I mentioned in this post since I Was detained when I returned to Karachi and a lot of other things happened.<br>
+<br>
+<br>
+
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal">I have attached the scanned PDF file of one page of my bank transactions that took place in my account with(British Bank). This is the page that contains the bogus entry of 1000 pounds<br>
+<br>
+<br>
+shown as 24/03/2011 PAY H'GATE BRADFORD 1,000.00DR 10,254.19 U<br>
+<br>
+Please notice that transaction does not mention my credit card and since I started banking with (British Bank), I have never made a single transaction without my credit card. I never used my cheque book and I use phone banking only to inquire my balance. I have never transferred money to any other individual's account through my bank since I came to UK. I also never used any branch of (British Bank) to transfer money anywhere. Please notice "*******" written on the page in black ink which is the name of (British Bank) staff who mentioned that this transaction took place in H'GATE Bradford Branch of (British Bank). I requested him for his card but he told me he had run out of his business cards and simply wrote his name on bank statement page we were discussing. He also refused to use email for the purpose of communicating with me. I will let the Wilmott friends know about the result of their investigations.<br>
+<br>
+I am spending money like anything already so I ask UK secret services with humor, " British thieves please do not swindle my money like this." It would have probably kept me afloat for just a few more days.<br>
+</span></div></blockquote>
+
+.<br>
+Here is another post I made about it on internet at Fri Apr 08, 11 10:17 PM.<br>
+.<br>
+
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal">Whenever I withdraw cash at counter from any branch of (A British Bank), it shows as a card witdrawal in all statements. I do not carry my cheque book. I do not even know my account number without my card. I have never used a single leaf of my cheque book. It is bogus entry. My only id is my passport which I keep with myself at all times and no one else can have any other id. I do not have a driving license.</span></div></blockquote>
+.<br>
+This post was made on <span style="font-size: 85%; line-height: normal"><span style="font-family:Verdana, Arial, Helvetica">Fri Apr 08, 11 11:27 PM</span></span><br>
+<br>
+.
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal">As I earlier said, (A British Bank) staff at Birmingham told me that this transaction took place at H'GATE Bradford Branch. They gave me the print out of my statements and I have shown just shown one page of them. As I earlier said I have not made any transaction without my card. I lost my pin and ordered a new pin and since I have not been to London for more than two weeks, I have not checked it. Anyway I did not enter (A British Bank) branch in Bradford. I still continued to think whether there is any very remote possibility if I entered into (A British Bank) branch and might have forgotten. But I clearly remember that I ordered a taxi and asked it to come close to (A British Bank) but I DID NOT ENTER THE (A British Bank) BRANCH and I remember it very clearly.</span></div></blockquote>
+
+.<br>
+I made this post on  Sat Apr 09, 11 09:08 AM. Since I had asked the taxi company when I was giving them directions to come close to the bank. When taxi company staff asked me where I was, I turned around and noticed "British Bank Branch" and asked the taxi to come close to bank branch and since my phone were recorded, secret services would have been sure that they could cite the conversation as an evidence that I was there and had withdrawn the money. <br>
+<br>
+<br>
+.
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal">I was in Bradford and I did some minor shopping for clothes and walked towards the boundary of the city centre, opened my laptop and looked for taxi companies in Bradford. I wanted to go to Manchester. When I was trying to recall all the events, I remember that I was just stepping outside of the city centre and when taxi compny asked me for directions over the phone, I told them I am close to (A British Bank). I remember very clearly that I looked around when taxi company was asking for directions to reach me and I saw the bank and told the taxi company that I was close to the bank. When I recalled everything I remember that I noticed the bank there but only to give directions to the taxi company. I very clearly remember I DID NOT GO INTO THE BANK. I had enough money and I had withdrawn five thousand pounds from Earls court branch where my original account is, probably two weeks ago before I departed from London. Again I am perfectly confident, I did not make any transaction in the bank there.</span></div></blockquote>
+Later when I had thought about the whole thing I recalled that when I was leaving bradford, I ordered a Taxi. Taxi driver asked me for directions and I looked around and noticed that bank (with whom incidentally I had account) building was most prominent so asked the taxi to come to bank's building. It was total chance. My call was obviously being recorded by secret services. They planned to steal money knowing when I would refuse to admit the transaction, the phone call to taxi asking to come to the bank building would be given as evidence that I was actually at the bank and therefore I must have withdrawn he money.</div>
+
+			
+									
+									<div id="sig876182" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876186">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876186">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876186">
+
+			<h3 ><a href="#p876186">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876186&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876186" title="Post #1900">#1900</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 26th, 2023, 7:21 am</span></p>
+			
+			
+			
+			<div class="content">I want to request Pakistanis abroad and at home to please let some Pakistani investigative reporters and other journalists know about my blog. Please also inform dawn, Jang, business recorder, tribune, ARY news and all other Pakistani newspapers so that they could come to know how our army systematically fails Pakistani talent in return from bribes from CIA and American Army. This is how crooks in our army buy islands in New Zealand and properties in Belgium. There are more than 500 very talented Pakistanis who are kept constantly on mind control by our army. They have continued to do this over past twenty years since Pervaiz Musharraf came to power. If bastards in our army had not retarded intelligent Pakistanis, there would be many very successful international enterprises coming from our country and we would still be at Par with India and Bangladesh in per capita income who were much behind in per capita income 25 years ago and today are much ahead of us. This is since our army continues to darken the future of our nation in return for hundreds of billions of rupee generals are given by CIA. This is probably one of the most successful operations by CIA to silently fail an entire nation.<br>
+<br>
+I want to request Pakistanis abroad and at home to please tell brave journalists and others like Hamid Mir, Aitezaz Ahsan, Latif Khosa, factfocus people, and other prominent people in political parties and government that readers of my blog can think about my thread. Every chief of our army lives abroad after retirement. But we want to live in our country forever and build our "dhirti Maan" as famously quoted by Latif Khosa.<br>
+<br>
+I want to say again that if I have survived to say this today, it is only due to help and support from good American people.  Most of the good American people  have a lot of humanity for us and they always want our poor nations to progress. Good people in United States supported me when nobody in my own country was ready to support me. American people are not a bad people at all and they do not support any mind control in our nations or their own nation. <br>
+However large armies in most countries are composed of corrupt crooks only. China, America, Pakistan. All these countries have large corrupt armies. American army for example plays in hands of rich Jews among other forms of rampant corruption. So please be careful to not generalize my post about corrupt American army and defense to good American people.</div>
+
+			
+									
+									<div id="sig876186" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876191">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876191">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876191">
+
+			<h3 ><a href="#p876191">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876191&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876191" title="Post #1901">#1901</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 27th, 2023, 5:23 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, as I mentioned yesterday, I have worked on an older program to calculate the Z-series from data and improved it. It is based on regression and equi-probable normal values. I had written a relatively informal program like this earlier but I improved the older program and expanded central moments about mean using regression. Mean is always known with precision but median(as earlier program was based on expansion around median) is not known always known with certainty in a distributional sense. I tried to use the program on monte carlo SDE data and the program works reasonably well but still eighth moment is a bit off. I would try to post this program later today.<br>
+<br>
+I have been able to think of a better program and want to share its details with the friends. Suppose we are given eight moments and we want to find a Z-series representing it. We could find eight discrete representative points so that eight moments are matched. We could write eight equations for eight raw moments with eight discrete points/variables and solve these eight non-linear equations. Please note that these are eight equations and eight unknown variables. <br>
+We would have to solve these equations with multidimensional newton method. We have to explore the feasibility of the method if Newton method behaves well or we could find starting seeds that help Newton convergence or any other possibilities that could help us easily solve for eight non-linear equations. So at the moment I want to explore the possible feasibility  and possible ease of the method.<br>
+<br>
+A representative equation for nth moment would be<br>
+<br>
+[$]{x_1}^n \, + \,{x_2}^n \, + \,{x_3}^n \, + \,{x_4}^n \, + \,{x_5}^n \, + \,{x_6}^n \, + \,{x_7}^n \, + \,{x_8}^n \, = \, \mu_n [$] <br>
+<br>
+If eight moment equations could easily be solved for eight discrete points, we know that these points would be on an equi-probable grid by default as opposed to haphazard data that comes out of simulations and observations of stochastic processes and where we have to do a regression with equi-probble grid since data itself is not on equi-probable grid. Again since the eight discrete representative points when found would be on an equi-probable grid, we could assign each of them an appropriate value of underlying Z directly by CDF matching. <br>
+<br>
+Once we have found eight discrete representative points and their associated Z-values, we could do an eighth order Lagrange interpolation to find eight derivatives around mean(we could use mean instead of median and it would also work well as I have already done it in some cases and found it to work well) which can then be converted to coefficients of Z-series that has the same moments as the input moments.<br>
+<br>
+Only question is trying to see and explore the possibility if the algorithm proves more feasible as compared to the other method.
+</div></blockquote>
+.<br>
+.<br>
+Friends, I had coded multidimensional Newton method for this two days ago but Newton does not converge from arbitrary seed. Some intelligent seed has to be analytically found that is inside catchment of Newton method. <br>
+This was the same problem with other method to find Z-series from moments that now mostly works but over the months I had tried again and again to improve the seed. Only when I got intuitive understanding of some features of the problem that I was able to find a good working seed analytically.<br>
+However I am trying to think of some idea to find an analytic seed to problem and hope that I would be able to get it to work in next few days.<br>
+<br>
+I want to tell friends who follow my thread for mathematics that I am perfectly committed to my research. Some ups and downs and some other unrelated activity due to my persecution and mind control will continue but the real purpose of the thread is to continue with mathematical research and I am totally committed to the main core theme. An ideal world would be where everyone spent their time in some constructive activity and did not have to waste their energies in totally unproductive conflicts.</div>
+
+			
+									
+									<div id="sig876191" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876194">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876194">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876194">
+
+			<h3 ><a href="#p876194">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876194&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876194" title="Post #1902">#1902</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 27th, 2023, 1:56 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I continued to work today after a gap of two days. I noticed that there is probably no solution of eight non-linear moment equations with eight discrete points. when I optimized a  problem, I noticed that six points converged to zero (which was mean) with zero variance and only two outer points solved for the larger moment equations and still resulting variance was ten times the input variance. So I found that there was no way to find a general solution of eight moment equations with eight discrete points.<br>
+<br>
+However, I was able to use the iterative optimization ideas to make them work on finding coefficients of Z-series so that moments are matched. This was iterative optimization and took a long time so cannot be used for problems where Z-series have to be fitted in real time. However on all of the problems I considered, it continued to converge with increasing iterations. It took more than fifteen minutes on my slow 2013 computer but I think (though I might be wrong) that it will universally converge for the problems when moments are given so that a well-defined Z-series solution exists. It can be used for a large number of difficult problems when times is not greatest concern and would get a solution very well within the catchment of Newton method. It can also be used to find general seed for various types of problems that can then be used with Newton method to converge. <br>
+I am sure this optimization technique can be perfectly used for all different polynomials like Legendre and many other orthogonal polynomials to their respective polynomials series that we were trying to fit earlier.<br>
+I think only secret sauce that I used was that I took a discrete step size for each coefficient inversely proportional to its effect on variance. So that discrete perturbation of various Z-series coefficients at any time in optimization had a roughly equal effect on variance. My lesson from the exercise was that when we are discretely perturbing various different parameters to optimize a problem, the relative size of small perturbations in various parameters should be so that they have a roughly equal effect (of the same order) on the objective function. I think many difficult problems could become easier with this trick.<br>
+I am going to go out now for several hours on my motorcycle. But I will try to post the new optimization program later tonight after some possible improvements. If I do not post it tonight, I will post it by tomorrow at the latest.</div>
+
+			
+									
+									<div id="sig876194" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876201">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876201">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876201">
+
+			<h3 ><a href="#p876201">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876201&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876201" title="Post #1903">#1903</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 28th, 2023, 12:27 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I continued to work on the new matlab program. I made some more modifications to earlier algorithm. But I found that important thing in iterative optimization is proper choice of relative size of perturbations of coefficients of Z-series. I want to play with the program further and will post it during the evening today (in 12-18 hours).</div>
+
+			
+									
+									<div id="sig876201" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876202">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876202">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876202">
+
+			<h3 ><a href="#p876202">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876202&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876202" title="Post #1904">#1904</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 28th, 2023, 9:24 am</span></p>
+			
+			
+			
+			<div class="content">I am still playing with efforts to improve iterative optimization part of the Z-series Calibration to Moments program. I continue to see that relative size of perturbations have a great effect on the performance of the program. Therefore I went a step further and calculated sensitivity of improvement in objective function to iterative step change for each of the coefficients. I want to study this further to dynamically adjust the relative step size during optimization. Earlier I had decreased or increased step sizes in a static ratio (between different parameters/coefficients) fixed at the start of the program. This static step size ratio greatly affects the quality of program. But with this static ratio, in some cases optimization almost stalls and there are only miniscule improvement in objective function with each iteration and I realized the reason that some appropriate step size(with larger sensitivity) had to be increased out of the static ratio while other step sizes had to be kept smaller. And therefore I realized that I needed a dynamic ratio that can be adjusted during the running of the program. But to properly study this and add this capability requires some time so I would not be able to post my program for another day or two until I properly complete it.</div>
+
+			
+									
+									<div id="sig876202" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p876203">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile876203">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d5afc0241eb7011287532331a9b6530e" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d5afc0241eb7011287532331a9b6530e">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content876203">
+
+			<h3 ><a href="#p876203">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=876203&amp;sid=d5afc0241eb7011287532331a9b6530e" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p876203" title="Post #1905">#1905</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 28th, 2023, 2:03 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am quickly posting a preliminary version of the program that finds coefficients of Z-series by iterative optimization so that moments of Z-series variable match the input raw moments. I want to do a lot more improvement in the program and improve the algorithm it but I am posting an interim version. Again this is just preliminary and I will post a new version with major improvements in a few days.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = CalculateZSeriesFromMomentsAgainNew(rMu)
+%The above function takes an array of first eight raw moments as input.
+%And returns Z-series Coeffs upto 7th power of Z as
+%Y=c0+c(1)*Z+c(2)*Z^2+c(3)*Z^3+c(4)*Z^4+c(5)*Z^5+c(6)*Z^6+c(7)*Z^7
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%Input raw moments specified below
+
+rMu(1)=0.000012499863483*10^5;   
+rMu(2)=0.000021197093700*10^5;
+rMu(3)=0.000050274347857*10^5;
+rMu(4)=0.000171368317209*10^5;
+rMu(5)=0.000856094970826*10^5;
+rMu(6)=0.006320436615909*10^5;
+rMu(7)=0.068698344472325*10^5;
+rMu(8)=1.084082326087001*10^5;
+
+% mu=1;
+% sigma0=.8;
+% for nn=1:8
+% rMu(nn)=exp(nn*mu+.5*nn^2*sigma0^2);
+% end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+SeriesOrder=7;    %Z-series till 7th power. hardcoded here cannot chagne.
+mOrder=8;         %Number of raw moments in calibration. hardcoded here cannot chagne.      
+NMoments=mOrder;
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+sMu(7)=cMu(7)/cMu(2).^3.5;
+sMu(8)=cMu(8)/cMu(2).^4.0;
+
+
+% 
+% 
+% iter=1;           %Number of iterations in the calibration.
+%                   %Please experiment and play around.  
+% bGuess(2:7)=0;    %We have assigned initial values of coefficients 
+% bGuess(1)=1;      %other than c(1) to zero. We are starting with no prior information.  
+% [c0,c] = PreSmoothingGuessAdvancedFromGuessBestNew(sMu,bGuess,iter);
+% bGuess(1:7)=c(1:7);
+% iter=10;
+% [c0,c] = PreSmoothingGuessAdvancedFromGuessBestNewModified(sMu,bGuess,iter);
+% 
+% c0
+% c
+% 
+% %str=input("Look at pre-smoothing Guess result")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+c0=0;
+c(1)=1;
+c(2:7)=0;
+
+Iterations=25000;
+[c,ObjFunc] = OptimizeMomentsByIterationZseries04(sMu,c0,c,SeriesOrder,NMoments,Iterations);
+c0=-(c(2)+3*c(4)+15*c(6));
+ObjFunc
+c
+
+[FittedStandardizedMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments)
+
+
+%Please Uncomment this if you want to see a comparison of input moments and
+%fitted moments
+sMu
+FittedStandardizedMoments
+str=input('Look at comparison of fitted moments with input moments');
+
+%%%%%%%%%%%%%%%
+
+c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+c=c*sqrt(cMu(2));   %convert from standardized to central moments
+
+c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+
+[FittedRawMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+
+FittedRawMoments
+rMu
+end</code></pre></div>
+
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [c,ObjFunc] = OptimizeMomentsByIterationZseries04(sMu,c0,c,SeriesOrder,NMoments,Iterations)
+
+% Index(1)=4;
+% Index(2)=5;
+% Index(3)=3;
+% Index(4)=6;
+% Index(5)=2;
+% Index(6)=7;
+% Index(7)=1;
+% Index(8)=8;
+
+for nn=1:SeriesOrder
+    DeltaX(nn)=.00125/(factorial(nn)).^(.75);
+    %DeltaX(nn)=.00125/(factorial(nn)).^(.35);%uncomment for lognormal
+end
+
+
+[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+%ObjFuncBest= CalculateMomentsDiscreteXnObjFunction(Ms,Xn,X0,NPoints,NMoments);
+[ObjFuncBest] =CalculateMomentsMatchObjFunction0A(Moments,NMoments,sMu);
+cBest=c;
+c0Best=c0;
+ContImproveFlag=0;
+ImproveFlag(1:SeriesOrder)=0;
+DeltaObj(1:SeriesOrder)=0;
+DeltaObjPrev(1:SeriesOrder)=0;
+ObjSensitivity(1:SeriesOrder)=0;
+ImproveFlag0=0;
+ImproveCount=0;
+for mm=1:Iterations
+    ImproveFlag0Prev=ImproveFlag0;
+    ImproveFlag(1:SeriesOrder)=0;
+    for nn=2:SeriesOrder
+        DeltaObjPrev(nn)=DeltaObj(nn);
+        ObjSensitivityPrev(nn)=ObjSensitivity(nn);
+        cin=c;
+        cin(nn)=cin(nn)+DeltaX(nn);
+        c0in=-(cin(2)+3*cin(4)+15*cin(6));
+        
+        [SecondMoment]=CalculateSecondMomentC7(c0in,cin);
+        cin=cin/sqrt(SecondMoment);
+        c0in=c0in/sqrt(SecondMoment);
+        [Moments] = CalculateMomentsOfZSeries(c0in,cin,SeriesOrder,NMoments);
+        [ObjFunc] =CalculateMomentsMatchObjFunction0A(Moments,NMoments,sMu);
+
+        %[ObjFunc] = CalculateMomentsDiscreteXnObjFunction(Ms,Xin,X0,NPoints,NMoments);
+        if(ObjFunc&lt;ObjFuncBest)
+            
+            ObjSensitivity(nn)=-(ObjFunc-ObjFuncBest)/(cin(nn)-c(nn));
+            DeltaStep(nn)=(cin(nn)-c(nn));
+            DeltaObj(nn)=abs(ObjFunc-ObjFuncBest);
+            ObjFuncBest=ObjFunc;
+            
+            cBest=cin;
+            c=cin;
+            ImproveFlag(nn)=1;
+            
+        else
+            
+            cin=c;
+            cin(nn)=cin(nn)-DeltaX(nn);
+            c0in=-(cin(2)+3*cin(4)+15*cin(6));
+            [SecondMoment]=CalculateSecondMomentC7(c0in,cin);
+            cin=cin/sqrt(SecondMoment);
+            c0in=c0in/sqrt(SecondMoment);
+            [Moments] = CalculateMomentsOfZSeries(c0in,cin,SeriesOrder,NMoments);
+            [ObjFunc] =CalculateMomentsMatchObjFunction0A(Moments,NMoments,sMu);
+
+            if(ObjFunc&lt;ObjFuncBest)
+                ObjSensitivity(nn)=-(ObjFunc-ObjFuncBest)/(cin(nn)-c(nn));
+                DeltaStep(nn)=(cin(nn)-c(nn));
+                DeltaObj(nn)=abs(ObjFunc-ObjFuncBest);
+                ObjFuncBest=ObjFunc;
+                cBest=cin;
+                c=cin;
+                ImproveFlag(nn)=1;
+            else
+                ObjSensitivity(nn)=0;
+                DeltaStep(nn)=(cin(nn)-c(nn));
+            end
+        end
+        
+    %Index(nn)    
+    end
+    mm
+    ObjFuncBest
+    AvgSensitivity=0;
+    SumDeltaStep=0;
+    ImproveFlag0=0;
+    for nn=2:SeriesOrder
+        if(abs(ObjSensitivity(nn))&gt;0)
+            %AvgSensitivity=AvgSensitivity+abs(DeltaStep(nn)).*abs(ObjSensitivity(nn));
+            AvgSensitivity=AvgSensitivity+abs(ObjSensitivity(nn))/SeriesOrder;
+            %SumDeltaStep=SumDeltaStep+abs(DeltaStep(nn));
+        end
+            
+        
+        if(ImproveFlag(nn)==1)
+            ImproveFlag0=1;
+        end
+    end
+    
+    %if(mm&gt;20000)
+    %    ObjSensitivity
+    %    AvgSensitivity
+    %    DeltaX
+   %     mm
+   %     str=input("Look at numbers")
+    %end
+        
+    
+    AvgSensitivity=AvgSensitivity/SumDeltaStep;
+    
+    %if(ImproveCount==4)
+    if(AvgSensitivity&gt;0)
+       for nn=2:SeriesOrder
+          %DeltaX(nn)=DeltaX(nn)*(1+sqrt(abs(ObjSensitivity(nn))/AvgSensitivity));
+          if(abs(ObjSensitivity(nn))&gt;AvgSensitivity)
+             DeltaX(nn)=DeltaX(nn)*1.005; 
+          end
+          if(abs(ObjSensitivity(nn))&lt;AvgSensitivity)
+             DeltaX(nn)=DeltaX(nn)/1.005; 
+          end
+          %if(abs(ObjSensitivity(nn))&lt;abs(ObjSensitivityPrev(nn)))
+          %    DeltaX(nn)=DeltaX(nn)*1.05; 
+          %end
+          %if(abs(ObjSensitivity(nn))&gt;abs(ObjSensitivityPrev(nn)))
+          %    DeltaX(nn)=DeltaX(nn)/1.05; 
+          %end
+          if(abs(DeltaObj(nn))&lt;abs(DeltaObjPrev(nn)))
+              DeltaX(nn)=DeltaX(nn)/1.00005; 
+          end
+          if(abs(DeltaObj(nn))&gt;abs(DeltaObjPrev(nn)))
+              DeltaX(nn)=DeltaX(nn)*1.00005; 
+          end
+       end
+       %DeltaX(7)=DeltaX(7)*1.01;
+    end
+    %end
+    
+    
+    if((ImproveFlag0)&amp;&amp;(ImproveFlag0Prev))
+        ImproveCount=ImproveCount+1;
+    else
+        ImproveCount=0;
+    end
+    
+    if(ImproveCount&gt;=4)
+        ImproveCount=0;
+        DeltaX=DeltaX*1.15;
+    end
+    
+    
+    if(ImproveFlag0==0)
+        DeltaX=DeltaX*.85;
+    end
+end
+c=cBest;
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [ObjNew] =CalculateMomentsMatchObjFunction0A(Moments,NMoments,sMu)
+%[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+ if(NMoments==8)
+    % ObjNew=((sMu(1)-Moments(1))).^2+factorial(8).*((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))).^2+factorial(6)*((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+    % ((sMu(5)-Moments(5))).^2+factorial(4)*((sMu(6)-Moments(6))/sMu(6)).^2+((sMu(7)-Moments(7))).^2+ ...
+    % factorial(2)*((sMu(8)-Moments(8))/sMu(8)).^2;
+ 
+  ObjNew=factorial(8).*((sMu(2)-Moments(2))).^2+factorial(8).^2.*((sMu(3)-Moments(3))).^2+factorial(8).^2*((sMu(4)-Moments(4))).^2+ ...
+     factorial(6).^2.*((sMu(5)-Moments(5))).^2+factorial(6).^2*((sMu(6)-Moments(6))).^2+factorial(4).^2.*((sMu(7)-Moments(7))).^2+ ...
+     ((sMu(8)-Moments(8))).^2;
+
+%ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2;
+
+%ObjNew=((sMu(1)-Moments(1))/sMu(1)).^2*0+factorial(8).*((sMu(2)-Moments(2))/sMu(2)).^2;%+0*((sMu(3)-Moments(3))).^2+factorial(6)*((sMu(4)-Moments(4))/sMu(4)).^2;%+ ...
+%    ((sMu(5)-Moments(5))).^2+factorial(4)*((sMu(6)-Moments(6))/sMu(6)).^2+((sMu(7)-Moments(7))).^2+ ...
+%    factorial(2)*((sMu(8)-Moments(8))/sMu(8)).^2;
+
+%
+%if((sMu(3)&lt;.00001) || (sMu(5)&lt;.00001) || (sMu(7)&lt;.00001))  %If Odd standardized input Moments are zero
+  %   ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))).^2+((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+  %  ((sMu(5)-Moments(5))).^2+((sMu(6)-Moments(6))/sMu(6)).^2+((sMu(7)-Moments(7))).^2+ ...
+  %  ((sMu(8)-Moments(8))/sMu(8)).^2;
+%    ObjNew=20*((sMu(1)-Moments(1))/sMu(1)).^2+10000*((sMu(2)-Moments(2))/sMu(2)).^2+100*((sMu(3)-Moments(3))).^2+200*((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+%    ((sMu(5)-Moments(5))).^2+20*((sMu(6)-Moments(6))/sMu(6)).^2+((sMu(7)-Moments(7))).^2+ ...
+%    ((sMu(8)-Moments(8))/sMu(8)).^2;
+%else
+%    ObjNew=((sMu(1)-Moments(1))/sMu(1)).^2+((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))/sMu(3)).^2+((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+%    ((sMu(5)-Moments(5))/sMu(5)).^2+((sMu(6)-Moments(6))/sMu(6)).^2+((sMu(7)-Moments(7))/sMu(7)).^2+ ...
+%    ((sMu(8)-Moments(8))/sMu(8)).^2;
+%end
+end
+
+if(NMoments==6)
+if((sMu(3)&lt;.00001) || (sMu(5)&lt;.00001))  %If Odd standardized input Moments are zero
+     ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))).^2+((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+    ((sMu(5)-Moments(5))).^2+((sMu(6)-Moments(6))/sMu(6)).^2;
+else
+    ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))/sMu(3)).^2+((sMu(4)-Moments(4))/sMu(4)).^2+ ...
+    ((sMu(5)-Moments(5))/sMu(5)).^2+((sMu(6)-Moments(6))/sMu(6)).^2;
+end
+end
+
+if(NMoments==4)
+if((sMu(3)&lt;.00001))  %If Odd standardized input Moments are zero
+     ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))).^2+((sMu(4)-Moments(4))/sMu(4)).^2;
+else
+    ObjNew=((sMu(2)-Moments(2))/sMu(2)).^2+((sMu(3)-Moments(3))/sMu(3)).^2+((sMu(4)-Moments(4))/sMu(4)).^2;
+end
+end
+
+
+%sMu
+%Moments
+%str=input("Look at numbers");
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Moments] = CalculateMomentsOfZSeries(a0,a,SeriesOrder,NMoments)
+
+
+%aa0=a0;
+%a0=0;% ---1
+
+EZ(1)=0;
+EZ(2)=1;
+%LogEZ(2)=0;
+for nn=3:NMoments*SeriesOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %LogEZ(nn)=log(EZ(nn-2))+log(nn-1);
+        %EZ(nn);
+    end
+end
+%EZ
+%EZ(1:30)
+%str=input('Look at numbers')
+a(SeriesOrder+1:SeriesOrder*NMoments+1)=0;
+b0=a0;
+b=a;
+
+
+for mm=1:NMoments
+    if(mm&gt;1)
+        %[b0,b] =SeriesProductLogarithmic(a0,a,b0,b,SeriesOrder*mm);
+        
+        [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm);
+        
+        %b0-bb0
+        
+        %b-bb
+        
+        %str=input('Look at two products')
+        
+        
+        b(SeriesOrder*mm+1:SeriesOrder*NMoments+1)=0;
+    end
+   % Logb=log(abs(b));
+   % Signb=sign(b);
+    EXZ(mm,1)=b0;
+    for pp2=1:SeriesOrder*mm
+        if rem(pp2,2)==0
+            %EXZ(mm,1)=EXZ(mm,1)+exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2);
+            EXZ(mm,1)=EXZ(mm,1)+b(pp2).*EZ(pp2);
+ %           b(pp2).*EZ(pp2)
+ %           exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2)
+ %           mm
+ %           pp2
+            %str=input('Look at moment values')
+        end
+    end
+end
+
+    
+for nn=1:NMoments
+    Moments(nn)=EXZ(nn,1);
+end
+
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [SecondMoment] = CalculateSecondMomentC7(a0,a)
+
+
+SecondMoment=a0^2+a(1)^2 +2* a0* a(2) +3*(a(2).^2+2* a(1).* a(3) +2* a0* a(4))+ ...
+    15*(a(3).^2 +2 *a(2).* a(4) +2 *a(1).* a(5)+2* a0* a(6))+105*(a(4).^2 +2* a(3).* a(5)+2* a(2).* a(6) +2* a(1).* a(7) )+ ...
+    945*(a(5).^2 +2* a(4).* a(6) +2 *a(3).* a(7) )+(10395)*(a(6).^2+2* a(5).* a(7) )+(135135)*a(7).^2;
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [mu1,cMu] = ConvertRawMomentsToCentralMoments(Mu,mOrder)
+
+%cu
+%mu
+% %mOrder
+%str=input('Look at numbers');
+mu1=Mu(1);
+for mm=2:mOrder
+    cMu(mm)=0;
+    for jj=0:mm
+        if(jj==0)
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*1*mu1.^(mm-jj);
+            
+        else
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*Mu(jj)*mu1.^(mm-jj);
+            
+        end
+    end
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+<br>
+Here is the output you will see at the end of the program when you run it.<br>
+<br>
+mm =<br>
+       25000<br>
+ObjFuncBest =<br>
+     2.515937366420063e+07<br>
+ObjFunc =<br>
+     2.516638031774695e+07<br>
+c =<br>
+   0.704625776527650   0.172367249740163   0.075779734629839   0.010302249885808  -0.000858455192471   0.000163380494871   0.000027070154411<br>
+FittedStandardizedMoments =<br>
+   1.0e+05 *<br>
+  Columns 1 through 7<br>
+  -0.000000000000000   0.000010000000000   0.000022703741246   0.000146746001566   0.001203234599094   0.014677673042885   0.254354854886423<br>
+  Column 8<br>
+   6.259823013349759<br>
+sMu =<br>
+   1.0e+05 *<br>
+  Columns 1 through 7<br>
+                   0   0.000010000000000   0.000023672884921   0.000146459814703   0.001202097792368   0.014666815921047   0.255435558162736<br>
+  Column 8<br>
+   6.248806451226628<br>
+FittedStandardizedMoments =<br>
+   1.0e+05 *<br>
+  Columns 1 through 7<br>
+  -0.000000000000000   0.000010000000000   0.000022703741246   0.000146746001566   0.001203234599094   0.014677673042885   0.254354854886423<br>
+  Column 8<br>
+   6.259823013349759<br>
+Look at comparison of fitted moments with input moments<br>
+FittedRawMoments =<br>
+   1.0e+05 *<br>
+  Columns 1 through 7<br>
+   0.000012499863483   0.000021197093700   0.000049871208052   0.000169441507033   0.000850614971863   0.006310627233695   0.068555463989281<br>
+  Column 8<br>
+   1.083805963482055<br>
+rMu =<br>
+   1.0e+05 *<br>
+  Columns 1 through 7<br>
+   0.000012499863483   0.000021197093700   0.000050274347857   0.000171368317209   0.000856094970826   0.006320436615909   0.068698344472325<br>
+  Column 8<br>
+   1.084082326087001</div>
+
+			
+									
+									<div id="sig876203" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d5afc0241eb7011287532331a9b6530e" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1860" role="button">125</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" role="button">126</a></li>
+							<li class="active"><span>127</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" role="button">128</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1920" role="button">129</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1890&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d5afc0241eb7011287532331a9b6530e" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1860" role="button">125</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1875" role="button">126</a></li>
+							<li class="active"><span>127</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" role="button">128</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1920" role="button">129</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d5afc0241eb7011287532331a9b6530e&amp;start=1905" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1890&amp;sid=d5afc0241eb7011287532331a9b6530e">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=d5afc0241eb7011287532331a9b6530e" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=d5afc0241eb7011287532331a9b6530e"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=d5afc0241eb7011287532331a9b6530e"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=d5afc0241eb7011287532331a9b6530e" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#98f9fcf5f1f6d8eff1f4f5f7ececb6fbf7f5">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>127</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=d5afc0241eb7011287532331a9b6530e";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=d5afc0241eb7011287532331a9b6530e";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2df96a07a81a","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

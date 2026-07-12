@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 155 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=81a55762e0cb5e5c70b1a66f8db27229" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=81a55762e0cb5e5c70b1a66f8db27229?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=81a55762e0cb5e5c70b1a66f8db27229?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=81a55762e0cb5e5c70b1a66f8db27229?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2310" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="81a55762e0cb5e5c70b1a66f8db27229" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=81a55762e0cb5e5c70b1a66f8db27229" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=81a55762e0cb5e5c70b1a66f8db27229" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="81a55762e0cb5e5c70b1a66f8db27229" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=81a55762e0cb5e5c70b1a66f8db27229" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=81a55762e0cb5e5c70b1a66f8db27229"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=81a55762e0cb5e5c70b1a66f8db27229"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=81a55762e0cb5e5c70b1a66f8db27229" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2310%26t%3D99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2310&amp;t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" />
+<input type="hidden" name="creation_time" value="1768907832" />
+<input type="hidden" name="form_token" value="ffbdc06fa3311c3a817c237b60b515b2838589e1" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2310&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2310&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="81a55762e0cb5e5c70b1a66f8db27229" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;81a55762e0cb5e5c70b1a66f8db27229" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2280" role="button">153</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" role="button">154</a></li>
+							<li class="active"><span>155</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" role="button">156</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2340" role="button">157</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p881412">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881412">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881412">
+
+			<h3 class="first"><a href="#p881412">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881412&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881412" title="Post #2311">#2311</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 20th, 2024, 8:03 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I am going to individually email the letter below to all people at MIT who are associated with Probability theory, Statistics, Math-Finance and SDEs in their Mathematics, Computer Science, and Business school departments.   <br>
+Good universities are at the vanguard of discovery of knowledge and intellectual activity in good universities is supposed to lead the direction of national thought in their countries. It is due to this reason that I am writing to accomplished people at MIT so the problem of mind control would get some more exposure where needed and good people would increase their efforts to end this menace of mind control from our societies. <br>
+I invite people from all over the world who know about mind control in their respective countries to please also approach good people in American universities and tell them about stories of horror and cruelty so they would be more willing to ask their government to stop mind control of innocent civilians.<br>
+I also want to say to people all over the world that in general Americans are some of the best people and very good human beings in our world, but decades of wide spread corruption in American defense has bred large number of scumbags there who are responsible for the evil of mind control all over the world. Let us together defeat these evil people and end this menace of mind control from all our societies forever.<br>
+<br>
+Here is my letter that I am going to post to around a hundred people in MIT as I mentioned earlier. Another reason for posting this letter is that scumbags of American defense openly stop everybody's emails. They even stopped my tweets to dozens of American senators when I asked for help about mind control. When I was in UK, I sent an email to all the members of upper and lower house of Parliament asserting that I was totally innocent but every single email was stopped. I also want to tell friends that I will not send a single mass email and will send all emails individually one by one. So if friends do not receive email from me, please know that they must have blocked the email.<br>
+<br>
+<br>
+Subject:  Please endorse my research (on merit) and help restore my human rights.<br>
+<br>
+Dear Dr. ---------,<br>
+<br>
+I hope you are doing well and are doing interesting work and research.<br>
+I am a private researcher in mathematical finance and probability theory from Pakistan. I have been posting my research on famous financial discussion forum Wilmott.com and my nick on forum is Amin.<br>
+A sample of my recent research project output here: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2235#p880319" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2235#p880319</a><br>
+I have been presenting my research in the form of worked out Matlab programs for more than past seven years. During last year, I presented a method to construct analytic multidimensional joint density of correlated random variables from parsimonious data (as little as 50 joint data points in 2-10 dimensions or more) which is very close to true density and converges to true density as data points increase. You can use this setting for high dimensional conditional expectations and non-linear regressions between multivariate data elements. In most of the cases, the new method handily beats regressions and conditional expectations from sophisticated Artificial Intelligence and Machine Learning methods. The method is based on Hermite polynomial representation of random variables. In our new method correlations are not specified directly between random variables but rather between Hermite polynomials of same order associated with different random variables.<br>
+<span style="font-size: 100%; line-height: normal">Please let me come to the humanitarian part of this letter explaining why I am emailing you, and begging for help. American defense retards innocent and talented people, researchers and entrepreneurs in our country to please the Jewish lobby. I am sure many good and kind people would be in disbelief about my statement so please read here:  </span><br>
+<a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881259" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881259</a><br>
+<br>
+Since bad jews consider my country a threat to Israel (which is not true at all), there is a huge Mind control network in Pakistan established by American defense that retards almost everyone in my country who tries to do anything out of the ordinary in applied math and Sciences. I want to explain that I am not a fundamentalist Muslim. I do not even believe in religion and I am looking to read more about evolution of life on earth and strange cosmic phenomenon in remote galaxies all the time but thoroughly mediocre people in American defense want to please bad jews and earn the kind of rewards that they otherwise can never even possibly dream in their life and thus the cruelty and torture continues to increase. <br>
+Pakistan has a puppet government and it is actually ruled by its military force. American defense gives several hundred million dollars in bribes to top military brass in Pakistan in exchange for continuing mind control of innocent and talented Pakistanis in computer programming, and applied sciences. When victims of Pak military complain about cruel mind control, petty psychiatrists who connive with military declare them schizophrenic. The corruption and lack of professionalism in psychiatrists in Pakistan is extremely wide spread and can be imagined from the fact that the petty and professionally criminal psychiatrist who declared me schizophrenic several years ago in connivance with Pakistan military, pontificated several times to me that he had himself drafted the mental health law in constitution of Pakistan. I have seen huge torture on the hands of psychiatrists over past 26 years. See hyperlinks below.<br>
+<span style="font-size: 100%; line-height: normal"><a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881258" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881258</a></span><br>
+<span style="font-size: 100%; line-height: normal"><a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=102298" class="postlink">https://forum.wilmott.com/viewtopic.php?f=15&amp;t=102298</a></span><br>
+<span style="font-size: 100%; line-height: normal">Psychiatric torture on me and associated medication had decreased somewhat in last one year because several good people in academia in United States repeatedly protested to American defense about her inhuman practices towards me and other victims like me. Though the wrongdoing of psychiatrists did remarkably decrease due to pressure from good people in US universities, the cruel and unprofessional psychiatrists are again ramping up antipsychotics on their mentally healthy mind control victims. Please read here about my most recent consultation with the psychiatrist in hyperlink below: </span><br>
+<a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881346" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2295#p881346</a><br>
+<span style="font-size: 100%; line-height: normal">In the latest meeting with the psychiatrist, after a long argument, I was able to get the concession if somebody in academia at top universities in US could endorse my research as good, he would end my medication. I, therefore, want to request you if you have previously followed my research or find it interesting when you look at it now, and if you also think that it is world class research, please endorse it in a letter that I could present to the psychiatrist. I would be extremely thankful to you for this favor.</span><br>
+<span style="font-size: 100%; line-height: normal">Please also protest to American government and American defense to end cruel mind control of intelligent people all over the world including US.</span><br>
+<span style="font-size: 100%; line-height: normal">If you have been following my research, I will like to ask your opinion about it and would like to ask you to suggest future research directions. If you need my help or opinion about problems related to your research, please do not hesitate to ask and I would be more than happy to be of help. </span><br>
+<span style="font-size: 100%; line-height: normal">Separately from endorsement, if you liked my research, please do reply to my message with your opinion so I would be encouraged on my future research efforts.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">I wish you a good week ahead,</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Kind regards,</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Ahsan Amin</span></div>
+
+			
+									
+									<div id="sig881412" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p881413">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881413">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881413">
+
+			<h3 ><a href="#p881413">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881413&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881413" title="Post #2312">#2312</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 20th, 2024, 8:48 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I want to say again that America is epitome of modern human civilization and Americans folks are some of the best people on earth. Best American universities produce the greatest thought leaders in different countries all over the world. From knowledge discovery to cultural indicators, rest of the world looks towards American universities and American society. <br>
+So it is very painful to see that some bad actors in US are involved in something so cruel and inhuman as mind control of innocent and intelligent people. One reason behind is that corrupt perpetrators of mind control in US continued to mislead good people in US and elsewhere about their true intentions otherwise good people in US would never have allowed any mind control anywhere. However I believe that this is a very right time when all good people should intervene to end the menace of mind control from our respective societies forever.</div>
+
+			
+									
+									<div id="sig881413" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881455">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881455">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881455">
+
+			<h3 ><a href="#p881455">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881455&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881455" title="Post #2313">#2313</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 21st, 2024, 1:27 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I stopped working on Schordinger Equation for a few months and we will go back to try the solution of N electron problem in a few months as soon as Summers decrease a bit. I am determined to try for the perfect solution of Schordinger equation,<br>
+In the meanwhile, let us solve some interesting problems in finance. <br>
+We want to start with hedging of exotic derivatives in terms of vanilla derivatves in our hermite polynomial framework. I will come with precise details in a few days but briefly we know that an exotic derivative can be represented as a series in Hermite polynomials. This hermite series representation would also be changing slightly with time. We will deal with these issues in our research as we go further. But as a start we assume that we are given a hermite series of the exotic derivative that we calculate from its PDF possibly by simulation and calculation of moments. Now we want to hedge  this exotic derivative with some positions in the vanilla options/caps/floors. As I see and I will come with detailed analytics in latex in a few days, if the hermite series representation of the exotic derivative goes to fifth polynomial order, we will have to take six positions in one forward swap and five vanilla options(with different judiciously calculated strikes) , with number of hedge positions equal to the number of hermite polynomials (including zeroth hermite polynomial). This would solve for delta and vega of the exotic derivative.<br>
+We will solve for hedge calculations and hedge rebalancing for comparatively simpler derivatives in next few days and then move on to more exotic derivatives.<br>
+I will make a detailed post and also upload a matlab program for this in next few days. </div>
+
+			
+									
+									<div id="sig881455" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881488">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881488">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881488">
+
+			<h3 ><a href="#p881488">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881488&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881488" title="Post #2314">#2314</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 22nd, 2024, 9:52 am</span></p>
+			
+			
+			
+			<div class="content">First the basics of exotics hedging with single underlying. We will cover interest rate derivatives and multiple underlyings later. I will post a working program in a few days.<br>
+<br>
+Friends let us consider a permissible exotic derivative on a single underlying represented by X(t, T) . T corresponds to maturity of the derivative contract and t is the present observation date. <br>
+<br>
+We calculate probability density function or moments associated with the probability density function of X(T) as seen at time t. This probability density function can be calculated from simulation of some appropriate model or in a model independent way directly from the recent data of the underlying. Here I want to stress that distributions and associated moments of various vanilla and exotic derivatives can also be calculated directly from the data.(For example in order to calculate density/moments of derivative V(t,T) where t=0 and T=six months from historical data, we can collect daily data for t=0 to 3 months and T= t + six months for three months and then construct derivative density( of V(t,T)=V(0,six months)) and moments from that data. Of course many times you would have to be careful and judicious about range over which a data has to be collected for above calculations. We will cover all these issues as our research progresses.<br>
+<br>
+Once we calculate the pdf/moments of the exotic derivative and underlying, we would still have to be careful since this distribution is changing over the life of the derivative as for example we advance V(t,T) from V(0,6 months) to next day V(1 , 6 months) but we will cover these issues later. This post wants to deal with very simple basics. We will take care of all details on top of our basics one by one later.<br>
+<br>
+Suppose after calculation of moments of the exotic derivative, we represent it as a hermite series random variable as<br>
+<br>
+[$] V_x(t, T) \, = \,a_0 \, + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+After delta-hedging for the mean payoff associated with zeroth polynomial, we want to find hedges in terms of vanilla derivatives so that volatility of the exotic derivative goes to zero (or very very small in practice)  <br>
+<br>
+We take vanilla options as hedging derivatives but we would have to be careful to choose them so as to minimize collinearity. So their strikes have to be as apart as practically possible. For example one vanilla option can be reasonably deep in the money, second could be ATM while the third could be reasonably OTM. <br>
+<br>
+Let us suppose we are hedging [$]V_x(t,T)[$] with three vanilla options  [$]V_1(t,T)[$], [$]V_2(t,T)[$], and [$]V_3(t,T)[$], whose hermite representations are given as<br>
+<br>
+[$] V_1(t, T) \, = \,b_0 \, + b_1 \, H_1(Z)\, +\,  b_2 \,H_2(Z) \, + \, b_3 \, H_3(Z)[$] <br>
+[$] V_2(t, T) \, = \,c_0 \, + c_1 \, H_1(Z)\, +\,  c_2 \,H_2(Z) \, + \, c_3 \, H_3(Z)[$] <br>
+[$] V_3(t, T) \, = \,d_0 \, + d_1 \, H_1(Z)\, +\,  d_2 \,H_2(Z) \, + \, d_3 \, H_3(Z)[$] <br>
+<br>
+Please know that all the three vanilla derivatives are on the same common underlying as the exotic derivative so they share the same underlying Z among themselves and with the exotic derivative as well.<br>
+<br>
+We want to take k1 of first derivative [$]V_1(t,T)[$] and k2 of second derivative [$]V_2(t,T)[$] and k3 of first derivative [$]V_3(t,T)[$] so that variance of the complete portfolio of [$]V_x(t,T)[$] and  [$]v_1(t,T)[$], [$]v_2(t,T)[$] and [$]v_3(t,T)[$] goes to zero.<br>
+<br>
+So we write the linear equations of variance of various hermite polynomial components going to zero as<br>
+<br>
+condition for first hermite polynomial of the portfolio going to zero would be <br>
+[$]\, a_1\, + \, k1 \,b_1\,+ \, k2 \,c_1\,+ \, k3 \,d_1\,=\,0[$]<br>
+For second hermite polynomial of portfolio to become zero, we have<br>
+[$]\, a_2\, + \, k1 \,b_2\,+ \, k2 \,c_2\,+ \, k3 \,d_2\,=\,0[$]<br>
+For third hermite polynomial of portfolio to become zero, we have<br>
+[$]\, a_3\, + \, k1 \,b_3\,+ \, k2 \,c_3\,+ \, k3 \,d_3\,=\,0[$]<br>
+<br>
+When above three linear  equations are solved for three unknowns k1, k2, and k3, we would get the quantity of [$]V_1(t,T)[$], [$]V_2(t,T)[$] and [$]V_3 (t,T)[$] in our portfolio with [$]V_x(t,T)[$] so that total local variance of the portfolio goes to zero. <br>
+<br>
+So cost of the options that make the portfolio riskless till maturity would be price of the option. But we have made it riskless only locally for a small time and we would have to re-hedge possibly everyday or as judicious to rebalance our hedge according to changing probability density of the exotic derivative. We can use both real data or model simulations with daily re-adjustment (as we will learn about it in later posts) of the hedges to calculate the cumulative cost of the exotic derivative.  In reality there would probably always be a small variance due to model mis-specification, parameter mis-calculation and parameter variance and other related factors.   </div>
+
+			
+									
+									<div id="sig881488" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881498">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881498">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881498">
+
+			<h3 ><a href="#p881498">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881498&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881498" title="Post #2315">#2315</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 22nd, 2024, 5:03 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, sorry for incomplete analysis in the previous post. We cannot deal with delta hedging separately and have to include it in the same analytics. Please do carefully read the previous post for all the caveats mentioned and also for the setting but I will repeat the main analysis in this post.<br>
+<br>
+This is still in works and we will have a final version of the analysis after all the analytics would have been verified by a matlab program so some things in this analysis still might change.<br>
+<br>
+Suppose hermite representation of risk neutral asset is given as follows<br>
+<br>
+[$] X(t, T) \, = \, \bar{\mu_X} \, + \bar{a_1} \, H_1(Z)\, +\,  \bar{a_2} \,H_2(Z) \, + \, \bar{a_3} \, H_3(Z)[$]<br>
+where<br>
+[$] \bar{\mu_X}=\exp{(r (T-t))}[$] which has to hold to avoid forward-spot arbitrage.<br>
+<br>
+After calculation of moments of the exotic derivative, we can represent the exotic derivative (whose hedges have to be found) as a hermite series random variable as<br>
+<br>
+[$] V_x(t, T) \, = \,\mu_{V_x}  \, + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+It is [$],\mu_{V_x} [$] which is the expected value (fair value) of the exotic derivative that we usually calculate out of simulations. Rest of the coefficients represent variances of the expected value of the exotic derivative. Please note that zeroth hermite is a point value with zero first order variance if uncertainty of the problem has been properly specified.<br>
+<br>
+We want to find hedges in terms of vanilla derivatives so that total payoff of the portfolio goes to zero and volatility of the pay off the portfolio of exotic derivative plus the hedge instruments goes to zero (or volatility becomes very very small in practice)  <br>
+<br>
+We take vanilla options as hedging derivatives but we would have to be careful to choose them so as to minimize collinearity. So their strikes have to be as apart as practically possible. For example one vanilla option can be reasonably deep in the money, second could be ATM while the third could be reasonably OTM. <br>
+<br>
+Let us suppose we are hedging [$]V_x(t,T)[$] with three vanilla options  [$]V_1(t,T)[$], [$]V_2(t,T)[$], and [$]V_3(t,T)[$], whose hermite representations are given as<br>
+<br>
+[$] V_1(t, T) \, = \, \mu_{V_1} \, + b_1 \, H_1(Z)\, +\,  b_2 \,H_2(Z) \, + \, b_3 \, H_3(Z)[$] <br>
+[$] V_2(t, T) \, = \, \mu_{V_2} \, + c_1 \, H_1(Z)\, +\,  c_2 \,H_2(Z) \, + \, c_3 \, H_3(Z)[$] <br>
+[$] V_3(t, T) \, = \, \mu_{V_3} \, + d_1 \, H_1(Z)\, +\,  d_2 \,H_2(Z) \, + \, d_3 \, H_3(Z)[$] <br>
+<br>
+Please know that all the three vanilla derivatives are on the same common underlying as the exotic derivative so they share the same underlying Z among themselves and with the exotic derivative as well.<br>
+<br>
+We want to take k0 of asset forward [$]X(t,T) - K[$],  k1 of first derivative [$]V_1(t,T)[$] and k2 of second derivative [$]V_2(t,T)[$] and k3 of first derivative [$]V_3(t,T)[$] so that variance of the complete portfolio of [$]V_x(t,T)[$] and  [$]v_1(t,T)[$], [$]v_2(t,T)[$] and [$]v_3(t,T)[$] goes to zero.<br>
+<br>
+Now we write the linear equations so that payoff of complete portfolio goes to zero and variance of various hermite polynomial components of the portfolio goes to zero as<br>
+<br>
+condition for expected value of the portfolio going to zero would be <br>
+[$]\, \mu_{V_x}\, + \, k0 \, \big[\mu_X \,- \, K \big]\,+ \, k1 \, \mu_{V_1}\,+ \, k2 \, \mu_{V_2}\,+ \, k3 \, \mu_{V_3} \,=\,0[$]<br>
+<span style="font-size: 100%; line-height: normal">condition for first hermite polynomial of the portfolio going to zero would be </span><br>
+[$]\, a_1\, + \, k0 \, \bar{a_1}\, + \, k1 \,b_1\,+ \, k2 \,c_1\,+ \, k3 \,d_1\,=\,0[$]<br>
+For second hermite polynomial of portfolio to become zero, we have<br>
+[$]\, a_2\, + \, k0 \, \bar{a_2}\,+ \, k1 \,b_2\,+ \, k2 \,c_2\,+ \, k3 \,d_2\,=\,0[$]<br>
+For third hermite polynomial of portfolio to become zero, we have<br>
+[$]\, a_3\, + \, k0 \, \bar{a_3}\,+ \, k1 \,b_3\,+ \, k2 \,c_3\,+ \, k3 \,d_3\,=\,0[$]<br>
+<br>
+When above four linear  equations are solved for four unknowns k0, k1, k2, and k3, we would get the quantity of [$]X(t,T)[$], [$]V_1(t,T)[$], [$]V_2(t,T)[$] and [$]V_3 (t,T)[$] in our portfolio with [$]V_x(t,T)[$] so that total value of the portfolio and its variance goes to zero. <br>
+<br>
+So cost of the options that make the portfolio riskless till maturity would be price of the option/exotic derivative. So our true exotic option/derivative price would be the cumulative cost of all the transactions that are required to make the portfolio riskless till maturity. <br>
+We have made the portfolio riskless only locally for a small time and we would have to re-hedge possibly everyday or as judicious to rebalance our hedge according to changing probability density of the exotic derivative. So true cost of the exotic option would have to be calculated with some simulation with daily rebalancing or from summing (over the days of the life of the option) the cost of hedging as calculated from hermite representations of V(t,T) inferred from historical data as suggested in previous post.<br>
+<br>
+Again, we can use both real data or model simulations with daily re-adjustment (as we will learn about it in later posts) of the hedges to calculate the cumulative cost of the exotic derivative.  In reality there would probably always be a small variance due to model mis-specification, parameter mis-calculation and parameter variance and other related factors.   </div>
+
+			
+									
+									<div id="sig881498" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881508">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881508">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881508">
+
+			<h3 ><a href="#p881508">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881508&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881508" title="Post #2316">#2316</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 23rd, 2024, 9:07 am</span></p>
+			
+			
+			
+			<div class="content">Friends, as I think, my previous two posts should probably give an identical result. In the first earlier post, where I used a hedge of three options to make the portfolio zero variance, we can include two options and one underlying asset and still be able to make the portfolio zero variance.<br>
+<br>
+In order to calculate fair price of the option, We just need to make the portfolio zero variance and increase the value of any investments to support the portfolio of exotic asset and its hedges at the risk free rate over the life of those investments. And total sum of these interest rate adjusted investments over the life of option would give us the fair price of derivative.<br>
+<br>
+What I did in last post with underlying asset and three options is probably not needed as the portfolio was already zero variance. We do not necessarily need to take the expected values to zero. Again in my thread, we deal with problems that do not have a known solution so some things can be off from time to time. <br>
+<br>
+In this post, I want to discuss what is nearest equivalent of traditional delta hedging in our framework. We know that dynamics of underlying asset X(t,T) are given as<br>
+<br>
+[$] X(t, T) \, = \, \bar{\mu_X} \, + \bar{a_1} \, H_1(Z)\, +\,  \bar{a_2} \,H_2(Z) \, + \, \bar{a_3} \, H_3(Z)[$]<br>
+<br>
+while After calculation of moments of the exotic derivative, we can represent the exotic derivative (whose hedges have to be found) as a hermite series random variable as<br>
+<br>
+[$] V_x(t, T) \, = \,\mu_{V_x}  \, + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+We can just take k0 amount of underlying in the hedge so as to neutralize the first hermite polynomial of the exotic/vanilla derivative as<br>
+<br>
+So the equation of first hermite polynomial going to zero in a portfolio of two assets would be<br>
+<br>
+[$]\, a_1\, + \, k0 \, \bar{a_1}\, =\,0[$]<br>
+<br>
+[$] \, k0 = \, \frac{-\, a_1}{\, \bar{a_1}}\, [$]<br>
+<br>
+So with above calculated value of k0, we get something nearest equivalent of traditional delta hedging. <br>
+<br>
+With above hedging, the portfolio of asset and its hedge would still be vulnerable to adverse movements of higher hermite polynomials and therefore some premium has to be added to expected value by the option seller since he is still bearing some unexposed risk from this partially hedged trade.<br>
+ Even if traditional delta-hedging were more perfect, it would not be possible to hedge three independent modes of variance using just one underlying so options must be sold at a premium over traditional delta-hedged "risk-neutral" price. There is more unhedged risk that option seller is bearing and has not been able to eliminate it with delta-hedge.</div>
+
+			
+									
+									<div id="sig881508" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881531">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881531">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881531">
+
+			<h3 ><a href="#p881531">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881531&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881531" title="Post #2317">#2317</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 23rd, 2024, 6:12 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, there are also other challenges that we have to solve in our research effort towards use of hermite polynomials in options and derivatives pricing. For example one of the problems is that options have a payoff with discontinuous derivatives and we have problems in finding a faithful hermite series representation of this payoff especially at the point of discontinuous derivatives. <br>
+The hermite series representation of options is usually fine in the body of the option but is not very well behaved across the discontinuity and would lack precise accuracy required for derivatives pricing if used as such.<br>
+But I think we can find an extremely close hermite representation of the modified option payoff that has continuous derivatives, varies very slightly at the discontinuity point and is smooth across it and also has exactly the same expectation and variance as the original option with discontinuous derivatives.  This modified payoff would be exactly the same in the body of the option but would be slightly different at discontinuity (of derivatives) point and it would have smooth derivatives. <br>
+Please let me work on it for a few days and then I will come back with a matlab program to do this. </div>
+
+			
+									
+									<div id="sig881531" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881537">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881537">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881537">
+
+			<h3 ><a href="#p881537">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881537&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881537" title="Post #2318">#2318</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 23rd, 2024, 11:07 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have been able to find smooth densities of many call options with hermite series. I have used a new technique to find these densities with discontinuous derivatives of the option payoff.<br>
+For a call option at expiry, coming from positive infinity towards negative axis, the derivatives of option payoff follow the asset derivatives till the strike price (on the right side of the strike) and then abruptly go to zero. I differentiated the asset Z-series and then multiplied these derivatives with series expansion of analytic heaviside step function to convert the derivatives to zero just a little left side of strike on asset axis. Then I integrate this expression to convert it back to call payoff. I still have to fix its median since constant of integration has to be exogenously specified by me out of analytics. The whole thing seems to work well and I will come back with a latex explanation and a matlab program in a day or two.<br>
+meanwhile just a few raw densities of options with the method are given below. They are all centered at zero since constant of integration has to be specified that will shift the option to its proper place on asset axis. Here are some raw graphs.<br>
+<br>
+<br>
+Graph of density of An OTM option   from its Z-series. Graph is still centered at zero and its center has to be adjusted.<br>
+<br>
+<a href="https://postimg.cc/FfdPvM3H" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/JhKSNmhZ/Option01.png" class="postimage" alt="Image"></a><br>
+<br>
+<br>
+<br>
+Graph of density of An ITM option  from its Z-series. Graph is still centered at zero and its center has to be adjusted.<br>
+<br>
+<br>
+<a href="https://postimg.cc/McC9p9mb" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/xCChg7k7/Option02.png" class="postimage" alt="Image"></a><br>
+Graph of density of A roughly ATM option from its Z-series. Graph is still centered at zero and its center has to be adjusted.<br>
+<a href="https://postimg.cc/QFn6R8Bz" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/nLn69Mnn/Option03.png" class="postimage" alt="Image"></a><br>
+<br>
+ </div>
+
+			
+									
+									<div id="sig881537" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881550">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881550">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881550">
+
+			<h3 ><a href="#p881550">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881550&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881550" title="Post #2319">#2319</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 25th, 2024, 6:50 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, when I investigated the above method further, I realized that for several options it was not working well at all since series expansion of analytic Heaviside function was getting worse at points away from the strike. So I decided to change my strategy.<br>
+I directly calculated the moments of the option prices with different strikes when the asset is given by a Z-series. These are basically truncated moments but modified so that density integrates to one. We apply the same normalization factor to truncated moments that we apply to the density. This follows from conditionality or Bayes formula. After calculation of first eight moments of the option prices, I went ahead and converted the moments into density of option prices. We model options as assets in themselves that have a density starting at zero on option price axis (as opposed to asset axis where it starts at strike). I noticed that for a large number of CEV like densities of assets, the match to moments of call option prices was perfect and all eight moments perfectly matched all the time. <br>
+I used a lot of programs from previous work. For example for calculation of moments of option prices, along with binomial formula,  I used a routine that used the moments of Z-series but substituted moments of standard normal with moments of truncated normal. I also matched my calculated moments with simulation and found that first six moments had an almost perfect match. I think simulation was off for higher moments (eighth moment of option prices involves 64th moment of the truncated normal) since I used an automated routine that calculated any moment of option prices on the same algorithm.<br>
+I really think that this method of calculating densities and Z-series of options is going to work very well. I will be posting my code and the matlab program in another day or two and also explain the logic with latex equations in a day. </div>
+
+			
+									
+									<div id="sig881550" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881555">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881555">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881555">
+
+			<h3 ><a href="#p881555">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881555&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881555" title="Post #2320">#2320</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 26th, 2024, 10:46 am</span></p>
+			
+			
+			
+			<div class="content">Friends, sorry for this but I have taken a small break to work on a new algorithm for calculation of Z-series from moments. While we have been working on some things like this for years now but previous work has its obvious flaws. Root search method does not converge many times and other approximate methods also remain off at times.<br>
+I have been able to think of a totally analytic and very stable recursive method to calculate the moments. It calibrates variance first with coefficient of Z and then adds effect of skew by adding coefficient of Z^2 and altering first constant and while keeping variance of the system constant. Then it adds a third coefficient and alters previous coefficients and keeps variance and skew constant while matching kurtosis. It continues to add a new coefficient and calibrates a higher moment all while keeping previous moments constant. <br>
+All of the perturbations are based on sound mathematical analytics (unlike previous smoothing stuff) . If the data is such that all moments could not be matched, you can specify that first four moments must be matched at all cost and rest as closely as possible. <br>
+I was always a bit unsatisfied with previous programs to match moments of Z-series but I hope that this new program would really change that. I am sure once I post analytics, friends would really like it. I want to get the program working by mid-night and later will come with analytics and also post the matlab code.<br>
+In a day, I will resume my work with with option densities and their Z-series. </div>
+
+			
+									
+									<div id="sig881555" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881590">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881590">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881590">
+
+			<h3 ><a href="#p881590">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881590&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881590" title="Post #2321">#2321</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 27th, 2024, 5:35 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, it will be another day or two before I could post the new model for calculation of Z-series from the moments. I want it to be a good model and I want to add enough detail in the model for it to be able to do good in various scenarios. <br>
+Meanwhile, I was thinking that we can model the Z-series of options directly from Z-series of stocks. I will write a detailed post about it tomorrow.</div>
+
+			
+									
+									<div id="sig881590" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881600">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881600">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881600">
+
+			<h3 ><a href="#p881600">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881600&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881600" title="Post #2322">#2322</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 28th, 2024, 1:22 pm</span></p>
+			
+			
+			
+			<div class="content">Friends let us consider a  derivative on a single underlying represented by X(t, T) . T corresponds to maturity of the derivative contract and t is the present observation date. <span style="font-size: 100%; line-height: normal">We calculate probability density function or moments associated with the probability density function of X(T) as seen at time t. </span><br>
+<br>
+Suppose  we represent the underlying asset as a hermite series random variable as<br>
+<br>
+[$] X_{t,T}(Z) \, = \,a_0 \, + a_1 \, Z\, +\,  a_2 \, (Z^2-1) \, + \, a_3 \, (Z^3\,-\,3\,Z)[$]<br>
+<br>
+We can then represent a call option as a truncated Z-series. I want to say that it is perfectly valid Z-series and can be used in analytics. We can find correlations of derivative with respect to underlying, other exotic derivatives on the same underlying, and other assets and exotic derivatives on other underlyings using this representation. Only to find expectations, we cannot simply take expectations of hermite polynomials and we would have to use proper integrations.<br>
+<br>
+[$]V_x(Z)\,=\, \begin{cases}<br>
+(\,a_0\,- k\,) + \, a_1\, Z\,+ \, a_2\, (Z^2-1)\, + \, a_3 \, (Z^3\,-\,3\,Z)\, , &amp; \text{ if } Z \geq Z_k \\<br>
+0,   &amp; \text{ otherwise }<br>
+\end{cases}  [$]<br>
+In the above equation [$]Z_k[$] represents the value of Z at which asset equals the value of strike X(Z)=k. or in other words [$]X(Z_k)=k[$]<br>
+<br>
+The expectation of this option can be found by the formula (with zero interest rates)<br>
+[$]\,=\,(\,a_0\,- k\,) (1-\Phi(Z_k))\, +\, \phi(Z_k) \, [ a1 \,+\, a_2\, Z_k\, + \, a_3\, ({Z_k}^2-1)\,] [$]<br>
+<br>
+<br>
+Correlations are between hermite polynomials as ever. In order to find correlations between hermite polynomials of asset and the option (we can also use very similar formula for correlations between two options). We know hermite polynomials of the asset and underlying are the same in positive payoff zone but they are zero in No pay off zone.<br>
+<br>
+We use the formula for correlations to find the correlation between 1st hermite polynomials as<br>
+<br>
+[$]corr_1(X,V_x)\, =\Large{ \, \frac{  \int\limits_{Z_k}^{\infty} \, Z \,*\, Z  \,p(Z) \,dZ }{\sqrt{\int\limits_{-\infty}^{\infty} \, Z ^2 \,p(Z) \,dZ}\, \sqrt{\int\limits_{Z_k}^{\infty} \, Z^2 \,p(Z) \,dZ}} } [$] <br>
+[$]=\Large{ \, \frac{  (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, Z_k}{\sqrt{(1\,-\, \Phi(Z_k)) + \phi(Z_k)}}}[$]<br>
+<br>
+[$]=\sqrt{  (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, Z_k}[$]<br>
+<br>
+To find these integrals, please convert the square of hermite polynomials into a series in hermite polynomials and then integrate using the simple formula<br>
+<br>
+[$] \int\limits_{Z_k}^{\infty} \, H_n(Z)  \,p(Z) \,dZ \, =\, \phi(Z_k) \, H_{n-1}(Z_k) [$]<br>
+<br>
+similarly we find correlations between second and third hermite polynomials of underlying asset and the option as<br>
+<br>
+[$]corr_2(X,V_x)\, =\Large{ \, \frac{  \int\limits_{Z_k}^{\infty} \, (Z^2\, -\, 1)\, *\, (Z^2\,-\,1)  \,p(Z) \,dZ }{\sqrt{\int\limits_{-\infty}^{\infty} \, (Z ^2-1)^2 \,p(Z) \,dZ}\, \sqrt{\int\limits_{Z_k}^{\infty} \, (Z^2\,-\,1)^2 \,p(Z) \,dZ}} } [$] <br>
+<br>
+[$]=\Large{ \, \frac{ 2 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  4\, H_1(Z_k) \, +\, H_3(Z_k)         \Large]}{2\,\sqrt{ 2 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  4\, H_1(Z_k) \, +\, H_3(Z_k)         \Large]}}}[$]<br>
+<br>
+[$]=\Large{ \, \frac{ \sqrt{ 2 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  4\, H_1(Z_k) \, +\, H_3(Z_k)         \Large]}}{2\,}}[$]<br>
+<br>
+for correlations between third hermite polynomials of call price and the asset we have<br>
+<br>
+[$]corr_3(X,V_x)\, =\Large{ \, \frac{  \int\limits_{Z_k}^{\infty} \, (Z^3\, -\, 3\,Z)\, *\, (Z^3\,-\,3\,Z)  \,p(Z) \,dZ }{\sqrt{\int\limits_{-\infty}^{\infty} \, (Z ^3-3\,Z)^2 \,p(Z) \,dZ}\, \sqrt{\int\limits_{Z_k}^{\infty} \, (Z^3\,-\,3\, Z)^2 \,p(Z) \,dZ}} } [$] <br>
+<br>
+[$]=\Large{ \, \frac{ 6 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  18\, H_1(Z_k) \, +\, 9\, H_3(Z_k) +\,  H_5(Z_k)  \Large]}{6\,\sqrt{  (6 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  18\, H_1(Z_k) \, +\, 9\, H_3(Z_k) +\,  H_5(Z_k)  \Large]}}}[$]<br>
+<br>
+[$]=\Large{ \, \frac{ \sqrt{ (6 \, (1\,-\, \Phi(Z_k)) + \phi(Z_k) \, \Large[  18\, H_1(Z_k) \, +\, 9\, H_3(Z_k) +\,  H_5(Z_k)  \Large]}}{6\,}}[$]<br>
+<br>
+We can find these correlations between hermite polynomials of any underlying asset/option with other options on the same underlying and also (using correlations between two assets) between two options with different underlying assets.<br>
+<br>
+We will have to hedge using these correlations. I will come back with hedging equations later tonight or tomorrow.</div>
+
+			
+									
+									<div id="sig881600" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881618">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881618">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881618">
+
+			<h3 ><a href="#p881618">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881618&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881618" title="Post #2323">#2323</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 29th, 2024, 11:38 am</span></p>
+			
+			
+			
+			<div class="content">Friends, on a risk neutral measure, the<span style="font-size: 100%; line-height: normal"> hermite series of terminal distribution of asset random variable at terminal time T is given as</span><br>
+<br>
+[$] X(t, T) \, = \,x_0 \, \exp(r\,(T-t)) + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+while terminal distribution of a call price is given as<br>
+<br>
+[$]V_x(Z)\,=\, \begin{cases}<br>
+(\, \,x_0 \, \exp(r\,(T-t))\,- k\,) + \, a_1\, Z\,+ \, a_2\, (Z^2-1)\, + \, a_3 \, (Z^3\,-\,3\,Z)\, , &amp; \text{ if } Z \geq Z_k \\<br>
+0,   &amp; \text{ otherwise }<br>
+\end{cases}  [$]<br>
+In the above equation [$]Z_k[$] represents the value of Z at which asset equals the value of strike X(Z)=k. or in other words [$]X(Z_k)=k[$]<br>
+<br>
+I need to clarify this first since I had not been correct in some of the recent earlier posts. We can use risk neutral pricing argument only due to delta hedging which mitigates the option value risk due to movements of the spot asset. Our underlying asset can be assumed to grow at the riskless rate only due to delta hedging argument <br>
+<span style="font-size: 100%; line-height: normal">There are other different types of hedging. For example in spirit of vega hedging, we can hedge against the changes in hermite series coefficients, [$]a_1[$], [$]a_2[$] and a [$]a_3[$] of the terminal distribution. </span><br>
+<span style="font-size: 100%; line-height: normal">We can also decrease the variance of any of(or some combination, or all of) the hermite polynomials thus altering the effective variance of the risk neutral portfolio of the derivative and its hedge instruments. </span><br>
+<span style="font-size: 100%; line-height: normal">So there is delta hedging that ensures that our portfolio is immune to small changes in spot. Then there is vega hedging that makes the portfolio immune to changes in the hermite series coefficients or alternatively immune to changes in different modes of cumulative variance till maturity. Then there could be other types of hedging that could altogether alter the variance of the portfolio. We could also mitigate a multi-option portfolio against changes in variance of some select stocks or we could go one step further and make our portfolio totally insensitive to variance of some stocks/components. </span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">We will continue to explore all of this along with correlations but first I want to discuss delta hedging in our framework. I had earlier given a wrong formula for delta hedging a few posts earlier in which I hedged for the first hermite polynomial and erroneously called it delta hedging.</span><br>
+<span style="font-size: 100%; line-height: normal">Here is the right formula.</span><br>
+<span style="font-size: 100%; line-height: normal">First expected value of call option is given without interest rates(we will cover all complete formulas very soon) as</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]\,E[V_x\,]=\, \int\limits_{Z_k}^{\infty}\, \Big[ \,(\,x_0 \, \,- k\,) + \, a_1\, Z\,+ \, a_2\, (Z^2-1)\, + \, a_3 \, (Z^3\,-\,3\,Z) \Big] \, p(Z) \, dZ\,[$] </span><br>
+<span style="font-size: 100%; line-height: normal">or simplifying</span><br>
+<span style="font-size: 100%; line-height: normal">[$]\,E[V_x\,]=\, \int\limits_{Z_k}^{\infty}\, g(x_0,Z) \, p(Z) \, dZ\,[$]</span><br>
+<span style="font-size: 100%; line-height: normal"> </span><br>
+<span style="font-size: 100%; line-height: normal">By Liebniz Rule, we can right the derivative of above integral with respect to [$]x_0[$] as</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]\Large{\frac{d[E[V_x]]}{dx_0}\, = \, - g(x_0,Z_k)\, \frac{dZ_k}{dx_0} \, + \, \, \int\limits_{Z_k}^{\infty}\, \frac{dg(x_0,Z)}{dx_0} \, p(Z) \, dZ\,}[$]<br>
+<br>
+To calculate  [$]\frac{dZ_k}{dx_0} \,[$], we first write the hermite representation of the asset as</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$] X(t, T) \, = \,x_0 \, + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+We know that [$]Z_k] is value of Z for which X(Z) is equal to strike, K. So</span><br>
+<span style="font-size: 100%; line-height: normal"><br>
+[$] k \, = \,x_0 \, + a_1 \, H_1(Z_k)\, +\,  a_2 \,H_2(Z_k) \, + \, a_3 \, H_3(Z_k)[$]</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Differentiating above equation with respect to [$]x_0[$], we get</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]\, 0\,=\, 1\,+ a_1\, \frac{dZ_k}{dx_0}\, + \,a_2\, 2\, Z_k\, \frac{dZ_k}{dx_0}\,+\, a_3\, (3\, {Z_k}^2\, -\, 3\,) \frac{dZ_k}{dx_0}\,[$] </span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">or </span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]\Large{\, \frac{dZ_k}{dx_0}\,=\, \frac{-1}{a_1\, +\,2\,  a_2\, Z_k \, + \,   a_3\, (3\, {Z_k}^2\, -\, 3\,)}}[$]</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">So formula for our delta becomes</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]\Large{\frac{d[E[V_x]]}{dx_0}\, = \, - g(x_0,Z_k)\, \frac{dZ_k}{dx_0} \, + \, \, \int\limits_{Z_k}^{\infty}\, \frac{dg(x_0,Z)}{dx_0} \, p(Z) \, dZ\,}[$]</span><br>
+<br>
+<br>
+[$]= \large{\, -  \Big[ \, \big[(\,x_0 \, \,- k\,) + \, a_1\, {Z_k}\,+ \, a_2\, ({Z_k}^2-1)\, + \, a_3 \, ({Z_k}^3\,-\,3\,Z_k) \big] \, \phi(Z_k)\Big]\,} \Large{ \Big[\, \frac{-1}{a_1\, +\,2\,  a_2\, Z_k \, + \,   a_3\, (3\, {Z_k}^2\, -\, 3\,)}  \Big] \,} \\<br>
++\large{\, \big[1\, -\, \Phi(Z_k) \big]\,}[$]</div>
+
+			
+									
+									<div id="sig881618" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881619">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881619">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881619">
+
+			<h3 ><a href="#p881619">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881619&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881619" title="Post #2324">#2324</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 29th, 2024, 12:43 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, just like we calculated sensitivity to spot asset or delta in previous post, we can also calculate sensitivities to changes in coefficients of hermite polynomials which is equivalent to vegas in our hermite series setting. This is very similar to calculations of delta.<br>
+<br>
+First expected value of call option is given without interest ratesas<br>
+<br>
+[$]\,E[V_x\,]=\, \int\limits_{Z_k}^{\infty}\, \Big[ \,(\,x_0 \, \,- k\,) + \, a_1\, Z\,+ \, a_2\, (Z^2-1)\, + \, a_3 \, (Z^3\,-\,3\,Z) \Big] \, p(Z) \, dZ\,[$] <br>
+or simplifying<br>
+[$]\,E[V_x\,]=\, \int\limits_{Z_k}^{\infty}\, g(x_0,Z) \, p(Z) \, dZ\,[$]<br>
+ <br>
+By Liebniz Rule, we can right the derivative of above integral with respect to [$]a_1[$] as<br>
+<br>
+[$]\Large{\frac{d[E[V_x]]}{da_1}\, = \, - g(a_1,Z_k)\, \frac{dZ_k}{da_1} \, + \, \, \int\limits_{Z_k}^{\infty}\, \frac{dg(a_1,Z)}{da_1} \, p(Z) \, dZ\,}[$]<br>
+<br>
+To calculate  [$]\frac{dZ_k}{da_1} \,[$], we first write the hermite representation of the asset as<br>
+<br>
+[$] X(t, T) \, = \,x_0 \, + a_1 \, H_1(Z)\, +\,  a_2 \,H_2(Z) \, + \, a_3 \, H_3(Z)[$]<br>
+<br>
+We know that [$]Z_k[$] is value of Z for which X(Z) is equal to strike, K. So<br>
+<br>
+[$] k \, = \,x_0 \, + a_1 \, H_1(Z_k)\, +\,  a_2 \,H_2(Z_k) \, + \, a_3 \, H_3(Z_k)[$]<br>
+<br>
+Differentiating above equation with respect to [$]a_1[$], we get<br>
+<br>
+[$]\, 0\,=\, \, Z_k\, \,+ a_1\, \frac{dZ_k}{da_1}\, + \,a_2\, 2\, Z_k\, \frac{dZ_k}{da_1}\,+\, a_3\, (3\, {Z_k}^2\, -\, 3\,) \frac{dZ_k}{da_1}\,[$] <br>
+<br>
+or <br>
+<br>
+[$]\Large{\, \frac{dZ_k}{da_1}\,=\, \frac{-Z_k}{a_1\, +\,2\,  a_2\, Z_k \, + \,   a_3\, (3\, {Z_k}^2\, -\, 3\,)}}[$]<br>
+<br>
+So formula for our delta becomes<br>
+<br>
+[$]\Large{\frac{d[E[V_x]]}{da_1}\, = \, - g(x_0,Z_k)\, \frac{dZ_k}{dx_0} \, + \, \, \int\limits_{Z_k}^{\infty}\, \frac{dg(x_0,Z)}{dx_0} \, p(Z) \, dZ\,}[$]<br>
+<br>
+<br>
+[$]= \large{\, -  \Big[ \, \big[(\,x_0 \, \,- k\,) + \, a_1\, {Z_k}\,+ \, a_2\, ({Z_k}^2-1)\, + \, a_3 \, ({Z_k}^3\,-\,3\,Z_k) \big] \, \phi(Z_k)\Big]\,} \Large{ \Big[\, \frac{-Z_k}{a_1\, +\,2\,  a_2\, Z_k \, + \,   a_3\, (3\, {Z_k}^2\, -\, 3\,)}  \Big] \,} \\<br>
++\large{\, \, \phi(Z_k) \,}[$]<br>
+<br>
+We can easily find sensitivities with respect to coefficients of higher hermite polynomials in a similar way. We can also use similar method for calculations of discontinuous barrier options and their all different sensitivities analytically.</div>
+
+			
+									
+									<div id="sig881619" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p881638">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile881638">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content881638">
+
+			<h3 ><a href="#p881638">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=881638&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p881638" title="Post #2325">#2325</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">May 30th, 2024, 5:52 am</span></p>
+			
+			
+			
+			<div class="content">Friends, in this post we construct a portfolio of an exotic derivative and its hedge instruments and calculate the amount of hedge assets required to make the total portfolio immune to small changes in spot underlying asset and changes in hermite series coefficients(volatility coefficients) of the underlying asset.<br>
+We take unit amount of exotic derivative and k0 of underlying asset and [$]k_1[$], [$]k_2[$], and [$]k_3[$] of options V1,V2 and V3.<br>
+<br>
+Now our portfolio is given as<br>
+<br>
+[$]\Pi\, =\, V_x\, + \, k_0 \, X \, + \, k_1\, V_1\,+ \, k_2\, V_2\,+ \, k_3\, V_3\,[$] <br>
+<br>
+The condition to make the portfolio immune to changes in spot asset is given as<br>
+<br>
+[$]\, \Large{ \frac{\partial\Pi}{\partial x_0}\, =\, \frac{\partial V_x}{\partial x_0}\, + \, k_0 \, \frac{\partial X}{\partial x_0}\, + \, k_1\, \frac{\partial V1}{\partial x_0}\,+ \, k_2\, \, \frac{\partial V_2}{\partial x_0}\,+ \, k_3\,\, \frac{\partial V_3}{\partial x_0}\,=\,0}[$] <br>
+<br>
+The condition to make the portfolio immune to changes in coefficients of 1st hermite polynomial of distribution of  asset X(t,T) is given as<br>
+<br>
+[$]\, \Large{\frac{\partial\Pi}{\partial c_1}\, =\, \frac{\partial V_x}{\partial c_1}\, + \, k_0 \, \frac{\partial X}{\partial c1}\, + \, k_1\, \frac{\partial V1}{\partial c_1}\,+ \, k_2\, \, \frac{\partial V_2}{\partial c_1}\,+ \, k_3\,\, \frac{\partial V_3}{\partial c_1}\,\,=\,0}[$] <br>
+<br>
+Similarly the next two conditoins to make the portfolio immune to small changes in [$]c_2[$] and [$]c_3[$] as <br>
+<br>
+[$]\, \Large{\frac{\partial\Pi}{\partial c_2}\, =\, \frac{\partial V_x}{\partial c_2}\, + \, k_0 \, \frac{\partial X}{\partial c_2}\, + \, k_1\, \frac{\partial V1}{\partial c_2}\,+ \, k_2\, \, \frac{\partial V_2}{\partial c_2}\,+ \, k_3\,\, \frac{\partial V_3}{\partial c_2}\,\,=\,0}[$] <br>
+<br>
+[$]\, \Large{\frac{\partial\Pi}{\partial c_3}\, =\, \frac{\partial V_x}{\partial c_3}\, + \, k_0 \, \frac{\partial X}{\partial c3}\, + \, k_1\, \frac{\partial V1}{\partial c_3}\,+ \, k_2\, \, \frac{\partial V_2}{\partial c_3}\,+ \, k_3\,\, \frac{\partial V_3}{\partial c_3}\,\,=\,0}[$] <br>
+<br>
+Since we have analytically calculated all sensitivities analytically as before, we can easily solve for the amounts of hedge instruments that we need to make the protfolio riskless to first order variations in spot and volatility. In our case, we need to solve four equations in four unknowns to determine  k0 of underlying asset and [$]k_1[$], [$]k_2[$], and [$]k_3[$] of options V1,V2 and V3.<br>
+<br>
+We can replace [$]V_x[$] with any portfolio of options and other instruments on a single asset.<br>
+In a later post, we will calculate the hedges of a multiple-option portfolio with several underlying assets </div>
+
+			
+									
+									<div id="sig881638" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;81a55762e0cb5e5c70b1a66f8db27229" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2280" role="button">153</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" role="button">154</a></li>
+							<li class="active"><span>155</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" role="button">156</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2340" role="button">157</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2310&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;81a55762e0cb5e5c70b1a66f8db27229" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2280" role="button">153</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2295" role="button">154</a></li>
+							<li class="active"><span>155</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" role="button">156</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2340" role="button">157</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=81a55762e0cb5e5c70b1a66f8db27229&amp;start=2325" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2310&amp;sid=81a55762e0cb5e5c70b1a66f8db27229">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=81a55762e0cb5e5c70b1a66f8db27229" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=81a55762e0cb5e5c70b1a66f8db27229"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=81a55762e0cb5e5c70b1a66f8db27229"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=81a55762e0cb5e5c70b1a66f8db27229" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#157471787c7b55627c79787a61613b767a78">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>155</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=81a55762e0cb5e5c70b1a66f8db27229";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=81a55762e0cb5e5c70b1a66f8db27229";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2989dc4a572c","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

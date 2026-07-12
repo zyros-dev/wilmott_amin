@@ -1,0 +1,4032 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 173 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=cff6baa27580104f26051c6817b4906d" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=cff6baa27580104f26051c6817b4906d?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=cff6baa27580104f26051c6817b4906d?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=cff6baa27580104f26051c6817b4906d?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2580" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=cff6baa27580104f26051c6817b4906d" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="cff6baa27580104f26051c6817b4906d" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=cff6baa27580104f26051c6817b4906d" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=cff6baa27580104f26051c6817b4906d" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=cff6baa27580104f26051c6817b4906d" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="cff6baa27580104f26051c6817b4906d" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=cff6baa27580104f26051c6817b4906d" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=cff6baa27580104f26051c6817b4906d"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=cff6baa27580104f26051c6817b4906d"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=cff6baa27580104f26051c6817b4906d" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2580%26t%3D99702&amp;sid=cff6baa27580104f26051c6817b4906d" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=cff6baa27580104f26051c6817b4906d" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2580&amp;t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" />
+<input type="hidden" name="creation_time" value="1768907857" />
+<input type="hidden" name="form_token" value="6673d7df8d54c26921b16ecd895eb4935aeb5d9f" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=cff6baa27580104f26051c6817b4906d" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2580&amp;sid=cff6baa27580104f26051c6817b4906d">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2580&amp;sid=cff6baa27580104f26051c6817b4906d&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=cff6baa27580104f26051c6817b4906d">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="cff6baa27580104f26051c6817b4906d" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;cff6baa27580104f26051c6817b4906d" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2550" role="button">171</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" role="button">172</a></li>
+							<li class="active"><span>173</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" role="button">174</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2610" role="button">175</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885419">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885419">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885419">
+
+			<h3 class="first"><a href="#p885419">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885419&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885419" title="Post #2581">#2581</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 3rd, 2025, 6:54 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, here is the result of my research today. I was able to get my program to work for applying multi-dimensional Newton Root Search for finding multi-dimensional coefficients backed out from Z-series of  X^2.<br>
+<br>
+I calculated jacobian matrix for multidimensional Newton in the usual way. However instead of original Newton method as given below<br>
+<br>
+\[X_{n+1}\,=\,X_n\,-\, {J_F(X_n)}^{-1}\,F(X_n) \]<br>
+<br>
+I replaced it with Newton in least square sense <br>
+<br>
+\[X_{n+1}\,=\,X_n\,-\, \left[ \,{J_F(X_n)}^T\,J_F(X_n)\right]^{-1}\,{J_F(X_n)}^T\,F(X_n) \]<br>
+<br>
+but it was still not working since there were zeros on some diagonal entries and I changed the matrix inversion to as in ridge regression as given below<br>
+<br>
+\[X_{n+1}\,=\,X_n\,-\, \left[ \,{J_F(X_n)}^T\,J_F(X_n) \, + \alpha I \right]^{-1}\,{J_F(X_n)}^T\,F(X_n) \]<br>
+<br>
+and then it started to converge when I applied it to calibrate it to Z-series of \(X^2\).<br>
+<br>
+I still have to add the code for calibration to \(X^3\) and \(X^4\) as I had originally intended but I am sure that it will only make the problem solution more robust. I have already written the routine to calculate derivatives of the extended program so I am sure that I will have a working program ready by the end of weekend that I would post on Monday.</div>
+
+			
+									
+									<div id="sig885419" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885436">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885436">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885436">
+
+			<h3 ><a href="#p885436">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885436&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885436" title="Post #2582">#2582</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 7th, 2025, 2:43 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I made a post yesterday but it had serious errors so I deleted it. I will come back with corrected version of that post in another two or three days since the main idea (remains valid) of calculating variance at multiple scales and then comparing them with each other would give us information about level of mean reversion. I would come back to it soon.<br>
+<br>
+However, for past few weeks, the focus of my research has been about specifying and estimating the dynamic coefficients Z-series model. I have tried to estimate the model I specified and it did not seem to work properly as mostly it leads to non-intuitive parameters found. That led me to question myself what was wring with the model? And I realized that my specified model was not a proper clustering model as it should be rather I was just giving further variance to coefficients in a non-informative way. A proper information yielding model should have coefficients slowly evolving and also mean-reverting so coefficients should rather be auto-regressive with reasonably well defined means or they should be simple ornstein-uhlenbeck processes. At times of higher activity or lower activity, the coefficients would deviate away from the mean but later return close to their mean values after a little while. This sort of arrangement for coefficients seems much more realistic and information yielding as well.<br>
+<br>
+I was rather naiive when I specified the earlier version of the model as earlier version of the model was really not a moments clustering model. May be it seemed the simplest possible extension and I decided to try it. Good thing is that most of the infrastructure and ideas I used to estimate the model could be moved to our more sophisticated model more easily and I hope to see within a few days how the new model goes through the estimation phase.<br>
+<br>
+I also suppose that driving noises, in the ornstein-uhlenbeck form of coefficients evolution, could possibly be correlated across different coefficients. <br>
+<br>
+I give the form of updated model I want to work with in the next post with Latex equations.</div>
+
+			
+									
+									<div id="sig885436" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885437">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885437">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885437">
+
+			<h3 ><a href="#p885437">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885437&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885437" title="Post #2583">#2583</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 7th, 2025, 3:04 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 175%; line-height: normal">Dynamic Coefficients Hermite Polynomial Series Models For Time Series Evolution of Random Variables</span><br>
+<br>
+ In this brief note we want to discuss hermite polynomial series representation of random variables where coefficients of hermite polynomials are also represented by another hermite polynomial series for each coefficient.<br>
+<br>
+We give some example of some practical dynamic hermite series coefficients models below  <br>
+<br>
+\[\, X \,=\, a_{0}(t)\, + \, \, a_{1}(t)\, \, Z\, + \, \, a_{2}(t)\,\, \left( Z^2\,-\,1\,\right) + \, \, a_{3}(t)\, \, \left( Z^3\,-\,3 \,Z\,\right)    \] <br>
+where<br>
+\[\, a_{0}(t)\, =\, \kappa_1\, \left(a_{00} \,-\,a_{0}(t-1)\, \right)\,+\, \sigma_0 \,Z_0\]<br>
+\[\, a_{1}(t)\, =\, \kappa_2\,\left(a_{10} \,-\,a_{1}(t-1)\, \right)\,+\, \sigma_1 \,Z_1\]<br>
+\[\, a_{2}(t)\, =\, \kappa_3\,\left(a_{20} \,-\,a_{2}(t-1)\, \right)\,+\, \sigma_2 \,Z_2\]<br>
+\[\, a_{3}(t)\, =\, \kappa_4\,\left(a_{30} \,-\,a_{3}(t-1)\, \right)\,+\, \sigma_3 \,Z_3\]<br>
+<br>
+We have specified dynamics to coefficients of only first four polynomials in the Z-series but coefficients with dynamics may increase or decrease as we learn from the data.  All of these \(Z_0\, \,Z_1, \, Z_2,\,Z_3 \) could possibly be positively or negatively correlated with each other but could also be correlated with \(\bar{Z}_0\, \,\bar{Z}_1, \, \bar{Z}_2,\, \bar{Z}_3 \) which are noises in dynamic coefficients of hermite series of another random variable.<br>
+<br>
+I will come back with a post on estimation after a day or two of experimentation with estimation models. The above model is definitely more complex than the previous model but I really think if we can harness it, this will be very useful in a large number of applications and I want to devote some good time and energy to be able to calibrate this model.</div>
+
+			
+									
+									<div id="sig885437" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885440">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885440">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885440">
+
+			<h3 ><a href="#p885440">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885440&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885440" title="Post #2584">#2584</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 7th, 2025, 7:11 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 150%; line-height: normal"><span style="font-family:sans-serif">Estimation Strategy For </span></span><span style="font-size: 150%; line-height: normal"><span style="font-family:sans-serif">Dynamic Coefficients Hermite Polynomial Series Models For Time Series Evolution of Random Variables</span></span><br>
+<br>
+As we understand, the estimation of a dynamic coefficients model is not possible without specifying variability in moments. However many (single statistic of) moments we may specify, it will always give us a time homogenous static/stationary distribution with more precision therefore dynamic coefficients model estimation could only be possible if we can capture the systematic variability in moments of the time series. <br>
+<br>
+With this understanding, we can specify a simple estimation methodology in which we have a sliding window in time and we re-estimate moments of a time series (or innovations of this time series) with each sliding movement of this window. And also estimate the coefficients of the accompanying Z-series/Hermite series. We can then map the time series of coefficients of Z-series on simple Ornstein-Uhlenbeck like autoregressive processes. Since all coefficients are found in the same order in time, we can also find correlations among driving noises of different auto-regressive equation of coefficients across one time series and across various different time series of coefficients of different random variables.<br>
+<br>
+Any sliding window method could give rise to correlations due to overlap of data so we would have to understand what are correlations due to overlapping data and what are true correlations after accounting for the overlap of the data in the sliding window.<br>
+<br>
+We would also like to estimate dynamics of daily changes in the random variables in the financial markets from the most recent intra-day data of the market.<br>
+<br>
+I have this simple idea that we could estimate a set of moments \(M_1\) over N intervals first, and then calculate another related set of moments \(M_2\) over \(\text{N+1}\) intervals and then we might be able to retrieve pure moments associated with \(\text{(N+1)th}\) interval using moments calculus over set of moments \(M_1\) and \(M_2\) but this is just a rudimentary idea and I need to see if it can work. If it does work, we can possibly find Z-series associated with \(\text{(N+1)th}\) interval directly from moments of \(\text{(N+1)th}\) interval but we might need some regularization and there might be some other caveats and I can only be sure if this idea works well in practice.<br>
+<br>
+With the above simple methodology, we aim to estimate dynamic coefficients Z-series of various variables in the financial markets. I will come up with simple matlab programs in a few days.</div>
+
+			
+									
+									<div id="sig885440" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885461">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885461">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885461">
+
+			<h3 ><a href="#p885461">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885461&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885461" title="Post #2585">#2585</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 9th, 2025, 8:09 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I went ahead and produced simulation data from a stochastic volatility based asset SDE and calculated Z-series up to third power (fitting first four moments) and produced a time series of coefficients of this Z-series (of dX(t) ) updated at every simulation interval. I am showing overlaid graphs for this X(t) and also of the four parameters of the Z-series. Graphs are here and I will make a new post to attach the matlab code used to produce these graphs. This is still an initial program and will see a lot of changes but I am copying it in next post. <br>
+<br>
+These graphs are from a random simulation and I expect that real data will be more interesting since it would be a mix of randomness and systematic patterns(that we want to find). However, even these graphs can be interesting since a different SDE  (negatively correlated with asset) is used to generate volatility so there should be quite a bit of volatility clustering and skew.<br>
+.<br>
+.<br>
+.<br>
+<a href="https://postimg.cc/30yqjzVx" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/T1QXx6cg/Time-Series01.png" class="postimage" alt="Image"></a><br>
+<br>
+<a href="https://postimg.cc/DJpDX7CN" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/0j9qhQ79/Time-Series02.png" class="postimage" alt="Image"></a><br>
+<br>
+<a href="https://postimg.cc/8Jz9c7bW" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/W3Gv9rF9/Time-Series03.png" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig885461" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885462">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885462">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885462">
+
+			<h3 ><a href="#p885462">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885462&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885462" title="Post #2586">#2586</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 9th, 2025, 8:25 pm</span></p>
+			
+			
+			
+			<div class="content">.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = SlidingWindowZSeriesEstimation()
+
+
+TT=500;
+seed=15898837;
+
+[X1] = ProduceSDEDataTimeSeries(TT,seed);
+
+
+NIntervals=15;  %Intervals used to estimate moments
+
+
+plot((1:TT),X1(1:TT),'g');
+str=input("Look at graph of Time Series variable X");
+
+
+for tt=(1+NIntervals):TT
+    muA(1:4)=0;
+    for nn=1:NIntervals
+        dXt=X1(tt-NIntervals+nn)-X1(tt-NIntervals+nn-1); %Moments are calculated for dX(t)
+        muA(1:4)=muA(1:4)+(dXt.^(1:4))/NIntervals;
+    end
+
+    [c(1,tt),c(2:4,tt),FittedMoments] = CalculateZSeriesDensityFromRawMoments02M4(muA,0);
+ 
+    c
+    %str=input("Look at new Coeffs");
+
+end
+
+
+c
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+yyaxis right
+plot((1+NIntervals:TT),c(1,1+NIntervals:TT),'b');
+
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(2,1+NIntervals:TT),'r');
+ylabel('Coefficients c0 and c1 of Z-series of X')
+
+title("Graph of time series X and first two Coefficients of its Z-series, c0 and c1");
+legend('X','c0','c1','Location','northeast');
+%plot((1:TT),X1(1:TT),'g',(1+NIntervals:TT),c(1,1+NIntervals:TT),'b',(1+NIntervals:TT),c(2,1+NIntervals:TT),'r',(1+NIntervals:TT),c(3,1+NIntervals:TT),'k',(1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+str=input("Look at graph--final");
+
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+ hold on
+yyaxis right
+plot((1+NIntervals:TT),c(3,1+NIntervals:TT),'k');
+ylabel('Coefficients c2 of Z-series of X')
+
+title("Graph of time series X and third coefficients of its Z-series, c2");
+legend('X','c2','Location','northeast');
+
+str=input("Graph--Fianl--2")
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+ylabel('Coefficients c3 of Z-series of X')
+
+title("Graph of time series X and fourth coefficient of its Z-series, c3");
+legend('X','c3','Location','northeast');
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [X1] = ProduceSDEDataTimeSeries(TT,seed)
+
+
+paths=1;
+
+X0=1.0;
+alpha1=0;
+alpha2=1;
+%kappaX=2.0;
+%thetaX=.5;
+kappaX=0.0;
+thetaX=0.0;
+a=kappaX*thetaX;
+b=-kappaX;
+%a=0;
+%b=0;
+rho=-0.50;
+sigma1=.55;
+gammaV=.5;
+gammaX=.95;
+%%%%%%%%%%%%%
+V0=1.0;
+thetaV=.25;
+kappaV=1.0;
+mu1=kappaV*thetaV;
+mu2=-kappaV;
+beta1=0;
+beta2=1;
+gamma=.85;
+sigma0=.75;
+%%%%%%%%%%%%
+
+dt=.03125;
+%Tt=32*4;
+Tt=TT;
+
+T=Tt*dt;
+%paths=100000;
+
+%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%rng(29079137, 'twister')
+%rng(15898837, 'twister')
+rng(seed, 'twister')
+% paths=1000000;
+V(1:paths)=V0;  %Original process monte carlo.
+X(1:paths)=X0;
+Random1(1:paths)=0;
+Random2(1:paths)=0;
+
+for tt=1:Tt
+Random1=randn(size(Random1));
+Random2=randn(size(Random2));
+
+
+X(1:paths)=X(1:paths)+ ...
+    (a* X(1:paths).^alpha1 + b* X(1:paths).^alpha2)* dt + ...
+    sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.* X(1:paths).^gammaX .*Random1(1:paths) * sqrt(dt) + ...
+    rho* sigma1* V(1:paths).^gammaV .*X(1:paths).^gammaX .*Random2(1:paths)*sqrt(dt) + ...
+    (a*alpha1* X(1:paths).^(alpha1-1)+b*alpha2* X(1:paths).^(alpha2-1)).* ...
+    (((a* X(1:paths).^alpha1 + b* X(1:paths).^alpha2)* dt^2/2)+ ...
+    (sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.* X(1:paths).^gammaX .*Random1(1:paths) *(1-1/sqrt(3)).*dt^1.5+ ...
+    rho* sigma1* V(1:paths).^gammaV .*X(1:paths).^gammaX .*Random2(1:paths)*(1-1/sqrt(3)).*dt^1.5))+ ...
+    .5*(a*alpha1*(alpha1-1)* X(1:paths).^(alpha1-2)+b*alpha2*(alpha2-1).* X(1:paths).^(alpha2-2)).* ...
+    ( sigma1^2* V(1:paths).^(2*gammaV).* X(1:paths).^(2*gammaX)) *dt^2/2 + ...
+    sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.*gammaX.* X(1:paths).^(gammaX-1).* ...
+    ((a* X(1:paths).^alpha1 + b* X(1:paths).^alpha2).*Random1(1:paths) * 1/sqrt(3).* dt^1.5 + ...
+    sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.* X(1:paths).^gammaX .*(Random1(1:paths).^2-1) * dt/2 + ...
+    rho* sigma1* V(1:paths).^gammaV .*X(1:paths).^gammaX .*Random1(1:paths).*Random2(1:paths)*dt/2)+ ...
+    .5*sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.*gammaX.*(gammaX-1).* X(1:paths).^(gammaX-2).* ...
+    (sigma1^2* V(1:paths).^(2*gammaV).* X(1:paths).^(2*gammaX) .*Random1(1:paths).*1/sqrt(3).*dt^1.5)+ ...
+    sqrt(1-rho^2)* sigma1*gammaV.* V(1:paths).^(gammaV-1).* X(1:paths).^(gammaX).* ...
+    ((mu1.*V(1:paths).^beta1 + mu2.*V(1:paths).^beta2).*Random1(1:paths) * 1/sqrt(3).* dt^1.5 + ...
+    sigma0*V(1:paths).^gamma.*Random1(1:paths).*Random2(1:paths)*dt/2)+ ...
+    .5*sqrt(1-rho^2)* sigma1*gammaV.*(gammaV-1).* V(1:paths).^(gammaV-2).* X(1:paths).^(gammaX).* ...
+    (sigma0^2*V(1:paths).^(2*gamma).*Random1(1:paths)*1/sqrt(3)*dt^1.5)+ ...
+    sqrt(1-rho^2)* sigma1*gammaV.* V(1:paths).^(gammaV-1).*gammaX.* X(1:paths).^(gammaX-1).* ...
+    rho.* sigma1.* V(1:paths).^gammaV .*X(1:paths).^gammaX .*sigma0.*V(1:paths).^gamma.*Random1(1:paths)*1/sqrt(3)*dt^1.5+ ...
+    rho* sigma1* V(1:paths).^gammaV.*gammaX.* X(1:paths).^(gammaX-1).* ...
+    ((a* X(1:paths).^alpha1 + b* X(1:paths).^alpha2).*Random2(1:paths) * 1/sqrt(3).* dt^1.5 + ...
+    sqrt(1-rho^2)* sigma1* V(1:paths).^gammaV.* X(1:paths).^gammaX .*Random1(1:paths).*Random2(1:paths) * dt/2 + ...
+    rho* sigma1* V(1:paths).^gammaV .*X(1:paths).^gammaX .*(Random2(1:paths).^2-1)*dt/2)+ ...
+    .5*rho* sigma1* V(1:paths).^gammaV.*gammaX.*(gammaX-1).* X(1:paths).^(gammaX-2).* ...
+    (sigma1^2* V(1:paths).^(2*gammaV).* X(1:paths).^(2*gammaX) .*Random2(1:paths).*1/sqrt(3).*dt^1.5)+ ...
+    rho* sigma1*gammaV.* V(1:paths).^(gammaV-1).* X(1:paths).^(gammaX).* ...
+    ((mu1.*V(1:paths).^beta1 + mu2.*V(1:paths).^beta2).*Random2(1:paths) * 1/sqrt(3).* dt^1.5 + ...
+    sigma0*V(1:paths).^gamma.*(Random2(1:paths).^2-1)*dt/2)+ ...
+    .5*rho* sigma1*gammaV.*(gammaV-1).* V(1:paths).^(gammaV-2).* X(1:paths).^(gammaX).* ...
+    sigma0^2.*V(1:paths).^(2*gamma).*Random2(1:paths) * 1/sqrt(3).* dt^1.5+ ...
+    rho* sigma1*gammaV.* V(1:paths).^(gammaV-1).*gammaX.* X(1:paths).^(gammaX-1).* ...
+    rho.* sigma1.* V(1:paths).^gammaV .*X(1:paths).^gammaX .*sigma0.*V(1:paths).^gamma.*Random2(1:paths)*1/sqrt(3)*dt^1.5;
+    
+
+    V(1:paths)=V(1:paths)+ ...
+        (mu1.*V(1:paths).^beta1 + mu2.*V(1:paths).^beta2)*dt + ...
+        sigma0*V(1:paths).^gamma .*Random2(1:paths)*sqrt(dt) + ...
+        (mu1.*beta1*V(1:paths).^(beta1-1) + mu2.*beta2.*V(1:paths).^(beta2-1)).* ...
+        ((mu1.*V(1:paths).^beta1 + mu2.*V(1:paths).^beta2)*dt^2/2 + ...
+        sigma0*V(1:paths).^gamma .*Random2(1:paths)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1.*beta1.*(beta1-1).*V(1:paths).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths).^(beta2-2)).* ...    
+        sigma0^2.*V(1:paths).^(2*gamma).*dt^2/2 + ...
+        sigma0*gamma*V(1:paths).^(gamma-1) .* ...
+        ((mu1.*V(1:paths).^beta1 + mu2.*V(1:paths).^beta2).*Random2(1:paths).*1/sqrt(3)*dt^1.5 + ...
+        sigma0.*V(1:paths).^gamma .*(Random2(1:paths).^2-1)*dt/2) + ...
+        .5*sigma0*gamma*(gamma-1).*V(1:paths).^(gamma-2) .* ...
+        sigma0^2.*V(1:paths).^(2*gamma) .*Random2(1:paths).*1/sqrt(3)*dt^1.5;
+
+    
+    
+    X(X&lt;0)=-X(X&lt;0);
+    
+    
+    X1(tt)=X(1);
+    
+    
+    V1(tt)=V(1);
+%     if(tt==32)
+%         X1=X;
+%         V1=V;
+%     end
+%     if(tt==96)
+%         X2=X;
+%     end
+    
+    
+
+end
+
+
+
+
+
+
+
+
+
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [c0,c,FittedMoments] = CalculateZSeriesDensityFromRawMoments02M4(rMu,bGuess)
+%The above function takes an array of first eight raw moments as input.
+%And returns Z-series Coeffs upto 3rd power of Z as
+%Y=c0+c(1)*Z+c(2)*Z^2+c(3)*Z^3           %%%%%%+c(4)*Z^4+c(5)*Z^5+c(6)*Z^6+c(7)*Z^7
+%Fitted Moments are raw moments of the Z-series density and usually are exactly
+%the same as input raw moments rMu(1:4).i.e  FittedMoments(1:4)==rMu(1:4)
+%with high precision.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%If you do not have valid moments from a density available, please
+%uncomment the following input moments to run the program.
+
+% rMu(1)=0.000012499863483*10^5;   
+% rMu(2)=0.000021197093700*10^5;
+% rMu(3)=0.000050274347857*10^5;
+% rMu(4)=0.000171368317209*10^5;
+% rMu(5)=0.000856094970826*10^5;
+% rMu(6)=0.006320436615909*10^5;
+% rMu(7)=0.068698344472325*10^5;
+% rMu(8)=1.084082326087001*10^5;
+
+% rMu(1)=0;
+% rMu(2)=1;
+% rMu(3)=0;
+% rMu(4)=105*105;
+% rMu(5)=0;
+% rMu(6)=(945*11)^2;
+% rMu(7)=0;
+% rMu(8)=(945*11*13*15).^2;
+% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+SeriesOrder=3;    %Z-series till 7th power. hardcoded here cannot chagne.
+mOrder=4;         %Number of raw moments in calibration. hardcoded here cannot chagne.      
+NMoments=mOrder;
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+%sMu(5)=cMu(5)/cMu(2).^2.5;
+%sMu(6)=cMu(6)/cMu(2).^3.0;
+%sMu(7)=cMu(7)/cMu(2).^3.5;
+%sMu(8)=cMu(8)/cMu(2).^4.0;
+
+
+
+
+iter=200;           %Number of iterations in the calibration.
+                  %Please experiment and play around.  
+bGuess(2:3)=0;    %We have assigned initial values of coefficients 
+bGuess(1)=1;      %other than c(1) to zero. We are starting with no prior information.  
+%[c0,c] = PreSmoothingGuessAdvancedFromGuessBestNew(sMu,bGuess,iter);
+[c0,c] = PreSmoothingGuessAdvancedFromGuessBestNewC3(sMu,bGuess,iter);
+
+
+c0
+c
+
+%str=input("Look at pre-smoothing Guess result")
+
+
+% w(NMoments)=1;
+% for nn=NMoments-1:-1:1
+%     %w(nn)=w(nn+1)*(nn+1).^2;
+%     w(nn)=w(nn+1)*(nn+2).*(nn+3);
+% end
+% 
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %Comment this block if you do not want multidimensional Newton pass
+% %Even though preSmoothing guess is very close to optimal, slight
+% %inaccuracies can change the shape of probabioity density so this 
+% %Multidimensional Newton is usually required.
+% 
+% [F,dF] = CalculateMomentsAndDerivatives_0(sMu,c0,c,SeriesOrder,SeriesOrder,NMoments);
+% 
+% da(1,1)=c0;
+% da(2:SeriesOrder+1,1)=c(1:SeriesOrder);
+% 
+% [Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+% 
+% %Replace with your own more intelligent objective function if you like.
+% %ObjBest=100000*(abs(sMu(1)-Moments(1)))+abs(sMu(2)-Moments(2))+abs((sMu(3)-Moments(3))^(1/1.5))+abs((sMu(4)-Moments(4))^(1/2.0)) + ...
+% %    abs((sMu(5)-Moments(5))^(1/2.0))+abs((sMu(6)-Moments(6))^(1/2.0))+abs((sMu(7)-Moments(7))^(1/2.0))+ ...
+% %    abs((sMu(8)-Moments(8))^(1/2.0));
+% 
+% [ObjBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+% 
+% 
+% 
+% b0Best=c0;
+% bBest(1:SeriesOrder)=c(1:SeriesOrder);
+% 
+% nn=0;
+% while((nn&lt;-400)&amp;&amp;((abs(F(1,1))&gt;.000000000001) || (abs(F(2,1))&gt;.000000000001) || (abs(F(3,1))&gt;.000000000001) || (abs(F(4,1))&gt;.00000000001)  ))
+% 
+%     nn=nn+1;
+%     %Below Newton matrix equation to improve the Z-series coefficients guess at previous step.
+%     da=da-dF\F;
+% 
+%     %b0=median
+%     b0=da(1,1);
+%     b(1:SeriesOrder)=da(2:SeriesOrder+1,1);
+% 
+%     %[F,dF] = CalculateCumulantsAndDerivativesFromMoments_0(C,b0,b,SeriesOrder,SeriesOrder,NoOfCumulants);
+%     [F,dF] = CalculateMomentsAndDerivatives_0(sMu,b0,b,SeriesOrder,SeriesOrder,NMoments);
+%     %[IsValidFlag] = CheckIsValidDensity(b0,b);
+%     [Moments] = CalculateMomentsOfZSeries(b0,b,SeriesOrder,NMoments);
+% 
+%     %ObjNew=100000*(abs(sMu(1)-Moments(1)))+abs(sMu(2)-Moments(2))+abs((sMu(3)-Moments(3))^(1/1.5))+abs((sMu(4)-Moments(4))^(1/2.0)) + ...
+%     %abs((sMu(5)-Moments(5))^(1/2.0))+abs((sMu(6)-Moments(6))^(1/2.0))+abs((sMu(7)-Moments(7))^(1/2.0))+ ...
+%     %abs((sMu(8)-Moments(8))^(1/2.0));
+%   
+% 
+%     [ObjNew] = CalculateObjMoment(sMu,Moments,w,mOrder);    
+% 
+%     IsValidFlag=1;
+%     if((ObjBest&gt;ObjNew) &amp;&amp;( IsValidFlag))
+%       
+%        ObjBest=ObjNew;
+%        b0Best=b0;
+%        bBest(1:SeriesOrder)=b(1:SeriesOrder);
+%     end
+% 
+%     da(1,1)=b0;
+%     da(2:SeriesOrder+1,1)=b(1:SeriesOrder);
+% 
+% end
+% c0=b0Best;%Best;
+% c(1:SeriesOrder)=bBest;%Best(1:SeriesOrder);
+%   
+% %Above are the best chosen Z-series coefficients based on the objective function.
+% %But my objective function can be improved.
+% 
+% %Multidimensional Newton root search ends. Comment till here if you like to
+% %exclude this
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+c0
+c
+
+%str=input("Look at standardized output coefficients");
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Make sure you do not comment the lines below
+
+c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+c=c*sqrt(cMu(2));   %convert from standardized to central moments
+
+c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+
+[FittedMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Please Uncomment this if you want to see a comparison of input moments and
+%fitted moments
+rMu
+FittedMoments
+%str=input('Look at comparison of fitted moments with input moments');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%COMMENT lines below if you do not want to see the density of new Z-series random variable with
+%fitted moments.
+%First calculate normal random variable on a grid below
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z
+%str=input('Look at Z');
+%Now calculate Y as a function of normal random variable.
+Y(1:Nn)=c0;
+for nn=1:3
+    Y(1:Nn)=Y(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Now take change of densities derivative of Y with respect to normal
+DfY(1:Nn)=0;
+for nn=2:Nn-1
+    DfY(nn) = (Y(nn + 1) - Y(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+DfY(Nn)=DfY(Nn-1);
+DfY(1)=DfY(2);
+
+%Now calculate the density of Y from density of normal random variable
+%using change of probability derivative.
+pY(1:Nn)=0;
+for nn = 1:Nn    
+    pY(nn) = (normpdf(Z(nn),0, 1))/abs(DfY(nn));
+end
+
+plot(Y(1:Nn),pY(1:Nn),'b');
+title('Density of the Z-Series Variable with Fitted Moments');
+
+%str=input('Look at the density of Z-series random variable')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [c0,c] = PreSmoothingGuessAdvancedFromGuessBestNewC3(cmu,cin,iter)
+
+
+%Mul=1.0;
+SeriesOrder=3;
+NMoments=4;
+
+ EZ(1)=0;
+ EZ(2)=1;
+ for nn=3:NMoments*SeriesOrder+SeriesOrder+2
+     if rem(nn,2)==1
+         EZ(nn)=0;
+     else
+         EZ(nn)=EZ(nn-2)*(nn-1);
+         EZ(nn);
+     end
+ end
+
+
+c0=-(cin(2));  %This is for zero mean condition.
+c=cin;
+MaxIter=20;
+
+for nn=1:iter     %increase the iterations over coefficients if neeeded
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+tolerance=.00000001*cmu(3);
+mm=0;
+while ((abs(M3-cmu(3)) &gt;tolerance ) &amp;&amp; (mm&lt;MaxIter))
+mm=mm+1;
+c(2)=c(2)-(M3-cmu(3))/dc2;
+if(rem(mm,4)==0)
+    c0=-c(2);
+end
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+end
+
+c0=-(c(2));
+
+[SecondMoment] = CalculateSecondMomentC3(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%[c0,c] = IterateSmoothingGuessOverPreviousMoments(cmu,c,3,2,EZ);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+[M4,dc3] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,4,EZ);
+
+tolerance=.0000001*cmu(4);
+mm=0;
+while ((abs(M4-cmu(4)) &gt;tolerance ) &amp;&amp; (mm&lt;MaxIter))
+mm=mm+1;
+c(3)=c(3)-(M4-cmu(4))/dc3;
+
+[M4,dc3] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,4,EZ);
+
+end
+
+[SecondMoment] = CalculateSecondMomentC3(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+
+%[c0,c] = IterateSmoothingGuessOverPreviousMoments(cmu,c,4,2,EZ);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+end
+
+
+end</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [EnMoment,dEnMomentdCoeff] = CalculateParticularMomentAndDerivativeOfItsCoeff(a0,a,SeriesOrder,nMoment,EZ)
+
+
+% if(SeriesOrder&gt;=8)
+% a0=-(a(2)+3*a(4)+15*a(6)+105*a(8));% ---1
+% end
+% if(SeriesOrder&lt;8)
+% a0=-(a(2)+3*a(4)+15*a(6));% ---1
+% end
+% 
+% EZ(1)=0;
+% EZ(2)=1;
+% for nn=3:NMoments*SeriesOrder+NZterms+2
+%     if rem(nn,2)==1
+%         EZ(nn)=0;
+%     else
+%         EZ(nn)=EZ(nn-2)*(nn-1);
+%         EZ(nn);
+%     end
+% end
+% EZ;
+
+%EXZ(1,1)=1;
+%for pp1=1:NZterms
+%        EXZ(1,pp1+1)=EZ(pp1);
+%end
+
+
+a(SeriesOrder+1:nMoment*SeriesOrder+1+SeriesOrder)=0;
+b0=a0;
+b=a;
+
+for mm=2:nMoment
+    
+    [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm+SeriesOrder+1);
+     b(SeriesOrder*mm+1:nMoment*SeriesOrder+SeriesOrder+1)=0;
+     if(mm==nMoment-1)
+         dEnMomentdCoeff=b0.*EZ(nMoment-1);
+         for pp2=1:SeriesOrder*nMoment-1
+            
+            dEnMomentdCoeff=dEnMomentdCoeff+b(pp2).*EZ(pp2+nMoment-1);
+        end
+        dEnMomentdCoeff=dEnMomentdCoeff*nMoment; 
+     end
+     if(mm==nMoment)
+        EnMoment=b0;
+        for pp2=1:SeriesOrder*nMoment
+            EnMoment=EnMoment+b(pp2).*EZ(pp2);
+    
+        end
+     end
+end   
+
+    
+
+end</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [SecondMoment] = CalculateSecondMomentC3(a0,a)
+
+
+SecondMoment=a0^2+a(1)^2 +2* a0* a(2) +3*(a(2).^2+2* a(1).* a(3))+ ...
+    15*(a(3).^2) ;
+
+end</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Moments] = CalculateMomentsOfZSeries(a0,a,SeriesOrder,NMoments)
+
+
+%aa0=a0;
+%a0=0;% ---1
+
+EZ(1)=0;
+EZ(2)=1;
+%LogEZ(2)=0;
+for nn=3:NMoments*SeriesOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %LogEZ(nn)=log(EZ(nn-2))+log(nn-1);
+        %EZ(nn);
+    end
+end
+%EZ
+%EZ(1:30)
+%str=input('Look at numbers')
+a(SeriesOrder+1:SeriesOrder*NMoments+1)=0;
+b0=a0;
+b=a;
+
+
+for mm=1:NMoments
+    if(mm&gt;1)
+        %[b0,b] =SeriesProductLogarithmic(a0,a,b0,b,SeriesOrder*mm);
+        
+        [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm);
+        
+        %b0-bb0
+        
+        %b-bb
+        
+        %str=input('Look at two products')
+        
+        
+        b(SeriesOrder*mm+1:SeriesOrder*NMoments+1)=0;
+    end
+   % Logb=log(abs(b));
+   % Signb=sign(b);
+    EXZ(mm,1)=b0;
+    for pp2=1:SeriesOrder*mm
+        if rem(pp2,2)==0
+            %EXZ(mm,1)=EXZ(mm,1)+exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2);
+            EXZ(mm,1)=EXZ(mm,1)+b(pp2).*EZ(pp2);
+ %           b(pp2).*EZ(pp2)
+ %           exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2)
+ %           mm
+ %           pp2
+            %str=input('Look at moment values')
+        end
+    end
+end
+
+    
+for nn=1:NMoments
+    Moments(nn)=EXZ(nn,1);
+end
+
+
+
+end
+
+</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [c0,c] =SeriesProduct(a0,a,b0,b,SeriesOrder)
+
+
+c0=a0*b0;
+c(1:SeriesOrder)=0.0;
+for nn=1:SeriesOrder
+    c(nn)=c(nn)+a0*b(nn);
+    c(nn)=c(nn)+b0*a(nn);
+    for kk=1:nn-1
+        c(nn)=c(nn)+a(kk)*b(nn-kk);
+    end
+end
+
+end
+
+</code></pre></div>
+
+.<br>
+.<br>
+.</div>
+
+			
+									
+									<div id="sig885462" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885471">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885471">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885471">
+
+			<h3 ><a href="#p885471">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885471&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885471" title="Post #2587">#2587</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 10th, 2025, 4:17 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, we had earlier tentatively decided the form of our dynamic coefficients Z-series model as<br>
+<br>
+We give some example of some practical dynamic hermite series coefficients models below  <br>
+<br>
+<br>
+<br>
+\[\, X \,=\, a_{0}(t)\, + \, \, a_{1}(t)\, \, Z\, + \, \, a_{2}(t)\,\, \left( Z^2\,-\,1\,\right) + \, \, a_{3}(t)\, \, \left( Z^3\,-\,3 \,Z\,\right)    \] <br>
+<br>
+where<br>
+<br>
+\[\, a_{0}(t)\,| \,a_{0}(t-1) \, =\, \kappa_1\, \left(a_{00} \,-\,a_{0}(t-1)\, \right)\,+\, \sigma_0 \,Z_0\]<br>
+\[\, a_{1}(t)\,| \,a_{1}(t-1) \,  =\, \kappa_2\,\left(a_{10} \,-\,a_{1}(t-1)\, \right)\,+\, \sigma_1 \,Z_1\]<br>
+\[\, a_{2}(t)\,| \,a_{2}(t-1) \,  =\, \kappa_3\,\left(a_{20} \,-\,a_{2}(t-1)\, \right)\,+\, \sigma_2 \,Z_2\]<br>
+\[\, a_{3}(t)\,| \,a_{3}(t-1) \,  =\, \kappa_4\,\left(a_{30} \,-\,a_{3}(t-1)\, \right)\,+\, \sigma_3 \,Z_3\]<br>
+<br>
+However, since we would like to use our model in a lot of advanced applications where we might need even more precise analytics so I suggest that we have a general form of transition dynamics of all of parameters as<br>
+<br>
+\[\, \Delta \theta_t \,=\, \theta_t\,- \,\theta_{t-1} \, =\, g(\theta_{t-1}) \,+\,f(\theta_{t-1}) \,Z_{\theta}\]<br>
+<br>
+We can easily find the distribution of \(\theta\) and \(\Delta \theta_t \,\) from the time series of theta as we calculated yesterday and expand the above equation around median \(\theta_0\) of the distribution of \(\theta\) as<br>
+<br>
+\[\, \Delta \theta_t \,=\, \theta_t\,- \,\theta_{t-1} \, =\, g(\theta_{t-1}) \,+\,f(\theta_{t-1}) \,Z_{\theta}\]<br>
+or more explicitly<br>
+\[\, \Delta \theta_{t_n} \,=\, g(\theta_0) \, + \, g'(\theta_0) \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, g''(\theta_0) \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\, + \\\, \left[ \, f(\theta_0) \, + \, f'(\theta_0) \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, f''(\theta_0) \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,\right] \, Z_{\theta}\ \\<br>
+ \,=\, g_0 \, + \, g_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, g_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,+\, \left[ \, f_0 \, + \, f_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, f_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,\right] \, Z_{\theta}\]<br>
+<br>
+In the above equation \(\theta_0\) is median of distribution of \(\theta\) and can be found by choosing the middle element in sorted values of \(\theta_t\).<br>
+<br>
+We can find the above equation of transition of dynamic coefficients \(\theta_{t_n}\) by calculating moments of \(\Delta \theta_{t}\)  as <br>
+<br>
+\[\, \mu_k\,=\,\frac{1}{N}\, \sum\limits_{n=1}^{N}\, {\left[\Delta \theta_{t_n} \right]}^k \]<br>
+<br>
+We have to find six values of transition parameters \(g_0,\,g_1,\,g_2,\,f_0,\,f_1,\,f_2\) so that for six moments calculated above and given by \(\mu_k\,\) of index k as \(k\,=\,1,\,2,\,\ldots,6\), the equation below holds (We solve six moment equations to find six parameters given by \(g_0,\,g_1,\,g_2,\,f_0,\,f_1,\,f_2\)<br>
+<br>
+\[\, \mu_k\,=\,\frac{1}{N}\, \sum\limits_{n=1}^{N}\, {\left[\, g_0 \, + \, g_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, g_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,+\, \left[ \, f_0 \, + \, f_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, f_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,\right] \, Z_{\theta} \right]}^k \]<br>
+<br>
+This way we can fit the more general model to data of dynamic coefficients. Our ornstein-uhlenbeck type earlier model is also nested by and is a special case of this more general model. We will not be changing the above parameters of dynamic coefficients quickly and they would slowly change only after quite a bit of time. Especially if these parameters of dynamic coefficients also have to change, we will have to deal with a very long time series and make sure by applying the strategy of changing the parameters slowly along the long time series and see that results are optimal given the quantitative policy of changing the parameters. Meaning that any policy of slow change in parameters of dynamic coefficients has to be first validated by applying it to a long original time series and after seeing that results of the policy are actually optimal.</div>
+
+			
+									
+									<div id="sig885471" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885490">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885490">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885490">
+
+			<h3 ><a href="#p885490">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885490&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885490" title="Post #2588">#2588</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 12th, 2025, 8:01 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I hope that my matlab program for optimization of parameters of Z-series dynamic coefficients as described in previous post would be ready by Tuesday. However, in this post, I am making a slight digression from the topic at hand.<br>
+<br>
+As I had previously mentioned that we want to move from black box AI methods to perfectly mathematical methods of Math AI. So this post is a continuation towards promoting perfectly understandable mathematical methods.<br>
+<br>
+<br>
+<span class="text-center"><span style="font-size: 150%; line-height: normal"><span style="font-family:sans-serif">MATH AI Analytics: Applying a Function on a Different Function (Composition of Functions) To Follow a Third Target Function.</span></span> </span><br>
+<br>
+Ok, coming towards the topic. Here is our setting. We have a function at hand denoted as \(F(X)\) and we have a target function denoted as \(G(X)\) . We suppose both of \(F(X)\) and \(G(X)\) are known to us or we can possibly calculate them easily by other methods. We want to apply a function \(V(.)\) on \(F(X)\) so that it starts to perfectly follow the target function \(G(X)\). We also suppose that functions are smooth and continuous and their derivatives of all orders of interest exist and can also be measured for both \(F(X)\) and \(G(X)\). <br>
+<br>
+We have to find the function V(.) so that the composition of functions equation below is perfectly satisfied.<br>
+<br>
+\[V(F(X))\,=\,G(X)\]<br>
+<br>
+Our strategy is simple, We apply Taylor series in X on both sides of the above equation and equate equation of each derivative on both sides separately. This way we can find all derivatives of \(V(.)\) of various orders of interest and be able to reconstruct required function \(V(.)\) to take \(F(X)\) to target function \(G(X)\) from its derivatives.<br>
+<br>
+We expand \(G(X)\) as a Taylor series as<br>
+<br>
+\[G(X)\,=\,G(\text{X0}) \,+(X-\text{X0}) G'(\text{X0})\, + \frac{1}{2} (X-\text{X0})^2 G''(\text{X0})\,+\frac{1}{6} G^{(3)}(\text{X0}) (X-\text{X0})^3 \,\\+ \frac{1}{24} G^{(4)}(\text{X0}) (X-\text{X0})^4+O\left((X-\text{X0})^5\right)\]<br>
+<br>
+We also expand the composition of \(V(.)\) and \(F(.)\) as a Taylor series as<br>
+<br>
+\[V(F(X))\,=\, V(F(\text{X0}))+(X-\text{X0}) F'(\text{X0}) V'(F(\text{X0}))+\frac{1}{2} (X-\text{X0})^2 \left(F''(\text{X0}) V'(F(\text{X0}))+F'(\text{X0})^2 V''(F(\text{X0}))\right)\\+\frac{1}{6} (X-\text{X0})^3 \left(F^{(3)}(\text{X0}) V'(F(\text{X0}))+V^{(3)}(F(\text{X0})) F'(\text{X0})^3+3 F'(\text{X0}) F''(\text{X0}) V''(F(\text{X0}))\right)\\+\frac{1}{24} (X-\text{X0})^4 \left(F^{(4)}(\text{X0}) V'(F(\text{X0}))+3 F''(\text{X0})^2 V''(F(\text{X0}))+V^{(4)}(F(\text{X0})) F'(\text{X0})^4 \\+4 F^{(3)}(\text{X0}) F'(\text{X0}) V''(F(\text{X0}))+6 V^{(3)}(F(\text{X0})) F'(\text{X0})^2 F''(\text{X0})\right)+O\left((X-\text{X0})^5\right)\]<br>
+<br>
+Matching powers of  \((X-\text{X0})\) on both sides of equation, we get the following equations that we solve one by one as<br>
+<br>
+\[\,G(\text{X0}) \,=\,V(F(\text{X0}))\]<br>
+<br>
+\[(X-\text{X0}) G'(\text{X0})\,=\,(X-\text{X0}) F'(\text{X0}) V'(F(\text{X0}))\] From where it follows<br>
+\[ V'(F(\text{X0}))\,=\, \frac{G'(\text{X0})\,}{\, F'(\text{X0})} \]<br>
+<br>
+Matching 2nd power of  \((X-\text{X0})^2\), we get<br>
+<br>
+\[\frac{1}{2} (X-\text{X0})^2 G''(\text{X0})\,=\,\frac{1}{2} (X-\text{X0})^2 \left(F''(\text{X0}) V'(F(\text{X0}))+F'(\text{X0})^2 V''(F(\text{X0}))\right)\] From where it follows \[ V''(F(\text{X0}))= \,\frac{G''(\text{X0})\,-\left(F''(\text{X0}) V'(F(\text{X0})) \right) }{F'(\text{X0})^2}\]<br>
+<br>
+Matching power of  \((X-\text{X0})^3\), we get<br>
+<br>
+\[\frac{1}{6} G^{(3)}(\text{X0}) (X-\text{X0})^3 \,=\,\frac{1}{6} (X-\text{X0})^3 \left(F^{(3)}(\text{X0}) V'(F(\text{X0}))+V^{(3)}(F(\text{X0})) F'(\text{X0})^3+3 F'(\text{X0}) F''(\text{X0}) V''(F(\text{X0}))\right) \] From where it follows  \[  V^{(3)}(F(\text{X0}))  \,=\,\frac{G^{(3)}(\text{X0})  \,-\, \left(F^{(3)}(\text{X0}) V'(F(\text{X0})) +3 F'(\text{X0}) F''(\text{X0}) V''(F(\text{X0}))\right)} {F'(\text{X0})^3} \] <br>
+<br>
+Matching power of  \((X-\text{X0})^4\), we get<br>
+<br>
+\[ \frac{1}{24} G^{(4)}(\text{X0}) (X-\text{X0})^4 \,=\, \frac{1}{24} (X-\text{X0})^4 \left(F^{(4)}(\text{X0}) V'(F(\text{X0}))+3 F''(\text{X0})^2 V''(F(\text{X0}))+V^{(4)}(F(\text{X0})) F'(\text{X0})^4 \\+4 F^{(3)}(\text{X0}) F'(\text{X0}) V''(F(\text{X0}))+6 V^{(3)}(F(\text{X0})) F'(\text{X0})^2 F''(\text{X0})\right)\] From where we get<br>
+\[ V^{(4)}(F(\text{X0})) \, =\,\frac{ \left[ G^{(4)}(\text{X0})  \,-\,  \left(F^{(4)}(\text{X0}) V'(F(\text{X0}))+3 F''(\text{X0})^2 V''(F(\text{X0}))+4 F^{(3)}(\text{X0}) F'(\text{X0}) V''(F(\text{X0})) \\+6 V^{(3)}(F(\text{X0})) F'(\text{X0})^2 F''(\text{X0})\right) \right]}{F'(\text{X0})^4} \]<br>
+<br>
+So this way, we can calculate various different derivatives of \(V(.)\) and then reconstruct V(.) from there. Here we list the above calculated four derivatives of again, if we use the notation \(Y=F(X)\), then we can write, as<br>
+<br>
+\[\, \,V(Y0)=V(F(\text{X0}))\,=\,G(\text{X0})\]<br>
+\[ V'(\text{Y0})\,=V'(F(\text{X0}))\,=\, \frac{G'(\text{X0})\,}{\, F'(\text{X0})} \]<br>
+\[ V''(\text{Y0})\,=V''(F(\text{X0}))= \,\frac{G''(\text{X0})\,-\left(F''(\text{X0}) V'(F(\text{X0})) \right) }{F'(\text{X0})^2}\]<br>
+\[  V^{(3)}(\text{Y0})\,=\,V^{(3)}(F(\text{X0}))  \,=\,\frac{G^{(3)}(\text{X0})  \,-\, \left(F^{(3)}(\text{X0}) V'(F(\text{X0})) +3 F'(\text{X0}) F''(\text{X0}) V''(F(\text{X0}))\right)} {F'(\text{X0})^3} \] <br>
+\[ V^{(4)}(\text{Y0})\,=\, V^{(4)}(F(\text{X0})) \, =\,\frac{\left[G^{(4)}(\text{X0})  \,-\,  \left(F^{(4)}(\text{X0}) V'(F(\text{X0}))+3 F''(\text{X0})^2 V''(F(\text{X0}))+4 F^{(3)}(\text{X0}) F'(\text{X0}) V''(F(\text{X0}))\\+6 V^{(3)}(F(\text{X0})) F'(\text{X0})^2 F''(\text{X0})\right)\right]}{F'(\text{X0})^4} \]<br>
+<br>
+ And we can write our desired function that we wanted to find out to apply on Y as<br>
+<br>
+\[V(Y)\,=\,V(\text{Y0}) \,+(Y-\text{Y0}) V'(\text{Y0})\, + \frac{1}{2} (Y-\text{Y0})^2 V''(\text{Y0})\,+\frac{1}{6} V^{(3)}(\text{Y0}) (Y-\text{Y0})^3 \,\\+ \frac{1}{24} V^{(4)}(\text{Y0}) (Y-\text{Y0})^4+O\left((Y-\text{Y0})^5\right)\]<br>
+<br>
+We will continue to use above analytics in our future applications of Math AI.</div>
+
+			
+									
+									<div id="sig885490" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885503">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885503">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885503">
+
+			<h3 ><a href="#p885503">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885503&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885503" title="Post #2589">#2589</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 13th, 2025, 9:28 am</span></p>
+			
+			
+			
+			<div class="content">Friends, global warming will continue to increase for quite sometime and as a result more devastating natural calamities like powerful storms, hurricanes and wildfires would continue to haunt us during for-seeable future. We cannot stop these natural disasters from happening but with an intelligent and organized human response, we can surely mitigate the effects of these natural calamities on our societies and decrease human suffering. <br>
+<br>
+For example, taking the case of wildfires, I think it is important that scientists develop models that predict the evolution path of fires given the weather conditions, wind directions and origin spot of fires given the forest tree densities that are in place. And a very organized response should already be well-known in advance to Fire department and other people dealing with natural disasters. It has to be studied where to fight the fires and where to not to make the best of fire-fighting efforts. Some well thought out engineering of wild-forests might be needed to thin the density of trees in particular regions/blocks of the forest where most intensive efforts could be made to contain the fires reaching beyond those regions. And possibly encourage trees that are more resistant to fast spread of wild fires in these forest blocks. Some crucial fire-fighting infrastructure should already be in place in the blocks where fire has to be contained and an easy approach from the road should be built to these fire-fighting zones of the forests. and It has to be particularly made sure that there is a well-studied and comprehensive plan to to save vulnerable large cities that are close to wild forests and all the fire-fighting staff and administration should all know well in advance what needs to be done by them to successfully control a fire if it occurs somewhere. All of this could be done at a very small fraction of the cost as compared to the damage that occurs when fires burn residential areas in suburbs of large cities. <br>
+<br>
+Even thinking of wildfires that do not threaten suburbs, we have seen a large increase in frequency of wildfires in recent years. And I really think that in a large number of places, more CO2 is released in the air during the wildfires than sequestered in rest of the forests and net emission of CO2 and other green house gases from forests due to fires might be positive which is extremely alarming. I really thing that there has to be very active forest management at a lot of places without destroying natural habitat of wild animals. If we thin parts of the jungles, the wood used for housing and many other purposes would sequester CO2 as opposed to large swathes of forests being burnt and pollutants and greenhouse gases released in atmosphere. I am not an expert at forests and their management but I can suggest for initial brainstorming that large forests should be divided into blocks (possible square or round or with other possibly natural boundaries) and border of each block would be approximately several hundred meters wide. In this border, vegetation and tress would be kept far more thinned and there could be dirt roads in these border areas where fire-fighting equipment could quickly move. And all sort of common sense fortifications against fire would be developed in these border areas. There would also be stores at select places on this border area where fire-fighting chemicals and other equipment could be stored. There could also be many fire-sensors in these areas that would tell about a burning fire right away. Again the purpose would be to contain the fire in each forest block encircled by the fire-defense border area with thinner vegetations and robust fire management capabilities. I think that experts can think of a large number of ideas on similar lines to make sure that a forest fire any where is not allowed to get out of control. Putting all such infrastructure might not be easy at start but cost of inaction would be far far larger. And once established with some initial spending, maintaining such a large scale system would become a normal and routine thing.<br>
+<br>
+We just cannot allow huge amounts of CO2 being released in air and lifetime of wealth used to build suburbs simply evaporate in air with uncontrolled wildfires. <br>
+<br>
+Since wildfires are raging in california, I thought I should say my mind about mitigation of such disasters that cause large scale human suffering and tragedy. Humanity is special since we learn from our past and once a problem occurs, we try to make sure that we are well prepared to face it once it happens again.  <br>
+<br>
+<a href="https://wfca.com/wildfire-articles/carbon-emissions-from-wildfires/" class="postlink" target="_blank" rel="noopener noreferrer">Carbon Emissions From Wildfires</a></div>
+
+			
+									
+									<div id="sig885503" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885527">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885527">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885527">
+
+			<h3 ><a href="#p885527">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885527&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885527" title="Post #2590">#2590</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 14th, 2025, 5:13 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I was a bit excited by my work on composition of functions and was thinking that it could have possible uses in mathematics at a lot of places and I kept sort of brainstorming where I could use ideas from my new work. Sorry that delayed the coding work a little bit by another day but I am very happy that I took some more time to reflect upon the previous problem some more and I was able to modify my estimation strategy for estimation of parameters of coefficients and make the estimation strategy more simple and more robust. I will also be using composition of functions in this modified strategy. Here I am writing the following post to explain the modified strategy. As it is easier, I hope that I could have my matlab implementation ready in another day.<br>
+<br>
+<br>
+<span style="font-size: 175%; line-height: normal"><span style="font-family:sans-serif">Dynamic Coefficients Z-series Model and its Estimation</span></span><br>
+<br>
+Among other possible variants, one form of practical dynamic hermite series coefficients models is given below  <br>
+\[\, X \,=\, a_{0}(t)\, + \, \, a_{1}(t)\, \, Z\, + \, \, a_{2}(t)\,\, \left( Z^2\,-\,1\,\right) + \, \, a_{3}(t)\, \, \left( Z^3\,-\,3 \,Z\,\right)    \] <br>
+where<br>
+\[\, a_{0}(t)\,| \,a_{0}(t-1) \, =\, \kappa_1\, \left(a_{00} \,-\,a_{0}(t-1)\, \right)\,+\, \sigma_0 \,Z_0\]<br>
+\[\, a_{1}(t)\,| \,a_{1}(t-1) \,  =\, \kappa_2\,\left(a_{10} \,-\,a_{1}(t-1)\, \right)\,+\, \sigma_1 \,Z_1\]<br>
+\[\, a_{2}(t)\,| \,a_{2}(t-1) \,  =\, \kappa_3\,\left(a_{20} \,-\,a_{2}(t-1)\, \right)\,+\, \sigma_2 \,Z_2\]<br>
+\[\, a_{3}(t)\,| \,a_{3}(t-1) \,  =\, \kappa_4\,\left(a_{30} \,-\,a_{3}(t-1)\, \right)\,+\, \sigma_3 \,Z_3\]<br>
+<br>
+we have a general form of transition dynamics of all of parameters as<br>
+<br>
+\[\, \Delta \theta_t \,=\, \theta_t\,- \,\theta_{t-1} \, =\, g(\theta_{t-1}) \,+\,f(\theta_{t-1}) \,Z_{\theta}\]<br>
+<br>
+We can easily find the distribution of \(\theta\) and \(\Delta \theta_t \,\) from the time series of theta as we calculated earlier. <br>
+<br>
+We can write Z-series representation of theta as<br>
+<br>
+\[\theta(Z_{\theta}) \,=\, b_0 \, + \, b_1\,{Z_{\theta}}\,+\,b_2  \,{Z_{\theta}}^2\,+\,b_3\,{Z_{\theta}}^3\]<br>
+<br>
+and we can also write unconditional Z-series representation of  \(\Delta \theta \,\) <br>
+<br>
+\[\Delta\theta(Z_{\Delta\theta}) \,=\, c_0 \, + \, c_1\,{Z_{\Delta\theta}}\,+\,c_2  \,{Z_{\Delta\theta}}^2\,+\,c_3\,{Z_{\Delta\theta}}^3\]<br>
+<br>
+The above two equations would be used to find correlations and later to find conditional expectations of  \(E\left[\Delta\theta_t \,|\, \theta_{t-1} \right]\) <br>
+<br>
+ But at the same time, we suppose that conditional (on one period earlier interval start value of \(\theta\)) transition model form of distribution of  \(\Delta\theta \) could be given as  where w<span style="font-size: 100%; line-height: normal">e have divided \( \Delta \theta_t\) into two parts, the first part that is perfectly correlated with \(\theta_{t-1}\) and the second part that is orthogonal (but not necessarily independent of \(\theta_{t-1}\)  or </span><br>
+<br>
+<br>
+\[\, \Delta \theta_t \,=\, \theta_t\,- \,\theta_{t-1} \, =\, E\left[\Delta\theta_t \,|\, \theta_{t-1} \right] \,+\, \bar{ \Delta \theta_t } \\<br>
+=\, g(\theta_{t-1}) \,+\,f(\theta_{t-1}) \,Z_{\bar{\Delta\theta}} \]<br>
+<br>
+<br>
+We want to notice that first drift part \(g(\theta_{t-1})\) is perfectly correlated wtih  \(\theta_{t-1}\)  while \(f(\theta_{t-1})\) in noise part also depends on \(\theta_{t-1}\) but the whole second term above is orthogonal to \(\theta_{t-1}\). <br>
+<br>
+We can write the form of Z-series of \(g(\theta)\) and \(f(\theta)\) , since they are one-dimensional functions of \(\theta\), as <br>
+<br>
+\[\tilde{g}(Z_{\theta}) \,=\, d_0 \, + \, d_1\,{Z_{\theta}}\,+\,d_2  \,{Z_{\theta}}^2\,+\,d_3\,{Z_{\theta}}^3\]<br>
+\[\tilde{f}(Z_{\theta}) \,=\, e_0 \, + \, e_1\,{Z_{\theta}}\,+\,e_2  \,{Z_{\theta}}^2\,+\,e_3\,{Z_{\theta}}^3\]<br>
+<br>
+Which means that our conditional (on one period earlier interval start value of \(\theta\)) transition model form of distribution of  \(\Delta\theta\) now becomes.<br>
+\[\, \Delta \theta_t \,=\, \theta_t\,- \,\theta_{t-1} \, =\, E\left[\Delta\theta_t \,|\, \theta_{t-1} \right] \,+\, \bar{ \Delta \theta_t } \\<br>
+=\, g(\theta_{t-1}) \,+\,f(\theta_{t-1}) \,Z_{\bar{\Delta\theta}} \\<br>
+=\,\left[\, d_0 \, + \, d_1\,{Z_{\theta}}\,+\,d_2  \,{Z_{\theta}}^2\,+\,d_3\,{Z_{\theta}}^3\right]\,+\,\left[ \, e_0 \, + \, e_1\,{Z_{\theta}}\,+\,e_2  \,{Z_{\theta}}^2\,+\,e_3\,{Z_{\theta}}^3\right] Z_{\bar{\Delta\theta}}\]<br>
+<br>
+We can directly calculate \( g({\theta}) \,=\, E\left[\Delta\theta_t \,|\, \theta_{t-1} \right]\) using conditional expectation as given in reference below and then  <br>
+<br>
+ \[\bar{\Delta\theta_t} \,=\, \Delta\theta_t\, -\, E\left[\Delta\theta_t| \,\theta_{t-1} \right] \,\]<br>
+<br>
+For the above equation to hold, We apply this equation on data observations of \(\Delta \theta_t\) with t-th observation pair given as \(\Delta\theta_{t}\) and \(\theta_{t-1}\). We first invert Hermite-Series equation of \(\theta_t\) to find \(Z_{\theta_t}\) and then use the following equation for each t-th observation (For details see my reference paper on Z-series below)<br>
+<br>
+\begin{equation}\label{4.4.3}<br>
+ \bar{\Delta\theta_t} \,=  \, \Delta\theta_t\,-\,-\, E\left[\Delta\theta_t| \,\theta_{t-1} \right] \,\\<br>
+\,=  \, \Delta\theta_t\,-\,\left[ \, d_0 \, + \, d_1\,{Z_{\theta}}\,+\,d_2  \,{Z_{\theta}}^2\,+\,d_3\,{Z_{\theta}}^3\right]<br>
+\end{equation}<br>
+<br>
+This way we get data values of \(\bar{\Delta\theta_t} \,\) which is the orthogonal (but not independent) part of the model equation where we want to estimate the remaining part of model as<br>
+<br>
+\[\,  \bar{ \Delta \theta_t } =\,\, f(\theta_{t-1}) \,Z_{\bar{\Delta\theta}} \\<br>
+=\,\,\left[ \, e_0 \, + \, e_1\,{Z_{\theta}}\,+\,e_2  \,{Z_{\theta}}^2\,+\,e_3\,{Z_{\theta}}^3\right] Z_{\bar{\Delta\theta}}\]<br>
+<br>
+<br>
+We can estimate the above equation by calculating moments of \(\bar{\Delta \theta}_{t}\)  as <br>
+<br>
+\[\, \mu_k\,=\,\frac{1}{N}\, \sum\limits_{n=1}^{N}\, {\left[\bar{\Delta \theta}_{t_n} \right]}^k \]<br>
+<br>
+In order to estimate the above equation, we will have to first back out \(Z_{\theta_{t_n}}\) associated with t-th observation of \(\theta_{t_n}\) and then use the equation <br>
+<br>
+\[\, \mu_k\,=\,\frac{1}{N}\, \sum\limits_{n=1}^{N}\, {\left[ \left(\, e_0 \, + \, e_1 \, Z_{\theta_{t_{n-1}}}\,+ \,e_2 \,{\, Z_{\theta_{t_{n-1}}}\,}^2\,\right)\, Z_{\bar{\Delta\theta}} \right]}^k \]<br>
+<br>
+The values \(\mu_k\) on RHS of above equation are moments that have been calculated from the data of \(\bar{\Delta\theta_t} \,\), and we have to estimate \((e_0,\, e_1,\, e_2)\) by matching the moments to RHS values. <br>
+<br>
+or more explicitly we can convert above drift and noise Z-series into a Taylor series in parameters \(\theta_t\) to find the true solution in original variables. We will have to use our inverse function composition to find coefficients of Taylor series below<br>
+<br>
+\[\, \Delta \theta_{t_n} \,=\, g(\theta_0) \, + \, g'(\theta_0) \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, g''(\theta_0) \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\, + \\\, \left[ \, f(\theta_0) \, + \, f'(\theta_0) \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, f''(\theta_0) \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,\right] \, Z_{\theta}\ \\<br>
+ \,=\, g_0 \, + \, g_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, g_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,+\, \left[ \, f_0 \, + \, f_1 \,(\theta_{t_{n-1}}\,-\, \theta_0)+ .5 \, f_2 \,{(\theta_{t_{n-1}}\,-\, \theta_0)}^2\,\right] \, Z_{\theta}\]<br>
+<br>
+In the above equation \(\theta_0\) is median of distribution of \(\theta\) and can be found by choosing the middle element in sorted values of \(\theta_t\).<br>
+<br>
+This way we can fit the more general model to data of dynamic coefficients. Our ornstein-uhlenbeck type earlier model is also nested by and is a special case of this more general model. We will not be changing the above parameters of dynamic coefficients quickly and they would slowly change only after quite a bit of time. Especially if these parameters of dynamic coefficients also have to change, we will have to deal with a very long time series and make sure by applying the strategy of changing the parameters slowly along the long time series and see that results are optimal given the quantitative policy of changing the parameters. Meaning that any policy of slow change in parameters of dynamic coefficients has to be first validated by applying it to a long original time series and after seeing that results of the policy are actually optimal.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Following is the reference to my paper followed by relevant excerpts from the paper.<br>
+<br>
+Reference:  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933283" class="postlink" target="_blank" rel="noopener noreferrer">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933283</a><br>
+<br>
+\subsection{Conditional Expectation of a Non-Gaussian Random variable Y given Another Correlated Non-Gaussian Random variable X}<br>
+\label{sec4.3}<br>
+<br>
+In this section, we describe conditional expectation of a non-Gaussian random variable Y given the value of another correlated non-Gaussian random variable X. Orthogonality property of Hermite polynomials and decomposition of variance into orthogonal parts means that conditional expectation of a random variable Y with respect to other random variables X can be divided into separate covariance/correlation based relationships between Hermite polynomials of the same order of random variables X and Y . Further implying that the total conditional expectation of a random variable Y based on another correlated random variable X can be described by sum of separate conditional expectations of each Hermite polynomial of random variable Y with respect to Hermite polynomials of the same order of the random variable X . <br>
+<br>
+The conditional expectation of nth Hermite polynomial based term (with coefficient \(ch_n\)) of the random variable Y given nth polynomial term of X is calculated in terms of covariance \(Cov_{XY,n}\) between nth polynomials of both random variables X and Y and variance \(Var_{X,n}\) of the nth Hermite polynomial of explanatory variable X as <br>
+<br>
+\begin{equation}\label{4.3.1}<br>
+E[Y_n\,|\, X_n]\,= \, E[\,\,ch_n\,H_n(Z_Y)\,|\,bh_n.\,H_n(Z_X)]\, =\,\frac{Cov_{XY,n}}{Var_{X,n}}\,bh_n \, H_n(Z_X) <br>
+\end{equation}<br>
+<br>
+while expectation of variance associated with the conditional expectation \(E[Y_n\,|\, X_n]\,\) is given as<br>
+<br>
+\begin{align}\label{4.3.2}<br>
+ &amp; Var[Y_n\,|\, X_n]\,= Var[\,\,ch_n \, H_n(Z_Y)\,|\,bh_n\,H_n(Z_X)]\,=\,Var_{Y,n}\,-\frac{{Cov_{XY,n}}^2}{Var_{X,n}}\,\\ &amp;=(1\,-\, {\rho_{XY,n}}^2) \, Var_{Y,n}\,\, =(1\,-\, {\rho_{XY,n}}^2) \, {ch_n}^2\, n! \,<br>
+\end{align}<br>
+<br>
+We can write sum of conditional expectations of all Hermite polynomials of target variable Y with respect to explanatory variable as<br>
+<br>
+\begin{equation}\label{4.3.4}<br>
+ \sum\limits_{n=1}^{N} E[\,\,ch_n \, H_n(Z_Y),|\,bh_n\,H_n(Z_X)]\,=\,\sum\limits_{n=1}^{N}\frac{Cov_{XY,n}}{Var_{X,n}}\,\,bh_n \, H_n(Z_X) <br>
+ \end{equation}<br>
+<br>
+But we know that conditional expectation of Y is equal to sum of conditional expectations of each orthogonal polynomial of Y including the zeroth hermite polynomial which is the unconditional mean of Y itself, so we can write<br>
+<br>
+\begin{equation}\label{4.3.5}<br>
+E[Y \, | \, X]=\mu_Y+ \sum\limits_{n=1}^{N} E[\,\,ch_n \, H_n(Z_Y)\, | \,\,bh_n \,H_n(Z_X) ]<br>
+\end{equation}<br>
+<br>
+which means that <br>
+<br>
+\begin{equation}\label{4.3.6}<br>
+E[Y\, | \, X]=\mu_Y+\,\sum\limits_{n=1}^{N}\frac{Cov_{XY,n}}{Var_{X,n}}\,\,bh_n \, H_n(Z_X) <br>
+\end{equation}<br>
+<br>
+and expected value of total variance, which is variance associated with part of random variable Y that has not been explained by conditioning on random variable X, associated with conditional expectation of Y given X \(E[Y\, | \, X]\) is given as<br>
+<br>
+\begin{align}\label{4.3.7}<br>
+&amp; Var[Y\, | \, X]=\,\sum\limits_{n=1}^{N}\,Var_{Y,n}\,-\frac{{Cov_{XY,n}}^2}{Var_{X,n}}\, =\,\sum\limits_{n=1}^{N}\,(1\,-\, {\rho_{XY,n}}^2) \, Var_{Y,n}\,\, \\ &amp;= \,\,\sum\limits_{n=1}^{N}\,(1\,-\, {\rho_{XY,n}}^2) \, {ch_n}^2\, n!\, <br>
+\end{align}<br>
+In the above equation, We have given the formulas for conditional expected value and the expected value of variance of conditional expectation of the random variable Y given random variable X. <br>
+<br>
+Even though above formula is true for expectation of variance associated with \(E[Y|X]\), the coefficients of nth Hermite polynomial in conditional distribution equation of Y given X are not given by \(\, \sqrt{\,1\,-\,{\rho_{XY,n}}^2\,} \,\, ch_n\). We find true conditional distribution equation for Y when its unexplained variance is independent of X in section(\ref{sec4.5}) and when its variance structure is dependent on X in section(\ref{sec4.6}) <br>
+<br>
+<br>
+<br>
+\subsection{Decomposing the non-Gaussian Random variable Y into a part that is perfectly Correlated with Random variable X and another part that is orthogonal to X}<br>
+\label{sec4.4}<br>
+<br>
+In order to convert a random variable Y into two parts with first part fully correlated with X and another part orthogonal to X, we remove the correlation effect of random variable X from Y, where Hermite series of X and Y are given by Eqs(\ref{4.1},and \ref{4.2}) and correlation between their Hermite polynomials are given by Eq(\ref{4.1.5}).<br>
+<br>
+Correlation effect of X on Y is given by conditional expected value of \(E\left[Y|X\right]\). And we represent the orthogonal part of Y as \(\tilde{Y}\). So Y can be decomposed into two parts as<br>
+<br>
+\begin{equation}\label{4.4.1}<br>
+ Y \,=\,\, E\left[Y|X \right] \,+ \,\tilde{Y}<br>
+\end{equation}<br>
+<br>
+So orthogonal part of Y denoted as \(\tilde{Y}\) is given by<br>
+<br>
+\begin{align}\label{4.4.2}<br>
+ &amp; \tilde{Y} \,=\, Y\, -\, E\left[Y|X \right] \, \\ &amp; =  \, Y\,-\,\,\sum\limits_{n=1}^{N} \, E \left[\,\,ch_n \, H_n(Z_Y)\,|\,H_n(Z_X) \right]\\ \, &amp;=  \, Y\,-\,\,\sum\limits_{n=1}^{N}\,\frac{Cov_{XY,n}}{Var_{X,n}}\,bh_n \, H_n(Z_X) \\ \, &amp;=  \, Y\,-\,\,\sum\limits_{n=1}^{N}\,\rho_{XY,n} \,ch_n \, H_n(Z_X)<br>
+\end{align}<br>
+<br>
+We apply the above equation on data observations of Y with pth observation pair given as \(Y_p\) and \(X_p\). We first invert Hermite-Series equation of \(X_p\) to find \(Z_{X_p}\) and then use the following equation for each pth observation <br>
+<br>
+\begin{equation}\label{4.4.3}<br>
+ \tilde{Y_p} \,=  \, Y_p\,-\,\,\sum\limits_{n=1}^{N}\,\rho_{XY,n} \,ch_n \, H_n(Z_{X_p})<br>
+\end{equation}</div>
+
+			
+									
+									<div id="sig885527" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885549">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885549">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885549">
+
+			<h3 ><a href="#p885549">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885549&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885549" title="Post #2591">#2591</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 15th, 2025, 10:22 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have been able to reasonably calibrate a more advanced version of yesterday's model with iterative method. I used the equation form<br>
+<br>
+\[\,  \bar{ \Delta \theta_t } =\,\, f_1(\theta_{t-1}) \,Z_{\bar{\Delta\theta}} \, +\, f_2(\theta_{t-1}) \,{Z_{\bar{\Delta\theta}}}^2 \\<br>
+=\,\,\left[ \, e_{10} \, + \, e_{11}\,{Z_{\theta}}\,+\,e_{12}  \,{Z_{\theta}}^2\,+\,e_{13}\,{Z_{\theta}}^3\right] Z_{\bar{\Delta\theta}} \\<br>
++\,\,\left[ \, e_{20} \, + \, e_{21}\,{Z_{\theta}}\,+\,e_{22}  \,{Z_{\theta}}^2\,+\,e_{23}\,{Z_{\theta}}^3\right] {Z_{\bar{\Delta\theta}}}^2\]<br>
+<br>
+I noticed that without adding a second term of the order \({Z_{\bar{\Delta\theta}}}^2\), I could not get any skew in the orthogonal part. I was just able to get my results and the fit of the above model is reasonable but not perfect. I think I need to improve the model for another day or two and then I would be able to post it. It's a bit late but I will give more details tomorrow after running and analyzing the program more carefully.   <br>
+<br>
+Here is a sample fit of orthogonal part of  dynamic coefficient using above equation. Below, Moments indicates model moments and rMu indicates input moments. These results are only for orthogonal part but not for correlated part that was tackled analytically.<br>
+<br>
+1st Coeff<br>
+<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.563592503032004   0.000221060740061<br>
+  Columns 4 through 6<br>
+   0.000142776474884  -0.000000386589097   0.000000089441353<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+   0.000000000000001   0.563592503032004   0.000348787486646<br>
+  Columns 4 through 6<br>
+   0.000143943236480  -0.000000557198941   0.000000084289204<br>
+<br>
+<br>
+<br>
+2nd Coeff<br>
+<br>
+<br>
+Moments =<br>
+   1.0e-03 *<br>
+  Columns 1 through 3<br>
+                   0   0.114492924101284   0.000826120115192<br>
+  Columns 4 through 6<br>
+   0.000152760790622   0.000002949032295   0.000000535168841<br>
+rMu =<br>
+   1.0e-03 *<br>
+  Columns 1 through 3<br>
+   0.000000000000000   0.114492924101284   0.000925700566427<br>
+  Columns 4 through 6<br>
+   0.000175136859606   0.000002894612284   0.000000502948380<br>
+<br>
+Third Coeff<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.203443714251540   0.000347467110747<br>
+  Columns 4 through 6<br>
+   0.000057490097755   0.000000304174590   0.000000044630687<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+  -0.000000000000001   0.203443714251540   0.000328132417930<br>
+  Columns 4 through 6<br>
+   0.000066464368769   0.000000312963738   0.000000042823397<br>
+<br>
+fourth Coeff<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.124792412676856  -0.001403839750863<br>
+  Columns 4 through 6<br>
+   0.000043263549172  -0.000001369311778   0.000000059096109<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+  -0.000000000000001   0.124792412676856  -0.001543957780007<br>
+  Columns 4 through 6<br>
+   0.000054852336602  -0.000001591045590   0.000000056846041</div>
+
+			
+									
+									<div id="sig885549" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885560">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885560">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885560">
+
+			<h3 ><a href="#p885560">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885560&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885560" title="Post #2592">#2592</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 16th, 2025, 5:21 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am going to attach the program in next post in half an hour. <br>
+Here is the final form of equations of uncorrelated part<br>
+<br>
+I used the equation in hermite form<br>
+<br>
+\[\,  \bar{ \Delta \theta_t } =\,\, f_1(\theta_{t-1}) \,Z_{\bar{\Delta\theta}} \, +\, f_2(\theta_{t-1}) \,\left({Z_{\bar{\Delta\theta}}}^2\,-\,1\right) \\<br>
+=\,\,\left[ \, e_{10} \, + \, e_{11}\,{Z_{\theta}}\,+\,e_{12}  \,{Z_{\theta}}^2\,+\,e_{13}\,{Z_{\theta}}^3\right] Z_{\bar{\Delta\theta}} \\<br>
++\,\,\left[ \, e_{20} \, + \, e_{21}\,{Z_{\theta}}\,+\,e_{22}  \,{Z_{\theta}}^2\,+\,e_{23}\,{Z_{\theta}}^3\right] \left({Z_{\bar{\Delta\theta}}}^2-1 \right)\]<br>
+<br>
+I had to take second hermite  \(\left({Z_{\bar{\Delta\theta}}}^2-1 \right)\) instead of second power of Z as \({Z_{\bar{\Delta\theta}}}^2\) since we are modelling the orthogonal part that cannot take any correlations with a function of  \({Z_{\theta}}\) and that required modelling with hermite polynomial.<br>
+<br>
+The program I am uploading is still preliminary and we will spend a week to ten days to improve the time series related infrastructure we are developing. There will be better versions of this program soon.<br>
+<br>
+Here are the updated results of moment fit of four dynamic coefficients from their parameters. Here target moments are a bit different from yesterday since I increased the order of hermite polynomials and their correlations used to find the orthogonal uncorrelated part of dX.  <br>
+<br>
+Coeff1.<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.561621424625933   0.000250139977116<br>
+  Columns 4 through 6<br>
+   0.000144195384593  -0.000000628707203   0.000000097555870<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+   0.000000000000002   0.561621424625933   0.000251373764940<br>
+  Columns 4 through 6<br>
+   0.000144368521455  -0.000000665019019   0.000000086340008<br>
+ <br>
+Coeff 2<br>
+<br>
+Moments =<br>
+   1.0e-03 *<br>
+  Columns 1 through 3<br>
+                   0   0.112086551037166   0.000706086397241<br>
+  Columns 4 through 6<br>
+   0.000142182768439   0.000002085680935   0.000000774034816<br>
+rMu =<br>
+   1.0e-03 *<br>
+  Columns 1 through 3<br>
+   0.000000000000001   0.112086551037166   0.000708996850534<br>
+  Columns 4 through 6<br>
+   0.000157941237913   0.000001917836853   0.000000422412074<br>
+ <br>
+Coeff 3<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.202954313942088   0.000344065430438<br>
+  Columns 4 through 6<br>
+   0.000057906805448   0.000000304035799   0.000000071561015<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+  -0.000000000000000   0.202954313942088   0.000340927140195<br>
+  Columns 4 through 6<br>
+   0.000066247875425   0.000000316672053   0.000000043141708<br>
+<br>
+Coeff 4<br>
+<br>
+Moments =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+                   0   0.118886611193895  -0.001298620916092<br>
+  Columns 4 through 6<br>
+   0.000032949152607  -0.000001246673286   0.000000077131213<br>
+rMu =<br>
+   1.0e-04 *<br>
+  Columns 1 through 3<br>
+   0.000000000000001   0.118886611193895  -0.001541113260406<br>
+  Columns 4 through 6<br>
+   0.000055071116241  -0.000001604601429   0.000000057953198<br>
+<br>
+<br>
+Here are the parameters of 2D Z-series representing the orthogonal part of dynamic coeffs<br>
+<br>
+bnm1 =<br>
+  -0.000610151804301   0.007015186008629   0.000610151804301<br>
+   0.000271283203778   0.002590965607971  -0.000271283203778<br>
+   0.000376129343617  -0.000000660981591  -0.000376129343617<br>
+  -0.000052290377253  -0.000032468829609   0.000052290377253<br>
+bnm2 =<br>
+  -0.001016097056863   0.007214378908442   0.001016097056863<br>
+  -0.003946677730866   0.001464561419486   0.003946677730866<br>
+   0.000306495007013   0.001884594092963  -0.000306495007013<br>
+   0.000296473656188  -0.000176679401812  -0.000296473656188<br>
+bnm3 =<br>
+  -0.000363702273833   0.002755011470318   0.000363702273833<br>
+  -0.001950615318872  -0.000037434708385   0.001950615318872<br>
+   0.000039232962482   0.000918819369742  -0.000039232962482<br>
+   0.000142308057892  -0.000013126581508  -0.000142308057892<br>
+bnm4 =<br>
+   0.001627312875158  -0.000452044827821  -0.001627312875158<br>
+   0.000345937656775  -0.001975699689568  -0.000345937656775<br>
+   0.000312553653874   0.000452044827821  -0.000312553653874<br>
+   0.000049530543965   0.000080694904871  -0.000049530543965 <br>
+ </div>
+
+			
+									
+									<div id="sig885560" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885561">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885561">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885561">
+
+			<h3 ><a href="#p885561">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885561&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885561" title="Post #2593">#2593</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 16th, 2025, 5:36 pm</span></p>
+			
+			
+			
+			<div class="content">Above output in previous program uses the matlab code below<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = SlidingWindowZSeriesEstimation()
+
+
+TT=500;
+seed=15898837;
+
+seed=98831629;
+
+[X1] = ProduceSDEDataTimeSeries(TT,seed);
+
+
+NIntervals=15;  %Intervals used to estimate moments
+
+
+plot((1:TT),X1(1:TT),'g');
+str=input("Look at graph of Time Series variable X");
+
+
+for tt=(1+NIntervals):TT
+    muA(1:4)=0;
+    for nn=1:NIntervals
+        dXt=X1(tt-NIntervals+nn)-X1(tt-NIntervals+nn-1); %Moments are calculated for dX(t)
+        muA(1:4)=muA(1:4)+(dXt.^(1:4))/NIntervals;
+    end
+
+    [c(1,tt),c(2:4,tt),FittedMoments] = CalculateZSeriesDensityFromRawMoments02M4(muA,0);
+ 
+    c
+    %str=input("Look at new Coeffs");
+
+end
+
+% save("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\DynamicCoeffs01.mat","c");
+% 
+% str=input("I have saved dynamic coeffs");
+% 
+% 
+% load("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\DynamicCoeffs01.mat","c");
+
+
+
+
+bnm1=EstimateDynamicCoeffParameters(c(1,:));
+bnm2=EstimateDynamicCoeffParameters(c(2,:));
+bnm3=EstimateDynamicCoeffParameters(c(3,:));
+bnm4=EstimateDynamicCoeffParameters(c(4,:));
+
+
+bnm1
+bnm2
+bnm3
+bnm4
+
+str=input("Please look at 2D Z-series of four dynamic coefficients above");
+
+
+%c
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+yyaxis right
+plot((1+NIntervals:TT),c(1,1+NIntervals:TT),'b');
+
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(2,1+NIntervals:TT),'r');
+ylabel('Coefficients c0 and c1 of Z-series of X')
+
+title("Graph of time series X and first two Coefficients of its Z-series, c0 and c1");
+legend('X','c0','c1','Location','northeast');
+%plot((1:TT),X1(1:TT),'g',(1+NIntervals:TT),c(1,1+NIntervals:TT),'b',(1+NIntervals:TT),c(2,1+NIntervals:TT),'r',(1+NIntervals:TT),c(3,1+NIntervals:TT),'k',(1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+str=input("Look at graph--final");
+
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+ hold on
+yyaxis right
+plot((1+NIntervals:TT),c(3,1+NIntervals:TT),'k');
+ylabel('Coefficients c2 of Z-series of X')
+
+title("Graph of time series X and third coefficients of its Z-series, c2");
+legend('X','c2','Location','northeast');
+
+str=input("Graph--Fianl--2")
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+ylabel('Coefficients c3 of Z-series of X')
+
+title("Graph of time series X and fourth coefficient of its Z-series, c3");
+legend('X','c3','Location','northeast');
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm] = EstimateDynamicCoeffParameters(X)
+
+Ndata=length(X)-1;
+Order=7;
+
+
+%Calculate transition dX
+for nn=1:Ndata
+    dX(nn)=X(nn+1)-X(nn);
+end
+
+%Below Calculate Z-series of X and dX.
+
+[CoeffX,ZX,RSquared1] = CalculateActualZSeriesFromData(X,Order);
+[CoeffdX,ZdX,RSquared2] = CalculateActualZSeriesFromData(dX,Order);
+
+
+
+Ymu1(1:Ndata,1)=dX(1:Ndata);
+dXcorr(1:Ndata,1)=0;
+[W1] = EvalHermiteArrayH0(ZX(1:Ndata),Order);
+        %Below, do the regression to find the coefficients of part of dX
+        %random variable that is correalted with X.
+coeff1=inv(W1'*W1)*(W1'*Ymu1);
+        %Below, we evaluate the correalted part of dX random variable
+        %with X by summing over all the hermite polynomials out
+        %to Order.
+for hh=0:Order 
+            %Below dXcorr continues to sum corelated part over all hermites of X
+            
+      dXcorr(1:Ndata,1)=dXcorr(1:Ndata,1)+coeff1(hh+1,1).*W1(1:Ndata,hh+1);
+            
+end
+
+%Below, we calculate orthogonal part of DX that is uncorrelated with dX
+
+dXdecorr(1:Ndata,1)=Ymu1(1:Ndata,1)-dXcorr(1:Ndata,1);
+
+
+%Below calculat moments of correalted (with X)  part and orthogonal (with respect to X) part of dX 
+for kk=1:8
+    rMudecorr(kk)=sum(dXdecorr(1:Ndata,1).^kk)/Ndata;
+    rMucorr(kk)=sum(dXcorr(1:Ndata,1).^kk)/Ndata; 
+end
+
+
+rMudecorr
+rMucorr
+%dXcorr
+%dXdecorr
+
+%str=input("Look at decorrelated part moments");
+
+
+NMoments=6;
+Iterations=20000;
+
+%The function below finds the 2D Z-series of orthogonal part of dX.
+
+[bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTerm2D01A(rMudecorr,NMoments,Iterations);
+
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTerm2D01A(rMu,NMoments,Iterations)
+
+
+%This program computes coeffs of Z-series when values of raw moments are
+%given using Iterative method. 
+
+%rMu are raw moments;
+
+%Hermite Series Form is      
+
+% 
+% Y=  +(bnmh(1,2) + bnmh(2,2)* Z1 + bnmh(3,2)* (Z1^2-1) + bnmh(4,2)* (Z1^3-3*Z1))* Z2
+%     +(bnmh(1,3) + bnmh(2,3)* Z1 + bnmh(3,3)* (Z1^2-1) + bnmh(4,3)* (Z1^3-3*Z1))* (Z2^2-1)
+%
+% Equivalent 2D Z-series form is 
+% Y=   (bnm(1,1) + bnm(2,1) Z1 + bnm(3,1) Z1^2 + bnm(4,1) Z1^3)
+%     +(bnm(1,2) + bnm(2,2) Z1 + bnm(3,2) Z1^2 + bnm(4,2) Z1^3) Z2
+%     +(bnm(1,3) + bnm(2,3) Z1 + bnm(3,3) Z1^2 + bnm(4,3) Z1^3) Z2^2
+% 
+% 
+% Var(Y)= bnmh(1,2).^2 + bnmh(2,2).^2 + 2* bnmh(3,2).^2 + 6* bnmh(4,2).^2
+%        +2*(bnmh(1,3).^2 + bnmh(2,3).^2 + 2* bnmh(3,3).^2 + 6* bnmh(4,3).^2)
+% 
+%     
+%     
+% bnm(1,1)= -bnmh(1,3) + bnmh(3,3)  
+% bnm(2,1)= -bnmh(2,3) + 3* bnmh(4,3)  
+% bnm(3,1)= -bnmh(3,3)
+% bnm(4,1)= -bnmh(4,3)    
+%     
+% bnm(1,2)= bnmh(1,2) - bnmh(3,2)  
+% bnm(2,2)= bnmh(2,2) - 3* bnmh(4,2)  
+% bnm(3,2)= bnmh(3,2)
+% bnm(4,2)= bnmh(4,2)
+% 
+% bnm(1,3)= bnmh(1,3) - bnmh(3,3)  
+% bnm(2,3)= bnmh(2,3) - 3* bnmh(4,3)  
+% bnm(3,3)= bnmh(3,3)
+% bnm(4,3)= bnmh(4,3)
+
+
+%We have used the notation
+%cH0=bnmh(1,2);
+%cH(1)=bnmh(2,2);
+%CH(2)=bnmh(3,2);
+%CH(3)=bnmh(4,2);
+%cH(4)=bnmh(1,3);
+%cH(5)=bnmh(2,3);
+%CH(6)=bnmh(3,3);
+%CH(7)=bnmh(4,3);
+
+% SO We will use the equations
+
+
+% cH0=1-sqrt(cH(1).^2 + 2*cH(2).^2 + 6*cH(3).^2+2*(cH(4).^2 + cH(5).^2 + 2*cH(6).^2 + 6*cH(7).^2));
+% 
+% 
+% bnm(1,1)= -cH(4) + cH(6);  
+% bnm(2,1)= -cH(5) + 3*cH(7);  
+% bnm(3,1)= -cH(6);
+% bnm(4,1)= -cH(7);    
+%     
+% bnm(1,2)= cH0 - cH(2);  
+% bnm(2,2)= cH(1) - 3*cH(3);  
+% bnm(3,2)= cH(2);
+% bnm(4,2)= cH(3);
+% 
+% bnm(1,3)= cH(4) - cH(6);  
+% bnm(2,3)= cH(5) - 3*cH(7);  
+% bnm(3,3)= cH(6);
+% bnm(4,3)= cH(7);    
+    
+    
+   
+
+
+    
+mOrder=NMoments;         %Number of raw moments in calibration.      
+
+%%%%Standardize the Raw Moments
+
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+%sMu(7)=cMu(7)/cMu(2).^3.5;
+%sMu(8)=cMu(8)/cMu(2).^4.0;
+
+%cH(1)=1;
+
+SeriesOrder=7;
+cH(1:SeriesOrder)=0;
+cH(1)=.001;%.05
+%%%%%%Choose the iteration step size.
+
+for nn=1:3
+    DeltaX(nn)=.00125/sqrt(factorial(nn+1));
+end
+for nn=4:7
+    DeltaX(nn)=.00125/sqrt(factorial(nn+1-3))*2;
+end
+
+
+
+%%%Weights on objective function that shows fit to moments
+w(NMoments)=1;
+for nn=NMoments-1:-1:1
+    w(nn)=w(nn+1)*(nn+1)*(nn+2);
+end
+
+w(3)=w(3)*2;
+w(5)=w(5)*2;
+w(4)=w(4)*1;
+
+    
+
+
+cH0=sqrt(1-(cH(1).^2 + 2*cH(2).^2 + 6*cH(3).^2+2*(cH(4).^2 + cH(5).^2 + 2*cH(6).^2 + 6*cH(7).^2)));
+
+
+
+bnm(1,1)= -cH(4) + cH(6);  
+bnm(2,1)= -cH(5) + 3*cH(7);  
+bnm(3,1)= -cH(6);
+bnm(4,1)= -cH(7);    
+    
+bnm(1,2)= cH0 - cH(2);  
+bnm(2,2)= cH(1) - 3*cH(3);  
+bnm(3,2)= cH(2);
+bnm(4,2)= cH(3);
+
+bnm(1,3)= cH(4) - cH(6);  
+bnm(2,3)= cH(5) - 3*cH(7);  
+bnm(3,3)= cH(6);
+bnm(4,3)= cH(7);    
+
+
+SeriesOrder10=4;
+SeriesOrder01=3;
+
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+
+Moments
+%str=input("Look at Moments");
+
+
+[ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+
+cHBest=cH;
+
+ImproveFlag(1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder)=0;
+ImproveCount=0;
+
+
+for mm=1:Iterations
+AdjustFlag=0;
+    %mm
+    %First 500 iterations try to fit three moments only
+    if(mm&lt;500)
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=3;
+        mOrder=NMoments;
+    end
+    %500 to 4000 iterations try to fit four moments  only
+    if((mm&gt;=500)&amp;&amp;(mm&lt;4000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=4;
+        mOrder=NMoments;
+        
+        %Once we move from fitting three moments to four moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of four moments optimization.
+        %We also increase the weight associated with third moment
+        %so that stays in calibration
+        if(mm==500)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;
+        w(3)=w(3)*4;
+        
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        AdjustFlag=1;
+ %       str=input("I am in here NMoments =4 ");
+        end
+    end 
+    %4000 to 10000 iterations try to fit five moments
+    if((mm&gt;=4000)&amp;&amp;(mm&lt;10000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=5;
+        mOrder=NMoments;
+        
+        %Block Below: Once we move from fitting four moments to five moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of five moments optimization.
+        %We also increase the weight associated with already
+        %calibrated third and fourth moment is increased so 
+        %that stays in calibration
+        
+        if(mm==4000)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;  
+        w(3:4)=w(3:4)*4;
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        AdjustFlag=1;
+  %      str=input("I am in here NMoments =5 ");
+        end
+    end 
+    
+    %Greater thab 10000 iterations try to fit six moments
+    if((mm&gt;=10000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=6;
+        mOrder=NMoments;
+        
+        
+        %Block Below: Once we move from fitting five moments to six moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of six moments optimization.
+        %We also increase the weight associated with already
+        %calibrated third, fourth and fifth moment is increased so 
+        %that stays in calibration
+        if(mm==10000)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;
+        w(3:5)=4*w(3:5);
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        %str=input("I am in here NMoments =6 ");
+        AdjustFlag=1;
+        end
+    end 
+    
+    for nn=SeriesOrder1:SeriesOrder2  
+        
+        ImproveFlagPrev(nn)=ImproveFlag(nn);    
+        
+        cinH=cH;
+        cinH(nn)=cinH(nn)+DeltaX(nn);
+        
+        
+        %Below lines keep the total variance equal to one.
+        CondFlag=1;
+        VarYP=cinH(1).^2 + 2*cinH(2).^2 + 6*cinH(3).^2+2*(cinH(4).^2 + cinH(5).^2 + 2*cinH(6).^2 + 6*cinH(7).^2);
+        if(VarYP&gt;1)
+            cinH=cinH/sqrt(VarYP)*.98;
+            %CondFlag=0;
+        end
+        
+        cinH0=abs(sqrt(1-(VarYP)));
+        
+        %Convert to 2D Z-series Coeffs from Hermite Coeffs
+        
+        bnm(1,1)= -cinH(4) + cinH(6);  
+        bnm(2,1)= -cinH(5) + 3*cinH(7);  
+        bnm(3,1)= -cinH(6);
+        bnm(4,1)= -cinH(7);    
+
+        bnm(1,2)= cinH0 - cinH(2);  
+        bnm(2,2)= cinH(1) - 3*cinH(3);  
+        bnm(3,2)= cinH(2);
+        bnm(4,2)= cinH(3);
+
+        bnm(1,3)= cinH(4) - cinH(6);  
+        bnm(2,3)= cinH(5) - 3*cinH(7);  
+        bnm(3,3)= cinH(6);
+        bnm(4,3)= cinH(7);    
+ 
+        
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+                
+        [ObjFunc] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        
+        if((ObjFunc&lt;ObjFuncBest)&amp;&amp; (CondFlag==1))
+            
+            ObjFuncBest=ObjFunc;
+            
+            cHBest=cinH;
+            cH=cinH;
+            bnmBest=bnm;
+            ImproveFlag(nn)=1;
+            
+        else
+            
+            cinH=cH;
+            cinH(nn)=cinH(nn)-DeltaX(nn);
+            
+            %Below lines keep the total variance equal to one.
+            CondFlag=1;
+            VarYP=cinH(1).^2 + 2*cinH(2).^2 + 6*cinH(3).^2+2*(cinH(4).^2 + cinH(5).^2 + 2*cinH(6).^2 + 6*cinH(7).^2);
+            if(VarYP&gt;1)
+                cinH=cinH/sqrt(VarYP)*.98;
+                %CondFlag=0;
+            end
+
+            cinH0=abs(sqrt(1-(VarYP)));
+
+            %Convert to 2D Z-series Coeffs from Hermite Coeffs
+            bnm(1,1)= -cinH(4) + cinH(6);  
+            bnm(2,1)= -cinH(5) + 3*cinH(7);  
+            bnm(3,1)= -cinH(6);
+            bnm(4,1)= -cinH(7);    
+
+            bnm(1,2)= cinH0 - cinH(2);  
+            bnm(2,2)= cinH(1) - 3*cinH(3);  
+            bnm(3,2)= cinH(2);
+            bnm(4,2)= cinH(3);
+
+            bnm(1,3)= cinH(4) - cinH(6);  
+            bnm(2,3)= cinH(5) - 3*cinH(7);  
+            bnm(3,3)= cinH(6);
+            bnm(4,3)= cinH(7);    
+
+
+            SeriesOrder10=4;
+            SeriesOrder01=3;
+
+            [Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+            
+            [ObjFunc] = CalculateObjMoment(sMu,Moments,w,mOrder);
+            if((ObjFunc&lt;ObjFuncBest) &amp;&amp; (CondFlag==1))
+  
+                ObjFuncBest=ObjFunc;
+                cHBest=cinH;
+                bnmBest=bnm;
+                cH=cinH;
+                ImproveFlag(nn)=-1;
+            else
+                 ImproveFlag(nn)=0;
+            end
+        end
+        
+    %Index(n0n)    
+    end
+    
+    if(AdjustFlag==0)
+    
+    
+    if(rem(mm,500)==0)
+        DeltaX(1:7)=cHBest(1:7)/25;
+    end
+    
+    ResetFlag=0;
+    if(rem(mm,10)==0)
+    mm
+    ObjFuncBest
+    if((mm&gt;10)&amp;&amp;(ObjFuncBest==ObjFuncBestBefore))
+        ResetFlag=1;
+    end
+    ObjFuncBestBefore=ObjFuncBest;
+    %DeltaX
+    %ImproveCount
+    
+    end
+    if(ResetFlag==1)
+     %  DeltaX=DeltaX*5; 
+        
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+       if(ImproveFlag(nn)==1)
+           ImproveFlag0=1;
+           ImproveCount=ImproveCount+1;
+       end
+    end
+    for nn=2:SeriesOrder
+        if(ImproveFlag0==0)
+            DeltaX(nn)=DeltaX(nn)*.95;
+            ImproveCount=0;
+        end
+    end
+    if(ImproveCount&gt;4)
+       for nn=2:SeriesOrder
+            DeltaX(nn)=DeltaX(nn)*1.05;
+       end
+    end 
+    
+    end
+    
+end
+
+bnm=bnmBest;
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+
+Moments
+sMu
+
+str=input("Look at comparison of Standardised model moments and Standardized target moments")
+
+bnm=bnm*sqrt(cMu(2));
+
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments)
+rMu
+
+str=input("Look at comparison of model raw moments and target raw moments")
+
+
+end</code></pre></div>
+
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [mu1,cMu] = ConvertRawMomentsToCentralMoments(Mu,mOrder)
+
+%cu
+%mu
+% %mOrder
+%str=input('Look at numbers');
+mu1=Mu(1);
+for mm=2:mOrder
+    cMu(mm)=0;
+    for jj=0:mm
+        if(jj==0)
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*1*mu1.^(mm-jj);
+            
+        else
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*Mu(jj)*mu1.^(mm-jj);
+            
+        end
+    end
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Moments1D] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMomentsX)
+
+
+
+
+
+
+X(1:SeriesOrder10*NMomentsX-NMomentsX+1,1:SeriesOrder01*NMomentsX-NMomentsX+1,NMomentsX)=0;
+X(1:SeriesOrder10,1:SeriesOrder01,1)=bnm(1:SeriesOrder10,1:SeriesOrder01);
+anm=bnm;
+SeriesOrder20=SeriesOrder10;
+SeriesOrder02=SeriesOrder01;
+
+
+EZ=EZZ2();
+Moments1D(1)=0;
+for nn=1:SeriesOrder10
+    for mm=1:SeriesOrder01
+        Moments1D(1)=Moments1D(1)+bnm(nn,mm).*EZ(nn).*EZ(mm);
+    end
+end
+
+for nn=1:NMomentsX-1
+
+[cnm,EX0] =SeriesProduct2DAlgorithmicNew(bnm,anm,SeriesOrder10,SeriesOrder01,SeriesOrder20,SeriesOrder02);
+    
+SeriesOrder20=SeriesOrder20+SeriesOrder10-1;
+SeriesOrder02=SeriesOrder02+SeriesOrder01-1;
+
+%size(cnm)
+%SeriesOrder20
+%SeriesOrder02
+%nn+1
+%str=input("Look at sizes of result of moments");
+
+
+
+X(1:SeriesOrder20,1:SeriesOrder02,nn+1)=cnm(1:SeriesOrder20,1:SeriesOrder02);
+anm=cnm;    
+Moments1D(nn+1)=EX0;
+end
+
+
+
+end          
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [cc,EX] =SeriesProduct2DAlgorithmicNew(aa,bb,SeriesOrder10,SeriesOrder01,SeriesOrder20,SeriesOrder02)
+
+
+
+SeriesOrder30=SeriesOrder10+SeriesOrder20-1;
+SeriesOrder03=SeriesOrder01+SeriesOrder02-1;
+
+cc(1:SeriesOrder30,1:SeriesOrder03)=0;
+
+for nn1=1:SeriesOrder30
+    if(nn1&lt;=SeriesOrder10)
+        nn3=nn1;
+    else
+        nn3=SeriesOrder10;
+    end
+    for nn2=1:SeriesOrder03
+        if(nn2&lt;=SeriesOrder01)
+            nn4=nn2;
+        else
+            nn4=SeriesOrder01;
+        end    
+        for jj1=1:nn3
+            if(nn1-jj1+1 &lt;=SeriesOrder20) 
+                for jj2=1:nn4
+                    if(nn2-jj2+1 &lt;=SeriesOrder02)
+                        cc(nn1,nn2)=cc(nn1,nn2)+aa(jj1,jj2).*bb(nn1-jj1+1,nn2-jj2+1);
+                    end
+                end
+            end
+        end
+    end
+end
+
+
+[EZ] = EZZ2();
+
+
+EX=0;
+for nn1=1:SeriesOrder30
+    for nn2=1:SeriesOrder03
+        EX=EX+cc(nn1,nn2).*EZ(nn1).*EZ(nn2);
+    end
+end
+
+
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [ObjMomentOut] = CalculateObjMoment(Moment0,Moment,w,MOrder)
+
+ObjMomentOut=0;
+for nn=1:MOrder
+    ObjMomentOut=ObjMomentOut+(Moment(nn)-Moment0(nn)).^2.*w(nn);
+end
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Wh] = EvalHermiteArrayH0(Z,Order)
+
+%Evaluates first Order-th hermites at the array of Z's. If input array of Z
+%has a size of 100 and Order is 4, it will return a 100 X 5 array.
+
+Hz=HermitePoly(Order);
+
+Wh(1:length(Z),1:Order+1)=0;
+for nn=1:Order+1
+    Wh(:,nn)=0;
+    for mm=1:nn
+        Wh(:,nn)=Wh(:,nn)+Hz(nn,mm).*Z(:).^(mm-1);
+    end
+end
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [EZ] = EZZ2()
+
+EZ(1)=1;
+EZ(2)=0;
+EZ(3)=1;
+for nn=4:96 %Increase for larger products.
+    if rem(nn,2)==0
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-2);
+        EZ(nn);
+    end
+end
+% EZ(64)
+% EZ(64).*EZ(64)
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Hz] = HermitePoly(Order)
+Hz(1:Order+1,1:Order+1)=0.0;
+Hz(1,1)=1.0;
+for k=1:Order
+    for m=1:k
+       Hz(k+1,m+1)=Hz(k,m);
+       if (m&gt;1)
+            Hz(k+1,m-1)=Hz(k+1,m-1)-(m-1)*Hz(k,m);
+       end
+    end
+end
+
+end
+
+</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Coeff,Zy,RSquared] = CalculateActualZSeriesFromData(Yin,Order)
+
+Ndata=length(Yin);
+
+Hz=HermitePoly(Order);  
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+%Ys=sort(Yin);
+%MedianYin=(Ys(Ndata/2)+Ys(Ndata/2+1))/2;
+
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+%Y(1:Ndata)=Yin(1:Ndata)-MedianYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+
+%Mtable=readtable('C:\Users\Lenovo\Documents\MATLAB\MATLAB1\MomentMatchParams08.txt');
+%[ZI] = MatchMomentParametersOfIdealZhalf04(Ndata,Mtable);
+
+
+[Zn] = StandardNormalIdealDesity02(Ndata,1);
+%[ZI] = CalculateZI(Zn);
+
+
+ZI=Zn;
+%Below W is the design matrix for least squares regression i.e the matrix
+%that contains all the hermite polynomials calculated at ideal normal
+%density grid of size Ndata. 
+[W] = EvalZArrayZ0(ZI,Order);
+
+%W
+%W0=W;
+%W(:,1:Order)=W0(:,2:Order+1);
+%We first sort the data so that we can assign one appropriate Z-grid
+%point(and associated hermite polynomials calculated at that grid point)
+%to each data element. This ideal normal density Z-grid is
+%constructed so that its size is equal to data observations count. We
+%suppose that first derivative of random variables with repsect to Z
+%does not switch sign meaning that increasing values of data
+%observations have to aligned with increasing values of ideal normal
+%density grid.
+[Ys,I]=sort(Y(1:Ndata));
+%In the line below, the data sort is reversed so that now the ideal 
+%normal density grid elements assigned to various observations of random 
+%variable face it on data observations index. For details, Please look 
+%on interent the definition of matlab sort command with role of "I" 
+%in output and how it alters the index.   
+Zs1(I(1:Ndata))=ZI(1:Ndata);
+%Below the values to be regressed facing the design matrix are assigned
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+%Below, implement least squares regression.
+coeff=(W'*W)\(W'*Ymu);
+
+size(coeff)
+coeff
+str=input("Look at coeff size");
+
+%Store in coefficietns array of all random varaibles
+Coeff(1:Order+1)= coeff(1:Order+1,1);
+%Store the associated Z in Z-array of all coefficients.   
+Zy(1:Ndata)=Zs1(1:Ndata);
+
+
+[W2] = EvalZArrayZ0(Zy,Order);
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+Coeff
+%Coeff(1)=Coeff(1)+MedianYin;
+
+Coeff2(:,1)=Coeff(:);
+X=W2*Coeff2;
+size(W2)
+size(Coeff2)
+size(X)
+ RSquared=1-sum(((Yin(:)-X(:,1)).^2))./(YmVar*Ndata)
+ %1-sum((aa(:,1)-b0(:,1)).^2)/sum((aa(:,1)-sum(aa(:,1))/(NN)).^2)
+
+end</code></pre></div>
+
+<br>
+<br>
+.<br>
+.</div>
+
+			
+									
+									<div id="sig885561" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885563">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885563">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885563">
+
+			<h3 ><a href="#p885563">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885563&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885563" title="Post #2594">#2594</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 16th, 2025, 6:13 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, by the end of weekend, I expect to complete the next version of the program in which there will be improved algorithm for matching the moments of uncorrelated part. And I will convert the Z-series back to dynamics in terms of coefficients i.e. the original variable. And I will use the function composition method for that. I also hope to add Newton root search to the (improved version of) iterative method program (that I posted today) for precision in matching moments. We will keep working to develop the associated infrastructure for next two weeks and then start working with real stocks data for algorithmic trading possibly by the start of February. I hope that soon we will be doing a lot of more interesting work.</div>
+
+			
+									
+									<div id="sig885563" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885569">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885569">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=cff6baa27580104f26051c6817b4906d" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=cff6baa27580104f26051c6817b4906d">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885569">
+
+			<h3 ><a href="#p885569">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885569&amp;sid=cff6baa27580104f26051c6817b4906d" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885569" title="Post #2595">#2595</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 17th, 2025, 3:07 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I will try to make a detailed post tonight explaining all of the mathematics behind the new matlab programs with latex equations and then relating those mathematical equations to matlab code so friends who joined us late could better understand the matlab programs. I will explain the programs tonight. </div>
+
+			
+									
+									<div id="sig885569" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;cff6baa27580104f26051c6817b4906d" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2550" role="button">171</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" role="button">172</a></li>
+							<li class="active"><span>173</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" role="button">174</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2610" role="button">175</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2580&amp;sid=cff6baa27580104f26051c6817b4906d&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;cff6baa27580104f26051c6817b4906d" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2550" role="button">171</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2565" role="button">172</a></li>
+							<li class="active"><span>173</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" role="button">174</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2610" role="button">175</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=cff6baa27580104f26051c6817b4906d&amp;start=2595" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2580&amp;sid=cff6baa27580104f26051c6817b4906d">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=cff6baa27580104f26051c6817b4906d" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=cff6baa27580104f26051c6817b4906d"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=cff6baa27580104f26051c6817b4906d"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=cff6baa27580104f26051c6817b4906d" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#7617121b1f1836011f1a1b1902025815191b">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>173</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=cff6baa27580104f26051c6817b4906d";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=cff6baa27580104f26051c6817b4906d";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2a27dbcee7c0","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,2910 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 148 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=2544bbd9470c03a066af3d9b4097a94b" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=2544bbd9470c03a066af3d9b4097a94b?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=2544bbd9470c03a066af3d9b4097a94b?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=2544bbd9470c03a066af3d9b4097a94b?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2205" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="2544bbd9470c03a066af3d9b4097a94b" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=2544bbd9470c03a066af3d9b4097a94b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=2544bbd9470c03a066af3d9b4097a94b" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="2544bbd9470c03a066af3d9b4097a94b" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=2544bbd9470c03a066af3d9b4097a94b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=2544bbd9470c03a066af3d9b4097a94b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=2544bbd9470c03a066af3d9b4097a94b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=2544bbd9470c03a066af3d9b4097a94b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2205%26t%3D99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2205&amp;t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" />
+<input type="hidden" name="creation_time" value="1768907822" />
+<input type="hidden" name="form_token" value="9c6dd25df8ca99b6abfe585a04dc445f1be35321" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2205&amp;sid=2544bbd9470c03a066af3d9b4097a94b">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2205&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="2544bbd9470c03a066af3d9b4097a94b" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2544bbd9470c03a066af3d9b4097a94b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2175" role="button">146</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" role="button">147</a></li>
+							<li class="active"><span>148</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" role="button">149</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2235" role="button">150</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p880040">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880040">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880040">
+
+			<h3 class="first"><a href="#p880040">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880040&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880040" title="Post #2206">#2206</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 23rd, 2024, 5:39 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have come up with my postulated theory (which can be wrong. Not tested yet) of hermite polynomials in relation with normal dnesity, general hermite series densities and diffusions.<br>
+<br>
+We know that a standard normal density can be expanded in terms of hermite series as derivatives of normal density can be described in terms of (after multiplication with density) hermite polynomial terms. <br>
+A random process is basically a random particle that is moving randomly to and fro along standard normal axis. This random particle is divided into several states and its properties have to be described as a sum/composition of properties of its different states. These states of random particle are called hermite polynomial states and these states vary in relative magnitude as the particle moves to and fro on standard normal axis. Towards the mid of the density smaller hermite polynomial states are dominant and towards the extremes of the density, larger hermite polynomial states are dominant. I suppose that each point on standard normal axis, the relative magnitude of the hermite states can be determined by relative contribution to standardized density at that point by different hermite polynomials.<br>
+The concept of hermite states is important since we can determine their relative magnitude in density at any point along standard normal axis as the particle moves to and fro on the normal axis. We have not done this with hermite polynomials earlier and this is where this goes beyond simple hermite polynomial analytics.<br>
+Each hermite state has its own variance and variance of the particle at a certain point on standard normal axis is combined weighted sum of the variances in each of the hermite states.<br>
+We can define other processes from standard normal density simply by assigning different coefficients to hermite states that magnify or diminish the variances of each hermite state.<br>
+Correlations are between hermite states of the same order between two stochastic processes.<br>
+<br>
+When we develop the theory of transition probabilities of a stochastic process across time, these hermite states are very helpful. Our marginal density in state two in future has coefficients that are expected values. However transition density has higher variance than marginal density since there are many transitions that have zero expected value but they have significant variances. <br>
+On top of expected values of coefficients of the hermite series of marginal density in future (these expected values are associated with zeroth hermite transition. They are non-zero expectations of coefficients), there are transitions from 1st hermite state at time one to all the 1st, 2nd, 3rd up to fifth hermite(in our set up where fifth hermite is largest) at 2nd time in future. Similalry there are transitions from 2nd hermite state at time one  to all the first to fifth hermite states at time two. And so on from 3rd, fourth and fifth hermite at time one to 1st to fifth hermite states at time two. All these hermite state(at time one) to hermite state(at time two) transitions are pure variances and have zero expected values. These pure variances do not contribute to marginal density at time two which comes solely from zeroth expectation hermite.<br>
+In our set up, all terms with single hermite polynomials contribute to marginal density coefficients. All terms with products of hermite polynomials are pure variances with zero expected values and they do not contribute to marginal density. They are purely related to transition portion of transition densities.<br>
+However, I believe that we can actually take all the realizations of stochastic process at time one and divide each realization to hermite states from knowledge of associated value of standard normal (this is different from only knowing polynomial value there and requires knowledge of relative magnitude of hermite state in density at that point). Similalry we can take associated realization of stochastic process at time two and divide it into hermite states again from knowledge of its associated standard normal. We can then study relative transitions from  various hermite states at time one to various other hermite states at time two and calculate their transtioin coefficients numerically from pairs of historical data.<br>
+I am trying to brainstorm and think of other ideas and hope to share them with friends as I get to know something.<br>
+Please know that I have not tested anything in above theory so I may be totally wrong.</div>
+
+			
+									
+									<div id="sig880040" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p880041">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880041">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880041">
+
+			<h3 ><a href="#p880041">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880041&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880041" title="Post #2207">#2207</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 23rd, 2024, 6:34 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<br>
+When we develop the theory of transition probabilities of a stochastic process across time, these hermite states are very helpful. Our marginal density in state two in future has coefficients that are expected values. However transition density has higher variance than marginal density since there are many transitions that have zero expected value but they have significant variances. <br>
+On top of expected values of coefficients of the hermite series of marginal density in future (these expected values are associated with zeroth hermite transition. They are non-zero expectations of coefficients), there are transitions from 1st hermite state at time one to all the 1st, 2nd, 3rd up to fifth hermite(in our set up where fifth hermite is largest) at 2nd time in future. Similalry there are transitions from 2nd hermite state at time one  to all the first to fifth hermite states at time two. And so on from 3rd, fourth and fifth hermite at time one to 1st to fifth hermite states at time two. All these hermite state(at time one) to hermite state(at time two) transitions are pure variances and have zero expected values. These pure variances do not contribute to marginal density at time two which comes solely from zeroth expectation hermite.</div></blockquote>
+ Our marginal density in state two in future has coefficients that are expected values.<br>
+What I mean is that these are expected values of coefficients associated with the marginal density. These are associated with expected values of variances of hermites related with the marginal density. This is on level one.<br>
+These coefficients are themselves systematically random and have their own variances on level two which are also related with transition across hermites.</div>
+
+			
+									
+									<div id="sig880041" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880045">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880045">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880045">
+
+			<h3 ><a href="#p880045">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880045&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880045" title="Post #2208">#2208</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 24th, 2024, 6:59 am</span></p>
+			
+			
+			
+			<div class="content">Here are some more thoughts about yesterday's ideas.<br>
+1. We know hermite polynomials are associated with variances. <br>
+2. When we talk about transition from hermites in first random variable to other hermites in second random variable, obviously something has to be conserved.<br>
+<br>
+Here we come to our standardized densities framework. Where variance of every density is conserved to unity. And relative weights on hermites that together squared sum to  one (after accounting for hermite weights/variances), define the properties of the density and its moments and shape etc.<br>
+<br>
+Transitions between hermites of one density into hermites of second density are so that total standardized variance is conserved and sums to unity.<br>
+<br>
+I am sure we can easily find transition between hermites by pairing the data and analyzing the flow of standardized variances associated with each combination of 1st density's hermite to second density's hermites since the coefficients of hermites are known from our marginal density analysis. We can easily have a regression algorithm that solves for this.<br>
+<br>
+When we did hermites regression, we had the idea of correlations between same order hermites across two densities. But when we would work with transition densities, we will have to develop the idea of second order correlations of transition densities between hermites of first set of densities to hermites of second sets of densities (these correlations depend on product of appropriate hermites across first set of densities and second set of dnesities).  So we will have these second order transition correlations corresponding to same sets of products of two hermites across various sets of densities. </div>
+
+			
+									
+									<div id="sig880045" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880046">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880046">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880046">
+
+			<h3 ><a href="#p880046">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880046&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880046" title="Post #2209">#2209</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 24th, 2024, 7:49 am</span></p>
+			
+			
+			
+			<div class="content">Again, in relevance to previous post, once we have calculated transition probabilities across standardized densities, we can easily convert to true transition probabilities by multiplying all columns with sqrt of variance of first density and all rows with sqrt of variance of second density. Since we will likely multiply the transition probability matrix (two dimensional hermite series) with true probabilities (1D hermite series) of first density (as opposed to standardized version), we may not need this first de-standardization multiplication of columns with square root of variance of first density. </div>
+
+			
+									
+									<div id="sig880046" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880051">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880051">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880051">
+
+			<h3 ><a href="#p880051">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880051&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880051" title="Post #2210">#2210</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 24th, 2024, 6:48 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I will continue to brainstorm for another day and then move on to numerics. I will continue to share my thoughts with friends.<br>
+However, I am writing this post to clear the confusion related to standardization of the density. I want believe that our 2D hermite density Density of dependent variable X should always have variance unity despite that it does not apparently seem true. <br>
+<br>
+For clearer exposition, we first consider that we are in a non-correlated framework where correlation between X and Y is zero.<br>
+<br>
+1D hermite series of independent variable Y is given as<br>
+<br>
+[$]Y(Z_y)\,=\, ah_{0} \, + \, ah_{1} \,H_1(Z_y) \,+\, ah_{2} \, H_2(Z_y) \,\, + \, bh_{3} \,H_3(Z_y)[$]    Eq(1)<br>
+<br>
+while the dependent variable is given as<br>
+<br>
+[$]X(Z_y \, , \, Z_x)\,=\, bh_{0,0} \, + \, bh_{1,0} \,H_1(Z_y) \,+\, bh_{2,0} \, H_2(Z_y) \,\, + \, bh_{3,0} \,H_3(Z_y)\, \\<br>
++\, \Big[ \, bh_{0,1} \, + \, bh_{1,1} \,H_1(Z_y) \,+\, bh_{2,1} \, H_2(Z_y) \, + \, bh_{3,1} \,H_3(Z_y)\, \Big] \, H_1(Z_x) \, \\<br>
++\, \Big[ \, bh_{0,2} \, + \, bh_{1,2} \,H_1(Z_y) \,+\, bh_{2,2} \, H_2(Z_y) \, \, + \, bh_{3,2} \,H_3(Z_y)\, \Big] \, H_2(Z_x) \, \\<br>
++\, \Big[ \, bh_{0,3} \, + \, bh_{1,3} \,H_1(Z_y) \,+\, bh_{2,3} \, H_2(Z_y) \, + \, bh_{3,3} \,H_3(Z_y)\, \Big] \, H_3(Z_x) \, [$]  Eq(2)<br>
+<br>
+For brevity in analysis, we have further used the notation<br>
+<br>
+[$]Bh_0(Z_y)\,=\, bh_{0,0} \, + \, bh_{1,0} \,H_1(Z_y) \,+\, bh_{2,0} \, H_2(Z_y) \,\, + \, bh_{3,0} \,H_3(Z_y)\,[$]<br>
+[$]Bh_1(Z_y)\,=\, bh_{0,1} \, + \, bh_{1,1} \,H_1(Z_y) \,+\, bh_{2,1} \, H_2(Z_y) \, + \, bh_{3,1} \,H_3(Z_y)\,[$] <br>
+[$]Bh_2(Z_y)\,=\, bh_{0,2} \, + \, bh_{1,2} \,H_1(Z_y) \,+\, bh_{2,2} \, H_2(Z_y) \, \, + \, bh_{3,2} \,H_3(Z_y)\,[$]<br>
+[$]Bh_3(Z_y)\,=\, bh_{0,3} \, + \, bh_{1,3} \,H_1(Z_y) \,+\, bh_{2,3} \, H_2(Z_y) \, + \, bh_{3,3} \,H_3(Z_y)\,[$]   Eqs(3)<br>
+<br>
+and we write X in a brief form as<br>
+<br>
+[$]X(Z_y \, , \, Z_x)\,=\, Bh_0(Z_y)\, +Bh_1(Z_y)\, \,H_1(Z_x) \,+\,Bh_2(Z_y)\,\, H_2(Z_x) \,\, + \, Bh_3(Z_y)\,\,H_3(Z_x)\,[$]  Eq(4)<br>
+<br>
+We want to emphasize that Eq(2) and Eq(4) are the same equations. We see that Zx hermite polynomials coefficients of the above equation are dependent on Zy which means that equation describes the conditional/transition density of X given any value that our independent variable Y(Zy) takes. This is why we call them transition density since it completely describes how the density of X changes when Y changes along its domain. <br>
+Up till now this is simply rehash of old things we all know.<br>
+We want to explore hermite series in Eq(4) in greater detail now.<br>
+In order to know the marginal density that is integrated over all transition probabilities coming from all values of Zy, we know that  <br>
+<br>
+[$]X(Z_y \, , \, Z_x)\,=\,  bh_{0,0}\, + bh_{0,1}\, \,H_1(Z_x) \,+\, bh_{0,2}\,\, H_2(Z_x) \,\, + \,  bh_{0,3}\,\,H_3(Z_x)\,[$]  Eq(4)<br>
+<br>
+where  bh_{0,0}\, is zeroth hermite in hermite series of Bh_0(Z_y)\, and so on for bh_{0,1}\,,bh_{0,2}\,, and bh_{0,3}\,.Since we are using zeroth hermites from the hermite series of coefficients, this is the expected value of the density as expectation over all other hermites is zero.<br>
+<br>
+Now, we come to major question that if above marginal density is standardized to unity, then variance must be larger than unity when we would include all the rest of the hermites in the expression for Zy dependent coefficients. <br>
+<br>
+We are prone to thinking that variance of the equation including proper transition probabilities depending on Zy (equation given below)<br>
+<br>
+[$]X(Z_y \, , \, Z_x)\,=\, Bh_0(Z_y)\, +Bh_1(Z_y)\, \,H_1(Z_x) \,+\,Bh_2(Z_y)\,\, H_2(Z_x) \,\, + \, Bh_3(Z_y)\,\,H_3(Z_x)\,[$]  Eq(4)<br>
+<br>
+must be larger than variance of equation including only averages of zeroth hermites  (equation is given below)<br>
+<br>
+[$]X(Z_y \, , \, Z_x)\,=\,  bh_{0,0}\, + bh_{0,1}\, \,H_1(Z_x) \,+\, bh_{0,2}\,\, H_2(Z_x) \,\, + \,  bh_{0,3}\,\,H_3(Z_x)\,[$]  Eq(4)<br>
+<br>
+This however may not be true.<br>
+<br>
+Because coefficients  [$]Bh_0(Z_y)\,, Bh_1(Z_y)\, ,Bh_2(Z_y)\, , Bh_3(Z_y)\,[$] are not independent of each other. We cannot assume independence when calculating their variance. These coefficients are constrained since our density is standardized. This is as if in some sense when we move over density Zy, the variance is symmetric(in the sense of cancelling) around the average value. <br>
+I will try to come up with a new post tomorrow hoping I will have more clarity.</div>
+
+			
+									
+									<div id="sig880051" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880053">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880053">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880053">
+
+			<h3 ><a href="#p880053">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880053&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880053" title="Post #2211">#2211</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 7:04 am</span></p>
+			
+			
+			
+			<div class="content">Friends, OK I thought more last night and I have more clarity now about the problem.<br>
+First of all I want to correct that 2D hermite series density of X(Zx,Zv) should have unity variance. Obviously the two dimensional density has more variance than one. <br>
+I thought of the concept of one dimensional variance and two dimensional variance. One dimensional marginal density should indeed have variance unity after standardization. We standardized only in one dimension of marginal density and this is the only dimension where we can keep the variance unity. We cannot retrieve unity variance in two dimensions after standardization only in one dimension.<br>
+This led me to think about the two dimensional conditional standardization of the density. <br>
+We can first standardize the density by variance of marginal density (after subtracting the mean). This is what we had done before.<br>
+Then we conditionally standardize in Zy direction. We first calculate conditional values  E(X|Zy) (we did this with hermite regression and this was correlated part that was subtracted from density to get Xdecorr in 2D regression program) and E(X^2|Zy) which is actually simplified version of ((X-E(X|Zy))^2|Zy). Both these quantities can be calculated from hermite polynomials regression. <br>
+Then we take the data(that already had been standardized earlier by variance of marginal density) and subtract the expression for E(X|Zy) to do the conditional de-mean part of standardization. (This part led to calculation of Xdecorr in 2D regression program)<br>
+(Thinking of this in context of our 2D regression on Zx and Zy, I believe that 2D regression should have been done on decorrelated part Xdecorr only and we needed to simply add the correlated part (Xcorr(Zy) that earlier came from hermite regression) to it after doing regression on Xdecorr only. It will make our 2D regression far more stable and robust especially for high correlation values. Xcorr has no dependence on Zx and dependence on Zy has already been captured by first hermite regression used to calculate it. This simply needed to be added after 2D regression on Xdecorr only.) <br>
+Coming back to 2D standardization, we would have to divide the de-meaned data (after subtracting E(X|Zy)) by sqrt(((X-E(X|Zy))^2|Zy)). This will give us a two dimensional standardization that will actually remain standardized in two dimensions. <br>
+Again this is standardization in two dimensions only. It will not be simultaneously standardized in both one marginal dimension and in two dimensions and in order to get first marginally standardized data ,we will have to add the expression for E(X|Zy)) and then multiply with  sqrt(((X-E(X|Zy))^2|Zy)).  </div>
+
+			
+									
+									<div id="sig880053" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880054">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880054">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880054">
+
+			<h3 ><a href="#p880054">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880054&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880054" title="Post #2212">#2212</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 7:52 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I am quickly posting changed better version of the 2D regression algorithm in which 2D regression of X on Y is done only on decorrelated part of X and correlated part of X is subtracted before regression and is simply added to regression result of decorrelated part after the regression has been done. Not only should this be more robust, it should be easier to generalize it to more dimensions.<br>
+<br>
+Here is the new function.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm,aa] = CalculateConditionalProbabilitiesYtoXLinearRegression04IterC02(Yin,Xin)
+
+%Yin argument translates to independent random variable Y
+%Xin argument translates to dependent variable X.
+%This function takes observations of an independent variable Y and
+%dependent varaible X. These have to be joint observations in the sense
+%that nth observation of Y, given by Y(n) is taken jointly with nth
+%observation of X, given by X(n). Two arrays of observations are the same
+%length and nth mmber of independent variable Y is jointly observed with nth
+%member of depedent variable X.
+%We want to find the detailed relationship between Y and X so we can get
+%the conditional density of dependent variable X given a particular value
+%of independent variable Y. This will be done by calibrating coefficients
+%of our 2D hermite series to data so that a very good fit to cross moments
+%between X and Y is retrieved.
+%We will first find univariate Z-series/hermite series of both random
+%variables independently. For joint dynamics of dependent variable given 
+%te independnet variable, we will assume a 2D hermite series (This has to 
+%be two dimensional to be able to capture the dynamics from independent variable Y
+%and have its own dynamics) and form but we do not know the coefficients of 
+%this 2D hermite series. In this program, we try to use iterative optimization 
+%to find the unknown coefficients of 2D hermite series of dependent variable X 
+%in a way that after taking products with independent varaible Y, expectation   
+%of these products i.e cross moments are as exactly retrieved as possible.
+%Our iterative optimization procedure perturbs each hermite coefficient in 
+%2D hermite series  by a very slight amount and checks the objective function.
+%If the objective function decreases, we eccept the perturbation otherwise
+%reject it and then perturb by a small amount in other opposite direction
+%and then again check the objective function. If perturbations in both sides 
+%are rejected, we do not change the coefficients but slightly decrease the
+%perturbation size. 
+%We will first standardize the data of both random variables and then
+%calculate univariate hermite series of both variables and also their 
+%cross moments in standardized form. We do all the calculations of coefficients
+%of independent variable Y and 2D dependent variable X
+%in standardized version of variables and moments. After optimization of coefficents on 
+%standardized data, at the end, we invert the standardization of both 
+%dependent and independent variables appropriately to get the Z-series and
+%hermite series of actual varaibles in theri original coordinates back from
+%standardized coordinates.
+%Before optimization, we place two conditions on 2D dependent variable X so that
+%first row and first column of 2D hermite coefficents of X is already
+%known before optimization stage and it is not changed in optimization. 
+%We do not iteratively optimize over this first row and first colums
+%which are analytically known from these two conditions.
+%Our first condition is that after integration (of bivaraite density or
+%alternatively bivaraite 2D Z-series/2D Hermite series) over independent
+%variable, we should get the univaraite marginal density/Z-series/Hermite series of X
+%which has already been calculated out of data. This fixes the zeroth
+%hermite(of independent varaible Y) related terms in the Z-series/hermite series. 
+%Please look at this forum post# 2121 for explanation of this first condition.
+% https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2115#p879042
+
+%We can analytically solve for first order cross moments of X with higher
+%order in Y. From the analytical solution of these moments, we find first
+%row of coefficents in the hermite form.
+
+
+% 2D Hermite Series Form used in this program is given as
+% 
+% X = bnmH(1,1) + bnmH(2,1) H_1(Z_y) + bnmH(3,1) H_2(Z_y) + bnmH(4,1) H_3(Z_y) + bnmH(5,1) H_4(Z_y) + bnmH(6,1) H_5(Z_y) 
+% + [ bnmH(1,2) + bnmH(2,2) H_1(Z_y) + bnmH(3,2) H_2(Z_y) + bnmH(4,2) H_3(Z_y) + bnmH(5,2) H_4(Z_y) + bnmH(6,2) H_5(Z_y)] H_1(Zx) 
+% + [ bnmH(1,3) + bnmH(2,3) H_1(Z_y) + bnmH(3,3) H_2(Z_y) + bnmH(4,3) H_3(Z_y) + bnmH(5,3) H_4(Z_y) + bnmH(6,3) H_5(Z_y)] H_2(Zx)
+% + [ bnmH(1,4) + bnmH(2,4) H_1(Z_y) + bnmH(3,4) H_2(Z_y) + bnmH(4,4) H_3(Z_y) + bnmH(5,4) H_4(Z_y) + bnmH(6,4) H_5(Z_y)] H_3(Zx)
+% + [ bnmH(1,5) + bnmH(2,5) H_1(Z_y) + bnmH(3,5) H_2(Z_y) + bnmH(4,5) H_3(Z_y) + bnmH(5,5) H_4(Z_y) + bnmH(6,5) H_5(Z_y)] H_4(Zx)
+% + [ bnmH(1,6) + bnmH(2,6) H_1(Z_y) + bnmH(3,6) H_2(Z_y) + bnmH(4,6) H_3(Z_y) + bnmH(5,6) H_4(Z_y) + bnmH(6,6) H_5(Z_y)] H_5(Zx)
+ 
+% 2D Z-Series Form used in this program is given as
+% 
+% X = bnm(1,1) + bnm(2,1) Z_y + bnm(3,1) (Z_y)^2 + bnm(4,1) (Z_y)^3 + bnm(5,1) (Z_y)^4 + bnm(6,1) (Z_y)^5 
+% + [ bnm(1,2) + bnm(2,2) Z_y + bnm(3,2) (Z_y)^2 + bnm(4,2) (Z_y)^3 + bnm(5,2) (Z_y)^4 + bnm(6,2) (Z_y)^5 ] Zx 
+% + [ bnm(1,3) + bnm(2,2) Z_y + bnm(3,3) (Z_y)^2 + bnm(4,3) (Z_y)^3 + bnm(5,3) (Z_y)^4 + bnm(6,3) (Z_y)^5 ] Zx^2 
+% + [ bnm(1,4) + bnm(2,2) Z_y + bnm(3,4) (Z_y)^2 + bnm(4,4) (Z_y)^3 + bnm(5,4) (Z_y)^4 + bnm(6,4) (Z_y)^5 ] Zx^3 
+% + [ bnm(1,5) + bnm(2,2) Z_y + bnm(3,5) (Z_y)^2 + bnm(4,5) (Z_y)^3 + bnm(5,5) (Z_y)^4 + bnm(6,5) (Z_y)^5 ] Zx^4 
+% + [ bnm(1,6) + bnm(2,2) Z_y + bnm(3,6) (Z_y)^2 + bnm(4,6) (Z_y)^3 + bnm(5,6) (Z_y)^4 + bnm(6,6) (Z_y)^5 ] Zx^5
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%In the code block below, we standardize the independent variable Y and dependent variable X.
+%We do all later calculations of various Z-series and cross moments in 
+%standardized framework and then at the end of the program, we convert 
+%the calculated coefficients of 2D hermite series/Z-series of dependent 
+%variable X into original non-standardized framework.
+
+ Ndata=length(Yin);
+ 
+ MeanY=sum(Yin(1:Ndata))/Ndata;
+ MeanX=sum(Xin(1:Ndata))/Ndata;
+ 
+ Ym(1:Ndata)=Yin(1:Ndata)-MeanY;
+ Xm(1:Ndata)=Xin(1:Ndata)-MeanX;
+ 
+ YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+ XmVar=sum(Xm(1:Ndata).^2)/Ndata;
+ 
+ Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+ X(1:Ndata)=Xm(1:Ndata)/sqrt(XmVar);
+
+ 
+ sqrt(YmVar)
+ sqrt(XmVar)
+ 
+ str=input("Look at standardization constants");
+ 
+
+ NMomentsY=6;
+ NMomentsX=6;
+     for nn=1:NMomentsY
+        for mm=1:NMomentsX
+            CrossMoments11(nn,mm)=0;
+            for pp=1:Ndata
+               CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Yin(pp).^nn.*Xin(pp).^mm/Ndata;
+               %CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Y(pp).^nn.*X(pp).^mm/Ndata;
+               %CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Ym(pp).^nn.*Xm(pp).^mm/Ndata;
+            end
+        end
+     end
+ 
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Code block below uses polynomial regression to find univariate Z-series 
+%coefficients of independent variable Y.
+%To know more about polynomial regression read the following and associated
+%posts:  https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2010#p877143
+ 
+%You can get the text file MomentMatchParams08.txt from the forum post below
+%https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=2040#p877863
+
+Mtable=readtable('C:\Users\Lenovo\Documents\MATLAB\MATLAB1\MomentMatchParams08.txt');
+
+%ZI is moment matched grid along the normal density with number of grid
+%points equal to data elements in Y given by Ndata. The grid is constructed
+%so that probability mass in each grid cell is 1/Ndata so this matches the
+%observation probability of Ndata data elements. Due to equal probability
+%mass in each grid cell, we call it equiprobable grid.
+
+[ZI] = MatchMomentParametersOfIdealZhalf04(Ndata,Mtable);
+
+Ys=sort(Y);
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+W(1:Ndata,1)=1;
+W(1:Ndata,2)=ZI(1:Ndata);
+W(1:Ndata,3)=ZI(1:Ndata).^2;
+W(1:Ndata,4)=ZI(1:Ndata).^3;
+W(1:Ndata,5)=ZI(1:Ndata).^4;
+W(1:Ndata,6)=ZI(1:Ndata).^5;
+% W(1:Ndata,7)=ZI(1:Ndata).^6;
+% W(1:Ndata,8)=ZI(1:Ndata).^7;
+
+
+coeff=inv(W'*W)*(W'*Ymu);
+
+%Above, we get coefficients of univariate Z-series of independent
+%variable Y by least square regression.
+
+
+a0=coeff(1,1);
+a(1:5)=coeff(2:6,1);
+
+%Above, we assign zeroth power Z-series coefficient to a0 and rest of
+%the coefficients to array a.
+%This was older format but we might need it since many old functions are written 
+%in this format.
+
+%Below, we assign same Z-series coefficients to a single array. This is
+%newer format that we want to use mostly.
+aa(1:6)=coeff(1:6);
+
+
+%uncomment these lines if you want to see shape of Z-series constructed
+%density of Y. We had calculated coefficients of this Z-series by
+%least square polynomial regression.
+%PlotZSeriesDensity(a0,a,'r')
+%str=input("Look at the density of volatility");
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+%In this code block, we calcualate the coefficients of univariate marginal
+%density of dependent variable X again by least square polynomial
+%regression as we did in previous block for independent variable Y.
+    
+Xs=sort(X);
+Xmu(1:Ndata,1)=Xs(1:Ndata);
+
+W(1:Ndata,1)=1;
+W(1:Ndata,2)=ZI(1:Ndata);
+W(1:Ndata,3)=ZI(1:Ndata).^2;
+W(1:Ndata,4)=ZI(1:Ndata).^3;
+W(1:Ndata,5)=ZI(1:Ndata).^4;
+W(1:Ndata,6)=ZI(1:Ndata).^5;
+
+coeff=inv(W'*W)*(W'*Xmu);
+
+c0=coeff(1,1);
+c(1:5)=coeff(2:6,1);
+
+cc(1:6)=coeff(1:6,1);
+
+[ccH] = ConvertZSeriesToHermiteSeriesNew(cc,5);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[Ys,Iy]=sort(Y);
+%ZI=Zy(I);
+Zy(Iy)=ZI;
+
+% [Zy] = CalculateZgivenXAndZSeriesC5Improved(Y,a0,a);
+ [Zx] = CalculateZgivenXAndZSeriesC5Improved(X,c0,c);
+% 
+ paths=Ndata;
+ [CorrH0] = CalculateCorrelationBivariateHermiteCH(Zx,Zy,paths,5);
+
+Xcorr(1:Ndata)=ccH(2).*CorrH0(1).*Zy(1:Ndata) ...
+    +ccH(3).*CorrH0(2).*(Zy(1:Ndata).^2-1) ...
+    +ccH(4).*CorrH0(3).*(Zy(1:Ndata).^3-3*Zy(1:Ndata)) ...
+    +ccH(5).*CorrH0(4).*(Zy(1:Ndata).^4-6*Zy(1:Ndata).^2+3) ...
+    +ccH(6).*CorrH0(5).*(Zy(1:Ndata).^5-10*Zy(1:Ndata).^3+15*Zy(1:Ndata));
+Xdcorr(1:Ndata)=X(1:Ndata)-Xcorr(1:Ndata);% ...
+%     -ccH(2).*CorrH0(1).*Zy(1:Ndata) ...
+%     -ccH(3).*CorrH0(2).*(Zy(1:Ndata).^2-1) ...
+%     -ccH(4).*CorrH0(3).*(Zy(1:Ndata).^3-3*Zy(1:Ndata)) ...
+%     -ccH(5).*CorrH0(4).*(Zy(1:Ndata).^4-6*Zy(1:Ndata).^2+3) ...
+%     -ccH(6).*CorrH0(5).*(Zy(1:Ndata).^5-10*Zy(1:Ndata).^3+15*Zy(1:Ndata));
+    
+
+[Xdcorrs,I]=sort(Xdcorr);
+%Zys=Zy(I);
+Zx=ZI;
+%Xs=X(I);
+
+Zys=Zy(I);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Xmu(1:Ndata,1)=Xdcorrs(1:Ndata);
+
+
+W=0;
+
+W(1:Ndata,1)=1.0;
+W(1:Ndata,2)=Zx(1:Ndata);
+W(1:Ndata,3)=(Zx(1:Ndata).^2-1);
+W(1:Ndata,4)=(Zx(1:Ndata).^3-3*Zx(1:Ndata));
+W(1:Ndata,5)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3);
+W(1:Ndata,6)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata));
+
+W(1:Ndata,7)=1.*Zys(1:Ndata);
+W(1:Ndata,8)=Zx(1:Ndata).*Zys(1:Ndata);
+W(1:Ndata,9)=(Zx(1:Ndata).^2-1).*Zys(1:Ndata);
+W(1:Ndata,10)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*Zys(1:Ndata);
+W(1:Ndata,11)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*Zys(1:Ndata);
+W(1:Ndata,12)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*Zys(1:Ndata);
+
+W(1:Ndata,13)=(Zys(1:Ndata).^2-1);
+W(1:Ndata,14)=Zx(1:Ndata).*(Zys(1:Ndata).^2-1);
+W(1:Ndata,15)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^2-1);
+W(1:Ndata,16)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^2-1);
+W(1:Ndata,17)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^2-1);
+W(1:Ndata,18)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^2-1);
+
+W(1:Ndata,19)=(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+W(1:Ndata,20)=Zx(1:Ndata).*(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+W(1:Ndata,21)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+W(1:Ndata,22)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+W(1:Ndata,23)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+W(1:Ndata,24)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+
+W(1:Ndata,25)=(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+W(1:Ndata,26)=Zx(1:Ndata).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+W(1:Ndata,27)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+W(1:Ndata,28)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+W(1:Ndata,29)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+W(1:Ndata,30)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+
+W(1:Ndata,31)=(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+W(1:Ndata,32)=Zx(1:Ndata).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+W(1:Ndata,33)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+W(1:Ndata,34)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+W(1:Ndata,35)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+W(1:Ndata,36)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+
+coeff=inv(W'*W)*(W'*Xmu);
+
+
+%bnmH0(1,1:6)=ccH(1:6);  %Replace first line of X-hermites with Marginal density retrieval condition
+bnmH0(1,1:6)=coeff(1:6);
+bnmH0(2,1:6)=coeff(7:12);
+bnmH0(3,1:6)=coeff(13:18);
+bnmH0(4,1:6)=coeff(19:24);
+bnmH0(5,1:6)=coeff(25:30);
+bnmH0(6,1:6)=coeff(31:36);
+
+
+bnmH0
+
+str=input("bnmH0 before addition of correlated part");
+
+
+bnmH0(2,1)=bnmH0(2,1)+ccH(2).*CorrH0(1);
+bnmH0(3,1)=bnmH0(3,1)+ccH(3).*CorrH0(2);
+bnmH0(4,1)=bnmH0(4,1)+ccH(4).*CorrH0(3);
+bnmH0(5,1)=bnmH0(5,1)+ccH(5).*CorrH0(4);
+bnmH0(6,1)=bnmH0(6,1)+ccH(6).*CorrH0(5);
+
+
+bnmH=bnmH0;
+
+[bnmHVar] = CalculateVariance2D(bnmH,6,6);
+
+bnmH
+bnmHVar
+
+%bnmH=bnmH/sqrt(bnmHVar);
+
+str=input("Look at variacne 2D");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 
+% 
+% 
+% Xmu(1:Ndata,1)=Xs(1:Ndata);
+% 
+% 
+% W=0;
+% 
+% %W(1:Ndata,1)=1.0;
+% W(1:Ndata,1)=Zx(1:Ndata);
+% W(1:Ndata,2)=(Zx(1:Ndata).^2-1);
+% W(1:Ndata,3)=(Zx(1:Ndata).^3-3*Zx(1:Ndata));
+% W(1:Ndata,4)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3);
+% W(1:Ndata,5)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata));
+% 
+% W(1:Ndata,6)=1.*Zys(1:Ndata);
+% W(1:Ndata,7)=Zx(1:Ndata).*Zys(1:Ndata);
+% W(1:Ndata,8)=(Zx(1:Ndata).^2-1).*Zys(1:Ndata);
+% W(1:Ndata,9)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*Zys(1:Ndata);
+% W(1:Ndata,10)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*Zys(1:Ndata);
+% W(1:Ndata,11)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*Zys(1:Ndata);
+% 
+% W(1:Ndata,12)=1.*(Zys(1:Ndata).^2-1);
+% W(1:Ndata,13)=Zx(1:Ndata).*(Zys(1:Ndata).^2-1);
+% W(1:Ndata,14)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^2-1);
+% W(1:Ndata,15)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^2-1);
+% W(1:Ndata,16)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^2-1);
+% W(1:Ndata,17)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^2-1);
+% 
+% 
+% 
+% 
+% %W(1:Ndata,17)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^2-1);
+% 
+% W(1:Ndata,18)=(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+% W(1:Ndata,19)=Zx(1:Ndata).*(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+% W(1:Ndata,20)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^3-3*Zy(1:Ndata));
+% W(1:Ndata,21)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+% W(1:Ndata,22)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+% W(1:Ndata,23)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^3-3*Zys(1:Ndata));
+% 
+% W(1:Ndata,24)=(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% W(1:Ndata,25)=Zx(1:Ndata).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% W(1:Ndata,26)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% W(1:Ndata,27)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% W(1:Ndata,28)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% W(1:Ndata,29)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^4-6*Zys(1:Ndata).^2+3);
+% 
+% W(1:Ndata,30)=(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% W(1:Ndata,31)=Zx(1:Ndata).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% W(1:Ndata,32)=(Zx(1:Ndata).^2-1).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% W(1:Ndata,33)=(Zx(1:Ndata).^3-3*Zx(1:Ndata)).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% W(1:Ndata,34)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% W(1:Ndata,35)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata)).*(Zys(1:Ndata).^5-10*Zys(1:Ndata).^3+15*Zys(1:Ndata));
+% 
+% coeff=inv(W'*W)*(W'*Xmu);
+% 
+% 
+% %bnmH0(1,1:6)=ccH(1:6);  %Replace first line of X-hermites with Marginal density retrieval condition
+% bnmH0(1,1)=0;%coeff(2:5);
+% bnmH0(1,2:6)=coeff(1:5);
+% bnmH0(2,1:6)=coeff(6:11);
+% bnmH0(3,1:6)=coeff(12:17);
+% bnmH0(4,1:6)=coeff(18:23);
+% bnmH0(5,1:6)=coeff(24:29);
+% bnmH0(6,1:6)=coeff(30:35);
+% 
+% bnmH=bnmH0;
+% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SeriesOrder1=6;
+NMomentsY=6;
+NMomentsX=6;
+    for nn=1:NMomentsY
+       for mm=1:NMomentsX
+           CrossMoments(nn,mm)=0;
+           for pp=1:Ndata
+              CrossMoments(nn,mm)=CrossMoments(nn,mm)+Y(pp).^nn.*X(pp).^mm/Ndata;
+           end
+       end
+    end
+
+
+
+[chh] = ProduceFirstRowofConditioal2DZSeries02_6M_A(aa,SeriesOrder1,CrossMoments);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[bnm] = Convert2DHermitesInto2DSeries(bnmH);
+
+SeriesOrder1=6;
+SeriesOrder10=6;
+SeriesOrder01=6;
+NMomentsX=6;
+NMomentsY=6;
+[Moments2D0] = CalculateCrossMomentsConditional2DNew02(aa,bnm,SeriesOrder1,SeriesOrder10,SeriesOrder01,NMomentsX,NMomentsY);
+
+Moments2D0
+
+CrossMoments
+
+str=input("Look at comparison of moments--first-standardized");
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%In the code block below, we convert 2D hermite series coefficients of 
+%dependent variable X from standardized version to original version.
+%For that we first multiply the entire 2D Hermite series by square root of
+%variance.
+
+ bnmH=bnmH*sqrt(XmVar);
+
+%We convert X from hermite series form to Z-series form.
+[bnm] = Convert2DHermitesInto2DSeries(bnmH);
+bnm(1,1)=MeanX-bnm(3,1)-3*bnm(5,1)-1*bnm(1,3)-1*3*bnm(1,5)-3*bnm(5,3)-bnm(3,3)-3*bnm(3,5)-9*bnm(5,5);
+
+%Finally in above line, we make sure that mean of the 2D Z-series is
+
+
+%Below, we convert Z-series of independent variable Y from standard form to
+%original variable form.
+
+aa=aa*sqrt(YmVar);
+aa(1)=MeanY-aa(3)-3*aa(5);
+
+
+ SeriesOrder1=6;
+ SeriesOrder10=6;
+ SeriesOrder01=6;
+ NMomentsX=6;
+ NMomentsY=6;
+ [Moments2D] = CalculateCrossMomentsConditional2DNew02(aa,bnm,SeriesOrder1,SeriesOrder10,SeriesOrder01,NMomentsX,NMomentsY);
+ 
+ Moments2D
+ 
+ CrossMoments11
+ 
+ str=input("Look at comparison of moments");
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnmHVar,bnmHVar1D] = CalculateVariance2D(bnmH,SeriesOrder10,SeriesOrder01)
+
+
+bnmHVar=0;
+for nn=1:SeriesOrder10
+    for mm=1:SeriesOrder01
+        if(nn==1)&amp;&amp;(mm==1)
+            ;
+        else
+            bnmHVar=bnmHVar+bnmH(nn,mm).^2.*factorial(nn-1).*factorial(mm-1);
+        end
+    end
+end
+
+
+bnmHVar1D=0;
+for nn=2:SeriesOrder10
+    bnmHVar1D=bnmHVar1D+bnmH(nn,1).^2.*factorial(nn-1);
+end
+for mm=2:SeriesOrder01
+    bnmHVar1D=bnmHVar1D+bnmH(1,mm).^2.*factorial(mm-1);
+end
+
+
+end
+
+</code></pre></div></div>
+
+			
+									
+									<div id="sig880054" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880059">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880059">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880059">
+
+			<h3 ><a href="#p880059">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880059&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880059" title="Post #2213">#2213</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 9:24 am</span></p>
+			
+			
+			
+			<div class="content">Friends, when you run the previous function, you will notice that after regression on decorrelated part, we get a result that has miniscule values on correlated column part of the density so we get pure transition hermite series as a result. The correlated part will go directly from the Zy cells to all the Zx cells. Since we had removed the correlated part from regression, I expect that our results for transition hermite series will be more robust.<br>
+I want to check against actual transition hermite series calculated from monte carlo data and see how good the results are.<br>
+If the results are not good enough, I want to go back to optimization but I do not want cross moments in objective function. I want Zy dependent conditional moments of X in the objective function. But these moments might not be calculable in an analytic form always though I think we could mostly do it with first four analytic conditional moments. Another possibility is to keep the conditional powers of all the data directly in the objective function and compare it with model conditional powers of data with a squared  difference objective function.<br>
+I also want to verify if two dimensional standardization I talked about in earlier post would be better for calculations of transition hermite series.<br>
+Unlike before, I am also thinking of constraints on coefficients that have to be applied when doing optimization. <br>
+I will soon come with a program to calculate first few conditional moments/transition moments of X conditional on Y in analytic from using hermite regression.<br>
+We will keep working until we fix everything in our research very well.<br>
+Also I noticed that new regression algorithm is very good and we get stable 2D densities starting mostly from 200 data points. I notice that there could be some spikes in the density for very little data points but that can be improved by systematically altering the coefficients very slightly so that we can get seamless densities. </div>
+
+			
+									
+									<div id="sig880059" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880060">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880060">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880060">
+
+			<h3 ><a href="#p880060">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880060&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880060" title="Post #2214">#2214</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 10:54 am</span></p>
+			
+			
+			
+			<div class="content">For those friends who have been following the logic of my research, I wanted to briefly explain how to take the 2D density regression and graphing algorithm to higher dimensions. Suppose we have three variables, V, Y and X. And we want to find the 3D density of X as a function of Zv, Zy and  Zx. First we have to take the first two variables V and Y and find their 1D and 2D densities using the two dimensional algorithm, we already know so we have a complete knowledge of joint density of V and Y. Then we find correlations between hermite polynomials of Zv and Zy and the marginal density of X. We use these correlations find decorrelated version of  X that does not have any correlations with Y and V. We now sort this decorrelated X and assign a value of Zx to each element of the data and then run a regression on Zx (alone for decorrelated marginal density) and Zv and Zy where Zv and Zy are moved along with sorted X so that original data triplets remain together. We will have to calculate jacobian with respect to three standard normals to calculate and graph the density. </div>
+
+			
+									
+									<div id="sig880060" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880061">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880061">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880061">
+
+			<h3 ><a href="#p880061">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880061&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880061" title="Post #2215">#2215</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 11:26 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I am going to go out in the city now to get good food and water. There was a relative inactivity of mind control agents till 4-5 days ago and I had started to dare to take a lot of food more freely. But since past four days or so, they have extremely increased their attempts to drug my food. I see agents approaching food shops and stalls closely after I go there in areas randomly picked at the spot by me where I know food would be better. They are also drugging water on the shelves again. Just two days ago, I bought good water from the largest bakery chain in Lahore and I was very happy that they were selling good water(I had bought this water from another branch a few days ago and it was also good at that time.) But mind control agencies noticed that I had taken note of water and within a day they drugged water in close neighborhoods where I live and water I bought from another shop of the same bakery chain in a closeby neighborhood was drugged. This shows the urgency they have to control me that they are drugging water at places (that cooperate very well) within a single day after I bought good water. I have been able to survive without getting bad food for these days but there is a sudden sharp increase in attempts by mind control agencies to drug my food and several food places tried to play with me to keep me waiting to get food when I approached them so that they can have a chance to drug my food ( I know these tactics very well over time and was able to avoid bad food). <br>
+When I started working on conditional Z-series in october, I had decided that I really want to minimize writing about mind control and totally try to concentrate on my research. I was not writing anything but I had to protest when they drugged the city to unprecedented levels as many friends would have known and still they were resolute to continue drugging the city despite protests from good people. It was only a few weeks ago that there was some decrease in drugging of food and I was slowly opening up to taking food more openly at many places but very recently they have started drugging of food with great urgency and it is becoming more difficult to get good food again. <br>
+I just want to concentrate on my research and have not written about any persecution after drugging of food decreased despite that I remain under mind control all the time that hurts in so many ways but still whenever I try to do some serious research, mind control agencies lose their calm and temper and start drugging the city again like there is no tomorrow. </div>
+
+			
+									
+									<div id="sig880061" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880065">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880065">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880065">
+
+			<h3 ><a href="#p880065">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880065&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880065" title="Post #2216">#2216</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 25th, 2024, 6:46 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have slightly changed the density calculation and graphing algorithm.<br>
+When we just want to calculate 2D density, we do not need products of hermites in our expression at all. Those products of hermites are for transition purposes and 2D density can easily be calculated accurately without them. <br>
+So our new 2D algorithm to plot 2D density of Y and X is<br>
+1. Find 1D hermite series of independent density of first random variable Y.<br>
+2. Use hermite regression to find correlated part of X called Xcorr for each data value of X and subtract if from data values to find uncorrelated part Xdcorr.<br>
+3. Sort Xdcorr and regress it on ideal normal density array. We do not include hermite products in this regression and we do not include Zy in this regression since its correlated contribution has been already removed. We just regress on Six values of first five hermites. This results in a very robust regression algorithm since regression matrix is very small in size (we regress on only six variables. constant and first five hermites) and its inversion is perfectly stable.<br>
+4. As dimensionality grows, our regression matrix size remains the same and this regression is done on six variables only(for chosen size of hermite series) for each dimension recursively and I believe that we can tackle joint densities of hundreds of variables (hundreds of dimensions) in a stable fashion only with a few hundred data points (pairlets in high dimensions)<br>
+<br>
+I did this for our 2D hermite series example and found that we could find a very recognizable density for only 50 data points as opposed to 200 data points earlier since decreasing the size of design matrix and removing redundant varaibles that are not needed for 2D density, made  inversion of design matrix very stable  <br>
+<br>
+Here is the new regression program with this. In this program, bnmH has only one column and one array populated and rest of the matrix entries are zero. I let it stay in this form so we could run it with rest of the older program.<br>
+<br>
+the size of hermite series required to find density of correlated variables with increase linearly with dimensionality. If we are taking hermite series with five polynomials, first correlated variable will be represented by six coefficients of hermite series. second correlated variable will require eleven coefficents of hermite series in two dimensions. Nth correlated variable will  have a total of 6+ 5 *(N-1) total coefficients with five hermites in each dimension.<br>
+<br>
+Here is the program.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm,aa] = CalculateConditionalProbabilitiesYtoXLinearRegression04IterC04(Yin,Xin)
+
+%Yin argument translates to independent random variable Y
+%Xin argument translates to dependent variable X.
+%This function takes observations of an independent variable Y and
+%dependent varaible X. These have to be joint observations in the sense
+%that nth observation of Y, given by Y(n) is taken jointly with nth
+%observation of X, given by X(n). Two arrays of observations are the same
+%length and nth mmber of independent variable Y is jointly observed with nth
+%member of depedent variable X.
+%We want to find the detailed relationship between Y and X so we can get
+%the conditional density of dependent variable X given a particular value
+%of independent variable Y. This will be done by calibrating coefficients
+%of our 2D hermite series to data so that a very good fit to cross moments
+%between X and Y is retrieved.
+%We will first find univariate Z-series/hermite series of both random
+%variables independently. For joint dynamics of dependent variable given 
+%te independnet variable, we will assume a 2D hermite series (This has to 
+%be two dimensional to be able to capture the dynamics from independent variable Y
+%and have its own dynamics) and form but we do not know the coefficients of 
+%this 2D hermite series. In this program, we try to use iterative optimization 
+%to find the unknown coefficients of 2D hermite series of dependent variable X 
+%in a way that after taking products with independent varaible Y, expectation   
+%of these products i.e cross moments are as exactly retrieved as possible.
+%Our iterative optimization procedure perturbs each hermite coefficient in 
+%2D hermite series  by a very slight amount and checks the objective function.
+%If the objective function decreases, we eccept the perturbation otherwise
+%reject it and then perturb by a small amount in other opposite direction
+%and then again check the objective function. If perturbations in both sides 
+%are rejected, we do not change the coefficients but slightly decrease the
+%perturbation size. 
+%We will first standardize the data of both random variables and then
+%calculate univariate hermite series of both variables and also their 
+%cross moments in standardized form. We do all the calculations of coefficients
+%of independent variable Y and 2D dependent variable X
+%in standardized version of variables and moments. After optimization of coefficents on 
+%standardized data, at the end, we invert the standardization of both 
+%dependent and independent variables appropriately to get the Z-series and
+%hermite series of actual varaibles in theri original coordinates back from
+%standardized coordinates.
+%Before optimization, we place two conditions on 2D dependent variable X so that
+%first row and first column of 2D hermite coefficents of X is already
+%known before optimization stage and it is not changed in optimization. 
+%We do not iteratively optimize over this first row and first colums
+%which are analytically known from these two conditions.
+%Our first condition is that after integration (of bivaraite density or
+%alternatively bivaraite 2D Z-series/2D Hermite series) over independent
+%variable, we should get the univaraite marginal density/Z-series/Hermite series of X
+%which has already been calculated out of data. This fixes the zeroth
+%hermite(of independent varaible Y) related terms in the Z-series/hermite series. 
+%Please look at this forum post# 2121 for explanation of this first condition.
+% https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2115#p879042
+
+%We can analytically solve for first order cross moments of X with higher
+%order in Y. From the analytical solution of these moments, we find first
+%row of coefficents in the hermite form.
+
+
+% 2D Hermite Series Form used in this program is given as
+% 
+% X = bnmH(1,1) + bnmH(2,1) H_1(Z_y) + bnmH(3,1) H_2(Z_y) + bnmH(4,1) H_3(Z_y) + bnmH(5,1) H_4(Z_y) + bnmH(6,1) H_5(Z_y) 
+% + [ bnmH(1,2) + bnmH(2,2) H_1(Z_y) + bnmH(3,2) H_2(Z_y) + bnmH(4,2) H_3(Z_y) + bnmH(5,2) H_4(Z_y) + bnmH(6,2) H_5(Z_y)] H_1(Zx) 
+% + [ bnmH(1,3) + bnmH(2,3) H_1(Z_y) + bnmH(3,3) H_2(Z_y) + bnmH(4,3) H_3(Z_y) + bnmH(5,3) H_4(Z_y) + bnmH(6,3) H_5(Z_y)] H_2(Zx)
+% + [ bnmH(1,4) + bnmH(2,4) H_1(Z_y) + bnmH(3,4) H_2(Z_y) + bnmH(4,4) H_3(Z_y) + bnmH(5,4) H_4(Z_y) + bnmH(6,4) H_5(Z_y)] H_3(Zx)
+% + [ bnmH(1,5) + bnmH(2,5) H_1(Z_y) + bnmH(3,5) H_2(Z_y) + bnmH(4,5) H_3(Z_y) + bnmH(5,5) H_4(Z_y) + bnmH(6,5) H_5(Z_y)] H_4(Zx)
+% + [ bnmH(1,6) + bnmH(2,6) H_1(Z_y) + bnmH(3,6) H_2(Z_y) + bnmH(4,6) H_3(Z_y) + bnmH(5,6) H_4(Z_y) + bnmH(6,6) H_5(Z_y)] H_5(Zx)
+ 
+% 2D Z-Series Form used in this program is given as
+% 
+% X = bnm(1,1) + bnm(2,1) Z_y + bnm(3,1) (Z_y)^2 + bnm(4,1) (Z_y)^3 + bnm(5,1) (Z_y)^4 + bnm(6,1) (Z_y)^5 
+% + [ bnm(1,2) + bnm(2,2) Z_y + bnm(3,2) (Z_y)^2 + bnm(4,2) (Z_y)^3 + bnm(5,2) (Z_y)^4 + bnm(6,2) (Z_y)^5 ] Zx 
+% + [ bnm(1,3) + bnm(2,2) Z_y + bnm(3,3) (Z_y)^2 + bnm(4,3) (Z_y)^3 + bnm(5,3) (Z_y)^4 + bnm(6,3) (Z_y)^5 ] Zx^2 
+% + [ bnm(1,4) + bnm(2,2) Z_y + bnm(3,4) (Z_y)^2 + bnm(4,4) (Z_y)^3 + bnm(5,4) (Z_y)^4 + bnm(6,4) (Z_y)^5 ] Zx^3 
+% + [ bnm(1,5) + bnm(2,2) Z_y + bnm(3,5) (Z_y)^2 + bnm(4,5) (Z_y)^3 + bnm(5,5) (Z_y)^4 + bnm(6,5) (Z_y)^5 ] Zx^4 
+% + [ bnm(1,6) + bnm(2,2) Z_y + bnm(3,6) (Z_y)^2 + bnm(4,6) (Z_y)^3 + bnm(5,6) (Z_y)^4 + bnm(6,6) (Z_y)^5 ] Zx^5
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%In the code block below, we standardize the independent variable Y and dependent variable X.
+%We do all later calculations of various Z-series and cross moments in 
+%standardized framework and then at the end of the program, we convert 
+%the calculated coefficients of 2D hermite series/Z-series of dependent 
+%variable X into original non-standardized framework.
+
+ Ndata=length(Yin);
+ 
+ MeanY=sum(Yin(1:Ndata))/Ndata;
+ MeanX=sum(Xin(1:Ndata))/Ndata;
+ 
+ Ym(1:Ndata)=Yin(1:Ndata)-MeanY;
+ Xm(1:Ndata)=Xin(1:Ndata)-MeanX;
+ 
+ YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+ XmVar=sum(Xm(1:Ndata).^2)/Ndata;
+ 
+ Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+ X(1:Ndata)=Xm(1:Ndata)/sqrt(XmVar);
+
+ 
+ sqrt(YmVar)
+ sqrt(XmVar)
+ 
+ str=input("Look at standardization constants");
+ 
+
+ NMomentsY=6;
+ NMomentsX=6;
+     for nn=1:NMomentsY
+        for mm=1:NMomentsX
+            CrossMoments11(nn,mm)=0;
+            for pp=1:Ndata
+               CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Yin(pp).^nn.*Xin(pp).^mm/Ndata;
+               %CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Y(pp).^nn.*X(pp).^mm/Ndata;
+               %CrossMoments11(nn,mm)=CrossMoments11(nn,mm)+Ym(pp).^nn.*Xm(pp).^mm/Ndata;
+            end
+        end
+     end
+ 
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Code block below uses polynomial regression to find univariate Z-series 
+%coefficients of independent variable Y.
+%To know more about polynomial regression read the following and associated
+%posts:  https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2010#p877143
+ 
+%You can get the text file MomentMatchParams08.txt from the forum post below
+%https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=2040#p877863
+
+Mtable=readtable('C:\Users\Lenovo\Documents\MATLAB\MATLAB1\MomentMatchParams08.txt');
+
+%ZI is moment matched grid along the normal density with number of grid
+%points equal to data elements in Y given by Ndata. The grid is constructed
+%so that probability mass in each grid cell is 1/Ndata so this matches the
+%observation probability of Ndata data elements. Due to equal probability
+%mass in each grid cell, we call it equiprobable grid.
+
+[ZI] = MatchMomentParametersOfIdealZhalf04(Ndata,Mtable);
+
+Ys=sort(Y);
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+W(1:Ndata,1)=1;
+W(1:Ndata,2)=ZI(1:Ndata);
+W(1:Ndata,3)=ZI(1:Ndata).^2;
+W(1:Ndata,4)=ZI(1:Ndata).^3;
+W(1:Ndata,5)=ZI(1:Ndata).^4;
+W(1:Ndata,6)=ZI(1:Ndata).^5;
+% W(1:Ndata,7)=ZI(1:Ndata).^6;
+% W(1:Ndata,8)=ZI(1:Ndata).^7;
+
+
+coeff=inv(W'*W)*(W'*Ymu);
+
+%Above, we get coefficients of univariate Z-series of independent
+%variable Y by least square regression.
+
+
+a0=coeff(1,1);
+a(1:5)=coeff(2:6,1);
+
+%Above, we assign zeroth power Z-series coefficient to a0 and rest of
+%the coefficients to array a.
+%This was older format but we might need it since many old functions are written 
+%in this format.
+
+%Below, we assign same Z-series coefficients to a single array. This is
+%newer format that we want to use mostly.
+aa(1:6)=coeff(1:6);
+
+
+%uncomment these lines if you want to see shape of Z-series constructed
+%density of Y. We had calculated coefficients of this Z-series by
+%least square polynomial regression.
+%PlotZSeriesDensity(a0,a,'r')
+%str=input("Look at the density of volatility");
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+%In this code block, we calcualate the coefficients of univariate marginal
+%density of dependent variable X again by least square polynomial
+%regression as we did in previous block for independent variable Y.
+    
+Xs=sort(X);
+Xmu(1:Ndata,1)=Xs(1:Ndata);
+
+W(1:Ndata,1)=1;
+W(1:Ndata,2)=ZI(1:Ndata);
+W(1:Ndata,3)=ZI(1:Ndata).^2;
+W(1:Ndata,4)=ZI(1:Ndata).^3;
+W(1:Ndata,5)=ZI(1:Ndata).^4;
+W(1:Ndata,6)=ZI(1:Ndata).^5;
+
+coeff=inv(W'*W)*(W'*Xmu);
+
+c0=coeff(1,1);
+c(1:5)=coeff(2:6,1);
+
+cc(1:6)=coeff(1:6,1);
+
+[ccH] = ConvertZSeriesToHermiteSeriesNew(cc,5);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[Ys,Iy]=sort(Y);
+%ZI=Zy(I);
+Zy(Iy)=ZI;
+
+% [Zy] = CalculateZgivenXAndZSeriesC5Improved(Y,a0,a);
+ [Zx] = CalculateZgivenXAndZSeriesC5Improved(X,c0,c);
+% 
+ paths=Ndata;
+ [CorrH0] = CalculateCorrelationBivariateHermiteCH(Zx,Zy,paths,5);
+
+Xcorr(1:Ndata)=ccH(2).*CorrH0(1).*Zy(1:Ndata) ...
+    +ccH(3).*CorrH0(2).*(Zy(1:Ndata).^2-1) ...
+    +ccH(4).*CorrH0(3).*(Zy(1:Ndata).^3-3*Zy(1:Ndata)) ...
+    +ccH(5).*CorrH0(4).*(Zy(1:Ndata).^4-6*Zy(1:Ndata).^2+3) ...
+    +ccH(6).*CorrH0(5).*(Zy(1:Ndata).^5-10*Zy(1:Ndata).^3+15*Zy(1:Ndata));
+Xdcorr(1:Ndata)=X(1:Ndata)-Xcorr(1:Ndata);% ...
+%     -ccH(2).*CorrH0(1).*Zy(1:Ndata) ...
+%     -ccH(3).*CorrH0(2).*(Zy(1:Ndata).^2-1) ...
+%     -ccH(4).*CorrH0(3).*(Zy(1:Ndata).^3-3*Zy(1:Ndata)) ...
+%     -ccH(5).*CorrH0(4).*(Zy(1:Ndata).^4-6*Zy(1:Ndata).^2+3) ...
+%     -ccH(6).*CorrH0(5).*(Zy(1:Ndata).^5-10*Zy(1:Ndata).^3+15*Zy(1:Ndata));
+    
+
+[Xdcorrs,I]=sort(Xdcorr);
+%Zys=Zy(I);
+Zx=ZI;
+%Xs=X(I);
+
+Zys=Zy(I);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Xmu(1:Ndata,1)=Xdcorrs(1:Ndata);
+
+
+W=0;
+
+W(1:Ndata,1)=1.0;
+W(1:Ndata,2)=Zx(1:Ndata);
+W(1:Ndata,3)=(Zx(1:Ndata).^2-1);
+W(1:Ndata,4)=(Zx(1:Ndata).^3-3*Zx(1:Ndata));
+W(1:Ndata,5)=(Zx(1:Ndata).^4-6*Zx(1:Ndata).^2+3);
+W(1:Ndata,6)=(Zx(1:Ndata).^5-10*Zx(1:Ndata).^3+15*Zx(1:Ndata));
+
+
+coeff=inv(W'*W)*(W'*Xmu);
+
+
+%bnmH0(1,1:6)=ccH(1:6);  %Replace first line of X-hermites with Marginal density retrieval condition
+bnmH0(1,1:6)=coeff(1:6);
+
+bnmH0(2,1)=ccH(2).*CorrH0(1);
+bnmH0(3,1)=ccH(3).*CorrH0(2);
+bnmH0(4,1)=ccH(4).*CorrH0(3);
+bnmH0(5,1)=ccH(5).*CorrH0(4);
+bnmH0(6,1)=ccH(6).*CorrH0(5);
+
+
+
+bnmH0
+
+%str=input("bnmH0 before addition of correlated part");
+% 
+% 
+% bnmH0(2,1)=bnmH0(2,1)+ccH(2).*CorrH0(1);
+% bnmH0(3,1)=bnmH0(3,1)+ccH(3).*CorrH0(2);
+% bnmH0(4,1)=bnmH0(4,1)+ccH(4).*CorrH0(3);
+% bnmH0(5,1)=bnmH0(5,1)+ccH(5).*CorrH0(4);
+% bnmH0(6,1)=bnmH0(6,1)+ccH(6).*CorrH0(5);
+% 
+
+bnmH=bnmH0;
+
+[bnmHVar] = CalculateVariance2D(bnmH,6,6);
+
+bnmH
+bnmHVar
+
+%bnmH=bnmH/sqrt(bnmHVar);
+
+str=input("Look at variacne 2D");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SeriesOrder1=6;
+NMomentsY=6;
+NMomentsX=6;
+    for nn=1:NMomentsY
+       for mm=1:NMomentsX
+           CrossMoments(nn,mm)=0;
+           for pp=1:Ndata
+              CrossMoments(nn,mm)=CrossMoments(nn,mm)+Y(pp).^nn.*X(pp).^mm/Ndata;
+           end
+       end
+    end
+
+
+
+[chh] = ProduceFirstRowofConditioal2DZSeries02_6M_A(aa,SeriesOrder1,CrossMoments);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[bnm] = Convert2DHermitesInto2DSeries(bnmH);
+
+SeriesOrder1=6;
+SeriesOrder10=6;
+SeriesOrder01=6;
+NMomentsX=6;
+NMomentsY=6;
+[Moments2D0] = CalculateCrossMomentsConditional2DNew02(aa,bnm,SeriesOrder1,SeriesOrder10,SeriesOrder01,NMomentsX,NMomentsY);
+
+Moments2D0
+
+CrossMoments
+
+str=input("Look at comparison of moments--first-standardized");
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%In the code block below, we convert 2D hermite series coefficients of 
+%dependent variable X from standardized version to original version.
+%For that we first multiply the entire 2D Hermite series by square root of
+%variance.
+
+ bnmH=bnmH*sqrt(XmVar);
+
+%We convert X from hermite series form to Z-series form.
+[bnm] = Convert2DHermitesInto2DSeries(bnmH);
+bnm(1,1)=MeanX-bnm(3,1)-3*bnm(5,1)-1*bnm(1,3)-1*3*bnm(1,5)-3*bnm(5,3)-bnm(3,3)-3*bnm(3,5)-9*bnm(5,5);
+
+%Finally in above line, we make sure that mean of the 2D Z-series is
+
+
+%Below, we convert Z-series of independent variable Y from standard form to
+%original variable form.
+
+aa=aa*sqrt(YmVar);
+aa(1)=MeanY-aa(3)-3*aa(5);
+
+
+ SeriesOrder1=6;
+ SeriesOrder10=6;
+ SeriesOrder01=6;
+ NMomentsX=6;
+ NMomentsY=6;
+ [Moments2D] = CalculateCrossMomentsConditional2DNew02(aa,bnm,SeriesOrder1,SeriesOrder10,SeriesOrder01,NMomentsX,NMomentsY);
+ 
+ Moments2D
+ 
+ CrossMoments11
+ 
+ str=input("Look at comparison of moments");
+
+end</code></pre></div></div>
+
+			
+									
+									<div id="sig880065" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880080">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880080">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880080">
+
+			<h3 ><a href="#p880080">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880080&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880080" title="Post #2217">#2217</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 26th, 2024, 6:44 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am very thankful to people who have been following my posts on this thread. And we have come a very long way from when I started this thread for analytic solution of ODEs and SDEs. Little by little, year after year, we have been able to make something out of it and the thread has started to become more meaningful now eight years after it was started. I always believe that, for us humans, it takes hard work and persistent effort on order of decades to make something reasonably significant (while it can take only minutes to destroy it).<br>
+I am extremely thankful to many good people whose support made it possible for me to continue my research. Even though things were still challenging, many good people tried to provide me a better  environment with far decreased coercion in which I was able to work reasonably well. My first four years during the life of this thread were very difficult but later four years have been much better and it is during this time that I was able to do more creative work. I do not have the words to tell all the good people how indebted I am for their support that helped me make something positive out of my life. I still recall during earlier years before 2016, that I would be driving to my office(I had a small office for a few years where I would work), and I would have tears in my eyes and I would think that I am not a bad human being at all and I wanted to do something good in my life but I would be under so much medication that it was hard to be creative and consistent on my research. <br>
+I really want to thank Paul Wilmott for allowing me to write on his forum despite that I could be extremely "rude and annoying" to some people who cruelly and totally remorselessly force mind control on other good and intelligent human beings to turn their life into stories of torture, coercion and tragedy. I may disagree with views of Paul on many issues but I want to tell him that he is a man of his word to stand staunchly for his avowed support for freedom of speech. On freedom of speech, I perfectly agree that even though freedom of speech can sometimes possibly have a negative side, it is such a sacred concept that all of us should be ready to tolerate the negative side for its huge and monumental positive benefits to the society.<br>
+Regarding the future plans, I am fully committed to continue my research in the field of probability theory and stochastics and hope to continue in the same format of trying to find solutions to problems and sharing attempts at solving all problems and issues one by one with friends as the research advances. However, I think I will have to find some financial support to continue my research since I want to continue sharing everything freely with friends. I want to try approaching some good foreign universities for accepting me as a paid adjunct researcher based in Pakistan. Obviously getting associated with a good university will also give me opportunity to get to know good people in my field at other universities as well and I believe that it will be very interesting to share ideas with other researchers in the field of probability theory and stochastics.<br>
+Again, I am totally determined to continue my research and hope that little by little, over the decades, may be we can say that we made a positive impact on our field of mathematics and science. I really believe that it is only discovery of knowledge associated with science that human beings have been able to support and advance modern human civilization and start to tame the nature in so may unprecedented ways.</div>
+
+			
+									
+									<div id="sig880080" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880090">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880090">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880090">
+
+			<h3 ><a href="#p880090">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880090&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880090" title="Post #2218">#2218</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 27th, 2024, 3:58 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I remained away from work yesterday. In a day or two, I hope to post an automated program that finds hermite series representation of joint densities in arbitrary dimensions using orthogonal coordinates and also 2D graphs the desired dimensions together. <br>
+Going directly to high dimensional data will give friends in finance an opportunity to know how different financial instruments move together and make trading strategies with a better understanding of co-movement dynamics. It will also help research in areas of risk-reward frontier.<br>
+I want to go out to go out to buy food in around noon today and will start working after I come back. I hope they do not try to drug my food like rabid animals today.  </div>
+
+			
+									
+									<div id="sig880090" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880111">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880111">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880111">
+
+			<h3 ><a href="#p880111">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880111&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880111" title="Post #2219">#2219</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 27th, 2024, 7:46 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am working on new matlab program to find hermite series representation of multidimensional data in arbitrary dimensions. You would be able to specify any arbitrary size of the hermite-series(since everything is calculated with algorithmic generation of hermite polynomials and I have not hard-coded any hermite polynomial anywhere even in sub-functions) though the size, once specified, would have to be the same for every dimension. Obviously right size of hermite series would require user discretion. It will be a very small and concise program. May be half or one third of the size of the program for 2D regression that I last posted. I am trying to make it a good program. And I hope to be able to post it tomorrow night or day after tomorrow.</div>
+
+			
+									
+									<div id="sig880111" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p880128">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile880128">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2544bbd9470c03a066af3d9b4097a94b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content880128">
+
+			<h3 ><a href="#p880128">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=880128&amp;sid=2544bbd9470c03a066af3d9b4097a94b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p880128" title="Post #2220">#2220</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 29th, 2024, 4:48 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I did most work for the calculation of high dimensional hermite series of correlated variables. And I am working on a multidimensional jacobian that would give us the solution of density after doing multidimensional change of variables with underlying orthogonal normal densities. <br>
+If we want to graph any two dimensions against each other, that may not be difficult and might require a two dimensional algorithm. <br>
+But complexity of densities quickly increases since we have to calculate jacobian along grids in multidimensional hyper-cubes. Though a better way to calculate jacobian might be possible and hopefully it will be an interesting research topic among many of us, for this first program, I am currently sticking to hypercube version so I can complete it in another day. So it will be difficult for friends to go beyond 7-8 dimensions with average computers.  <br>
+I hope to complete the program in another day and look forward to posting it on the thread.<br>
+Again, with the new program, you will be able to find analytic hermite series of stochastic variables in arbitrary high dimensions, but density graphing on a hyper-cube grid will be limited to a few dimensions. I want to release a good working version first and then later try to improve the graphing capabilities in other ways. Also my experience with multidimensional graphing is very little.</div>
+
+			
+									
+									<div id="sig880128" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2544bbd9470c03a066af3d9b4097a94b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2175" role="button">146</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" role="button">147</a></li>
+							<li class="active"><span>148</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" role="button">149</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2235" role="button">150</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2205&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2544bbd9470c03a066af3d9b4097a94b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2175" role="button">146</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2190" role="button">147</a></li>
+							<li class="active"><span>148</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" role="button">149</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2235" role="button">150</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2544bbd9470c03a066af3d9b4097a94b&amp;start=2220" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2205&amp;sid=2544bbd9470c03a066af3d9b4097a94b">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=2544bbd9470c03a066af3d9b4097a94b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=2544bbd9470c03a066af3d9b4097a94b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=2544bbd9470c03a066af3d9b4097a94b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=2544bbd9470c03a066af3d9b4097a94b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#95f4f1f8fcfbd5e2fcf9f8fae1e1bbf6faf8">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>148</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=2544bbd9470c03a066af3d9b4097a94b";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=2544bbd9470c03a066af3d9b4097a94b";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2931fdd9dac6","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

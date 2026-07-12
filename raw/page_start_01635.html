@@ -1,0 +1,3277 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 110 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=0874bd5783e9294ab0abb0b95bbe4f63" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=0874bd5783e9294ab0abb0b95bbe4f63?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=0874bd5783e9294ab0abb0b95bbe4f63?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=0874bd5783e9294ab0abb0b95bbe4f63?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1635" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="0874bd5783e9294ab0abb0b95bbe4f63" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=0874bd5783e9294ab0abb0b95bbe4f63" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="0874bd5783e9294ab0abb0b95bbe4f63" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=0874bd5783e9294ab0abb0b95bbe4f63" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1635%26t%3D99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1635&amp;t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" />
+<input type="hidden" name="creation_time" value="1768907750" />
+<input type="hidden" name="form_token" value="71fed9783c30ee2a215d399eb5d4f2c37cbc8f4a" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1635&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1635&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="0874bd5783e9294ab0abb0b95bbe4f63" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;0874bd5783e9294ab0abb0b95bbe4f63" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1605" role="button">108</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" role="button">109</a></li>
+							<li class="active"><span>110</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" role="button">111</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1665" role="button">112</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873551">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873551">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873551">
+
+			<h3 class="first"><a href="#p873551">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873551&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873551" title="Post #1636">#1636</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 9th, 2022, 6:25 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, here is the program to construct Z-series expansion of a lognormal density. I have expanded to seven powers of Z-series but you can extend it to any arbitrary power since we are not finding Z-series from moments through optimization but through an analytic method. To take density to any nth order of Z-series, you will need n-1 derivatives of the probability density calculated at its median.<br>
+Analytic method exploits change of derivatives formula for densities to calculate derivatives of lognormal random variable with respect to standard normal variable.<br>
+Theoretically you could expand normal density as a Series in lognormal density meaning you can expand one random variable whose density has higher analytic derivatives as an expansion with respect to any other random variable whose higher derivatives also exist. I am sure there could be some restrictions but I am sure you can expand many random variables with different  densities as a series in random variables with other densities. It is not necessary that expansion would be in the form of standard normal as we have been doing. though normal random variable is ideal for expanding other random variables but many other random variable types could just equally be used for expansion.<br>
+<br>
+I will give details of the method in next post.<br>
+<br>
+Here is the simple program with brief comments that expands a lognormal variable as a Z-series in standard normals and then compares the density found from Z-series to density from analytic closed form formula of the lognormal density.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = LognormalZSeries()
+
+%This Z-series is for lognormal density and not for lognormal diffusions.
+%For lognormal diffusions, you would have to subtract half of squared
+%volatility from mean to take effective mean.
+%Please specify vol and mean term for lognormal density.
+sigma=1;
+mu=.5;
+
+%Our expansion is around median of densities so we find the median of
+%lognormal density.
+Xmedian=exp(mu);
+%Below we calculate the value of density and its derivatives at median.
+px=1/(sqrt(2* pi)*sigma* Xmedian)* exp(-.5* (log(Xmedian)-mu)^2/sigma^2);
+pexp=exp(-.5* (log(Xmedian)-mu)^2/sigma^2);
+dpxdX=pexp *(0.398942* mu-0.398942* sigma^2-0.398942 *log(Xmedian))/(sigma^3* Xmedian^2);
+d2pxdX2=(pexp* (0.398942* mu^2-0.398942* sigma^2-1.19683* mu *sigma^2+0.797885* sigma^4+(-0.797885* mu+1.19683 *sigma^2) *log(Xmedian)+0.398942* log(Xmedian).^2))/(sigma^5 *Xmedian^3);
+d3pxdX3=(1/(sigma^7* Xmedian^4))*pexp* (0.398942 *mu^3-1.19683* mu* sigma^2-2.39365* mu^2* sigma^2+2.39365* sigma^4+4.38837* mu* sigma^4-2.39365* sigma^6+(-1.19683 *mu^2+1.19683 *sigma^2+4.78731* mu* sigma^2-4.38837* sigma^4)* log(Xmedian)+(1.19683 *mu-2.39365* sigma^2)* (log(Xmedian)).^2-0.398942* (log(Xmedian)).^3)
+d4pxdX4=(1/(sigma^9* Xmedian^5))*pexp* (0.398942* mu^4 - 3.98942* mu^3* sigma^2 + 1.19683* sigma^4 - 13.963* sigma^6 + 9.57461 *sigma^8 + mu^2* (-2.39365* sigma^2 + 13.963* sigma^4) + ...
+   mu *(11.9683 *sigma^4 - 19.9471 *sigma^6) + (-1.59577* mu^3 + 4.78731 *mu *sigma^2 + 11.9683* mu^2* sigma^2 - 11.9683* sigma^4 - 27.926* mu* sigma^4 + 19.9471* sigma^6)* log(Xmedian) + (2.39365* mu^2 - 2.39365* sigma^2 - 11.9683* mu* sigma^2 + 13.963* sigma^4)* (log(Xmedian)).^2 + ...
+   (-1.59577* mu + 3.98942* sigma^2)* (log(Xmedian)).^3 + 0.398942* (log(Xmedian))^4);
+
+d5pxdX5=(1/(sigma^11* Xmedian^6))*pexp* (0.398942* mu^5-5.98413 *mu^4* sigma^2+sigma^6* (-17.9524+89.762* sigma^2-47.8731* sigma^4)+ ...
+    mu^3* (-3.98942* sigma^2+33.9101* sigma^4)+mu^2 *(35.9048* sigma^4-89.762* sigma^6)+ mu* (5.98413* sigma^4-101.73 *sigma^6+109.31* sigma^8)+ ...
+    (-1.99471* mu^4+23.9365* mu^3* sigma^2-5.98413* sigma^4+101.73* sigma^6-109.31* sigma^8+mu^2* (11.9683* sigma^2-101.73* sigma^4)+ ...
+    mu* (-71.8096* sigma^4+179.524* sigma^6))* log(Xmedian)+ ...
+    (3.98942* mu^3-11.9683* mu* sigma^2-35.9048* mu^2* sigma^2+35.9048* sigma^4+101.73* mu* sigma^4-89.762* sigma^6)* (log(Xmedian)).^2+ ...
+    (-3.98942* mu^2+3.98942* sigma^2+23.9365* mu* sigma^2-33.9101* sigma^4)* (log(Xmedian)).^3+ ...
+    (1.99471* mu-5.98413* sigma^2)* (log(Xmedian)).^4-0.398942* (log(Xmedian)).^5);
+
+
+d6pxdX6=1/(sigma^13* Xmedian^7)*pexp* (0.398942* mu^6 - 8.37779 *mu^5* sigma^2 + mu* sigma^6* (-125.667 + 879.668 *sigma^2 - 703.734* sigma^4) + ...
+   mu^4* (-5.98413* sigma^2 + 69.8149* sigma^4) + mu^3* (83.7779 *sigma^4 - 293.223* sigma^6) + sigma^6 *(-5.98413 + 209.445* sigma^2 - 647.882* sigma^4 + ...
+      287.238 *sigma^6) + mu^2 *(17.9524 *sigma^4 - 418.889* sigma^6 + 647.882 *sigma^8) + (-2.39365* mu^5 + 41.8889 *mu^4* sigma^2 + ...
+      mu^3 *(23.9365 *sigma^2 - 279.26 *sigma^4) + sigma^6* (125.667 - 879.668* sigma^2 + 703.734* sigma^4) + mu^2 *(-251.334 *sigma^4 + 879.668 *sigma^6) + ...
+      mu *(-35.9048 *sigma^4 + 837.779 *sigma^6 - 1295.76 *sigma^8))* log(Xmedian) + ...
+          (5.98413* mu^4 - 83.7779 *mu^3 *sigma^2 + 17.9524* sigma^4 - 418.889 *sigma^6 + 647.882* sigma^8 + mu^2* (-35.9048 *sigma^2 + 418.889 *sigma^4) + ...
+      mu *(251.334 *sigma^4 - 879.668* sigma^6))* (log(Xmedian)).^2 + ...
+          (-7.97885* mu^3 + 23.9365* mu *sigma^2 + 83.7779* mu^2* sigma^2 - 83.7779 *sigma^4 - 279.26 *mu* sigma^4 + 293.223* sigma^6)* (log(Xmedian)).^3 + ...
+          (5.98413* mu^2 - 5.98413* sigma^2 - 41.8889* mu* sigma^2 + 69.8149* sigma^4) *(log(Xmedian)).^4 + ...
+          (-2.39365* mu + 8.37779* sigma^2) *(log(Xmedian)).^5 + 0.398942 *(log(Xmedian)).^6);
+
+
+      
+% d7pxdX7=1/(sigma^15* Xmedian^8)*pexp* (0.398942* mu^7 - 11.1704 *mu^6* sigma^2 + mu^2* sigma^6 *(-502.667 + 4691.56* sigma^2 - 5238.91* sigma^4) + ... 
+%    mu^5 *(-8.37779 *sigma^2 + 128.459 *sigma^4) + sigma^8* (167.556 - 2345.78* sigma^2 + 5238.91* sigma^4 - 2010.67 *sigma^6) + mu^4* (167.556* sigma^4 - 781.927* sigma^6) + ...
+%    mu* sigma^6* (-41.8889 + 1926.89 *sigma^2 - 8101.32 *sigma^4 + 5213.38* sigma^6) + mu^3* (41.8889 *sigma^4 - 1284.59 *sigma^6 + ... 
+%       2700.44 *sigma^8) + (-2.7926* mu^6 + 67.0223* mu^5* sigma^2 + mu^4 *(41.8889* sigma^2 - 642.297* sigma^4) + ... 
+%       mu *sigma^6 *(1005.33 - 9383.12 *sigma^2 + 10477.8 *sigma^4) + sigma^6 *(41.8889 - 1926.89* sigma^2 + 8101.32* sigma^4 - 5213.38* sigma^6) + ...
+%       mu^3 *(-670.223* sigma^4 + 3127.71 *sigma^6) + mu^2 *(-125.667* sigma^4 + 3853.78 *sigma^6 - 8101.32 *sigma^8)) *log(Xmedian) + ...
+%       (8.37779 *mu^5 - 167.556* mu^4 *sigma^2 + sigma^6* (-502.667 + 4691.56* sigma^2 - 5238.91* sigma^4) + mu^3* (-83.7779 *sigma^2 + 1284.59 *sigma^4) + ...
+%       mu^2* (1005.33* sigma^4 - 4691.56* sigma^6) + mu *(125.667* sigma^4 - 3853.78* sigma^6 + 8101.32 *sigma^8))* (log(Xmedian))^2 + ...
+%       (-13.963* mu^4 + 223.408* mu^3 *sigma^2 - 41.8889 *sigma^4 + 1284.59 *sigma^6 - 2700.44* sigma^8 + mu^2* (83.7779 *sigma^2 - 1284.59 *sigma^4) + ...
+%       mu* (-670.223* sigma^4 + 3127.71 *sigma^6))* (log(Xmedian)).^3 + ...
+%       (13.963 *mu^3 - 41.8889* mu *sigma^2 - 167.556* mu^2* sigma^2 + 167.556 *sigma^4 + 642.297 *mu *sigma^4 - 781.927 *sigma^6)* (log(Xmedian)).^4 + ...
+%       (-8.37779* mu^2 + 8.37779* sigma^2 + 67.0223* mu *sigma^2 - 128.459* sigma^4)* (log(Xmedian)).^5 +...
+%       (2.7926* mu - 11.1704 *sigma^2)* (log(Xmedian)).^6 - 0.398942* (log(Xmedian)).^7);      
+      
+%Now we take median of standard normal density and find its point density
+%and derivatives at median
+Zm=0;
+pz=exp(-0.5* (Zm.^2))/sqrt(2*pi);
+dpzdZ=-Zm*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+d2pzdZ2=(Zm^2-1)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+d3pzdZ3=-(Zm^3-3*Zm)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+d4pzdZ4=(Zm^4-6*Zm^2+3)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+d5pzdZ5=-(Zm^5-10*Zm^3+15*Zm)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+d6pzdZ6=(Zm^6-15*Zm^4+45*Zm.^2-15)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+%d7pzdZ7=-(Zm^7-21*Zm^5+105*Zm.^3-105*Zm)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+%d8pzdZ8=(Zm^8-28*Zm^6+210*Zm.^4-420*Zm.^2+105)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+%d9pzdZ9=-(Zm^9-36*Zm^7+378*Zm.^5-1260*Zm.^3+945*Zm)*exp(-0.5* (Zm.^2))/sqrt(2*pi);
+  
+
+%From relationships between densities through change of density derivative, 
+%we determine the following derivatives. See post 1492 on this thread for
+%details.
+
+dXdZ=pz/px;
+
+d2XdZ2=(dpzdZ-(dpxdX *dXdZ^2))/px 
+
+d3XdZ3=(d2pzdZ2- (2* dpxdX* dXdZ *d2XdZ2+dXdZ *(dXdZ^2* d2pxdX2+dpxdX *d2XdZ2)))/px 
+
+d4XdZ4=(d3pzdZ3-(3* d2XdZ2* (dXdZ^2* d2pxdX2+dpxdX *d2XdZ2)+3* dpxdX *dXdZ *d3XdZ3+dXdZ* (3 *dXdZ* d2pxdX2* d2XdZ2+dXdZ^3* d3pxdX3+dpxdX* d3XdZ3)))/px 
+
+d5XdZ5=(d4pzdZ4- (6 *(dXdZ^2 *d2pxdX2+dpxdX *d2XdZ2) *d3XdZ3+4 *d2XdZ2* (3* dXdZ *d2pxdX2 *d2XdZ2+dXdZ^3* d3pxdX3+dpxdX* d3XdZ3)+4* dpxdX* dXdZ* d4XdZ4+dXdZ *(3* d2pxdX2* d2XdZ2^2+6* dXdZ^2* d2XdZ2* d3pxdX3+4 *dXdZ* d2pxdX2* d3XdZ3+dXdZ^4* d4pxdX4+dpxdX* d4XdZ4)))/px 
+
+d6XdZ6=(d5pzdZ5- (10* d3XdZ3 *(3 *dXdZ* d2pxdX2* d2XdZ2+dXdZ^3* d3pxdX3+dpxdX *d3XdZ3)+10* (dXdZ^2* d2pxdX2+dpxdX *d2XdZ2)* d4XdZ4+5* d2XdZ2* (3* d2pxdX2* d2XdZ2^2+6* dXdZ^2* d2XdZ2* d3pxdX3+4 *dXdZ* d2pxdX2* d3XdZ3+dXdZ^4* d4pxdX4+dpxdX* d4XdZ4)+5 *dpxdX* dXdZ* d5XdZ5+dXdZ *(15* dXdZ* d2XdZ2^2* d3pxdX3+10* d2pxdX2* d2XdZ2* d3XdZ3+10* dXdZ^2 *d3pxdX3* d3XdZ3+10* dXdZ^3* d2XdZ2* d4pxdX4+5* dXdZ* d2pxdX2* d4XdZ4+dXdZ^5* d5pxdX5+dpxdX* d5XdZ5)))/px 
+
+
+d7XdZ7=(d6pzdZ6- (20 *(3* dXdZ* d2pxdX2* d2XdZ2+dXdZ^3 *d3pxdX3+dpxdX *d3XdZ3)* d4XdZ4+15* d3XdZ3* (3 *d2pxdX2 *d2XdZ2^2+6* dXdZ^2* d2XdZ2* d3pxdX3+4 *dXdZ* d2pxdX2* d3XdZ3+dXdZ^4* d4pxdX4+dpxdX* d4XdZ4)+15* (dXdZ^2* d2pxdX2+dpxdX* d2XdZ2)* d5XdZ5+6* d2XdZ2* (15* dXdZ* d2XdZ2^2* d3pxdX3+10* d2pxdX2* d2XdZ2 *d3XdZ3+10 *dXdZ^2 *d3pxdX3 *d3XdZ3+10 *dXdZ^3 *d2XdZ2* d4pxdX4+5 *dXdZ *d2pxdX2 *d4XdZ4+dXdZ^5 *d5pxdX5+dpxdX* d5XdZ5)+6* dpxdX* dXdZ *d6XdZ6+dXdZ* (15 *d2XdZ2^3 *d3pxdX3+60 *dXdZ *d2XdZ2 *d3pxdX3* d3XdZ3+10 *d2pxdX2 *d3XdZ3^2+45 *dXdZ^2* d2XdZ2^2 *d4pxdX4+20* dXdZ^3 *d3XdZ3* d4pxdX4+15 *d2pxdX2* d2XdZ2 *d4XdZ4+15 *dXdZ^2* d3pxdX3 *d4XdZ4+15 *dXdZ^4* d2XdZ2* d5pxdX5+6 *dXdZ *d2pxdX2* d5XdZ5+dXdZ^6* d6pxdX6+dpxdX *d6XdZ6)))/px 
+
+
+%d8XdZ8=(d7pzdZ7- (35 *d4XdZ4 *(3 *d2pxdX2* d2XdZ2^2+6* dXdZ^2 *d2XdZ2 *d3pxdX3+4* dXdZ* d2pxdX2* d3XdZ3+dXdZ^4 *d4pxdX4+dpxdX *d4XdZ4)+35 *(3* dXdZ *d2pxdX2 *d2XdZ2+dXdZ^3 *d3pxdX3+dpxdX* d3XdZ3)* d5XdZ5+21* d3XdZ3 *(15 *dXdZ* d2XdZ2^2 *d3pxdX3+10 *d2pxdX2 *d2XdZ2 *d3XdZ3+10* dXdZ^2 *d3pxdX3 *d3XdZ3+10 *dXdZ^3 *d2XdZ2 *d4pxdX4+5* dXdZ *d2pxdX2* d4XdZ4+dXdZ^5 *d5pxdX5+dpxdX *d5XdZ5)+21 *(dXdZ^2 *d2pxdX2+dpxdX* d2XdZ2) *d6XdZ6+7 *d2XdZ2* (15 *d2XdZ2^3 *d3pxdX3+60 *dXdZ *d2XdZ2 *d3pxdX3 *d3XdZ3+10 *d2pxdX2* d3XdZ3^2+45* dXdZ^2 *d2XdZ2^2 *d4pxdX4+20* dXdZ^3* d3XdZ3 *d4pxdX4+15 *d2pxdX2 *d2XdZ2 *d4XdZ4+15 *dXdZ^2 *d3pxdX3 *d4XdZ4+15* dXdZ^4 *d2XdZ2 *d5pxdX5+6 *dXdZ* d2pxdX2 *d5XdZ5+dXdZ^6 *d6pxdX6+dpxdX *d6XdZ6)+7 *dpxdX* dXdZ* d7XdZ7+dXdZ *(105 *d2XdZ2^2 *d3pxdX3 *d3XdZ3+70 *dXdZ* d3pxdX3 *d3XdZ3^2+105 *dXdZ *d2XdZ2^3 *d4pxdX4+210* dXdZ^2 *d2XdZ2 *d3XdZ3 *d4pxdX4+105* dXdZ *d2XdZ2 *d3pxdX3 *d4XdZ4+35 *d2pxdX2* d3XdZ3 *d4XdZ4+35 *dXdZ^3* d4pxdX4 *d4XdZ4+105* dXdZ^3 *d2XdZ2^2* d5pxdX5+35* dXdZ^4* d3XdZ3 *d5pxdX5+21 *d2pxdX2 *d2XdZ2 *d5XdZ5+21 *dXdZ^2 *d3pxdX3 *d5XdZ5+21 *dXdZ^5 *d2XdZ2 *d6pxdX6+7 *dXdZ* d2pxdX2* d6XdZ6+dXdZ^7* d7pxdX7+dpxdX *d7XdZ7)))/px 
+
+
+%d9XdZ9=(d8pzdZ8- (70* (3 *d2pxdX2* d2XdZ2^2+6* dXdZ^2* d2XdZ2* d3pxdX3+4* dXdZ* d2pxdX2* d3XdZ3+dXdZ^4 *d4pxdX4+dpxdX* d4XdZ4) *d5XdZ5+56* d4XdZ4* (15* dXdZ* d2XdZ2^2 *d3pxdX3+10 *d2pxdX2 *d2XdZ2 *d3XdZ3+10 *dXdZ^2 *d3pxdX3 *d3XdZ3+10 *dXdZ^3 *d2XdZ2 *d4pxdX4+5 *dXdZ *d2pxdX2* d4XdZ4+dXdZ^5 *d5pxdX5+dpxdX *d5XdZ5)+56 *(3 *dXdZ *d2pxdX2 *d2XdZ2+dXdZ^3* d3pxdX3+dpxdX *d3XdZ3) *d6XdZ6+28* d3XdZ3 *(15 *d2XdZ2^3 *d3pxdX3+60 *dXdZ *d2XdZ2 *d3pxdX3 *d3XdZ3+10 *d2pxdX2* d3XdZ3^2+45 *dXdZ^2 *d2XdZ2^2 *d4pxdX4+20* dXdZ^3 *d3XdZ3 *d4pxdX4+15* d2pxdX2 *d2XdZ2 *d4XdZ4+15 *dXdZ^2 *d3pxdX3 *d4XdZ4+15 *dXdZ^4 *d2XdZ2 *d5pxdX5+6 *dXdZ *d2pxdX2* d5XdZ5+dXdZ^6 *d6pxdX6+dpxdX *d6XdZ6)+28* (dXdZ^2 *d2pxdX2+dpxdX *d2XdZ2) *d7XdZ7+8 *d2XdZ2 *(105 *d2XdZ2^2 *d3pxdX3 *d3XdZ3+70* dXdZ* d3pxdX3 *d3XdZ3^2+105 *dXdZ* d2XdZ2^3 *d4pxdX4+210 *dXdZ^2 *d2XdZ2* d3XdZ3* d4pxdX4+105 *dXdZ* d2XdZ2 *d3pxdX3 *d4XdZ4+35 *d2pxdX2 *d3XdZ3 *d4XdZ4+35* dXdZ^3 *d4pxdX4 *d4XdZ4+105* dXdZ^3 *d2XdZ2^2 *d5pxdX5+35 *dXdZ^4 *d3XdZ3 *d5pxdX5+21* d2pxdX2* d2XdZ2 *d5XdZ5+21 *dXdZ^2 *d3pxdX3* d5XdZ5+21* dXdZ^5* d2XdZ2 *d6pxdX6+7 *dXdZ* d2pxdX2 *d6XdZ6+dXdZ^7 *d7pxdX7+dpxdX *d7XdZ7)+8 *dpxdX* dXdZ* d8XdZ8+dXdZ *(280* d2XdZ2 *d3pxdX3 *d3XdZ3^2+105 *d2XdZ2^4 *d4pxdX4+840 *dXdZ* d2XdZ2^2 *d3XdZ3 *d4pxdX4+280 *dXdZ^2 *d3XdZ3^2 *d4pxdX4+210 *d2XdZ2^2 *d3pxdX3 *d4XdZ4+280 *dXdZ* d3pxdX3 *d3XdZ3 *d4XdZ4+420 *dXdZ^2 *d2XdZ2 *d4pxdX4 *d4XdZ4+35* d2pxdX2 *d4XdZ4^2+420 *dXdZ^2 *d2XdZ2^3* d5pxdX5+560* dXdZ^3 *d2XdZ2* d3XdZ3* d5pxdX5+70* dXdZ^4 *d4XdZ4 *d5pxdX5+168 *dXdZ *d2XdZ2 *d3pxdX3 *d5XdZ5+56 *d2pxdX2 *d3XdZ3 *d5XdZ5+56* dXdZ^3 *d4pxdX4 *d5XdZ5+210 *dXdZ^4 *d2XdZ2^2 *d6pxdX6+56 *dXdZ^5 *d3XdZ3 *d6pxdX6+28 *d2pxdX2 *d2XdZ2 *d6XdZ6+28* dXdZ^2* d3pxdX3 *d6XdZ6+28 *dXdZ^6 *d2XdZ2 *d7pxdX7+8 *dXdZ *d2pxdX2 *d7XdZ7+dXdZ^8 *d8pxdX8+dpxdX *d8XdZ8)))/px 
+
+%d10XdZ10=(d9pzdZ9- (126*d5XdZ5*(15*dXdZ*d2XdZ2^2*d3pxdX3+10*d2pxdX2*d2XdZ2*d3XdZ3+10*dXdZ^2*d3pxdX3*d3XdZ3+10*dXdZ^3*d2XdZ2*d4pxdX4+5*dXdZ*d2pxdX2*d4XdZ4+dXdZ^5*d5pxdX5+dpxdX*d5XdZ5)+126*(3*d2pxdX2*d2XdZ2^2+6*dXdZ^2*d2XdZ2*d3pxdX3+4*dXdZ*d2pxdX2*d3XdZ3+dXdZ^4*d4pxdX4+dpxdX*d4XdZ4)*d6XdZ6+84*d4XdZ4*(15*d2XdZ2^3*d3pxdX3+60*dXdZ*d2XdZ2*d3pxdX3*d3XdZ3+10*d2pxdX2*d3XdZ3^2+45*dXdZ^2*d2XdZ2^2*d4pxdX4+20*dXdZ^3*d3XdZ3*d4pxdX4+15*d2pxdX2*d2XdZ2*d4XdZ4+15*dXdZ^2*d3pxdX3*d4XdZ4+15*dXdZ^4*d2XdZ2*d5pxdX5+6*dXdZ*d2pxdX2*d5XdZ5+dXdZ^6*d6pxdX6+dpxdX*d6XdZ6)+84*(3*dXdZ*d2pxdX2*d2XdZ2+dXdZ^3*d3pxdX3+dpxdX*d3XdZ3)*d7XdZ7+36*d3XdZ3*(105*d2XdZ2^2*d3pxdX3*d3XdZ3+70*dXdZ*d3pxdX3*d3XdZ3^2+105*dXdZ*d2XdZ2^3*d4pxdX4+210*dXdZ^2*d2XdZ2*d3XdZ3*d4pxdX4+105*dXdZ*d2XdZ2*d3pxdX3*d4XdZ4+35*d2pxdX2*d3XdZ3*d4XdZ4+35*dXdZ^3*d4pxdX4*d4XdZ4+105*dXdZ^3*d2XdZ2^2*d5pxdX5+35*dXdZ^4*d3XdZ3*d5pxdX5+21*d2pxdX2*d2XdZ2*d5XdZ5+21*dXdZ^2*d3pxdX3*d5XdZ5+21*dXdZ^5*d2XdZ2*d6pxdX6+7*dXdZ*d2pxdX2*d6XdZ6+dXdZ^7*d7pxdX7+dpxdX*d7XdZ7)+36*(dXdZ^2*d2pxdX2+dpxdX*d2XdZ2)*d8XdZ8+9*d2XdZ2*(280*d2XdZ2*d3pxdX3*d3XdZ3^2+105*d2XdZ2^4*d4pxdX4+840*dXdZ*d2XdZ2^2*d3XdZ3*d4pxdX4+280*dXdZ^2*d3XdZ3^2*d4pxdX4+210*d2XdZ2^2*d3pxdX3*d4XdZ4+280*dXdZ*d3pxdX3*d3XdZ3*d4XdZ4+420*dXdZ^2*d2XdZ2*d4pxdX4*d4XdZ4+35*d2pxdX2*d4XdZ4^2+420*dXdZ^2*d2XdZ2^3*d5pxdX5+560*dXdZ^3*d2XdZ2*d3XdZ3*d5pxdX5+70*dXdZ^4*d4XdZ4*d5pxdX5+168*dXdZ*d2XdZ2*d3pxdX3*d5XdZ5+56*d2pxdX2*d3XdZ3*d5XdZ5+56*dXdZ^3*d4pxdX4*d5XdZ5+210*dXdZ^4*d2XdZ2^2*d6pxdX6+56*dXdZ^5*d3XdZ3*d6pxdX6+28*d2pxdX2*d2XdZ2*d6XdZ6+28*dXdZ^2*d3pxdX3*d6XdZ6+28*dXdZ^6*d2XdZ2*d7pxdX7+8*dXdZ*d2pxdX2*d7XdZ7+dXdZ^8*d8pxdX8+dpxdX*d8XdZ8)+9*dpxdX*dXdZ*d9XdZ9+dXdZ*(280*d3pxdX3*d3XdZ3^3+1260*d2XdZ2^3*d3XdZ3*d4pxdX4+2520*dXdZ*d2XdZ2*d3XdZ3^2*d4pxdX4+1260*d2XdZ2*d3pxdX3*d3XdZ3*d4XdZ4+1890*dXdZ*d2XdZ2^2*d4pxdX4*d4XdZ4+1260*dXdZ^2*d3XdZ3*d4pxdX4*d4XdZ4+315*dXdZ*d3pxdX3*d4XdZ4^2+945*dXdZ*d2XdZ2^4*d5pxdX5+3780*dXdZ^2*d2XdZ2^2*d3XdZ3*d5pxdX5+840*dXdZ^3*d3XdZ3^2*d5pxdX5+1260*dXdZ^3*d2XdZ2*d4XdZ4*d5pxdX5+378*d2XdZ2^2*d3pxdX3*d5XdZ5+504*dXdZ*d3pxdX3*d3XdZ3*d5XdZ5+756*dXdZ^2*d2XdZ2*d4pxdX4*d5XdZ5+126*d2pxdX2*d4XdZ4*d5XdZ5+126*dXdZ^4*d5pxdX5*d5XdZ5+1260*dXdZ^3*d2XdZ2^3*d6pxdX6+1260*dXdZ^4*d2XdZ2*d3XdZ3*d6pxdX6+126*dXdZ^5*d4XdZ4*d6pxdX6+252*dXdZ*d2XdZ2*d3pxdX3*d6XdZ6+84*d2pxdX2*d3XdZ3*d6XdZ6+84*dXdZ^3*d4pxdX4*d6XdZ6+378*dXdZ^5*d2XdZ2^2*d7pxdX7+84*dXdZ^6*d3XdZ3*d7pxdX7+36*d2pxdX2*d2XdZ2*d7XdZ7+36*dXdZ^2*d3pxdX3*d7XdZ7+36*dXdZ^7*d2XdZ2*d8pxdX8+9*dXdZ*d2pxdX2*d8XdZ8+dXdZ^9*d9pxdX9+dpxdX*d9XdZ9)))/px
+
+
+%Since we have found the derivatives of lognormal density variable with
+%respect to standard normal variable, we can convert them as coefficients
+%of Z-series.
+
+c0=Xmedian
+c(1)=dXdZ
+c(2)=1/2*1*d2XdZ2
+c(3)=1/6*1*d3XdZ3
+c(4)=1/24*1*d4XdZ4
+c(5)=1/120*1*d5XdZ5
+c(6)=1/720*1*d6XdZ6
+c(7)=1/720/7*1*d7XdZ7
+
+%Below construct lognormal density from Z-series coefficients
+
+
+%First find discretization of standard normal
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+
+%Now construct lognormal variable from its Z-series coefficients
+X(1:Nn)=c0;
+for nn=1:7
+    X(1:Nn)=X(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Find change of density derivative with respect to normal for construction
+%of density
+DfX(1:Nn)=0;
+for nn=2:Nn-1
+    
+    DfX(nn) = (X(nn + 1) - X(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    
+    %Change of variable derivative for densities
+end
+DfX(Nn)=DfX(Nn-1);
+DfX(1)=DfX(2);
+
+%Find lognormal density at the normal grid
+pX(1:Nn)=0;
+for nn = 1:Nn
+    pX(nn) = (normpdf(Z(nn),0, 1))/abs(DfX(nn));
+end
+
+%Below directly find lognormal density from analytic formula
+Y(1:15000)=.00001+.01*(1:15000);
+pY=1./(sqrt(2* pi)*sigma.* Y).* exp(-.5.* (log(Y)-mu).^2./sigma^2);
+
+%Compare the graph of same lognormal density derived two different ways from 
+%Z-series coefficients --red and from analytic formula as green.
+
+plot(X(1:Nn),pX(1:Nn),'r',Y(1:15000),pY(1:15000),'g');
+
+title('Comparison of Lognormal Density from Z-series VS from analytic closed form formula');%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+
+legend({'Lognormal density From Z-series','Lognormal density from analytic formula of probability density'},'Location','northeast')
+
+str=input('red line is lognormal density from Z-series, green is analytic formula.');
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+Here is the graph comparison from the above program.<br>
+<a href="https://postimg.cc/w3tfF2LD" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/CM73h6Kr/Lognormal-Density-ZSeries01.jpg" class="postimage" alt="Image"></a><br>
+<br>
+<br>
+<br>
+Here is the comparison of tails of the lognormal density from Z-series to exact density. Please note that you can arbitrarily improve the tail by increasing the order of Z-series which only requires simple algebra as opposed to cumbersome optimizations that we have to do when we find the Z-series from moments of random variables.<br>
+<br>
+<br>
+<a href="https://postimg.cc/8sqyYvm9" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/TYPZpqLd/Lognormal-Density-ZSeries02.jpg" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig873551" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873552">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873552">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873552">
+
+			<h3 ><a href="#p873552">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873552&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873552" title="Post #1637">#1637</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 9th, 2022, 6:47 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I had tried this idea earlier when I was finding Z-series of density from its moments in posts 1491 and 1492. But there I had tried to generate a base density from solution of linear equations applied to match the moments of the random variable. The idea of expanding any random variable with analytic density at its median and finding its derivatives with respect to standard normal random variable to from a Z-series of random variable was perfectly sound but the whole thing did not work as moments calculated from linear equations were totally rubbish.<br>
+<br>
+<a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1485#p871047" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1485#p871047</a><br>
+<a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1485#p871049" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1485#p871049</a><br>
+<br>
+Here I copy relevant parts of those above posts.<br>
+<br>
+From post 1491:<br>
+<br>
+Friends, we have earlier learnt when we want to represent a stochastic random variable X, in the form of a Z-series, the form of equation for X is given as<br>
+[$]X(Z)=a_0  \,+ a_1 \, Z + a_2 \, Z^2 + a_3 \, Z^3 +  a_4 \, Z^4 +\, ... [$] <br>
+<br>
+The first, second and third  derivatives of w(t) w.r.t Z are given as<br>
+[$]\frac{\partial X}{\partial Z}= a_1 \, + 2 \,a_2 \, Z +3 \, a_3 \, Z^2 +4 \,  a_4 \, Z^3 +\, ... [$] <br>
+[$]\frac{\partial^2 X}{\partial Z^2}=  2 \,a_2 \, +6 \, a_3 \, Z +12 \,  a_4 \, Z^2 +\, ... [$] <br>
+[$]\frac{\partial^3 X}{\partial Z^3}=  6 \, a_3 \,  +24 \,  a_4 \, Z \,+60 \,  a_5 \, Z^2 +\, ... [$] <br>
+<br>
+IF we do all the calculations of series evolution equation at median where Z=0. here all the derivatives are given only by leading coefficient associated with zeroth power of Z. So at Z=0,<br>
+<br>
+[$]w(t)=a_0  \,[$] <br>
+[$]\frac{\partial X}{\partial Z}= a_1 \,  [$] <br>
+[$]\frac{\partial^2 X}{\partial Z^2}=  2 \,a_2 \, [$] <br>
+[$]\frac{\partial^3 X}{\partial Z^3}=  6 \, a_3 \,  [$] <br>
+[$]\frac{\partial^4 X}{\partial Z^4}=  24 \, a_4 \,  [$] <br>
+<br>
+So we have that <br>
+[$]X(Z)=a_0  \,+ a_1 \, Z + a_2 \, Z^2 + a_3 \, Z^3 +  a_4 \, Z^4 +\, ... [$] <br>
+[$]X(Z)=a_0  \,+ \frac{\partial X}{\partial Z} \, Z + 1/2 \, \frac{\partial^2 X}{\partial Z^2} \, Z^2 +1/6 \,  \frac{\partial^3 X}{\partial Z^3} \, Z^3 +1/24 \,  \frac{\partial^4 X}{\partial Z^4} \, Z^4 +\, ... [$]<br>
+<br>
+So basically our power series is the same as Taylor series where derivatives between the two random variables, the stochastic variable X and standard Gaussian Z, are calculated at the median. ( You could do these calculations at other points in the density as well but those calculations would be much more involved and if correct should yield the exact same final result if the density is based on continuous derivatives)<br>
+If we could just find the median of density of our random variable X and its derivatives [$]\frac{\partial X}{\partial Z}\,  [$], [$]\frac{\partial^2 X}{\partial Z^2} [$] and other higher derivatives with respect to Z, we can find coefficients of our power series representation of our random variable X in terms of powers of standard Gaussian.<br>
+Again the above derivatives would have to be calculated at median of densities of both random variables, X and Z. <br>
+<br>
+<br>
+From Post 1492:<br>
+<br>
+As we learnt in the previous post, In order to construct the Z-series of a particular stochastic random variable X, we have to find its various derivatives with respect to standard Gaussian at the median(of both densities). So our first step towards construction of a Z-series representation would be to find median of the stochastic random variable X in question. I suppose that we have constructed analytical density of X using one of the methods described in previous post. We would have to find median mostly through Newton-Raphson as there are usually no simple formulas for median of a density.<br>
+<br>
+After finding median, we can fix first coefficient of Z_Series as <br>
+[$] c_0 \, = \, Median [$]<br>
+<br>
+Both our density for random variable X and the standard gaussian density are related through change of variable formula for two densities as<br>
+<br>
+[$]p_Z(Z) \, = \, p_X(X(Z)) \, \frac{dX}{dZ} \, [$]   Eq(1)<br>
+<br>
+So we can find [$]\, \frac{dX}{dZ} \, [$] at median from the ratio of densities of respective variables at median as<br>
+<br>
+[$]\, \frac{dX}{dZ} \, = \, \frac{p_Z(Z=0)}{p_X(X(Z)=c_0)}= \, \frac{p_Z(0)}{p_X(c_0)}[$]<br>
+<br>
+In order to find higher derivatives of X with respect to Z at median, we differentiate Eq(1) on both sides w.r.t Z as<br>
+<br>
+[$]p'_Z(Z) \, = \, p'_X(X(Z)) \, {(\frac{dX}{dZ})}^2 +  \, p_X(X(Z)) \, \frac{d^2X}{dZ^2}\, [$] Eq(2)<br>
+<br>
+In above equation and similar subsequent equations, we know the derivatives of gaussian density at Z=0 analytically. And we can easily find all first few nth derivatives of density of random variable X at its median   [$]\frac{dp^n_X}{dX^n}(X(Z)) = \, \frac{dp^n_X}{dX^n}(c_0) [$]  from the analytic density as we have constructed in the previous post.  So we know values of all variables in Eq(2) other than  [$]\, \frac{d^2X}{dZ^2}\, [$]  whose value we back out from Eq(2)<br>
+<br>
+The third derivative equation would be<br>
+<br>
+[$]p''_Z(Z) \, = \, p''_X(X(Z)) \, {(\frac{dX}{dZ})}^3 +  \, 3\, p'_X(X(Z)) \, {\frac{dX}{dZ}} \, {\frac{d^2X}{dZ^2}} +  \, p_X(X(Z)) \, \frac{d^3X}{dZ^3}\, [$] Eq(3)<br>
+<br>
+which can be used to back out  [$] \, \frac{d^3X}{dZ^3}\,[$]<br>
+<br>
+Similarly we can continue to differentiate Eq(2) and keep finding value of next higher derivative of X w.r.t Z at median. <br>
+After finding first few derivatives of X w.r.t Z at median, we can construct the Z_series of X as<br>
+<br>
+[$]X(Z)=a_0  \,+ \frac{\partial X}{\partial Z} \, Z + 1/2 \, \frac{\partial^2 X}{\partial Z^2} \, Z^2 +1/6 \,  \frac{\partial^3 X}{\partial Z^3} \, Z^3 +1/24 \,  \frac{\partial^4 X}{\partial Z^4} \, Z^4 +\, ... [$]<br>
+<br>
+In a similar spirit, I think we can take the base density as a different density (could be gamma density) and represent some stochastic variable as a series in Gamma density variable by equating the equations of two densities through change of density derivative at their median. </div>
+
+			
+									
+									<div id="sig873552" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873557">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873557">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873557">
+
+			<h3 ><a href="#p873557">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873557&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873557" title="Post #1638">#1638</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 10th, 2022, 10:54 am</span></p>
+			
+			
+			
+			<div class="content">Friends, when I think of new possibilities that can open up in statistics, probability theory and stochastics, I really believe that Z-series expansions are very interesting development. We can develop complete calculus of probability distributions with the help of Z-series. We can add, subtract, multiply, divide, differentiate, and integrate distributions that are correlated or independent once we have specified their Z-series and then find probability distributions of the resulting random variable. We can also find function transformations of a random variable once its Z-series is given. I will give a few examples.<br>
+<br>
+Suppose we are given Z-series of three random variables as.<br>
+<br>
+W(Z)=a0 + a1 Z + a2 Z^2 + a3 Z^3 + ...<br>
+X(Z)=b0+ b1 Z + b2 Z^2 + b3 Z^3 + ...<br>
+Y(Z1)=c0+ c1 Z1 + c2 Z1^2 + c3 Z1^3 + ...<br>
+<br>
+<br>
+Variables W(Z) and X(Z) are perfectly correlated but possibly in a non-linear way while Y(Z1) is independent of both W and Y and is function of a different random standard gaussian Z1.<br>
+<br>
+We show how addition, subtraction, multiplication and division of random variables can be done through Z-series in cases where they are correlated and when they are independent.<br>
+<br>
+<span style="font-size: 100%; line-height: normal">Addition of two random variables that are function of the same Z. Correlated case. </span><br>
+<span style="font-size: 100%; line-height: normal">In this case coefficients of the sum random variable would be linear sum across the coefficients of the two Z-series. </span><br>
+<span style="font-size: 100%; line-height: normal">V=W+X, then</span><br>
+<span style="font-size: 100%; line-height: normal">V(Z) = a0+ b0 + (a1 + b1) Z + (a2+b2) Z^2 + (a3 + b3) Z^3 + (a4 + b4) Z^4 + ...</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Addition of two random variables that are function of different Z. Independent case. <br>
+</span><br>
+<span style="font-size: 100%; line-height: normal">In this case squared coefficients of the sum random variable would be sum of squared coefficients of respective hermite polynomials in hermite polynomial representation of the two random variables.</span><br>
+<span style="font-size: 100%; line-height: normal">First we will have to convert W and Y Z-series into appropriate Hermite series (We have done this several times earlier in this thread) as</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">W(Z) = a0 + a1 Z + a2 Z^2 + a3 Z^3 + ...</span><br>
+<span style="font-size: 100%; line-height: normal">=d0 + d1 H1(Z) + d2 H2(Z) + d3 H3(Z) + ...</span><br>
+<span style="font-size: 100%; line-height: normal">and</span><br>
+<span style="font-size: 100%; line-height: normal">Y(Z1)=c0+ c1 Z1 + c2 Z1^2 + c3 Z1^3 + ...<br>
+=e0 + e1 H1(Z1) + e2 H2(Z1) + e3 H3(Z1) + ...<br>
+</span><br>
+<span style="font-size: 100%; line-height: normal">if sum of the two Z-series is given as . </span><br>
+<span style="font-size: 100%; line-height: normal">V=W(Z)+Y(Z1), then</span><br>
+<span style="font-size: 100%; line-height: normal">V(Z2) = d0+ e0 + Sqrt[(d1^2 + e1^2)] H1(Z2) + Sqrt[(d2^2+e2^2)] H2(Z2) + Sqrt[(d3^2 + e3^2)] H3(Z2) + Sqrt[(d4^2 + e4^2)] H4(Z2) + ...</span><br>
+<span style="font-size: 100%; line-height: normal"> In the squared sum, we have to be careful with the signs and if sign of larger coefficients being sum squared is negative then resulting sign will be negative. I have omitted signs in the above equation. We have tackled such cases several times in this thread earlier.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Subtraction of the two series is exactly like summation but with a negative sign applied to coefficients of minus variable.</span><br>
+<br>
+<br>
+<span style="font-size: 100%; line-height: normal">Multiplication And Division of two series that are function of the same Z. correlated case</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">if V(Z)= W(Z) * X(Z)</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">The Z-series of the resulting product variable will simply be series product of Z-series of W and Z-series of X.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">if V(Z)= W(Z) / X(Z)<br>
+</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">The Z-series of the resulting division variable will simply be series product of Z-series of W and series reciprocal of Z-series of X.</span><br>
+<br>
+<br>
+<br>
+<span style="font-size: 100%; line-height: normal">Multiplication And Division of two series that are function of two different and independent Zs. Independent case<br>
+</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">if V(Z2)= W(Z) * Y(Z1)</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">In this case we will have to calculate first few moments of W and first few moments of Y. nth moment of V will be product of nth moment of W and nth moment of Y. Once we calculate first n moments of V using product of moments of W and Y, we will have to find the density of V by applying our root search to find the coefficients that fit the resulting moments of V. Density of product V could be calculated from Z-series coefficients that are found from root-search so that moments of the product are properly fitted.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">if V(Z2)= W(Z) / Y(Z1)</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Similar to product, we would find nth moment of resulting division variable as division of nth moment of W and nth moment of Y. We will have to apply root-search to resulting moments to find the Z-series coefficients of V so that moments obtained from Z-series match the target division variable moments.</span><br>
+<br>
+<br>
+<span style="font-size: 100%; line-height: normal">Similarly we can find functional transformations of the random variables by Taylor expansion around the median(or possibly around other convenient points) of the density. We have done that again and again in our solution of SDEs through Z-series.</span><br>
+<span style="font-size: 100%; line-height: normal">I posted a program of Z-series of lognormal random variables. We could have found that Z-series by taking an initial Z-series that describes a normal random variable with a mean and given variance. Such a series would have only a constant term and first power of normal random variable i.e. only two terms in total. We could have found the density of lognormal variable by applying exponential function transformation to our two terms normal Z-series. And it would have worked equally well.  </span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Integration and differentiation of the Z-series are obvious.</span></div>
+
+			
+									
+									<div id="sig873557" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873561">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873561">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873561">
+
+			<h3 ><a href="#p873561">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873561&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873561" title="Post #1639">#1639</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 10th, 2022, 2:05 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<span style="font-size: 100%; line-height: normal">Integration and differentiation of the Z-series are obvious.</span>
+</div></blockquote>
+.<br>
+For integration and differentiation in original random variable coordinates, you will have to use chain rule and inverse functions of derivatives with Z-series and then you will get all results again in Z-series form. Integration and differentiation of Z-series w.r.t Z is actually obvious.<br>
+<br>
+In the previous post, I have tried to reconstruct stochastic variables from Z-series (for example for products and divisions of random variables). We have already done this but current Z-series construction function is not extremely good for all sort of densities. I am trying to improve this further.<br>
+<br>
+I have previously used a PreSmoothingGuess() named matlab function that finds initial values that are mostly in catchment of multidimensional Newton root finding algorithm that finds coefficients of Z-series so that target moments are perfectly matched.<br>
+<br>
+I have some better ideas to improve this initial function that feeds initial values to Newton root-finding algorithm. Its idea is heuristically based on smoothing techniques of sparse matrix solutions like Gauss-Siedel etc. For example in Gauss-Siedel, we update one grid variable at a time so that PDE is matched at that grid point but goes slightly off at neighboring point (where match was perfect just one step earlier). But due to repeated iterations of Gauss-Siedel, the mismatch continues to decrease all over the grid until it virtually vanishes. <br>
+In similar spirit, I am trying to find coefficients so that its associated moment (2nd moment is associated with coefficient of Z and third moment is associated with coefficient of Z^2 and so on.) is perfectly matched. But perfect matching to associated moment means that previous moment that had been perfectly matched (and other moments) would slightly go off but repeated rounds of matching over the coefficients would decrease the mismatch of moments everywhere. This is only heuristic since I do not have any rigorous fourier theory that exists about PDE smoothing solution methods like gauss-siedel etc. <br>
+I have tried to find ways to make this smoothing faster and more accurate and I have many ideas that I want to use to improve this function that finds initial guess to Newton method. In previous program that was very slow, I just iterated once over seven coefficients of the Z-series but with new improvements (that I want to implement), I am sure that I would be able to make multiple smoothing passes over the coefficients and sometimes initial value might become so good at smoothing stage that final Newton root search might not even be needed. I want to spend next few days in trying to improve the smoothing method and making sure that Newton root finding (with better initial values) works for matching broader range of input moments. This is also important since we will need this function again when solving system of stochastic volatility equations and we will need this function to be very robust.</div>
+
+			
+									
+									<div id="sig873561" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873577">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873577">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873577">
+
+			<h3 ><a href="#p873577">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873577&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873577" title="Post #1640">#1640</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 11th, 2022, 5:47 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I went to the previous program again and re-wrote the smoothing/iterating function that finds initial values later input to Newton multidimensional root-search Method. This is a much better and faster function than before. Please feel free to increase the SDE step size from the conservative value I have used. Here are the new programs. Most of the functions are old and I am not posting them again.<br>
+I have modified initial smoothing function for use when a good initial guess is known from previous values as in the case of SDEs. But when starting blind this function may not be optimal and I will post another function based on the same logic that will approximately fit the moments for use as initial values in Newton root-finding.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = FPESeriesCoeffsFromMomentsAndVarianceAdditionAdaptStep()
+
+%Copyright Ahsan Amin. Infiniti derivatives Technologies.
+%Please fell free to connect on linkedin: linkedin.com/in/ahsan-amin-0a53334 
+%or skype ahsan.amin2999
+%In this program, I am simulating the SDE given as
+%dy(t)=mu1 x(t)^beta1 dt + mu2 x(t)^beta2 dt +sigma x(t)^gamma dz(t)
+
+%I have simulated the transformed 
+%Besse1l process version of the SDE and then changed coordinates to retreive
+%the SDE in original coordinates.
+
+
+dt=.125/2/2*1;   % Simulation time interval.%Fodiffusions close to zero
+             %decrease dt for accuracy.
+Tt=128/2/2*2;%*4*4*1;%*4;%128*2*2*2;     % Number of simulation levels. Terminal time= Tt*dt; //.125/32*32*16=2 year; 
+T=Tt*dt;
+
+%Below I have done calculations for smaller step size at start.
+ds(1:3)=dt/4;
+
+%Below order for monte carlo
+OrderA=4;  %
+OrderM=4;  %
+
+if(T&gt;=1)
+dtM=1/32;%.0625/1;
+TtM=T/dtM;
+else
+dtM=T/16;%.0625/1;
+TtM=T/dtM;
+end
+
+
+
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+
+x0=1;   % starting value of SDE
+beta1=0.0;
+beta2=1.0;   % Second drift term power.
+gamma=.95;%50;   % volatility power.                                                                                                                                                                                                                                                                     
+kappa=2.2;%.950;   %mean reversion parameter.
+theta=.15;%mean reversion target
+sigma0=1.0;%Volatility value
+
+
+%StepSize Management. decrease the step size if MomentsIncreaseRatio is larger
+    %than  MaxMomentRatio and increase the step size if 
+    %MomentsIncreaseRatio is smaller than  MinMomentRatio
+    %Look at the code in the body and feel free to play with stepsize
+    %variables
+MaxMomentRatio=1.01;
+MinMomentRatio=1.002;
+MaxStepSize=1/128;
+MinStepSize=1/512/16;
+
+
+
+%you can specify any general mu1 and mu2 and beta1 and beta2.
+mu1=1*theta*kappa;   %first drift coefficient.
+mu2=-1*kappa;    % Second drift coefficient.
+%mu1=0;
+%mu2=0;
+
+alpha=1;% x^alpha is being expanded. This is currently for monte carlo only.
+alpha1=1-gamma;%This is for expansion of integrals for calculation of drift 
+%and volatility coefficients
+%yy(1:Nn)=x0;                
+w0=x0^(1-gamma)/(1-gamma);
+
+
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z(1:Nn)=(((1:Nn)-20.5)*dNn-NnMid);
+Z
+str=input('Look at Z');
+ZProb(1)=normcdf(.5*Z(1)+.5*Z(2),0,1)-normcdf(.5*Z(1)+.5*Z(2)-dNn,0,1);
+ZProb(Nn)=normcdf(.5*Z(Nn)+.5*Z(Nn-1)+dNn,0,1)-normcdf(.5*Z(Nn)+.5*Z(Nn-1),0,1);
+ZProb(2:Nn-1)=normcdf(.5*Z(2:Nn-1)+.5*Z(3:Nn),0,1)-normcdf(.5*Z(2:Nn-1)+.5*Z(1:Nn-2),0,1);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%This block is analytics for higher order monte carlo. This is explained in
+%my thread on wilmott.com
+
+sigma11(1:OrderA+1)=0;
+mu11(1:OrderA+1)=0;
+mu22(1:OrderA+1)=0;
+sigma22(1:OrderA+1)=0;
+% index 1 correponds to zero level since matlab indexing starts at one. 
+sigma11(1)=1;
+mu11(1)=1;
+mu22(1)=1;
+sigma22(1)=1;
+
+for k=1:(OrderA+1)
+    if sigma0~=0
+        sigma11(k)=sigma0^(k-1);
+    end
+    if mu1 ~= 0
+        mu11(k)=mu1^(k-1);
+    end
+    if mu2 ~= 0
+        mu22(k)=mu2^(k-1);
+    end
+    if sigma0~=0
+        sigma22(k)=sigma0^(2*(k-1));
+    end
+end
+%Ft(1:TtM+1,1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0; %General time powers on hermite polynomials
+Fp(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;%General x powers on coefficients of hermite polynomials.
+Fp1(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;%General x powers for bessel transformed coordinates.
+
+%YCoeff0 and YCoeff are coefficents for original coordinates monte carlo.
+%YqCoeff0 and YqCoeff are bessel/lamperti version monte carlo.
+
+YCoeff0(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;
+YqCoeff0(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;
+%Pre-compute the time and power exponent values in small multi-dimensional arrays
+YCoeff = ItoTaylorCoeffsNew(alpha,beta1,beta2,gamma); %expand y^alpha where alpha=1;
+YqCoeff = ItoTaylorCoeffsNew(alpha1,beta1,beta2,gamma);%expand y^alpha1 where alpha1=(1-gamma)
+YqCoeff=YqCoeff/(1-gamma); %Transformed coordinates coefficients have to be 
+%further divided by (1-gamma)
+
+for k = 0 : (OrderA)
+    for m = 0:k
+        l4 = k - m + 1;
+        for n = 0 : m
+            l3 = m - n + 1;
+            for j = 0:n
+                l2 = n - j + 1;
+                l1 = j + 1;
+                %Ft(l1,l2,l3,l4) = dtM^((l1-1) + (l2-1) + (l3-1) + .5* (l4-1));
+                Fp(l1,l2,l3,l4) = (alpha + (l1-1) * beta1 + (l2-1) * beta2 + (l3-1) * 2* gamma + (l4-1) * gamma ...
+                    - (l1-1) - (l2-1) - 2* (l3-1) - (l4-1));
+                Fp1(l1,l2,l3,l4) = (alpha1 + (l1-1) * beta1 + (l2-1) * beta2 + (l3-1) * 2* gamma + (l4-1) * gamma ...
+                    - (l1-1) - (l2-1) - 2* (l3-1) - (l4-1));
+                
+                YCoeff0(l1,l2,l3,l4) =YCoeff(l1,l2,l3,l4).*mu11(l1).*mu22(l2).*sigma22(l3).*sigma11(l4);
+                YqCoeff0(l1,l2,l3,l4) =YqCoeff(l1,l2,l3,l4).*mu11(l1).*mu22(l2).*sigma22(l3).*sigma11(l4);
+            end
+        end
+    end
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Below analytics to calculate the Z-series of SDE at different time steps. 
+%We use the principle of addition of cumulants to find the resulting
+%density of SDE at each step.
+ExpnOrder=7;
+SeriesOrder=7;
+NMoments=8;
+wnStart=1;
+tic
+%Tx is running time.
+%T is terminal time.
+%tt is time index.
+Tx=0;
+tt=0;
+while(Tx&lt;T)
+    tt=tt+1;
+   % t1=(tt-1)*dt;
+   % t2=(tt)*dt;
+    if(tt==1)
+ 
+        [wMu0dt,dwMu0dtdw] = BesselDriftAndDerivativesH0(w0,YqCoeff0,Fp1,gamma,ds(tt),8);
+ 
+        c0=wMu0dt+w0;
+        c(1)=sigma0*sqrt(ds(tt))
+        c(2:10)=0.0;
+        w0=c0;
+        
+        Tx=Tx+ds(tt);
+    
+    elseif(tt==2) 
+
+    %dt=ds(tt);    
+        
+    %[wMu0dt,dwMu0dtdw] = BesselDriftAndDerivatives02A(w0,mu1,mu2,beta1,beta2,sigma0,gamma,ds(tt),8);
+    [wMu0dt,dwMu0dtdw] = BesselDriftAndDerivativesH0(w0,YqCoeff0,Fp1,gamma,ds(tt),8);
+     [b0,b] = CalculateDriftbCoeffs08(wMu0dt,dwMu0dtdw,c,SeriesOrder);
+     
+     
+     c0=c0+b0;
+     c(1)=b(1)+sqrt(c(1)^2+sigma0^2*ds(tt));
+     c(2)=b(2);
+     c(3)=b(3);
+     c(4)=b(4);
+     c(5)=b(5);
+     c(6)=b(6);
+     c(7)=b(7);
+     
+     Tx=Tx+ds(tt);       
+            
+    else
+        
+    
+    %below wMu0dta is drift and dwMu0dtdwa are its derivatives.
+    %wMu1dt is its first derivative and dwMu1dtdw are derivatives of first
+    %derivative.
+
+
+     %[wMu0dta,dwMu0dtdwa,wMu1dt,dwMu1dtdw] = BesselDriftAndDerivatives08(w0,mu1,mu2,beta1,beta2,sigma0,gamma,dt,10);
+     
+     %[wMu0dt,dwMu0dtdw] = BesselDriftAndDerivatives04A(w0,mu1,mu2,beta1,beta2,sigma0,gamma,ds(tt),8);
+     [wMu0dt,dwMu0dtdw] = BesselDriftAndDerivativesH0(w0,YqCoeff0,Fp1,gamma,ds(tt),8);
+     [b0,b] = CalculateDriftbCoeffs08(wMu0dt,dwMu0dtdw,c,SeriesOrder);
+
+%Below Calculate original terms(associated with first hermite and second
+%hermite polynomial in volatility)and its eight derivatives    
+    [wVol0dt,dwVol0dtdw] = BesselVolAndDerivativesH1(w0,YqCoeff0,Fp1,gamma,ds(tt),8);
+    [wVol2dt,dwVol2dtdw] = BesselVolAndDerivativesH2(w0,YqCoeff0,Fp1,gamma,ds(tt),8);
+
+%Below Calculate Z-Series expansions of volatility terms associated with 
+%first hermite polynomial and 2nd hermite polynomial.
+    [g0,g] = CalculateDriftbCoeffs08(wVol0dt,dwVol0dtdw,c,SeriesOrder);
+    [h0,h] = CalculateDriftbCoeffs08(wVol2dt,dwVol2dtdw,c,SeriesOrder);
+%Principal term in first hermite was not included in expansion. It is 
+%added here
+    g0=g0+sigma0*sqrt(ds(tt));
+    
+    %Below function calculates Moments and Cumulants of diffusion term of
+    %the SDE
+    [Moments,kk] = CalculateVolTermMoments(g0,g,h0,h,SeriesOrder,NMoments);
+    
+    
+ %Below drift series is linearly added to SDE series to get new intermediate 
+ %SDE series.     
+    c0=c0+b0;
+    c(1:7)=c(1:7)+b(1:7);
+    
+ %Below calculate cumulants and moments of intermediate SDE series   
+    [CC] = CalculateCumulants(c0,c,SeriesOrder,NMoments);
+    [MM1] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+    
+    
+    %Below Calculate Cumulants of target density by arithmetic addition of
+    %first eight cumulants of diffusion term and intermediate SDE term.
+    k1=CC+kk;
+    
+    %Below Calculate Standardized Cumulants of the target density. 
+    
+    k(1)=0;
+    k(2)=1;
+    k(3)=k1(3)/k1(2).^1.5;
+    k(4)=k1(4)/k1(2).^2.0;
+    k(5)=k1(5)/k1(2).^2.5;
+    k(6)=k1(6)/k1(2).^3.0;
+    k(7)=k1(7)/k1(2).^3.5;
+    k(8)=k1(8)/k1(2).^4.0;
+    
+    
+    %Below Calculate Standardized Moments of target density.
+    rmu(1)=k(1);
+    rmu(2)=k(1)*rmu(1)+k(2);
+    rmu(3)=k(1)*rmu(2)+2*k(2)*rmu(1)+k(3);
+    rmu(4)=k(1)*rmu(3)+3*k(2)*rmu(2)+3*k(3)*rmu(1)+k(4);    
+    rmu(5)=k(1)*rmu(4)+4*k(2)*rmu(3)+6*k(3)*rmu(2)+4*k(4)*rmu(1)+k(5);
+    rmu(6)=k(1)*rmu(5)+5*k(2)*rmu(4)+10*k(3)*rmu(3)+10*k(4)*rmu(2)+5*k(5)*rmu(1)+k(6);
+    rmu(7)=k(1)*rmu(6)+6*k(2)*rmu(5)+15*k(3)*rmu(4)+20*k(4)*rmu(3)+15*k(5)*rmu(2)+6*k(6)*rmu(1)+k(7);
+    rmu(8)=k(1)*rmu(7)+7*k(2)*rmu(6)+21*k(3)*rmu(5)+35*k(4)*rmu(4)+35*k(5)*rmu(3)+21*k(6)*rmu(2)+7*k(7)*rmu(1)+k(8);
+
+    %We provide initial guess for calibration procedure
+    
+    if(tt==3)
+        a0Guess=(c0-k1(1))/sqrt(CC(2));
+        aGuess(1)=c(1)/sqrt(CC(2));
+        aGuess(2:7)=c(2:7)/sqrt(CC(2));
+    else
+        a0Guess=(c0-k1(1))/sqrt(CC(2));
+        aGuess(1:7)=(c(1:7))/sqrt(CC(2));
+    end
+        
+    %We calculate coefficients of Standardized target density
+    [c0,c] = CalculateDensityFromStandardizedMoments(rmu,a0Guess,aGuess);
+    
+    %From standardized Z-seriesCoefficients of target density, we change to
+    %actual non-standardized Z-series coefficients.
+    c0=c0*sqrt(k1(2))+k1(1);
+    c=c*sqrt(k1(2));
+ 
+    %Actual Raw Moments after the Calculation of target density.
+    [MM2] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+    %Calculate the Ratio of Moments between intermediate density and the
+    %new target density
+    MomentsIncreaseRatio=max(MM2(2:8)./MM1(2:8));
+    
+    %Below decrease the step size if MomentsIncreaseRatio is larger
+    %than  MaxMomentRatio and increase the step size if 
+    %MomentsIncreaseRatio is smaller than  MinMomentRatio
+
+    IncreaseRatioFlag=0;
+    DecreaseRatioFlag=0;
+    if(MomentsIncreaseRatio&gt;MaxMomentRatio)
+        if (ds(tt)&gt;MinStepSize)
+            DecreaseRatioFlag=1;
+        end
+    elseif (MomentsIncreaseRatio&lt;MinMomentRatio)   
+        if (ds(tt)&lt;MaxStepSize)
+            IncreaseRatioFlag=1;
+        end
+    end
+    
+    if(DecreaseRatioFlag==1)
+        ds(tt+1)=ds(tt)/2;
+    
+    elseif(IncreaseRatioFlag==1)
+        ds(tt+1)=ds(tt)*2;
+    else
+        ds(tt+1)=ds(tt);
+    end    
+    
+    %Tx is running time.
+    Tx=Tx+ds(tt);
+    
+    %At last step make sure that step size is appropriate.
+    if(Tx+ds(tt+1)&gt;T)
+        ds(tt+1)=T-Tx;
+    end
+    
+
+    %Assign the median of density to w0
+    w0=c0;
+    
+    end
+
+end
+
+ttFirst=tt;
+wnStart=1;
+
+
+%Below w which is the SDE in bessel coordinates and it is calulated from
+%Z-series in Bessel coordinates.
+w(1:Nn)=c0;
+for nn=1:ExpnOrder
+    w(1:Nn)=w(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+Flag=0;
+for nn=Nn-1:-1:1
+    if((w(nn)&lt;0)&amp;&amp;(Flag==0))
+        wnStart=nn+1;
+        Flag=1;
+    end
+end
+
+
+%Below we directly transform the density of SDE in bessel coordinates into
+%density of SDE in original coordinates.
+
+yy(wnStart:Nn)=((1-gamma).*w(wnStart:Nn)).^(1/(1-gamma));
+%yy0=((1-gamma).*w0).^(1/(1-gamma));
+
+%Below we make calculations of density in original coordinates by doing 
+%change of probability derivative with respect to gaussian density.
+Dfyy(wnStart:Nn)=0;
+for nn=wnStart+1:Nn-1
+    
+    Dfyy(nn) = (yy(nn + 1) - yy(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    
+    %Change of variable derivative for densities
+end
+Dfyy(Nn)=Dfyy(Nn-1);
+Dfyy(1)=Dfyy(2);
+
+
+pyy(1:Nn)=0;
+for nn = wnStart:Nn
+    
+    pyy(nn) = (normpdf(Z(nn),0, 1))/abs(Dfyy(nn));
+end
+
+
+toc
+
+%Below we do calculations for change of Z-series coefficients from
+%coordinates in Bessel to Z-series coefficients in original coordinates of
+%the SDE.
+%The new series is expanded around c0 which is median of the density in
+%Bessel coordinates.
+   Bmu=c0;%+c(2)+3*c(4)+15*c(6)
+   Bmu
+   
+%Calculate the first seven derivatives of transformation from Bessel
+%coordinates to original coordinates of SDE at the median value Bmu=c0.
+   
+  yB0=((1-gamma).*Bmu).^(1/(1-gamma));
+  dyB0(1)=((1-gamma).*Bmu).^(1/(1-gamma)-1);
+  dyB0(2)=(1/(1-gamma)-1).*((1-gamma).*Bmu).^(1/(1-gamma)-2)*(1-gamma);
+  dyB0(3)=(1/(1-gamma)-1).*(1/(1-gamma)-2).*((1-gamma).*Bmu).^(1/(1-gamma)-3)*(1-gamma)^2;
+  dyB0(4)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*((1-gamma).*Bmu).^(1/(1-gamma)-4)*(1-gamma)^3;
+  dyB0(5)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*((1-gamma).*Bmu).^(1/(1-gamma)-5)*(1-gamma)^4;
+  dyB0(6)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*(1/(1-gamma)-5)*((1-gamma).*Bmu).^(1/(1-gamma)-6)*(1-gamma)^5;
+  dyB0(7)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*(1/(1-gamma)-5)*(1/(1-gamma)-6)*((1-gamma).*Bmu).^(1/(1-gamma)-7)*(1-gamma)^6;
+%  dyB0(8)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*(1/(1-gamma)-5)*(1/(1-gamma)-6)*(1/(1-gamma)-7)*((1-gamma).*Bmu).^(1/(1-gamma)-8)*(1-gamma)^7;
+%  dyB0(9)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*(1/(1-gamma)-5)*(1/(1-gamma)-6)*(1/(1-gamma)-7)*(1/(1-gamma)-8)*((1-gamma).*Bmu).^(1/(1-gamma)-9)*(1-gamma)^8;
+%  dyB0(10)=(1/(1-gamma)-1).*(1/(1-gamma)-2)*(1/(1-gamma)-3)*(1/(1-gamma)-4)*(1/(1-gamma)-5)*(1/(1-gamma)-6)*(1/(1-gamma)-7)*(1/(1-gamma)-8)*(1/(1-gamma)-9)*((1-gamma).*Bmu).^(1/(1-gamma)-10)*(1-gamma)^9;
+
+c(8:10)=0;
+
+%Below finally calculate the Z-series coefficients from Bessel coordinates 
+%to original coordinates using derivatives calculated at previous step.
+   [d0,d] = CalculateDriftbCoeffs08(yB0,dyB0,c,7);
+ 
+%Below calculate SDE variable in original coordinates after expanding the 
+%Z-series coefficients in original coordinates.   
+Yw(1:Nn)=d0;
+for nn=1:7
+    Yw(1:Nn)=Yw(1:Nn)+d(nn)*Z(1:Nn).^nn;
+end
+
+%Below calculate the density from Z-series Coefficients in original
+%coordinates. We want to see how exact they are since we would need to use
+%them in analytics later when calculating integrals of variance for
+%stochastic volatility models.
+
+DfYw(wnStart:Nn)=0;
+for nn=wnStart+1:Nn-1
+    
+    DfYw(nn) = (Yw(nn + 1) - Yw(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    
+    %Change of variable derivative for densities
+end
+DfYw(Nn)=DfYw(Nn-1);
+DfYw(1)=DfYw(2);
+
+
+pYw(1:Nn)=0;
+for nn = wnStart:Nn
+    
+    pYw(nn) = (normpdf(Z(nn),0, 1))/abs(DfYw(nn));
+end
+
+%AnalyticMean1 is calculated from direct transformation of density in Bessel coordinates
+AnalyticMean1=sum(yy(wnStart:Nn).*ZProb(wnStart:Nn)) %Original process average from transformed density
+%AnalyticMean2 is calculated from Z-series coordinates of density in Original coordinates
+AnalyticMean2=d0+d(2)+3*d(4)+15*d(6) %Original process average from coordinates 
+disp('true Mean only applicable to standard SV mean reverting type models otherwise disregard');
+TrueMean=theta+(x0-theta)*exp(-kappa*T)%Mean reverting SDE original variable true average
+%yy0
+%yB0
+
+%theta1=1;
+
+%Monte Carlo starts here. For details see my thread on wilmott.com 
+%where I gave details of higher order monte carlo.
+
+rng(29079137, 'twister')
+paths=50000;
+YY(1:paths)=x0;  %Original process monte carlo.
+Random1(1:paths)=0;
+for tt=1:TtM
+    
+    
+    Random1=randn(size(Random1));
+    HermiteP1(1,1:paths)=1;
+    HermiteP1(2,1:paths)=Random1(1:paths);
+    HermiteP1(3,1:paths)=Random1(1:paths).^2-1;
+    HermiteP1(4,1:paths)=Random1(1:paths).^3-3*Random1(1:paths);
+    HermiteP1(5,1:paths)=Random1(1:paths).^4-6*Random1(1:paths).^2+3;
+
+ 
+    YY(1:paths)=YY(1:paths) + ...
+        (YCoeff0(1,1,2,1).*YY(1:paths).^Fp(1,1,2,1)+ ...
+        YCoeff0(1,2,1,1).*YY(1:paths).^Fp(1,2,1,1)+ ...
+        YCoeff0(2,1,1,1).*YY(1:paths).^Fp(2,1,1,1))*dtM + ...
+        (YCoeff0(1,1,3,1).*YY(1:paths).^Fp(1,1,3,1)+ ...
+        YCoeff0(1,2,2,1).*YY(1:paths).^Fp(1,2,2,1)+ ...
+        YCoeff0(2,1,2,1).*YY(1:paths).^Fp(2,1,2,1)+ ...
+        YCoeff0(1,3,1,1).*YY(1:paths).^Fp(1,3,1,1)+ ...
+        YCoeff0(2,2,1,1).*YY(1:paths).^Fp(2,2,1,1)+ ...
+        YCoeff0(3,1,1,1).*YY(1:paths).^Fp(3,1,1,1))*dtM^2 + ...
+        ((YCoeff0(1,1,1,2).*YY(1:paths).^Fp(1,1,1,2).*sqrt(dtM))+ ...
+        (YCoeff0(1,1,2,2).*YY(1:paths).^Fp(1,1,2,2)+ ...
+        YCoeff0(1,2,1,2).*YY(1:paths).^Fp(1,2,1,2)+ ...
+        YCoeff0(2,1,1,2).*YY(1:paths).^Fp(2,1,1,2)).*dtM^1.5) .*HermiteP1(2,1:paths) + ...
+        ((YCoeff0(1,1,1,3).*YY(1:paths).^Fp(1,1,1,3) *dtM) + ...
+        (YCoeff0(1,1,2,3).*YY(1:paths).^Fp(1,1,2,3)+ ...
+        YCoeff0(1,2,1,3).*YY(1:paths).^Fp(1,2,1,3)+ ...
+        YCoeff0(2,1,1,3).*YY(1:paths).^Fp(2,1,1,3)).*dtM^2).*HermiteP1(3,1:paths) + ...
+        ((YCoeff0(1,1,1,4).*YY(1:paths).^Fp(1,1,1,4)*dtM^1.5 )).*HermiteP1(4,1:paths) + ...
+        (YCoeff0(1,1,1,5).*YY(1:paths).^Fp(1,1,1,5)*dtM^2.0).*HermiteP1(5,1:paths);
+    
+    
+end
+
+
+
+
+YY(YY&lt;0)=0;
+disp('Original process average from monte carlo');
+MCMean=sum(YY(:))/paths %origianl coordinates monte carlo average.
+disp('Original process average from our simulation');
+ItoHermiteMean=sum(yy(wnStart:Nn).*ZProb(wnStart:Nn)) %Original process average from coordinates 
+ 
+disp('true Mean only applicble to standard SV mean reverting type models otherwise disregard');
+TrueMean=theta+(x0-theta)*exp(-kappa*T)%Mean reverting SDE original variable true average
+
+
+MaxCutOff=100;
+NoOfBins=round(1*500*gamma^2*4*sigma0/sqrt(MCMean)/(1+kappa));%Decrease the number of bins if the graph is too 
+[YDensity,IndexOutY,IndexMaxY] = MakeDensityFromSimulation_Infiniti_NEW(YY,paths,NoOfBins,MaxCutOff );
+plot(Yw(wnStart+1:Nn-1),pYw(wnStart+1:Nn-1),'b',yy(wnStart+1:Nn-1),pyy(wnStart+1:Nn-1),'r',IndexOutY(1:IndexMaxY),YDensity(1:IndexMaxY),'g');
+ %plot(y_w(wnStart+1:Nn-1),fy_w(wnStart+1:Nn-1),'r',IndexOutY(1:IndexMaxY),YDensity(1:IndexMaxY),'g',Z(wnStart+1:Nn-1),fy_w(wnStart+1:Nn-1),'b');
+
+ 
+dtAvg=T/ttFirst; 
+ 
+title(sprintf('x0 = %.4f,theta=%.3f,kappa=%.2f,gamma=%.3f,sigma=%.2f,T=%.2f,dtAvg=%.5f,M=%.4f,TM=%.4f', x0,theta,kappa,gamma,sigma0,T,dtAvg,ItoHermiteMean,TrueMean));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+ 
+legend({'SDE density From Z-series in Original Coordinates','SDE density Transformed Directly From Bessel Coordinates','Monte Carlo Density'},'Location','northeast')
+ 
+
+
+
+
+str=input('red line is density of SDE from Addition of Cumulants, green is monte carlo.');
+
+
+plot((wnStart+1:Nn-1)*dNn-NnMid,Yw(wnStart+1:Nn-1),'b',(wnStart+1:Nn-1)*dNn-NnMid,yy(wnStart+1:Nn-1),'r');
+
+title('SDE Stochastic Variable as a Function of Standard Normal');%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+ 
+legend({'SDE Variable From Z-series in Original Coordinates','SDE Variable Transformed Directly From Bessel Coordinates'},'Location','northwest')
+
+str=input('red line is density of SDE from addition of Cumulants method, green is monte carlo.');
+
+
+
+end</code></pre></div>
+ .<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [b0,b] = CalculateDensityFromStandardizedMoments(Moments0,b0Guess,bGuess)
+
+% cmu(1)=0;
+% cmu(2)=1;
+% cmu(3)=Moments0(3)/Moments0(2).^1.5;
+% cmu(4)=Moments0(4)/Moments0(2).^2.0;
+% cmu(5)=Moments0(5)/Moments0(2).^2.50;
+% cmu(6)=Moments0(6)/Moments0(2).^3.0;
+% cmu(7)=Moments0(7)/Moments0(2).^3.50;
+% cmu(8)=Moments0(8)/Moments0(2).^4.0;
+
+cmu=Moments0;
+
+%[c0,c] =PreSmoothingGuess02(cmu);
+%cc=c;
+%cc0=-(cc(2)+cc(4)*3+cc(6)*15);
+
+%cc=bGuess;
+%cc0=b0Guess;
+
+%[cc0,cc] =PreSmoothingGuess02(cmu);
+%[cc0,cc] =PreSmoothingGuess02NewFromGuess(cmu,bGuess);
+[cc0,cc] = PreSmoothingGuessAdvancedFromGuess(cmu,bGuess);
+
+SeriesOrder=7;
+NMoments=8;
+NZterms=8;
+
+
+
+
+%[Moments] = CalculateMomentsOfZSeries(cc0,cc,SeriesOrder,NMoments)
+%cmu
+
+%str=input('Look at moments--before')
+
+
+
+%Below calculate F, the defect vector from target cumulants. And calculate
+%dF which is the matrix consisting of derivatives of defect vector from
+%target cumulants.
+
+%[F,dF] = CalculateCumulantsAndDerivativesFromMoments_0(C,cc0,cc,SeriesOrder,NMoments,8)
+[F,dF] = CalculateMomentsAndDerivatives_0(cmu,cc0,cc,SeriesOrder,NZterms,NMoments);
+
+% 
+%  EZ(1)=0;
+%  EZ(2)=1;
+%  for nn=3:NMoments*SeriesOrder+NZterms+2
+%      if rem(nn,2)==1
+%          EZ(nn)=0;
+%      else
+%          EZ(nn)=EZ(nn-2)*(nn-1);
+%          EZ(nn);
+%      end
+%  end
+% %[EnMoment,dEnMomentdCoeff] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,SeriesOrder,nMoment,EZ)
+% [M3,dM3] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,3,EZ);
+% 
+% 
+% F(3,1)+cmu(3)
+% M3
+% dF(3,3)
+% dM3
+% 
+% [M4,dM4] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,4,EZ);
+% 
+% 
+% F(4,1)+cmu(4)
+% M4
+% dF(4,4)
+% dM4
+% 
+% [M5,dM5] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,5,EZ);
+% 
+% 
+% F(5,1)+cmu(5)
+% M5
+% dF(5,5)
+% dM5
+% 
+% [M6,dM6] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,6,EZ);
+% 
+% 
+% F(6,1)+cmu(6)
+% M6
+% dF(6,6)
+% dM6
+% 
+% [M7,dM7] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,7,EZ);
+% 
+% 
+% F(7,1)+cmu(7)
+% M7
+% dF(7,7)
+% dM7
+% 
+% [M8,dM8] = CalculateParticularMomentAndDerivativeOfItsCoeff(cc0,cc,7,8,EZ);
+% 
+% 
+% F(8,1)+cmu(8)
+% M8
+% dF(8,8)
+% dM8
+% str=input('Look at comparison of moments and coefficients derivative');
+da(1,1)=cc0;
+da(2:SeriesOrder+1,1)=cc(1:SeriesOrder);
+
+
+
+[Moments] = CalculateMomentsOfZSeries(cc0,cc,SeriesOrder,NMoments);
+ObjBest=0;
+
+
+    
+   ObjBest=100000*(abs(cmu(1)-Moments(1)))+abs(cmu(2)-Moments(2))+abs((cmu(3)-Moments(3))^(1/1.5))+abs((cmu(4)-Moments(4))^(1/2.0)) + ...
+    abs((cmu(5)-Moments(5))^(1/2.0))+abs((cmu(6)-Moments(6))^(1/2.0))+abs((cmu(7)-Moments(7))^(1/2.0))+ ...
+    abs((cmu(8)-Moments(8))^(1/2.0));
+
+
+b0Best=cc0;
+bBest(1:SeriesOrder)=cc(1:SeriesOrder);
+
+nn=0;
+while((nn&lt;100)&amp;&amp;((abs(F(1,1))&gt;.000000000001) || (abs(F(2,1))&gt;.000000000001) || (abs(F(3,1))&gt;.000000000001) || (abs(F(4,1))&gt;.00000000001)|| (abs(F(5,1))&gt;.00000000001)|| (abs(F(6,1))&gt;.00000000001)|| (abs(F(7,1))&gt;.00000000001)|| (abs(F(8,1))&gt;.00000000001)  ))
+
+nn=nn+1;
+%Below Newton matrix equation to improve the Z-series coefficients guess at previous step.
+
+
+
+da=da-dF\F;
+
+%b0=median
+b0=da(1,1);
+b(1:SeriesOrder)=da(2:SeriesOrder+1,1);
+
+%[F,dF] = CalculateCumulantsAndDerivativesFromMoments_0(C,b0,b,SeriesOrder,SeriesOrder,NoOfCumulants);
+[F,dF] = CalculateMomentsAndDerivatives_0(cmu,b0,b,SeriesOrder,NZterms,NMoments);
+[IsValidFlag] = CheckIsValidDensity(b0,b);
+
+[Moments] = CalculateMomentsOfZSeries(b0,b,SeriesOrder,NMoments);
+ObjNew=0;
+
+    ObjNew=100000*(abs(cmu(1)-Moments(1)))+abs(cmu(2)-Moments(2))+abs((cmu(3)-Moments(3))^(1/1.5))+abs((cmu(4)-Moments(4))^(1/2.0)) + ...
+    abs((cmu(5)-Moments(5))^(1/2.0))+abs((cmu(6)-Moments(6))^(1/2.0))+abs((cmu(7)-Moments(7))^(1/2.0))+ ...
+    abs((cmu(8)-Moments(8))^(1/2.0));
+
+  
+  if((ObjBest&gt;ObjNew) &amp;&amp;( IsValidFlag))
+      
+       ObjBest=ObjNew;
+       b0Best=b0;
+       bBest(1:SeriesOrder)=b(1:SeriesOrder);
+   end
+
+da(1,1)=b0;
+da(2:SeriesOrder+1,1)=b(1:SeriesOrder);
+
+
+end
+  b0=b0Best;%Best;
+  b(1:SeriesOrder)=bBest;%Best(1:SeriesOrder);
+  
+  %Above are the best chosen Z-series coefficients based on the objective function.
+  %But my objective function can be improved.
+  
+[Moments] = CalculateMomentsOfZSeries(b0,b,SeriesOrder,NMoments);
+%Above are raw moments calculated from the resulting Z-series from Newton
+%Method
+
+%Below are raw moments that were input to calibration.
+cmu;
+%str=input('Look at comparison of moments calibration--00');
+%b0
+%b
+nn
+%str=input('Look at comparison of moments calibration--0');
+
+
+b0=b0*sqrt(Moments0(2));
+b=b*sqrt(Moments0(2));
+b0;
+b;
+%str=input('Look at comparison of moments calibration--1');
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [EnMoment,dEnMomentdCoeff] = CalculateParticularMomentAndDerivativeOfItsCoeff(a0,a,SeriesOrder,nMoment,EZ)
+
+
+% if(SeriesOrder&gt;=8)
+% a0=-(a(2)+3*a(4)+15*a(6)+105*a(8));% ---1
+% end
+% if(SeriesOrder&lt;8)
+% a0=-(a(2)+3*a(4)+15*a(6));% ---1
+% end
+% 
+% EZ(1)=0;
+% EZ(2)=1;
+% for nn=3:NMoments*SeriesOrder+NZterms+2
+%     if rem(nn,2)==1
+%         EZ(nn)=0;
+%     else
+%         EZ(nn)=EZ(nn-2)*(nn-1);
+%         EZ(nn);
+%     end
+% end
+% EZ;
+
+%EXZ(1,1)=1;
+%for pp1=1:NZterms
+%        EXZ(1,pp1+1)=EZ(pp1);
+%end
+
+
+a(SeriesOrder+1:nMoment*SeriesOrder+1+SeriesOrder)=0;
+b0=a0;
+b=a;
+
+for mm=2:nMoment
+    
+    [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm+SeriesOrder+1);
+     b(SeriesOrder*mm+1:nMoment*SeriesOrder+SeriesOrder+1)=0;
+     if(mm==nMoment-1)
+         dEnMomentdCoeff=b0.*EZ(nMoment-1);
+         for pp2=1:SeriesOrder*nMoment-1
+            
+            dEnMomentdCoeff=dEnMomentdCoeff+b(pp2).*EZ(pp2+nMoment-1);
+        end
+        dEnMomentdCoeff=dEnMomentdCoeff*nMoment; 
+     end
+     if(mm==nMoment)
+        EnMoment=b0;
+        for pp2=1:SeriesOrder*nMoment
+            EnMoment=EnMoment+b(pp2).*EZ(pp2);
+    
+        end
+     end
+end   
+
+    
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [SecondMoment] = CalculateSecondMomentC7(a0,a)
+
+
+SecondMoment=a0^2+a(1)^2 +2* a0* a(2) +3*(a(2).^2+2* a(1).* a(3) +2* a0* a(4))+ ...
+    15*(a(3).^2 +2 *a(2).* a(4) +2 *a(1).* a(5)+2* a0* a(6))+105*(a(4).^2 +2* a(3).* a(5)+2* a(2).* a(6) +2* a(1).* a(7) )+ ...
+    945*(a(5).^2 +2* a(4).* a(6) +2 *a(3).* a(7) )+(10395)*(a(6).^2+2* a(5).* a(7) )+(135135)*a(7).^2;
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [c0,c] = PreSmoothingGuessAdvancedFromGuess(cmu,cin)
+
+
+
+
+%Mul=1.0;
+SeriesOrder=7;
+NMoments=8;
+
+ EZ(1)=0;
+ EZ(2)=1;
+ for nn=3:NMoments*SeriesOrder+SeriesOrder+2
+     if rem(nn,2)==1
+         EZ(nn)=0;
+     else
+         EZ(nn)=EZ(nn-2)*(nn-1);
+         EZ(nn);
+     end
+ end
+
+
+
+
+c0=-(cin(2)+3*cin(4)+15*cin(6));
+c=cin;
+
+for nn=1:1     %increase the iterations over coefficients if neeeded
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+c(2)=c(2)-(M3-cmu(3))/dc2;
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+c(2)=c(2)-(M3-cmu(3))/dc2;
+
+c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[M4,dc3] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,4,EZ);
+
+c(3)=c(3)-(M4-cmu(4))/dc3;
+
+[M4,dc3] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,4,EZ);
+
+c(3)=c(3)-(M4-cmu(4))/dc3;
+
+%c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[M5,dc4] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,5,EZ);
+
+c(4)=c(4)-(M5-cmu(5))/dc4;
+
+[M5,dc4] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,5,EZ);
+
+c(4)=c(4)-(M5-cmu(5))/dc4;
+
+c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[M6,dc5] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,6,EZ);
+
+c(5)=c(5)-(M6-cmu(6))/dc5;
+
+[M6,dc5] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,6,EZ);
+
+c(5)=c(5)-(M6-cmu(6))/dc5;
+
+%c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[M7,dc6] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,7,EZ);
+
+c(6)=c(6)-(M7-cmu(7))/dc6;
+
+[M7,dc6] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,7,EZ);
+
+c(6)=c(6)-(M7-cmu(7))/dc6;
+
+c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[M8,dc7] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,8,EZ);
+
+c(7)=c(7)-(M8-cmu(8))/dc7;
+
+[M8,dc7] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,8,EZ);
+
+c(7)=c(7)-(M8-cmu(8))/dc7;
+
+%c0=-(c(2)+3*c(4)+15*c(6));
+
+[SecondMoment] = CalculateSecondMomentC7(c0,c);
+
+c=c/sqrt(SecondMoment);
+c0=c0/sqrt(SecondMoment);
+
+
+end
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+Here is the output of the program<br>
+.<br>
+<a href="https://postimg.cc/nMpP8h0T" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/66vJv7Rs/SDEFrom-Zseries-NSmooth01.jpg" class="postimage" alt="Image"></a><br>
+<br>
+<a href="https://postimg.cc/WqNW05hx" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/x8HwD7Yj/SDEFrom-Zseries-NSmooth02.jpg" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig873577" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873600">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873600">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873600">
+
+			<h3 ><a href="#p873600">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873600&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873600" title="Post #1641">#1641</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 12th, 2022, 4:17 am</span></p>
+			
+			
+			
+			<div class="content">Friends, the new program works with many stress parameters where no earlier program I made ever worked. For example, I am simulating the following SDE<br>
+<br>
+dX(t)= kappa *(theta - X(t)) *dt + sigma * X(t)^gamma *dz(t)<br>
+<br>
+I used initial value X0=1, theta =.05, gamma =.95. I increased kappa to very large kappa=32 and sigma to sigma =2 and the program worked very well. It even worked for kappa=64 or kappa=128. When you do this, please decrease your monte carlo step size by a very large multiple. I had to decrease the monte carlo simulation step size to end the mismatch between two as error was in monte carlo with large step.<br>
+.<br>
+.<br>
+.<br>
+<br>
+<br>
+<a href="https://postimg.cc/kBMRBs3r" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/m2CYppmr/High-Kappa-MR01.jpg" class="postimage" alt="Image"></a><br>
+This is another simulation where X0=.05 and theta=1, kappa=32, sigma=2, gamma=.95<br>
+.<br>
+<a href="https://postimg.cc/zbS3fbxX" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/B6RFM2DD/High-Kappa-MR03.jpg" class="postimage" alt="Image"></a><br>
+<br>
+ </div>
+
+			
+									
+									<div id="sig873600" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873632">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873632">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873632">
+
+			<h3 ><a href="#p873632">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873632&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873632" title="Post #1642">#1642</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 13th, 2022, 6:49 pm</span></p>
+			
+			
+			
+			<div class="content">I want to write this post to keep friends aware of current state of my mind control. Things are not looking up in any way. I got an antipsychotic injection the day before yesterday. I have to eat enough food at home since my parents insist that I eat at home and whatever meal I try is quite drugged to not let me get back to work again for a few hours. Mind control agents continue to release sickening gas in my room from time to time. During past few days there were instances when I woke up in middle of the night and felt there were literally vibrations going on in my body. <br>
+So there is really no decrease in mind control activity. I would seriously request friends to please protest to mind control agencies to end my mind control, respect my human dignity and let me live as a free human being. </div>
+
+			
+									
+									<div id="sig873632" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873649">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873649">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873649">
+
+			<h3 ><a href="#p873649">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873649&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873649" title="Post #1643">#1643</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 15th, 2022, 8:08 am</span></p>
+			
+			
+			
+			<div class="content">Friends, as we are learning new things about SDEs, moments and cumulants of random variables and how to use them to construct densities and find products and divisions of random variables, my final goal that might be several years away, is to be able to build a coupled SDEs and random ODEs based dynamic stochastic system of entire economy. <br>
+For example, Several economic variables would be described with low volatility SDEs and a few others like stock markets with relatively higher volatility SDEs. And there would possibly be some other variables whose evolution will be based on ODEs of random variables without any exogenous noise. There would be Lotka-Volterra like dynamics, only more complex in this case, in drift of some SDEs/ODEs possibly taking up to four or five stochastic variables adding all sort of stochastic dynamics in the drift.<br>
+Stock markets, interest rates, inflation, money supply, employment rates, trade, exchange rates, productivity, innovation, political uncertainties, and most other macroeconomic variables would either be modelled as SDEs or ODEs with non-linear mostly algebraic stochastic dynamics in the drift terms. <br>
+Though large number of future shocks like wars, droughts, crashes still might not be predicted in advance with certainty, but the model would give us reasonable scenarios about what would happen to different variables in the economy if there were a war of if there were a pandemic or a crash and sort of other things.<br>
+<span style="font-size: 100%; line-height: normal">Though development of such a completely coherent and good model could be years away, once it is ready, we could possibly have a better understanding of our economies in the future and be able to put it for good use everywhere.</span><br>
+<span style="font-size: 100%; line-height: normal">I do believe that such a coherent coupled model is really possible, but we do have to work on honing all the tools required for such modelling. I also think that it would be wonderful if I could contribute towards development of such a dynamic model. In an era when AI seems to solve all the problems, I believe that proper applied mathematics is an even stronger tool to model and predict macroeconomic uncertainties if we could make a vigorous effort towards this goal.</span></div>
+
+			
+									
+									<div id="sig873649" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873671">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873671">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873671">
+
+			<h3 ><a href="#p873671">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873671&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873671" title="Post #1644">#1644</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 16th, 2022, 5:55 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, mind control agents continue to use gases to control me and take down my neurotransmitters. They used gas several times in my room over past two days. I requested mind control agent to not use any gas on me but to no avail. <br>
+Food at home is also lightly drugged but somewhat better than before I complained last time about it a few days ago. <br>
+<span style="font-size: 100%; line-height: normal">Please protest to mind control agencies against use of gases.</span></div>
+
+			
+									
+									<div id="sig873671" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873676">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873676">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873676">
+
+			<h3 ><a href="#p873676">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873676&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873676" title="Post #1645">#1645</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 17th, 2022, 3:58 pm</span></p>
+			
+			
+			
+			<div class="content">I went to eat out this evening. I decided to have a burger at a small food shop. I was told by the food shop owner that I would have to wait for 12 minutes before I could get the burger. I was not expecting mind control agents would come after me at the shop. When I had the burger, left side of my head started to become numb. The kitchen had two different entrances and I could not view who was entering or leaving from the other entrance. So, I suppose that mind control agents reached the other door of the kitchen and gave them mind control drugs when I was waiting for the burger being prepared. It has been more than two hours, but I am still feeling numbness in left side of my head.</div>
+
+			
+									
+									<div id="sig873676" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873704">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873704">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873704">
+
+			<h3 ><a href="#p873704">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873704&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873704" title="Post #1646">#1646</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 20th, 2022, 4:24 pm</span></p>
+			
+			
+			
+			<div class="content">My research on 2D SV SDEs is going well and I should have initial results from the new method in a few days.<br>
+In the meanwhile, I was thinking how I could apply ideas from my research to regression theory and I had several thoughts that I want to share with friends.<br>
+<br>
+1. Classical regression theory stipulates for a well-meaning regression, the residuals of regression should have a normal distribution. I think this could be a good topic for research to systematically study the distribution of residuals in regression and (if residuals are not normally distributed) devise rules of thumb (based on density of the residuals) how to transform regressors or regressand so that residuals become normal in the new regression with transformed variables. <br>
+<br>
+2. I really think in many regressions, we need to transform the regressors for better efficiency and better predictability. Obviously, any such transformation is not known in advance. But a cheap way of finding out would be to add first few powers of regressors in the regression (I am sure many people already do it) and then drop powers of regressors whose coefficients are statistically very insignificant. It seems to me that this should be an important step in systematically doing regressions.<br>
+<br>
+3. Due to possible non-linear relationship between regressors and regressand,  it is possible when a regression is done on regressand, it shows poor results but when regression is done on some function of regressand, the results could be excellent. It means that we have to optimize on a space of non-linear functions of regressand and find out specific function of the regressand that gives the best regression statistics. We would have to iterate over the function space of regressand and repeatedly do regressions to find the best transformation function of the regressand that gives the best regression statistics. And then use inverse function map to predict the original regressand.  Though this seems difficult, I am sure it can be done systematically by approximating non-linear function of regressand as a power series in regressand and iteratively altering the coefficients of this power series in the direction that optimizes the regression results. And then applying the inverse map from the optimized power series to the regressand variable itself. I suppose this can become a very interesting way to make regressions non-linear.<br>
+<br>
+These are just raw ideas but I think if properly studied, can make simple regression mathematics to become competitive with a lot of AI. If you are an expert in this area of research and you would want to collaborate, please email me and I would love to put many of these ideas into practice. my email is anan2999(at)yahoo(dot)com.</div>
+
+			
+									
+									<div id="sig873704" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873738">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873738">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873738">
+
+			<h3 ><a href="#p873738">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873738&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873738" title="Post #1647">#1647</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 25th, 2022, 8:28 am</span></p>
+			
+			
+			
+			<div class="content">Friends, my research is progressing reasonably, slowly but steadily, and I hope to be able to present a working program in its initial version in about a week. But the way I was excited about working in Kot Addu, it did not work out as well as I wanted it to be. Mind control agents have done their best to thwart me from doing good work. Food at my home is highly drugged and it is very difficult to do anything till hours after having a meal at home. Mind control agents continue to drug water and some beverages in the city. Usually, I am very careful about buying water and buy it only from very small places where I suppose they would not have gone to drug water. But today I bought water from a small place from where I had bought it about ten days ago and water was drugged. I only came to know about it after I had come back home, and it is impossible to go out again to get water. For past few days, it has become a routine that when I start working on my research, mind control agents start giving me a very strong itch in my back to deter me from doing my work. Mind control agents hit me several ties with bad food when I eat from outside since they have distributed mind control chemicals at many food places where they suspect I would eat. Every night, they charge inside of my mouth, tongue and upper jaw with mind control chemicals, and I become very uncomfortable in my sleep.<br>
+Though my work moved slowly, I have been able to make a steady progress and I am very determined to take it to a perfect conclusion in a few weeks.<br>
+I would also be travelling back to Lahore on 31st of December. Though I would have loved to stay in Kot Addu for longer, they have made it very difficult for me to get good food and bottled water in the small city.</div>
+
+			
+									
+									<div id="sig873738" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873742">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873742">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873742">
+
+			<h3 ><a href="#p873742">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873742&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873742" title="Post #1648">#1648</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 25th, 2022, 6:34 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, while doing research on 2D SDEs, I still continued to think a bit about the problem of finding distribution of a random variable from its moments. While methods explored in my previous research work well to construct densities of SDEs in Bessel coordinates, they do not work well to find the probability density in original coordinates of CEV type SDEs or lognormal SDEs when the moments of SDE random variable are given. I am trying to explore a new method that would possibly work well even for CEV and lognormal type densities in original coordinates. <br>
+The method is based on inverse series expansions when an original series expansion is given. Though in my matlab program(due in two days) I will deal with a Z-series to 7th order, for brevity with long formulas, we suppose that we are given a Z-series upto 4th order (that fits five moments).<br>
+The Z-series of a stochastic random variable is given as<br>
+<br>
+[$]X(Z) \, = \, a0 + \, a1 \, Z+ \, a2 \, Z^2+ \, a3 \, Z^3+ \, a4 \, Z^4 [$]<br>
+<br>
+We can invert the above series to get a new series that expands a standard normal in terms of the random variable X.<br>
+when we try to find an inverse series solution to above equation, we get (I used Mathematica to solve for this) the solution for a standard normal variable as given below.<br>
+<br>
+[$]Z=\frac{X-\text{a0}}{\text{a1}}-\frac{\text{a2} (X-\text{a0})^2}{\text{a1}^3}+\frac{(X-\text{a0})^3 \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}+\frac{(X-\text{a0})^4 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}+O\left((X-\text{a0})^5\right) [$]<br>
+<br>
+Please note that I assume without loss of generality that we are in our standardized moments framework where mean of random variable whose moments are to be fitted is zero and its variance is one (since we can standardize any random variable with arbitrary moments and convert to our framework).<br>
+I really believe that above inverse Z-series can easily be used to find the coefficients of the Z-series that fit the moments of the random variable. For example by taking expectation of the random variables on both sides of the equation<br>
+<br>
+[$]E[Z]=\frac{E[X-\text{a0}]}{\text{a1}}-\frac{\text{a2} E(X-\text{a0})^2] }{\text{a1}^3}+\frac{E(X-\text{a0})^3] \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}+\frac{E[(X-\text{a0})^4] \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4} [$]<br>
+<br>
+Please note that [$]E[X-\text{a0}][$] is not for central moments, it is for moments around median as in our framework mean was already zero. Expressions like [$]E[(X-\text{a0})^n][$] can easily be calculated if median a0 is known.<br>
+Since  E[Z]=0, our equation becomes<br>
+<br>
+[$]0=\frac{E[X-\text{a0}]}{\text{a1}}-\frac{\text{a2} E(X-\text{a0})^2] }{\text{a1}^3}+\frac{E(X-\text{a0})^3] \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}+\frac{E[(X-\text{a0})^4] \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}[$]<br>
+<br>
+If n moments of X are specified, above equation has n degrees of freedom and only one equation for mean so it can possibly be solved in n different ways or in other words, there can be n different combinations of coefficients that would fit a given specification of n moments. Of course, we can possibly write equations for higher moments as opposed to equation for mean and pin down the degrees of freedom but that is beyond the current scope. But actually, we should also write second equation for variance and include it in analysis if possible.<br>
+<br>
+I think a recursive algorithm can be used to solve the above equation. I will try to write a small matlab program that solves recursively for coefficients of the Z-series. Please give me a day or two and I will post a new program that fits for moments of difficult CEV and lognormal type (in original coordinates) SDE densities to Z-series.  </div>
+
+			
+									
+									<div id="sig873742" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873765">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873765">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873765">
+
+			<h3 ><a href="#p873765">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873765&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873765" title="Post #1649">#1649</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 26th, 2022, 6:36 pm</span></p>
+			
+			
+			
+			<div class="content">Incidentally, the equation from above post<br>
+<br>
+[$]Z=\frac{X-\text{a0}}{\text{a1}}-\frac{\text{a2} (X-\text{a0})^2}{\text{a1}^3}+\frac{(X-\text{a0})^3 \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}+\frac{(X-\text{a0})^4 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}+O\left((X-\text{a0})^5\right) [$]<br>
+<br>
+can be written in a more informative form as<br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]Z=\frac{\text{a0}^4 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}-\frac{\text{a0}^3 \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}-\frac{\text{a0}^2 \text{a2}}{\text{a1}^3}-\frac{\text{a0}}{\text{a1}}[$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+X \left(-\frac{4 \text{a0}^3 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}+\frac{3 \text{a0}^2 \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}+\frac{2 \text{a0} \text{a2}}{\text{a1}^3}+\frac{1}{\text{a1}}\right) [$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+X^2 \left(\frac{6 \text{a0}^2 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}-\frac{3 \text{a0} \left(\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}\right)}{\text{a1}^3}-\frac{\text{a2}}{\text{a1}^3}\right)[$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+ X^3 \left(\frac{\frac{2 \text{a2}^2}{\text{a1}^2}-\frac{\text{a3}}{\text{a1}}}{\text{a1}^3}-\frac{4 \text{a0} \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}\right)[$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+\frac{X^4 \left(-\frac{\text{a2} \left(\frac{5 \text{a2}^2}{\text{a1}^2}-\frac{2 \text{a3}}{\text{a1}}\right)}{\text{a1}}+\frac{3 \text{a2} \text{a3}}{\text{a1}^2}-\frac{\text{a4}}{\text{a1}}\right)}{\text{a1}^4}[$]</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">I have thought of the logic of a very interesting iterative scheme based on derivatives that would find the coefficients of the original Z-series given the moments of a random variable. It can take me 2-3 days to code it for seven or eight coefficients Z-series expansion. But I am quite confident that we would be able to solve the general problem of finding continuous densities of random variables from their moments.</span></div>
+
+			
+									
+									<div id="sig873765" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873782">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873782">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873782">
+
+			<h3 ><a href="#p873782">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873782&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873782" title="Post #1650">#1650</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">December 27th, 2022, 2:44 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am working full time to solve the problem and I am sure, in a few days, I will have a working program ready that I will post here. I am very confident that we will settle this mathematical problem.<br>
+In the meantime, it seems that mind control agents are very disturbed that I am trying to work hard towards the solution to this problem. And they are trying their best to drug the small city. Yesterday and the day before yesterday, I bought bottled water from different small pharmacies. Water was good and I realized that they had not drugged water at pharmacies. So today I bought water again from a different small pharmacy and I was thinking that water would be good. When I came home and drank water, I felt marked weakness and pain in my spine. I realized that they had drugged bottled water at the pharmacies as well and I had bought drugged water. I had also bought russian imported coffee. Sadly, coffee was also drugged. I had been buying milk powder to make tea and I believe they have drugged milk powder at many places as well even though I was able to get good milk powder from a small shop. <br>
+After painful experience with water, I knew that I would not be able to work at night if I did not have good water. And therefore, I went out again and filled the bottles with hand pump water from a random hand pump at a small village road by the side of the city. I am sure if I started getting water from hand pumps, CIA scum will start drugging ground water in another day or two in the small city.    <br>
+Though I am trying to concentrate on my research, mind control scumbags are trying to make it difficult for me everyday to comfortably take on the research.<br>
+This Saturday I will travel back to Lahore so there are just another three days left in the city.</div>
+
+			
+									
+									<div id="sig873782" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;0874bd5783e9294ab0abb0b95bbe4f63" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1605" role="button">108</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" role="button">109</a></li>
+							<li class="active"><span>110</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" role="button">111</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1665" role="button">112</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1635&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;0874bd5783e9294ab0abb0b95bbe4f63" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1605" role="button">108</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1620" role="button">109</a></li>
+							<li class="active"><span>110</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" role="button">111</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1665" role="button">112</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63&amp;start=1650" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1635&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=0874bd5783e9294ab0abb0b95bbe4f63"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=0874bd5783e9294ab0abb0b95bbe4f63" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#3352575e5a5d73445a5f5e5c47471d505c5e">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>110</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=0874bd5783e9294ab0abb0b95bbe4f63";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=0874bd5783e9294ab0abb0b95bbe4f63";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2764bcbee7e5","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

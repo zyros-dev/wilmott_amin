@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 119 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=4f4161c5bfd521b7fd3cfae96c9a138a" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=4f4161c5bfd521b7fd3cfae96c9a138a?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=4f4161c5bfd521b7fd3cfae96c9a138a?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=4f4161c5bfd521b7fd3cfae96c9a138a?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1770" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="4f4161c5bfd521b7fd3cfae96c9a138a" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=4f4161c5bfd521b7fd3cfae96c9a138a" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="4f4161c5bfd521b7fd3cfae96c9a138a" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=4f4161c5bfd521b7fd3cfae96c9a138a" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1770%26t%3D99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1770&amp;t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" />
+<input type="hidden" name="creation_time" value="1768907829" />
+<input type="hidden" name="form_token" value="228f216181e757a8922df1b36fe4b91aabb567eb" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1770&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1770&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="4f4161c5bfd521b7fd3cfae96c9a138a" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;4f4161c5bfd521b7fd3cfae96c9a138a" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" role="button">118</a></li>
+							<li class="active"><span>119</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" role="button">120</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1800" role="button">121</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p875106">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875106">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875106">
+
+			<h3 class="first"><a href="#p875106">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875106&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875106" title="Post #1771">#1771</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 9th, 2023, 5:15 pm</span></p>
+			
+			
+			
+			<div class="content">I had earlier told friends that mind control agents and their backers are only buying time and they really want to increase mind control again as soon as the whole thing goes out of limelight. <br>
+Now this observation is proving to be exactly true. Mind control agents are again pressurizing my family especially my parents and my sister to do something to help the mind control agents in my mind control. About a month ago, doctor had decreased the period between my antipsychotic injection to one month. I was feeling remarkably better due to doctor's decision. Just about a week or so ago, many colors returned in my eyes and I was able to see the world as I used to before the start of mind control. And I was happy like a child when I would notice the brightness in many shades of colors. When people say that animals cannot see many colors and their shades, I know this firsthand since I have experienced it myself several times in past twenty five years. When I would not notice some shade or see it differently without brightness, I would have some sense that I am missing something in my brain but I would not know what I am missing. But when some parts of my brain would recombine and I would see some shades with brightness and richness again, I would know that I missed this color for several months or years. Just a few months ago, I was in such a bad state that it was difficult for me many times to differentiate many shades of blue and green. <br>
+Now after 25 years of my persecution, I am used to colors going out of my eyes and then coming back again after several years. But recently for more than a week, I have been seeing many colors and their shades with special richness as I had not done for many long years. And many times I become happy like a child when I see the world in its original and complete beauty.<br>
+But mind control agents are getting upset that they are losing control of my brain and some of my research has also gone out of limelight, therefore mind control agents have started to pressurize my family to find ways to put me back into complete mind control. They want my family to ask the psychiatrist that I am not doing well and he should increase my medication and put me back to 21 days interval between the antipsychotic injections. My sister called today and told me that she had realized that I was not taking proper care of my self and she would call the doctor on her own and ask her to increase my medication again. Mind control agents pressurize my family who are mere puppets in their hands and now my family wants to do everything possible to convince the doctor to increase my medication. <br>
+I am perfectly healthy in all respect but Pakistan army pressurizes the doctors to cooperate with CIA and when the psychiatrists also know that victim's family is also playing in their hands, they become too bold in forcing antipsychotic drugs on their victims. Though the current doctor is very aware that I am perfectly healthy and has maltreated me, I am still thankful that he was finally ready to decrease my medication and increase the interval between antipsychotic injections to thirty days. But now mind control agents want to pressurize my family to roll back what psychiatrist has done. I think I have told friends earlier that I am not allowed by my family to choose a psychiatrist of my own choice and every time I tried to approach a psychiatrist of my own choice, they detained me for months with their own psychiatrist.<br>
+I was rather hoping that my antipsychotics would completely end very soon but now that seems a relatively remote scenario and I am afraid that my family wants the doctor to undo whatever favor he has already given me.<br>
+I want friends that if I have just one wish in my mind, it is to be able to live a life without forced antipsychotics. I would not be willing to accept hundreds of millions of dollars if you pay me that money to continue my antipsychotics. <br>
+I really want to request good American people to ask their government and army to stop giving me antipsychotics and end my mind control. Please ask the American army and CIA to not force my family to be anal with me. I Want to request those jews and neocons behind me persecution to Please let me live with human dignity if you are ready to accept meas a human being and if it is not beyond your capability to accept a human being of muslim origin getting ahead in life.<br>
+I also want to respect good Europeans who sympathise with me to ask their embassies in Pakistan to force the Pakistan army to end mind control of innocent intelligent people on behest of neocons in CIA and also ask the psychiatrists to end the forced persecution of innocent victims. </div>
+
+			
+									
+									<div id="sig875106" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p875109">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875109">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875109">
+
+			<h3 ><a href="#p875109">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875109&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875109" title="Post #1772">#1772</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 9th, 2023, 6:24 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Without the laptop yesterday and today, I decided to brainstorm and had some great ideas. I also thought about improving the calibration procedure that finds Z-series or U-series from data of moments. The earlier procedure was ad-hoc and I was able to think of a more elegant way of fitting the moments in a way that can be used by any set of orthogonal polynomials with respect to a density/measure. Obviously without my laptop, I have not been able to test  the procedure but I am confident it would work very well since it is based on common sense. I will be sharing it with friends in a new post after a few hours or possibly tomorrow.</span></div></blockquote>
+Friends, I would post the details tomorrow. It is a very simple procedure and I am sure it will be very effective and I think it would be possible to use it with all sort of orthogonal polynomials with respect to their respective densities. I will be posting the details with latex equations tomorrow.<br>
+I am currently using an antiquated laptop that I had given my brother some seven or eight years ago and borrowed it from him(It was earlier being used by my nephew who stopped using it several years ago.) It does not have any programs I use on it. </div>
+
+			
+									
+									<div id="sig875109" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875116">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875116">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875116">
+
+			<h3 ><a href="#p875116">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875116&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875116" title="Post #1773">#1773</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 10th, 2023, 7:16 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I want to describe the simple numerical procedure that can help match the coefficients of orthogonal polynomials with respect to special densities so that moments of the series in orthogonal polynomials match with the moments of the data. I am sure this can be used with any orthogonal polynomials but I am using the notation for hermite polynomials in my exposition.<br>
+Suppose we want to expand a random variable in terms of hermite polynomials, its series expansion could be given as (I am expanding to five polynomials. You can expand to arbitrary number of polynomials)<br>
+<br>
+[$] Y \, = \, \mu \, + \, ch_1 \, H_1(Z) \, + \, ch_2 \, H_2(Z) \, + \, ch_3 \, H_3(Z) \, + \, ch_4 \, H_4(Z) \, + \, ch_5 \, H_5(Z) \, [$]<br>
+<br>
+here [$]ch_n[$] represents the coefficient of nth hermite polynomial and [$]H_n(Z)[$] represents the nth hermite polynomial itself. <br>
+Our problem would be solved when we would have successfully chosen coefficients [$]ch_n[$] so that powers of expression on rhs would equate to raw moments of random variable Y (as calculated from data.)<br>
+<br>
+Friends who are familiar with my earlier work would recall that before matching the moments, I standardized them and it was standardized moments that were matched with Z/hermite series. We could convert the standardized moments calibrated Z/hermite series to actual calibration by multiplying it with square root of variance and then could convert from central moments Z/hermite series to raw moments Z/hermite series by adding the mean to zeroth  coefficients in the series.<br>
+<br>
+With standardized  central moments, our input second moment is unity. which implies that in hermite series, squared coefficients have to lie on a multidimensional ellipsoid. I try to show this as <br>
+<br>
+[$]E[(Y-mu)^2]  = E[ ch_1 \, H_1(Z) \, + \, ch_2 \, H_2(Z) \, + \, ch_3 \, H_3(Z) \, + \, ch_4 \, H_4(Z) \, + \, ch_5 \, H_5(Z) \,]^2 =\, 1\,[$]<br>
+[$] {ch_1}^2 \, + \, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 =\, 1\,[$]<br>
+<br>
+The above equation shows that hermite coefficients to be optimized are under constraint to remain on surface of an ellipsoid given by above equation(of second standardized central moment/variance).<br>
+<br>
+We try to leverage the above constraint to find a optimization-search method that perturbs the coefficients in a way that the ellipsoid constraint is satisfied and we continue to move towards higher value of criteria of fit objective function. We do not need to take derivatives for this optimization. All we have to do is to implement the ellipsoid constraint in an intelligent way.<br>
+<br>
+We have not yet specified the objective function yet. We do not want to apply sum of  squared deviations between fitted moments and input moments since higher moments can be too big to eclipse and overwhelm the quality of fit in smaller moments that are even more important. I thought of criteria of fit as squared deviations between applied cumulants and fitted cumulants as choice of cumulants in squared deviation will somewhat alleviate the huge distortion caused by large moments in the degree of fit when moments are chosen as variables in squared deviations. We tried cumulants in earlier work with limited success but that problem was different and required calculation of derivatives where cumulants abruptly would change sign not in proportion to coefficients being optimized. Our problem now is different and much simpler and choice of cumulants in least squared deviations  criteria of fit should work well.<br>
+<br>
+Now coming to crux of our strategy,  we know whatever coefficients we choose, the hermite coefficients have to be constarined to lie on an ellipsoid. We start with some trial coefficients which can be found possibly by one or two passes of simple smoothing method I used earlier in my previous work. We perturb one hermite coefficient by a small amount by increasing it and we know that weighted sum of rest of the squared coefficients have to be decreased by the same amount for all coefficients to remain on ellipsoid. We decide to keep the ratio of all other coefficients the same as we decrease them and find new coefficients. Again we have increased one coefficients by a small amount and decreased the cumulative expression of the rest of the coefficients by the same amount while decreasing them in the same ratio they earlier were. We evaluate the objective function and if the objective function decreases, we accept the new coefficients. Otherwise we move the first coefficient in negative direction and increase the expression for rest of the coefficients by the same amount keeping the squared coefficients in proportion they already were in. After accepting iteration for the first variable, we iterate the same procedure by increasing or decreasing all of the rest of the coefficients and continue to perturb until we get extremely close to desired solution, where we can get to perfect solution with one or two iterations of newton method.<br>
+<br>
+Here I describe the above procedure with simple equations.<br>
+Our constraint it given as<br>
+[$] {ch_1}^2 \, + \, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 =\, 1\,[$]<br>
+<br>
+Suppose, for trial evaluation of objective function, we want to increase [$]ch_1[$]. Our equation is given in terms of squared coefficients. We denote a change in squared coefficients by large delta and denote it s magnitude by C as <br>
+[$] \Delta [{ch_1}^2] \, =\, C[$]<br>
+change in the rest of the expression should be an equivalent negative so we write that as<br>
+[$] \Delta \big[\, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 \big]=\, -C \,[$]<br>
+we introduce a proportionality constant in the above equation and equate it with the required change as<br>
+<br>
+[$] \, 2\, \eta \,  {ch_2}^2 \, + \,6 \, \eta\, {ch_3}^2  \, + \, 24\,\eta \, {ch_4}^2 \, +\, 120 \,\eta \, {ch_5}^2 \, =\, -C \,[$]<br>
+<br>
+from where we can calculate [$]\eta [$] as <br>
+<br>
+[$] \, \eta  = \,\frac{ -C }{\, 2\,  {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120  \, {ch_5}^2 \, }\,[$]<br>
+from where we can infer that <br>
+[$] \Delta [{ch_2}^2] \, =\, \eta {ch_2}^2[$]<br>
+[$] \Delta [{ch_3}^2] \, =\, \eta {ch_3}^2[$]<br>
+[$] \Delta [{ch_4}^2] \, =\, \eta {ch_4}^2[$]<br>
+[$] \Delta [{ch_5}^2] \, =\, \eta {ch_5}^2[$]<br>
+<br>
+new values of coefficients would be (beware of signs. they can be both positive or negative.)<br>
+<br>
+[$] \,ch_1 = \sqrt{{ch_1}^2 + \Delta [{ch_1}^2] }\, [$]<br>
+[$] \,ch_2 = \sqrt{{ch_2}^2 + \Delta [{ch_2}^2] }\, [$]<br>
+[$] \,ch_3 = \sqrt{{ch_3}^2 + \Delta [{ch_3}^2] }\, [$]<br>
+[$] \,ch_4 = \sqrt{{ch_4}^2 + \Delta [{ch_4}^2] }\, [$]<br>
+[$] \,ch_5 = \sqrt{{ch_5}^2 + \Delta [{ch_5}^2] }\, [$]<br>
+<br>
+These new values of coefficients would again lie on the ellipsoid. So we would be able to evaluate the objective function for these new values of coefficients of hermite polynomials and then see if the objective criteria is minimized, if it is minimized, we accept it otherwise move the coefficient in other direction. We do not need to take derivatives of any equations  or coefficients however there could be some variant that uses derivatives and could be faster.<br>
+<br>
+So we could slowly perturb the coefficients one by one and move towards better fit to objective function.<br>
+<br>
+I do not have my computer on me and I have not run any of the analytics so I cannot know if taking large steps in simulation could be possible. <br>
+<br>
+Same technique could be used for polynomials other than hermite polynomials. <br>
+<br>
+As soon as my laptop come back from repair shop, I will program and post a copy of working algorithm in matlab here.<br>
+<br>
+Another thing that would still be needed is to modify the coefficients so that positivity of first order derivative of the expression with respect to standard normal is maintained.</div>
+
+			
+									
+									<div id="sig875116" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875121">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875121">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875121">
+
+			<h3 ><a href="#p875121">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875121&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875121" title="Post #1774">#1774</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2023, 5:33 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I still could not get my laptop back. As soon as I get my laptop, I will write programs for calibration of data moments to hermite and Legendre polynomials using the method I just mentioned in previous post. <br>
+After adding the new capability, I want to improve the orthogonal polynomial regression programs. Currently we calibrate data in original variables to orthogonal polynomials in a different but related density by calibrating raw moments. And then we run the regression between data in hermite polynomial coordinates. And we get our regression results in hermite polynomial coordinates. <br>
+However one final step is still missing. How to represent the orthogonal polynomial regressors back into original coordinates such that regression quality remains intact. Most of us especially the scientists trying to explore relationship between data are familiar with original coordinates and have insight in original coordinates of the data. So it seems important that we convert the hermite polynomial regressors back into original coordinates as faithfully as we can so that friends who want to find the relationships between data could get insight in the coordinates they are familiar with. <br>
+So this is the direction in which I want to take my research in the near future.<br>
+After solving most of these problems, I will try to run orthogonal polynomial regressions on public data sets of importance and post 3-4 regression examples every week on public data sets.</div>
+
+			
+									
+									<div id="sig875121" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875122">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875122">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875122">
+
+			<h3 ><a href="#p875122">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875122&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875122" title="Post #1775">#1775</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2023, 5:55 am</span></p>
+			
+			
+			
+			<div class="content">In fact, there could be further possibilities. You can possibly describe the orthogonal polynomial results not only in original data variables but also approximately closely in chosen desired functions of the original data variables with a bit of hack. So if you want to find a relationship between data and some chosen functions of the regressors in original variables, it could be possible to run orthogonal polynomial relationship regression and then convert from orthogonal polynomials to functions of original variables.<br>
+Though explaining data in terms of every function might not be possible, we could find the results of regressions in a reasonably large space of functions. especially if a parsimonious converging Taylor Series relationship for the function could be found. <br>
+In earlier work, we spent a lot of time converting original variables into their functions and converting across functions using Taylor series and this should work well since we mostly have the entire density of the different variables in data.<br>
+So these are various ideas I have to take my research further ahead.</div>
+
+			
+									
+									<div id="sig875122" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875123">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875123">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875123">
+
+			<h3 ><a href="#p875123">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875123&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875123" title="Post #1776">#1776</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2023, 7:12 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+In fact, there could be further possibilities. You can possibly describe the orthogonal polynomial results not only in original data variables but also approximately closely in chosen desired functions of the original data variables with a bit of hack. So if you want to find a relationship between data and some chosen functions of the regressors in original variables, it could be possible to run orthogonal polynomial relationship regression and then convert from orthogonal polynomials to functions of original variables.<br>
+Though explaining data in terms of every function might not be possible, we could find the results of regressions in a reasonably large space of functions. especially if a parsimonious converging Taylor Series relationship for the function could be found. <br>
+In earlier work, we spent a lot of time converting original variables into their functions and converting across functions using Taylor series and this should work well since we mostly have the entire density of the different variables in data.<br>
+So these are various ideas I have to take my research further ahead.
+</div></blockquote>
+.<br>
+By representing in terms of a function, I mean a series in the powers of the function or a best fit function plus a series in original variable. Or possibly in terms of  some combination of sums/products of functions plus a series. You could throw functions and mathematical expressions (sum/products etc.) of functions to find out if a particular form well describes the data with minimum residual series in original variable. These are all different possibilities.</div>
+
+			
+									
+									<div id="sig875123" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875124">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875124">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875124">
+
+			<h3 ><a href="#p875124">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875124&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875124" title="Post #1777">#1777</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2023, 11:48 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I still could not get my laptop back. As soon as I get my laptop, I will write programs for calibration of data moments to hermite and Legendre polynomials using the method I just mentioned in previous post. <br>
+After adding the new capability, I want to improve the orthogonal polynomial regression programs. Currently we calibrate data in original variables to orthogonal polynomials in a different but related density by calibrating raw moments. And then we run the regression between data in hermite polynomial coordinates. And we get our regression results in hermite polynomial coordinates. <br>
+However one final step is still missing. How to represent the orthogonal polynomial regressors back into original coordinates such that regression quality remains intact. Most of us especially the scientists trying to explore relationship between data are familiar with original coordinates and have insight in original coordinates of the data. So it seems important that we convert the hermite polynomial regressors back into original coordinates as faithfully as we can so that friends who want to find the relationships between data could get insight in the coordinates they are familiar with. <br>
+So this is the direction in which I want to take my research in the near future.<br>
+After solving most of these problems, I will try to run orthogonal polynomial regressions on public data sets of importance and post 3-4 regression examples every week on public data sets.
+</div></blockquote>
+.<br>
+.<br>
+Hermite polynomials coordinates are based on standard normal random variable.<br>
+By original coordinates, here I meant as a power series in original data variables as opposed to power series in standard normal variable or hermite series in standard normal variables.<br>
+Sorry I was not clear when I used the term original coordinates. I meant original data variables. As opposed to standard normal random variable used for interim regression calculations.</div>
+
+			
+									
+									<div id="sig875124" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875129">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875129">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875129">
+
+			<h3 ><a href="#p875129">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875129&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875129" title="Post #1778">#1778</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2023, 8:39 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<blockquote class="uncited"><div class="blockquote__inner">
+In fact, there could be further possibilities. You can possibly describe the orthogonal polynomial results not only in original data variables but also approximately closely in chosen desired functions of the original data variables with a bit of hack. So if you want to find a relationship between data and some chosen functions of the regressors in original variables, it could be possible to run orthogonal polynomial relationship regression and then convert from orthogonal polynomials to functions of original variables.<br>
+Though explaining data in terms of every function might not be possible, we could find the results of regressions in a reasonably large space of functions. especially if a parsimonious converging Taylor Series relationship for the function could be found. <br>
+In earlier work, we spent a lot of time converting original variables into their functions and converting across functions using Taylor series and this should work well since we mostly have the entire density of the different variables in data.<br>
+So these are various ideas I have to take my research further ahead.
+</div></blockquote>
+.<br>
+By representing in terms of a function, I mean a series in the powers of the function or a best fit function plus a series in original variable. Or possibly in terms of  some combination of sums/products of functions plus a series. You could throw functions and mathematical expressions (sum/products etc.) of functions to find out if a particular form well describes the data with minimum residual series in original variable. These are all different possibilities.
+</div></blockquote>
+.<br>
+.<br>
+Sorry for possible ambiguity but by function, I meant closed form function.</div>
+
+			
+									
+									<div id="sig875129" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875130">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875130">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875130">
+
+			<h3 ><a href="#p875130">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875130&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875130" title="Post #1779">#1779</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 12th, 2023, 8:03 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I still could not get my laptop and continued to just think about other applications of numerical optimization technique I described a few posts ago. <br>
+One possible application is in calculations of Mean variance analysis and modern portfolio theory.<br>
+But when I look at wikipedia how variance is calculated in Mean variance analysis or Merkowitz criteria, I realized that calculating  variance this way is very suboptimal and is perfectly valid only when all assets involved are perfectly normal and have only two cumulants and their higher cumulants vanish. <br>
+When higher cumulants exist, we have to divide the variance of each asset between hermite polynomials of various degree in a way that moments/cumulants of hermite polynomial series expression match the moments/cumulants of the asset.<br>
+The currently accepted expression of variance only includes total variances and covariances but when higher cumulants exist, it has to be modified and replaced by sum of variances and covariances associated with each hermite orthogonal polynomial. <br>
+So total variance of each asset is decomposed into variances/coefficients of orthognal hermite polynomials. And each orthogonal polynomial of certain degree has correlations and hence covariances with hermite polynomials of the same degree associated with other assets. <br>
+So instead of writing a single expression of sum of variances and covariances, when higher cumulants exist, we have to repeat this expression for sum of variances and covariances associated with each degree of hermite polynomials. So a total expression of variance should sum over variances and covariances of first hermite polynomial and then variances and covariances of second hermite polynomial and so on until we add the variances and covariances associated with the maximum degree of hermite polynomial we are using in our analysis.<br>
+I will explain this with equations in a few hours.</div>
+
+			
+									
+									<div id="sig875130" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875131">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875131">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875131">
+
+			<h3 ><a href="#p875131">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875131&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875131" title="Post #1780">#1780</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 12th, 2023, 5:43 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, in classic statistics literature, it is possible to find covariances if the random variables involved belong to one of the well-known densities. When density of a random variable deviates from the well-known major densities, the covariance calculations between such random variables become more and more approximate as the deviation of their densities from the base density increases.<br>
+This is where my research comes in and my research helps to faithfully find covariances between very large classes of densities where it was earlier difficult to make good covariance calculations.<br>
+This is very helpful since most of the statistical prediction, regression theory, pattern-recognition and filtering theory are based on reliable calculations of covariances between the random variables involved.<br>
+What I did in my research was that I represented the distribution of data in terms of a series in orthogonal polynomials with respect to a particular base density so that moments of the data match with moments of the orthogonal polynomial series representation of the data. <br>
+The base density could be standard normal density with hermite polynomials, uniform density with legendre polynomials, or Laguerre polynomials with respect to gamma density. You could also possibly expand in Jacobi, Chebyshev or other orthogonal polynomials with respect to their respective densities. Though details are going to vary, the basic idea to represent the random variables in orthogonal polynomials of related density is exactly the same.<br>
+When large data sets are given so that CDF of the density of random variables associated with the data can be well-calculated, I have proposed another method that extracts coefficients of orthogonal polynomials using inner product of the data with orthogonal polynomials of various order.<br>
+Once a series representation of the data random variables have been found in terms of common orthogonal polynomials with respect to a base density, we have to find correlations and covariances between two random variables differently for orthogonal polynomial of every order. <br>
+Pure Gaussian densities can be described by just first orthogonal polynomial and classic formulas for correlations and covariances simply assume that we are describing the density of random variables in data in terms of first orthogonal polynomial only. This representation might not always be appropriate especially for densities that have non-negligible higher cumulants. More the density of data deviates from normal density or other base density, the more inappropriate the formulas of correlations and covariances that are based on first orthogonal polynomial representation of the density. of random variables in data.<br>
+Similarly, the portfolio variance calculations in Merkoitz criteria are valid  if assets are perfectly normal. The more the deviations from Gaussianity, the more inappropriate the total variance of the portfolio  calculated in classic way since it is based on covariances that assume just the first orthogonal hermite polynomial. Also it neglects the fact that each hermite polynomial of certain order takes its own correlations across different assets.</div>
+
+			
+									
+									<div id="sig875131" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875132">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875132">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875132">
+
+			<h3 ><a href="#p875132">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875132&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875132" title="Post #1781">#1781</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 12th, 2023, 6:15 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I want to describe the simple numerical procedure that can help match the coefficients of orthogonal polynomials with respect to special densities so that moments of the series in orthogonal polynomials match with the moments of the data. I am sure this can be used with any orthogonal polynomials but I am using the notation for hermite polynomials in my exposition.<br>
+Suppose we want to expand a random variable in terms of hermite polynomials, its series expansion could be given as (I am expanding to five polynomials. You can expand to arbitrary number of polynomials)<br>
+<br>
+[$] Y \, = \, \mu \, + \, ch_1 \, H_1(Z) \, + \, ch_2 \, H_2(Z) \, + \, ch_3 \, H_3(Z) \, + \, ch_4 \, H_4(Z) \, + \, ch_5 \, H_5(Z) \, [$]<br>
+<br>
+here [$]ch_n[$] represents the coefficient of nth hermite polynomial and [$]H_n(Z)[$] represents the nth hermite polynomial itself. <br>
+Our problem would be solved when we would have successfully chosen coefficients [$]ch_n[$] so that powers of expression on rhs would equate to raw moments of random variable Y (as calculated from data.)<br>
+<br>
+Friends who are familiar with my earlier work would recall that before matching the moments, I standardized them and it was standardized moments that were matched with Z/hermite series. We could convert the standardized moments calibrated Z/hermite series to actual calibration by multiplying it with square root of variance and then could convert from central moments Z/hermite series to raw moments Z/hermite series by adding the mean to zeroth  coefficients in the series.<br>
+<br>
+With standardized  central moments, our input second moment is unity. which implies that in hermite series, squared coefficients have to lie on a multidimensional ellipsoid. I try to show this as <br>
+<br>
+[$]E[(Y-mu)^2]  = E[ ch_1 \, H_1(Z) \, + \, ch_2 \, H_2(Z) \, + \, ch_3 \, H_3(Z) \, + \, ch_4 \, H_4(Z) \, + \, ch_5 \, H_5(Z) \,]^2 =\, 1\,[$]<br>
+[$] {ch_1}^2 \, + \, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 =\, 1\,[$]<br>
+<br>
+The above equation shows that hermite coefficients to be optimized are under constraint to remain on surface of an ellipsoid given by above equation(of second standardized central moment/variance).<br>
+<br>
+We try to leverage the above constraint to find a optimization-search method that perturbs the coefficients in a way that the ellipsoid constraint is satisfied and we continue to move towards higher value of criteria of fit objective function. We do not need to take derivatives for this optimization. All we have to do is to implement the ellipsoid constraint in an intelligent way.<br>
+<br>
+We have not yet specified the objective function yet. We do not want to apply sum of  squared deviations between fitted moments and input moments since higher moments can be too big to eclipse and overwhelm the quality of fit in smaller moments that are even more important. I thought of criteria of fit as squared deviations between applied cumulants and fitted cumulants as choice of cumulants in squared deviation will somewhat alleviate the huge distortion caused by large moments in the degree of fit when moments are chosen as variables in squared deviations. We tried cumulants in earlier work with limited success but that problem was different and required calculation of derivatives where cumulants abruptly would change sign not in proportion to coefficients being optimized. Our problem now is different and much simpler and choice of cumulants in least squared deviations  criteria of fit should work well.<br>
+<br>
+Now coming to crux of our strategy,  we know whatever coefficients we choose, the hermite coefficients have to be constarined to lie on an ellipsoid. We start with some trial coefficients which can be found possibly by one or two passes of simple smoothing method I used earlier in my previous work. We perturb one hermite coefficient by a small amount by increasing it and we know that weighted sum of rest of the squared coefficients have to be decreased by the same amount for all coefficients to remain on ellipsoid. We decide to keep the ratio of all other coefficients the same as we decrease them and find new coefficients. Again we have increased one coefficients by a small amount and decreased the cumulative expression of the rest of the coefficients by the same amount while decreasing them in the same ratio they earlier were. We evaluate the objective function and if the objective function decreases, we accept the new coefficients. Otherwise we move the first coefficient in negative direction and increase the expression for rest of the coefficients by the same amount keeping the squared coefficients in proportion they already were in. After accepting iteration for the first variable, we iterate the same procedure by increasing or decreasing all of the rest of the coefficients and continue to perturb until we get extremely close to desired solution, where we can get to perfect solution with one or two iterations of newton method.<br>
+<br>
+Here I describe the above procedure with simple equations.<br>
+Our constraint it given as<br>
+[$] {ch_1}^2 \, + \, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 =\, 1\,[$]<br>
+<br>
+Suppose, for trial evaluation of objective function, we want to increase [$]ch_1[$]. Our equation is given in terms of squared coefficients. We denote a change in squared coefficients by large delta and denote it s magnitude by C as <br>
+[$] \Delta [{ch_1}^2] \, =\, C[$]<br>
+change in the rest of the expression should be an equivalent negative so we write that as<br>
+[$] \Delta \big[\, 2\, {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120 \, {ch_5}^2 \big]=\, -C \,[$]<br>
+we introduce a proportionality constant in the above equation and equate it with the required change as<br>
+<br>
+[$] \, 2\, \eta \,  {ch_2}^2 \, + \,6 \, \eta\, {ch_3}^2  \, + \, 24\,\eta \, {ch_4}^2 \, +\, 120 \,\eta \, {ch_5}^2 \, =\, -C \,[$]<br>
+<br>
+from where we can calculate [$]\eta [$] as <br>
+<br>
+[$] \, \eta  = \,\frac{ -C }{\, 2\,  {ch_2}^2 \, + \,6 \, {ch_3}^2  \, + \, 24\, {ch_4}^2 \, +\, 120  \, {ch_5}^2 \, }\,[$]<br>
+from where we can infer that <br>
+[$] \Delta [{ch_2}^2] \, =\, \eta {ch_2}^2[$]<br>
+[$] \Delta [{ch_3}^2] \, =\, \eta {ch_3}^2[$]<br>
+[$] \Delta [{ch_4}^2] \, =\, \eta {ch_4}^2[$]<br>
+[$] \Delta [{ch_5}^2] \, =\, \eta {ch_5}^2[$]<br>
+<br>
+new values of coefficients would be (beware of signs. they can be both positive or negative.)<br>
+<br>
+[$] \,ch_1 = \sqrt{{ch_1}^2 + \Delta [{ch_1}^2] }\, [$]<br>
+[$] \,ch_2 = \sqrt{{ch_2}^2 + \Delta [{ch_2}^2] }\, [$]<br>
+[$] \,ch_3 = \sqrt{{ch_3}^2 + \Delta [{ch_3}^2] }\, [$]<br>
+[$] \,ch_4 = \sqrt{{ch_4}^2 + \Delta [{ch_4}^2] }\, [$]<br>
+[$] \,ch_5 = \sqrt{{ch_5}^2 + \Delta [{ch_5}^2] }\, [$]<br>
+<br>
+These new values of coefficients would again lie on the ellipsoid. So we would be able to evaluate the objective function for these new values of coefficients of hermite polynomials and then see if the objective criteria is minimized, if it is minimized, we accept it otherwise move the coefficient in other direction. We do not need to take derivatives of any equations  or coefficients however there could be some variant that uses derivatives and could be faster.<br>
+<br>
+So we could slowly perturb the coefficients one by one and move towards better fit to objective function.<br>
+<br>
+I do not have my computer on me and I have not run any of the analytics so I cannot know if taking large steps in simulation could be possible. <br>
+<br>
+Same technique could be used for polynomials other than hermite polynomials. <br>
+<br>
+As soon as my laptop come back from repair shop, I will program and post a copy of working algorithm in matlab here.<br>
+<br>
+Another thing that would still be needed is to modify the coefficients so that positivity of first order derivative of the expression with respect to standard normal is maintained.
+</div></blockquote>
+.<br>
+.<br>
+You can also use the above numerical method to optimize portfolio weights in Merkowitz Efficient Frontier calculations. This will work with both classic portfolio variance calculations or new appropriate portfolio variance calculations based on my research.</div>
+
+			
+									
+									<div id="sig875132" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875134">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875134">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875134">
+
+			<h3 ><a href="#p875134">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875134&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875134" title="Post #1782">#1782</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 13th, 2023, 4:35 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, in classic statistics literature, it is possible to find covariances if the random variables involved belong to one of the well-known densities. When density of a random variable deviates from the well-known major densities, the covariance calculations between such random variables become more and more approximate as the deviation of their densities from the base density increases.<br>
+This is where my research comes in and my research helps to faithfully find covariances between very large classes of densities where it was earlier difficult to make good covariance calculations.<br>
+This is very helpful since most of the statistical prediction, regression theory, pattern-recognition and filtering theory are based on reliable calculations of covariances between the random variables involved.<br>
+What I did in my research was that I represented the distribution of data in terms of a series in orthogonal polynomials with respect to a particular base density so that moments of the data match with moments of the orthogonal polynomial series representation of the data. <br>
+The base density could be standard normal density with hermite polynomials, uniform density with legendre polynomials, or Laguerre polynomials with respect to gamma density. You could also possibly expand in Jacobi, Chebyshev or other orthogonal polynomials with respect to their respective densities. Though details are going to vary, the basic idea to represent the random variables in orthogonal polynomials of related density is exactly the same.<br>
+When large data sets are given so that CDF of the density of random variables associated with the data can be well-calculated, I have proposed another method that extracts coefficients of orthogonal polynomials using inner product of the data with orthogonal polynomials of various order.<br>
+Once a series representation of the data random variables have been found in terms of common orthogonal polynomials with respect to a base density, we have to find correlations and covariances between two random variables differently for orthogonal polynomial of every order. <br>
+Pure Gaussian densities can be described by just first orthogonal polynomial and classic formulas for correlations and covariances simply assume that we are describing the density of random variables in data in terms of first orthogonal polynomial only. This representation might not always be appropriate especially for densities that have non-negligible higher cumulants. More the density of data deviates from normal density or other base density, the more inappropriate the formulas of correlations and covariances that are based on first orthogonal polynomial representation of the density. of random variables in data.<br>
+Similarly, the portfolio variance calculations in Merkoitz criteria are valid  if assets are perfectly normal. The more the deviations from Gaussianity, the more inappropriate the total variance of the portfolio  calculated in classic way since it is based on covariances that assume just the first orthogonal hermite polynomial. Also it neglects the fact that each hermite polynomial of certain order takes its own correlations across different assets.
+</div></blockquote>
+.<br>
+.<br>
+Many types of calculations of variances that were considered very difficult, can be done with this new method. You can find formulas for calculations of distribution of sums of lognormals or sum of mixed densities like some CEV and some lognormal etc. You can also find sum of heavy-tailed lognormal based or mixed densities. <br>
+All you have to do is to find the hermite representation of each density and then find correlations/covariances between hermite polynomials of various order and then add over variances and covariances of all hermite polynomials in squared fashion while taking account of portfolio weights.</div>
+
+			
+									
+									<div id="sig875134" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875135">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875135">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875135">
+
+			<h3 ><a href="#p875135">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875135&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875135" title="Post #1783">#1783</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 13th, 2023, 6:34 am</span></p>
+			
+			
+			
+			<div class="content">Friends, sorry, I was too tired last night to get myself to write latex equations for variance of sum of  (gaussian-like but non-gaussian) random variables despite my efforts but here they are. Even lognormal density is gaussian-like since it can be represented by a series expansion in hermite polynomials of standard Gaussian density. <br>
+<br>
+In this post I want to make calculations of a sum of two random variables with different weights when their hermite representation has been calculated by matching matching data moments with moments of hermite representation.<br>
+<br>
+Suppose our first asset/random variable is [$]Y_1[$] with weight [$]w_1[$] and hermite representation (upto fourth hermite polynomial) of the first asset/random variable is given as<br>
+<br>
+[$]\, Y_1\, = \, a_0 \, + \, a_1 \, Z_1 \, + \, a_2 \, \big[ {Z_1}^2 -1 \big]\, + \, a_3 \, \big[{Z_1}^3 -3 \, Z_1\big]\, + \, a_4 \, \big[{Z_1}^4 \, -3 \, {Z_1}^2 \, +3 \big]\,[$]<br>
+<br>
+our second asset/random variable is [$]Y_2[$] with weight [$]w_2[$] and hermite representation (upto fourth hermite polynomial) of the second asset/random variable is given as<br>
+<br>
+[$]\, Y_2 \, = \, b_0 \, + \, b_1 \, Z_2 \, + \, b_2 \, \big[ {Z_2}^2 -1 \big]\, + \, b_3 \, \big[{Z_2}^3 -3 \, Z_2\big]\, + \, b_4 \, \big[{Z_2}^4 \, -3 \, {Z_2}^2 \, +3 \big]\,[$]<br>
+<br>
+Now <br>
+<br>
+[$]Var[Y_1] \, = \, {a_1}^2 \, + \, 2 \, {a_2}^2 + \, 6 \, {a_3}^2+ \, 24 \, {a_4}^2 [$]<br>
+<br>
+[$]Var[Y_2] \, = \, {b_1}^2 \, + \, 2 \, {b_2}^2 + \, 6 \, {b_3}^2+ \, 24 \, {b_4}^2 [$]<br>
+<br>
+We also have correlations between orthogonal polynomials of the same order as given below. <br>
+<br>
+[$] \rho_1 \, =\frac{ E\big[Z_1 \, Z_2 \big]\,}{\sqrt{E\big[{Z_1}^2 \big] \, E\big[{Z_2}^2 \big] }} [$]<br>
+<br>
+[$] \rho_2 \, =\frac{ E\big[({Z_1}^2-1) \, ({Z_2}^2-1) \big] \,}{\sqrt{E\big[({Z_1}^2-1)^2 \big] \, E\big[({Z_2}^2-1)^2 \big] }} [$]<br>
+<br>
+[$] \rho_3 \, =\frac{ E\big[({Z_1}^3- 3 \, Z_1) \, ({Z_2}^3-3 \, Z_2) \big] \,}{\sqrt{E\big[({Z_1}^3-3 \, Z_1)^2 \big] \, E\big[({Z_2}^3-3 \, Z_2)^2 \big] }} [$]<br>
+<br>
+[$] \rho_4 \, =\frac{ E\big[({Z_1}^4- 6 \, {Z_1}^2 \, + 3) \, ({Z_2}^4-6\, {Z_2}^2 \,+3 ) \big] \,}{\sqrt{E\big[({Z_1}^4-6 \, {Z_1}^2 +3 )^2 \big] \, E\big[({Z_2}^4-6 \, {Z_2}^2 \, +3)^2 \big] }} [$]<br>
+<br>
+please look at his post to see how to actually make these calculations on data: <a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1665#p874028" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1665#p874028</a><br>
+<br>
+In next post, I substitute these values in expression for square of the sum of two weighted random variables to find their variance.</div>
+
+			
+									
+									<div id="sig875135" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875136">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875136">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875136">
+
+			<h3 ><a href="#p875136">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875136&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875136" title="Post #1784">#1784</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 13th, 2023, 6:59 am</span></p>
+			
+			
+			
+			<div class="content">When we expand the above into variance of the weighted sum of the random variables our expression would be<br>
+<br>
+[$]Var \big[w_1 \, Y_1 \,+\, w_2 \, Y_2 \big] \,= \, \big[ {w_1}^2 \, \big[\, {a_1}^2 \, + \, 2 \, {a_2}^2 + \, 6 \, {a_3}^2+ \, 24 \, {a_4}^2 \big] \\<br>
++ \, {w_2}^2 \, \big[ {b_1}^2 \, + \, 2 \, {b_2}^2 + \, 6 \, {b_3}^2+ \, 24 \, {b_4}^2 \big]  \\ + 2 \, w_1 \, w_2 \,  \big[ a_1 \, b_1 \, \rho_1 + 2 \, a_2 \, b_2 \, \rho_2 +\, 6 \, a_3 \, b_3 \, \rho_3 + \, 24 \, a_4 \, b_4 \, \rho_4 \big][$]<br>
+<br>
+If you have correctly found hermite representation of your random variables, you can easily find the variance of sums of relatively disparate random variables like a normal and a lognormal and a CEV and a heavy-tailed random variable.</div>
+
+			
+									
+									<div id="sig875136" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p875137">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile875137">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content875137">
+
+			<h3 ><a href="#p875137">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=875137&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p875137" title="Post #1785">#1785</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 13th, 2023, 9:58 am</span></p>
+			
+			
+			
+			<div class="content">Friends, in my previous post, I was thinking about variance of the sum of two random variables. But many friends would find it interesting to find a hermite polynomial series expression for the density of the sum of to random variables that can be used for further analytics. Here I try to write the equations for that.<br>
+<br>
+Suppose our first asset/random variable is [$]Y_1[$] with weight [$]w_1[$] and hermite representation (upto fourth hermite polynomial) of the first asset/random variable is given as<br>
+<br>
+[$]\, Y_1\, = \, a_0 \, + \, a_1 \, Z_1 \, + \, a_2 \, \big[ {Z_1}^2 -1 \big]\, + \, a_3 \, \big[{Z_1}^3 -3 \, Z_1\big]\, + \, a_4 \, \big[{Z_1}^4 \, -3 \, {Z_1}^2 \, +3 \big]\,[$]<br>
+<br>
+our second asset/random variable is [$]Y_2[$] with weight [$]w_2[$] and hermite representation (upto fourth hermite polynomial) of the second asset/random variable is given as<br>
+<br>
+[$]\, Y_2 \, = \, b_0 \, + \, b_1 \, Z_2 \, + \, b_2 \, \big[ {Z_2}^2 -1 \big]\, + \, b_3 \, \big[{Z_2}^3 -3 \, Z_2\big]\, + \, b_4 \, \big[{Z_2}^4 \, -3 \, {Z_2}^2 \, +3 \big]\,[$]<br>
+<br>
+and we want to find hermite series expression for the sum random variable where<br>
+<br>
+[$] \, Y_3 \, = w_1 \, Y_1 \, + \, w_2 \, Y_2 [$]<br>
+<br>
+Let us first describe the hermite form of this summed random variable [$] Y_3[$] and then we would relate its hermite coefficients to hermite coefficients of [$]Y_1[$] and [$]Y_2[$]. This hermite form of [$]Y_3[$] with yet unknown coefficients is given as<br>
+<br>
+[$]\, Y_3 \, = \, c_0 \, + \, c_1 \, Z_3 \, + \, c_2 \, \big[ {Z_3}^2 -1 \big]\, + \, c_3 \, \big[{Z_3}^3 -3 \, Z_3\big]\, + \, c_4 \, \big[{Z_3}^4 \, -3 \, {Z_3}^2 \, +3 \big]\,[$]<br>
+<br>
+Now we write the coefficients of [$]Y_3[$] in terms of coefficients of [$]Y_1[$] and [$]Y_2[$]<br>
+Zeroth coefficient is mean in this expansion and is added linearly. Coefficients of higher order hermite polynomials are added in sum squared fashion but accounting for sign.<br>
+<br>
+[$]c_0 \, =\,  w_1\, a_0 \, + \,w_2 \, b_0 \,[$]<br>
+<br>
+Expressions below are very simple but since higher hermite coefficients can have both negative and positive signs, you have to be careful in squared sum that when a large negative coefficient is squared and added to a small positive coefficient squared, the result is a smaller negative squared. We take its absolute value, take its squared root and assign it a negative sign. <br>
+<br>
+Please note that coefficient of first hermite polynomial coefficients would almost always be positive. I have never encountered a situation in which coefficient of first hermite polynomial was negative otherwise the derivative of random variable with respect to standard normal will possibly take a negative value which is not allowed for densities. All hermite polynomials after first hermite polynomial can have negative signs for their coefficients.<br>
+This is really a simple squared sum but accounting for sign makes the resulting expression a bit complicated.<br>
+<br>
+[$]c_1 \, = \sqrt{ \,{w_1}^2 \, {a_1}^2 \, + \, {w_2}^2 \,{b_1}^2 + \, 2 \, \rho_1 \, w_1 \, w_2 \,a_1 \, b_1} \,[$]<br>
+<br>
+[$]c_2 \, = sgn({sgn(a_2) \,{w_1}^2 \, {a_2}^2 \, + \, sgn(b_2) {w_2}^2 \,{b_2}^2 + \, 2 \, \rho_2 \, w_1 \, w_2 \,a_2 \, b_2}) \\ *\, \sqrt{ |{sgn(a_2) \,{w_1}^2 \, {a_2}^2 \, + \, sgn(b_2) {w_2}^2 \,{b_2}^2 + \, 2 \, \rho_2 \, w_1 \, w_2 \,a_2 \, b_2}|} \,[$]<br>
+<br>
+[$]c_3 \, = sgn({sgn(a_3) \,{w_1}^2 \, {a_3}^2 \, + \, sgn(b_3) {w_2}^2 \,{b_3}^2 + \, 2 \, \rho_3 \, w_1 \, w_2 \,a_3 \, b_3}) \\ *\, \sqrt{ |{sgn(a_3) \,{w_1}^2 \, {a_3}^2 \, + \, sgn(b_3) {w_2}^2 \,{b_3}^2 + \, 2 \, \rho_3 \, w_1 \, w_2 \,a_3 \, b_3}|} \,[$]<br>
+<br>
+[$]c_4 \, = sgn({sgn(a_4) \,{w_1}^2 \, {a_4}^2 \, + \, sgn(b_4) {w_2}^2 \,{b_4}^2 + \, 2 \, \rho_4 \, w_1 \, w_2 \,a_4 \, b_4}) \\ *\, \sqrt{ |{sgn(a_4) \,{w_1}^2 \, {a_4}^2 \, + \, sgn(b_4) {w_2}^2 \,{b_4}^2 + \, 2 \, \rho_4 \, w_1 \, w_2 \,a_4 \, b_4}|} \,[$]<br>
+Since a formal expression taking into account signs is unnecessarily complicated, I am writing simpler expression without correlations for friends to gain intuition.<br>
+If there are zero correlations between hermite polynomials, we get simpler expressions that are given in case of zero correlations as<br>
+<br>
+[$]c_1 \, =\sqrt{ \,{w_1}^2 \, {a_1}^2 \, +  {w_2}^2 \,{b_1}^2 }\,[$]<br>
+<br>
+[$]c_2 \, = sgn(w_1 \,a_2\, + \, w_2 \, b_2) \, \sqrt{ |{sgn(a_2) \,{w_1}^2 \, {a_2}^2 \, + \, sgn(b_2) {w_2}^2 \,{b_2}^2 }|} \,[$]<br>
+<br>
+[$]c_3 \, = sgn(w_1 \,a_3\, + \, w_2\, b_3) \, \sqrt{ |{sgn(a_3) \,{w_1}^2 \, {a_3}^2 \, + \, sgn(b_3) {w_2}^2 \,{b_3}^2 }|} \,[$]<br>
+<br>
+[$]c_4 \, = sgn(w_1 \,a_4\, + \, w_2 \, b_4) \, \sqrt{ |{sgn(a_4) \,{w_1}^2 \, {a_4}^2 \, + \, sgn(b_4) {w_2}^2 \,{b_4}^2 }|} \,[$]</div>
+
+			
+									
+									<div id="sig875137" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;4f4161c5bfd521b7fd3cfae96c9a138a" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" role="button">118</a></li>
+							<li class="active"><span>119</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" role="button">120</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1800" role="button">121</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1770&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;4f4161c5bfd521b7fd3cfae96c9a138a" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1755" role="button">118</a></li>
+							<li class="active"><span>119</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" role="button">120</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1800" role="button">121</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a&amp;start=1785" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1770&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=4f4161c5bfd521b7fd3cfae96c9a138a"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=4f4161c5bfd521b7fd3cfae96c9a138a" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#dabbbeb7b3b49aadb3b6b7b5aeaef4b9b5b7">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>119</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=4f4161c5bfd521b7fd3cfae96c9a138a";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=4f4161c5bfd521b7fd3cfae96c9a138a";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e29726fb2e7c8","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

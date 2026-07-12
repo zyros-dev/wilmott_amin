@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 116 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=f4224fa7a7148c9a8d6a58ad9c499af5" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=f4224fa7a7148c9a8d6a58ad9c499af5?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=f4224fa7a7148c9a8d6a58ad9c499af5?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=f4224fa7a7148c9a8d6a58ad9c499af5?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1725" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="f4224fa7a7148c9a8d6a58ad9c499af5" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=f4224fa7a7148c9a8d6a58ad9c499af5" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="f4224fa7a7148c9a8d6a58ad9c499af5" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=f4224fa7a7148c9a8d6a58ad9c499af5" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1725%26t%3D99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1725&amp;t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" />
+<input type="hidden" name="creation_time" value="1768907762" />
+<input type="hidden" name="form_token" value="4a604f7b5876435dac18a2b53983c612b2c6cfbe" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1725&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1725&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="f4224fa7a7148c9a8d6a58ad9c499af5" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f4224fa7a7148c9a8d6a58ad9c499af5" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1695" role="button">114</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" role="button">115</a></li>
+							<li class="active"><span>116</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1755" role="button">118</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p874526">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874526">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874526">
+
+			<h3 class="first"><a href="#p874526">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874526&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874526" title="Post #1726">#1726</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 28th, 2023, 10:01 am</span></p>
+			
+			
+			
+			<div class="content">I want to tell friends that mind control agencies have absolutely no intention of ending my mind control and mind control of thousands of other innocent and talented people of different colors and creeds. They only want to buy time and restart again with new even more aggressive tactics to somehow permanently retard me and thousands of other mind control targets. If any people in defense say that they would end our mind control, they are completely lying and only buying time. Corrupt generals in Pentagon have absolutely no intention of ending anybody's mind control at all. Due to its relevance, I am copying another post here that I wrote earlier.<br>
+It seems that crooks in American army and mind control are unable to pay a heed to civilized calls by good American people and others to end their animal cruel practices and remain bent on mischief. If crooks in American army and mind control remain adamant on continuing evil practices, the only solution seems that some brave investigative journalists expose them by running a comprehensive story on mind control practices by American army. It seems that doing a civilized dialogue with hardened crooks in mind control gives them a strong sense of weakness of good people and makes the crooks even more adamant to continue their evil practices.  Reminds me of Abu-Gharib. Very similarly, Crooks in defense had no conception that they were doing any wrong thing when there was a culture of openly urinating on human captives. It was an open thing in army and most crooks thought it was indeed a very right thing to do( and I am sure some of those crooks still believe that it was a right thing they did even after being reprimanded by the broader American society). It was not until brave people at CNN did a daring story against animal practices by crooks that evil practices stopped. Though American army crooks retard intelligent people of all color and creed, these ultra right wing army crooks love to retard blacks and muslims with great relish. Blacks are only 8-10% of US population but make a very large proportion of victims in united states since many ultra right wing crooks in US army would rather die than let those intelligent blacks succeed in American society in a big way.<br>
+I want to request CNN, New York Times, Washington Post, Al-Jazeera and large reputed European media outlets to run a comprehensive story on mind control torture, retarding and victimization of intelligent people of US and other nations by crooks in US army on behest of some powerful people in United States and due to rightwing extremist biases of these crooks. If you would like to do investigative research about animal practices of US army, one great resource would be mainland European embassies in Muslim countries who keep a detailed account of mind control persecution of intelligent muslims in these countries by crooks in US army. Many of the staff in mainland European embassies are very good human beings who abhor such practices and would love to cooperate with good journalists in exposing the evil animal practices of US army crooks. Only the accounts of people at mainland European embassies in muslim countries thorough animal practices of American army's mind control wing would be enough to drop a great bombshell in the media and general public all across the world. I want to warn all the good people who try to have a civilized dialogue with crooks in American army to end their evil practices that their being nice with crooks is a very misguided approach. Since good people do not have the power to forcefully end the evil practices of US army crooks, only way to end the evil practices of US army crooks is by exposing them openly in US public and all across the world. <br>
+<br>
+<a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1680#p874052" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1680#p874052</a></div>
+
+			
+									
+									<div id="sig874526" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p874527">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874527">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874527">
+
+			<h3 ><a href="#p874527">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874527&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874527" title="Post #1727">#1727</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 28th, 2023, 10:13 am</span></p>
+			
+			
+			
+			<div class="content">I have been detained more than 30 times by various psychiatrists during past twenty-five years on orders of Pakistan Army.<br>
+Here, I will recall an incident eight years ago when I myself approached a lady psychiatrist for help and how she abused me, and her staff beat me for twenty minutes and then tied me and started my treatment with antipsychotics again. <br>
+I am recalling this from early 2015. They had previously put me on extremely high antipsychotics and my creativity was all gone. I could barely do any intellectual work. At that time, I was able to convince my family to decrease the injections and they had agreed since I had already lost most of my creativity and intellectual capability. I think mind control agencies were also thinking that I had lost my creativity forever and they wanted to see if it was right time to decrease my drugs and still make sure that I would remain intellectually dull after injections had ended.<br>
+But I slowly started to work on my research and started to regain my brain. When mind control agencies realized that I had started to do better research, they asked my family to do something again to retard me. My father asked a self-stylized religious saint to come to our house and take care of me. He came to our house with one of his followers and told me that he wanted to give me injections and I would go to sleep for 24 hours, and they would take scans of my brain to treat me, but I continued to beg and plead him, and I was able to convince him to allow me to leave the home in my car. The supposed saint allowed me to leave since he was probably sure that he would get me later as I had no other place to go other than my home and, therefore, I was able to convince him to let me go outside. When I left the house, I made posts about the saint on at least two different forums from outside my house and pleaded for help. Enough people were following my story even at that time and the saint had to leave. I also called my father when I was outside and protested against this.<br>
+My family still remained very tense with me, and I was very afraid that they would force antipsychotics injections and mind control drugs on me therefore I stayed one night out of the home. Here is the post I made when I was away on April 14th, 2015, 2:09 pm<br>
+<a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=315#p748191" class="postlink">https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=315#p748191</a><br>
+"I am staying out of my home for the night since I had realized that my father will try to force me into detention again and I would request a court tomorrow for stay order to stop my father from hospitalizing me forcefully again and I would request the court that if there has to be a check on my mental health, it has to be done and investigated properly by a psychiatrist of my choice and I should remain free at the same time. I do not want to be at the mercy of my father's chosen psychiatrist as we saw in the past year that they continued to quote mental health laws and forcefully manipulate me into taking injections. If my father forcefully hospitalized me, I would be cutoff from the outer world and they would do whatever they like. My father's self-stylized saint(peer) had already hinted that he wanted to give me injections that would put me to sleep for 24 hours and he had no argument for my mental sickness at all.”<br>
+<br>
+Next day, on April 15, 2015, I went to Lahore High Court to find some help but I was told that I had to submit an application that would be considered several weeks later when its turn would arrive. When I realized that there was no possibility of help from the court, I decided to see a psychiatrist on my own. I was driving in Garden town Lahore where I came across B**** psychiatric clinic and decided to see the psychiatrist Dr. N*** there. It was evening but the psychiatrist still not had arrived there. I waited for an hour in the reception and then had a consultation with her. I asked her to listen to my case carefully and then decide if I was sane enough and tell my parents about it. She said that I seemed perfectly fine and asked me that she wanted to hear what my family had to say. I agreed and took an appointment to visit her again at April 20, 2015. I took my mother on the planned day and my mother did not have anything decisive to say about any disease other than that I did not eat at home. The psychiatrist asked me to visit her after one week on 27 April 2015. The next week when I went again to visit the psychiatrist, on April 27, and was sitting in the waiting room so that I could visit the psychiatrist on my turn. Another lady who was a psychologist came to me and asked me to go with her in a different room to have a session with psychologist but I declined and said that I was only interested in seeing the psychiatrist who had promised to see me again the earlier week. After five minutes, at least four men came to the room and started besting me. They gave me slaps on my face with full force and gave me blows and they continued to do it for more than fifteen minutes. I had never been beaten like that ever before in my life. All this time, I was simply trying to raise my hand to somehow protect me. Since I was sitting on the sofa, only my face and head were the target of slaps and blows. They were very violent with all sort of slaps and blows on my face as I earlier mentioned that I was sitting and they were standing. . They literally continued to beat me and I continued to beg them to stop. After fifteen minutes of beating me, they tied my legs and lifted me and put me on a bed in a room in the psychiatrist facility and told me that doctor had gone to America and she could not see me. It was a complete lie and the psychiatrist was in her office and was interviewing other patients when I arrived. I continued to ask them to loosen the knots but they continued to make fun of me. I was totally surprised since Dr. N had behaved very nicely in the previous meeting held at 20th with my mother and myself and I was sure she would declare me mentally sane on this meeting. After I was kept tied for about half an hour, a new guard came and opened my hands and legs and said that they would keep me at the facility for three days. The next day my medication in the form of pills started and I was also given two more injections. I was given about nine pills at night and about eight pills in the morning. I was still not given the opportunity to meet the psychiatrist N, and I was told several different things by different people including that psychiatrist N had gone to America, and she had gone to Islamabad. About three days into my treatment, I saw through the glass walls that psychiatrist N was interviewing her clients in her office. After seven days, I was asked to meet psychiatrist N, and she said that she was unaware of the beating as she was in a meeting. Psychiatrist N also assured me that I had no schizophrenia and previous doctors had very wrongly diagnosed me but it was a case of some mania that she would properly treat this time.  Her staff continued to say that they were giving me drugs so that the effect of other drugs given to me by previous psychiatrists would decrease.<br>
+<br>
+Before my computer was taken away from me, I was able to take notes for two days in the hospital on my computer that I write here. After first two days of medication, I was so extremely weak that I could barely walk and I had extreme difficulty speaking.<br>
+<br>
+“My Diary for past two days.<br>
+<br>
+4/27/2015<br>
+I had two sessions with the doctor N previously on the 20th of April and once before at 13 or 14th of April. I remained away from home during this time and second meeting on 20th of April, evening after the night when I remained away from home. I had told the doctor about my circumstances in the first meeting with her. She had said that I looked perfectly fine mentally but she needed to talk to my family. On 20th of April, I took my mother for a second joint session of myself and my and the psychiatrist said, after the meeting, that said she really could not call me schizophrenic but she needed one more sessions and asked me to come to her facility on 27th of April. <br>
+When I arrived at the psychiatric facility, a psychologist had asked me to accompany her which I did and on the way to the her room, I asked for the reason, after which she replied that she wanted to take a session of mine. I told her that I already had a session with another psyc hologist and also with a psychiatrist so I would prefer to have a new session with the psychiatrist now. She agreed and I returned to the waiting room. I was sitting on a sofa in the waiting room on 27th at 8:00 PM (PST) in the line to see the psychiatrist when about five guards took control of me, while I was sitting on a sofa in the waiting room to see the doctor, and gave me an injection. I was beaten and my legs and hands were very strictly tied for more than hour. Though the doctor was in her consultation room and a lot of people were waiting to see her, I was told again and again that doctor was not present at the facility.<br>
+In the previous two sessions, she had given the impression I was healthy mentally but she used force without interviewing for the third time or seeing me and without requests to comply. If she was given any special information, she should have talked to me about it and she should have verified with me any change in circumstances.<br>
+One injection was given around 8 PM when I arrived for third session with the doctor N. I really think that the doctor was there since there was a large rush of visitors and her SUV was parked in the hospital but everybody among the staff continued to say that doctor did not come to the facility this evening.<br>
+I was kept tied for more than one hour. I was taken tied from the waiting room to my room. All these rooms have video cameras so you can ask Dr. N for a video of the events though she might make the excuse that cameras were not working. One of the staff had mentioned when they brought me into a patient room in the facility, that everything was watched by cameras.I would request people familiar with the matter to request her to show them footage of the cameras. Of course, there could be many excuses that cameras were not working but I insist that cameras were working.<br>
+Good Mental health facilities try to avoid treating humans like this.<br>
+Another injection was given at night before I slept. <br>
+and my internet USB device was also taken. They simply took possession of everything out of my pockets and also took my laptop.<br>
+When I asked why they gave me injections, one of the staff told me you were ?hyper? and I was totally surprised since I was quietly sitting on the sofa in the waiting lounge for the doctor. I was told that I would stay in the hospital for three days. I am sure this matter can be resolved who is lying and who is truthful once you look apt video footage of cameras in most rooms.<br>
+<br>
+4/28/2015<br>
+One injection was given in the morning. One injection was given around noon. All injections were IM (given in the muscle.)<br>
+Unknown pills(some pills in the morning +5 pills around noon + 3 pills at night) were given and I was told,? We will tell you know the names of these pills only when you leave.?<br>
+Computer was returned today but I was told that we did not take your mobile and they continued to say we never took my mobile. My mobile was never returned( despite I always keep my mobile on me.) <br>
+I was also not given my EVO USB device and I was told you cannot write anything on internet. However the USB device was returned to my mother at night.<br>
+I was told today by the psychologist that doctor N had gone to America and will come back after seven days and only then she would be able to see you. I was told we are adjusting your medicine and see what was a good medicine. I was told they were discussing the drugs with her on phone and skype There were several conflicting statements about where Dr. N was. Somebody said she was just out of city and had gone to Islamabad.<br>
+When I asked my mother who is living with me at the hospital, I wanted a second opinion, because of beating and other irresponsible behavior of the psychiatrist, my mother would make all sort of excuses while the staff would say that you cannot leave the hospital until Dr. N arrives who is currently out of country.<br>
+Earlier today, I was told that I would live at the hospital for fifteen days and later I was told that I would live at the facility for seven days. When I was tied, somebody had told me that I would live in the hospital for three days only.<br>
+My mother told me please do not write anything wrong on internet otherwise, they would take your USB forcefully like Dr. A had done more than one year ago. The purpose was to threaten me to not write about any maltreatment so that the doctor would continue to freely manipulate me.<br>
+7-8 pills were given in the afternoon and similar number of pills were given at night. At many times during the day, I could barely walk and had extreme difficulty speaking.”</div>
+
+			
+									
+									<div id="sig874527" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874528">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874528">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874528">
+
+			<h3 ><a href="#p874528">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874528&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874528" title="Post #1728">#1728</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 28th, 2023, 10:15 am</span></p>
+			
+			
+			
+			<div class="content">Friends, in a previous post I told friends how staff at a lady psychiatrist's hospital started beating me and abused me. During past twenty three years, there have been many many instances of my obvious abuse by different psychiatrists. I will describe some of those instances in this post.<br>
+When I came from United States and till fifteen years after that, my father would proudly ask me that I could see any psychiatrist I wish. This was because Pakistan army was managing my persecution and they would force psychiatrists to declare me schizophrenic and my father was told that every psychiatrist would be forced to cooperate. However, by chance in 2016, I came  across a psychiatrist who was far better. I never told him that I was under mind control but whenever he interviewed me, he always said after the interview that I was perfectly sane and mentally healthy. When my family would force him to increase the dosage of antipsychotics, the doctor first told me that I should not live with my family and make a comprehensive plan to support myself and become independent (such a plan could never work since Pakistan army was threatening people in Pakistan to not give me any business and CIA was making sure that every contact I would reach for work in Europe (and Singapore/ Japan /Australia) would be approached by CIA telling them that I was a very bad guy and they must not do business with me. I had not told the doctor any such thing that intelligence agencies were after me.)  When I told the good doctor how previous psychiatrists had abused me, he would tell me that this used to be a very widespread practice in America hundred years ago to wrong mentally healthy humans by using corrupt psychiatrists as instruments to detain them and strip them of their sanity. The good doctor I am talking about was American national with Pakistan background who had practiced psychiatry in America for over twenty years and had returned to Pakistan. That good doctor kept me on very low antipsychotics (1 mg resperidone per day) and that too on extreme insistence of my family. It was only during that time of treatment by that doctor that I got my first break in research and I solved the problem of high order monte carlo simulations (and analytic series solution of ODEs)  and posted that solution on this thread. Ok, when my family was fed with the doctor, they detained me with another doctor. They detained me again two years ago when I requested my family that I wanted to see the same doctor of my choice again( I have been detained every year for past six or seven years by different doctors), they detained me through a different doctor. So my family now stubbornly refuses to allow me to see a professional qualified American psychiatrist of my own choice and detains me every time I try to approach him.<br>
+Now back to my obvious abuse by two other psychiatrists. I was detained by this doctor who was running a mental health facility and was not a psychiatrist himself. At that time I did not use to walk very much and my blood pressure used to be somewhat high. Since other antipsychotics had failed to retard me, doctor suggested I take aripperizole injections. These injections affect the heart and also elevate blood pressure but doctor who wanted to retard me had no regard for my health while pretending to cure me. In initial days of my detention, staff at the hospital when checked my blood pressure told me high enough blood pressure in line with what I used to have but after I complained about aripperizole and its effect on blood pressure the staff started doctoring blood pressure and started telling me that my blood pressure was very good or even low. This is a post I wrote on another thread in this forum about it. <a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=465#p785440" class="postlink">How to safeguard my research - Page 32 - wilmott.com</a><br>
+.
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal"><br>
+<strong>Amin:</strong><br>
+<br>
+Since I wrote about high blood pressure and mentioned high blood pressure before the hospital staff, they have started to doctor blood pressure. Now, everyday they tell me that my blood pressure is 120/80 or 110/70. While they always told me that my blood pressure was 130/90 or 140/100 prior to injections. I have never had so good blood pressure for years that they have started to tell me now. Friends would recall a previous post when I could not sleep at night and had to take a sleeping pill. When the dispenser came to me at night(The hospital has no MBBS who stays here at night in Ramadan. Dr. AS used to stay here on some nights earlier but has been totally absent in Ramadan). When the dispenser checked my blood pressure, he told me that it upper blood pressure is 110. I did not believe him at all. He asked me to check on my own and put the stethoscope head assembly in my ears. I could easily tell that upper blood pressure was more than 140 and lower was more than 100. The staff has already started to doctor blood pressure. My parents are going to Saudi Arabia for two weeks in a few days. Now Dr. AS has the plan to hold me in detention while my parents are abroad. I had a complete settlement with Dr. N and we(I and the doctor N) both agreed that I would be visiting him every fifteen days and all modalities were agreed. I do think as a patient it is my right to choose the psychiatrist and Dr. AS( who is incharge of facility Pav.) has no right to change the doctor after I have selected a psychiatrist and we both agree on terms of any treatment. Dr. AS has imposed another psychiatrist Dr. M who has not even seen me and has already started giving me injections and increased medicine without looking at my present condition. Dr. N had explicitly stated that I would be free to leave if it were his facility. Most major reason for detaining me now is that Dr.AS wants to continue to detain me while my parents are leaving for abroad for more than two weeks</span></div></blockquote>
+.<br>
+Later after a few days, I was given a second aripperizole injection and released from detention. An injection was due every fifteen days. My parents were in Saudi Arabia and I was living with my sister. She insisted after fifteen days that I get a new aripperizole injection. I complained about too much side effects and other serious problems but my sister insisted that I must get the injection. She talked to another doctor and the doctor told her that if his blood pressure and pulse are fine, just give him the injection. I asked my sister that my blood pressure must be checked before I get the new injection. We went to a small hospital close to her house and when my blood pressure was checked my lower blood pressure was 110. The hospital staff recommended that I stay at the hospital in their care until my blood pressure decreases. It was a totally random blood perssure check. When hospital staff came to know that I had been given aripperizole injections, they told my sister to not give me those injections any more. My sister asked the staff to relieve me and we came home but I was not given aripperizole injections after that. <br>
+But this is interesting that the psychiatrist was initially desperate to prescribe aripperizole despite that I had told him about my heart and blood pressure problems and his staff was asked to doctor blood pressure so that I would accept the injections.<br>
+Good thing is that only after stopping aripperizole, I started my treatment with good psychiatrist  doctor Naeem Aftab (who is an American national) and he gave me enough relief that I was able to get a break in my research and solve the problem of high order monte carlo simulations. I would always be thankful to Dr. Naeem Aftab for giving me relief at such a crucial point in my life.<br>
+<br>
+Yet another experience for abuse was with a seasoned psychiatrist who is known for his connections with Pakistan army. When army dictator Pervaiz Musharraf ruled the country, he made this doctor the dean(president) of the university of health sciences which regulates most medical universities in Pakistan. He had treated me for three years in year 2001. He started my treatment without interviewing me and gave me electric shocks at the start to jumpstart the therapy. <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I was given electric shocks for fifteen days in early 2001. I still recall that doctor would place a wooden wedge between my teeth and then give me an injection and I still recall how numbness would move in my body from feet to the upper body after the injection. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">When going to that doctor's psychiatrist facility in 2001 I had to travel from Kot Addu to Rawalpindi. My family had given me some drug in my food and I became unconscious after an hour or so. I still recall how I was begging my younger brother to help me that I do not want to go anywhere and if he could help me but he like everybody else in the family refused. Slowly drug in food showed its effect and I have absolutely no memory of being taken in my father's car despite that it would have taken him at least eight hours to take me to Rawalpindi. Psychiatrist did not interview me and detained me and started giving me electric shocks. I still recall how I defecated in my bed there and they had to wash it. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Anyway, I was taken to this psychiatrist in 2017 again. He was very clearly told that I had been given antipsychotic drug larjactil by another doctor and it backfired and I had extremely severe drug-induced jaundice. But the doctor was so haughty and cavalier and so desperate to retard me that he still insisted that I must get the same drug larjactil and said that it was not necessary that it would cause jaundice every time. Problem for the doctor was that most antipsychotics had failed to retard me and he wanted to give me some potent antipsychotic that had not been well-tried on me. Though the drug was given to me earlier and later discontinued, the doctor wanted to take his chances to retard me and he had no regard for my health. This doctor is a big crony of Pakistan army and really wanted to please the generals and therefore he decided to give me larjactil again. And as would already be obvious to most friends, after two weeks, I started to show all signs of drug-induced jaundice again and my body and eyes were all yellow. My Biluribin shot like anything. And it took more than two months to control jaundice after that. Though my biluribin came back to normal after two months, several less known enzymes in my liver remained disturbed for several years after that and continued to show as abnormal in my liver function test reports.</span></div>
+
+			
+									
+									<div id="sig874528" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874529">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874529">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874529">
+
+			<h3 ><a href="#p874529">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874529&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874529" title="Post #1729">#1729</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 28th, 2023, 10:20 am</span></p>
+			
+			
+			
+			<div class="content"><a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=102298" class="postlink">My Letter To HRW About My Human Rights Abuse</a><br>
+<br>
+Above is a very incomplete account of how various psychiatrists continued to play in hands of Pakistan army to retard me. It also does not cover all the time till year 2022 and the account stops several years earlier.<br>
+Pakistan Army has no personal animosity with me. Chief of Pakistan Army staff is given more than 50 billion rupees every year come rain or shine so that army continues American Mind control of intelligent people in Pakistan. Even when the relations between both countries are extremely bad, this bribe is always given to Pakistan army generals in time.<br>
+<br>
+Before writing this post, I want to apologize to good jews but want to tell them there are enough evil jews who are doing everything to tarnish the great goodwill jews have so rightly earned through generations of hard work and being nice and kind to other people in the society. I want to request good jews to Please force these evil(jewish) people to end the bad practices that are starting to take root in American and other societies on their behest and before it is too late. I also really hope that my mind control would finally end(as I have been begging for past twenty years) and I would never have to write a post like this again.<br>
+<br>
+In the past, I continued to mention about my mind control persecution from time to time but only started writing regularly about it when I arrived in UK on a Highly Skilled Migrant work visa. Mind control agencies did everything in their power to fail me in UK. People were asked to not give me a job. People I contacted were routinely told brazen lies about me totally shamelessly. When I realized that I had no future in UK, I returned to Pakistan after a six month stint in UK. Since my hard earned money had thoroughly insulted mind control infrastructure in UK as they had to drug entire cities with mind control chemicals in UK (read briefly about it in my application to HRW in a previous thread) for a nobody like me and American government had to move all their grand and influential puppets in UK (again for a nobody like me) to force people to drug the manufactured food. British Banks went to the extent to steal my money to bleed me. Read here: <a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=102298#p857494" class="postlink">https://forum.wilmott.com/viewtopic.php?f=15&amp;t=102298#p857494</a>. British police forcefully stopped me from seeing law firms(Brief details are given in my application to HRW attached as a link below).  Since my money had given mind control agencies a very tough time, mind control agencies decided to never let me make significant money after that. My old Japanese employer was told to not hire me after I returned to Pakistan. Whoever I would contact someone in Europe for job or consulting, mind control agencies would move American embassy infrastructure in that country and somebody highly influential (or army or secret services of that particular country)  in that particular country would approach my target employer and again brazen lies and fabricated stories would be told about me shamelessly. I am a fighter in life and I continued my research despite all economic, coercive and other hardships. All odds were against me but I tried my best to continue.  I have been presenting my research to friends on this forum for past five or six years. At this point, I want to request good American and friends from other countries who have come to know me through my research to please use their influence to end my mind control forever.<br>
+<br>
+Since things might heat up after my writing this and my persecution might increase, I want to ask European embassies in Pakistan to keep a vigil. I want to tell Europeans that my writing about mind control is in their great interest since the very same people who instigate retarding of intelligent muslims are behind retarding of dozens of intelligent europeans and once these people are exposed I am sure they will be far more careful in openly retarding European talent(that they do not like). <br>
+I had told friends earlier that a jewish billionaire is Godfather of mind control. When my persecution started (in late 1997) at the university in New York which is a big time player in mind control of Muslims, blacks and foreigners, many university officials were very pleased that they were getting written in good books of the billionaire jewish Godfather. Though there are far richer billionaires in US who are staunchly opposed to mind control, they are not ready to shell out hundreds of millions of dollars to bribe anyone to end mind control while mind control Godfather continues to give large bribes to people to continue mind control. Many of the people related to defense in mind control are given extremely high paying jobs in Godfather and his other jewish friends' companies after they retire from mind control and Godfather is extremely generous towards them and it is well established and well known to people in mind control that after retarding muslims, blacks and others in their career, they will move to paradise after they retire. No wonder there is no let up in mind control whatever good people try.<br>
+We know in almost all classic folk lore stories evil is too strong and too sure of itself while good is mostly weak and just trying to protect itself from evil who is bent on damaging and eradicating the weak and the poor good but it is the weak and poor good that finally prevails. I want to tell good American friends that evil at this stage has become too bold and thousands of talented people are retarded every year. And it is just not muslims and blacks that are on the line, several hundreds of brilliant whites are retarded across United States by mind control agency every year that has become too emboldened due to lack of any accountability. Thousands of foreigners are also kept retarded in dozens of countries including many European countries. <br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">My only intention behind this post is that I want mind control to end from our societies. I do not have any joy in mentioning that there are some bad jewish actors behind it. In American society there are a large number of jews who have excelled in the professions of science, education, medicine and have made great contributions to our societies. There are a very large number of jewish professors each of whom would have taught tens of thousands of students on top of making extraordinary contributions to body of human knowledge through their great research. Then there are accomplished jewish scientists whose work, research and inventions make our everyday life better. There are great jewish doctors and surgeons who would treat countless sick people and make them recover from disease. The list of contributions of jewish people to humanity is very long and it continues. Then there are a large number of ordinary jewish folks who are known for their goodness and civility to other people in the society. When we know all of this, we do not want to say anything anti-jewish to hurt the feelings of so many good jewish people. But I still have to say there are really some bad people who are unconnected with most of the nice and accomplished jews and they instigate and continue cruel mind control torture on talented people of other ethnicities, religions and countries based on their personal dislike and hatred. My purpose is only to end the mind control victimization and torture on otherwise nice and talented people and I do not have any hidden intentions beyond that. And I am sure American society knows very well about the contributions of good Jews to both their country and broader humanity and my exposing some bad actors would never have any bad effect of any kind on these good and nice jews who we all respect and who are our role models.</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I want to tell friends something I have said before here that I am sure American society would eventually end the menace of mind control from their and other countries. I want to request all good Americans and Europeans to come forward and invite any investigative journalist you know to read my threads and ask them to help end the menace of mind control in our societies through their investigative journalism. Without any accountability evil will continue to grow stronger and then mind control would start to threaten even those people who consider themselves safe due to affiliations, status or wealth.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I want to request CNN, New York Times, Washington Post, Al-Jazeera and large reputed European media outlets to run a comprehensive story on mind control torture, retarding and victimization of intelligent people of US and other nations by crooks in US army on behest of some powerful people in United States and due to rightwing extremist biases of these crooks. If you would like to do investigative research about animal practices of US army, one great resource would be mainland European embassies in Muslim countries who keep a detailed account of mind control persecution of intelligent muslims in these countries by crooks in US army. Many of the staff in mainland European embassies are very good human beings who abhor such practices and would love to cooperate with good journalists in exposing the evil animal practices of US army crooks. Only the accounts of people at mainland European embassies in muslim countries thorough animal practices of American army's mind control wing would be enough to drop a great bombshell in the media and general public all across the world. I want to warn all the good people who try to have a civilized dialogue with crooks in American army to end their evil practices that their being nice with crooks is a very misguided approach. Since good people do not have the power to forcefully end the evil practices of US army crooks, only way to end the evil practices of US army crooks is by exposing them openly in US public and all across the world. </span><br>
+<span style="color:#555555"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">It seems that crooks in American army and mind control are unable to pay a heed to civilized calls by good American people and others to end their animal cruel practices and remain bent on mischief. If crooks in American army and mind control remain adamant on continuing evil practices, the only solution seems that some brave investigative journalists expose them by running a comprehensive story on mind control practices by American army. It seems that doing a civilized dialogue with hardened crooks in mind control gives them a strong sense of weakness of good people and makes the crooks even more adamant to continue their evil practices.  Reminds me of Abu-Gharib. Very similarly, Crooks in defense had no conception that they were doing any wrong thing when there was a culture of openly urinating on human captives. It was an open thing in army and most crooks thought it was indeed a very right thing to do( and I am sure some of those crooks still believe that it was a right thing they did even after being reprimanded by the broader American society). It was not until brave people at CNN did a daring story against animal practices by crooks that evil practices stopped. Though American army crooks retard intelligent people of all color and creed, these ultra right wing army crooks love to retard blacks and muslims with great relish. Blacks are only 8-10% of US population but make a very large proportion of victims in united states since many ultra right wing crooks in US army would rather die than let those intelligent blacks succeed in American society in a big way.</span></span></div>
+
+			
+									
+									<div id="sig874529" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874535">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874535">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874535">
+
+			<h3 ><a href="#p874535">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874535&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874535" title="Post #1730">#1730</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">February 28th, 2023, 8:37 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, in this post I want to explain the ideas behind hermite Z-series regressions. Even though though these ideas are not difficult at all, I will keep things simple and first explain one variable hermite Z-series regression, and then generalize it to multivariate hermite Z-series regressions. <br>
+<br>
+In the first step of the regression, we have to find a Z-series representation of the marginal density of explained variable and explanatory variable. This would usually be done by calculating moments of the explained and explanatory random variable and then converting them into Z-series using method (and posted matlab program) I have previously suggested on this forum. When we know that analytics between explained variable and explanatory variable are more involved, we can easily fit up to eight moments to find Z-series if data set is large enough (and then run a hermite regression to 7th order polynomial). In my initial experiments with hermite regressions, I just used first four moments. First three moments were fixed at their observed values and fourth moment was fixed at positivity condition (Read here <br>
+about first derivative positivity condition: <a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1710#p874464" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1710#p874464</a>) of first derivative dXdZ so that we could get a valid density.<br>
+Once we find a Z-series representation by fitting first four moment, it would be a third order polynomial. First the Z-Series of regressand<br>
+[$]Y=a_0 + a_1 \, Z_1 + a_2 \, Z_1^2 + a_3 \, Z_1^3 [$]  Eq(A)<br>
+Then we find Z-series of regressor<br>
+[$]X=b_0 + b_1 \, Z_2 + b_2 \, Z_2^2 + b_3 \, Z_2^3 [$]  Eq(B)<br>
+<br>
+<br>
+We want to remind the friends that for every Z-series in powers of Z, there is an equivalent Z-series in hermite polynomials given as<br>
+<br>
+[$]Y=ah_0 + ah_1 \, Z_1 + ah_2 \, (Z_1^2-1) + ah_{3} \, (Z_1^3-3 \, Z_1) [$]<br>
+Then we find Z-series of regressor<br>
+[$]X=bh_0 + bh_1 \, Z_2 + bh_2 \, (Z_2^2 \, -\, 1) + bh_3 \, (Z_2^3 \, - \, 3 \, Z_2)[$]  <br>
+<br>
+Once we have found the Z-series, the first step is to find Z-values of regressors and regressand data with respect to their marginal density. For each data point for every variable, we find out corresponding value of Z by inverting the Z-series relationship given in equations A and B. This is non-linear standardization of data as opposed to linear standardization used as ([$]Z=\frac{(X \, - \, \mu)}{\sigma}[$]). Again we are standardizing the data by finding inverse of higher degree polynomial as opposed to linear standardization resulting from inverse of first degree polynomial. In what follows, I will call this non-linear standardized values of observed data points as Z-values of data. These standardized Z-values are found from observed data points by Newton root-finding algorithm after giving an intelligent starting point.(This is included in my matlab program earlier posted)<br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes [$]X[$] and Y. Here <br>
+[$] Z_{1,p} [$] denotes our standardized Z-value corresponding to pth observation of data of Y and  [$] Z_{2,p} [$] denotes our standardized Z-value corresponding to pth observation of data of explanatory variable [$]X[$]<br>
+For Finding Correlation between first hermite polynomial components, we write the equation for the correlation between first hermites of one regressor and regressand as<br>
+<br>
+[$]\rho_{XY,1} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_1 \, Z_{1,p} \, bh_1 \, Z_{2,p} \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_1^2 \, {Z_{1,p}}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_1^2 \, {Z_{2,p}}^2 \,}}[$]<br>
+<br>
+Again, Please notice that for calculation of above equation, we first have to find the specific values of [$] Z_{1,p}[$] and [$]Z_{2,p}[$] that are associated with particular pth observation of [$]X_p[$] and [$]Y_p[$] by some inversion method.<br>
+For Finding Correlation between second hermite polynomial components, we write the equation for the correlation between second hermite polynomial of observation Z-values of one regressor and regressand as<br>
+<br>
+[$]\rho_{XY,2} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_2 \, ({Z_{1,p}}^2-1) \, bh_2 \, ({Z_{2,p}}^2-1) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_2^2 \, {(Z_{1,p}^2-1)}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_2^2 \, {({Z_{2,p}}^2-1})^2 \,}}[$]<br>
+<br>
+similarly for nth hermite polynaomial correlations, we would write as<br>
+<br>
+[$]\rho_{XY,n} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_n \, H_n(Z_1) \, bh_n \, H_n(Z_2) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_n^2 \, {H_n(Z_1)}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_n^2 \, {H_n(Z_2)}^2 \,}}[$]<br>
+<br>
+Please note that correlations are in joint products of hermite polynomials associated with observation Z-values. Their coefficients are only required for covariances between hermite polynomials.<br>
+<br>
+We know from simple regression theory that once we know correlation between two variables, we can write the regression equation between them as<br>
+<br>
+[$]Y \, = \, \mu_Y \, + \, \rho_{XY} \frac{s_Y}{s_X} \, (X\, - \, \mu_X) [$]<br>
+<br>
+So we could write a variant of the above traditional formula in our new case (please notice that correlated contribution from Z-values of regressors is being scaled by SD/volatility of marginal density of regressand) with hermite correlations as<br>
+<br>
+[$]Y \, = \, ah_0 \, + \, \rho_{XY,1} \, ah_1 \, Z_1 \, + \, \rho_{XY,2} \, ah_2 \, ({Z_1}^2 -1) \, + \, \rho_{XY,3} \, ah_3 \, ({Z_1}^3 -3 Z_1) + ...+\, \rho_{XY,n} \, ah_n \, H_n(Z_1)[$]<br>
+<br>
+I will follow with generalization to multivariate hermite regression in next post.</div>
+
+			
+									
+									<div id="sig874535" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874541">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874541">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874541">
+
+			<h3 ><a href="#p874541">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874541&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874541" title="Post #1731">#1731</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 1st, 2023, 12:30 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, first of all my apology for not writing the second post yesterday. I was not feeling well and was making all sort of mistakes and then I realized that I was not thinking properly and decided to not write the second post. Later I noticed some errors in the first post as well. I am re-writing the corrected first post for univariate hermite regression here and then I will start writing the second post for multivariate hermite regressions.<br>
+Here is the Yesterday's corrected post.<br>
+<br>
+<br>
+In the first step of the regression, we have to find a Z-series representation of the marginal density of explained variable and explanatory variable. This would usually be done by calculating moments of the explained and explanatory random variable and then converting them into Z-series using method (and posted matlab program) I have previously suggested on this forum. When we know that analytics between explained variable and explanatory variable are more involved, we can easily fit up to eight moments to find Z-series if data set is large enough (and then run a hermite regression to 7th order polynomial). In my initial experiments with hermite regressions, I just used first four moments. First three moments were fixed at their observed values and fourth moment was fixed at positivity condition (Read here <br>
+about first derivative positivity condition: <a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1710#p874464" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=1710#p874464</a>) of first derivative dXdZ so that we could get a valid density.<br>
+Once we find a Z-series representation by fitting first four moment, it would be a third order polynomial. First the Z-Series of regressand<br>
+[$]Y=a_0 + a_1 \, Z_1 + a_2 \, Z_1^2 + a_3 \, Z_1^3 [$]  Eq(A)<br>
+Then we find Z-series of regressor<br>
+[$]X=b_0 + b_1 \, Z_2 + b_2 \, Z_2^2 + b_3 \, Z_2^3 [$]  Eq(B)<br>
+<br>
+<br>
+We want to remind the friends that for every Z-series in powers of Z, there is an equivalent Z-series in hermite polynomials given as<br>
+<br>
+[$]Y=ah_0 + ah_1 \, Z_1 + ah_2 \, (Z_1^2-1) + ah_{3} \, (Z_1^3-3 \, Z_1) [$]<br>
+Then we find Z-series of regressor<br>
+[$]X=bh_0 + bh_1 \, Z_2 + bh_2 \, (Z_2^2 \, -\, 1) + bh_3 \, (Z_2^3 \, - \, 3 \, Z_2)[$]  <br>
+<br>
+Once we have found the Z-series, the first step is to find Z-values of regressors and regressand data with respect to their marginal density. For each data point for every variable, we find out corresponding value of Z by inverting the Z-series relationship given in equations A and B. This is non-linear standardization of data as opposed to linear standardization used as ([$]Z=\frac{(X \, - \, \mu)}{\sigma}[$]). Again we are standardizing the data by finding inverse of higher degree polynomial as opposed to linear standardization resulting from inverse of first degree polynomial. In what follows, I will call this non-linear standardized values of observed data points as Z-values of data. These standardized Z-values are found from observed data points by Newton root-finding algorithm after giving an intelligent starting point.(This is included in my matlab program earlier posted)<br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes [$]X[$] and Y. Here <br>
+[$] Z_{1,p} [$] denotes our standardized Z-value corresponding to pth observation of data of Y and  [$] Z_{2,p} [$] denotes our standardized Z-value corresponding to pth observation of data of explanatory variable [$]X[$]<br>
+For Finding Correlation between first hermite polynomial components, we write the equation for the correlation between first hermites of one regressor and regressand as follows in next equation. Here we are finding correlation between 1st hermites of Z-values of observed data of both random variables.<br>
+[Disclaimer: We do not use hermite coefficients in calculations of hermite correlations as I wrote yesterday because they can possibly lead to bad signs.] <br>
+<br>
+[$]\rho_{XY,1} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, Z_{1,p} \, \, Z_{2,p} \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {Z_{1,p}}^2 \,\displaystyle\sum_{p=1}^{P} \, \, {Z_{2,p}}^2 \,}}[$]<br>
+<br>
+Again, Please notice that for calculation of above equation, we first have to find the specific values of [$] Z_{1,p}[$] and [$]Z_{2,p}[$] that are associated with particular pth observation of [$]X_p[$] and [$]Y_p[$] by some inversion method. <br>
+For Finding Correlation between second hermite polynomial components, we write the equation for the correlation between second hermite polynomial of observation Z-values of one regressor and regressand as follows in next equation.  Here we are finding correlation between 2nd  hermites of Z-values of observed data of both random variables.<br>
+<br>
+[$]\rho_{XY,2} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, ({Z_{1,p}}^2-1) \, \, ({Z_{2,p}}^2-1) \,}{\sqrt{\displaystyle\sum_{p=1}^{P}  \, {(Z_{1,p}^2-1)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {({Z_{2,p}}^2-1})^2 \,}}[$]<br>
+<br>
+similarly for nth hermite polynaomial correlations, we would write as<br>
+<br>
+[$]\rho_{XY,n} \, = \,  \frac{\displaystyle\sum_{p=1}^{P}  \, H_n(Z_1)  \, H_n(Z_2) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {H_n(Z_1)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {H_n(Z_2)}^2 \,}}[$]<br>
+<br>
+Please note that correlations are in joint products of hermite polynomials associated with observation Z-values. Their coefficients are only required for covariances between hermite polynomials.<br>
+<br>
+We know from simple regression theory that once we know correlation between two variables, we can write the regression equation between them as<br>
+<br>
+[$]Y \, = \, \mu_Y \, + \, \rho_{XY} \frac{s_Y}{s_X} \, (X\, - \, \mu_X) [$]<br>
+<br>
+So we could write a variant of the above traditional formula in our new case (please notice that correlated contribution from Z-values of regressors is being scaled by SD/volatility of marginal density of regressand) with hermite correlations as<br>
+<br>
+[$]Y \, = \, mu_Y \, + \, \rho_{XY,1} \, ah_1 \, Z_2 \, + \, \rho_{XY,2} \, ah_2 \, ({Z_2}^2 -1) \, + \, \rho_{XY,3} \, ah_3 \, ({Z_2}^3 -3 Z_2) + ...+\, \rho_{XY,n} \, ah_n \, H_n(Z_2)[$]<br>
+<br>
+while explanatory variable X is given as before<br>
+[$]X=\mu_X \, + bh_1 \, Z_2 + bh_2 \, (Z_2^2 \, -\, 1) + bh_3 \, (Z_2^3 \, - \, 3 \, Z_2)[$]  <br>
+<br>
+I will follow with generalization to multivariate hermite regression in next post. I am writing it now.</div>
+
+			
+									
+									<div id="sig874541" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874542">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874542">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874542">
+
+			<h3 ><a href="#p874542">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874542&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874542" title="Post #1732">#1732</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 1st, 2023, 2:05 pm</span></p>
+			
+			
+			
+			<div class="content">Here I explain  multivariate hermite polynomial regression with a simple multivariate regression example with three hermite polynomials which can easily be generalized to any suitable order of hermite polynomials.<br>
+<br>
+Just like in univariate regressions, we have to first find Z-series representations of marginal density of explained and explanatory variables possibly by calculating moments and then converting them into appropriate Z-series.<br>
+Suppose we have found the Z-series of explained variable Y and M explanatory variables [$]X_1[$] , [$] X_2[$] up to [$] X_M[$] and they are given as<br>
+<br>
+[$]Y=a_0 + a_1 \, Z_y + a_2 \, {Z_y}^2 + a_3 \, {Z_y}^3 [$]  Eq(A)<br>
+Then we find Z-series of regressors<br>
+[$]X_1=b_0 + b_1 \, Z_{x1} + b_2 \, {Z_{x1}}^2 + b_3 \, {Z_{x1}}^3 [$]  Eq(B)  <br>
+[$]X_2=c_0 + c_1 \, Z_{x2} + c_2 \, {Z_{x2}}^2 + c_3 \, {Z_{x2}}^3 [$]  Eq(B)  <br>
+...<br>
+[$]X_M=d_0 + d_1 \, Z_{xM} + d_2 \, {Z_{xM}}^2 + d_3 \, {Z_{xM}}^3 [$]  Eq(B)  <br>
+<br>
+We find equivalent series in hermite polynomials  as<br>
+<br>
+[$]Y=ah_0 + ah_1 \, Z_y + ah_2 \, ({Z_y}^2-1) + ah_{3} \, ({Z_y}^3-3 \, Z_y) [$]<br>
+Then we find  hermite series of regressors as<br>
+[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]<br>
+and<br>
+[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  <br>
+and<br>
+[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  <br>
+ <br>
+Once we have found the Z-series, the first step is to find Z-values of regressors and regressand data with respect to their marginal density. For each data point observation for every variable, we find out corresponding value of Z by inverting the Z-series relationship given in equations A and B. This is non-linear standardization of data to find the Z-values of data. <br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes [$]X[$] and Y. Here <br>
+[$] Z_{x,p} [$] denotes our standardized Z-value corresponding to pth observation of data of X and  [$] Z_{y,p} [$] denotes our standardized Z-value corresponding to pth observation of data of variable [$]Y[$]<br>
+We define<br>
+[$]\rho_{XY,1} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, Z_{x,p} \, \, Z_{y,p} \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {Z_{x,p}}^2 \,\displaystyle\sum_{p=1}^{P} \, \, {Z_{y,p}}^2 \,}}[$]<br>
+<br>
+[$]\rho_{XY,2} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, ({Z_{x,p}}^2-1) \, \, ({Z_{y,p}}^2-1) \,}{\sqrt{\displaystyle\sum_{p=1}^{P}  \, {(Z_{x,p}^2-1)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {({Z_{y,p}}^2-1})^2 \,}}[$]<br>
+<br>
+similarly for nth hermite polynaomial correlations, we would write as<br>
+<br>
+[$]\rho_{XY,n} \, = \,  \frac{\displaystyle\sum_{p=1}^{P}  \, H_n(Z_x)  \, H_n(Z_y) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {H_n(Z_x)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {H_n(Z_y)}^2 \,}}[$]<br>
+<br>
+We find standardized regression coefficients for each hermite polynomial in the multivariate regression as<br>
+<br>
+[$]\begin{bmatrix}<br>
+         \beta_{11} &amp; \beta_{12} &amp; \cdots &amp; \beta_{1M}<br>
+     \end{bmatrix}<br>
+     \times<br>
+     \begin{bmatrix}<br>
+         \rho_{X1X1,1} &amp; \rho_{X1X2,1} &amp; \cdots &amp; \rho_{X1XM,1}\\<br>
+         \rho_{X1X2,1} &amp; \rho_{X2X2,1} &amp; \cdots &amp; \rho_{X2XM,1}\\ <br>
+         \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\ <br>
+         \rho_{X1XM,1} &amp; \rho_{X2XM,1} &amp; \cdots &amp; \rho_{XMXM,1} <br>
+     \end{bmatrix}<br>
+      =<br>
+     \begin{bmatrix}<br>
+          \rho_{X1Y,1} &amp; \rho_{X2Y,1} &amp; \cdots &amp; \rho_{XMY,1}<br>
+     \end{bmatrix}[$]<br>
+<br>
+In above square matrix on LHS is a matrix of first hermite correlations between regressors and the row vector on RHS has correlations between first hermites of regressors and explained variable. Row vector of betas on LHS is vector of standardized regression coefficients associated with first hermite polynomial of various explanatory variables.<br>
+We represent it as<br>
+<br>
+                                      [$] \beta_1 \, \textbf{R}_1 = \, \textbf{r}_{XY,1}[$] <br>
+                                     [$] \beta_1 \, = \beta_1 \, \textbf{R}_1 \, {\textbf{R}_1}^{-1} = \, \textbf{r}_{XY,1}\, {\textbf{R}_1}^{-1}[$] <br>
+<br>
+In above we solved for the standardized regression coefficients of various explanatory variables associated with first hermite polynomial correlations. This is a row vector. <br>
+Similarly for 2nd hermite polynomial correlations, we can solve for standardized regression coefficients of second hermites of various explanatory variables as             <br>
+                                    [$] \beta_2 \, = \, \textbf{r}_{XY,2}\, {\textbf{R}_2}^{-1}[$] <br>
+In above square matrix [$] {\textbf{R}_2}[$] is a matrix of second hermite polynomial correlations between regressors and  [$]\textbf{r}_{XY,2}[$] has correlations between second hermite polynomials of regressors and explained variable. <br>
+And similarly for third hermite polynomial regression coefficients and so on.<br>
+Once we have solved for standardized regression coefficients associated with various hermite polynomials, we can write the hermite regression equation of the explained variable after multiplying with original hermite coefficients as<br>
+<br>
+[$]Y=\mu_y + ah_1 \, \big[ \beta_{11} \, Z_{x1} + \beta_{12} \, Z_{x2} + ....+ \beta_{1M} \, Z_{xM} \, \big] [$]<br>
+[$]+ ah_2 \, \big[ \beta_{21} \, ({Z_{x1}}^2 -1) + \beta_{22} \, ({Z_{x2}}^2-1)   + ....+ \beta_{2M} \, ({Z_{xM}}^2-1) \, \big] [$]<br>
+[$]+ ah_3 \, \big[ \beta_{31} \, ({Z_{x1}}^3 -3 Z_{x1}) + \beta_{32} \, ({Z_{x2}}^3-3 \, Z_{x2})   + ....+ \beta_{3M} \, ({Z_{xM}}^3-3 \, Z_{xM}) \, \big] [$]<br>
+<br>
+In above [$]\beta[$]s are standardized regression coefficients associated with hermite polynomials of explanatory variables. While [$]ah_1[$] ,  [$]ah_2[$] and [$]ah_3[$] are coefficients of hermite series in the original marginal density representation that we derived from first few moments.<br>
+For graphing and other purposes, we would use the following values of explanatory variables from their marginal densities<br>
+[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]<br>
+and<br>
+[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  <br>
+and<br>
+[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  </div>
+
+			
+									
+									<div id="sig874542" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874576">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874576">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874576">
+
+			<h3 ><a href="#p874576">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874576&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874576" title="Post #1733">#1733</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 3rd, 2023, 10:57 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Here I explain  multivariate hermite polynomial regression with a simple multivariate regression example with three hermite polynomials which can easily be generalized to any suitable order of hermite polynomials.<br>
+<br>
+Just like in univariate regressions, we have to first find Z-series representations of marginal density of explained and explanatory variables possibly by calculating moments and then converting them into appropriate Z-series.<br>
+Suppose we have found the Z-series of explained variable Y and M explanatory variables [$]X_1[$] , [$] X_2[$] up to [$] X_M[$] and they are given as<br>
+<br>
+[$]Y=a_0 + a_1 \, Z_y + a_2 \, {Z_y}^2 + a_3 \, {Z_y}^3 [$]  Eq(A)<br>
+Then we find Z-series of regressors<br>
+[$]X_1=b_0 + b_1 \, Z_{x1} + b_2 \, {Z_{x1}}^2 + b_3 \, {Z_{x1}}^3 [$]  Eq(B)  <br>
+[$]X_2=c_0 + c_1 \, Z_{x2} + c_2 \, {Z_{x2}}^2 + c_3 \, {Z_{x2}}^3 [$]  Eq(B)  <br>
+...<br>
+[$]X_M=d_0 + d_1 \, Z_{xM} + d_2 \, {Z_{xM}}^2 + d_3 \, {Z_{xM}}^3 [$]  Eq(B)  <br>
+<br>
+We find equivalent series in hermite polynomials  as<br>
+<br>
+[$]Y=ah_0 + ah_1 \, Z_y + ah_2 \, ({Z_y}^2-1) + ah_{3} \, ({Z_y}^3-3 \, Z_y) [$]<br>
+Then we find  hermite series of regressors as<br>
+[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]<br>
+and<br>
+[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  <br>
+and<br>
+[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  <br>
+ <br>
+Once we have found the Z-series, the first step is to find Z-values of regressors and regressand data with respect to their marginal density. For each data point observation for every variable, we find out corresponding value of Z by inverting the Z-series relationship given in equations A and B. This is non-linear standardization of data to find the Z-values of data. <br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes [$]X[$] and Y. Here <br>
+[$] Z_{x,p} [$] denotes our standardized Z-value corresponding to pth observation of data of X and  [$] Z_{y,p} [$] denotes our standardized Z-value corresponding to pth observation of data of variable [$]Y[$]<br>
+We define<br>
+[$]\rho_{XY,1} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, Z_{x,p} \, \, Z_{y,p} \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {Z_{x,p}}^2 \,\displaystyle\sum_{p=1}^{P} \, \, {Z_{y,p}}^2 \,}}[$]<br>
+<br>
+[$]\rho_{XY,2} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} \, ({Z_{x,p}}^2-1) \, \, ({Z_{y,p}}^2-1) \,}{\sqrt{\displaystyle\sum_{p=1}^{P}  \, {(Z_{x,p}^2-1)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {({Z_{y,p}}^2-1})^2 \,}}[$]<br>
+<br>
+similarly for nth hermite polynaomial correlations, we would write as<br>
+<br>
+[$]\rho_{XY,n} \, = \,  \frac{\displaystyle\sum_{p=1}^{P}  \, H_n(Z_x)  \, H_n(Z_y) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} \, {H_n(Z_x)}^2 \,\displaystyle\sum_{p=1}^{P} \,  \, {H_n(Z_y)}^2 \,}}[$]<br>
+<br>
+We find standardized regression coefficients for each hermite polynomial in the multivariate regression as<br>
+<br>
+[$]\begin{bmatrix}<br>
+         \beta_{11} &amp; \beta_{12} &amp; \cdots &amp; \beta_{1M}<br>
+     \end{bmatrix}<br>
+     \times<br>
+     \begin{bmatrix}<br>
+         \rho_{X1X1,1} &amp; \rho_{X1X2,1} &amp; \cdots &amp; \rho_{X1XM,1}\\<br>
+         \rho_{X1X2,1} &amp; \rho_{X2X2,1} &amp; \cdots &amp; \rho_{X2XM,1}\\ <br>
+         \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\ <br>
+         \rho_{X1XM,1} &amp; \rho_{X2XM,1} &amp; \cdots &amp; \rho_{XMXM,1} <br>
+     \end{bmatrix}<br>
+      =<br>
+     \begin{bmatrix}<br>
+          \rho_{X1Y,1} &amp; \rho_{X2Y,1} &amp; \cdots &amp; \rho_{XMY,1}<br>
+     \end{bmatrix}[$]<br>
+<br>
+In above square matrix on LHS is a matrix of first hermite correlations between regressors and the row vector on RHS has correlations between first hermites of regressors and explained variable. Row vector of betas on LHS is vector of standardized regression coefficients associated with first hermite polynomial of various explanatory variables.<br>
+We represent it as<br>
+<br>
+                                      [$] \beta_1 \, \textbf{R}_1 = \, \textbf{r}_{XY,1}[$] <br>
+                                     [$] \beta_1 \, = \beta_1 \, \textbf{R}_1 \, {\textbf{R}_1}^{-1} = \, \textbf{r}_{XY,1}\, {\textbf{R}_1}^{-1}[$] <br>
+<br>
+In above we solved for the standardized regression coefficients of various explanatory variables associated with first hermite polynomial correlations. This is a row vector. <br>
+Similarly for 2nd hermite polynomial correlations, we can solve for standardized regression coefficients of second hermites of various explanatory variables as             <br>
+                                    [$] \beta_2 \, = \, \textbf{r}_{XY,2}\, {\textbf{R}_2}^{-1}[$] <br>
+In above square matrix [$] {\textbf{R}_2}[$] is a matrix of second hermite polynomial correlations between regressors and  [$]\textbf{r}_{XY,2}[$] has correlations between second hermite polynomials of regressors and explained variable. <br>
+And similarly for third hermite polynomial regression coefficients and so on.<br>
+Once we have solved for standardized regression coefficients associated with various hermite polynomials, we can write the hermite regression equation of the explained variable after multiplying with original hermite coefficients as<br>
+<br>
+[$]Y=\mu_y + ah_1 \, \big[ \beta_{11} \, Z_{x1} + \beta_{12} \, Z_{x2} + ....+ \beta_{1M} \, Z_{xM} \, \big] [$]<br>
+[$]+ ah_2 \, \big[ \beta_{21} \, ({Z_{x1}}^2 -1) + \beta_{22} \, ({Z_{x2}}^2-1)   + ....+ \beta_{2M} \, ({Z_{xM}}^2-1) \, \big] [$]<br>
+[$]+ ah_3 \, \big[ \beta_{31} \, ({Z_{x1}}^3 -3 Z_{x1}) + \beta_{32} \, ({Z_{x2}}^3-3 \, Z_{x2})   + ....+ \beta_{3M} \, ({Z_{xM}}^3-3 \, Z_{xM}) \, \big] [$]<br>
+<br>
+In above [$]\beta[$]s are standardized regression coefficients associated with hermite polynomials of explanatory variables. While [$]ah_1[$] ,  [$]ah_2[$] and [$]ah_3[$] are coefficients of hermite series in the original marginal density representation that we derived from first few moments.<br>
+For graphing and other purposes, we would use the following values of explanatory variables from their marginal densities<br>
+[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]<br>
+and<br>
+[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  <br>
+and<br>
+[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  
+</div></blockquote>
+.<br>
+.<br>
+[$]Y=\mu_y + ah_1 \, \big[ \beta_{11} \, Z_{x1} + \beta_{12} \, Z_{x2} + ....+ \beta_{1M} \, Z_{xM} \, \big] [$]<br>
+[$]+ ah_2 \, \big[ \beta_{21} \, ({Z_{x1}}^2 -1) + \beta_{22} \, ({Z_{x2}}^2-1)   + ....+ \beta_{2M} \, ({Z_{xM}}^2-1) \, \big] [$]<br>
+[$]+ ah_3 \, \big[ \beta_{31} \, ({Z_{x1}}^3 -3 Z_{x1}) + \beta_{32} \, ({Z_{x2}}^3-3 \, Z_{x2})   + ....+ \beta_{3M} \, ({Z_{xM}}^3-3 \, Z_{xM}) \, \big] [$]<br>
+<br>
+Friends, in the above equation, we could equally have constructed the non-linearly standardized Z-form of  Y as<br>
+<br>
+[$]Z_{y}=\overline{\mu_y} + \overline{ah_1} \, \big[ \beta_{11} \, Z_{x1} + \beta_{12} \, Z_{x2} + ....+ \beta_{1M} \, Z_{xM} \, \big] [$]<br>
+[$]+ \overline{ah_2} \, \big[ \beta_{21} \, ({Z_{x1}}^2 -1) + \beta_{22} \, ({Z_{x2}}^2-1)   + ....+ \beta_{2M} \, ({Z_{xM}}^2-1) \, \big] [$]<br>
+[$]+ \overline{ah_3} \, \big[ \beta_{31} \, ({Z_{x1}}^3 -3 Z_{x1}) + \beta_{32} \, ({Z_{x2}}^3-3 \, Z_{x2})   + ....+ \beta_{3M} \, ({Z_{xM}}^3-3 \, Z_{xM}) \, \big] [$]<br>
+.<br>
+In the above standardized equation for Y, we use standardized hermite coefficients (shown with overline bar) which are defined by dividing each hermite coefficient with square root of variance as<br>
+ Total variance is given as squared sum of hermite coefficients as [$]Var \, = \, {ah_1}^2\, + \,{ah_2}^2\, + \,{ah_3}^2\, + ...+ \,{ah_n}^2\,[$]<br>
+So<br>
+[$]\overline{\mu_y} \,=\, \frac{\mu_y}{\sqrt{Var}} \,=\, \frac{ah_0}{\sqrt{Var}} \,[$]<br>
+[$]\overline{ah_1} \,=\, \frac{ah_1}{\sqrt{Var}} \,[$]<br>
+[$]\overline{ah_2} \,=\, \frac{ah_2}{\sqrt{Var}} \,[$]<br>
+and<br>
+[$]\overline{ah_n} \,=\, \frac{ah_n}{\sqrt{Var}} \,[$]<br>
+<br>
+This post is about getting orientation in case you want to find standardized values of explained variable directly from regression. This way you can directly find Z-values from regression given the explanatory variable data and then compare them directly to Z-values from observation data of explained variable.<br>
+<br>
+I am sure most friends would have realized that they do not need to necessarily find regression coefficients using correlations, just like in ordinary regression, you can directly find them from the (matrix vector product of data  as in OLS but there would need to be one matrix vector equation solution for each hermite polynomial) data without resorting to correlations. This is what I will explain in next post with equations. You can directly run regressions equal to number of orthogonal hermite polynomials with each regression between a matrix of hermite deviations (constructed by applying hermite polynomial to  Z-values of explanatory variables) of observation data of explanatory variables multiplied by vector of regression coefficients of that hermite polynomial and (this matrix vector product) equated with  vector of hermite deviations (constructed by applying hermite polynomial to Z-values of observed explained variable) of observation data of explained variable. I will be writing these equations in the next post in a few hours.</div>
+
+			
+									
+									<div id="sig874576" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874578">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874578">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874578">
+
+			<h3 ><a href="#p874578">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874578&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874578" title="Post #1734">#1734</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 3rd, 2023, 1:25 pm</span></p>
+			
+			
+			
+			<div class="content">First I copy the background, and notations from previous post as follows and then continue with new post.<br>
+<br>
+Here I explain  multivariate hermite polynomial regression with a simple multivariate regression example with three hermite polynomials which can easily be generalized to any suitable order of hermite polynomials.<br>
+<br>
+Just like in univariate regressions, we have to first find Z-series representations of marginal density of explained and explanatory variables possibly by calculating moments and then converting them into appropriate Z-series.<br>
+Suppose we have found the Z-series of explained variable Y and M explanatory variables [$]X_1[$] , [$] X_2[$] up to [$] X_M[$] and they are given as<br>
+<br>
+[$]Y=a_0 + a_1 \, Z_y + a_2 \, {Z_y}^2 + a_3 \, {Z_y}^3 [$]  Eq(A)<br>
+Then we find Z-series of regressors<br>
+[$]X_1=b_0 + b_1 \, Z_{x1} + b_2 \, {Z_{x1}}^2 + b_3 \, {Z_{x1}}^3 [$]  Eq(B)  <br>
+[$]X_2=c_0 + c_1 \, Z_{x2} + c_2 \, {Z_{x2}}^2 + c_3 \, {Z_{x2}}^3 [$]  Eq(B)  <br>
+...<br>
+[$]X_M=d_0 + d_1 \, Z_{xM} + d_2 \, {Z_{xM}}^2 + d_3 \, {Z_{xM}}^3 [$]  Eq(B)  <br>
+<br>
+We find equivalent series in hermite polynomials  as<br>
+<br>
+[$]Y=ah_0 + ah_1 \, Z_y + ah_2 \, ({Z_y}^2-1) + ah_{3} \, ({Z_y}^3-3 \, Z_y) [$]<br>
+Then we find  hermite series of regressors as<br>
+[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]<br>
+and<br>
+[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  <br>
+and<br>
+[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  <br>
+ <br>
+Once we have found the Z-series, the first step is to find Z-values of regressors and regressand data with respect to their marginal density. For each data point observation for every variable, we find out corresponding value of Z by inverting the Z-series relationship given in equations A and B. This is non-linear standardization of data to find the Z-values of data. <br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes [$]X[$] and Y. Here <br>
+[$] Z_{x,p} [$] denotes our standardized Z-value corresponding to pth observation of data of X and  [$] Z_{y,p} [$] denotes our standardized Z-value corresponding to pth observation of data of variable [$]Y[$]<br>
+<br>
+We will need Hermite polynomial values calculated at Z-Values of pth observation of data and we denote that as<br>
+<br>
+[$]H_1(Z_{x,p}) \, = \, Z_{x,p} [$]<br>
+[$]H_2(Z_{x,p}) \, = \, {Z_{x,p}}^2 \, - \, 1[$]<br>
+[$]H_3(Z_{x,p}) \, = \, {Z_{x,p}}^3 \, - \, 3 \,Z_{x,p} [$]<br>
+and so on. <br>
+<br>
+Now we set up our vector-matrix Equation for 1st hermite polynomial as<br>
+<br>
+[$] \begin{bmatrix}<br>
+<br>
+        bh_1 \, H_1(Z_{x1,1}) &amp; ch_1 \,H_1(Z_{x2,1}) &amp; \cdots &amp; dh_1 \, H_1(Z_{xM,1})\\<br>
+        bh_1 \, H_1(Z_{x1,2}) &amp; ch_1 \,H_1(Z_{x2,2}) &amp; \cdots &amp; dh_ 1 \, H_1(Z_{xM,2})\\<br>
+        \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\<br>
+        bh_1 \, H_1(Z_{x1,P}) &amp; ch_1 \, H_1(Z_{x2,P}) &amp; \cdots &amp; dh1\, H_1(Z_{xM,P})<br>
+    \end{bmatrix}<br>
+    \times<br>
+    \begin{bmatrix}<br>
+         b_{11}\\<br>
+         b_{12}\\<br>
+         \vdots\\<br>
+         b_{1M}<br>
+     \end{bmatrix}<br>
+    =<br>
+\begin{bmatrix}<br>
+         ah_1 \, H_1(Z_{y,1})\\<br>
+         ah_1 \, H_1(Z_{y,2})\\<br>
+         \vdots\\<br>
+         ah_1 \, H_1(Z_{y,P})<br>
+     \end{bmatrix}<br>
+[$]<br>
+In above system, there are P rows with each row specifying data of that particular pth observation.<br>
+Least square solution of the above vector-matrix equation would find us the required regression coefficients of first hermites of explanatory variables directly from the data. Please note that these <span style="font-size: 100%; line-height: normal">regression coefficients are different from standardized regression coefficients that were found when dealing with correlations.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Similarly to 1st hermite regression coefficients, we can easily write matrix vector equation for second hermite regression coefficients as</span><br>
+<br>
+[$] \begin{bmatrix}<br>
+        bh_2 \, H_2(Z_{x1,1}) &amp; ch_2 \,H_2(Z_{x2,1}) &amp; \cdots &amp; dh_2 \, H_2(Z_{xM,1})\\<br>
+        bh_2 \, H_2(Z_{x1,2}) &amp; ch_2 \,H_2(Z_{x2,2}) &amp; \cdots &amp; dh_ 2 \, H_2(Z_{xM,2})\\<br>
+        \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\<br>
+        bh_2 \, H_2(Z_{x1,P}) &amp; ch_2 \, H_2(Z_{x2,P}) &amp; \cdots &amp; dh_2\, H_2(Z_{xM,P})<br>
+    \end{bmatrix}<br>
+    \times<br>
+    \begin{bmatrix}<br>
+         b_{21}\\<br>
+         b_{22}\\<br>
+         \vdots\\<br>
+         b_{2M}<br>
+     \end{bmatrix}<br>
+    =<br>
+\begin{bmatrix}<br>
+         ah_2 \, H_2(Z_{y,1})\\<br>
+         ah_2 \, H_2(Z_{y,2})\\<br>
+         \vdots\\<br>
+         ah_2 \, H_2(Z_{y,P})<br>
+     \end{bmatrix}<br>
+[$]<br>
+<span style="font-size: 100%; line-height: normal"><br>
+<br>
+which can be solved to get the regression coefficients associated with second hermites of the explanatory variables. </span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">And so on for higher order hermite polynomials.</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">Once we have solved for standardized regression coefficients associated with various hermite polynomials, we can write the hermite regression equation of the explained variable after multiplying with original hermite coefficients as<br>
+</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]Y=\mu_y + \, \big[ b_{11} \, bh_1 \,  Z_{x1} + b_{12} \, ch_1 \, Z_{x2} + ....+ b_{1M} \,dh_1 \,  Z_{xM} \, \big] [$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+ \, \big[ b_{21} \,bh_2\,  ({Z_{x1}}^2 -1) + b_{22} \, ch_2 \,  ({Z_{x2}}^2-1)   + ....+ b_{2M} \,dh_2 \, ({Z_{xM}}^2-1) \, \big] [$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+ \, \big[ b_{31} \,bh_3 \, ({Z_{x1}}^3 -3 Z_{x1}) + b_{32} \,ch_3\, ({Z_{x2}}^3-3 \, Z_{x2})   + ....+ b_{3M} \,dh_3 ({Z_{xM}}^3-3 \, Z_{xM}) \, \big] [$]</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">For graphing and other purposes, we would use the following values of explanatory variables from their marginal densities<br>
+</span><br>
+<span style="font-size: 100%; line-height: normal">[$]X_1=bh_0 + bh_1 \, Z_{x1} + bh_2 \, ({Z_{x1}}^2 \, -\, 1) + bh_3 \, ({Z_{x1}}^3 \, - \, 3 \, {Z_{x1}})[$]</span><br>
+<span style="font-size: 100%; line-height: normal">and</span><br>
+<span style="font-size: 100%; line-height: normal">[$]X_2=ch_0 + ch_1 \, Z_{x2} + ch_2 \, ({Z_{x2}}^2 \, -\, 1) + ch_3 \, ({Z_{x2}}^3 \, - \, 3 \, {Z_{x2}})[$]  </span><br>
+<span style="font-size: 100%; line-height: normal">and</span><br>
+<span style="font-size: 100%; line-height: normal">[$]X_M=dh_0 + dh_1 \, Z_{xM} + dh_2 \, ({Z_{xM}}^2 \, -\, 1) + dh_3 \, ({Z_{xM}}^3 \, - \, 3 \, {Z_{xM}})[$]  </span></div>
+
+			
+									
+									<div id="sig874578" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874592">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874592">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874592">
+
+			<h3 ><a href="#p874592">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874592&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874592" title="Post #1735">#1735</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 4th, 2023, 7:04 am</span></p>
+			
+			
+			
+			<div class="content">Friends, my microsoft account has been acting strange. Two months ago when I wanted to write Z-series paper, I bought  monthly renewable subscription of microsoft 365 for Rs. 1099 which is now Rs. 1399. First two months have gone well and I could easily charge on my debit card.<br>
+Problem is that I have to call my bank and ask them to unlock my card for few hours (or more) for international banking to make international credit card transactions. If I do not unlock my account, card will not go through and some charge will still accrue in my account. Bank clearly tells the customer that bank will not be responsible for any wrong use of the card for the period the card account was unlocked for international banking.<br>
+I unlocked my account and continued to try to pay for my subscription but it would not work. I called my bank and they told me that my account had already been open for international card payments. On further inquiry they told me that their had been attempts at charging my card (which would have cost me quite some money) bur CVV was not good. I went to the microsoft account again and repeatedly made sure that I input appropriate CVV but still my card did not go through. There was no microsoft customer support email and they had no phone support in Pakistan. I also noticed when I was trying to pay for my microsot 365 service, there was a large heading on top of microsoft account that a charge of $299 for microsoft XBOX had been denied on my account. I do not play computer games and did not even remotely try to subscribe XBOX but for some reason there was a message that an attempt to charge 299 dollars from my account for XBOX had been denied.<br>
+I do not know what is going on with microsoft account now. I just wanted to pay for microsoft service since it is a great company that does so many good things otherwise I have very little money and usually cannot pay for expensive software. But my attempt at legally buying software from microsoft has already become pain in the neck. I really have some feeling that there is possibly somebody at microsoft who is playing in hands of mind control agencies to alter my account though I cannot be sure. Or they might be using access to my computer to send orders to subscribe XBOX and take my money. I still do not know what is going on?</div>
+
+			
+									
+									<div id="sig874592" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874633">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874633">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874633">
+
+			<h3 ><a href="#p874633">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874633&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874633" title="Post #1736">#1736</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 6th, 2023, 3:35 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I want to mention that an antipsychotic injection is due on coming Monday so I may not be able to work very well after a few days. I have requested psychiatrist's office to arrange a phone meeting which should possibly follow in next few days. I really want to ask the doctor to end my injections and antipsychotic medication as I am perfectly mentally healthy. Many psychiatrists in Pakistan force antipsychotics on healthy people and also detain them for long periods of time under pressure and coercion from Pakistan army (whose generals receive tens of millions of dollars in bribes from US army to facilitate mind control of intelligent people in Pakistan).  <br>
+I also want to request European embassies in Pakistan to keep a vigil and record my phone call with the psychiatrist so they would know the tactics of CIA, Pakistan army and psychiatrists to gain an understanding of mind control abuse since a lot of very talented Europeans suffer from a very similar abuse on hands of corrupt generals in American army.<br>
+I also want to request American and Pakistani friends if they can possibly approach my psychiatrist  (Far*** A. Minhas of treehouse, Peshawar road, Rawalpindi) to tell him about horrors of mind control abuse and stop following the orders of Pakistan military. Many times these psychiatrists are not bad people but they are told concocted lies and false ethical justification about mind control by generals who would have already taken large sums of bribes. I am sure many of these psychiatrists would be very careful about mistreating  their patients once they know the truth. But I cannot take this risk on my own since there is a huge possibility that doctor might even increase my medication several fold if I say this is all a conspiracy. It is unbelievably moronic but I have read it myself in psychiatry books that whoever claims that secret services are after him is schizophrenic. 
+</div></blockquote>
+.<br>
+I am suffering very badly due to effects of antipsychotic injection. I have body ache all over and many times my breathing turns into light snoring and difficulty in breathing(which is a side-effect of fluanxol injection). And I have become very depressed and unable to do any positive mental activity. I hope to be better in a few days and re-start my research work but this is the same three week cycle that I have to pass through. Due to heavy sedation, I have been sleeping 14-15 hours for past two days and I get extremely exhausted with just very little bit of work.<br>
+<span style="font-size: 100%; line-height: normal">I would possibly have a call with my psychiatrist tomorrow or day after tomorrow. I will try to ask the psychiatrist to end my medication. I want to request friends to play a role if they can help me in any way. I am already greatly indebted to many friends who helped me by protesting to American army and consequently I was able to concentrate on my work and had been able to do good research in the past as my mind control decreased. Please approach both American army and the psychiatrist mentioned in quoted post and ask them to end my forced medication. </span></div>
+
+			
+									
+									<div id="sig874633" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874652">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874652">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874652">
+
+			<h3 ><a href="#p874652">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874652&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874652" title="Post #1737">#1737</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 7th, 2023, 1:10 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<blockquote class="uncited"><div class="blockquote__inner">
+Friends, I want to mention that an antipsychotic injection is due on coming Monday so I may not be able to work very well after a few days. I have requested psychiatrist's office to arrange a phone meeting which should possibly follow in next few days. I really want to ask the doctor to end my injections and antipsychotic medication as I am perfectly mentally healthy. Many psychiatrists in Pakistan force antipsychotics on healthy people and also detain them for long periods of time under pressure and coercion from Pakistan army (whose generals receive tens of millions of dollars in bribes from US army to facilitate mind control of intelligent people in Pakistan).  <br>
+I also want to request European embassies in Pakistan to keep a vigil and record my phone call with the psychiatrist so they would know the tactics of CIA, Pakistan army and psychiatrists to gain an understanding of mind control abuse since a lot of very talented Europeans suffer from a very similar abuse on hands of corrupt generals in American army.<br>
+I also want to request American and Pakistani friends if they can possibly approach my psychiatrist  (Far*** A. Minhas of treehouse, Peshawar road, Rawalpindi) to tell him about horrors of mind control abuse and stop following the orders of Pakistan military. Many times these psychiatrists are not bad people but they are told concocted lies and false ethical justification about mind control by generals who would have already taken large sums of bribes. I am sure many of these psychiatrists would be very careful about mistreating  their patients once they know the truth. But I cannot take this risk on my own since there is a huge possibility that doctor might even increase my medication several fold if I say this is all a conspiracy. It is unbelievably moronic but I have read it myself in psychiatry books that whoever claims that secret services are after him is schizophrenic. 
+</div></blockquote>
+.<br>
+I am suffering very badly due to effects of antipsychotic injection. I have body ache all over and many times my breathing turns into light snoring and difficulty in breathing(which is a side-effect of fluanxol injection). And I have become very depressed and unable to do any positive mental activity. I hope to be better in a few days and re-start my research work but this is the same three week cycle that I have to pass through. Due to heavy sedation, I have been sleeping 14-15 hours for past two days and I get extremely exhausted with just very little bit of work.<br>
+<span style="font-size: 100%; line-height: normal">I would possibly have a call with my psychiatrist tomorrow or day after tomorrow. I will try to ask the psychiatrist to end my medication. I want to request friends to play a role if they can help me in any way. I am already greatly indebted to many friends who helped me by protesting to American army and consequently I was able to concentrate on my work and had been able to do good research in the past as my mind control decreased. Please approach both American army and the psychiatrist mentioned in quoted post and ask them to end my forced medication. </span>
+</div></blockquote>
+.<br>
+.<br>
+Friends, I have been given time tomorrow at 2:30 pm PST for phone meeting with the psychiatrist.<br>
+<br>
+Meanwhile, I have re-started my research and I am trying an interesting example for the application of hermite orthogonal regressions. I hope if things go well, I should be able to present my work in 2-4 days.<br>
+I am very optimistic that we would be able to replace a lot of AI and ML in statistics with hermite orthogonal regressions. For example, I do see that we should be able to regress marginal densities of SDEs out to a certain time period on SDE parameters and terminal value of time using hermite orthogonal regressions. Not only would this require far less computational power to train the networks, it might possibly be more accurate with hermite orthogonal regressions but we still have to show that it can be done. I am extremely optimistic but I have not done it.<br>
+AI people should not be worried because math based AI will only be better and more powerful when combined properly with mathematics.</div>
+
+			
+									
+									<div id="sig874652" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874668">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874668">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874668">
+
+			<h3 ><a href="#p874668">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874668&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874668" title="Post #1738">#1738</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 8th, 2023, 2:15 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I had a phone meeting with my psychiatrist around 3:00 pm. I told him about my research and also about my trading algorithms. I also told him about all the side-effects of antipsychotics that I had to suffer. It was a long list of side effects. I then requested the doctor to end my medication. Doctor said that he had seen me after four months and he wanted to be sure before taking me off medication and he could make a better decision once he could see me in person. He said that he wanted me to visit him in person in a month or so and then he would make his decision whether to end my drugs or continue with the same drugs. Then I requested the doctor to decrease the frequency of injections from every 21 days to every 28 days to which doctor agreed and said that I could have half injection of fluanxol after every 28 days. <br>
+So I am happy there was some progress and my medication decreased somewhat. I will make a plan to visit the doctor after a month or two and then request him again to end my medication.<br>
+I am also re-starting my research and hope to come back with a new program with hermite regressions in a few days.</div>
+
+			
+									
+									<div id="sig874668" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874674">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874674">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874674">
+
+			<h3 ><a href="#p874674">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874674&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874674" title="Post #1739">#1739</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 8th, 2023, 9:18 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, people behind my persecution do not want to let go of me at all. There is a remarkable increase in persecution activity. Especially there is pronounced increase in gas in my room and gas in the washroom. Today when I was travelling around on my motorcycle, they continued to charge my back through microwaves in motorcycle seat (which they also continued to do in past few days).  Now when I was trying to sleep, even though I had firmly placed a pillow on my back, they continued to use microwaves to charge my back and cause strong itch stopping me from sleep which prompted me to write this post. As I wrote at the start, gas in my room has remarkably increased. I can breathe in it but this breathing is sickening and not wholesome at all as opposed to breathing in fresh air. This is despite that I keep window of my room open at all times.</div>
+
+			
+									
+									<div id="sig874674" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874681">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874681">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874681">
+
+			<h3 ><a href="#p874681">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874681&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874681" title="Post #1740">#1740</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 9th, 2023, 9:20 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I am trying to work with interesting examples of hermite orthogonal regressions. But I still continue to run into some problems with earlier work. For example we have two different methods to construct Z-series of a random variable. 1. Through fitting its first few moments.  2. Through mapping the density of random variable on standard normal density and extracting hermite coefficients after inner product with hermite polynomials of various order.<br>
+Problem is that both of these methods do not necessarily satisfy the positivity condition associated with dXdZ &gt; 0 all over the density domain. When we worked with these methods, positivity condition of first derivative was not in our mind and I only realized later that it is also important. <br>
+When I try playing with data, this problem with earlier written algorithms continue to come up again and again since they do not ensure positivity condition of first derivative   dXdZ &gt; 0. I want to spend next two to three days to re-write my earlier algorithms written with both methods through fitting of moments and through extraction of hermite coefficients and embed the positivity condition in the algorithms so that we get a nice smooth density with very good tails that we could use in analytics everywhere. When tails of the density are not smooth we get all sort of problems in the analytics and regressions on data are meaningless.<br>
+Quadratic case was easy and I have studied conditions associated with quartic equations to have no real root and they are not difficult either. But I still do not know if it would be easy to find conditions for sixth order polynomial to have no real roots. So I will surely improve the six moment Z-series fit to data  but I still do not know if I would be able to work on eight moment Z-series fit to data or not.<br>
+I hope to come up with new and better algorithms  to construct the density in next few days and then post them on this forum. After that I will go back to my research on applications of hermite regressions.</div>
+
+			
+									
+									<div id="sig874681" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f4224fa7a7148c9a8d6a58ad9c499af5" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1695" role="button">114</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" role="button">115</a></li>
+							<li class="active"><span>116</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1755" role="button">118</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1725&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f4224fa7a7148c9a8d6a58ad9c499af5" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1695" role="button">114</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1710" role="button">115</a></li>
+							<li class="active"><span>116</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" role="button">117</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1755" role="button">118</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5&amp;start=1740" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1725&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=f4224fa7a7148c9a8d6a58ad9c499af5"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=f4224fa7a7148c9a8d6a58ad9c499af5" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#a1c0c5ccc8cfe1d6c8cdccced5d58fc2cecc">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>116</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=f4224fa7a7148c9a8d6a58ad9c499af5";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=f4224fa7a7148c9a8d6a58ad9c499af5";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e27c04ac31544","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

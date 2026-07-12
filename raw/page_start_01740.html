@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 117 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=ccdf3b4523eec45a757f6eaf52be95a9" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=ccdf3b4523eec45a757f6eaf52be95a9?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=ccdf3b4523eec45a757f6eaf52be95a9?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=ccdf3b4523eec45a757f6eaf52be95a9?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1740" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="ccdf3b4523eec45a757f6eaf52be95a9" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=ccdf3b4523eec45a757f6eaf52be95a9" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="ccdf3b4523eec45a757f6eaf52be95a9" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=ccdf3b4523eec45a757f6eaf52be95a9" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1740%26t%3D99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1740&amp;t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" />
+<input type="hidden" name="creation_time" value="1768907767" />
+<input type="hidden" name="form_token" value="91b33503d9d4d724d59195a98de384b6df6bbd7f" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1740&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1740&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="ccdf3b4523eec45a757f6eaf52be95a9" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;ccdf3b4523eec45a757f6eaf52be95a9" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1710" role="button">115</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" role="button">116</a></li>
+							<li class="active"><span>117</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" role="button">118</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1770" role="button">119</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p874744">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874744">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874744">
+
+			<h3 class="first"><a href="#p874744">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874744&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874744" title="Post #1741">#1741</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 13th, 2023, 2:40 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I continue to ask the mind control agents, American army crooks and others to please let go of all of it and let me work and do my research, but every day and night, they try to do everything to sabotage me. When I try to work, they literally induce very deep sleep to not let me concentrate on my work and when I try to sleep, they make sure I do not have a proper sleep at all. They literally stall me several times a day by forcing sleep on me and antipsychotics and mind control drugs in the blood help them to successfully do that. <br>
+I usually do not sleep on the floor but yesterday night I had a wonderful sleep when I decided to sleep on the floor. But yesterday, they had calibrated all their lasers and devices in anticipation that I will sleep at the floor and as a result my sleep was extremely poor last night.<br>
+I want to tell friends that people after me are hardened criminals of this art to retard innocent people (and have been doing it in cold blood for decades) and they have absolutely no intention to let me get off mind control. They continue to target me with necessary mind control and when my recent research will go off limelight, they intend to make sure that I could not do more and better research by doing everything to control my brain. Inducing hard sleeps when victim wants to work and then causing sleep deprivation when victim wants to sleep is another tactic they are using. And they openly threaten me that they are only waiting for my recent research to go off limelight and they would effectively take care of me properly this time once attention of people decreases. <br>
+Problem is that most of the people behind mind control have little human empathic emotions to relate to their victims and consider mind control a very good thing to take care of people they find offensive due to their inherent feelings of hatred. When good people try to stop them and tell them that mind control is a bad thing, these bad actors are even more inclined to use mind control to silence their target victims. They have no conception that it is a bad thing to force a life of  torture on human beings and strip them of good capabilities in their brain.<br>
+Many of these bad actors understand that tens of thousands of people are on mind control only in United States and if most of them are taken off mind control, there would be a huge outcry in United States against these bad actors for all the damage they have caused the society and all the torture and abuse they inflicted on innocent people who simply wanted to work hard and excel in their lives.</div>
+
+			
+									
+									<div id="sig874744" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p874749">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874749">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874749">
+
+			<h3 ><a href="#p874749">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874749&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874749" title="Post #1742">#1742</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 13th, 2023, 9:40 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, we noticed that just like original simple regression is used for stochastics stochastics but can be applied to deterministic processes, so there is a deterministic counterpart for it. Therefore we expect that such a link should also exist for hermite orthogonal regression as well.<br>
+There is nothing special in hermite polynomials other than it is an orthogonal basis with respect to normal density.<br>
+If we can choose orthogonal/independent basis for a set of explanatory variables and variable being explained, we can easily run a regression for each order of orthogonal/independent basis between the explanatory and explained variables and it would be our counterpart for hermite orthogonal regression.<br>
+One way to choose independent basis that does not have to deal with densities is to use Taylor series of functions. If we can somehow find Taylor series expansion of explanatory variables and explained variables in possibly multidimensional independent basis, we can run a regression between variables for each order of independent basis to find the relationship that exists between the explanatory variable and explained variable.<br>
+However What is important is approximate numerical construction of Taylor series since we may not know know derivatives of statistical/deterministic functions found from data everywhere to find the coefficients of various Taylor independent basis.<br>
+I believe that regressions between Taylor series basis of similar order with one regression for each order would be the deterministic counterpart for hermite orthogonal regression framework. Though other deterministic methods based on orthogonality and independence might also be used, regressions between Taylor series basis of each order is possibly the strongest contender for being a universal counterpart for hermite orthogonal regressions in deterministic setting.<br>
+Though like most other friends, I have used transforms in derivative pricing, I am not a great expert at transforms but I think that independent basis could also be found through order of transform powers for doing regressions.</div>
+
+			
+									
+									<div id="sig874749" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874756">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874756">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874756">
+
+			<h3 ><a href="#p874756">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874756&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874756" title="Post #1743">#1743</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 14th, 2023, 2:41 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I continued to think about yesterday's ideas and seem to possibly have more insight about using Taylor series for orthogonal regressions. But still this is non-tested theory and I might be totally off and therefore I want to request friends to pardon any possible mistakes in my exposition.<br>
+<br>
+In deterministic setting, if we want to do an orthogonal regression between explanatory variables and explained variable, we first have to choose an appropriate base function into which we will Taylor-expand our variables. (Non-linearity of a variable is with respect to another variable that is related through a non-linear function. However non-linear a variable with respect to some other variable, it is perfectly linear on its own axis and obviously cannot be taylor-expanded onto itself.) So first we have to find an appropriate base function with respect to which we will Taylor-expand explained and explanatory variables. In our orthogonal stochastic hermite regressions, the base variable was a standard gaussian into which we expanded explained and explanatory variables.<br>
+<br>
+To keep things simple, we suppose that we are orthogonal-Taylor-regressing one explained variable Y on one explanatory variable X. Suppose we choose base function as [$] \, f(u)\, = \, {u}^{\frac{1}{4}} \, [$] . Again, there can be many possible choices of base functions that can even possibly be better but we are giving this one-fourth power as one possible base function.<br>
+<br>
+We want to orthogonal-Taylor-Regress Y on X.   Using the base function mentioned above, we have<br>
+[$] \, W \, = \, {X}^{\frac{1}{4}} \, [$]   meaning  [$]\, X \, = \, W^4 \, [$]<br>
+and<br>
+[$] \, V \, = \, {Y}^{\frac{1}{4}} \, [$]   meaning  [$]\, Y \, = \, V^4 \, [$]<br>
+<br>
+W is base variable for X while V is base variable for Y. In our hermite-orthogonal-regressions independent Z's were base variables.<br>
+<br>
+We Taylor-expand X in its base variable W and we also Taylor-expand Y in its base variable V as   (around appropriate series centre points. We would have to work these things out where to place center points of series. These centre points corresponded to medians in our Z-series for hermite-orthogonal-regressions.)<br>
+<br>
+following our previous equation [$]\, X \, = \, W^4 \, [$], we taylor expand around appropriate expansion point [$]W_0(X_0) [$] as<br>
+[$]X \, = \, W_0 \, + \, 4 \, {W_0}^3 \, (W \, - \, W_0) \, + 1/2 \,*\, 12 \, {W_0}^2 \, {(W \, - \, W_0)}^2+ 1/6 \,*\, 24 \, {W_0} \, {(W \, - \, W_0)}^3+ 1/24 \,*\, 24  \, {(W \, - \, W_0)}^4 [$]<br>
+which can be sucintly written as<br>
+[$]X \, = \, b_0 \, + \, b_1 \, (W \, - \, W_0) \, + b_2\, {(W \, - \, W_0)}^2+ b_3 \, {(W \, - \, W_0)}^3+ b_4  \, {(W \, - \, W_0)}^4 [$]<br>
+<br>
+Similarly, following above steps again, we can Taylor-expand Y in terms of V as<br>
+<br>
+[$]Y \, = \, c_0 \, + \, c_1 \, (V \, - \, V_0) \, + c_2\, {(V \, - \, V_0)}^2+ c_3 \, {(V \, - \, V_0)}^3+ c_4  \, {(V \, - \, V_0)}^4 [$]<br>
+<br>
+Please notice the similarity of Taylor-expansions of X and Y with our previous Z-series expansions.<br>
+<br>
+Now to set up the regression, we would have to convert X and Y data points into W and V data points as we had to do in the inversion of Z-series. Our final data before regression would be in terms of W and V variables (as opposed to Z1 and Z2 in case of hermite Z-series orthogonal regressions)<br>
+<br>
+Now, in order to regress Y on X,  we can simply do four regressions, with each regression between appropriate expansion powers. These regressions would be between (just like we have to take into account covariances, we would have to take into account coefficients on each of these pairs mentioned below)<br>
+[$](V \, - \, V_0)[$]  and  [$](W \, - \, W_0)[$] <br>
+[$]{(V \, - \, V_0)}^2[$]  and  [$]{(W \, - \, W_0)}^2[$]<br>
+[$]{(V \, - \, V_0)}^3[$]  and  [$]{(W \, - \, W_0)}^3[$]<br>
+[$]{(V \, - \, V_0)}^4[$]  and  [$]{(W \, - \, W_0)}^4[$] <br>
+<br>
+There will be four pairs of orthogonal regressions since the base function we chose allowed for expansion up to fourth power only. Some Other base functions could possibly do better. But these details we will continue to know in coming weeks and months. We could combine the results from above orthogonal regressions to come up with one estimator for the explained variable.)<br>
+<br>
+Friends above is my brief plan of attack for orthogonal Taylor regressions but I might have made some mistakes or something might possibly be wrong so please pardon any mistakes.<br>
+<br>
+I will try to come up with a Taylor orthogonal regression program in next 3-4 days.<br>
+<br>
+As I see, if we take deterministic functions without any noise in data, and do above steps appropriately by choosing an appropriate expansion point and other things right, we might possibly get a fourth order accurate result from this regression if the data is from deterministic functions without noise. </div>
+
+			
+									
+									<div id="sig874756" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874767">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874767">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874767">
+
+			<h3 ><a href="#p874767">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874767&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874767" title="Post #1744">#1744</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 15th, 2023, 5:11 am</span></p>
+			
+			
+			
+			<div class="content">Friends, my hp pavilion  laptop has some problem. small light on start button, blinks but laptop does not start. I am trying to get it fixed but it can cause delay in my mat lab programs.</div>
+
+			
+									
+									<div id="sig874767" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874771">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874771">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874771">
+
+			<h3 ><a href="#p874771">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874771&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874771" title="Post #1745">#1745</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 15th, 2023, 4:25 pm</span></p>
+			
+			
+			
+			<div class="content">I have left my laptop at a repair shop. They tried to fiind the problem  with the laptop over the day. Repair guy says that possibly the problem is with the processor. He will first try to replace IT chip of processor and see if the laptop works. But he said that he was reasonably confident that he could get the laptop working and ready in another day. Let us see how it goes. I was not able to do any work today.</div>
+
+			
+									
+									<div id="sig874771" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874774">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874774">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874774">
+
+			<h3 ><a href="#p874774">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874774&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874774" title="Post #1746">#1746</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 16th, 2023, 3:53 am</span></p>
+			
+			
+			
+			<div class="content">friends, so sorry that I do not have my laptop on me and I cannot run my experiments.<br>
+First things I want to see are how some regressions go.<br>
+It is quite obvious that we could Taylor regress polynomial functions of same order.<br>
+what I really want to see using my laptop is how it goes with regressions between polynomial functions of different order.<br>
+Please keep in mind that hermits regressions we did were between polynomials of same order in Z<br>
+I hopeI can get my lworking laptop today so I can play around with these ideas.<br>
+Even if it does not work well for polynomials of different order, I will like to see what can possibly be done to make them work.</div>
+
+			
+									
+									<div id="sig874774" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874783">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874783">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874783">
+
+			<h3 ><a href="#p874783">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874783&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874783" title="Post #1747">#1747</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 16th, 2023, 6:37 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I could not get my computer even today. Computer repair shop seems evasive about when they could fix my laptop. I am worried that mind control agencies have asked the repair people to delay as much as possible and later tell me that my computer could not be repaired.<br>
+I continued to brainstorm today and had some of the most exciting ideas but I need my laptop to execute them.</div>
+
+			
+									
+									<div id="sig874783" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874790">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874790">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874790">
+
+			<h3 ><a href="#p874790">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874790&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874790" title="Post #1748">#1748</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 17th, 2023, 7:25 am</span></p>
+			
+			
+			
+			<div class="content">Friends, laptop repair shop have told me that it seems difficult to get my laptop to work but they would be sure by 5:00 PM today.<br>
+It seems that they gave me this time since banks would be closed on weekend.<br>
+I will go to bank to withdraw cash in case I have to buy a new motherboard for my laptop tomorrow. If things go well and mind control agencies did not create any more problems. I will start working tomorrow in the evening.<br>
+I have some really interesting ideas that I want to test on my computer so let us see how it goes.</div>
+
+			
+									
+									<div id="sig874790" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874791">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874791">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874791">
+
+			<h3 ><a href="#p874791">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874791&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874791" title="Post #1749">#1749</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 17th, 2023, 7:54 am</span></p>
+			
+			
+			
+			<div class="content">I am seriously afraid that mind control agencies will force the repair shop to create more problems in my laptop so I would not be able to work steadily even after it. These crooks are desperate to create any obstacles in my research they can. Please protest to mind control crooks to not create problems in my research.</div>
+
+			
+									
+									<div id="sig874791" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874821">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874821">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874821">
+
+			<h3 ><a href="#p874821">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874821&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874821" title="Post #1750">#1750</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 19th, 2023, 5:34 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I bought a used laptop from the computer market of Hafeez Center in Lahore. I installed different programs in it yesterday. And started working just a little bit ago today. I have started playing with the idea of regressions in a Taylor independent basis setting. I hope to come back with some results pretty soon. Let us see how it goes.</div>
+
+			
+									
+									<div id="sig874821" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874833">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874833">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874833">
+
+			<h3 ><a href="#p874833">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874833&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874833" title="Post #1751">#1751</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 20th, 2023, 7:49 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Friends, I continued to think about yesterday's ideas and seem to possibly have more insight about using Taylor series for orthogonal regressions. But still this is non-tested theory and I might be totally off and therefore I want to request friends to pardon any possible mistakes in my exposition.<br>
+<br>
+In deterministic setting, if we want to do an orthogonal regression between explanatory variables and explained variable, we first have to choose an appropriate base function into which we will Taylor-expand our variables. (Non-linearity of a variable is with respect to another variable that is related through a non-linear function. However non-linear a variable with respect to some other variable, it is perfectly linear on its own axis and obviously cannot be taylor-expanded onto itself.) So first we have to find an appropriate base function with respect to which we will Taylor-expand explained and explanatory variables. In our orthogonal stochastic hermite regressions, the base variable was a standard gaussian into which we expanded explained and explanatory variables.<br>
+<br>
+To keep things simple, we suppose that we are orthogonal-Taylor-regressing one explained variable Y on one explanatory variable X. Suppose we choose base function as [$] \, f(u)\, = \, {u}^{\frac{1}{4}} \, [$] . Again, there can be many possible choices of base functions that can even possibly be better but we are giving this one-fourth power as one possible base function.<br>
+<br>
+We want to orthogonal-Taylor-Regress Y on X.   Using the base function mentioned above, we have<br>
+[$] \, W \, = \, {X}^{\frac{1}{4}} \, [$]   meaning  [$]\, X \, = \, W^4 \, [$]<br>
+and<br>
+[$] \, V \, = \, {Y}^{\frac{1}{4}} \, [$]   meaning  [$]\, Y \, = \, V^4 \, [$]<br>
+<br>
+W is base variable for X while V is base variable for Y. In our hermite-orthogonal-regressions independent Z's were base variables.<br>
+<br>
+We Taylor-expand X in its base variable W and we also Taylor-expand Y in its base variable V as   (around appropriate series centre points. We would have to work these things out where to place center points of series. These centre points corresponded to medians in our Z-series for hermite-orthogonal-regressions.)<br>
+<br>
+following our previous equation [$]\, X \, = \, W^4 \, [$], we taylor expand around appropriate expansion point [$]W_0(X_0) [$] as<br>
+[$]X \, = \, W_0 \, + \, 4 \, {W_0}^3 \, (W \, - \, W_0) \, + 1/2 \,*\, 12 \, {W_0}^2 \, {(W \, - \, W_0)}^2+ 1/6 \,*\, 24 \, {W_0} \, {(W \, - \, W_0)}^3+ 1/24 \,*\, 24  \, {(W \, - \, W_0)}^4 [$]<br>
+which can be sucintly written as<br>
+[$]X \, = \, b_0 \, + \, b_1 \, (W \, - \, W_0) \, + b_2\, {(W \, - \, W_0)}^2+ b_3 \, {(W \, - \, W_0)}^3+ b_4  \, {(W \, - \, W_0)}^4 [$]<br>
+<br>
+Similarly, following above steps again, we can Taylor-expand Y in terms of V as<br>
+<br>
+[$]Y \, = \, c_0 \, + \, c_1 \, (V \, - \, V_0) \, + c_2\, {(V \, - \, V_0)}^2+ c_3 \, {(V \, - \, V_0)}^3+ c_4  \, {(V \, - \, V_0)}^4 [$]<br>
+<br>
+Please notice the similarity of Taylor-expansions of X and Y with our previous Z-series expansions.<br>
+<br>
+Now to set up the regression, we would have to convert X and Y data points into W and V data points as we had to do in the inversion of Z-series. Our final data before regression would be in terms of W and V variables (as opposed to Z1 and Z2 in case of hermite Z-series orthogonal regressions)<br>
+<br>
+Now, in order to regress Y on X,  we can simply do four regressions, with each regression between appropriate expansion powers. These regressions would be between (just like we have to take into account covariances, we would have to take into account coefficients on each of these pairs mentioned below)<br>
+[$](V \, - \, V_0)[$]  and  [$](W \, - \, W_0)[$] <br>
+[$]{(V \, - \, V_0)}^2[$]  and  [$]{(W \, - \, W_0)}^2[$]<br>
+[$]{(V \, - \, V_0)}^3[$]  and  [$]{(W \, - \, W_0)}^3[$]<br>
+[$]{(V \, - \, V_0)}^4[$]  and  [$]{(W \, - \, W_0)}^4[$] <br>
+<br>
+There will be four pairs of orthogonal regressions since the base function we chose allowed for expansion up to fourth power only. Some Other base functions could possibly do better. But these details we will continue to know in coming weeks and months. We could combine the results from above orthogonal regressions to come up with one estimator for the explained variable.)<br>
+<br>
+Friends above is my brief plan of attack for orthogonal Taylor regressions but I might have made some mistakes or something might possibly be wrong so please pardon any mistakes.<br>
+<br>
+I will try to come up with a Taylor orthogonal regression program in next 3-4 days.<br>
+<br>
+As I see, if we take deterministic functions without any noise in data, and do above steps appropriately by choosing an appropriate expansion point and other things right, we might possibly get a fourth order accurate result from this regression if the data is from deterministic functions without noise. 
+</div></blockquote>
+.<br>
+.<br>
+Friends, I suggested in the copied paste that <br>
+We want to regress using taylor basis functions and <br>
+our base variable for explanatory variable could possibly be  [$] \, W \, = \, {X}^{\frac{1}{4}} \, [$]   meaning original variable would be given as [$]\, X \, = \, W^4 \, [$]<br>
+<br>
+There would usually not be any integer power function and we have no way to know whether X can be denoted as an integer power function as in above.<br>
+But we can easily assume that X is a polynomial function of W. If we want to take analytics to fourth power, this polynomial relationship can be stated as<br>
+[$]X\, = \, a \, W^4 \, + \, b \, W^3 \, + \, c\, W^2 \, + \, d \, W \, + \, e [$]<br>
+and we have to find W through inverse function using numerical inversion of X since data is given in X coordinates.(Similarly we would have a different polynomial function usually for same order relating to base variables for all explained and explanatory variables)<br>
+<br>
+Now we can Taylor expand X as<br>
+<br>
+[$] \overline{X(W)}\, =\,X(W_0) \, + \frac{dX}{dW}(W_0) \, (W\, - \, W_0) \,+ \frac{1}{2} \, \frac{d^2 X}{dW^2}(W_0) \, {(W\, - \, W_0)}^2 \,+\frac{1}{6} \, \frac{d^3 X}{dW^3}(W_0) \, {(W\, - \, W_0)}^3 \,[$]<br>
+[$]+ \frac{1}{24} \,\frac{d^4 X}{dW^4}(W_0) \, {(W\, - \, W_0)}^4 \,[$]<br>
+overline on X denotes that this value of X is derived from Taylor expansion given the value of W (which is found from X after numerical inversion of original polynomial function relationship)<br>
+where<br>
+[$]\,X(W_0) \,=\, a \, {W_0}^4 \, + \, b \, {W_0}^3 \, + \, c\, {W_0}^2 \, + \, d \, W_0 \, + \, e [$]<br>
+[$]\,\frac{dX}{dW}(W_0) \,=\,4 \, a \, {W_0}^3 \, + \, 3\, b \, {W_0}^2 \, + \,2\,  c\, {W_0} \, + \, d \, [$]<br>
+[$]\,\frac{d^2 X}{dW^2}(W_0) \,=\,12 \, a \, {W_0}^2 \, + \, 6 \, b \, {W_0} \, + \,2\,  c\, [$]<br>
+[$]\,\frac{d^3 X}{dW^3}(W_0) \,=\,24 \, a \, {W_0} \, + \, 6 \, b \, [$]<br>
+[$]\,\frac{d^4 X}{dW^4}(W_0) \,=\,24 \, a \, [$]<br>
+<br>
+We start with guess coefficients a, b, c, d, and e.  We now take all the data values [$]X_n[$] and their respective Taylor derived values [$]\overline{X_n}[$] and perturb and optimize for the coefficients  a, b, c, d, and e until  [$]\sum  {(X_n\, - \, \overline{X_n})}^2 [$] is minimized.<br>
+The true coefficients for X as a function of W for a particular expansion order would be the ones that minimize [$]\sum  {(X_n\, - \, \overline{X_n})}^2 [$] meaning our chosen coefficients make the polynomial base function calculation of the data variables as close to the data observations as possible.<br>
+<br>
+Even if Taylor does not work perfectly for regression(something we have yet to check in our experiments), we could easily change  the above calculations into Legendre orthogonal polynomial basis and run an orthogonal regression as we did with hermite polynomials. <br>
+<br>
+Above was just a post explaining my strategy to find the best Taylor expansion of a certain order given some numerical data. I will come with a new program with Taylor expansion and regression in Taylor expanded basis or possibly also in Legendre orthogonal basis in a few days.</div>
+
+			
+									
+									<div id="sig874833" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874858">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874858">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874858">
+
+			<h3 ><a href="#p874858">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874858&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874858" title="Post #1752">#1752</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 21st, 2023, 1:30 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I want to write this post to protest since crooks of Pentagon stop good people both of US and other countries to reach out to me. They immediately approach people who contact me and ask them to stop communicating with me.<br>
+For the context of people who just joined this thread, I will explain a few things again. <br>
+There are tens of thousands of mind control victims of crooks of Pentagon in United States of whom a very large percentage whose persecution started when they were  mathematics and computer science students or had recently joined these professions after graduation.<br>
+As I had previously said that there are many Jewish actors associated with this widespread mind control. There are many different types of people in each community, society and religion and it is a very bad thing to generalize something bad to any religion or community and therefore I would like to tell even though there are enough Jewish actors associated with mind control, most other Jews have nothing to do with mind control and they would never like to harm anyone with something like mind control . As a (non-practicing and non-believing) Muslim, I know there are enough violent and fundamentalist Muslim who would gladly kill or injure someone who is a non-Muslim and such incidents happen sporadically every few years, but there are , at the same time, a very large percentage of civilized Muslims who are thoroughly opposed to such cruelties and would try to stop them at all cost and therefore cannot see in the eyes of their (western) countrymen due to shame and stigma every time such incidents of brazen animal cruelty happens in the hands of some extremist Muslim. Just like in Muslims or any other community there are enough ultra-conservative Jews who take pride in retarding intelligent Muslims who study science an mathematics and might get known to have a chance to excel in their profession. While a very large percentage of Jews would shudder at the idea of torturing anybody and stripping one's intelligence whatever one's religion. Most of the good people among Jewish community have nothing to do with persecution and mind control of any innocent human and they would rather do everything in their power to stop ultra-conservative jews to end mind control of innocent people. But still in every large university, you will find a small number of people who initiate mind control of innocent students (and they know who to contact in US army to start mind control of innocent students while most other good people have no such clue or any such contacts) and  when you see what community most of these people who start mind control  belong to, a pattern would start to emerge before you.<br>
+Again with apologies to good jews and many great Jewish billionaires(who are great human beings), a Jewish billionaire is Godfather of mind control. He and his cohort of some other rich Jews have great influence in Pentagon. The powerful people in Pentagon who follow the orders of the rich Jewish Billionaire Godfather are rewarded by lucrative jobs paying millions of dollars after these influential people (who have followed the wishes of the Billionaire Godfather while they were in military service) retire. These obedient staff of Pentagon virtually enters paradise after their retirement from military and it is well known among the officers in US army what are the meanings of obliging the billionaire Godfather and the great consequences that would follow. <br>
+The closely knit group of many ultra-conservative Jews in many universities remains in touch with the Jewish Billionaire Godfather of mind control and his puppets in Pentagon to continue mind control of hundreds of innocent students in these universities every year.<br>
+Now the obedient staff of Godfather in Pentagon who were related to my mind control know they have fucked up. And these crooks of Pentagon know that Billionaire Godfather is in no way obliged to give them any favor of offering them jobs paying millions of dollars after their poor execution of my mind control. And these crooks in Pentagon had been dreaming during all their service about entering the paradise of Godfather, become even more desperate to do something to somehow control me so they can possibly make it to several million dollar club. <br>
+I want to tell American people that I think America is a very diverse country with some of the greatest of all human beings living in United States and also most vile creatures in the world living in United States. But generally Americans are a very nice, kind, humane and civilized people. I have said again and again on this forum that my research could never have been possible if it were not for support from good American people who continued to protest about my ill treatment and bad people at pentagon had to scale down their tactics that gave me enough opportunity to concentrate on my research. If I have been able to explore something in mathematics, I truly owe it to good people in American universities who tried to support me and without their support nothing like this could ever have been possible for me.<br>
+But I really want to tell friends that bad people at Pentagon are not at all willing to yield on my mind control. They are looking to buy time so that all of this goes out of limelight and they re-start their tactics with great zeal again. <br>
+And they really continue to stop any body who tries to approach me by telling them brazen lies about me and insist they never approach me again. </div>
+
+			
+									
+									<div id="sig874858" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874868">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874868">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874868">
+
+			<h3 ><a href="#p874868">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874868&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874868" title="Post #1753">#1753</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 21st, 2023, 6:21 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, as a second thought, any Taylor expansion of data with unknown functional form should be with respect to uniform measure. In a way this should be equivalent to an expansion for data in terms of standard uniform variable U with range -1 to +1. Just like we had a Z-series when we were finding an expansion for data in terms of standard normal, we can have a U-series that finds an expansion for the data in terms of standard Uniform variable. Legendre polynomials would be to U-series what Hermite polynomials were to Z-series. And just like Z-series representation could be changed to Hermite polynomials representation by matching coefficients of each power of Z, We could convert U-series representation to Legendre polynomial representation by matching powers of U. <br>
+A random variable X could be represented in a U-series as<br>
+<br>
+[$] \, X \, = \, a_0 \, + \, a_1 \, U \,+ \, a_2 \, U^2 \,+ \, a_3 \, U^3 \,+ \, a_4 \, U^4 \,+ \, a_5 \, U^5 \,[$]  <br>
+Where U is a standard uniform<br>
+ The above expansion would be equivalent with Legendre polynomial expansion given as<br>
+<br>
+[$] \, X \, = \, al_0 \, + \, al_1 \, L_1(U) \,+ \, al_2 \,L_2(U) \,+ \, al_3 \, L_3(U) \,+ \, al_4 \, L_4(U) \,+ \, al_5 \, L_5(U) \,[$] <br>
+where [$]L_n(U)[$] is the notation used for Legendre polynomial of nth order.<br>
+<br>
+We could find the uniform series representation by finding appropriate coefficients in U-series expansion so that moments of U-series match with moments of the data. Just like we matched moments of Z-series with moments of the data in our earlier work.<br>
+Another way to find a U-series (other than matching moments with data moments) could be through extracting Legendre coefficients by inner product of data with Legendre polynomials after wrapping standard Uniform variable on data through equivalent CDF. Just like we did when we found coefficients for hermite polynomials through inner product with the data after wrapping standard normal variable on data through equivalent CDF.  <br>
+Taylor series around the median would correspond to standard U-series around the median.<br>
+Another caveat could be that just like first order positivity condition required for good Z-series <span style="font-size: 100%; line-height: normal">, we might need first derivative positivity condition for U-series as</span><br>
+<span style="font-size: 100%; line-height: normal">[$]\frac{dX}{dU} &gt; 0 [$] within the range of data.</span></div>
+
+			
+									
+									<div id="sig874868" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874870">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874870">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874870">
+
+			<h3 ><a href="#p874870">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874870&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874870" title="Post #1754">#1754</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 21st, 2023, 6:48 pm</span></p>
+			
+			
+			
+			<div class="content">Just like we had with Z-series, where we calculated functions of a Z-series variable by Taylor series around median, in case of U-Series, we could find functions of a U-series variable by Taylor series around median.<br>
+Variances of U-series variables could be added after conversion into Legendre polynomials and adding coefficients of Legendre polynomials in a squared fashion just as we had to convert Z-series to Hermite polynomial representation and then added coefficients of hermite polynomials in a squared fashion.<br>
+Correlation across Legendre orthogonal polynomials would go just as we found it across hermite polynomials and similarly for regressions.<br>
+<br>
+Though I did not study Laguerre, Chebyshev or Jacobi polynomials, but I am sure all of this could be carried in a straightforward manner to those polynomials as well.<br>
+<br>
+Coming back to the earlier question we had whether we needed orthogonal basis for regression or if we could just use any independent basis for regression should be equivalent to asking if we could somehow regress  Z-series/U-series in their original basis or we had to resort to hermite polynomials/Legendre polynomials for a proper regression.</div>
+
+			
+									
+									<div id="sig874870" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874872">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874872">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874872">
+
+			<h3 ><a href="#p874872">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874872&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874872" title="Post #1755">#1755</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">March 22nd, 2023, 3:09 am</span></p>
+			
+			
+			
+			<div class="content">Friends, my mind control continues unabated. On almost every day, mind control agents try to not let me have a deep sleep. The extent of this torture varies with my need for sleep. When I sleep late and need a good sleep to be fresh in the next day, they are very aggressive in not letting me have a deep and proper sleep. When I sleep early, I would usually just have a barely reasonable sleep. I rarely have a very deep and good sleep at night. And that is when I dramatically change where I sleep in the room or sleep on the floor somewhere in the room after sleeping on the bed for more than a week. This good sleep is because once I change my sleeping place, their sensors go off and it is difficult to control every part of the brain to not let me have a good sleep.<br>
+For past few nights, the problem with sleep has been increasing and this is where mind control agents have been trying to work on. Last night when I tried to sleep, they continued to target lasers on my ears. I could literally hear a throbbing sound as they forced electromagnetic pulses into my ear. Our ears are very vulnerable as they have a direct opening into our brain. I do not put any cotton in my ears(or do anything of the sort that people could see and think I am mentally sick) but pulses into the ear were so severe that I tried to put a compressed tissue in my ears (as my room was locked while sleeping and nobody could see). But it did not help. I also tried to change my sleeping position by moving the cot but still it did not work and I had to continuously face torture. <br>
+I really want to request good people to please force the bad people at Pentagon to finally stop their animal tactics on me and let me live with my human dignity intact.</div>
+
+			
+									
+									<div id="sig874872" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;ccdf3b4523eec45a757f6eaf52be95a9" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1710" role="button">115</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" role="button">116</a></li>
+							<li class="active"><span>117</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" role="button">118</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1770" role="button">119</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1740&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;ccdf3b4523eec45a757f6eaf52be95a9" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1710" role="button">115</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1725" role="button">116</a></li>
+							<li class="active"><span>117</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" role="button">118</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1770" role="button">119</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9&amp;start=1755" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1740&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=ccdf3b4523eec45a757f6eaf52be95a9"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=ccdf3b4523eec45a757f6eaf52be95a9" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#e786838a8e89a7908e8b8a889393c984888a">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>117</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=ccdf3b4523eec45a757f6eaf52be95a9";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=ccdf3b4523eec45a757f6eaf52be95a9";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e27c6eb6ee7ed","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

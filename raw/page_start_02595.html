@@ -1,0 +1,3403 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 174 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=d07e7acb9898b5dc9db86d70aa25da32" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=d07e7acb9898b5dc9db86d70aa25da32?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=d07e7acb9898b5dc9db86d70aa25da32?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=d07e7acb9898b5dc9db86d70aa25da32?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2595" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="d07e7acb9898b5dc9db86d70aa25da32" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=d07e7acb9898b5dc9db86d70aa25da32" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=d07e7acb9898b5dc9db86d70aa25da32" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="d07e7acb9898b5dc9db86d70aa25da32" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=d07e7acb9898b5dc9db86d70aa25da32" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=d07e7acb9898b5dc9db86d70aa25da32"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=d07e7acb9898b5dc9db86d70aa25da32"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=d07e7acb9898b5dc9db86d70aa25da32" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2595%26t%3D99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2595&amp;t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" />
+<input type="hidden" name="creation_time" value="1768907861" />
+<input type="hidden" name="form_token" value="65e8ff86aded9fe3f85f7a5e87a9fe2c2431069e" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2595&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2595&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="d07e7acb9898b5dc9db86d70aa25da32" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d07e7acb9898b5dc9db86d70aa25da32" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2565" role="button">172</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" role="button">173</a></li>
+							<li class="active"><span>174</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" role="button">175</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2625" role="button">176</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885584">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885584">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885584">
+
+			<h3 class="first"><a href="#p885584">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885584&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885584" title="Post #2596">#2596</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 17th, 2025, 4:45 pm</span></p>
+			
+			
+			
+			<div class="content">Sorry friends, will make a detailed post tomorrow.</div>
+
+			
+									
+									<div id="sig885584" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p885602">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885602">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885602">
+
+			<h3 ><a href="#p885602">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885602&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885602" title="Post #2597">#2597</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 18th, 2025, 7:04 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, this post is to explain 2D Z-series and 2D Hermite series in more detail. This is preliminary to understand yesterday's matlab program.  I will make another post explaining details of yesterday's matlab program.<br>
+<br>
+Friends, I have given a good introduction to 1D Z-series and Hermite Series in my paper here: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933283" class="postlink" target="_blank" rel="noopener noreferrer">https://papers.ssrn.com/sol3/papers.cfm ... id=4933283</a><br>
+You have to read that if you are not familiar with Z-series and Hermite-series at all. (SSRN froze the counter of my paper on instructions from CIA so when you download it, please see if download counter moves.)<br>
+<br>
+Here I give a primer on 2D Z-series and Hermite series.<br>
+<br>
+<br>
+<span class="text-center"><span style="font-size: 200%; line-height: normal">A Primer on 2D Z-series and 2D Hermite Series </span></span><br>
+<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Why Both Hermite Series and Z-series</span><br>
+<br>
+The Hermite series representation of a particular order is algebraically equivalent to Z-series representation of the same order. There are many analytics on non-Gaussian random variables like transformation of random variables using Taylor series, multiplication of random variables, calculation of moments and cross-moments where a Z-series representation is more useful. While there are some other analytics associated with correlations, variances and conditional expectation of non-Gaussian random variables where Hermite-Series representation would be more useful. In most of our numerical algorithms, we will have to continue to switch between Z-Series of a random variable and its equivalent Hermite series.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Two Dimensional Z-series</span><br>
+<br>
+A Two dimensional Z-series expansion can be made for a non-gaussian random variable that depends upon more than one sources of uncertainty. Both \(Z_x\) and \(Z_y\) are two uncorrelated and independent standard Gaussians. <br>
+A Two dimensional Z-series can be written as<br>
+\begin{equation}<br>
+X(Z_y\,,\,Z_x)\,=\, \sum\limits_{n=0}^{N}\,\, \sum\limits_{m=0}^{M}\, b_{n,m}\,{Z_y}^n\,{Z_x}^m <br>
+\end{equation}<br>
+<br>
+An explicit example of a 3 X 3 2D Z-series is given below. <br>
+<br>
+\begin{align}<br>
+X(Z_y \, , \, Z_x)\, &amp;=\,\Big[ b_{0,0} \, + \, b_{0,1} \, Z_x \,+\, b_{0,2} \, {Z_x}^2 \,\, + \, b_{0,3} \,{Z_x}^3\,\, \Big] \\<br>
+&amp;+\, \Big[ \, b_{1,0} \, + \, b_{1,1} \,Z_x \,+\, b_{1,2} \, {Z_x}^2\, \, + \, b_{1,3} \,{Z_x}^3\,\, \Big] \, Z_y \, \\<br>
+&amp;+\, \Big[ \, b_{2,0} \, + \, b_{2,1} \,Z_x \,+\, b_{2,2} \, {Z_x}^2\, \,  + \, b_{2,3} \,{Z_x}^3\,\, \Big] \, {Z_y}^2 \, \\<br>
+&amp;+\, \Big[ \, b_{3,0} \, + \, b_{3,1} \,Z_x \,+\, b_{3,2} \, {Z_x}^2\,  \, + \, b_{3,3} \,{Z_x}^3\, \Big] \,  {Z_y}^3\, <br>
+\end{align}<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Two Dimensional Hermite Series</span><br>
+<br>
+A two dimensional Hermite Series can be written as<br>
+\begin{equation}<br>
+X(Z_y\,,\,Z_x)\,=\, \sum\limits_{n=0}^{N}\,\, \sum\limits_{m=0}^{M}\, bh_{n,m}\,H_n(Z_y)\,H_m(Z_x) <br>
+\end{equation}<br>
+<br>
+An explicit example of a 3 X 3 2D Hermite series is given below.<br>
+<br>
+\begin{align}<br>
+X(Z_y \, , \, Z_x)\, &amp;=\, \Big[\, bh_{0,0} \, + \, bh_{0,1} \,H_1(Z_x) \,+\, bh_{0,2} \, H_2(Z_x) \,\, + \, bh_{0,3} \,H_3(Z_x)\,\Big] \\<br>
+&amp;+\, \Big[ \, bh_{1,0} \, + \, bh_{1,1} \,H_1(Z_x) \,+\, bh_{1,2} \, H_2(Z_x) \, + \, bh_{1,3} \,H_3(Z_x)\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{2,0} \, + \, bh_{2,1} \,H_1(Z_x) \,+\, bh_{2,2} \, H_2(Z_x) \, \, + \, bh_{2,3} \,H_3(Z_x)\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{3,0} \, + \, bh_{3,1} \,H_1(Z_x) \,+\, bh_{3,2} \, H_2(Z_x) \, + \, bh_{3,3} \,H_3(Z_x)\, \Big] \, H_3(Z_y) \, <br>
+\end{align}<br>
+<br>
+Hermite Series are very convenient for analytics associated with correlations, variances and conditional expectation of non-Gaussian random variables. Since variance of nth order hermite polynomial is given as \(n!\), using the orthogonality property of hermite polynomials, we can easily calculate the variance of above 3 X 3 hermite series as<br>
+<br>
+\begin{align}<br>
+Var(X)\, &amp;=\, {bh_{0,1}}^2 \,+\, 2\,{bh_{0,2}}^2 \,+\,6\, {bh_{0,3}}^2 \,\\<br>
+&amp;+\, {bh_{1,0}}^2 \,+\, {bh_{1,1}}^2 \,+\, 4\,{bh_{1,2}}^2 \,+\,6\, {bh_{1,3}}^2 \,\\<br>
+&amp;+\, 2\,{bh_{2,0}}^2 \,+\,2\, {bh_{2,1}}^2 \,+\, 4\,{bh_{2,2}}^2 \,+\,12\, {bh_{2,3}}^2 \,\\<br>
+&amp;+\, 6\,{bh_{3,0}}^2 \,+\,6\, {bh_{3,1}}^2 \,+\, 12\,{bh_{3,2}}^2 \,+\,36\, {bh_{3,3}}^2 \,\\ <br>
+\end{align}<br>
+<br>
+<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Product and Moments of Z-series Random variables</span><br>
+<br>
+Product of 2D Z-series follow exactly the algebra behind the product of Two dimensional power series where we multiply the two series and algebraically collect the coefficients with same powers of \(Z_x\), and \(Z_y\) and the cross products of \(Z_x\), and \(Z_y\). <br>
+<br>
+In order to take moments, we take the appropriate product of two dimensional Z-series and then apply expectation on powers of standard normals. <br>
+For calculation of products and moments of random variables, we have to use their Z-series and when we have their hermite series given, we would have to convert them to two dimensional Z-series and then find the desired products and moments . We cannot easily do the calculations of products and moments directly in 2D Hermite series representations.  <br>
+<br>
+<span style="font-size: 175%; line-height: normal">Taylor Series of 2D Z-series Random variables.</span><br>
+<br>
+We can find functions of two dimensional Z-series random variables by applying multidimensional Taylor series to them. We have to apply Taylor series of random variables on their Z-series representation. We use a very small toy expansion only to second order since multidimensional Taylor series quickly become very cumbersome. We have to find automated algorithms for multidimensional Taylor series calculation of functions of multi-dimensional Z-series. Let us write a Toy 2D Taylor expansion of a random variable below as<br>
+<br>
+\begin{align}<br>
+&amp; f(X(Z_y,Z_x)\,=\, \Biggr[ f(X(0,0)) +f'(X) \frac{\partial X}{\partial Z_x} Z_x+1/2 \Big(f''(X) \frac{\partial X}{\partial Z_x}^2+f'(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) Z_x^2+O[Z_x]^3 \Biggr]\\<br>
+&amp;+\Biggr[\,f'(X) \frac{\partial X}{\partial {Z_y}  }+\left(f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  }+f'(X) \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}\right) Z_x \\<br>
+&amp;+\left(\left(1/2 f^{3}(X) \frac{\partial X}{\partial Z_x}^2+f''(X) \frac{\partial^2 X}{\partial {Z_x}^2} \right) \frac{\partial X}{\partial {Z_y}  }+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}+1/2 f'(X) \frac{\partial^2 X}{\partial {Z_y} \partial{Z_x}^2 } \right) Z_x^2+O[Z_x]^3  \Biggr]Z_y \\<br>
+&amp;+\Biggr[\,1/2 \left(f''(X) \frac{\partial X}{\partial {Z_y}  }^2+f'(X) \frac{\partial^2 X}{\partial {Z_y}^2  } \right) \\<br>
+&amp;+1/2 \left( f^{3}(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  }^2+2 f''(X) \frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^2 X}{\partial {Z_y}^2  }+f'(X) \frac{\partial^3 X}{\partial {Z_y}^2 \partial {Z_x}}\right) Z_x \\<br>
+&amp;+1/2 \Biggr(1/2  \Big( f^{4}(X) \Big[{\frac{\partial X}{\partial Z_x}}\Big]^2+f^3(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) \Big[{\frac{\partial X}{\partial {Z_y}  }}\Big]^2+2 f^3(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}} \\<br>
+&amp;+f''(X) \Big( \Big[\frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}\Big]^2+\frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial{Z_x}^2 } \Big) \\<br>
+&amp;+1/2 \Big(f^{3}(X) \Big[\frac{\partial X}{\partial Z_x}\Big]^2+f''(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) \frac{\partial^2 X}{\partial {Z_y}^2  }+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^3 X}{\partial {Z_y}^2 \partial {Z_x}}+1/2 f'(X) \frac{\partial^4 X}{\partial {Z_y}^2 \partial{Z_x}^2 } \Biggr) Z_x^2+O[Z_x]^3 ) \Biggr]Z_y^2+O[Z_y]^3<br>
+\end{align}<br>
+<br>
+From this Taylor expansion, just like we did for one dimensional  composition of functions, we can find a function that is applied to a two dimensional Z-series and matches it to another different two dimensional Z-series. Suppose two dimensional Z-series of a target random variable is given with known coefficients as as<br>
+<br>
+\begin{align}<br>
+Y(Z_y \, , \, Z_x)\, &amp;=\,\Big[ b_{0,0} \, + \, b_{0,1} \, Z_x \,+\, b_{0,2} \, {Z_x}^2 \,\,\,\, \Big] \\<br>
+&amp;+\, \Big[ \, b_{1,0} \, + \, b_{1,1} \,Z_x \,+\, b_{1,2} \, {Z_x}^2\, \,\, \Big] \, Z_y \, \\<br>
+&amp;+\, \Big[ \, b_{2,0} \, + \, b_{2,1} \,Z_x \,+\, b_{2,2} \, {Z_x}^2\, \,\, \Big] \, {Z_y}^2 \, \\<br>
+\end{align}<br>
+<br>
+Then We can match the powers of two dimensional composition of Z-series and the target Z-series to find<br>
+<br>
+\begin{align}<br>
+b_{0,1}\,&amp;=\,f'(X) \frac{\partial X}{\partial Z_x}\\<br>
+b_{0,2}\,&amp;=\,1/2 \Big(f''(X) \frac{\partial X}{\partial Z_x}^2+f'(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) \\<br>
+b_{1,0}\,&amp;=\,f'(X) \frac{\partial X}{\partial {Z_y}  } \\<br>
+b_{1,1}\,&amp;=\,\left(\,(f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  }+f'(X) \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}\right) \\<br>
+b_{1,2}\,&amp;=\,\left(\left(1/2 f^{3}(X) \frac{\partial X}{\partial Z_x}^2+f''(X) \frac{\partial^2 X}{\partial {Z_x}^2}\right) \frac{\partial X}{\partial {Z_y}  }+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}+1/2 f'(X) \frac{\partial^2 X}{\partial {Z_y} \partial{Z_x}^2 } \right) \\<br>
+b_{2,0}\,&amp;=\, 1/2\, \left(\, f''(X) \frac{\partial X}{\partial {Z_y}  }^2+f'(X) \frac{\partial^2 X}{\partial {Z_y}^2  } \right) \\<br>
+b_{2,1}\,&amp;=\,+1/2 \,\left(f^{3}(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  }^2+2 f''(X) \frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^2 X}{\partial {Z_y}^2  }+f'(X) \frac{\partial^3 X}{\partial {Z_y}^2 \partial {Z_x}}\right) \\<br>
+b_{2,2}\,&amp;=\,1/2 \Biggr(1/2  \Big( f^{4}(X) \Big[{\frac{\partial X}{\partial Z_x}}\Big]^2+f^3(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) \Big[{\frac{\partial X}{\partial {Z_y}  }}\Big]^2+2 f^3(X) \frac{\partial X}{\partial Z_x} \frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}} \\<br>
+&amp;+f''(X) \Big( \Big[\frac{\partial^2 X}{\partial {Z_y} \partial {Z_x}}\Big]^2+\frac{\partial X}{\partial {Z_y}  } \frac{\partial^2 X}{\partial {Z_y} \partial{Z_x}^2 } \Big) \\<br>
+&amp;+1/2 \Big(f^{3}(X) \Big[\frac{\partial X}{\partial Z_x}\Big]^2+f''(X) \frac{\partial^2 X}{\partial {Z_x}^2} \Big) \frac{\partial^2 X}{\partial {Z_y}^2  }+f''(X) \frac{\partial X}{\partial Z_x} \frac{\partial^3 X}{\partial {Z_y}^2 \partial {Z_x}}+1/2 f'(X) \frac{\partial^4 X}{\partial {Z_y}^2 \partial{Z_x}^2 } \Biggr)<br>
+\end{align}<br>
+<br>
+using above equations, we can solve for the values of derivatives ( \(f'(X),\,f"(X),\,\ldots, \, f^n(X) \,\)) of the required applied function so that its composition with given Z-series function matches the given Z-series function with a target Z-series function. <br>
+<br>
+<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Equivalence of Hermite-Series and Z-Series Random Variables in Two Dimensions And Conversion of Coefficients across the Two Types of Series.</span><br>
+<br>
+The equivalence and conversion of Z-series and Hermite Series in multidimensions works just analogously to the way it works in a single dimension. We first apply single dimensional conversion from Z-series to Hermite-series across one index and then across the second index and similarly for conversion from Hermite-series to Z-series.<br>
+<br>
+Here I am first explaining one dimensional equivalence of both types of series and their conversion across each other.<br>
+Nth order Z-series and Nth order Hermite-Series share a common span of Nth order polynomials so any random variable that can be represented with Nth order Z-series, can also be represented by a Hermite-Series up to Nth order Hermite Polynomial. In fact, once coefficients of Z-series are known, it is easily possible to find coefficients of equivalent Hermite-Series and Vice versa and this is just consequence of simple algebra.<br>
+<br>
+If we have Z-series representation of a non-Gaussian random variable is given, we can easily find coefficients of its Hermite-Series and vice versa.<br>
+<br>
+If we represent a Z-series as <br>
+\begin{equation}<br>
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z}^n <br>
+\end{equation}<br>
+and a hermite series as<br>
+\begin{equation}<br>
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, ah_n\, H_n(Z) <br>
+\end{equation}<br>
+<br>
+then for \(N=7\) (for \(N\, &lt; \,7\), omit any coefficients that are larger than \(N\)), we can find Hermite-series coefficients from Z-Series coefficients as <br>
+<br>
+\begin{align}<br>
+&amp; ah_0\,=\,a_0\,+\,a_2\,+\,3\,a_4\,+\,15\,a_6\\<br>
+&amp; ah_1\,=\,a_1\,+3\,a_3\,+\,15\,a_5\,+\,105\,a_7\\<br>
+&amp; ah_2\,=\,a_2\,+\,6\,a_4\,+\,45\,a_6\\<br>
+&amp; ah_3\,=\,a_3\,+\,10\,a_5\,+\,105\,a_7\\<br>
+&amp; ah_4\,=\,a_4\,+\,15\,a_6\\<br>
+&amp; ah_5\,=\,a_5\,+\,21\,a_7\\<br>
+&amp; ah_6\,=\,a_6\\<br>
+&amp; ah_7\,=\,a_7\\<br>
+\end{align}<br>
+<br>
+similarly, we can find Z-series coefficients from Hermite-Series coefficients as <br>
+<br>
+\begin{align}<br>
+&amp; a_0\,=\,ah_0\,-\,ah_2\,+\,3\,ah_4\,-\,15\,ah_6\\<br>
+&amp; a_1\,=\,ah_1\,-\,3\,ah_3\,+\,15\,ah_5\,-\,105\,ah_7\\<br>
+&amp; a_2\,=\,ah_2\,-6\,ah_4\,+\,45\,ah_6\\<br>
+&amp; a_3\,=\,ah_3\,-10\,ah_5\,+\,105\,ah_7\\<br>
+&amp; a_4\,=\,ah_4\,-15 \, ah_6\\<br>
+&amp; a_5\,=\,ah_5\,-21 \, ah_7\\<br>
+&amp; a_6\,=\,ah_6\\<br>
+&amp; a_7\,=\,ah_7\\<br>
+\end{align}<br>
+<br>
+Let us try a toy exercise to convert a Two diemsnional Hermite Series into a two dimensional Z-series. This exercise is directly relevant for the program I posted yesterday.<br>
+<br>
+ Our Hermite Series is given as<br>
+<br>
+\begin{align}<br>
+X(Z_y \, , \, Z_x)\, &amp;=\, \Big[\, bh_{0,0} \, + \, bh_{0,1} \,H_1(Z_x) \,+\, bh_{0,2} \, H_2(Z_x) \,\, + \, bh_{0,3} \,H_3(Z_x)\,\Big] \\<br>
+&amp;+\, \Big[ \, bh_{1,0} \, + \, bh_{1,1} \,H_1(Z_x) \,+\, bh_{1,2} \, H_2(Z_x) \, + \, bh_{1,3} \,H_3(Z_x)\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{2,0} \, + \, bh_{2,1} \,H_1(Z_x) \,+\, bh_{2,2} \, H_2(Z_x) \, \, + \, bh_{2,3} \,H_3(Z_x)\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{3,0} \, + \, bh_{3,1} \,H_1(Z_x) \,+\, bh_{3,2} \, H_2(Z_x) \, + \, bh_{3,3} \,H_3(Z_x)\, \Big] \, H_3(Z_y) \, <br>
+\end{align}<br>
+<br>
+For a third order Hermite-series to convert into a third order Z-series, we turn all higher order (than third order) coefficients in previous one dimensional equations to zero to get the following relevant one dimensional equations as<br>
+<br>
+\begin{align}<br>
+&amp; a_0\,=\,ah_0\,-\,ah_2\,\\<br>
+&amp; a_1\,=\,ah_1\,-\,3\,ah_3\,\\<br>
+&amp; a_2\,=\,ah_2\,\\<br>
+&amp; a_3\,=\,ah_3\,\\<br>
+\end{align}<br>
+<br>
+As I had earlier mentioned, to convert a two dimensional hermite series, we have to apply one dimensional conversion equations on one index first and then apply them on second index. We first convert one dimensional hermite series in each \(Z_x\) index to a one dimensional Z-series which is given as following<br>
+<br>
+\begin{align}<br>
+X(Z_y \, , \, Z_x)\, &amp;=\, \Big[\,\left( bh_{0,0} \,-\,bh_{0,2}\right) \, + \,\left( bh_{0,1} \, - 3\, bh_{0,3}\right) \,Z_x \,+\, bh_{0,2} \,{Z_x}^2 \, + \, bh_{0,3} \,{Z_x}^3\,\Big] \\<br>
+&amp;+\, \Big[ \,\left( bh_{1,0} \,-\,bh_{1,2} \right)\, + \,\left( bh_{1,1} \, - 3\, bh_{1,3}\right) \,Z_x \,\,+\, bh_{1,2} \, {Z_x}^2 \, + \, bh_{1,3} \,{Z_x}^3 \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \,\left( bh_{2,0} \,-\,bh_{2,2} \right)\, + \,\left( bh_{2,1} \, - 3\, bh_{2,3}\right) \,Z_x \,\,+\, bh_{2,2} \, {Z_x}^2 \, \, + \, bh_{2,3} \,{Z_x}^3\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \,\left( bh_{3,0} \,-\,bh_{3,2} \right)\, + \,\left( bh_{3,1} \, - 3\, bh_{3,3}\right) \,Z_x \,\,+\, bh_{3,2} \, {Z_x}^2 \, + \, bh_{3,3} \,{Z_x}^3\, \Big] \, H_3(Z_y) \, <br>
+\end{align}<br>
+<br>
+In the above exercise, after applying one dimensional hermite-series to Z-series conversion equation in \(Z_x\) variable, we have a Z-series in first variable of \(Z_x\) and still a hermite series in second variable of \(Z_y\). Now we apply hermite series to Z-series conversion equations in \(Z_y\) direction which is given as follows<br>
+<br>
+\begin{align}<br>
+&amp;X(Z_y \, , \, Z_x)\, \\<br>
+&amp;=\, \Big[\,\left(\left( bh_{0,0} \,-\,bh_{0,2}\right)-\left( bh_{2,0} \,-\,bh_{2,2} \right) \right)\,+ \,\left(\left( bh_{0,1} \, - 3\, bh_{0,3}\right) - \left( bh_{2,1} \,-\,3\,bh_{2,3} \right)\right) \,Z_x \,\\ &amp;+\, \left( bh_{0,2} -bh_{2,2} \right)\,{Z_x}^2 \, + \, \left(bh_{0,3}-bh_{2,3}\right) \,{Z_x}^3\,\Big] \\<br>
+&amp;+\, \Big[\left(\left( bh_{1,0} \,-\,bh_{1,2} \right)\,-3\,\left( bh_{3,0} \,-\,bh_{3,2} \right)\,\right) + \left(\left( bh_{1,1} \, - 3\, bh_{1,3}\right)\,-\,3\,\left( bh_{3,1} \,-3\,bh_{3,3} \right)\,\right) \,Z_x  \\&amp;+\,\left( bh_{1,2}-\,3\,bh_{3,2} \right) \, {Z_x}^2 \, + \,\left( bh_{1,3} -\,3\,bh_{3,3}\right) \,{Z_x}^3 \Big] \,Z_y \, \\<br>
+&amp;+\, \Big[ \,\left( bh_{2,0} \,-\,bh_{2,2} \right)\, + \,\left( bh_{2,1} \, - 3\, bh_{2,3}\right) \,Z_x \,\,+\, bh_{2,2} \, {Z_x}^2 \, \, + \, bh_{2,3} \,{Z_x}^3\, \Big] \, {Z_y}^2 \, \\<br>
+&amp;+\, \Big[ \,\left( bh_{3,0} \,-\,bh_{3,2} \right)\, + \,\left( bh_{3,1} \, - 3\, bh_{3,3}\right) \,Z_x \,\,+\, bh_{3,2} \, {Z_x}^2 \, + \, bh_{3,3} \,{Z_x}^3\, \Big] \,{Z_y}^3 \, <br>
+\end{align}<br>
+<br>
+So equating to 2D Z-series Coefficients, we get<br>
+<br>
+\begin{align}<br>
+b_{0,0}&amp;=\,\left(\left( bh_{0,0} \,-\,bh_{0,2}\right)-\left( bh_{2,0} \,-\,bh_{2,2} \right) \right)\,\\<br>
+b_{0,1}&amp;=\,\left(\left( bh_{0,1} \, - 3\, bh_{0,3}\right) - \left( bh_{2,1} \,-\,3\,bh_{2,3} \right)\right)\\<br>
+b_{0,2}&amp;= \,\left( bh_{0,2} -bh_{2,2} \right)\,\\<br>
+b_{0,3}&amp;=\,\left(bh_{0,3}-bh_{2,3}\right) \\<br>
+b_{1,0}&amp;=\,\left(\left( bh_{1,0} \,-\,bh_{1,2} \right)\,-3\,\left( bh_{3,0} \,-\,bh_{3,2} \right)\,\right)\,\\<br>
+b_{1,1}&amp;= \,\left(\left( bh_{1,1} \, - 3\, bh_{1,3}\right)\,-\,3\,\left( bh_{3,1} \,-3\,bh_{3,3} \right)\,\right) \,\\<br>
+b_{1,2}&amp;=\,\left( bh_{1,2}-\,3\,bh_{3,2} \right) \,\\<br>
+b_{1,3}&amp;=\,\left( bh_{1,3} -\,3\,bh_{3,3}\right) \, \\<br>
+b_{2,0}&amp;=\,\left( bh_{2,0} \,-\,bh_{2,2} \right)\, \\<br>
+b_{2,1}&amp;=\,\left( bh_{2,1} \, - 3\, bh_{2,3}\right)\, \\<br>
+b_{2,2}&amp;= \,bh_{2,2} \\<br>
+b_{2,3} &amp;= \, bh_{2,3} \\<br>
+b_{3,0}&amp;=\,\left( bh_{3,0} \,-\,bh_{3,2} \right)\, \\<br>
+b_{3,1}&amp;= \,\left( bh_{3,1} \, - 3\, bh_{3,3}\right) \\<br>
+b_{3,2}&amp;=\, bh_{3,2} \, \\ <br>
+b_{3,3}&amp;= \, bh_{3,3} \,\\<br>
+\end{align}</div>
+
+			
+									
+									<div id="sig885602" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885612">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885612">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885612">
+
+			<h3 ><a href="#p885612">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885612&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885612" title="Post #2598">#2598</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 19th, 2025, 10:44 am</span></p>
+			
+			
+			
+			<div class="content">Friends, this is description of iterative optimization matlab program named as<br>
+<br>
+function [bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTerm2D01A(rMu,NMoments,Iterations)<br>
+<br>
+This program was only an initial version and in a few days I want to come up with a better program that uses Newton method in calculation of the coefficients of orthogonal part of transition increments. I will also do work to convert 2D hermite-series or 2D Z-series into functions of X and \(Z_y\).<br>
+<br>
+Here are the details of the above program<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Objective:</span><br>
+<br>
+Objective of the program is to find stochastic dynamics of a random variable \(\bar{Y}\) that is dependent on X but is uncorrelated with X. Meaning variance of random variable \(\bar{Y}\) systematically depends on X but in a way that \(\bar{Y}\) is uncorrelated with X. We suppose that univariate stochastic dynamics of both X and \(\bar{Y}\) are already known to us in the form of moments but we want to find two dimensional stochastic dynamics of \(bar{Y}\) that capture the dependency of its variance on X.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Context of the Program and Preparing data of \(\bar{Y}\):</span><br>
+<br>
+Context of the program is that we have the joint observation data of two correlated random variables X and Y. We can find univariate Z-series of both X and Y from this data. We can also calculate the correlation between hermite polynomials of hermite-series of both X and Y. Hermite-series of X and Y are given respectively as<br>
+<br>
+\[\,X(Z_x)\,=\, ah_0 \, +\, ah_1 \,H_1(Z_x) \,+\, ah_2 \,H_2(Z_x) \,+\, ah_3 \,H_3(Z_x) \, \\<br>
+\,Y(Z_y)\,=\, bh_0 \, +\, bh_1 \,H_1(Z_y) \,+\, bh_2 \,H_2(Z_y) \,+\, bh_3 \,H_3(Z_y) \, \]<br>
+<br>
+We want to divide the random variable Y into two parts, one is conditional expectation part of  Y (E(Y|X)) that is perfectly correlated with X and second is part of Y (\(\bar{Y}\)) that is orthogonal to X. We can do this by calculating hermite correlations and then using the correlations to find conditional expectation part. But another simple way is do a regression of Y on hermite polynomials of X.<br>
+<br>
+Suppose we have P joint observations of random variables \(X_p\) \(\,(p\,=\,1\, \ldots P)\) and \(Y_p\) \(\,(p\,=\,1\, \ldots P)\). From \(X_p\) and  \(Y_p\), We would have to invert equations below to find \(Z_{X,p}\) \(\,(p\,=\,1\, \ldots P)\) and then use the regression equation<br>
+<br>
+\[\,Y_p\,=\,c_0\,+\,c_1\,H_1(Z_{X,p})\,+\,c_2\,H_2(Z_{X,p})\,+\,c_3\,H_3(Z_{X,p})\,+\,c_4\,H_4(Z_{X,p})\,+\,c_5\,H_5(Z_{X,p})\,\]<br>
+<br>
+This way we find the regression coefficients which are given by (\(c_0,\,c_1,\,\dots,\,c_M\))<br>
+<br>
+Now we use the regression equation with each of the pth observations of X to find the conditional value of pth observation of Y. This is simply explainable part of regression <br>
+<br>
+ \[\,E\left[Y_p\,|\,X_p\right]\,=\,c_0\,+\,c_1\,H_1(Z_{X,p})\,+\,c_2\,H_2(Z_{X,p})\,+\,c_3\,H_3(Z_{X,p})\,+\,c_4\,H_4(Z_{X,p})\,+\,c_5\,H_5(Z_{X,p})\,\]<br>
+<br>
+The above equation is repeated for all P observations of X.<br>
+<br>
+From above calculated conditional expected values of each of the pth observation of \(Y_p\) given \(X_p\), we are able to calculate the orthogonal and uncorrelated part of the pth observation of \(Y_p\) denoted as \(\bar{Y}_p\)  as<br>
+<br>
+\[\,\bar{Y}_{p}\, =\, Y_p\,-\, \,E\left[Y_p\,|\,X_p\right]\,\]<br>
+<br>
+In many cases where Y is a dependent variable as in the case of transition increment, this orthogonal random variable part given as \(\bar{Y}\) would also be dependent on X even though it would be orthogonal to X and would not have any first order correlation with X.<br>
+<br>
+Using above procedure, we can get data of P observation of \(\bar{Y}\) that we can use to calculate its various moments. The above calculations to prepare data of \(\bar{Y}\) are done in the case of transition increments of X in the matlab function given as EstimateDynamicCoeffParameters(X).<br>
+<br>
+After choosing an appropriate two dimensional Z-series/ Hermite-series form of \(\bar{Y}\) in next section, We will use optimization on above calculated moments of \(\bar{Y}\) to find coefficients of the 2D Hermite- series form we would have selected as best possible.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Candidate Form of 2D Hermite-series of \(\bar{Y}\)</span><br>
+<br>
+A simple form of stochastic dynamics of \(\bar{Y}\) that is dependent on X could be selected as<br>
+<br>
+\[\bar{Y}\,=\,g_0(X)\,+\,g_1(X) \,Z_y\,+\,g_2(X)\,\left({Z_y}^2\,-\,1\right) \]<br>
+<br>
+since all of functions involved in above stochastic form given by \(g_0(X)\), \(g_1(X)\), and \(g_2(X)\) can be represented in Z-series of X with \(Z_x\) as its argument, the above stochastic form could be equivalent (give or take some change in order of 2D hermite series) to 2D hermite series form below.<br>
+<br>
+\begin{align}<br>
+<br>
+X(Z_y \, , \, Z_x)\, &amp;=\, \Big[\, bh_{0,0} \, + \, bh_{0,1} \,H_1(Z_x) \,+\, bh_{0,2} \, H_2(Z_x) \,\, + \, bh_{0,3} \,H_3(Z_x)\,\Big] \\<br>
+&amp;+\, \Big[ \, bh_{1,0} \, + \, bh_{1,1} \,H_1(Z_x) \,+\, bh_{1,2} \, H_2(Z_x) \, + \, bh_{1,3} \,H_3(Z_x)\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{2,0} \, + \, bh_{2,1} \,H_1(Z_x) \,+\, bh_{2,2} \, H_2(Z_x) \, \, + \, bh_{2,3} \,H_3(Z_x)\, \Big] \, H_2(Z_y) \, \\<br>
+\end{align}<br>
+<br>
+ However, we notice that \(g_0(X)\) in the above candidate stochastic form would be directly correlated with random variable X which is not what we want. Therefor I want friends to notice that in equivalent  2D hermite form, the zeroth hermite term with respect to \(Z_y\) is given as<br>
+<br>
+\[\Big[\, bh_{0,0} \, + \, bh_{0,1} \,H_1(Z_x) \,+\, bh_{0,2} \, H_2(Z_x) \,\, + \, bh_{0,3} \,H_3(Z_x)\,\Big] \]<br>
+<br>
+In a 2D hermite form, first order correlation can appear only with respect to terms in zeroth hermite (with respect to appropriate Z, \(Z_x,\, or\, Z_y\). Since zeroth hermite (with respect to Z_y) cannot be a function of \(Z_x\), we choose the right form for 2D stochastic of \(\bar{Y}\) in next section.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">True Possible Form of 2D Hermite-series of \(\bar{Y}\)</span><br>
+<br>
+In light of discussion in previous paragraph, we know that there can be no \(Z_x\) dependent dynamics in zeroth hermite with respect to \(Z_y\). Therefore a simple form of stochastic dynamics of \(\bar{Y}\) that is dependent on X could be selected as<br>
+<br>
+\[\bar{Y}\,=\,g_1(X) \,Z_y\,+\,g_2(X)\,\left({Z_y}^2\,-\,1\right) \]<br>
+<br>
+since all of functions involved in above stochastic form given by \(\(g_1(X)\), and \(g_2(X)\) can be represented in Z-series of X with \(Z_x\) as its argument, the above true stochastic form could be equivalent to 2D hermite series form below.<br>
+<br>
+<br>
+\begin{align}<br>
+\bar{Y}(Z_y \, , \, Z_x)\, &amp;=\,\, \Big[ \, bh_{1,0} \, + \, bh_{1,1} \,H_1(Z_x) \,+\, bh_{1,2} \, H_2(Z_x) \, + \, bh_{1,3} \,H_3(Z_x)\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, bh_{2,0} \, + \, bh_{2,1} \,H_1(Z_x) \,+\, bh_{2,2} \, H_2(Z_x) \, \, + \, bh_{2,3} \,H_3(Z_x)\, \Big] \, H_2(Z_y) \, \\<br>
+\end{align}<br>
+<br>
+In the above 2D Hermite-series there are dynamics of variance that depend on \(Z_x\) but zeroth hermite with respect to \(Z_y\) has no dependence on \(Z_x\). I want to emphasize that this is only one of the possible forms since for some random variables we might have to increase order of 2D Hermite-series in one or both directions. But if \(\bar{Y}\) has to maintain orthogonality with X, there can be no polynomials terms in Z_x associated with zeroth hermite of \(Z_y\).<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Description of Numerical Problem:</span><br>
+<br>
+We want to find the coefficients of above two dimensional hermite series so that numerically calculated moments from data of orthogonal part given by \(\bar{Y}\) are perfectly retrieved from the  optimized coefficients of the above selected 2D hermite series form.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Preliminaries Before optimization:</span><br>
+<br>
+<span style="font-size: 150%; line-height: normal">Calculation of 2D Hermite-Series Variance</span><br>
+<br>
+Before starting the optimization, we standardize the moments of \(Y\) which means that variance of the 2D hermite-series should always be one. We also use unity variance property to fix one of the coefficients of hermite series. In above selected hermite series form the variance would be calculated as<br>
+<br>
+\begin{align}<br>
+Var[\bar{Y}]\,&amp;=\, {bh_{1,0}}^2\,+\,{bh_{1,1}}^2\,+\,2\,{bh_{1,2}}^2\,+\,6\,{bh_{1,3}}^2\, \\<br>
+&amp;\,2\, {bh_{2,0}}^2\,+\,2\,{bh_{2,1}}^2\,+\,4\,{bh_{2,2}}^2\,+\,12\,{bh_{2,3}}^2\,<br>
+\end{align}<br>
+<br>
+In the iterative perturbations numerical procedure, the variance is maintained at unity. When we perturb any coefficient in the iterative perturbation procedure, we readjust the value of \( {bh_{1,0}}\) so that unit variance is retrieved. This is done by calculating the value of   \(Var[\bar{Y}]\,\) from equation below after the perturbation but without including \({bh_{1,0}}\)<br>
+<br>
+\begin{align}<br>
+Var[\bar{Y_0}]\,&amp;=\, \,{bh_{1,1}}^2\,+\,2\,{bh_{1,2}}^2\,+\,6\,{bh_{1,3}}^2\, \\<br>
+&amp;\,2\, {bh_{2,0}}^2\,+\,2\,{bh_{2,1}}^2\,+\,4\,{bh_{2,2}}^2\,+\,12\,{bh_{2,3}}^2\,<br>
+\end{align}<br>
+<br>
+and then fixing the value of coefficient  \( {bh_{1,0}}\)  by the following equation as<br>
+<br>
+\[bh_{1,0}\,=\,\sqrt{1-Var[\bar{Y_0}]}\]<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Conversion of 2D Hermite-Series Coefficients to 2D Z-series Coefficients</span><br>
+<br>
+Even though modelling the required stochastic form was convenient in Hermite series since we could maintain orthogonality and zero correlations very easily but for calculation of moments, we have to convert 2D hermite-series to 2D Z-series. <br>
+Using the calculations from yesterday's program, we can convert 2D Hermite Series coefficients to 2D Z-series Coefficients, and we get<br>
+<br>
+<br>
+\begin{align}<br>
+b_{0,0}&amp;=-\left( bh_{2,0} \,-\,bh_{2,2} \right)\,\\<br>
+b_{0,1}&amp;=\, - \left( bh_{2,1} \,-\,3\,bh_{2,3} \right)\\<br>
+b_{0,2}&amp;= \,-bh_{2,2} \,\\<br>
+b_{0,3}&amp;=\,-bh_{2,3} \\<br>
+b_{1,0}&amp;=\,\left( bh_{1,0} \,-\,bh_{1,2} \right)\,\,\\<br>
+b_{1,1}&amp;= \,\left( bh_{1,1} \, - 3\, bh_{1,3}\right)\, \,\\<br>
+b_{1,2}&amp;=\, bh_{1,2} \,\\<br>
+b_{1,3}&amp;=\, bh_{1,3}  \\<br>
+b_{2,0}&amp;=\,\left( bh_{2,0} \,-\,bh_{2,2} \right)\, \\<br>
+b_{2,1}&amp;=\,\left( bh_{2,1} \, -\,bh_{2,3} \right)\, \\<br>
+b_{2,2}&amp;= \,bh_{2,2} \\<br>
+b_{2,3} &amp;= \, bh_{2,3} \\<br>
+\end{align}<br>
+<br>
+I think in the given program, my coefficients are in reverse which does not make a difference in calculations but I will fix them in new version to maintain convention.<br>
+<br>
+<span style="font-size: 150%; line-height: normal">Objective Function For optimization:</span><br>
+<br>
+For optimization of coefficients to moments, we calculate moments from our trial coefficients with kth moment generated from trial coefficients denoted as \(\mu(k)\) and target kth moment is denoted as \(mu_0(k)\). We use different weights in the optimization for different moments. Since we are using standardized moments, typically smaller moments have a lot higher weight and larger moments have a lot smaller weight. We can also strategically alter the weights during optimization especially when one of the moments has already been well optimized, we increase its weight in the objective function so deviations from its optimized values are highly penalized while the iterative algorithm continues to fit other moments that have already not been fitted. <br>
+<br>
+This objective function is calculated as<br>
+<br>
+\[\,Obj_N\,=\, \sum\limits_{k=1}^N\, w_k\,{\left(\mu(k)\,-\,\mu_0(k)\right)}^2\]<br>
+<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Details of Iterative Perturbation Optimization Procedure:</span><br>
+<br>
+We have to iterate over eight coefficients of the following 2D hermite-series<br>
+<br>
+\begin{align}<br>
+Var[\bar{Y}]\,&amp;=\, {bh_{1,0}}^2\,+\,{bh_{1,1}}^2\,+\,2\,{bh_{1,2}}^2\,+\,6\,{bh_{1,3}}^2\, \\<br>
+&amp;\,2\, {bh_{2,0}}^2\,+\,2\,{bh_{2,1}}^2\,+\,4\,{bh_{2,2}}^2\,+\,12\,{bh_{2,3}}^2\,<br>
+\end{align}<br>
+<br>
+In actual procedure, we serially perturb over seven coefficients of above hermite series with a small perturbative step roughly inversely proportional to variance of the hermite polynomial associated with the coefficient and after perturbation in each coefficient we fix the first coefficient \(bh_{1,0}\) so that standardized variance remains unity and accept the perturbation change if the objective function improves. Our perturbation strategy is to add the perturbation step size in one of the coefficients, then adjust bh_{1,0} from variance and then accept the perturbative change  if the objective function decreases below the best objective function and update the parameter in that dimension. If the objective function does not decrease by addition of perturbation step in that dimension, you subtract the perturbation step in the same coefficient dimension, and alter bh_{1,0} to keep unity variance and then see if the objective function decreases. Again decrease in parameter is accepted if the objective function decreases with perturbation in that direction. If the objective function does not decrease in both directions by adding or subtracting the perturbative step, we do not change the coefficient and keep it at its old value from previous iteration. So we serially iterate over all coefficients one by one. And when there is no decrease in objective function after adding and subtracting the perturbative steps sizes in all coefficient dimensions, we cut the step size along all dimensions to .95 or .9 of the previous step size and optimization starts working again.<br>
+<br>
+Initial perturbation step size is very small and is kept proportional to inverse of variance of hermite polynomial associated with the particular coefficient.<br>
+<br>
+After every few hundred iterations, we reset the perturbation step and make it equal to a fraction (like possibly 1/50) of the already found best fir values of the coefficients. <br>
+<br>
+In our case first moment was zero and second moment is kept fixed all along iterative optimization procedure. We have adopted this strategy to alter the coefficients so that only three moments are first calibrated with a three moment objective function. This is particularly easy and we use about 500 iterations for this purpose in first stage. After 500 perturbations, we switch to four dimension optimization. But in order to do that we need a four coefficient best objective function for decision making. At 500th iteration, when switching from three moments optimization to four moments optimization, we use the calibrated coefficients from three moments optimization and use them to calculate four moments and these four moments from best fit values are then used to find best initial objective function that has to be improved in four moments calibration. At the same time, after switching to four moments optimization, we also increase the weight of the third moment that has already been fixed several times so that deviations from already fixed third moment are highly penalized while perturbing the coefficients to find the best fit to fourth moments. We use 500th to 4000th iterations to find the best fit to fourth moment. At 4000th iteration, we move from four moment optimization to five moments optimization. Like before, we project best fit coefficients from four moments optimization to five moments and then calculate the initial five moments best fit objective function. We also increase the weight on already calibrated third and four moments further so they are kept in close calibration while  iterative perturbation procedure optimizes for fifth moment. We repeat the same process when we switch from five moments optimization to six moments optimization on 10000th iteration.<br>
+<br>
+In the program all seven hermite coefficients that we iteratively perturb to find best values are kept in a singly array called cH.</div>
+
+			
+									
+									<div id="sig885612" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885623">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885623">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885623">
+
+			<h3 ><a href="#p885623">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885623&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885623" title="Post #2599">#2599</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 20th, 2025, 5:24 am</span></p>
+			
+			
+			
+			<div class="content">Friends, today, we will seen inauguration of new president chosen by American people. And just like most of the Americans, people all across the world are watching this very closely since policies of new American government will affect people all across the world in so many ways. With arrival of new government, there will be changes in foreign policy and large number of American staff in foreign embassies of United States will be shuffled.<br>
+<br>
+Our country Pakistan is rather a relatively unimportant place from mainstream American perspective and therefore I would suppose that decisions about how to manage our country and who will appoint the political and other staff in the embassy here are not made by the top political elite in United States and not much attention or importance is given to management and choice of diplomatic staff that comes to our country on higher level. Unfortunately, this has resulted in a very large scale mind control of talented people in Pakistan because  mid or lower level staff in foreign affairs department in US government continues to make some bad decisions about continuing mind control in our country. <br>
+<br>
+I want to request good American people to use their influence with the government and ask some good and prominent politicians to keep the portfolio of management of foreign policy in Pakistan with themselves and not let everybody make decisions to appoint people in Pakistan. As most of the staff in foreign embassies of United States is going to be reshuffled now, please recall all those people from Pakistan who are involved in mind control. And please send very good human beings who are keenly interested in development of our large but extremely poor country. I must say that American embassies have to protect rightful American interests at all cost and must make sure that terrorism and radicalism that is a threat to all countries, must be eradicated from Pakistan. But some people previously indulged in the practice of mind control of talented people in Pakistan and I request good American people to please end all such practices in our poor country.</div>
+
+			
+									
+									<div id="sig885623" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885639">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885639">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885639">
+
+			<h3 ><a href="#p885639">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885639&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885639" title="Post #2600">#2600</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 20th, 2025, 9:30 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, it is 2 am at night in Pakistan. I went to bed a bit earlier at 10:30 pm but I have not been able to sleep for more than one hour. Despite that I was very tired after a hectic day, I could not sleep properlu and woke up two hours ago since they have been targeting my head with microwaves for past several hours and my head is exploding with pain. It is due to unbearable nature of this torture that I immediately decided to write this post in the middle of the night. <br>
+<br>
+Yesterday, I left my home at 12:30 pm and spent almost all the day in the city buying food and other little things. And when I was away, mind control agents were fixing special torture equipment in my room. When I came home and entered my room at night, I was greeted by huge gas in my room. I had decided to not work at night and thought that I would have a good night's sleep and start working steadily the next day. But instead of a good night's sleep I am greeted by huge microwaves forced into my head and I have strong pain in my head. Due to extremely heavy head, I doubt that I would be able to do any productive work in the coming day. And mind control agents have released huge gas in my room at the time of my writing this post.<br>
+<br>
+Friends, please protest to American government against the increasing nature of torture and approach responsible people in the American government to end innocent people's torture.</div>
+
+			
+									
+									<div id="sig885639" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885646">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885646">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885646">
+
+			<h3 ><a href="#p885646">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885646&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885646" title="Post #2601">#2601</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2025, 12:13 am</span></p>
+			
+			
+			
+			<div class="content">Friends, it is 5:15 am in the morning and the anals of mind control continued to target microwaves on my head and I have been kept forcefully awake.</div>
+
+			
+									
+									<div id="sig885646" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885647">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885647">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885647">
+
+			<h3 ><a href="#p885647">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885647&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885647" title="Post #2602">#2602</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2025, 4:35 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I could not sleep all night and continued to have conscious fleeting thoughts with a very heavy head due to directed microwaves. <br>
+<br>
+This used to be a very usual occurrence in some part of my past 27 years of mind control. They would keep me awake for several nights at a stretch. And at one stage I got so used to it and I would stay motionless with my eyes closed and would simply jump off the bed in the morning and try to start doing things normally. However, I was not doing any special research at that time.<br>
+<br>
+Friends, there is a very high possibility that torture, persecution and use of laser microwave gadgets on me would sharply increase now so I will be keeping a more complete journal of everything that is happening in attempt to protect myself. I might be making multiple posts on many days when there is a lot of torture and things are happening fast.</div>
+
+			
+									
+									<div id="sig885647" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885669">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885669">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885669">
+
+			<h3 ><a href="#p885669">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885669&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885669" title="Post #2603">#2603</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2025, 8:25 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have decided to keep a daily journal everyday where I will write about all of my day's activities and also mention anything significant including all the torture, suffering and humiliating tactics of mind control agents that I have to go through everyday. I will also try to talk about my interactions with other people that I would have gone through during every coming day.<br>
+<br>
+I got off the bed a little after 9:00 am. Even though I did not sleep all night, I had a burst of energy in the morning. I was not expecting that I would have any energy in the morning but it was reverse. It was like a burst of energy that follows an accident or after a patient goes through heart surgery and becomes psychotic after they become conscious after the surgery operation. <br>
+<br>
+I had been working work well in general for more than past two weeks since I was able to buy good tea from a remote utility store in the city. I was able to get this tea about three weeks ago after a gap of more than two months. I had tried more than twenty tea brands from most unknown companies but all of them drug their tea with mind control chemicals. I even tried to buy different brands of tea from akbari mandi where all the largest wholesalers and importers of the tea have shops but all of them drug their tea and I was unable to buy good tea from there. <br>
+<br>
+But in the last days of December when I was passing close to Yateem Khana on Multan road I noticed a small utility store there. I almost never go to utility stores but I quickly decided to go inside the store and see if there is something interesting to buy. And I found some Dawoodi tea manufactured by Islamabad Tea company. I had previously noticed that tea from Islamabad Tea company used to be good five or six months ago since it is not manufactured in Lahore or Karachi. All of the tea manufactured by large companies from Lahore and Karachi that own 97% of the share of tea market  had already become bad more than two years ago. Lipton, Brooke Bond, Tapal, Vital and Meezan all drug their tea when it is manufactured. However Islmabad tea is sold in Lahore very very rarely and only a few large stores have it on shelves. Anyway, I bought two packs of Dawoodi Islamabd tea for 760 rupees. I recall I had only about 800-900 rupees in my pocket when I bought that tea. And if I had more money, I would have bought more packs of the tea and keep enjoying it. So I have been taking a lot of tea in past few weeks and I was far less sedated and was able to work better. <br>
+<br>
+I never used to be very fond of tea and always took coffee earlier but all the coffee in Lahore was drugged and it had become impossible to find good coffee in the city. They had started to drug coffee in Pakistan more than ten or fifteen years ago. Nestle, Pakistan has been completely drugging all the coffee since earlier than year 2010. I recall up till six or seven years ago, I would continue to try different brands of coffee and eventually find some good coffee. I still recall about five years ago when all of the coffee brands were drugged, I noticed some russian imported Nestle coffee that was good and I started buying it but eventually it was drugged on shelves and the importer started drugging it before selling it in the market. But it took them more than 7-8 years to have a complete dark out of coffee. Then five or six years ago, I switched to tea. At that time all brands of tea used to be absolutely good. But they started drugging tea from all large brands within a year. But there are a large number of very small manufacturers and packagers of tea but eventually over past 2-3 years all of them started drugging their tea. Now it is almost absolutely impossible to find good tea in the city. <br>
+<br>
+Even when I could find good tea from the city with efforts of several weeks or months, it is difficult to keep it safe since mind control agents get extremely annoyed when they are unable to sedate me. During last six months of past year, many times I would have good tea on me in my room and I would lock the room and start working on my research outside in the car garage sitting on portable plastic table and chairs. But they would ask my mother's maid to quickly enter the room, drug the tea and leave. They did that at least four or five times last year. Making keys for ordinary locks is not a problem for anyone and they would simply give the maid keys to my room and she would quickly enter, drug the tea and leave. And then I had to be extremely careful whenever the maid would be inside our house. <br>
+<br>
+With sheer burst of luck, just yesterday when I went out to buy food, I was able to buy good tea from a remote lower middle class neighborhood of the city on the end of canal road close to Jallo/suzo (I forgot the name of water park) water park. It was a very unknown brand and had been manufactured in 2023 and had been lying on the shelf. I bought all of the four small sized packets of the tea the store had. So I hope that I have enough supply of tea to last till end of February or a bit longer if the maid does not enter the story again to spoil my fortunes.<br>
+<br>
+Anyway, I started working a bit after 12:00 pm and had good ideas and tried to work but I was not feeling fresh at all even though I started with quite a bit of energy and enthusiasm. In the evening, around 4:00 pm, I made my meal by cutting onions, tomatoes and green peppers. Added some garlic, ginger and spices and fried it somewhat and then  added four eggs. I would not eat four eggs in a day but I did not want to make a meal again tomorrow so I thought I would divide it into two portions and eat one portion tomorrow. Last winters, a year ago, I survived by living on jams, and pasta. But over the year they completely drugged all jams and pasta brands manufactured in Pakistan. Even though sometimes I would not eat eggs for many days in a stretch, I have been eating them a lot during past three months especially when it is difficult to buy other good food. I have replaced jams with honey that I put on bread slices but I have to be extremely careful about buying honey since they continue to drug it everywhere and of all the times I bought honey seventy percent of the times, it had been drugged and in a few months, it would be impossible to buy good honey since all the good honey on the shelves from past years when it used to be good would get sold out from stores in remote parts of the city.<br>
+<br>
+I started working again around 6:30 pm. But today was a bad day since I could not get anything done since I was not fresh at all due to staying awake all night yesterday. I would be goung to bed now and hope that I would not have to go through torture at night again. And if there is some serious torture, I will make a detailed pqst about it right away.<br>
+<br>
+I am looking forward to start working agin tomorrow morning and hope that it would be a better day. <br>
+<br>
+I will keep posting a detailed daily journal for at least next few months in addition to matlab programs that follow from my research.<br>
+<br>
+Edit: I was working in Lounge when I made the above post. When I went inside my room, they started to release heavy ionized gas in my room. I am quite sure they would follow with microwave torture after it. I would describe more details tomorrow.</div>
+
+			
+									
+									<div id="sig885669" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885675">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885675">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885675">
+
+			<h3 ><a href="#p885675">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885675&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885675" title="Post #2604">#2604</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 22nd, 2025, 6:43 am</span></p>
+			
+			
+			
+			<div class="content">Friends, there was no very significant torture last night and I had a reasonably good sleep. However, in some parts of night, I could feel waves targeting my both hands inside the comforter and a resulting tingling feeling in my hands. This is very interesting since I recall about six or seven years ago whenever I would feel some waves targeting some part of my body, I would simply place a pillow there and would feel better but then they upgraded their lasers and microwaves and for past few years I have noticed that placing a pillow or something like that does not help at all. In fact on many nights, they would direct microwaves into my anus and it would be physically painful. All my life, I liked to sleep on one side sort of hugging a pillow but for several years I mostly do not sleep like that since my back would be exposed to microwaves and EM waves on one side and they would almost always use this opportunity to charge my anus with waves.<br>
+<br>
+Yesterday, I wanted to mention in detail about how I bought food from around the city on 20th January when I spent my day buying food outside. I typically try to buy things from the following: roti/chappati (which is Pakistani bread), some bread from bakeries, some yogurt, some vegetables, eggs, jam, honey, some chicken meat(I just started doing that a few weeks ago) and I also have to get good water. Most important part of this is to get good water. I carry five six liter bottles on my motorcycle and fill them wherever I find good water. Underground water all over the city is drugged. However water in some random remote parts of the city can possibly be good. Most of the water filtration plants are asked to add mind control chemicals in their water but there are always some places where filtration plants have good water. Lahore is 17th largest city in the world in the largest contagious city category with population solidly more than 15 million so it is hard to drug water everywhere and I have to continue to find pockets of opportunity in remote areas. <br>
+<br>
+When I want to get something, the most important thing is not to plan ahead since there are several hundreds or possibly more than a thousand agents who know what you are thinking and are ready to drug the food that I would intend to buy right away. I continue to roam around the city and continue to pick things and food to buy that I think would be good by making a decision right on the spot when I am already somewhere. <br>
+<br>
+So about getting water on this monday. I left Johar town on my motorcycle and went on the canal road. When I was close to punjab university crossing, I thought I should buy some food from small market of Sheikh Zayed hospital so I drove inside. And then I recalled that I was able to get good water from the mosque in residential area of Sheikh Zayed hospital about seven months ago. I thought that if I could get water again from there, it would be really good so I went to that mosque but it was closed as there were no prayer times. But I was able to find a water filtration plant in Sheikh Zayed colony and tried the water and luckily it was very good. I was very surprised since it is extremely difficult to get good water in these residential areas. I filled my five six liter bottles with water. As a second thought I believe that  Sheikh Zayed Hospital is right next to Chinese consulate and may be army did not want to drug water near the Chinese consulate but it was just a theory. <br>
+<br>
+After taking water, I came back to canal road and drove till the end which was rather rare since I almost always take some small street and drive inside to buy food. I ate a chicken biryani at the ring road junction of canal road. It was a sunny day in mildly cold weather so I really like to drive my bike on the canal road. I drive very slowly at 25-35 kmph since driving fast never helps and important thing is to stay relaxed and think on your feet. I drove till the end of canal road and asked about different paths. Somebody told me that a road was leading to DHA Phase eight from there and I wanted to try there. But just a little ahead I noticed a lower middle class neighborhood and I drove inside and was able to buy some good tea from a totally unknown brand that had been lying on the shelf for more than a year(that I mentioned yesterday). I noticed that shopkeeper was very slightly aggressive and tried to take tea from my hands but I remained calm and refused to give him the tea and rather gave him the money (they keep using voice or skull to talk to shopkeepers and it has happened to me that several times shopkeepers in small places would become belligerent and totally refuse to sell me anything).<br>
+<br>
+Another very important rule I have learned is when I buy something from a place, and it can take a few minutes, many agents in the meantime drug many shops in the same neighborhood (for example they would drug the roti or yogurt or bread in all the close by places) so it is very important to leave that place solidly and buy other things elsewhere. They even go inside small streets on the target's path and drug all of the roti, yogurt and bakeries bread so it is important to leave that area and go elsewhere.<br>
+<br>
+Then I came back on canal and then started on the left side of the motorway and there is a small village behind army's enclaves and I wanted to buy roti from there but there was one Tanoor/Oven and they told me they only sell Naans so I broke my tradition of eating roti and bought ten naans (that I generally avoid as they are unhealthy). From there I went back to ring road and close to bhatta chowk there was a small neighbor hood where I was able to buy good honey(which is rather rare for me to find) . From there I came back to ring road and bought a fluanxol injection (I would have to take this injection in a few days) from large Mahmood pharmacy right next to askari nine or ten in this compound on corner of ring road where a lot of good upscale shops are found together.<br>
+<br>
+From there I followed the next road and I was able to get some good yogurt from a small shop. Here I want to tell friends that I used to eat packaged yogurt several years ago but they drugged all of the yogurt and all the major brands including nestle sell yogurt with mind control chemicals in it. Then I almost stopped eating yogurt for more than a year.  But since one and a half year ago, I started buying freshly made yogurt from small shops that sell it in small plastic polythene bags. But over the year they have given chemicals to small milk shop owners and they add mind control chemicals in milk when they make yogurt. So it is impossible to get good yogurt in most of the areas where I go more frequently. But there are still many remote places in the city where good yogurt could be found with effort. I first check the yogurt by buying small amount of it and then buy it if it seems reasonable.<br>
+<br>
+After that I came to main road and there was a small shop that was selling frozen meat and I bought some chappli kababs. Sadly when I tried them later at home they were drugged by chappli kabab manufacturer. This was the only drugged thing I bought on monday.<br>
+<br>
+After that I drove back and came back to my house. It took me about more than five hours of drive on the motorcycle to buy all of this food for next two days. These days my routine is to go to the city on motorcycle every third day and then keep food in my room and keep working on my research for next two days. Earlier I would go to the city every second day but it was not sustainable since it would take too much of my time and for past two weeks, I have been trying to go out in the city to buy food every third day and then work on my research for other two days.<br>
+<br>
+<br>
+But mind control agents have been much bolder for past two days. Even yesterday when I was trying to work, they would target microwaves on my neck and whenever they play this trick, I become fatigued after half an hour or so as if I lack all energy and my brain becomes very tired. Even when I wrote this post, they kept microwaves targeted on the back of my neck to exhaust me so I would not be able to work after it.</div>
+
+			
+									
+									<div id="sig885675" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885677">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885677">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885677">
+
+			<h3 ><a href="#p885677">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885677&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885677" title="Post #2605">#2605</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 23rd, 2025, 4:10 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I was unable to work in the house yesterday morning and then in the afternoon I decided to got to a park with my laptop and calculated hermite correlations between transition increments of all four coefficients. I will come with a better program but this is what I have at the moment. I also have to go to city to buy food and any uncertain thing can happen so I decided to post whatever work I have done before I leave.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = SlidingWindowZSeriesEstimation()
+
+
+ TT=500;
+seed=15898837;
+
+seed=98831629;
+
+[X1] = ProduceSDEDataTimeSeries(TT,seed);
+
+
+
+NIntervals=15;  %Intervals used to estimate moments
+
+
+plot((1:TT),X1(1:TT),'g');
+str=input("Look at graph of Time Series variable X");
+
+
+for tt=(1+NIntervals):TT
+    muA(1:4)=0;
+    for nn=1:NIntervals
+        dXt=X1(tt-NIntervals+nn)-X1(tt-NIntervals+nn-1); %Moments are calculated for dX(t)
+        muA(1:4)=muA(1:4)+(dXt.^(1:4))/NIntervals;
+    end
+
+    [c(1,tt),c(2:4,tt),FittedMoments] = CalculateZSeriesDensityFromRawMoments02M4(muA,0);
+ 
+    c
+    %str=input("Look at new Coeffs");
+
+end
+% 
+% % save("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\DynamicCoeffs01.mat","c");
+% % 
+% % str=input("I have saved dynamic coeffs");
+% % 
+% 
+% load("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\DynamicCoeffs01.mat","c");
+
+
+
+[bnm1,Z_dX1,ZX1]=EstimateDynamicCoeffParameters(c(1,:));
+[bnm2,Z_dX2,ZX2]=EstimateDynamicCoeffParameters(c(2,:));
+[bnm3,Z_dX3,ZX3]=EstimateDynamicCoeffParameters(c(3,:));
+[bnm4,Z_dX4,ZX4]=EstimateDynamicCoeffParameters(c(4,:));
+
+
+bnm1
+bnm2
+bnm3
+bnm4
+
+%Calculations of hermite correlations between transition Z's of four dynamic coefficients
+%below
+
+Ndata=TT-1;
+Z(1,1:Ndata)=Z_dX1(1:Ndata);
+Z(2,1:Ndata)=Z_dX2(1:Ndata);
+Z(3,1:Ndata)=Z_dX3(1:Ndata);
+Z(4,1:Ndata)=Z_dX4(1:Ndata);
+
+NN=4;
+HH=2;
+
+[CorrH] = CalculateCorrelationMatricesHermiteCH(Z,NN,TT-1,HH);
+
+CorrH
+str=input("Please look at correlations between first and second hermite of the transition dynamics of four dynamic coefficients above");
+
+
+%c
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+yyaxis right
+plot((1+NIntervals:TT),c(1,1+NIntervals:TT),'b');
+
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(2,1+NIntervals:TT),'r');
+ylabel('Coefficients c0 and c1 of Z-series of X')
+
+title("Graph of time series X and first two Coefficients of its Z-series, c0 and c1");
+legend('X','c0','c1','Location','northeast');
+%plot((1:TT),X1(1:TT),'g',(1+NIntervals:TT),c(1,1+NIntervals:TT),'b',(1+NIntervals:TT),c(2,1+NIntervals:TT),'r',(1+NIntervals:TT),c(3,1+NIntervals:TT),'k',(1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+str=input("Look at graph--final");
+
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+ hold on
+yyaxis right
+plot((1+NIntervals:TT),c(3,1+NIntervals:TT),'k');
+ylabel('Coefficients c2 of Z-series of X')
+
+title("Graph of time series X and third coefficients of its Z-series, c2");
+legend('X','c2','Location','northeast');
+
+str=input("Graph--Fianl--2")
+
+
+clf;
+yyaxis left
+plot((1:TT),X1(1:TT),'g')
+ylabel('Random Variable X')
+xlabel('Time Intervals')
+hold on
+yyaxis right
+plot((1+NIntervals:TT),c(4,1+NIntervals:TT),'m');
+ylabel('Coefficients c3 of Z-series of X')
+
+title("Graph of time series X and fourth coefficient of its Z-series, c3");
+legend('X','c3','Location','northeast');
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm,Z_dX,ZX] = EstimateDynamicCoeffParameters(X)
+
+Ndata=length(X)-1;
+Order=7;
+
+
+%Calculate transition dX
+for nn=1:Ndata
+    dX(nn)=X(nn+1)-X(nn);
+end
+
+
+
+%Below Calculate Z-series of X and dX.
+
+[CoeffX,ZX,RSquared1] = CalculateActualZSeriesFromData(X,Order);
+[CoeffdX,ZdX,RSquared2] = CalculateActualZSeriesFromData(dX,Order);
+
+
+
+Ymu1(1:Ndata,1)=dX(1:Ndata);
+dXcorr(1:Ndata,1)=0;
+[W1] = EvalHermiteArrayH0(ZX(1:Ndata),Order);
+        %Below, do the regression to find the coefficients of part of dX
+        %random variable that is correalted with X.
+coeff1=inv(W1'*W1)*(W1'*Ymu1);
+        %Below, we evaluate the correalted part of dX random variable
+        %with X by summing over all the hermite polynomials out
+        %to Order.
+for hh=0:Order 
+            %Below dXcorr continues to sum corelated part over all hermites of X
+            
+      dXcorr(1:Ndata,1)=dXcorr(1:Ndata,1)+coeff1(hh+1,1).*W1(1:Ndata,hh+1);
+            
+end
+
+%Below, we calculate orthogonal part of DX that is uncorrelated with dX
+
+dXdecorr(1:Ndata,1)=Ymu1(1:Ndata,1)-dXcorr(1:Ndata,1);
+
+%dXdcrr(1:Ndata)=dXdecorr(1:Ndata,1);
+
+
+%[Coeff,Zy,RSquared] = CalculateActualHermiteSeriesFromDataYdY(X(1:Ndata),dXdcrr(1:Ndata),Order);
+
+%Coeff
+%RSquared
+%str=input("Look at results of regression");
+
+
+
+%Below calculat moments of correalted (with X)  part and orthogonal (with respect to X) part of dX 
+for kk=1:8
+    rMudecorr(kk)=sum(dXdecorr(1:Ndata,1).^kk)/Ndata;
+    rMucorr(kk)=sum(dXcorr(1:Ndata,1).^kk)/Ndata; 
+end
+
+
+rMudecorr
+rMucorr
+%dXcorr
+%dXdecorr
+
+%str=input("Look at decorrelated part moments");
+
+
+NMoments=6;
+Iterations=20000;
+
+%The function below finds the 2D Z-series of orthogonal part of dX.
+
+[bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTerm2D01A(rMudecorr,NMoments,Iterations);
+
+%[bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTermNew(rMudecorr,NMoments,Iterations);
+
+bnm
+
+%Our 2D Z-series Equation for transition dynamics of coefficients is given as
+% dX(tt) =[ bnm(1,1) + bnm(2,1) * ZX(tt)+ bnm(3,1) * ZX(tt)^2+ bnm(4,1) * ZX(tt)^3 ]
+%+[ bnm(1,2) + bnm(2,2) * ZX(tt)+ bnm(3,2) * ZX(tt)^2+ bnm(4,2) * ZX(tt)^3 ] Z_{dX}
+%+[ bnm(1,3) + bnm(2,3) * ZX(tt)+ bnm(3,3) * ZX(tt)^2+ bnm(4,3) * ZX(tt)^3 ] {Z_{DX}}^2
+
+%We use the simplification
+
+%    alpha0(tt)=bnm(1,1)+bnm(2,1)*ZX(tt)+bnm(3,1)*ZX(tt).^2+bnm(4,1)*ZX(tt).^3;
+%    alpha1(tt)=bnm(1,2)+bnm(2,2)*ZX(tt)+bnm(3,2)*ZX(tt).^2+bnm(4,2)*ZX(tt).^3;
+%    alpha2(tt)=bnm(1,3)+bnm(2,3)*ZX(tt)+bnm(3,3)*ZX(tt).^2+bnm(4,3)*ZX(tt).^3;
+
+%to get the following equation for transition dynamics as
+
+%dX(tt)=alpha0(tt)+alpha0(tt)*Z_dX(tt)+alpha0(tt)*Z_dX(tt).^2;
+
+    
+for tt=1:Ndata
+    alpha0(tt)=bnm(1,1)+bnm(2,1)*ZX(tt)+bnm(3,1)*ZX(tt).^2+bnm(4,1)*ZX(tt).^3;
+    alpha1(tt)=bnm(1,2)+bnm(2,2)*ZX(tt)+bnm(3,2)*ZX(tt).^2+bnm(4,2)*ZX(tt).^3;
+    alpha2(tt)=bnm(1,3)+bnm(2,3)*ZX(tt)+bnm(3,3)*ZX(tt).^2+bnm(4,3)*ZX(tt).^3;
+    
+    c0=alpha0(tt);
+    c(1)=alpha1(tt);
+    c(2)=alpha2(tt);
+    c(3)=0;
+    
+    
+    %dX(tt)=alpha0(tt)+alpha0(tt)*Z_dX(tt)+alpha0(tt)*Z_dX(tt).^2;
+    %The following function backs out Z_dX according to above equation.
+
+    [Z_dX(tt)]=CalculateZgivenXAndZSeriesBisectionC3(dX(tt),c0,c);
+end
+
+
+
+Z_dX
+
+
+str=input("Look at Z_dX associated with transition of coefficients_N0_###");
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [bnm,ObjFunc] = ZSeriesCoeffsFromMomentsIterativeNoiseTerm2D01A(rMu,NMoments,Iterations)
+
+
+%This program computes coeffs of Z-series when values of raw moments are
+%given using Iterative method. 
+
+%rMu are raw moments;
+
+%Hermite Series Form is      
+
+% 
+% Y=  +(bnmh(1,2) + bnmh(2,2)* Z1 + bnmh(3,2)* (Z1^2-1) + bnmh(4,2)* (Z1^3-3*Z1))* Z2
+%     +(bnmh(1,3) + bnmh(2,3)* Z1 + bnmh(3,3)* (Z1^2-1) + bnmh(4,3)* (Z1^3-3*Z1))* (Z2^2-1)
+%
+% Equivalent 2D Z-series form is 
+% Y=   (bnm(1,1) + bnm(2,1) Z1 + bnm(3,1) Z1^2 + bnm(4,1) Z1^3)
+%     +(bnm(1,2) + bnm(2,2) Z1 + bnm(3,2) Z1^2 + bnm(4,2) Z1^3) Z2
+%     +(bnm(1,3) + bnm(2,3) Z1 + bnm(3,3) Z1^2 + bnm(4,3) Z1^3) Z2^2
+% 
+% 
+% Var(Y)= bnmh(1,2).^2 + bnmh(2,2).^2 + 2* bnmh(3,2).^2 + 6* bnmh(4,2).^2
+%        +2*(bnmh(1,3).^2 + bnmh(2,3).^2 + 2* bnmh(3,3).^2 + 6* bnmh(4,3).^2)
+% 
+%     
+%     
+% bnm(1,1)= -bnmh(1,3) + bnmh(3,3)  
+% bnm(2,1)= -bnmh(2,3) + 3* bnmh(4,3)  
+% bnm(3,1)= -bnmh(3,3)
+% bnm(4,1)= -bnmh(4,3)    
+%     
+% bnm(1,2)= bnmh(1,2) - bnmh(3,2)  
+% bnm(2,2)= bnmh(2,2) - 3* bnmh(4,2)  
+% bnm(3,2)= bnmh(3,2)
+% bnm(4,2)= bnmh(4,2)
+% 
+% bnm(1,3)= bnmh(1,3) - bnmh(3,3)  
+% bnm(2,3)= bnmh(2,3) - 3* bnmh(4,3)  
+% bnm(3,3)= bnmh(3,3)
+% bnm(4,3)= bnmh(4,3)
+
+
+%We have used the notation
+%cH0=bnmh(1,2);
+%cH(1)=bnmh(2,2);
+%CH(2)=bnmh(3,2);
+%CH(3)=bnmh(4,2);
+%cH(4)=bnmh(1,3);
+%cH(5)=bnmh(2,3);
+%CH(6)=bnmh(3,3);
+%CH(7)=bnmh(4,3);
+
+% SO We will use the equations
+
+
+% cH0=1-sqrt(cH(1).^2 + 2*cH(2).^2 + 6*cH(3).^2+2*(cH(4).^2 + cH(5).^2 + 2*cH(6).^2 + 6*cH(7).^2));
+% 
+% 
+% bnm(1,1)= -cH(4) + cH(6);  
+% bnm(2,1)= -cH(5) + 3*cH(7);  
+% bnm(3,1)= -cH(6);
+% bnm(4,1)= -cH(7);    
+%     
+% bnm(1,2)= cH0 - cH(2);  
+% bnm(2,2)= cH(1) - 3*cH(3);  
+% bnm(3,2)= cH(2);
+% bnm(4,2)= cH(3);
+% 
+% bnm(1,3)= cH(4) - cH(6);  
+% bnm(2,3)= cH(5) - 3*cH(7);  
+% bnm(3,3)= cH(6);
+% bnm(4,3)= cH(7);    
+    
+    
+   
+
+
+    
+mOrder=NMoments;         %Number of raw moments in calibration.      
+
+%%%%Standardize the Raw Moments
+
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+%sMu(7)=cMu(7)/cMu(2).^3.5;
+%sMu(8)=cMu(8)/cMu(2).^4.0;
+
+%cH(1)=1;
+
+SeriesOrder=7;
+cH(1:SeriesOrder)=0;
+cH(1)=.001;%.05
+%%%%%%Choose the iteration step size.
+
+for nn=1:3
+    DeltaX(nn)=.00125/sqrt(factorial(nn+1));
+end
+for nn=4:7
+    DeltaX(nn)=.00125/sqrt(factorial(nn+1-3))*2;
+end
+
+
+
+%%%Weights on objective function that shows fit to moments
+w(NMoments)=1;
+for nn=NMoments-1:-1:1
+    w(nn)=w(nn+1)*(nn+1)*(nn+2);
+end
+
+w(3)=w(3)*2;
+w(5)=w(5)*2;
+w(4)=w(4)*1;
+
+    
+
+
+cH0=sqrt(1-(cH(1).^2 + 2*cH(2).^2 + 6*cH(3).^2+2*(cH(4).^2 + cH(5).^2 + 2*cH(6).^2 + 6*cH(7).^2)));
+
+
+
+bnm(1,1)= -cH(4) + cH(6);  
+bnm(2,1)= -cH(5) + 3*cH(7);  
+bnm(3,1)= -cH(6);
+bnm(4,1)= -cH(7);    
+    
+bnm(1,2)= cH0 - cH(2);  
+bnm(2,2)= cH(1) - 3*cH(3);  
+bnm(3,2)= cH(2);
+bnm(4,2)= cH(3);
+
+bnm(1,3)= cH(4) - cH(6);  
+bnm(2,3)= cH(5) - 3*cH(7);  
+bnm(3,3)= cH(6);
+bnm(4,3)= cH(7);    
+
+
+SeriesOrder10=4;
+SeriesOrder01=3;
+
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+
+Moments
+%str=input("Look at Moments");
+
+
+[ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+
+cHBest=cH;
+
+ImproveFlag(1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder)=0;
+ImproveCount=0;
+
+
+for mm=1:Iterations
+AdjustFlag=0;
+    %mm
+    %First 500 iterations try to fit three moments only
+    if(mm&lt;500)
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=3;
+        mOrder=NMoments;
+    end
+    %500 to 4000 iterations try to fit four moments  only
+    if((mm&gt;=500)&amp;&amp;(mm&lt;4000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=4;
+        mOrder=NMoments;
+        
+        %Once we move from fitting three moments to four moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of four moments optimization.
+        %We also increase the weight associated with third moment
+        %so that stays in calibration
+        if(mm==500)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;
+        w(3)=w(3)*4;
+        
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        AdjustFlag=1;
+ %       str=input("I am in here NMoments =4 ");
+        end
+    end 
+    %4000 to 10000 iterations try to fit five moments
+    if((mm&gt;=4000)&amp;&amp;(mm&lt;10000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=5;
+        mOrder=NMoments;
+        
+        %Block Below: Once we move from fitting four moments to five moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of five moments optimization.
+        %We also increase the weight associated with already
+        %calibrated third and fourth moment is increased so 
+        %that stays in calibration
+        
+        if(mm==4000)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;  
+        w(3:4)=w(3:4)*4;
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        AdjustFlag=1;
+  %      str=input("I am in here NMoments =5 ");
+        end
+    end 
+    
+    %Greater thab 10000 iterations try to fit six moments
+    if((mm&gt;=10000))
+        SeriesOrder1=1;
+        SeriesOrder2=7;
+        NMoments=6;
+        mOrder=NMoments;
+        
+        
+        %Block Below: Once we move from fitting five moments to six moments
+        %Best Objective Function changes and becomes larger. This
+        %has to be reset at the start of six moments optimization.
+        %We also increase the weight associated with already
+        %calibrated third, fourth and fifth moment is increased so 
+        %that stays in calibration
+        if(mm==10000)
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnmBest,SeriesOrder10,SeriesOrder01,NMoments);
+        cH=cHBest;
+        w(3:5)=4*w(3:5);
+        [ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        ObjFuncBest
+        %str=input("I am in here NMoments =6 ");
+        AdjustFlag=1;
+        end
+    end 
+    
+    for nn=SeriesOrder1:SeriesOrder2  
+        
+        ImproveFlagPrev(nn)=ImproveFlag(nn);    
+        
+        cinH=cH;
+        cinH(nn)=cinH(nn)+DeltaX(nn);
+        
+        
+        %Below lines keep the total variance equal to one.
+        CondFlag=1;
+        VarYP=cinH(1).^2 + 2*cinH(2).^2 + 6*cinH(3).^2+2*(cinH(4).^2 + cinH(5).^2 + 2*cinH(6).^2 + 6*cinH(7).^2);
+        if(VarYP&gt;1)
+            cinH=cinH/sqrt(VarYP)*.98;
+            %CondFlag=0;
+        end
+        
+        cinH0=abs(sqrt(1-(VarYP)));
+        
+        %Convert to 2D Z-series Coeffs from Hermite Coeffs
+        
+        bnm(1,1)= -cinH(4) + cinH(6);  
+        bnm(2,1)= -cinH(5) + 3*cinH(7);  
+        bnm(3,1)= -cinH(6);
+        bnm(4,1)= -cinH(7);    
+
+        bnm(1,2)= cinH0 - cinH(2);  
+        bnm(2,2)= cinH(1) - 3*cinH(3);  
+        bnm(3,2)= cinH(2);
+        bnm(4,2)= cinH(3);
+
+        bnm(1,3)= cinH(4) - cinH(6);  
+        bnm(2,3)= cinH(5) - 3*cinH(7);  
+        bnm(3,3)= cinH(6);
+        bnm(4,3)= cinH(7);    
+ 
+        
+        SeriesOrder10=4;
+        SeriesOrder01=3;
+        
+        [Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+                
+        [ObjFunc] = CalculateObjMoment(sMu,Moments,w,mOrder);
+        
+        if((ObjFunc&lt;ObjFuncBest)&amp;&amp; (CondFlag==1))
+            
+            ObjFuncBest=ObjFunc;
+            
+            cHBest=cinH;
+            cH=cinH;
+            bnmBest=bnm;
+            ImproveFlag(nn)=1;
+            
+        else
+            
+            cinH=cH;
+            cinH(nn)=cinH(nn)-DeltaX(nn);
+            
+            %Below lines keep the total variance equal to one.
+            CondFlag=1;
+            VarYP=cinH(1).^2 + 2*cinH(2).^2 + 6*cinH(3).^2+2*(cinH(4).^2 + cinH(5).^2 + 2*cinH(6).^2 + 6*cinH(7).^2);
+            if(VarYP&gt;1)
+                cinH=cinH/sqrt(VarYP)*.98;
+                %CondFlag=0;
+            end
+
+            cinH0=abs(sqrt(1-(VarYP)));
+
+            %Convert to 2D Z-series Coeffs from Hermite Coeffs
+            bnm(1,1)= -cinH(4) + cinH(6);  
+            bnm(2,1)= -cinH(5) + 3*cinH(7);  
+            bnm(3,1)= -cinH(6);
+            bnm(4,1)= -cinH(7);    
+
+            bnm(1,2)= cinH0 - cinH(2);  
+            bnm(2,2)= cinH(1) - 3*cinH(3);  
+            bnm(3,2)= cinH(2);
+            bnm(4,2)= cinH(3);
+
+            bnm(1,3)= cinH(4) - cinH(6);  
+            bnm(2,3)= cinH(5) - 3*cinH(7);  
+            bnm(3,3)= cinH(6);
+            bnm(4,3)= cinH(7);    
+
+
+            SeriesOrder10=4;
+            SeriesOrder01=3;
+
+            [Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+            
+            [ObjFunc] = CalculateObjMoment(sMu,Moments,w,mOrder);
+            if((ObjFunc&lt;ObjFuncBest) &amp;&amp; (CondFlag==1))
+  
+                ObjFuncBest=ObjFunc;
+                cHBest=cinH;
+                bnmBest=bnm;
+                cH=cinH;
+                ImproveFlag(nn)=-1;
+            else
+                 ImproveFlag(nn)=0;
+            end
+        end
+        
+    %Index(n0n)    
+    end
+    
+    if(AdjustFlag==0)
+    
+    
+    if(rem(mm,500)==0)
+        DeltaX(1:7)=cHBest(1:7)/25;
+    end
+    
+    ResetFlag=0;
+    if(rem(mm,10)==0)
+    mm
+    ObjFuncBest
+    if((mm&gt;10)&amp;&amp;(ObjFuncBest==ObjFuncBestBefore))
+        ResetFlag=1;
+    end
+    ObjFuncBestBefore=ObjFuncBest;
+    %DeltaX
+    %ImproveCount
+    
+    end
+    if(ResetFlag==1)
+     %  DeltaX=DeltaX*5; 
+        
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+       if(ImproveFlag(nn)==1)
+           ImproveFlag0=1;
+           ImproveCount=ImproveCount+1;
+       end
+    end
+    for nn=2:SeriesOrder
+        if(ImproveFlag0==0)
+            DeltaX(nn)=DeltaX(nn)*.95;
+            ImproveCount=0;
+        end
+    end
+    if(ImproveCount&gt;4)
+       for nn=2:SeriesOrder
+            DeltaX(nn)=DeltaX(nn)*1.05;
+       end
+    end 
+    
+    end
+    
+end
+
+bnm=bnmBest;
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments);
+
+Moments
+sMu
+
+%str=input("Look at comparison of Standardised model moments and Standardized target moments")
+
+bnm=bnm*sqrt(cMu(2));
+
+[Moments] = Calculate2DSeriesMoments(bnm,SeriesOrder10,SeriesOrder01,NMoments)
+rMu
+
+str=input("Look at comparison of model raw moments and target raw moments of transition dX of coefficients")
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Z]=CalculateZgivenXAndZSeriesBisectionC3(Y,c0,c)
+
+if(Y&gt;c0)
+    if(Y&lt; c0+c(1)*.5+c(2)*.5^2 +c(3) * .5^3)
+        Za=0;
+        Zb=.5;
+    elseif(Y&lt; c0+c(1)*1+c(2)*1^2 +c(3) * 1^3)
+        Za=.5;
+        Zb=1;
+    elseif(Y&lt; c0+c(1)*1.5+c(2)*1.5^2 +c(3) * 1.5^3)
+        Za=1;
+        Zb=1.5;  
+    elseif(Y&lt; c0+c(1)*2+c(2)*2^2 +c(3) * 2^3)
+        Za=1.5;
+        Zb=2;
+    elseif(Y&lt; c0+c(1)*2.5+c(2)*2.5^2 +c(3) * 2.5^3)
+        Za=2;
+        Zb=2.5; 
+    elseif(Y&lt; c0+c(1)*3+c(2)*3^2 +c(3) * 3^3)
+        Za=2.5;
+        Zb=3;
+    elseif(Y&lt; c0+c(1)*3.5+c(2)*3.5^2 +c(3) * 3.5^3)
+        Za=3;
+        Zb=3.5;
+    elseif(Y&lt; c0+c(1)*4+c(2)*4^2 +c(3) * 4^3)
+        Za=3.5;
+        Zb=4;
+    elseif(Y&lt; c0+c(1)*4.5+c(2)*4.5^2 +c(3) * 4.5^3)
+        Za=4;
+        Zb=4.5;
+    else
+        Za=4.5;
+        Zb=6.5;
+    end
+    for mm=1:100
+        Zmid=.5*Za+.5*Zb;
+        if(Y&lt; c0+c(1)*Zmid+c(2)*Zmid^2 +c(3) * Zmid^3)
+            Zb=Zmid;
+        elseif(Y&gt; c0+c(1)*Zmid+c(2)*Zmid^2 +c(3) * Zmid^3)
+            Za=Zmid;
+        end
+    Z=.5*Za+.5*Zb;
+    Za
+    Zb
+    Z    
+    end
+    
+end
+        
+if(Y&lt;c0)
+    if(Y&gt; c0+c(1)*-.5+c(2)*(-.5)^2 +c(3) * (-.5)^3)
+        Za=-.5;
+        Zb=0;
+    elseif(Y&gt; c0+c(1)*(-1)+c(2)*(-1)^2 +c(3) * (-1)^3)
+        Za=-1;
+        Zb=-.5;
+    elseif(Y&gt; c0+c(1)*(-1.5)+c(2)*(-1.5)^2 +c(3) * (-1.5)^3)
+        Za=-1.5;
+        Zb=-1;  
+    elseif(Y&gt; c0+c(1)*(-2)+c(2)*(-2)^2 +c(3) * (-2)^3)
+        Za=-2;
+        Zb=-1.5;
+    elseif(Y&gt; c0+c(1)*(-2.5)+c(2)*(-2.5)^2 +c(3) * (-2.5)^3)
+        Za=-2.5;
+        Zb=-2.0; 
+    elseif(Y&gt; c0+c(1)*(-3)+c(2)*(-3)^2 +c(3) * (-3)^3)
+        Za=-3;
+        Zb=-2.5;
+    elseif(Y&gt; c0+c(1)*(-3.5)+c(2)*(-3.5)^2 +c(3) * (-3.5)^3)
+        Za=-3.5;
+        Zb=-3.0;
+    elseif(Y&gt; c0+c(1)*(-4)+c(2)*(-4)^2 +c(3) * (-4)^3)
+        Za=-4;
+        Zb=-3.5;
+    elseif(Y&gt; c0+c(1)*(-4.5)+c(2)*(-4.5)^2 +c(3) * (-4.5)^3)
+        Za=-4.5;
+        Zb=-4.0;
+    else
+        Za=-6.5;
+        Zb=-4.5;
+    end
+    for mm=1:100
+        Zmid=.5*Za+.5*Zb;
+        if(Y&lt; c0+c(1)*Zmid+c(2)*Zmid^2 +c(3) * Zmid^3)
+            Zb=Zmid;
+        elseif(Y&gt; c0+c(1)*Zmid+c(2)*Zmid^2 +c(3) * Zmid^3)
+            Za=Zmid;
+        end
+    Z=.5*Za+.5*Zb;
+    Za
+    Zb
+    Z    
+    end
+    
+end        
+        
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [CorrH] = CalculateCorrelationMatricesHermiteCH(Z,NN,TT,HH)
+
+CorrH(1:NN,1:NN,1:HH)=0;
+for mm=1:NN
+    for nn=1:NN
+        for tt=1:TT
+            for hh=1:HH
+                if(hh==1)
+                    CorrH(mm,nn,hh)=CorrH(mm,nn,hh)+Z(mm,tt).*Z(nn,tt);
+                end
+                if(hh==2)
+                    CorrH(mm,nn,hh)=CorrH(mm,nn,hh)+(Z(mm,tt).^2-1).*(Z(nn,tt).^2-1);
+                end
+                if(hh==3)
+                    CorrH(mm,nn,hh)=CorrH(mm,nn,hh)+(Z(mm,tt).^3-3*Z(mm,tt)).*(Z(nn,tt).^3-3*Z(nn,tt));
+                end
+            end
+        end
+        
+    end
+end
+
+for mm=1:NN
+    for nn=1:NN
+        if(mm~=nn)
+        CorrH(mm,nn,1:HH)=CorrH(mm,nn,1:HH)./sqrt(CorrH(mm,mm,1:HH))./sqrt(CorrH(nn,nn,1:HH));
+        end
+    end
+end
+for mm=1:NN
+    CorrH(mm,mm,1:HH)=1;
+end
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [Wh] = EvalZArrayZ0(Z,Order)
+
+%Evaluates first Order-th  the array of Z's. If input array of Z
+%has a size of 100 and Order is 4, it will return a 100 X 5 array.
+
+%Hz=HermitePoly(Order);
+
+Wh(1:length(Z),1:Order+1)=0;
+
+for nn=1:Order+1
+    Wh(:,nn)=Z(:).^(nn-1);
+end
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.<br>
+When you run this program, these are the correlation matrices of first two hermites between transition dynamics of four dynamic coefficients. (My numbers below are from SDE data and my not have anything to do with real stocks data so please run the program on your data. I will start playing with real data in about a week.)<br>
+<br>
+CorrH(:,:,1) =<br>
+  Columns 1 through 3<br>
+   1.000000000000000   0.094342768615494  -0.256466896254814<br>
+   0.094342768615494   1.000000000000000  -0.113761755488927<br>
+  -0.256466896254814  -0.113761755488927   1.000000000000000<br>
+  -0.165592654007035  -0.421454042507929   0.112421140649381<br>
+  Column 4<br>
+  -0.165592654007035<br>
+  -0.421454042507929<br>
+   0.112421140649381<br>
+   1.000000000000000<br>
+CorrH(:,:,2) =<br>
+  Columns 1 through 3<br>
+   1.000000000000000   0.136058823570082   0.068990943138262<br>
+   0.136058823570082   1.000000000000000   0.215117238601746<br>
+   0.068990943138262   0.215117238601746   1.000000000000000<br>
+   0.153297662153921   0.408451237479719   0.247274226718769<br>
+  Column 4<br>
+   0.153297662153921<br>
+   0.408451237479719<br>
+   0.247274226718769<br>
+   1.000000000000000<br>
+Please look at correlations between first and second hermite of the transition dynamics of four dynamic coefficients above<br>
+<br>
+ </div>
+
+			
+									
+									<div id="sig885677" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885678">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885678">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885678">
+
+			<h3 ><a href="#p885678">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885678&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885678" title="Post #2606">#2606</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 23rd, 2025, 4:20 am</span></p>
+			
+			
+			
+			<div class="content">I repeatedly tried to make a post yesterday. I also wanted to upload the above program last night but I continued to see cloud flare message that wilmott.com is not responding. <br>
+<br>
+I have to go out into the city again today and anything can happen. I am not worried but I know that it would be difficult. I will details about what would happen today in the city later in the evening.</div>
+
+			
+									
+									<div id="sig885678" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885683">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885683">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885683">
+
+			<h3 ><a href="#p885683">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885683&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885683" title="Post #2607">#2607</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 23rd, 2025, 5:31 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I will first describe what happened yesterday, 22nd of January.<br>
+<br>
+When I woke up, I was reasonably fine but I lost some energy half an hour after getting up. I had lost a lot of lucidity of thought over night that followed 20th January and 21st January. My parents were also to arrive from Islamabad a little after noon and I was thinking that I will start my work once they are at home. And I was also feeling very brain numb and unable to do any work. After my parents arrived in early afternoon, I had realized that I could not work at home. Earlier I was thinking of not leaving home at all till Thursday(today) but when I realized that I was being unable to work at home due to EM waves torture, I decided to go to a nearby park and do some work there. When I went out, I had very little energy and mind control agents were constantly trying to re-wire my brain. Before going to Park, I drank three red bull drinks from two different places. I rarely drink red bull since quite a bit of time since it is a bit costly for me to drink everyday. Clarifying here that Red bull has continued to alternate between being good(free of mind control drugs) and bad. And since early last year, it has mostly been good but it is expensive for me and I rarely drink it so that might be one reason that they did not strictly turn it bad again. Earlier when I drank red bull would be about two weeks earlier and had been avoiding it to save money. But yesterday, I was so down that I took three red bulls in a span of forty minutes and I was happy that I did that because some of the numbness of my brain decreased. I spent some time thinking about my research outside the part next to Mughal Eye Hospital in johar Town. And later I came to small park behind G-1 market and worked on my laptop for about two hours where I did the work on calculation of correlations. <br>
+I arrived home from the G-1 park after sunset and then wanted to make a post on wilmott about my day's activities but I always noticed Cloud Flare on my internet screen telling me that Wilmott was not responding or down. Later my mother told me that she needed cough syrup Hydrallin and I went to a pharmacy in G-1 market and bought Hydrallin cough syrup. I also bought some Jalaibees(sweets) from Wafaqi market. There was not anything significant after that other than that I continued to see Cloud Flare when I tried to open Wilmott forums. I also ate some Yogurt with Naans and thought of some random things before sleeping around mid-night.   <br>
+<br>
+Journal for 23rd January on next post.</div>
+
+			
+									
+									<div id="sig885683" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885684">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885684">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885684">
+
+			<h3 ><a href="#p885684">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885684&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885684" title="Post #2608">#2608</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 23rd, 2025, 8:05 pm</span></p>
+			
+			
+			
+			<div class="content">Daily Journal for 23/01/2025<br>
+<br>
+I woke up around 8:00 in the morning. After a little bit I wrote some comments on the calculation of Parameters of coefficients and their correlations. I basically just wasted a bit of time and then decided to go out in the city to get food and water. But first, I went to a pharmacy and bought insulin for my mother and brought that at home and placed it in the fridge. I left again and went to canal road and again went to a small market behind University of health sciences and ate some parathas. They were reasonably good but I thought they had very small amount of mind control drugs but I ate them with chick-peas. Either the parathas or chick peas were very mildly drugged with mind control drugs but the effect was not strong at all.<br>
+<br>
+From back of University of Health Sciences, I came back to canal road and came to wahdat road after crossing through New Muslim Town. From Wahdat road, just a little before it meets Ferozpur road, I took a small street and went towards Ichra area using inside streets. I saw a water filtration plant and filled some water but after drinking a bit of water, I realized that water was not very good but I had already filled two six liter bottles that I kept on me and then I moved on and drove towards Ferozpur road. I was thinking of buying a 19 litre water bottle and filling my remaining three bottles with 19 litre water and keeping the other two bottles for washing (of face etc) purposes only. I noticed a Shell petrol pump on Ferozpur road and found that there were many 19 L Nestle water bottles. I bought one bottle's water (with the intention to return the empty 19L bottle right at spot) and filled the remaining three six liter bottles with Nestle water. I drank a bit of water and thought it was good but after a few minutes I noticeded that I was losing energy and my senses, and awareness were decreasing. I realized that water was bad. I could not tell whether it was done by Nestle or whether agents approached there to drug the water since 19L Nestle water used to be good when I tried it a month ago. I continued on Ferozpur road and approached upper Mall road and took a turn towards Saggian bridge. On the road towards Saggian Bridge, I took a small street on the left and found a water filtration plant and luckily its water was good so I dropped all Nestle and older water and filled my bottles again with new good water. I continued on Saggian Road again and noticed there was a right before the river Bridge on the left and I took it and bought some bread(roti) from a Tanoor. I then came back and went to other side of Saggian road and noticed a small stall for fresh juices and drank freshly squeezed orange juice and fresh beet root juice. The juice was just totally out of this world. I was thinking of returning and buying any remaining things on  my way back to Johar Town but it was very pleasant and sunny and I absolutely loved the weather so I decided to go across the river from saggian bridge. Here I am adding some details that are slightly gross to mention in a formal journal. I took a side road after crossing Saggian bridge and there were fields with crops in sort of village areas. I excreted there and I was feeling really good and free from mind control after that. I want to tell friends when we excrete (stool), a lot of parts in our brain are reset and this is not good from the perspective of mind control and they went the mind control victims to only excrete in controlled environments like in wash room of their house etc. A lot of gadgets are fitted in the wash room of the victims's house so that neurotransmitters controlled by mind control agents are kept in control even when the victim excretes(which is sometimes not easy). So a formula I always use when I am under extreme mind control  that I would go to outskirts of the city where there are plenty of places with agricultural fields and crops are growing and simply excrete there inside the fields and wash with a water bottle and many neurotransmitters are immediately reset and I would come out of my zombie like state. Mind control agents go to extreme limits to make sure if victim excretes in public toilets, they fit gadgets there to prevent resetting of many neurotransmitters. I had started to notice this more than ten years ago that in most of the wash rooms of petrol pumps on main roads like on Thokar Niaz beg, they had installed mind control gadgets in all the public wash rooms of the petrol pumps. You can check this fact with Thokar pumps or other pumps where some victim could possibly go. <br>
+I came to saggian road again and drove towards G.T.Road on Shahdra side and bought chicken meat from a small shop. I have been cooking chicken once in a while for past few weeks and it was my third or fourth time that I bought chicken that I would cook myself at home later at night. From Shahdra, I came to Data Darbar from G.T.Road and then passed around the walled city and crossed Do-Morya bridge under the train line and then crossed the Ghari shahu bridge to go to canal road. I left canal road to leave on Ferozpur road towards model town and bought half kilogram of some fried peanuts and then came to Johar town after crossing the model town and returned home.<br>
+<br>
+I want to mention here that some secret agents might always remain close to me but they do not follow me with hundreds of agents everyday and there might be some days in between when only some crucial agents would be around. I have started to write this journal and army would be careful on some days to not send hundreds or thousands of agents. However, for past few weeks, in most of the days, they used a large number of agents to try to drug my food on paths I followed. But I am sure on some of the days like today, after knowing that I make all details public, they would just keep only most necessary personnel on my paths. But from time to time, there are several instances when they employ very large number of people to drug the food for more several weeks at a stretch. However, today I did not feel any very special activity and I am sure there would be days when they would not like to move large number of agents especially when people are coming to know about my stories in detail.<br>
+<br>
+I also want to say that we want to concentrate on our mathematical research and other activities are rather secondary. If they did not increase torture on the night of 20th January, I was not going to make a very big deal out of it. So there might be days when I would be down and there will be some times when speed of our research would be slow due to my mind control, but we want to remain steadfast. I really want to continue my research on algorithmic trading into summers and hope that we would make some real progress during this time.</div>
+
+			
+									
+									<div id="sig885684" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885689">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885689">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885689">
+
+			<h3 ><a href="#p885689">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885689&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885689" title="Post #2609">#2609</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 24th, 2025, 11:57 am</span></p>
+			
+			
+			
+			<div class="content">Friends, we have to move to real stocks data in a few days so I had been brainstorming about various indicators in the markets and other things related to algorithmic trading. <br>
+<br>
+<br>
+We would be thinking about algorithmic trading and divide the whole thing into three parts.<br>
+<br>
+<span style="font-size: 120%; line-height: normal">1. Know your Market Type.</span><br>
+<span style="font-size: 120%; line-height: normal">2. What type of strategies to use for various market types.</span><br>
+<span style="font-size: 120%; line-height: normal">3. What are the most suitable instruments for particular type of market types and particular market strategies.</span><br>
+<br>
+<br>
+We will first work for more than a month mostly trying to understand the market type so I will give very brief thoughts about it. These ideas are initial and tentative and once we deal with real data many of these things would slightly change. But these are ideas from initial brainstorming as we embark on the project.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Know Your Market Type.</span><br>
+<br>
+I want to make a multi-dimensional indicator for the market.  We will calculate these indicators and their variances. First dimension could be whether market is bearish or bullish on a scale of -1 to +1. Second dimension could be whether market is low volatility or high volatility on a scale of zero to 1. Third dimension would be whether market is low mean-reverting or high mean reverting on similar scale possibly zero to one. There could be other dimensions like volume and liquidity in both sides of the market. <br>
+<br>
+We will use various indicators including our recent work on moments to give a single statistic to all of the above dimensions related to market type and also calculate variance of each statistic.<br>
+<br>
+As a background and in order to get oriented, I would request friends to read the follwing two posts: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431</a>  and <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455</a><br>
+<br>
+<br>
+let us suppose we have financial data of equities on a 15 sec grid (My data is for 41 working days from May and June of 2021). We have a universe of M stocks and The price of mth stock at time t is given as [$]X_m(t)[$]. We convert these stock values into log returns so they are easy to use in our set up.<br>
+<br>
+[$]R_m(t)\,=\, \log(X_m(t))\,-\, \log(X_m(t-1))[$]<br>
+<br>
+We can make very intelligent indicators using log returns from universe of M stocks.<br>
+<br>
+We can make an indicator for market across the M stocks over four 15 second periods as<br>
+<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}[$] <br>
+<br>
+<br>
+The above indicator has sum of returns of each stock in numerator and square root of their variance in denominator. But while making a single statistic for market state, we would also have to alter the weights of the stocks and make them inversely proportional to square root of variance of statistic of each stock in the sample so that low standard deviation stock statistics get high weight and high standard deviation statistics of stocks get a low weight when we form a single market indicator. This is done by defining  [$]w_m[$]  as<br>
+<br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}}[$]  <br>
+<br>
+We can write the above indicator in shorthand as<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{E \left[ R_m\right]\,}{\sqrt{\, Var\left[R_m\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}}[$]  <br>
+<br>
+We can have indicators for variance, skew and kurtosis of the market based like just the above indicator. For example indicator for market variance could be given as<br>
+<br>
+[$]IM_{var}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{2,m} \, \Large{ \frac{Var \left[ R_m\right]\,}{\sqrt{\, Var\left[Var\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{2,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Var\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Var\left[R_m\right]\right]}}}}[$]<br>
+<br>
+Similarly for skew and kurtosis, we could have<br>
+<br>
+[$]IM_{skew}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{3,m} \, \Large{ \frac{Skew \left[ R_m\right]\,}{\sqrt{\, Var\left[Skew\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{3,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Skew\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Skew\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and<br>
+<br>
+[$]IM_{kurtosis}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{4,m} \, \Large{ \frac{Kurtosis \left[ R_m\right]\,}{\sqrt{\, Var\left[Kurtosis\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{4,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Kurtosis\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Kurtosis\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and for the intensity of mean reversion, we want to use a special indicator<br>
+ <br>
+<br>
+[$]IM_{MR}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{5,m} \, \Large{ \frac{   \frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{5,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}{ \sum\limits_{m=1}^{M} \,\, \sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$]<br>
+<br>
+We can also calculate variances of above indicators in both time and across the stock spectrum and use associated standard deviations for confidence limits.<br>
+<br>
+Friends, these are tentatively brainstormed form of indicators and are framed analogously to our first order indicator to market state and these indicators might undergo many changes as we play with data and our final version might be very different.</div>
+
+			
+									
+									<div id="sig885689" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885692">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885692">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885692">
+
+			<h3 ><a href="#p885692">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885692&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885692" title="Post #2610">#2610</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 24th, 2025, 3:26 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">Amin:<br>
+<br>
+Friends, we have to move to real stocks data in a few days so I had been brainstorming about various indicators in the markets and other things related to algorithmic trading. <br>
+<br>
+<br>
+We would be thinking about algorithmic trading and divide the whole thing into three parts.<br>
+<br>
+1. Know your Market Type.<br>
+2. What type of strategies to use for various market types.<br>
+3. What are the most suitable instruments for particular type of market types and particular market strategies.<br>
+<br>
+<br>
+We will first work for more than a month mostly trying to understand the market type so I will give very brief thoughts about it. These ideas are initial and tentative and once we deal with real data many of these things would slightly change. But these are ideas from initial brainstorming as we embark on the project.<br>
+<br>
+Know Your Market Type.<br>
+<br>
+I want to make a multi-dimensional indicator for the market.  We will calculate these indicators and their variances. First dimension could be whether market is bearish or bullish on a scale of -1 to +1. Second dimension could be whether market is low volatility or high volatility on a scale of zero to 1. Third dimension would be whether market is low mean-reverting or high mean reverting on similar scale possibly zero to one. There could be other dimensions like volume and liquidity in both sides of the market. <br>
+<br>
+We will use various indicators including our recent work on moments to give a single statistic to all of the above dimensions related to market type and also calculate variance of each statistic.<br>
+<br>
+As a background and in order to get oriented, I would request friends to read the follwing two posts: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882431" class="postlink">viewtopic.php?t=99702&amp;start=2385#p882431</a>  and <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2385#p882455" class="postlink">viewtopic.php?t=99702&amp;start=2385#p882455</a><br>
+<br>
+<br>
+let us suppose we have financial data of equities on a 15 sec grid (My data is for 41 working days from May and June of 2021). We have a universe of M stocks and The price of mth stock at time t is given as [$]X_m(t)[$]. We convert these stock values into log returns so they are easy to use in our set up.<br>
+<br>
+[$]R_m(t)\,=\, \log(X_m(t))\,-\, \log(X_m(t-1))[$]<br>
+<br>
+We can make very intelligent indicators using log returns from universe of M stocks.<br>
+<br>
+We can make an indicator for market across the M stocks over four 15 second periods as<br>
+<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}[$] <br>
+<br>
+<br>
+The above indicator has sum of returns of each stock in numerator and square root of their variance in denominator. But while making a single statistic for market state, we would also have to alter the weights of the stocks and make them inversely proportional to square root of variance of statistic of each stock in the sample so that low standard deviation stock statistics get high weight and high standard deviation statistics of stocks get a low weight when we form a single market indicator. This is done by defining  [$]w_m[$]  as<br>
+<br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\sum\limits_{k=0}^{Lag-1} \,{\Big[ {R_m(t-k)}\,-\,\sum\limits_{k=0}^{Lag-1} \, R_m(t-k)\,/Lag \,\Big]}^2}}}}[$]  <br>
+<br>
+We can write the above indicator in shorthand as<br>
+<br>
+[$]IM_{state}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{m} \, \Large{ \frac{E \left[ R_m\right]\,}{\sqrt{\, Var\left[R_m\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_m \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\, Var\left[R_m\right]}}}}[$]  <br>
+<br>
+We can have indicators for variance, skew and kurtosis of the market based like just the above indicator. For example indicator for market variance could be given as<br>
+<br>
+[$]IM_{var}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{2,m} \, \Large{ \frac{Var \left[ R_m\right]\,}{\sqrt{\, Var\left[Var\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{2,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Var\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Var\left[R_m\right]\right]}}}}[$]<br>
+<br>
+Similarly for skew and kurtosis, we could have<br>
+<br>
+[$]IM_{skew}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{3,m} \, \Large{ \frac{Skew \left[ R_m\right]\,}{\sqrt{\, Var\left[Skew\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{3,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Skew\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Skew\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and<br>
+<br>
+[$]IM_{kurtosis}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{4,m} \, \Large{ \frac{Kurtosis \left[ R_m\right]\,}{\sqrt{\, Var\left[Kurtosis\left[R_m\right]\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{4,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, \,Var\left[Kurtosis\left[R_m\right]\right]}}}{ \sum\limits_{m=1}^{M} \,\, \frac{\,1\,}{\sqrt{\,Var\left[ Kurtosis\left[R_m\right]\right]}}}}[$]<br>
+<br>
+and for the intensity of mean reversion, we want to use a special indicator<br>
+ <br>
+<br>
+[$]IM_{MR}(t)\, =\, \sum\limits_{m=1}^{M} \,\, w_{5,m} \, \Large{ \frac{   \frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$] <br>
+<br>
+and <br>
+<br>
+[$]\, w_{5,m} \, =\, \LARGE{ \frac{ \frac{\,1\,}{\sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}{ \sum\limits_{m=1}^{M} \,\, \sqrt{\, Var\left[\frac{Kurtosis \left[ R_m\right]\,}{Var \left[ R_m\right]\,}\right]}}}[$]<br>
+<br>
+We can also calculate variances of above indicators in both time and across the stock spectrum and use associated standard deviations for confidence limits.<br>
+<br>
+Friends, these are tentatively brainstormed form of indicators and are framed analogously to our first order indicator to market state and these indicators might undergo many changes as we play with data and our final version might be very different.
+</div></blockquote>
+
+.<br>
+.<br>
+.<br>
+Friends, in order to calculate \(Var\left[Var\left[R_m\right]\right]\), you will have to calculate a (sliding window) series of variance statistic with a given lag (that you have to suitably choose with experimentation. We will do that in coming days.) and calculate variance of this series of variance statistic over same lag or possibly another interval. We will cover all these details in a few days.<br>
+<br>
+Coming towards today's journal which is very brief. I woke up quite late in the morning. And then brainstormed about bigger picture of my research and market trading indicators. I later made the previous post on forum about getting to know the market type and related indicators. I did not do anything significant after that. I remained at home all day and did not leave the home at all. In the evening I was not feeling very well so I decided to sleep early. I hope to be going to bed now and possibly wake up in the middle of night or very early in the morning to think about my research work.</div>
+
+			
+									
+									<div id="sig885692" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d07e7acb9898b5dc9db86d70aa25da32" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2565" role="button">172</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" role="button">173</a></li>
+							<li class="active"><span>174</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" role="button">175</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2625" role="button">176</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2595&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;d07e7acb9898b5dc9db86d70aa25da32" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2565" role="button">172</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2580" role="button">173</a></li>
+							<li class="active"><span>174</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" role="button">175</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2625" role="button">176</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=d07e7acb9898b5dc9db86d70aa25da32&amp;start=2610" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2595&amp;sid=d07e7acb9898b5dc9db86d70aa25da32">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=d07e7acb9898b5dc9db86d70aa25da32" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=d07e7acb9898b5dc9db86d70aa25da32"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=d07e7acb9898b5dc9db86d70aa25da32"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=d07e7acb9898b5dc9db86d70aa25da32" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#adccc9c0c4c3eddac4c1c0c2d9d983cec2c0">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>174</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=d07e7acb9898b5dc9db86d70aa25da32";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=d07e7acb9898b5dc9db86d70aa25da32";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2a44ee0de7c2","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

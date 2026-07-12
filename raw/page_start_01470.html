@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 99 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=a4dad82c4dda9370cdb72a3a2f520a4b" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=a4dad82c4dda9370cdb72a3a2f520a4b?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=a4dad82c4dda9370cdb72a3a2f520a4b?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=a4dad82c4dda9370cdb72a3a2f520a4b?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1470" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="a4dad82c4dda9370cdb72a3a2f520a4b" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=a4dad82c4dda9370cdb72a3a2f520a4b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="a4dad82c4dda9370cdb72a3a2f520a4b" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=a4dad82c4dda9370cdb72a3a2f520a4b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1470%26t%3D99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1470&amp;t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" />
+<input type="hidden" name="creation_time" value="1768908016" />
+<input type="hidden" name="form_token" value="cf97ed7af68398179f8c3ec95c2f30b800173b51" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1470&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1470&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="a4dad82c4dda9370cdb72a3a2f520a4b" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;a4dad82c4dda9370cdb72a3a2f520a4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1440" role="button">97</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" role="button">98</a></li>
+							<li class="active"><span>99</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" role="button">100</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1500" role="button">101</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p870784">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870784">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870784">
+
+			<h3 class="first"><a href="#p870784">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870784&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870784" title="Post #1471">#1471</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 27th, 2022, 2:33 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Some notations and preliminaries first.<br>
+<br>
+Let us suppose we denote a standard gaussian density as    [$]p(X) \, = \, \frac{1}{2 \pi} \exp(- \, \frac{ X^2 }{2})[$]<br>
+<br>
+We also have hermite polynomials and first few hermite polynomials are denoted as<br>
+[$]H_0(X) \, = \, 1[$]<br>
+[$]H_1(X) \, = \, X[$]<br>
+[$]H_2(X) \, = \, X^2 \, - 1[$]<br>
+[$]H_3(X) \, = \, X^3 \, - 3 X[$]<br>
+[$]H_4(X) \, = \, X^4 \, - 6 X^2 \, +3[$]<br>
+and so on.<br>
+And I want to share an interesting property related to following integral<br>
+[$]\int_{-\infty}^{+\infty}  X^m \, H_n(X) \, p(X) dx [$]   Equation(A)<br>
+We know when m is odd and n is even or m is even and n is odd, the above integral always goes to zero.<br>
+But when m is odd and n is also odd, the above integral would always go to zero when  n &gt; m.<br>
+Similarly when m is even and n is also even, the above integral would again always go to zero, when n &gt; m.<br>
+To explain it in words with simple examples, when fourth power of X is integrated in the above integral (eq A) with zeroth hermite, 2nd hermite or fourth hermite, there will be a finite value but when fourth power of X is integrated with sixth hermite, eighth hermite or tenth hermite, it will always go to zero. Similarly for odd powers, when fifth power of X is integrated there is a finite value when we integrate it with first hermite, third hermite or fifth hermite in the equation (A), but when we integrate fifth power of X with seventh, ninth or 11th hermite or higher odd hermites, the value would always go to zero.<br>
+The above property is interesting since in our forthcoming framework when we have fixed some moment in our equation, adding higher hermites(for higher moments) would not change the lower moments at all.<br>
+<br>
+Now we want to fix first few moments to our  proposed probability distribution so that all the moments are perfectly matched (a good property as I mentioned earlier would be that adding further higher moments would not change our lower moments that have already been matched).<br>
+<br>
+The proposed probability distribution has a very simple form (upto sixth order) as<br>
+<br>
+[$] q(X) \, = \, p(X) \, \big[ \, 1 \, + \, h_1 \, H_1(X)+ \, h_2/2 \, H_2(X)+ \, h_3/6 \, H_3(X)+ \, h_4/24 \, H_4(X)+ \, h_5/120 \, H_5(X)+ \, h_6/720 \, H_6(X) \, \big]  \, [$]<br>
+<br>
+here [$]h_1[$] , [$]h_2[$] etc are coefficients of hermites that will be adjusted to match the moments of above probability density form to our desired moments. <br>
+1st thing we know by inspection that above probability density equation integrates to one since all hermites (other than the first term) have an expected value of zero when integrated over normal density.<br>
+Now we write the first few raw moments of the above equation that can be verified by full-fledged integration(as I have done in my notes)<br>
+<br>
+[$]E[X]\,= \int_{-\infty}^{+\infty}  X \, q(X) dX \, = \, h_1[$]<br>
+[$]E[X^2]\,= \int_{-\infty}^{+\infty}  X^2 \, q(X) dX \, = \,1 \, + \, h_2[$]<br>
+[$]E[X^3]\,= \int_{-\infty}^{+\infty}  X^3 \, q(X) dX \, = \,3  \, h_1 \, + \, h_3[$]<br>
+[$]E[X^4]\,= \int_{-\infty}^{+\infty}  X^4 \, q(X) dX \, = \, 3 \, +\,6 \, h_2 \, + \, h_4[$]<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, = \, 15 \, +\,10 \, h_3 \, + \, h_5[$]<br>
+[$]E[X^6]\,= \int_{-\infty}^{+\infty}  X^6 \, q(X) dX \, = \, 15 \, +\,45 \, h_2 \, + \,15 \,  h_4 \, + h_6[$]<br>
+<br>
+So we see that we can keep on adding more hermite polynomials to fix higher moments and it will not alter our lower moments. However higher odd/even moments take a contribution from hermite polynomial terms associated with lower odd/even moments(that have already been fixed) up to the order of moment being calculated.<br>
+It seems a better idea to try matching moments on standard gaussian as opposed to non-standard gaussian as we do when we match moments with gram-charlier or edgeworth.<br>
+Please pardon any errors.
+</div></blockquote>
+.<br>
+.<br>
+<br>
+sorry friends, one minor error, the equation for fifth raw moment should be<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, = \, 15 \,h_1 \, +\,10 \, h_3 \, + \, h_5[$]<br>
+<br>
+I have written it slightly wrong in previous post.</div>
+
+			
+									
+									<div id="sig870784" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p870785">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870785">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870785">
+
+			<h3 ><a href="#p870785">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870785&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870785" title="Post #1472">#1472</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 27th, 2022, 3:43 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<blockquote class="uncited"><div class="blockquote__inner">
+Some notations and preliminaries first.<br>
+<br>
+Let us suppose we denote a standard gaussian density as    [$]p(X) \, = \, \frac{1}{2 \pi} \exp(- \, \frac{ X^2 }{2})[$]<br>
+<br>
+We also have hermite polynomials and first few hermite polynomials are denoted as<br>
+[$]H_0(X) \, = \, 1[$]<br>
+[$]H_1(X) \, = \, X[$]<br>
+[$]H_2(X) \, = \, X^2 \, - 1[$]<br>
+[$]H_3(X) \, = \, X^3 \, - 3 X[$]<br>
+[$]H_4(X) \, = \, X^4 \, - 6 X^2 \, +3[$]<br>
+and so on.<br>
+And I want to share an interesting property related to following integral<br>
+[$]\int_{-\infty}^{+\infty}  X^m \, H_n(X) \, p(X) dx [$]   Equation(A)<br>
+We know when m is odd and n is even or m is even and n is odd, the above integral always goes to zero.<br>
+But when m is odd and n is also odd, the above integral would always go to zero when  n &gt; m.<br>
+Similarly when m is even and n is also even, the above integral would again always go to zero, when n &gt; m.<br>
+To explain it in words with simple examples, when fourth power of X is integrated in the above integral (eq A) with zeroth hermite, 2nd hermite or fourth hermite, there will be a finite value but when fourth power of X is integrated with sixth hermite, eighth hermite or tenth hermite, it will always go to zero. Similarly for odd powers, when fifth power of X is integrated there is a finite value when we integrate it with first hermite, third hermite or fifth hermite in the equation (A), but when we integrate fifth power of X with seventh, ninth or 11th hermite or higher odd hermites, the value would always go to zero.<br>
+The above property is interesting since in our forthcoming framework when we have fixed some moment in our equation, adding higher hermites(for higher moments) would not change the lower moments at all.<br>
+<br>
+Now we want to fix first few moments to our  proposed probability distribution so that all the moments are perfectly matched (a good property as I mentioned earlier would be that adding further higher moments would not change our lower moments that have already been matched).<br>
+<br>
+The proposed probability distribution has a very simple form (upto sixth order) as<br>
+<br>
+[$] q(X) \, = \, p(X) \, \big[ \, 1 \, + \, h_1 \, H_1(X)+ \, h_2/2 \, H_2(X)+ \, h_3/6 \, H_3(X)+ \, h_4/24 \, H_4(X)+ \, h_5/120 \, H_5(X)+ \, h_6/720 \, H_6(X) \, \big]  \, [$]<br>
+<br>
+here [$]h_1[$] , [$]h_2[$] etc are coefficients of hermites that will be adjusted to match the moments of above probability density form to our desired moments. <br>
+1st thing we know by inspection that above probability density equation integrates to one since all hermites (other than the first term) have an expected value of zero when integrated over normal density.<br>
+Now we write the first few raw moments of the above equation that can be verified by full-fledged integration(as I have done in my notes)<br>
+<br>
+[$]E[X]\,= \int_{-\infty}^{+\infty}  X \, q(X) dX \, = \, h_1[$]<br>
+[$]E[X^2]\,= \int_{-\infty}^{+\infty}  X^2 \, q(X) dX \, = \,1 \, + \, h_2[$]<br>
+[$]E[X^3]\,= \int_{-\infty}^{+\infty}  X^3 \, q(X) dX \, = \,3  \, h_1 \, + \, h_3[$]<br>
+[$]E[X^4]\,= \int_{-\infty}^{+\infty}  X^4 \, q(X) dX \, = \, 3 \, +\,6 \, h_2 \, + \, h_4[$]<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, = \, 15 \, +\,10 \, h_3 \, + \, h_5[$]<br>
+[$]E[X^6]\,= \int_{-\infty}^{+\infty}  X^6 \, q(X) dX \, = \, 15 \, +\,45 \, h_2 \, + \,15 \,  h_4 \, + h_6[$]<br>
+<br>
+So we see that we can keep on adding more hermite polynomials to fix higher moments and it will not alter our lower moments. However higher odd/even moments take a contribution from hermite polynomial terms associated with lower odd/even moments(that have already been fixed) up to the order of moment being calculated.<br>
+It seems a better idea to try matching moments on standard gaussian as opposed to non-standard gaussian as we do when we match moments with gram-charlier or edgeworth.<br>
+Please pardon any errors.
+</div></blockquote>
+.<br>
+.<br>
+<br>
+sorry friends, one minor error, the equation for fifth raw moment should be<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, = \, 15 \,h_1 \, +\,10 \, h_3 \, + \, h_5[$]<br>
+<br>
+I have written it slightly wrong in previous post.
+</div></blockquote>
+.<br>
+.<br>
+Friends, I struck upon the above material when trying to find a simple algorithm that can construct Z-series of any random variable when its first few moments are given. <br>
+In reality, for example if moments are too large, it seems like stretching a normal density way too far that might possibly not remain numerically accurate if hermites become too huge and they have to be integrated on a grid. But might be an interesting starting point for experts. There could be many variations on the theme for example, you could specify mean and variance of the normal in base normal density formula, and then use the above equation with hermite polynomials associated with that variance(that has been assigned to base normal density at start) instead of hermites associated with standard normal.</div>
+
+			
+									
+									<div id="sig870785" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870792">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870792">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870792">
+
+			<h3 ><a href="#p870792">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870792" title="Post #1473">#1473</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 28th, 2022, 9:37 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I think I have been able to find a reasonably simple way to find Z-series of a stochastic variable when all its first few moments/cumulants are given. I still have to implement everything on computer and verify it but I have settled the ideas and all analytic steps for this solution. I hope to come back in 3-4 days with a detailed post and a matlab program so when friends specify the moments of the stochastic variable, the program will automatically return all the coefficients of the powers of Z-series. The program is not based on optimization like before and is based on analytics this time. I will keep friends updated about the progress of work on this thread.</div>
+
+			
+									
+									<div id="sig870792" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870797">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870797">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870797">
+
+			<h3 ><a href="#p870797">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870797&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870797" title="Post #1474">#1474</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 28th, 2022, 5:53 pm</span></p>
+			
+			
+			
+			<div class="content">Friends my persecution by mind control agencies continues relentlessly. I had been sleeping in the porch/garage for past three months. Now they have started to inject me with mind control drugs when I am sleeping in the garage as the garage/porch is in the pathway and (there are no walls with a door that I can close at night to restrict people from coming closer when I am sleeping) anybody can come very close. Here is the whole story: I was getting half an injection of fluanxol depot after every 15 days earlier. But practically I would get the injection after every 17 days or so since I would beg my mother to delay the injections for extra two or three days. Last time, I talked to psychiatrist, I was able to convince him that periodn of antipsychotic injection has to be increased to 21 days. I told him that for first 7-9 days after the injection, I slept a lot and I had body aches and now I had become so physically weak that I was unable to lift anything heavy or do any physical exertion. Doctor agreed. At this point I want to tell friends that I am on antipsychotics for most of the time during past twenty three years after I left united states as a masters student. Even though half injection of fluanxol might not feel very high to some friends, I am already 49 and it is very difficult for my body to stand antipsychotics now. Though the dose might not seem very high, over past twenty three years, I have been given extremely high doses of antipsychotics for very long time continuously. For example one doctor gave me two injections of fluanxol per week for more than nine months. I was kept on a combo of many antipsychotic drugs of very high potency for a very long time in order to permanently strip me of my intellectual activity. Coming back to topic, I was to be given half an antipsychotic injection after every 21 days. When I was getting half an injection after 17 days, I would sleep till late in the morning for first 7-9 days and then start getting up early and go for my morning walk for rest of the 8-10 days. I would also have good ideas about mathematics and my intellectual activity would be far better during last 8-10 days. So last time (just about three weeks ago) doctor agreed that I should be given antipsychotic injection after 21 days. After a week of the injection, I started my morning walk and continued it for several days but then I believe, mind control agencies injected me while I was sleeping in the open porch/garage and I have not been able to go for morning walk a single day after that. My intellectual activity recovered only 3-4 days ago. During this period, I became very lethargic and I would sleep at night and then sleep before noon and then sometimes again in the evening. <br>
+American mind control agencies want to keep me sedated  so that I could not do any intellectual activity.<br>
+It is worse for my body than for my intellectual activity since I become very lethargic, and I have body aches all over and sometimes it is difficult to even pass time. I am 49 years old now and my weight is around 104 kg and I am around 30 kgs over weight. I am thankful that I am still not diabetic. When one is healthy, even just living is a great joy.<br>
+So I decided to start sleeping inside my room again to avoid being injected again at night when I would be sleeping.<br>
+Yesterday was my first day inside my room after a long time and it was better but they started giving me gas again today and I had difficulty breathing in my room.<br>
+I want to tell friends that clean fresh air and good water are some of the greatest gifts of nature that we take so thoughtlessly for granted. If these two things are stripped from us, we would be willing to give anything to get them back.<br>
+I want to request friends to please ask mind control and other secret agencies to stop releasing gas in my room.<br>
+I want to request American army to stop using cruel mind control on innocent people in order to get personal benefits from rich and wealthy.</div>
+
+			
+									
+									<div id="sig870797" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870815">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870815">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870815">
+
+			<h3 ><a href="#p870815">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870815&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870815" title="Post #1475">#1475</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 30th, 2022, 9:03 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I will recall an incident eight years ago when I myself approached a lady psychiatrist for help and how she abused me and her staff beat me for twenty minutes and then tied me and started my treatment with antipsychotics again. <br>
+I am recalling this from early 2015. They had previously put me on extremely high antipsychotics and my creativity was all gone. I could barely do any intellectual work. At that time, I was able to convince my family to decrease the injections and they had agreed since I had already lost most of my creativity and intellectual capability. I think mind control agencies were also thinking that I had lost my creativity forever and they wanted to see if it was right time to decrease my drugs and still make sure that I would remain intellectually dull after injections had ended.<br>
+But I slowly started to work on my research and started to regain my brain. When mind control agencies realized that I had started to do better research, they asked my family to do something again to retard me. My father asked a self-stylized religious saint to come to our house and take care of me. He came to our house with one of his followers and told me that he wanted to give me injections and I would go to sleep for 24 hours and they would take scans of my brain to treat me but I continued to beg and plead him and I was able to convince him to allow me to leave the home in my car. The supposed saint allowed me to leave since he was probably sure that he would get me later as I had no other place to go other than my home and therefore I was able to convince him to let me go outside. When I left the house, I made posts about the saint on at least two different forums from outside my house and pleaded for help. Enough people were following my story even at that time and the saint had to leave. I also called my father when I was outside and protested against this.<br>
+My family still remained very tense with me and I was very afraid that they would force antipsychotics injections and mind control drugs on me therefore I stayed one night out of the home. Here is the post I made when I was away on April 14th, 2015, 2:09 pm<br>
+<a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=315#p748191" class="postlink">https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=315#p748191</a><br>
+"I am staying out of my home for the night since I had realized that my father will try to force me into detention again and I would request a court tomorrow for stay order to stop my father from hospitalizing me forcefully again and I would request the court that if there has to be a check on my mental health, it has to be done and investigated properly by a psychiatrist of my choice and I should remain free at the same time. I do not want to be at the mercy of my father's chosen psychiatrist as we saw in the past year that they continued to quote mental health laws and forcefully manipulate me into taking injections. If my father forcefully hospitalized me, I would be cutoff from the outer world and they would do whatever they like. My father's self-stylized saint(peer) had already hinted that he wanted to give me injections that would put me to sleep for 24 hours and he had no argument for my mental sickness at all.”<br>
+<br>
+Next day, on April 15, 2015, I went to Lahore High Court to find some help but I was told that I had to submit an application that would be considered several weeks later when its turn would arrive. When I realized that there was no possibility of help from the court, I decided to see a psychiatrist on my own. I was driving in Garden town Lahore where I came across B**** psychiatric clinic and decided to see the psychiatrist Dr. N*** there. It was evening but the psychiatrist still not had arrived there. I waited for an hour in the reception and then had a consultation with her. I asked her to listen to my case carefully and then decide if I was sane enough and tell my parents about it. She said that I seemed perfectly fine and asked me that she wanted to hear what my family had to say. I agreed and took an appointment to visit her again at April 20, 2015. I took my mother on the planned day and my mother did not have anything decisive to say about any disease other than that I did not eat at home. The psychiatrist asked me to visit her after one week on 27 April 2015. The next week when I went again to visit the psychiatrist, on April 27, and was sitting in the waiting room so that I could visit the psychiatrist on my turn. Another lady who was a psychologist came to me and asked me to go with her in a different room to have a session with psychologist but I declined and said that I was only interested in seeing the psychiatrist who had promised to see me again the earlier week. After five minutes, at least four men came to the room and started besting me. They gave me slaps on my face with full force and gave me blows and they continued to do it for more than fifteen minutes. I had never been beaten like that ever before in my life. All this time, I was simply trying to raise my hand to somehow protect me. Since I was sitting on the sofa, only my face and head were the target of slaps and blows. They were very violent with all sort of slaps and blows on my face as I earlier mentioned that I was sitting and they were standing. . They literally continued to beat me and I continued to beg them to stop. After fifteen minutes of beating me, they tied my legs and lifted me and put me on a bed in a room in the psychiatrist facility and told me that doctor had gone to America and she could not see me. It was a complete lie and the psychiatrist was in her office and was interviewing other patients when I arrived. I continued to ask them to loosen the knots but they continued to make fun of me. I was totally surprised since Dr. N had behaved very nicely in the previous meeting held at 20th with my mother and myself and I was sure she would declare me mentally sane on this meeting. After I was kept tied for about half an hour, a new guard came and opened my hands and legs and said that they would keep me at the facility for three days. The next day my medication in the form of pills started and I was also given two more injections. I was given about nine pills at night and about eight pills in the morning. I was still not given the opportunity to meet the psychiatrist N, and I was told several different things by different people including that psychiatrist N had gone to America, and she had gone to Islamabad. About three days into my treatment, I saw through the glass walls that psychiatrist N was interviewing her clients in her office. After seven days, I was asked to meet psychiatrist N, and she said that she was unaware of the beating as she was in a meeting. Psychiatrist N also assured me that I had no schizophrenia and previous doctors had very wrongly diagnosed me but it was a case of some mania that she would properly treat this time.  Her staff continued to say that they were giving me drugs so that the effect of other drugs given to me by previous psychiatrists would decrease.<br>
+<br>
+Before my computer was taken away from me, I was able to take notes for two days in the hospital on my computer that I write here. After first two days of medication, I was so extremely weak that I could barely walk and I had extreme difficulty speaking.<br>
+<br>
+“My Diary for past two days.<br>
+<br>
+4/27/2015<br>
+I had two sessions with the doctor N previously on the 20th of April and once before at 13 or 14th of April. I remained away from home during this time and second meeting on 20th of April, evening after the night when I remained away from home. I had told the doctor about my circumstances in the first meeting with her. She had said that I looked perfectly fine mentally but she needed to talk to my family. On 20th of April, I took my mother for a second joint session of myself and my and the psychiatrist said, after the meeting, that said she really could not call me schizophrenic but she needed one more sessions and asked me to come to her facility on 27th of April. <br>
+When I arrived at the psychiatric facility, a psychologist had asked me to accompany her which I did and on the way to the her room, I asked for the reason, after which she replied that she wanted to take a session of mine. I told her that I already had a session with another psyc hologist and also with a psychiatrist so I would prefer to have a new session with the psychiatrist now. She agreed and I returned to the waiting room. I was sitting on a sofa in the waiting room on 27th at 8:00 PM (PST) in the line to see the psychiatrist when about five guards took control of me, while I was sitting on a sofa in the waiting room to see the doctor, and gave me an injection. I was beaten and my legs and hands were very strictly tied for more than hour. Though the doctor was in her consultation room and a lot of people were waiting to see her, I was told again and again that doctor was not present at the facility.<br>
+In the previous two sessions, she had given the impression I was healthy mentally but she used force without interviewing for the third time or seeing me and without requests to comply. If she was given any special information, she should have talked to me about it and she should have verified with me any change in circumstances.<br>
+One injection was given around 8 PM when I arrived for third session with the doctor N. I really think that the doctor was there since there was a large rush of visitors and her SUV was parked in the hospital but everybody among the staff continued to say that doctor did not come to the facility this evening.<br>
+I was kept tied for more than one hour. I was taken tied from the waiting room to my room. All these rooms have video cameras so you can ask Dr. N for a video of the events though she might make the excuse that cameras were not working. One of the staff had mentioned when they brought me into a patient room in the facility, that everything was watched by cameras.I would request people familiar with the matter to request her to show them footage of the cameras. Of course, there could be many excuses that cameras were not working but I insist that cameras were working.<br>
+Good Mental health facilities try to avoid treating humans like this.<br>
+Another injection was given at night before I slept. <br>
+and my internet USB device was also taken. They simply took possession of everything out of my pockets and also took my laptop.<br>
+When I asked why they gave me injections, one of the staff told me you were ?hyper? and I was totally surprised since I was quietly sitting on the sofa in the waiting lounge for the doctor. I was told that I would stay in the hospital for three days. I am sure this matter can be resolved who is lying and who is truthful once you look apt video footage of cameras in most rooms.<br>
+<br>
+4/28/2015<br>
+One injection was given in the morning. One injection was given around noon. All injections were IM (given in the muscle.)<br>
+Unknown pills(some pills in the morning +5 pills around noon + 3 pills at night) were given and I was told,? We will tell you know the names of these pills only when you leave.?<br>
+Computer was returned today but I was told that we did not take your mobile and they continued to say we never took my mobile. My mobile was never returned( despite I always keep my mobile on me.) <br>
+I was also not given my EVO USB device and I was told you cannot write anything on internet. However the USB device was returned to my mother at night.<br>
+I was told today by the psychologist that doctor N had gone to America and will come back after seven days and only then she would be able to see you. I was told we are adjusting your medicine and see what was a good medicine. I was told they were discussing the drugs with her on phone and skype There were several conflicting statements about where Dr. N was. Somebody said she was just out of city and had gone to Islamabad.<br>
+When I asked my mother who is living with me at the hospital, I wanted a second opinion, because of beating and other irresponsible behavior of the psychiatrist, my mother would make all sort of excuses while the staff would say that you cannot leave the hospital until Dr. N arrives who is currently out of country.<br>
+Earlier today, I was told that I would live at the hospital for fifteen days and later I was told that I would live at the facility for seven days. When I was tied, somebody had told me that I would live in the hospital for three days only.<br>
+My mother told me please do not write anything wrong on internet otherwise, they would take your USB forcefully like Dr. A had done more than one year ago. The purpose was to threaten me to not write about any maltreatment so that the doctor would continue to freely manipulate me.<br>
+7-8 pills were given in the afternoon and similar number of pills were given at night. At many times during the day, I could barely walk and had extreme difficulty speaking.”</div>
+
+			
+									
+									<div id="sig870815" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870817">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870817">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870817">
+
+			<h3 ><a href="#p870817">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870817&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870817" title="Post #1476">#1476</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">June 30th, 2022, 11:54 am</span></p>
+			
+			
+			
+			<div class="content">In this post I want to tell friends about a few things that point to elaborate infrastructure that is present in Pakistan to support US mind control. There are at least more than 500 mind control targets in Pakistan most of whom (at least 95%) are computer science majors. <br>
+What you find out about Pakistan, you can extrapolate it to varying degrees to US and many other countries in the world.<br>
+Mind control in Pakistan is ensured by top Pakistani army generals since they are given several hundred million dollars by US army and top brass of Pakistan army divides this money among themselves with bigger fish getting larger share and smaller fish getting a smaller share. Therefore mind control infrastructure in Pakistan is very detailed and thorough.<br>
+At this point I like to tell friends that a lot of food and beverages that are drugged with mind control chemicals would be eaten or taken by most population that is not on mind control and they would never notice any anomaly in taste or any other effect since these mind control chemicals are inactive and inert and become chemically active only when targeted remotely with precise electromagnetic wave frequencies so only target victims are affected and this is a very cruel method to target intelligent people you do not like by drugging the entire water or beverage supply as victim would have to drink something somewhere. Ground water is also so thoroughly drugged with mind control chemicals that entire public water supply of the city and several kilometers out of the city would be completely drugged with mind control chemicals. Pakistan army routinely does this in Lahore city on behest of American mind control agencies.<br>
+Water and beverages are drugged with mind control chemicals by most manufacturers when they make their product. Drugged bottled water was a very huge problem for at least more than ten years. However for past one year coca-cola Dasani and Nestle water have been good even though they are drugged by army personnel by going to the shops in entire market and physically drugging each bottle on the shelves before the store staff. Store staff is used to this practice and cooperates and any resistance that was in initial years is totally gone. In a large store, typically there would be more drugged beverages than good beverages at any time. Since most of the drugging of beverages is done at manufacturing source, it is possible to completely avoid some beverage once you become certain that this is bad everywhere even at places where you would not suspect that army personnel has approached the store to drug it .<br>
+At least four or five store owners or staff admitted when I casually or jokingly asked about army coming to their stores and drugging water and beverages there and some of them told me that this happens very routinely almost every week or two.<br>
+Coffee stimulates the brain and the brain connects in new ways after taking coffee and good coffee creates problems with keeping victims on mind control since their brain starts connecting in many new ways after taking good coffee. All coffee and I repeat that entire coffee in the country present in the stores is drugged with mind control chemicals. Most of the coffee on good stores is imported from foreign countries. I do not know how it works but importer is probably told by army to drug the imported coffee before distributing it in the market. It is even very difficult or rather impossible to get good coffee beans. Two or three years ago it was possible to find some brand of coffee that was good by trying all new brands but it has not worked for past two years now for me despite that I keep trying. I even know of instances that when I was able to buy good coffee from very large and posh stores, they took entire coffee brand off the shelf from all their branches within two to three days. People know that Corrupt Army in Pakistan that ensures mind control is more powerful than any political government here.<br>
+Tea used to be good but for past one year most mainstream Pakistani brands of black tea are drugged with mind control drugs. This has still not caught up thoroughly like coffee is thoroughly drugged and it is still possible to find some good foreign brands tea that is good.<br>
+All stimulant/energy drinks including red bull are well drugged at manufacturing source. Red bull was better till last year but then it became drugged everywhere. I even tried it at remote places in several cities other than Lahore and it has always been drugged lately.<br>
+Most of the soaps, shampoos, creams, toothpastes are drugged with mind control chemicals. I do not use shampoos or creams but whatever rare I tried them once in a while they were drugged and they charged my skin. All of these have mind control chemicals that charge the skin and make mind extremely effective. Many people would be amazed when I tell them that even though I would be in my full senses before washing my head and face with a soap but after washing my head and face with a drugged soap, my eyesight would deteriorate and my conception of reality would completely change and sometimes I would face extreme anxiety. It is hard to emphasize that even a small thing like this can completely change the victim's mental state. Getting a good soap was very difficult for me till last year and I would drive for several hours in different parts of the city especially looking at all the pharmacies on the way to find some unknown brand or some soap that would have been manufactured several years ago when soaps were not getting completely drugged. I tried all the soaps including beauty soaps that are specially made for women, even many unknown brands, and specially imported soaps(which were all universally drugged thoroughly) and it was very very difficult to find a good soap. After finding a good soap, I would keep it in my pocket all the time. This is a small thing but you cannot live without it. But his year when checking soaps I realized that Dettol soap which is a mainstream brand is good and I started using it. I know very well and I tried several times and dettol soap used to be drugged a few years ago. But finding a good soap is no longer a problem since I just use a mainstream Dettol soap that is everywhere. I do not know why but they might have run out of mind control chemical given to them and they did not contact army and started manufacturing soaps without it.<br>
+Since our mouth is kept charged and some charges continue to go into victim's body from one's mouth. Therefore toothpastes are also added with mind control chemicals to charge inside of our mouth. You can imagine that after buying five or six tooth pastes of different remote brands, I would get a good tooth paste. I have recently been using toothpaste that is imported from abroad and is good. Toothpastes manufactured in Pakistan are all drugged with mind control chemicals. <br>
+Another big problem is that pharmaceutical companies add mind control chemicals to their drugs(pills etc). Most of the mind control victims are targeted due to their talent and intelligence in mind many times might require special minerals that are rare in our food.  Most of the mineral and vitamin formulas are also drugged with mind control chemicals. Most mainstream mineral and vitamin pills in the market are thoroughly drugged with mind control chemicals. I never like to take names but I would like to tell friends that greatest crook of all times is Glaxosmithkline( I would invite them to sue me for writing this on Wilmott). GSK's mineral and vitamin formulas, effervescent calcium tablets, and toothpastes are all drugged with mind control chemicals. There is a tablet by the name Kemadrin that has to be taken with antipsychotics and GSK manufactures it and it is also drugged with mind control chemicals. My experience with GSK is so bad that If I have to buy any medicine and if it is made by GSK, I would try my utmost to avoid taking it for the fear of its being drugged with mind control chemicals and look for alternatives.<br>
+Injection fluanxol and clopixol are also drugged with mind control chemicals.<br>
+Again all this thorough infrastructure took more than fifteen years to develop in Pakistan and Pakistan army continued to work hard to develop it over the years. There are at least five hundred brilliant Pakistanis most of whom are computer scientists who are on active mind control to thwart them to contribute to society in any good way. Obviously all this infrastructure exists and was developed and perfected over fifteen years for a reason. <br>
+I have not talked about special infrastructure that is used to project EM waves on the target and this infrastructure is present on all major roads and public places.<br>
+Again mind control in Pakistan is ensured by top Pakistani army generals since they are given several hundred million dollars by US army and top brass divides the money among themselves with bigger fish getting larger share and smaller fish getting a smaller share. Therefore mind control infrastructure in Pakistan is very detailed and thorough.<br>
+If you want to know about mind control in US or some other country, you have to project most of this to your country though obviously the degree of thoroughness of mind control infrastructure would be different. However I do know that  within Urban Unite States, there is enough thorough infrastructure to be able to project mind control on anyone anywhere. </div>
+
+			
+									
+									<div id="sig870817" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870824">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870824">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870824">
+
+			<h3 ><a href="#p870824">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870824&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870824" title="Post #1477">#1477</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 1st, 2022, 7:01 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I am showing graph of a density made with the algorithm presented in previous page of this thread. Later today, I will upload a matlab program where you would specify your moments and the density would be graphed by the program.<br>
+Not every arbitrary combination of moments can be fitted since if input moments are out of whack, the density becomes negative. There has to be some restriction on moments for the density to remain positive. I will upload an advanced version(in which base gaussian will not be a unit variance but rather with a given mean and variance) of the program later today where you could define moments and the program will automatically draw a graph of pdf and cdf.<br>
+<br>
+I am just posting a graph below to show how some very interesting densities can be made out of this method based on gaussian density.<br>
+On this graph, red line is cdf while blue line is pdf.<br>
+.<br>
+.<br>
+<a href="https://postimg.cc/1VGbQ2T9" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/2yMY4f7B/Densities01.jpg" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig870824" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870843">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870843">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870843">
+
+			<h3 ><a href="#p870843">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870843&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870843" title="Post #1478">#1478</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 2nd, 2022, 3:03 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I could not get myself to work a lot of time yesterday. When standardized hermite polynomials are applied on the same idea, result of some integrations change and they have to be properly calculated. Not theoretically difficult/different from before  but a bit of work.<br>
+I received antipsychotic injection on this Thursday so I have some difficulty working well.<br>
+I hope to complete the work with construction of probability densities tonight. The other work that constructs Z-series for probability densities given the moments/cumulants will also follow very soon after this work since there is no difficulty there anymore and I have perfectly worked out all the details.  </div>
+
+			
+									
+									<div id="sig870843" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870847">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870847">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870847">
+
+			<h3 ><a href="#p870847">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870847&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870847" title="Post #1479">#1479</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 2nd, 2022, 9:36 am</span></p>
+			
+			
+			
+			<div class="content">Friends I hope to be able to post the density generation program sometime today. I am working on it.<br>
+In the meanwhile, I am posting a graph similar to graph I posted yesterday. This graph is based on non-standard Gaussian and normalized hermite polynomials. I only used first four hermite polynomials in this graph density generation. I will be using six polynomials in the program that I will post later today.<br>
+.<br>
+.<a href="https://postimg.cc/Wd1CDJvG" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/8zRS0hX0/Densities02.jpg" class="postimage" alt="Image"></a> </div>
+
+			
+									
+									<div id="sig870847" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870850">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870850">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870850">
+
+			<h3 ><a href="#p870850">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870850&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870850" title="Post #1480">#1480</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 2nd, 2022, 5:21 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have done most of the work and calculations but still have to delay remaining work till tomorrow. <br>
+I do not want to complain since I have been able to work quite well for this part of the time cycle after the the injection. May be mind control agencies are far better since I complained that they want to keep me sedated and people protested about it. Or I might be under observation by some more independent people so mind control agencies are quite better to give an impression that this is how my mental situation is after the injections every time. Usually after the injections, mind control agencies try to drug my food and my 3rd day after the injection to 9th day after the injection is very bad for me since even minor amount of drugs in my food can play havoc with my condition.<br>
+I hope to post the program tomorrow. I want to relate the program to central moments since they are more intuitive. Sorry for this delay. </div>
+
+			
+									
+									<div id="sig870850" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870854">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870854">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870854">
+
+			<h3 ><a href="#p870854">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870854&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870854" title="Post #1481">#1481</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 3rd, 2022, 3:43 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have completed work on the program and checking it. If everything goes well, I will try to post it tomorrow or day after tomorrow.<br>
+I will write a more detailed post tomorrow.</div>
+
+			
+									
+									<div id="sig870854" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870881">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870881">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870881">
+
+			<h3 ><a href="#p870881">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870881&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870881" title="Post #1482">#1482</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 4th, 2022, 6:21 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am posting the new program in which you specify first six central moments  and it produces a density so that the first six central moments of this density match the specified moments. Try fitting the moments with different base densities.<br>
+I will be writing and explaining relevant equations tomorrow.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = GenerateDensityFromCentralMomentsX()
+
+
+%In this program, you specify the first six central moments and the program creates a density based on these 
+%central moments.
+%First six central moments are specified below, feel free to alter them and
+%find new densities
+
+mu1=3.0;
+mu2=10.999;
+mu3=-17.9999;
+mu4=253;
+mu5=-800;
+mu6=8500;
+
+
+%The algorithm takes a base gaussian density that has it mean mu and
+%sq-root of variance given by sigma.
+%This mean and sigma can be different from first and sq-root of second
+%central moment(variance) of the target density that we specified as mu1 and mu2 earlier.
+
+mu=2;
+sigma=2.0;
+
+%Below is the construction of grid to calculate pdf, numerically integrate the pdf 
+%to find cdf. And to numerically calculate the six moments on the constructed density 
+%so they can be matched with input moments.
+
+dNn=.02/10;
+Nn=1250*10;
+X(1:Nn)=-10+dNn+dNn*(1:Nn);
+
+
+%Below, we calculate first six raw-moments from the input central moments.
+%These raw moments would be used to calculate the coefficients of hermite
+%polynomials so that output central moments calculated on new density match
+%the input central moments.
+
+rmu1=mu1;
+rmu2=mu2+mu1^2;
+rmu3=mu3+3*mu2*mu1+mu1^3;
+rmu4=mu4+4*mu3*mu1+6*mu2*mu1^2+mu1^4;
+rmu5=mu5+5*mu4*mu1+10*mu3*mu1^2+10*mu2*mu1^3+mu1^5;
+rmu6=mu6+6*mu5*mu1+15*mu4*mu1^2+20*mu3*mu1^3+15*mu2*mu1^4+mu1^6;
+
+%Below I calculate the coefficients of hermite polynomials so that output 
+%central moments calculated on new density match
+%the input central moments.
+
+a1=(rmu1-mu)/sigma;
+a2=(rmu2-mu^2-2*a1*mu*sigma-sigma^2)/sigma^2;
+a3=(rmu3-mu^3-3*a1*mu^2*sigma-3*mu*sigma^2-3*a2*mu*sigma^2-3*a1*sigma^3)/sigma^3;
+a4=(rmu4-mu^4-4*a1*mu^3*sigma-6*mu^2*sigma^2-6*a2*mu^2*sigma^2-12*a1*mu*sigma^3-4*a3*mu*sigma^3-3*sigma^4-6*a2*sigma^4)/sigma^4;
+a5=(rmu5-mu^5-5*a1*mu^4*sigma-10*mu^3*sigma^2-10*a2*mu^3*sigma^2-30*a1*mu^2*sigma^3-10*a3*mu^2*sigma^3-15*mu*sigma^4-30*a2*mu*sigma^4-5*a4*mu*sigma^4-15*a1*sigma^5-10*a3*sigma^5)/sigma^5;
+a6=(rmu6-mu^6-6*a1*mu^5*sigma- 15*mu^4*sigma^2-15*a2*mu^4*sigma^2-60*a1*mu^3*sigma^3-20*a3*mu^3*sigma^3-45*mu^2*sigma^4-90*a2*mu^2*sigma^4-15*a4*mu^2*sigma^4-90*a1*mu*sigma^5-60*a3*mu*sigma^5-45*a2*sigma^6-15*a4*sigma^6-15*sigma^6-6*a5*mu*sigma^5)/sigma^6;
+
+%Below is base gaussian pdf.
+pdfG=exp(-0.5* ((X-mu)/sigma).^2)/sigma/sqrt(2*pi);
+
+%Below is the newly constructed density so that its output central moments
+%match the central moments input by the user.
+pdf=exp(-0.5* ((X-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X-mu)/sigma)+  a2/2* (((X-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X-mu)/sigma).^3 - 3*((X-mu)/sigma) )+ ...
+    a4/24* (((X-mu)/sigma).^4 - 6* ((X-mu)/sigma).^2 + 3)+ ...
+    a5/120* (((X-mu)/sigma).^5 - 10* ((X-mu)/sigma).^3 + 15*((X-mu)/sigma))+ ...
+    a6/720* (((X-mu)/sigma).^6 - 15* ((X-mu)/sigma).^4 + 45*((X-mu)/sigma).^2-15));
+
+%Below cdf is calculated by doing numerical integration of the density. I
+%have replaced integration with summations.
+cdf0(1:Nn)=0;
+for nn=2:Nn
+cdf0(nn)=cdf0(nn-1)+exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of first moment. N in mu1N
+%stands for numerical.
+
+mu1N=0;
+for nn=2:Nn
+mu1N=mu1N+X(nn) .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of second central moment.
+
+mu2N=0;
+for nn=2:Nn
+mu2N=mu2N+(X(nn)-mu1N).^2 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of third central moment.
+mu3N=0;
+for nn=2:Nn
+mu3N=mu3N+(X(nn)-mu1N).^3 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of fourth central moment.
+mu4N=0;
+for nn=2:Nn
+mu4N=mu4N+(X(nn)-mu1N).^4 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of fifth central moment.
+mu5N=0;
+for nn=2:Nn
+mu5N=mu5N+(X(nn)-mu1N).^5 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of sixth central moment.
+mu6N=0;
+for nn=2:Nn
+mu6N=mu6N+(X(nn)-mu1N).^6 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is analytically calculated cdf.
+
+cdf(1:Nn)=normcdf(((X(1:Nn)-mu)/sigma))+exp(-0.5* ((X(1:Nn)-mu)/sigma).^2)/sqrt(2*pi).* (- a1 - a2/2* ((X(1:Nn)-mu)/sigma) - ...
+    a3/6* ( ((X(1:Nn)-mu)/sigma).^2 - 1 )- ...
+    a4/24* (((X(1:Nn)-mu)/sigma).^3 - 3* ((X(1:Nn)-mu)/sigma)) - ...
+    a5/120* (((X(1:Nn)-mu)/sigma).^4 - 6* ((X(1:Nn)-mu)/sigma).^2 + 3) - ...
+    a6/720* (((X(1:Nn)-mu)/sigma).^5 - 10* ((X(1:Nn)-mu)/sigma).^3 + 15*((X(1:Nn)-mu)/sigma)));
+   
+   
+plot(X(1:Nn),cdf0(1:Nn),'g',X(1:Nn),cdf(1:Nn),'r',X(1:Nn),pdf(1:Nn),'b',X(1:Nn),pdfG(1:Nn),'m');
+legend({'Numerically Calculated CDF','Analytically Calculated CDF','Newly Constructed Moment Matched PDF','Base Gaussian PDF'},'Location','northeast')
+
+%cdf
+%Below compare the input central moments mu's with moments calculated on
+%newly constructed density denoted by mu*N
+mu1N
+mu1
+mu2N
+mu2
+mu3N
+mu3
+mu4N
+mu4
+mu5N
+mu5
+mu6N
+mu6
+
+%Below are coefficients on hermite polynomials found out so that output
+%moments in newly constructed density match input central moment values.
+
+a1
+a2
+a3
+a4
+a5
+a6
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+Here is the graph for density you will see when you run the program.<br>
+.<br>
+.<br>
+<a href="https://postimg.cc/RWT2z4wq" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/FKtv3KRb/Densities04.jpg" class="postimage" alt="Image"></a><br>
+<br>
+.<br>
+.<br>
+Here is the output of the program you will see.<br>
+mu1N =<br>
+<br>
+   3.000001166106365<br>
+<br>
+<br>
+mu1 =<br>
+<br>
+     3<br>
+<br>
+<br>
+mu2N =<br>
+<br>
+  10.998976156785789<br>
+<br>
+<br>
+mu2 =<br>
+<br>
+  10.999000000000001<br>
+<br>
+<br>
+mu3N =<br>
+<br>
+ -17.999654577054343<br>
+<br>
+<br>
+mu3 =<br>
+<br>
+ -17.999900000000000<br>
+<br>
+<br>
+mu4N =<br>
+<br>
+     2.529958480636926e+02<br>
+<br>
+<br>
+mu4 =<br>
+<br>
+   253<br>
+<br>
+<br>
+mu5N =<br>
+<br>
+    -7.999500779717981e+02<br>
+<br>
+<br>
+mu5 =<br>
+<br>
+  -800<br>
+<br>
+<br>
+mu6N =<br>
+<br>
+     8.499249720514237e+03<br>
+<br>
+<br>
+mu6 =<br>
+<br>
+        8500<br>
+<br>
+<br>
+a1 =<br>
+<br>
+   0.500000000000000<br>
+<br>
+<br>
+a2 =<br>
+<br>
+   1.999750000000001<br>
+<br>
+<br>
+a3 =<br>
+<br>
+   0.499637499999999<br>
+<br>
+<br>
+a4 =<br>
+<br>
+   0.501150000000003<br>
+<br>
+<br>
+a5 =<br>
+<br>
+  -0.121656249999994<br>
+<br>
+<br>
+a6 =<br>
+<br>
+   1.571921874999852</div>
+
+			
+									
+									<div id="sig870881" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870899">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870899">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870899">
+
+			<h3 ><a href="#p870899">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870899&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870899" title="Post #1483">#1483</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 5th, 2022, 9:54 am</span></p>
+			
+			
+			
+			<div class="content">The following slightly changed program takes cumulants as input and creates a density. It might be slightly easier to specify good cumulants than trying to specify good moments.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = GenerateDensityFromCumulantsX()
+
+
+%In this program, you specify the first six cumulants and the program creates a density based on these 
+%cumulantsents.
+%First six cumulants are specified below, feel free to alter them and
+%find new densities
+
+% mu1=1.0;
+% mu2=1.0;
+% mu3=3.9999;
+% mu4=9;
+% mu5=-8;
+% mu6=85;
+
+k1=1.0;
+k2=(1.55)^2;
+k3=1.5;
+k4=3.50;
+k5=1;
+k6=1;
+
+
+%The algorithm takes a base gaussian density that has it mean mu and
+%sq-root of variance given by sigma.
+%This mean and sigma can be different from first and sq-root of second
+%central moment(variance) of the target density that we specified as mu1 and mu2 earlier.
+
+mu=1;
+sigma=1.55;
+
+%Below is the construction of grid to calculate pdf, numerically integrate the pdf 
+%to find cdf. And to numerically calculate the six moments on the constructed density 
+%so they can be matched with input moments.
+
+dNn=.02/10;
+Nn=1250*10;
+X(1:Nn)=-10+dNn+dNn*(1:Nn);
+
+
+%Below, we calculate first six raw-moments from the input cumulants.
+%These raw moments would be used to calculate the coefficients of hermite
+%polynomials so that output central moments calculated on new density match
+%the input central moments.
+
+%mu1=k1;
+rmu1=k1;
+rmu2=k1*rmu1+k2;
+rmu3=k1*rmu2+2*k2*rmu1+k3;
+rmu4=k1*rmu3+3*k2*rmu2+3*k3*rmu1+k4;
+rmu5=k1*rmu4+4*k2*rmu3+6*k3*rmu2+4*k4*rmu1+k5;
+rmu6=k1*rmu5+5*k2*rmu4+10*k3*rmu3+10*k4*rmu2+5*k5*rmu1+k6;
+
+
+
+% rmu1=mu1;
+% rmu2=mu2+mu1^2;
+% rmu3=mu3+3*mu2*mu1+mu1^3;
+% rmu4=mu4+4*mu3*mu1+6*mu2*mu1^2+mu1^4;
+% rmu5=mu5+5*mu4*mu1+10*mu3*mu1^2+10*mu2*mu1^3+mu1^5;
+% rmu6=mu6+6*mu5*mu1+15*mu4*mu1^2+20*mu3*mu1^3+15*mu2*mu1^4+mu1^6;
+
+%Below I calculate the coefficients of hermite polynomials so that output 
+%central moments calculated on new density match
+%the input central moments.
+
+a1=(rmu1-mu)/sigma;
+a2=(rmu2-mu^2-2*a1*mu*sigma-sigma^2)/sigma^2;
+a3=(rmu3-mu^3-3*a1*mu^2*sigma-3*mu*sigma^2-3*a2*mu*sigma^2-3*a1*sigma^3)/sigma^3;
+a4=(rmu4-mu^4-4*a1*mu^3*sigma-6*mu^2*sigma^2-6*a2*mu^2*sigma^2-12*a1*mu*sigma^3-4*a3*mu*sigma^3-3*sigma^4-6*a2*sigma^4)/sigma^4;
+a5=(rmu5-mu^5-5*a1*mu^4*sigma-10*mu^3*sigma^2-10*a2*mu^3*sigma^2-30*a1*mu^2*sigma^3-10*a3*mu^2*sigma^3-15*mu*sigma^4-30*a2*mu*sigma^4-5*a4*mu*sigma^4-15*a1*sigma^5-10*a3*sigma^5)/sigma^5;
+a6=(rmu6-mu^6-6*a1*mu^5*sigma- 15*mu^4*sigma^2-15*a2*mu^4*sigma^2-60*a1*mu^3*sigma^3-20*a3*mu^3*sigma^3-45*mu^2*sigma^4-90*a2*mu^2*sigma^4-15*a4*mu^2*sigma^4-90*a1*mu*sigma^5-60*a3*mu*sigma^5-45*a2*sigma^6-15*a4*sigma^6-15*sigma^6-6*a5*mu*sigma^5)/sigma^6;
+
+%Below is base gaussian pdf.
+pdfG=exp(-0.5* ((X-mu)/sigma).^2)/sigma/sqrt(2*pi);
+
+%Below is the newly constructed density so that its output central moments
+%match the central moments input by the user.
+pdf=exp(-0.5* ((X-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X-mu)/sigma)+  a2/2* (((X-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X-mu)/sigma).^3 - 3*((X-mu)/sigma) )+ ...
+    a4/24* (((X-mu)/sigma).^4 - 6* ((X-mu)/sigma).^2 + 3)+ ...
+    a5/120* (((X-mu)/sigma).^5 - 10* ((X-mu)/sigma).^3 + 15*((X-mu)/sigma))+ ...
+    a6/720* (((X-mu)/sigma).^6 - 15* ((X-mu)/sigma).^4 + 45*((X-mu)/sigma).^2-15));
+
+%Below cdf is calculated by doing numerical integration of the density. I
+%have replaced integration with summations.
+cdf0(1:Nn)=0;
+for nn=2:Nn
+cdf0(nn)=cdf0(nn-1)+exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of first raw moment. N in mu1N
+%stands for numerical.
+
+rmu1N=0;
+for nn=2:Nn
+rmu1N=rmu1N+X(nn) .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of second raw moment.
+
+rmu2N=0;
+for nn=2:Nn
+rmu2N=rmu2N+(X(nn)-0*rmu1N).^2 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of third raw moment.
+rmu3N=0;
+for nn=2:Nn
+rmu3N=rmu3N+(X(nn)-0*rmu1N).^3 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of fourth raw moment.
+rmu4N=0;
+for nn=2:Nn
+rmu4N=rmu4N+(X(nn)-0*rmu1N).^4 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of fifth raw moment.
+rmu5N=0;
+for nn=2:Nn
+rmu5N=rmu5N+(X(nn)-0*rmu1N).^5 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is numerically calculated value of sixth raw moment.
+rmu6N=0;
+for nn=2:Nn
+rmu6N=rmu6N+(X(nn)-0*rmu1N).^6 .*exp(-0.5* ((X(nn)-mu)/sigma).^2)/sigma/sqrt(2*pi).* (1+ a1* ((X(nn)-mu)/sigma)+ a2/2* (((X(nn)-mu)/sigma).^2-1) + ... 
+    a3/6* ( ((X(nn)-mu)/sigma).^3 - 3*((X(nn)-mu)/sigma) )+ ...
+    a4/24* (((X(nn)-mu)/sigma).^4 - 6* ((X(nn)-mu)/sigma).^2 + 3) + ...
+    a5/120* (((X(nn)-mu)/sigma).^5 - 10* ((X(nn)-mu)/sigma).^3 + 15*((X(nn)-mu)/sigma))+ ...
+    a6/720* (((X(nn)-mu)/sigma).^6 - 15* ((X(nn)-mu)/sigma).^4 + 45*((X(nn)-mu)/sigma).^2-15))*dNn;
+end
+
+%Below is analytically calculated cdf.
+
+cdf(1:Nn)=normcdf(((X(1:Nn)-mu)/sigma))+exp(-0.5* ((X(1:Nn)-mu)/sigma).^2)/sqrt(2*pi).* (- a1 - a2/2* ((X(1:Nn)-mu)/sigma) - ...
+    a3/6* ( ((X(1:Nn)-mu)/sigma).^2 - 1 )- ...
+    a4/24* (((X(1:Nn)-mu)/sigma).^3 - 3* ((X(1:Nn)-mu)/sigma)) - ...
+    a5/120* (((X(1:Nn)-mu)/sigma).^4 - 6* ((X(1:Nn)-mu)/sigma).^2 + 3) - ...
+    a6/720* (((X(1:Nn)-mu)/sigma).^5 - 10* ((X(1:Nn)-mu)/sigma).^3 + 15*((X(1:Nn)-mu)/sigma)));
+   
+   
+plot(X(1:Nn),cdf0(1:Nn),'g',X(1:Nn),cdf(1:Nn),'r',X(1:Nn),pdf(1:Nn),'b',X(1:Nn),pdfG(1:Nn),'m');
+legend({'Numerically Calculated CDF','Analytically Calculated CDF','Newly Constructed Moment Matched PDF','Base Gaussian PDF'},'Location','northeast')
+
+%Below program checks if density becomes slightly negative.
+IsNegative=0;
+for nn=2:Nn
+    if(pdf(nn)&lt;0)
+        IsNegative=1;
+    end
+end
+
+%cdf
+%Below compare the input raw moments rmu's with moments calculated on
+%newly constructed density denoted by rmu#N
+rmu1N
+rmu1
+rmu2N
+rmu2
+rmu3N
+rmu3
+rmu4N
+rmu4
+rmu5N
+rmu5
+rmu6N
+rmu6
+
+%Below are coefficients on hermite polynomials found out so that output
+%moments in newly constructed density match input central moment values.
+
+a1
+a2
+a3
+a4
+a5
+a6
+
+IsNegative
+end
+
+</code></pre></div>
+
+.<br>
+.</div>
+
+			
+									
+									<div id="sig870899" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870959">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870959">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870959">
+
+			<h3 ><a href="#p870959">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870959&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870959" title="Post #1484">#1484</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 7th, 2022, 3:34 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Some notations and preliminaries first.<br>
+<br>
+Let us suppose we denote a standard gaussian density as    [$]p(X) \, = \, \frac{1}{2 \pi} \exp(- \, \frac{ X^2 }{2})[$]<br>
+<br>
+We also have hermite polynomials and first few hermite polynomials are denoted as<br>
+[$]H_0(X) \, = \, 1[$]<br>
+[$]H_1(X) \, = \, X[$]<br>
+[$]H_2(X) \, = \, X^2 \, - 1[$]<br>
+[$]H_3(X) \, = \, X^3 \, - 3 X[$]<br>
+[$]H_4(X) \, = \, X^4 \, - 6 X^2 \, +3[$]<br>
+and so on.<br>
+And I want to share an interesting property related to following integral<br>
+[$]\int_{-\infty}^{+\infty}  X^m \, H_n(X) \, p(X) dx [$]   Equation(A)<br>
+We know when m is odd and n is even or m is even and n is odd, the above integral always goes to zero.<br>
+But when m is odd and n is also odd, the above integral would always go to zero when  n &gt; m.<br>
+Similarly when m is even and n is also even, the above integral would again always go to zero, when n &gt; m.<br>
+To explain it in words with simple examples, when fourth power of X is integrated in the above integral (eq A) with zeroth hermite, 2nd hermite or fourth hermite, there will be a finite value but when fourth power of X is integrated with sixth hermite, eighth hermite or tenth hermite, it will always go to zero. Similarly for odd powers, when fifth power of X is integrated there is a finite value when we integrate it with first hermite, third hermite or fifth hermite in the equation (A), but when we integrate fifth power of X with seventh, ninth or 11th hermite or higher odd hermites, the value would always go to zero.<br>
+The above property is interesting since in our forthcoming framework when we have fixed some moment in our equation, adding higher hermites(for higher moments) would not change the lower moments at all.<br>
+<br>
+Now we want to fix first few moments to our  proposed probability distribution so that all the moments are perfectly matched (a good property as I mentioned earlier would be that adding further higher moments would not change our lower moments that have already been matched).<br>
+<br>
+The proposed probability distribution has a very simple form (upto sixth order) as<br>
+<br>
+[$] q(X) \, = \, p(X) \, \big[ \, 1 \, + \, h_1 \, H_1(X)+ \, h_2/2 \, H_2(X)+ \, h_3/6 \, H_3(X)+ \, h_4/24 \, H_4(X)+ \, h_5/120 \, H_5(X)+ \, h_6/720 \, H_6(X) \, \big]  \, [$]<br>
+<br>
+here [$]h_1[$] , [$]h_2[$] etc are coefficients of hermites that will be adjusted to match the moments of above probability density form to our desired moments. <br>
+1st thing we know by inspection that above probability density equation integrates to one since all hermites (other than the first term) have an expected value of zero when integrated over normal density.<br>
+Now we write the first few raw moments of the above equation that can be verified by full-fledged integration(as I have done in my notes)<br>
+<br>
+[$]E[X]\,= \int_{-\infty}^{+\infty}  X \, q(X) dX \, = \, h_1[$]<br>
+[$]E[X^2]\,= \int_{-\infty}^{+\infty}  X^2 \, q(X) dX \, = \,1 \, + \, h_2[$]<br>
+[$]E[X^3]\,= \int_{-\infty}^{+\infty}  X^3 \, q(X) dX \, = \,3  \, h_1 \, + \, h_3[$]<br>
+[$]E[X^4]\,= \int_{-\infty}^{+\infty}  X^4 \, q(X) dX \, = \, 3 \, +\,6 \, h_2 \, + \, h_4[$]<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, = \, 15 \, +\,10 \, h_3 \, + \, h_5[$]<br>
+[$]E[X^6]\,= \int_{-\infty}^{+\infty}  X^6 \, q(X) dX \, = \, 15 \, +\,45 \, h_2 \, + \,15 \,  h_4 \, + h_6[$]<br>
+<br>
+So we see that we can keep on adding more hermite polynomials to fix higher moments and it will not alter our lower moments. However higher odd/even moments take a contribution from hermite polynomial terms associated with lower odd/even moments(that have already been fixed) up to the order of moment being calculated.<br>
+It seems a better idea to try matching moments on standard gaussian as opposed to non-standard gaussian as we do when we match moments with gram-charlier or edgeworth.<br>
+Please pardon any errors.
+</div></blockquote>
+.<br>
+.<br>
+.<br>
+Some notations and preliminaries first.<br>
+<br>
+Let us suppose we denote a standard gaussian density as    [$]p(X) \, = \, \frac{1}{\sigma \sqrt{2 \pi}} \exp(- \, \frac{ {(X-\mu)}^2 }{2 {\sigma}^2})[$]<br>
+<br>
+We also have standardized  hermite polynomials and first few standardized  hermite polynomials are denoted as<br>
+[$]H_0(X) \, = \, 1[$]<br>
+[$]H_1(X) \, = \,   (\frac{X- \mu}{\sigma})[$]<br>
+[$]H_2(X) \, = \, {(\frac{X- \mu}{\sigma})}^2 \, - 1[$]<br>
+[$]H_3(X) \, = \, {(\frac{X- \mu}{\sigma})}^3 \, - 3 {(\frac{X- \mu}{\sigma})}[$]<br>
+[$]H_4(X) \, = \, {(\frac{X- \mu}{\sigma})}^4 \, - 6 {(\frac{X- \mu}{\sigma})}^2 \, +3[$]<br>
+<br>
+<br>
+Now we want to fix first few moments to our  proposed probability distribution so that all the moments are perfectly matched (a good property as I mentioned earlier would be that adding further higher moments would not change our lower moments that have already been matched).<br>
+<br>
+The proposed probability distribution has a very simple form (upto sixth order) as<br>
+<br>
+[$] q(X) \, = \, p(X) \, \big[ \, 1 \, + \, h_1 \, H_1(X)+ \, h_2/2 \, H_2(X)+ \, h_3/6 \, H_3(X)+ \, h_4/24 \, H_4(X)+ \, h_5/120 \, H_5(X)+ \, h_6/720 \, H_6(X) \, \big]  \, [$]<br>
+<br>
+here [$]h_1[$] , [$]h_2[$] etc are coefficients of hermites that will be adjusted to match the moments of above probability density form to our desired moments. <br>
+1st thing we know by inspection that above probability density equation integrates to one since all hermites (other than the first term) have an expected value of zero when integrated over normal density.<br>
+Now we write the first few raw moments of the above equation that can be verified by full-fledged integration(as I have done in my notes)<br>
+<br>
+[$]E[X]\,= \int_{-\infty}^{+\infty}  X \, q(X) dX \, = \mu \, + \, h_1 \, \sigma[$]<br>
+[$]E[X^2]\,= \int_{-\infty}^{+\infty}  X^2 \, q(X) dX \, = \, {\mu}^2 + 2 \, h_1 \mu \sigma + \, {\sigma}^2 \, + \, h_2 \, {\sigma}^2 \,[$]<br>
+[$]E[X^3]\,= \int_{-\infty}^{+\infty}  X^3 \, q(X) dX \, = \, {\mu}^3 + 3 \, h_1 {\mu}^2 \sigma  + 3  \mu {\sigma}^2 + 3 h_2 \, \mu {\sigma}^2 + \, 3 h_1 \, {\sigma}^3 \, \, + \, h_3 \, {\sigma}^3 \,[$]<br>
+[$]E[X^4]\,= \int_{-\infty}^{+\infty}  X^4 \, q(X) dX \, = \, {\mu}^4 + 4 \, h_1 {\mu}^3 {\sigma}  + 6  {\mu}^2 {\sigma}^2 + 6 h_2 \, {\mu}^2 {\sigma}^2 + \, 12 h_1 \, \mu \, {\sigma}^3 \, \, +4 \, h_3 \, \mu \,  {\sigma}^3 \,+ 3 \, {\sigma}^4 \, +6 \, h_2 \, {\sigma}^4 \, + \, h_4[$]<br>
+[$]E[X^5]\,= \int_{-\infty}^{+\infty}  X^5 \, q(X) dX \, =  \, {\mu}^5 + 5 \, h_1 {\mu}^4 {\sigma}  + 10  {\mu}^3 {\sigma}^2 + 10 h_2 \, {\mu}^3 {\sigma}^2 + \, 30 h_1 \, {\mu}^2 \, {\sigma}^3 \, \, +10 \, h_3 \, {\mu}^2 \,  {\sigma}^3 \,[$]<br>
+[$]+ 15 \, \mu  {\sigma}^4 \, +30 \, h_2 \, \mu {\sigma}^4 \, +5 \, h_4 \, \mu {\sigma}^4 + 15 h_1 {\sigma}^5  + 10 h_3  {\sigma}^5 \, + \, h_5 \,  {\sigma}^5[$]<br>
+[$]E[X^6]\,= \int_{-\infty}^{+\infty}  X^6 \, q(X) dX \, = <br>
+ \, {\mu}^6 + 6 \, h_1 {\mu}^5 {\sigma}  + 15  {\mu}^4 {\sigma}^2 + 15 h_2 \, {\mu}^4 {\sigma}^2 + \, 60 h_1 \, {\mu}^3 \, {\sigma}^3 \, \, +20 \, h_3 \, {\mu}^3 \,  {\sigma}^3 \,[$]<br>
+[$]+ 45 \, {\mu}^2  {\sigma}^4 \, +90 \, h_2 \, {\mu}^2 {\sigma}^4 \, +15 \, h_4 \, {\mu}^2 {\sigma}^4 + 90 h_1 \, \mu {\sigma}^5  + 60 h_3 \, \mu {\sigma}^5 \, + 6 \, h_5 \,  \mu {\sigma}^5 \, + 15 \, {\sigma}^6 \,\, + 45 \, h_2 {\sigma}^6 \, + 15 \, h_4 {\sigma}^6 \, + \, h_6 \, {\sigma}^6 \,[$]<br>
+<br>
+So we see that we can keep on adding more hermite polynomials to fix higher moments and it will not alter our lower moments. However higher odd/even moments take a contribution from hermite polynomial terms associated with lower odd/even moments(that have already been fixed) up to the order of moment being calculated.<br>
+<br>
+Though I posted some programs to calculate densities from central moments or cumulants, we can notice that changing mean/variance of base gaussian also have a great effect towards the shape of new density and fixing first six moments with different base gaussians can results in different densities though first few moments would still be matched. I think it has to be further studied by friends how to systematically choose the parameters of base gaussian towards the best matching density. Sometimes, density becomes slightly negative for parameters of base gaussian but becomes perfectly positive when parameters of base gaussian are slightly changed.</div>
+
+			
+									
+									<div id="sig870959" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p870994">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile870994">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content870994">
+
+			<h3 ><a href="#p870994">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=870994&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p870994" title="Post #1485">#1485</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">July 11th, 2022, 12:05 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I tried working on finding a Z-series representation of a general density when its moments are given. But I might be making a mistake and I could not get it right. I really think my ideas are sound but I might possibly be making some mistake. I will try again in a day or two and see how it goes.<br>
+I have not been able to work well and only started working yesterday and slightly came out of the effect of the antipsychotic injection. I had basically been wasting time all along before this.<br>
+I will check my work for accuracy again and also try alternatives. I will come back to friends in another two or three days.</div>
+
+			
+									
+									<div id="sig870994" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;a4dad82c4dda9370cdb72a3a2f520a4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1440" role="button">97</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" role="button">98</a></li>
+							<li class="active"><span>99</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" role="button">100</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1500" role="button">101</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1470&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;a4dad82c4dda9370cdb72a3a2f520a4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1440" role="button">97</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1455" role="button">98</a></li>
+							<li class="active"><span>99</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" role="button">100</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1500" role="button">101</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b&amp;start=1485" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1470&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=a4dad82c4dda9370cdb72a3a2f520a4b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=a4dad82c4dda9370cdb72a3a2f520a4b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#78191c151116380f111415170c0c561b1715">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>99</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=a4dad82c4dda9370cdb72a3a2f520a4b";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=a4dad82c4dda9370cdb72a3a2f520a4b";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2df95d9de7c1","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

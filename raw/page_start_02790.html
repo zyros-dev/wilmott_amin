@@ -1,0 +1,3760 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 187 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=f76bb4f369ad49a095737e73e606f6c2" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=f76bb4f369ad49a095737e73e606f6c2?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=f76bb4f369ad49a095737e73e606f6c2?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=f76bb4f369ad49a095737e73e606f6c2?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2790" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="f76bb4f369ad49a095737e73e606f6c2" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=f76bb4f369ad49a095737e73e606f6c2" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=f76bb4f369ad49a095737e73e606f6c2" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="f76bb4f369ad49a095737e73e606f6c2" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=f76bb4f369ad49a095737e73e606f6c2" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=f76bb4f369ad49a095737e73e606f6c2"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=f76bb4f369ad49a095737e73e606f6c2"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=f76bb4f369ad49a095737e73e606f6c2" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2790%26t%3D99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2790&amp;t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" />
+<input type="hidden" name="creation_time" value="1768907948" />
+<input type="hidden" name="form_token" value="c6d9e2c175bfee5b23a8972cf2166cc5cb38261d" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2790&amp;sid=f76bb4f369ad49a095737e73e606f6c2">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2790&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="f76bb4f369ad49a095737e73e606f6c2" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f76bb4f369ad49a095737e73e606f6c2" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2760" role="button">185</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" role="button">186</a></li>
+							<li class="active"><span>187</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" role="button">188</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2820" role="button">189</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p889113">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889113">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889113">
+
+			<h3 class="first"><a href="#p889113">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889113&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889113" title="Post #2791">#2791</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 6:40 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I did not do any work yesterday as I was very down. I have started to work today but my programs do not work right again. I will try to do micro-analysis to find out any sources of error or changes they might have made. This is so unbelievable since my iterative programs were working so well and I was very enthusiastic. They never stopped converging even though close to optimum, the convergence speed might be slow. But now they do not converge at all. They do not make a single successful iteration.<br>
+<br>
+Friends, I have enough talent and understanding of the research I have done and I have no qualms about working hard and sharing my research with friends all over the world especially in US. There are many very intelligent people in probability theory and finance and I do not want to make any tall claims but it will take other researchers a lot of time on the scale of large number of months or years to get perfectly oriented with everything and then do great research. As I have continued to work with many ideas right from the start, I have a better orientation with the associated problems. I know nobody in this world is indispensable and the world would always move on. But I am determined to do good work and I would continue to share it with friends and I have very good orientation with the related problems and also very good ideas how to advance my research and take it to multiple dimensions. But, in order for me to work hard, friends would have to convince American defense to not alter my programs. I want to continue to do good work and better research and keep sharing it with friends. <br>
+<br>
+I want to tell good Jews that I take no pleasure in bashing bad jews and exposing their antics, if my mind control ends and I am allowed to work on my research, I will stop any new mention of jews. I just want to concentrate on my research and try to do good work. Whenever I write a post against bad Jews, it is because something very wrong is done with me by mind control agents backed by bad jews. There were many times I decided to never mention anything about Jews and concentrate plainly on my work only to be grossly abused and then I had to write against the bad Jews.</div>
+
+			
+									
+									<div id="sig889113" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p889114">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889114">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889114">
+
+			<h3 ><a href="#p889114">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889114&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889114" title="Post #2792">#2792</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 8:10 am</span></p>
+			
+			
+			
+			<div class="content">Friends, during past four or five days, they have been giving me huge pain in my heart since they pull neurotransmitters associated with working of heart. A few days ago, I had also told friends about milk that caused instant pain in my heart when I drank it. They have been giving me huge pain again and again during past few days. And now I have become so sensitive that when I cough, I have serious pain in my heart. Friends, I continue to beg the mind control guy to not block neurotransmitters associated with my heart but they continue to do that and it causes sheer pain and strong uneasiness in my heart. <br>
+<br>
+I have become a big problem for many corrupt people and they want my early death so that all the thing goes away.</div>
+
+			
+									
+									<div id="sig889114" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889117">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889117">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889117">
+
+			<h3 ><a href="#p889117">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889117&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889117" title="Post #2793">#2793</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 2:13 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">An Old Post:</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Question: Is US a true democracy or a democratic tyranny? How do you see it?</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Friends, I want to speak my mind more openly and candidly about evil of mind control and please forgive me if I lose political correctness while trying to speak the truth. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">First please let me give an idea about scope of mind control by corrupt American defense. In my country Pakistan, anywhere between 500 to thousand intelligent people have been retarded by mind control and most of these were very talented programmers or programmer entrepreneurs who wanted to do something extremely innovative. Therefore, I call the previous decade, the lost decade of Pakistan. Talented People in many other countries like Malaysia were retarded with even a greater zeal. It is not the Muslim countries only where large number of people are retarded, mind control is actively done in a large number of European countries. Some countries like Switzerland proudly refused to allow mind control on their soil, and their GDP has already greatly diverged from the GDP of a large number of other technologically advanced European countries who allowed American defense to implement mind control on their soil. For example, large number of French continue to wonder why despite all the good education, talent and great mathematics and CS, their country is lagging far behind other countries with similar standards. America is no different and I strongly believe that at least 50 non-Jewish Americans have been stopped in their tracks by American defense using mind control who would have later gone on to become billionaires. Thousands of people, mostly in US, are retarded by American defense every year. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Mind control is a very cruel practice (I will add another post after this post giving some sample of cruelties done to me that are also freely done to most other mind control victims.) I have mentioned many times that a Jewish billionaire and his cohort of some rich Jews is behind most of the mind control in United States. Please do not confuse my blaming the jewish billionaire and his rich cohort for mind control with saying that all Jews are bad ( I have not made this statement about all Jews) However I do honestly believe that a large number of jews are complicit in this crime because they know the truth behind it and still remain silent about it and do not oppose it. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Going before the history of mind control, I believe that many rich jews had realized more than fifty years ago that they need great relationship with American defense in order to protect the state of Israel and its interests in the region. Over time, this relationship became a symbiotic relationship in which officials in American defense protected Jewish interests and Jews gave them lavishly paid jobs after their retirement. This might still not be a very wrong thing but after advances in science and advent of mind control, many bad jews realized its potential to advance their interests, right or wrong, by using their already strong control over American defense. Since mind control is a very cruel thing and most Americans when told about horrors, cruelty and torture associated with mind control, strongly want mind control to end but you will notice that a large number of (evil) jews staunchly oppose any end to cruelty of mind control and would vehemently lobby for mind control to continue at all cost.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Several Countries I mentioned earlier were made barren of their talent by American defense since evil Jews wanted to undermine these countries without any human feelings for extreme poverty in countries like Pakistan. Scientific research of a lot of European and non-Jewish talent retarded was handed to those people who back American defense and are symbiotically related to it.</span><br>
+<br>
+<span style="font-size: 120%; line-height: normal"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><strong>A democracy is defined by rule of law, and rights of individuals in a democracy are protected by constitution and upheld by democratic institutions and Judiciary. No individual, however rich or powerful, can extrajudicially hurt anyone innocent and law-abiding in a true democracy.  As opposed to democracy, a tyranny is where innocent individuals are wronged above the law by powerful people employing cruel means. Therefore I have come to this judgment that America is not a democracy, it is a democratic tyranny. Why? in a true democracy, nobody, not even American president, can decide to wrong anyone who is an innocent and a law-abiding individual. This simply does not happen in true democracies. On the other hand, American defense, as if America were a country like Burma, Pakistan or Cambodia, cruelly retards thousands of Americans and extra-judicially seals their fate forever. Armies in a democracy are simply not supposed to meddle in civilian affairs of a country. Would this not be a great hypocrisy that when Chinese Army meddles in the affairs of Chinese civilians, we all recall that a true democracy is the solution to the problem of Chinese people, but when American army goes on rampage to retard thousands of Americans every year and makes entire countries barren on whims of powerful jewish billionaire and his cohort, no American newspaper cares to write about it. I want to tell all the great writers and columnists in large newspapers of US that true patriotism does  not lie in whining about ills of Chinese government, rather true patriotism is about writing strongly about ills of your own country and eradicating them from the society and its future generations forever. </strong></span></span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I want to say again that true democracies do not give  even to the most powerful and the richest people, the rights to wrong any innocent and law-abiding citizen however weak or poor. And I am surprised, after all the cruelty of mind control has been exposed and it is clear that most American public other than bad jews want to end mind control from their country forever, why president Biden does not order American defense to end mind control cruel practice forever. Most sensitive and kind-hearted American people and others shudder from the idea of mind control continuing in their society. Most of them would have thought that President Biden would be one of the first people who would shudder from cruelty of mind control when truth is told to him about it by a lot of good Americans and would order American defense to end mind control of innocent human beings forever. But the fact that this is simply not happening sends wrong signals about President Biden to good Americans. According to my understanding, any guy who has enough humanity and has a kind heart would do everything in their power to end cruel practices like mind control and eradicate them from the society forever. I want to request anybody around President Biden to convince him to end mind control in United States and elsewhere forever. I want American president to make the right decision for American people whether he wants to make America like a third world military tyranny or a truly advanced society that is epitome of human civilization and leads the world in her democratic practices and ideals. We cannot judge him properly since we lack the complete foresight  but history will truly judge him if he was one of the great American presidents or otherwise.</span></div>
+
+			
+													<div class="notice">
+					Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a> on September 30th, 2025, 2:38 pm, edited 1 time in total.
+									</div>
+			
+									<div id="sig889117" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889118">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889118">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889118">
+
+			<h3 ><a href="#p889118">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889118&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889118" title="Post #2794">#2794</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 2:22 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I want to congratulate Americans on choosing former president Donald Trump as their president again. Even though many of us are worried about climate change, we have to completely amicably accept the decision of broader American people since that is how democracies are supposed to work. Even though many of us might differ with conservatives on many issues, most of them are very patriotic people (sometimes even more so than democrats) and good human beings. Again one thing is sure that for good of American people and for good of rest of the world, all of us would have to work with new president and his administration.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">For two decades, I have been writing against mind control of tens of thousands of totally innocent people and I hope that new president Donald Trump would end this evil practice from United States and from rest of the world forever. I want to firmly tell people that even though I have repeatedly alleged connivance between American defense and a rich Jewish billionaire and his rich cohort to perpetrate mind control of innocent people, I have nothing against good jews. Just like anybody else, I want them to work hard and become successful or billionaires or anything beyond that by doing the right and good things in this world. And there are some jewish billionaires who are embodiment of that and I totally respect them. And I want people to completely respect all good jews who are good human beings regardless of their wealth or status. My fight is not with jews but against cruel practice of mind control of ordinary innocent civilians. I do own that I have been attacking a billionaire jewish billionaire and his rich jewish cohort but it is solely due to their exceptional cruelty of starting mind control of tens of thousands of innocent people and I must not remain silent about it. My criticism would have been exactly the same if it were some other group or cohort of people associated with any other religion or ideology. I must say again that I might not have been careful everywhere to point out and there have been times when I might have unduly criticized Jews due to emotions and agony related to my helplessness, misery, and suffering but again and again, repeatedly, I have almost always continued to stress that I have absolutely nothing against jews who are good human beings and I want them to be as successful as they can and I wish well for them and want everyone to give great respect to good jews who wish well for others (including non-jews) in the society and hold no baseless prejudices.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">And I have always criticized American defense as being a corrupt puppet of rich jewish cohort when it comes to mind control. I want to step back here and tell good American people that even more than American defense I criticize corrupt Army of my country that takes a sacred oath to protect the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> and not meddle in politics but all of them without exception break this oath and continue to interfere in politics and make puppets out of politicians and dictate decisions to higher courts of law. The generals of the very same Pak army are the ones who manage mind control of innocent and intelligent Pakistani citizens on behest of CIA since they are given hundreds of millions of dollars in return by CIA every year. Our army is a very corrupt and unprofessional army. The case of American army is quite similar but not in every domain. It is that in every country with big army, there are unseen (and unwritten) political, cultural and other barriers (that exist in the mind of people) and corrupt armies usually do not dare to cross these barriers. For example, in our country with very little unwritten barriers, our army does almost everything wrong and illegal but still does not completely occupy the government due to possible backlash from people. These unwritten barriers are very different in our backward country that has remained under army dictatorship for most of the time and in united states where people have maintained a strong democracy and political rule for most oft the time. As an example, US defense retards thousands of Americans every year with mind control most of them on insistence of rich jewish cohort and have cumulatively retarded several hundred thousands of intelligent people all across the world with a very high percentage of them in America. This has absolutely no constitutional basis and even president of United states cannot suggest to american defense  to retard anyone. Just a few days ago before the American elections, on linkedin, I saw one of the top American generals boasting that they were supposed to follow their oath to protect the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> and not to any single human being. This boasting is no different than the similar boasting by Pakistan army generals. American army equally breaks the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> but in different domain. American army has illegally installed thorough infrastructure for total mind control of any arbitrary individual by EM waves all over urban United States even though mind control is a cruel and illegal practice that American </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> does not allow at all. So much so for the grand boastings of allegiance to </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> by American army generals.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">So I say again that I have been vocally criticizing Bad Jews and American defense but please do respect every professional person in your army and every good jew in your social circle. My criticism is aimed at cruel, inhuman, illegal and extra-constitutional practices and bad actors behind those practices, and it is not against any religion or general group of people. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Coming to the point, I want to tell friends that bad actors who are behind cruel mind control will start machinating to find people in close circle of newly elected president to make sure and lobby for illegal mind control to continue. This is what happens when a new president is chosen. I really want to request all good people to please do the exact opposite and try to find genuinely patriotic people in trump's close circle and explain to them how some rich jews are forcing mind control on good people right and left and convince them to strongly lobby to end mind control forever. Please approach respectable, towering and patriotic conservative Americans in academia to suggest to new president trump to end the cruel menace of mind control forever. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Here I would like to tell people that mind control damaged my country and set us back by more than a decade. We were always a poor country so it was probably not a big deal. There were several hundred or possibly a thousand intelligent people who were retarded by connivance of CIA and pak army on insistence of bad jews. On the other hand tens of thousands of intelligent people were retarded in United States and I make this claim that US was set back by at least five years but nobody could tell as US was even otherwise a very prosperous and rich country. On the other hand, there is no mind control in countries like China where every intelligent person works totally unfettered. What I mean to say that these American generals who are boasting their allegiance to </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> are biting the very hand that feeds them. If US want to compete with China, power and potential of intelligent people has to be unleashed and not controlled by mind control of tens of thousands of innocent people that has already damaged the country by costing it the progress of at least five years.</span></div>
+
+			
+									
+									<div id="sig889118" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889119">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889119">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889119">
+
+			<h3 ><a href="#p889119">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889119&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889119" title="Post #2795">#2795</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 2:31 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Is Mind Control a Legal Practice or is it Completely Illegal?</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Americans should ask their Supreme Court to make a judgement and clearly outline whether extra-judicial mind control and forever retarding of innocent civilians by American defense can be authorized by American </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">. Can American defense ever be allowed to retard even one innocent and law abiding human being (let alone thousands of them that are retarded by American defense every year) by American Supreme Court. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">American government very cleverly continued to officially (aka continued to brazenly lie about its existence) deny the existence of any mind control program for decades. Only after mind control has taken root in the society and a practice of bowing of ordinary civilians before the army and secret services has taken hold in the society that American defense now accepts the existence of mind control behind doors. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Again what I mean to say is that mind control of innocent people by American defense is both extra-judicial and extra-constitutional. Can a government person who has taken oath to serve American people ever allow something that is both extra-judicial and extra-constitutional to exist in United States when it is exactly in his power and under his discretion to end such extra-judicial, extra-constitutional, cruel and inhuman practices while still laying claim to love for America and her people. According to my opinion, by allowing and perpetrating extra-judicial and extra-constitutional mind control and retarding of innocent civilians, you are breaking the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> of Unites States or in other words, you are becoming a traitor to United States. </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Let us ask a question. Can a high government official or American president decide to allow extra-judicial or extra-constitutional practices in United States? Is such a government official not overstepping his authority when he allows extra-judicial and extra-constitutional practices? Is there any check and balance on such acts and practices of breaking the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> of United States.    </span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">American </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> was very carefully designed by forefathers of United States and all civil and individual liberties very clearly protected in it with their great wisdom. Consequences of implicitly breaking the </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> and letting such practices take root in the society can be extremely high especially for new and later generations when such extra-judicial and extra-constitutional practices would become an accepted norm in the society. Once you let the camel in the tent, Camel kicks you out of the tent and takes control of the tent. The act of providing justice cannot be left to armies in any reasonably civilized society. Please, stop the implicit breaking of the US </span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">constitution</span><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"> otherwise  everyone in the society would probably become vassals to rich and powerful billionaires who would be orchestrating mind control of all of those ordinary citizens who have the courage to disagree with rich and powerful as has already started to brazenly happen in American society. </span></div>
+
+			
+									
+									<div id="sig889119" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889120">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889120">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889120">
+
+			<h3 ><a href="#p889120">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889120&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889120" title="Post #2796">#2796</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">September 30th, 2025, 3:02 pm</span></p>
+			
+			
+			
+			<div class="content">"<strong><span style="font-size: 120%; line-height: normal"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">A democracy is defined by rule of law, and rights of individuals in a democracy are protected by constitution and upheld by democratic institutions and Judiciary. No individual, however rich or powerful, can extrajudicially hurt anyone innocent and law-abiding in a true democracy.  As opposed to democracy, a tyranny is where innocent individuals are wronged above the law by powerful people employing cruel means. Therefore I have come to this judgment that America is not a democracy, it is a democratic tyranny. Why? in a true democracy, nobody, not even American president, can decide to wrong anyone who is an innocent and a law-abiding individual. This simply does not happen in true democracies. On the other hand, American defense, as if America were a country like Burma, Pakistan or Cambodia, cruelly retards thousands of Americans and extra-judicially seals their fate forever. Armies in a democracy are simply not supposed to meddle in civilian affairs of a country. Would this not be a great hypocrisy that when Chinese Army meddles in the affairs of Chinese civilians, we all recall that a true democracy is the solution to the problem of Chinese people, but when American army goes on rampage to retard thousands of Americans every year and makes entire countries barren on whims of powerful jewish billionaire and his cohort, no American newspaper cares to write about it. I want to tell all the great writers and columnists in large newspapers of US that true patriotism does  not lie in whining about ills of Chinese government, rather true patriotism is about writing strongly about ills of your own country and eradicating them from the society and its future generations forever. "</span></span></strong><br>
+<br>
+I must admit that there is enough difference since if I were in China and saying this about Chinese government, I might have been practically silenced but there are enough strong ideological humans in Western countries who have stood to safeguard my freedom of speech and allow me to write on this forum as long as it is not illegal (against the law). Though I have been punished again and again for speaking boldly through Pakistan army and pakistani psychiatrists acting as proxies of American defense and who continuously declare me schizophrenic since I expose mind control of American army. The difference is not in armies as I do not consider American defense any better than Chinese army at all. Rather the difference is in strong willed patriotic individuals in western countries who have tried to safeguard underlying principles of their democracies and tried to take a stand to end undemocratic practices from their countries.  </div>
+
+			
+									
+									<div id="sig889120" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889126">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889126">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889126">
+
+			<h3 ><a href="#p889126">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889126&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889126" title="Post #2797">#2797</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 1st, 2025, 12:03 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I started to work again and tried many of my programs but none of them seem to work properly even for benign parameters. I think that black sheep in US defense that I have exposed are extremely upset and do not want me to do any research anymore since when I do good research, there are enough people who read my writings on my thread and sympathise with me and thousands of innocent victims like me. This upsets the cruel hyenas in US defense who are adamant on continuing mind control of innocent people to please the rich and evil  jewish cohort (jewish riders of scumbag horses). And therefore they are doing all they can to stop my further research and are altering all my programs.<br>
+<br>
+Friends, I am not going to be distracted by the machinations of these scumbags. I will continue to work and think about the problem and try to think of new solutions and continue to see how I can keep working on my research. <br>
+<br>
+I will surely post some of the latest programs in the evening today with comments so friends who have followed my research would be able to play with them and add them to their existing programs.<br>
+<br>
+Friends, I want to mention even though I continue to criticize and mock morons of American defense, I do believe that American people are some of the greatest people on earth and most of them are very good (and nicest) human beings. As Reagan famously said in his last speech in white house that America is last best hope of man on earth and I firmly believe in that and I am proud that I have played a little part towards continuing greatness of this formidable nation into the future. By making noise about bad things that could hurt the  future of this great nation.</div>
+
+			
+									
+									<div id="sig889126" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889129">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889129">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889129">
+
+			<h3 ><a href="#p889129">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889129&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889129" title="Post #2798">#2798</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 1st, 2025, 6:56 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, posting the iterative optimization program quickly. Will post everything with comments and auxiliary functions again tomorrow.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [YCoeffZZ,ObjFunc] = ZSeriesCoeffsFromCrossMomentsIterative2D(YCoeffZZ,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D)
+
+
+%This program computes coeffs of Z-series when values of raw moments are
+%given using Iterative method. 
+
+%rMu are raw moments;
+%c0,c are coeffs of Z-series to be found and when passed as parameters
+%contain starting guess for Z-series coeffs.
+%Series order is max coefficient of c. Here it is 7;
+%Nmoments are maximum number of moments to use in calibration. Here this
+%number is eight.
+%The following relationship holds
+%SeriesOrder=NMoments-1
+%Total number of Iterations of the iterative method are given by input 
+%parameter iterations.
+%The present program is written for SeriesOrder=7.
+%To later it, you need to change the following line everywhere in program accordingly
+%c0in=-(cin(2)+3*cin(4)+15*cin(6));
+%If you change to SeriesOrder=10, the above line would change to
+%c0in=-(cin(2)+3*cin(4)+15*cin(6)+105*c(8));
+%If you change to SeriesOrder=6, the above line would change to
+%c0in=-(cin(2)+3*cin(4));
+
+
+
+% You can run the program by decommenting the following block if you are
+% not using Input parameters of yours. 
+% % 
+% rMu(1)=0.000012499863483*10^5;   
+% rMu(2)=0.000021197093700*10^5;
+% rMu(3)=0.000050274347857*10^5;
+% rMu(4)=0.000171368317209*10^5;
+% rMu(5)=0.000856094970826*10^5;
+% rMu(6)=0.006320436615909*10^5;
+% rMu(7)=0.068698344472325*10^5;
+% rMu(8)=1.084082326087001*10^5;
+% % 
+%  c0=0;
+%  c(1)=1;
+%  c(2:7)=0;
+% % 
+  SeriesOrder=6;  %Z-series till 7th power.
+% % 
+ NMoments=6;
+ Order=5;
+ 
+ [YMoments]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6);
+% 
+%Iterations=1000;
+
+    
+mOrder=NMoments;         %Number of raw moments in calibration.      
+
+
+        [MeanZZ,VarZZ] = CalculateMeanAndVarOf2DZSeriesY(YCoeffZZ,Order,Order);
+        VarZZ=VarZZ-MeanZZ.^2;
+        VarIn=YMoments(2)-YMoments(1).^2;
+        YCoeffZZ=YCoeffZZ.*sqrt(VarIn/VarZZ);
+        [YCoeffHH] = ConvertZSeriesToHermiteSeries2D(YCoeffZZ,Order+1,Order+1);
+        YCoeffZZ(1,1)=YCoeffZZ(1,1)+YMoments(1)-YCoeffHH(1,1);
+
+
+
+
+
+
+%%%%Standardize the Raw Moments
+
+                  %Find central Moments from raw moments  
+% [Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+%                   %Find standardized Moments from central moments  
+% sMu(1)=0;
+% sMu(2)=1;
+% sMu(3)=cMu(3)/cMu(2).^1.5;
+% sMu(4)=cMu(4)/cMu(2).^2.0;
+% sMu(5)=cMu(5)/cMu(2).^2.5;
+% sMu(6)=cMu(6)/cMu(2).^3.0;
+% sMu(7)=cMu(7)/cMu(2).^3.5;
+% sMu(8)=cMu(8)/cMu(2).^4.0;
+% 
+% c(1)=1;
+% c(2:SeriesOrder)=0;
+
+%%%%%%Choose the iteration step size.
+for nn=1:SeriesOrder
+    for mm=1:SeriesOrder
+        DeltaX(nn,mm)=.00125/(factorial(nn+1))/factorial(mm+1)/2^(nn/2);
+        DeltaXMax(nn,mm)=DeltaX(nn,mm)*5;
+    end
+end
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+%%%Weights on objective function that shows fit to moments
+w2D(NMoments,NMoments)=1;
+for nn=NMoments-1:-1:1
+    for mm=NMoments-1:-1:1
+        w2D(nn,mm)=w2D(nn+1,mm+1)*(nn+1).^0*(mm+1).^0;
+    end
+end
+
+%[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+[AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,Order,Order);
+
+
+
+
+for pp1=1:Order+1
+     for qq1=1:Order+1
+         Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+         Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+     end
+    % Moments1D(pp1)=AMat((Order+1)*(Order+1)+pp1,1);
+ end
+[ObjFuncBest] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+%[ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+
+%cBest=c;
+
+ImproveFlag(1:SeriesOrder,1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder,1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder,1:SeriesOrder)=0;
+kk=0;
+while ((kk&lt;MaxIter)&amp;&amp;(ObjFuncBest&gt;1))
+kk=kk+1;    
+    %We only iteratively alter c(2:7), first and second moments are
+    %retrieved automatically in our set up
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+        if((nn==1)&amp;&amp;(mm==1))
+            ;
+        else
+            
+        ImproveFlagPrev(nn,mm)=ImproveFlag(nn,mm);
+        
+        
+        YCoeffZZnew=YCoeffZZ;
+        YCoeffZZnew(nn,mm)=YCoeffZZnew(nn,mm)+DeltaX(nn,mm);
+        %cin(nn)=cin(nn)+DeltaX(nn);
+        %c0in=-(cin(2)+3*cin(4)+15*cin(6));
+        
+        [MeanZZ,VarZZ] = CalculateMeanAndVarOf2DZSeriesY(YCoeffZZnew,Order,Order);
+        VarZZ=VarZZ-MeanZZ.^2;
+        VarIn=YMoments(2)-YMoments(1).^2;
+        YCoeffZZnew=YCoeffZZnew.*sqrt(VarIn/VarZZ);
+        [YCoeffHHnew] = ConvertZSeriesToHermiteSeries2D(YCoeffZZnew,Order+1,Order+1);
+        YCoeffZZnew(1,1)=YCoeffZZnew(1,1)+YMoments(1)-YCoeffHHnew(1,1);
+        
+        
+        [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+        for pp1=1:Order+1
+            for qq1=1:Order+1
+                Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+            end
+            % Moments1D(pp1)=AMat((Order+1)*(Order+1)+pp1,1);
+        end
+        [ObjFunc1] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+        
+        if(ObjFunc1&lt;ObjFuncBest)
+            
+            ObjFuncBest=ObjFunc1;
+            
+            YCoeffZZ=YCoeffZZnew;
+            %c=cin;
+            ImproveFlag(nn,mm)=1;
+            
+        else
+            
+            YCoeffZZnew=YCoeffZZ;
+            YCoeffZZnew(nn,mm)=YCoeffZZnew(nn,mm)-DeltaX(nn,mm);
+            
+            
+        [MeanZZ,VarZZ] = CalculateMeanAndVarOf2DZSeriesY(YCoeffZZnew,Order,Order);
+        VarZZ=VarZZ-MeanZZ.^2;
+        VarIn=YMoments(2)-YMoments(1).^2;
+        YCoeffZZnew=YCoeffZZnew.*sqrt(VarIn/VarZZ);
+        [YCoeffHHnew] = ConvertZSeriesToHermiteSeries2D(YCoeffZZnew,Order+1,Order+1);
+        YCoeffZZnew(1,1)=YCoeffZZnew(1,1)+YMoments(1)-YCoeffHHnew(1,1);
+        
+        
+        
+        [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+        for pp1=1:Order+1
+            for qq1=1:Order+1
+                Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+            end
+            % Moments1D(pp1)=AMat((Order+1)*(Order+1)+pp1,1);
+        end
+        [ObjFunc2] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+            if(ObjFunc2&lt;ObjFuncBest)
+  
+                ObjFuncBest=ObjFunc2;
+                YCoeffZZ=YCoeffZZnew;
+                %c=cin;
+                ImproveFlag(nn,mm)=-1;
+            else
+                 ImproveFlag(nn,mm)=0;
+            end
+        end
+        
+    %Index(nn)    
+        end
+        end
+    end
+    
+    if(rem(kk,1)==0)
+    kk
+    ObjFunc1
+    ObjFunc2
+    ObjFuncBest
+    DeltaX
+    ImproveCount
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+       if(ImproveFlag(nn,mm)==0)
+           DeltaX(nn,mm)=DeltaX(nn,mm)*.88;
+           %ImproveFlag0=1;
+       end
+       if((ImproveFlag(nn,mm)==1)||(ImproveFlag(nn,mm)==-1))
+           DeltaX(nn,mm)=DeltaX(nn,mm)*1.1;
+           %ImproveFlag0=1;
+       end
+       
+       if(DeltaX(nn,mm)&gt;DeltaXMax(nn,mm))
+           DeltaX(nn,mm)=DeltaXMax(nn,mm);
+       end
+        end
+    end
+    %for nn=2:SeriesOrder
+    %    for mm=1:SeriesOrder
+    %    if(ImproveFlag0==0)
+    %        DeltaX(nn)=DeltaX(nn)*.88;
+    %    end
+    %end    
+   
+end
+
+ObjFunc=ObjFuncBest;
+%c=cBest;
+%c0=-(c(2)+3*c(4)+15*c(6));
+%[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+%Moments
+%sMu
+
+%str=input("Look at comparison of Standardised model moments and Standardized target moments")
+
+
+% c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+% c=c*sqrt(cMu(2));   %convert from standardized to central moments
+% 
+% c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+% 
+% 
+% [Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments)
+% rMu
+% 
+% str=input("Look at comparison of model raw moments and target raw moments")
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [MeanZZ,VarZZ] = CalculateMeanAndVarOf2DZSeriesY(YCoeffZZ,OrderY,OrderX)
+
+[EZ] = EZZ2();
+
+
+
+EX=0;
+for nn1=1:OrderY
+    for nn2=1:OrderX
+        EX=EX+YCoeffZZ(nn1,nn2).*EZ(nn1).*EZ(nn2);
+    end
+end
+
+MeanZZ=EX;
+
+SeriesOrder10=OrderY+1;
+SeriesOrder01=OrderX+1;
+SeriesOrder20=OrderY+1;
+SeriesOrder02=OrderX+1;
+
+  SeriesOrder30=SeriesOrder10+SeriesOrder20-1;
+  SeriesOrder03=SeriesOrder01+SeriesOrder02-1;
+% %  
+% %  %Below calculate the product: 2D product of Z-series [Y|X](Zy,Zx)*X(Zx)
+  [YpCoeff(1:SeriesOrder30,1:SeriesOrder03),EYp] =SeriesProduct2DAlgorithmicNew(YCoeffZZ(1:SeriesOrder10,1:SeriesOrder01),YCoeffZZ(1:OrderX+1,1:OrderY+1),SeriesOrder10,SeriesOrder01,SeriesOrder20,SeriesOrder02);
+    
+ VarZZ=EYp;
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [cHnm] = ConvertZSeriesToHermiteSeries2D(bnm,SeriesOrder10,SeriesOrder01)
+
+%[Hz] = HermitePoly(Order);
+[Hz] = HermitePoly(max(SeriesOrder01,SeriesOrder10));
+
+
+for mm=SeriesOrder01:-1:1
+    for nn=1:SeriesOrder10
+        cnm(nn,mm)=bnm(nn,mm);
+        if((mm-1)&gt;0)
+            bnm(nn,1:mm-1)=bnm(nn,1:mm-1)-cnm(nn,mm).*Hz(mm,1:mm-1);
+        end
+    end
+end
+    
+for mm=1:SeriesOrder01
+    bb(1:SeriesOrder10)=cnm(1:SeriesOrder10,mm);
+    [cH] = ConvertZSeriesToHermiteSeries1D(bb,SeriesOrder10);
+    cHnm(1:SeriesOrder10,mm)=cH(1:SeriesOrder10);
+end
+
+end</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,OrderY,OrderX)
+
+NMomentsY=OrderY+1;
+NMomentsX=OrderX+1;
+
+YpCoeff(1:(OrderY+1)*(OrderY+1),1:(OrderX+1)*(OrderX+1),1:OrderY+1)=0.0;
+
+%YpCoeff(1:Order+1,1:Order+1,1)=YCoeffZZ(1:Order+1,1:Order+1);
+
+XqCoeff0(1:(OrderX+1)*(OrderX+1),1:OrderX+1)=0;
+
+XqCoeff(1:1,1:(OrderX+1)*(OrderX+1),1:OrderX+1)=0;
+
+AMat(1:(OrderY+1)*(OrderX+1),1)=0.0;
+
+%DMat(1:(OrderY+1)*(OrderX+1),1:(OrderY+1)*(OrderX+1))=0.0;
+
+%Ypq1Coeff(1:(Order+1)*(Order+1),1:2*(Order+1)*(Order+1))=0.0;
+
+
+SeriesOrder10=OrderY+1;
+SeriesOrder01=OrderX+1;
+SeriesOrder20=OrderY+1;
+SeriesOrder02=OrderX+1;
+
+YpCoeff(1:OrderY+1,1:OrderX+1,1)=YCoeffZZ(1:OrderY+1,1:OrderX+1);
+
+
+for pp=2:NMomentsY
+
+  SeriesOrder30=SeriesOrder10+SeriesOrder20-1;
+  SeriesOrder03=SeriesOrder01+SeriesOrder02-1;
+% %  
+% %  %Below calculate the product: 2D product of Z-series [Y|X](Zy,Zx)*X(Zx)
+  [YpCoeff(1:SeriesOrder30,1:SeriesOrder03,pp),EYp(pp)] =SeriesProduct2DAlgorithmicNew(YpCoeff(1:SeriesOrder10,1:SeriesOrder01,pp-1),YCoeffZZ(1:OrderX+1,1:OrderY+1),SeriesOrder10,SeriesOrder01,SeriesOrder20,SeriesOrder02);
+    
+  YMoments(pp)=EYp(pp);
+  
+  SeriesOrder10=SeriesOrder30;
+SeriesOrder01=SeriesOrder03;
+SeriesOrder20=OrderY+1;
+SeriesOrder02=OrderX+1;
+  
+end
+
+
+XqCoeff0(1:OrderX+1,1)=XCoeffZ(1:OrderX+1);
+
+  SeriesOrder1=OrderX+1;
+  SeriesOrder2=OrderX+1;
+
+for qq=2:NMomentsX
+
+  SeriesOrder3=SeriesOrder1+SeriesOrder2-1;  
+  [XqCoeff0(1:SeriesOrder3,qq),EXq(qq)] =SeriesProduct1D(XqCoeff0(1:SeriesOrder1,qq-1),XqCoeff0(1:SeriesOrder2,1),SeriesOrder1,SeriesOrder2);
+
+ SeriesOrder1=SeriesOrder3;
+ SeriesOrder2=OrderX+1;
+
+end
+
+
+[EZ] = EZZ2();
+
+for pp1=1:OrderY+1
+    for qq1=1:OrderX+1
+%        DMat((pp1-1)*(Order+1)+qq1
+            ASeriesOrder10=(pp1)*OrderY+1;
+            ASeriesOrder01=(pp1)*OrderY+1; 
+            ASeriesOrder20=1;
+            ASeriesOrder02=(qq1)*OrderX+1; 
+            ASeriesOrder30=ASeriesOrder10+ASeriesOrder20-1;
+            ASeriesOrder03=ASeriesOrder01+ASeriesOrder02-1;
+            XqCoeff(1:1,1:ASeriesOrder02,qq1)=XqCoeff0(1:ASeriesOrder02,qq1);
+      %size(XqCoeff)
+      %qq1
+      %size(YpCoeff)
+      %pp1
+      %str=input("Look at sizes")
+            [TempMat,AMat((pp1-1)*(OrderX+1)+qq1,1)] =SeriesProduct2DAlgorithmicNew(YpCoeff(1:ASeriesOrder10,1:ASeriesOrder01,pp1),XqCoeff(1:ASeriesOrder20,1:ASeriesOrder02,qq1),ASeriesOrder10,ASeriesOrder01,ASeriesOrder20,ASeriesOrder02);
+
+    end
+end
+
+
+
+end
+
+</code></pre></div>
+
+.<br>
+.<br>
+.<br>
+.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [ObjMomentOut] = CalculateObjMoment2D1D(Moment2D0,Moment2D,w2D,MOrder1,MOrder2)
+
+
+MomentB=1;%Moment2D0(1,1)./Moment1D0(1);
+
+ObjMomentOut=0;
+for mm=1:MOrder1
+    for nn=1:MOrder2
+        %ObjMomentOut=ObjMomentOut+(Moment2D(nn,mm)-Moment2D0(nn,mm)).^2.*w2D(nn,mm);
+        ObjMomentOut=ObjMomentOut+(Moment2D(nn,mm)-Moment2D0(nn,mm)).^2.*w2D(nn,mm);
+        %ObjMomentOut=ObjMomentOut+((Moment2D(nn,mm)-Moment2D0(nn,mm))).^2./Moment2D0(2,2).^((nn+mm)/2).*w2D(nn,mm);
+
+    end
+end
+
+% for mm=1:MOrder1
+%     ObjMomentOut=ObjMomentOut+(Moment1D(mm)-Moment1D0(mm)).^2.*w1D(mm);
+% end
+end</code></pre></div>
+.<br>
+.<br>
+.</div>
+
+			
+									
+									<div id="sig889129" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889136">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889136">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889136">
+
+			<h3 ><a href="#p889136">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889136&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889136" title="Post #2799">#2799</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 2nd, 2025, 11:34 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I worked today on a new version of iterative optimization program. In this new program coefficients of 2D hermite series are optimized as opposed to optimization of coefficients of 2D Z-series. The program seems to work very well. <br>
+<br>
+I am a bit tired of working and want to go into the city for a few hours. I will post this new program tonight with some comments. It is a very good program and I hope that friends would really like it.<br>
+<br>
+These are levels of volatility at which earlier programs were failing. I think ultimately the densities with very high moments like lognormal density or close would have to be tackled by a 8 X 8 parameter Hermite-Series and trying to fit them on a 6X6 parameter series would not perfectly work.<br>
+<br>
+Here is a graph of conditional fit to a value of independent variable.<br>
+.<br>
+.<br>
+.<br>
+<a href="https://postimg.cc/YLYm2rRK" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/7hQ1VbT6/YHermite-Conditional-a.png" class="postimage" alt="Image"></a> </div>
+
+			
+									
+									<div id="sig889136" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889139">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889139">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889139">
+
+			<h3 ><a href="#p889139">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889139&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889139" title="Post #2800">#2800</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 2nd, 2025, 8:06 pm</span></p>
+			
+			
+			
+			<div class="content">.<br>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function []= ConditionalDensityHermitesBivariateNewtonIters04A()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+
+Order=5;
+%NDim=4;%Three assets and one SV.
+NMomentsY=Order+1;
+NMomentsX=Order+1;
+
+
+w2D5(1:NMomentsY,1:NMomentsX)=1;
+ w2D6(1:NMomentsY,1:NMomentsX)=1;
+for nn=NMomentsY-1:-1:1
+    for mm=NMomentsX-1:-1:1
+        
+        w2D5(nn,mm)=w2D5(nn+1,mm+1)*(nn+1).^5*(mm+1).^5.0;
+        w2D6(nn,mm)=w2D6(nn+1,mm+1)*(nn+1).^6*(mm+1).^6.0;
+    end
+end
+ 
+ 
+ w2D0(1:NMomentsY,1:NMomentsX)=1;
+ w2Dh(1:NMomentsY,1:NMomentsX)=1;
+ w2D1(1:NMomentsY,1:NMomentsX)=1;
+ w2D2(1:NMomentsY,1:NMomentsX)=1;
+ w2D3(1:NMomentsY,1:NMomentsX)=1;
+ w2D4(1:NMomentsY,1:NMomentsX)=1;
+ 
+for nn=NMomentsY-1:-1:1
+    for mm=NMomentsX-1:-1:1
+        w2Dh(nn,mm)=w2Dh(nn+1,mm+1)*(nn+1).^.5*(mm+1).^.5;
+        w2D1(nn,mm)=w2D1(nn+1,mm+1)*(nn+1)*(mm+1);
+        w2D2(nn,mm)=w2D2(nn+1,mm+1)*(nn+1).^2*(mm+1).^2.0;
+        w2D3(nn,mm)=w2D3(nn+1,mm+1)*(nn+1).^3*(mm+1).^3.0;
+        w2D4(nn,mm)=w2D4(nn+1,mm+1)*(nn+1).^4*(mm+1).^4.0;
+    end
+end
+
+%%%%%%%%%%%%%%%%%%%5
+
+V0=1.00;%.32;
+V00=V0;
+thetaV=1.250;%.045;%1;%.04;
+kappaV=.750;%1.5;%1.5;
+mu1=kappaV*thetaV;
+mu2=-kappaV;
+beta1=0;
+beta2=1;
+gamma=.85;%.950;
+sigma0=.6;%.45;%
+dt=.03125/2;
+Tt=64*2;
+T=Tt*dt;
+
+seed0=52130649;
+rng(seed0, 'twister')
+paths=10000;
+V(1:paths,1)=V0;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+TT1=30; %Transition distribution start
+TT2=124; %Transition distribution end
+
+Random2(1:paths/2,1)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2)=randn(paths/2,1);
+    Random2(paths/2+1:paths)=-Random2(1:paths/2);
+
+    V(1:paths,1)=V(1:paths,1)+ ...
+        (mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*sqrt(dt) + ...
+        (mu1.*beta1*V(1:paths,1).^(beta1-1) + mu2.*beta2.*V(1:paths,1).^(beta2-1)).* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt^2/2 + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1.*beta1.*(beta1-1).*V(1:paths,1).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths,1).^(beta2-2)).* ...    
+        sigma0^2.*V(1:paths,1).^(2*gamma).*dt^2/2 + ...
+        sigma0*gamma*V(1:paths,1).^(gamma-1) .* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2).*Random2(1:paths,1).*1/sqrt(3)*dt^1.5 + ...
+        sigma0.*V(1:paths,1).^gamma .*(Random2(1:paths,1).^2-1)*dt/2) + ...
+        .5*sigma0*gamma*(gamma-1).*V(1:paths,1).^(gamma-2) .* ...
+        sigma0^2.*V(1:paths,1).^(2*gamma) .*Random2(1:paths,1).*1/sqrt(3)*dt^1.5;
+
+    V(V&lt;0)=.00001;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,1)=V(1:paths,1);
+    end
+        
+    if(tt==TT2)
+        Yin(1:paths,1)=V(1:paths,1);
+    end
+end
+
+str=input("I have reached stone 1");
+
+Order=5;
+
+Ndata=paths;
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(Ndata);
+
+%ZI=ZnNew;
+%Below find one dimensional Hermite-Series of variable that is taken as
+%independent in the analytics.
+[XCoeffH,Zx] = CalculateHermiteSeriesFromData01(Xin,Order,ZI);
+
+
+[YCoeffH,Zy] = CalculateHermiteSeriesFromData01(Yin,Order,ZI);
+
+%With respect to HErmite-series of X, find correlated and orthogonal parts of 
+%observations of dependent variable Y.
+[Ycorr0,Ydecorr,Coeffyx] = FindDecorrelatedYwrtX(Yin,Zx,Order);
+
+
+
+YdecorrAdj=0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%The function below calculates the 2D joint hermite-series of W=XY
+%XYCoeffHH is the 2D joint hermite Series of W=XY
+%YCoeffHH is 2D conditional hermite-series of Y|X
+
+%sum(Ydecorr)/paths
+
+%str=input("Look at mean of Ydecorr");
+
+
+
+[XYCoeffHH,YCoeffHH] = Calculate2DHermiteSeriesConditionalAndJoint(Ydecorr,YdecorrAdj,Yin,Xin,Zx,Order,ZI);
+%[XYCoeffHH,YCoeffHH] = Calculate2DHermiteSeriesConditionalAndJointNew02(Yin,Xin,Zx,Order,ZI);
+
+
+
+%[YCoeffZZ] = Convert2DHermitesInto2DSeriesNew(YCoeffHH,Order,Order);
+YCoeffHH(1:Order+1,Order:Order+1)=YCoeffHH(1:Order+1,Order:Order+1)/1000;
+YCoeffHH(Order:Order+1,1:Order+1)=YCoeffHH(Order:Order+1,1:Order+1)/1000;
+
+YCoeffHH(1,1:Order+1)=Coeffyx(1:Order+1,1)';
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%The function below does initial analytics of caclulation of 2D conditional
+%and joint densities. We want to use the result from this function as a
+%Starting guess/seed to Newton derivatives based optimization method.
+
+%[YCoeffHH,XYCoeffHH,XCoeffH,Coeffyx,YCoeffH] =CalculateBivariateHermiteSeries01(Yin,Xin,Order);
+
+% 
+ [XCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(XCoeffH(1:Order+1),Order);
+ 
+  for qq1=1:Order+1
+    XMoments(qq1)=sum(Xin(1:paths).^qq1)/paths;
+  end
+  [XCoeffZ(1),XCoeffZ(2:6)] = CalculateZSeriesDensityFromRawMomentsM6(XMoments,XCoeffZ(2:6));
+  for pp1=1:Order+1
+    YMoments(pp1)=sum(Yin(1:paths).^pp1)/paths;
+  end
+  
+  [YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+  [YCoeffZ(1),YCoeffZ(2:6)] = CalculateZSeriesDensityFromRawMomentsM6(YMoments,YCoeffZ(2:6));
+  for pp1=1:Order+1
+      for qq1=1:Order+1
+          MomentsYX0((pp1-1)*(Order+1)+qq1,1)=sum(Yin(1:paths).^pp1.*Xin(1:paths).^qq1)/paths;
+          MomentsYX(pp1,qq1)=sum(Yin(1:paths).^pp1.*Xin(1:paths).^qq1)/paths;
+          if(pp1==1)
+              MomentsYXN1(1,qq1)=sum(Yin(1:paths).^pp1.*Xin(1:paths).^qq1)/paths;%/(sum(Xin(1:paths).^(qq1)));
+          end
+      end
+  end
+%  
+  [MomentsY]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6)
+  MaxIter=5000;
+%In the function below, we do iterative optimization on all 2D Hermite
+%coefficients but do not optimize the first row of coefficients.The first
+%row comes from regression and keeping it fixed gives robustness to
+%regression.
+[YCoeffHH,ObjFunc] = HSeriesCoeffsFromCrossMomentsIterative2D1st(YCoeffHH,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D0)
+
+MaxIter=1000; 
+%In the function below, we do iterative optimization on all 2D Hermite
+%coefficients including the first row. This function is applied when we
+%have become too close to the true values by optimization through previous
+%function.
+[YCoeffHH,ObjFunc] = HSeriesCoeffsFromCrossMomentsIterative2D2nd(YCoeffHH,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D0)
+
+
+[YCoeffZZ] = Convert2DHermitesInto2DSeriesNew(YCoeffHH,Order,Order);
+  
+ [Y1DMoments]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6)
+
+ OrderY=Order;
+ OrderX=Order;
+ NMoments=6;
+ [YMoments] = CalculateMomentsOf2DZSeriesY(YCoeffZZ,OrderY,OrderX,NMoments);
+% 
+% 
+ Y1DMoments
+ YMoments
+ str=input("Look at comparison of second moments/moments");
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%In this block, we do conditional Monte Carlo of SDE which is the true
+%numerical 1D conditional density of Y conditional on X having a given
+%value. This value of X on which we are conditionin is defined by V10 below.
+%We can alter V10 below and it will take out a 1D slice from the 2D density
+%of Y conditional on X  taking a specific value (here V10).
+%Zx=2.0;
+%V10=XCoeffZ(1)+XCoeffZ(2).*Zx+XCoeffZ(3).*Zx^2+XCoeffZ(4).*Zx^3+XCoeffZ(5).*Zx^4+XCoeffZ(6).*Zx^5;
+%V10
+%str=input("Look at V10");
+V10=1.750;
+V(1:paths)=V10;
+Random2(1:paths,1)=0;
+
+for tt=TT1+1:TT2
+    
+    Random2(1:paths/2)=randn(paths/2,1);
+    Random2(paths/2+1:paths)=-Random2(1:paths/2);
+
+
+    V(1:paths,1)=V(1:paths,1)+ ...
+        (mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*sqrt(dt) + ...
+        (mu1.*beta1*V(1:paths,1).^(beta1-1) + mu2.*beta2.*V(1:paths,1).^(beta2-1)).* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt^2/2 + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1.*beta1.*(beta1-1).*V(1:paths,1).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths,1).^(beta2-2)).* ...    
+        sigma0^2.*V(1:paths,1).^(2*gamma).*dt^2/2 + ...
+        sigma0*gamma*V(1:paths,1).^(gamma-1) .* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2).*Random2(1:paths,1).*1/sqrt(3)*dt^1.5 + ...
+        sigma0.*V(1:paths,1).^gamma .*(Random2(1:paths,1).^2-1)*dt/2) + ...
+        .5*sigma0*gamma*(gamma-1).*V(1:paths,1).^(gamma-2) .* ...
+        sigma0^2.*V(1:paths,1).^(2*gamma) .*Random2(1:paths,1).*1/sqrt(3)*dt^1.5;
+
+    V(V&lt;0)=.00001;
+
+end
+
+%Below
+
+NoOfBins=200;
+MaxCutOff=10;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(V,paths,NoOfBins,MaxCutOff );
+
+
+clf;
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+hold on
+
+for qq=1:6
+    
+    DataMoments(qq)=sum(V(:).^qq)/paths;
+    
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Below, we calculate the value of Zx0 corresponding to X0 (here V10). This
+%comes from inverting the Z-series of X so that X=V10;
+
+xOrder=Order;
+yOrder=Order;
+[Zx0] = CalculateZgivenXAndHSeriesCoeffs(V10,XCoeffH,xOrder);
+
+
+%Below, we collapse two dimensional pdf of Y|X to one dimensional pdf given
+%Zx i.e. this Y|X=X(Zx)
+%Here we take out a 1D slice from the 2D density
+%of Y conditional on X  taking a specific value (here V10).
+He(1)=1;
+He(2)=Zx0;
+He(3)=Zx0^2-1;
+He(4)=Zx0^3-3*Zx0;
+He(5)=Zx0^4-6*Zx0.^2+3;
+He(6)=Zx0^5-10*Zx0.^3+15*Zx0;
+He(7)=Zx0^6-15*Zx0.^4+45*Zx0.^2-15;
+He(8)=Zx0^7-21*Zx0.^5+105*Zx0.^3-105*Zx0;
+
+YCoeffh(1:Order+1)=0;
+for hh=1:yOrder+1
+    for hh2=1:xOrder+1
+        YCoeffh(hh)=YCoeffh(hh)+YCoeffHH(hh,hh2).*He(hh2);
+    end
+end
+
+ [YCoeffz(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffh(1:Order+1),Order);
+
+ 
+ [YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:6),5,6);
+ 
+ YMomentsModel
+ 
+ DataMoments
+ 
+ str=input("Look at comparison of moments");
+ 
+
+
+PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh(2:yOrder+1),'b')
+
+%hold on
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Numerical Density','Analytic Density1'}, ...
+    'Location','northeast')
+
+str=input("This is the first version without altering the moments of conditional density")
+
+
+[YMoments0]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:6),5,6)
+
+
+% %[IsValidFlag] = CheckIsValidDensityPN(YCoeffz(1),YCoeffz(2:Order+1));
+[PIsValidFlag,NIsValidFlag] = CheckIsValidDensityPN02(YCoeffz(1),YCoeffz(2:Order+1));
+PIsValidFlag
+NIsValidFlag
+LoopIter=0;
+
+Mul6(1)=.65;
+Mul6(2)=.7;
+Mul6(3)=.75;
+Mul6(4)=.8;
+Mul6(5)=.85;
+Mul6(6)=.9;
+Mul6(7)=.95;
+Mul6(8)=1.0;
+Mul6(9)=1.05;
+Mul6(10)=1.1;
+Mul6(11)=1.2;
+
+
+
+
+
+Mul0=1;
+%YMoment6=YMoments(6);
+while(((PIsValidFlag==0)||(NIsValidFlag==0))&amp;&amp;(LoopIter&lt;=10))
+LoopIter=LoopIter+1;
+    YCoeffh
+Mul0=Mul0+.05;
+    Y2Coeffz=YCoeffz;
+    Mean=Y2Coeffz(1)+(Y2Coeffz(3)+3*Y2Coeffz(5));
+    Y2Coeffz(1)=-(Y2Coeffz(3)+3*Y2Coeffz(5));
+
+    [YMoments]=CalculateMomentsOfZSeries(Y2Coeffz(1),Y2Coeffz(2:6),5,6)
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %abs(YMoments(3:6))./abs(YMoments(2:5))
+
+    %YMoments(2:6)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+
+    if(abs(YMoments(6)/YMoments(5))&lt;abs(YMoments(4)/YMoments(3))*Mul6(LoopIter))
+    YMoments(6)=abs(YMoments(5).*YMoments(4)./YMoments(3)*Mul6(LoopIter))
+    
+    end
+    
+    %YMoments(5)=YMoments(5)-1/25*abs(YMoments(5));
+    
+    %YMoments(6)=YMoments(6)*Mul0;
+    %LoopIter
+    %Mul0
+    %YMoments(6)
+    
+    %str=input("Look at variables")
+ 
+    [Y3Coeffz(1),Y3Coeffz(2:6)] = CalculateZSeriesDensityFromRawMomentsM6(YMoments,Y2Coeffz(2:6));
+
+    Y3Coeffz(1)=Mean-(Y2Coeffz(3)+3*Y2Coeffz(5));
+    
+    [PIsValidFlag,NIsValidFlag] = CheckIsValidDensityPN02(Y3Coeffz(1),Y3Coeffz(2:Order+1));
+PIsValidFlag
+NIsValidFlag
+end
+if(LoopIter==0)
+     
+     Y3Coeffz=YCoeffz;
+end
+
+clf;
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+hold on
+
+PlotZSeriesDensity(Y3Coeffz(1),Y3Coeffz(2:yOrder+1),'b')
+
+title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Numerical Density','Analytic Density1'}, ...
+    'Location','northeast')
+str=input("This is the Second version after possibly altering the moments of conditional density when needed")
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [YCoeffHH,ObjFunc] = HSeriesCoeffsFromCrossMomentsIterative2D1st(YCoeffHH,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D)
+
+
+%This program computes coeffs of 2D Hermite-series when values of raw cross-moments are
+%given using Iterative method. 
+
+%MomentsYX0 are raw cross-moments stacked in a single array;
+%YCoeffHH are coeffs of 2D Hermite-series to be found and when passed as parameters
+%contain starting guess for 2D Hermite-series coeffs.
+
+%Total number of Iterations of the iterative method are given by input 
+%parameter MaxIter.
+%The present program is written for SeriesOrder=6*6.
+ SeriesOrder=6;  %Z-series till 7th power.
+ 
+ NMoments=6;
+ Order=5;
+
+ %The following function calculates Moments of 1D Zseries of Y
+ [YMoments]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6);
+
+ %In the following block, we keep mean and variance of Hermite-Series equal
+ %to input value of mean and Variance found from 1D Z-series of Y. We do
+ %not alter the coefficients on the first line that are associated with 1st
+ %order correlation between Y and X of first five hermite polynomials.
+ 
+ %M11 is variance of first row of Hermite Series that is not altered.
+ %Below, we apply variance correction but this variance correction is not
+ %applied to first row of hermite series that is kept unaltered.
+
+M11=0;
+for qq=2:6
+M11=M11+YCoeffHH(1,qq).^2*factorial(qq-1);
+end
+%Below, we calculate first and 2nd moment of 2D Hermite series       
+[MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHH,Order,Order);
+%VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+VarHH=M2HH-MeanHH.^2-M11;
+%VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+VarIn=YMoments(2)-YMoments(1).^2-M11;
+%Variance correction is applied below to all rows but not to first row of hermite series.       
+YCoeffHH(2:6,1:6)=YCoeffHH(2:6,1:6).*sqrt(VarIn/VarHH);
+%We convert final 2D Hermite series to 2D Z-series        
+
+[YCoeffZZ] = Convert2DHermitesInto2DSeriesNew(YCoeffHH,Order,Order);
+
+%%%%%%Choose the iteration step size.
+for nn=1:SeriesOrder
+    for mm=1:SeriesOrder
+        DeltaX(nn,mm)=.00125/(factorial(nn+1))/factorial(mm+1)/2^(nn/2);
+        DeltaXMax(nn,mm)=DeltaX(nn,mm)*5;
+    end
+end
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+%%%Weights on objective function that shows fit to moments
+w2D(NMoments,NMoments)=1;
+for nn=NMoments-1:-1:1
+    for mm=NMoments-1:-1:1
+        w2D(nn,mm)=w2D(nn+1,mm+1)*(nn+1).^0*(mm+1).^0;
+    end
+end
+
+%[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+[AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,Order,Order);
+
+
+
+
+for pp1=1:Order+1
+     for qq1=1:Order+1
+         Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+         Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+     end
+ end
+[ObjFuncBest] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+
+
+ImproveFlag(1:SeriesOrder,1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder,1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder,1:SeriesOrder)=0;
+kk=0;
+while ((kk&lt;MaxIter)&amp;&amp;(ObjFuncBest&gt;1))
+kk=kk+1;    
+    %We only iteratively alter c(2:7), first and second moments are
+    %retrieved automatically in our set up
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+            if((nn==1))
+                ;
+            else
+            
+            ImproveFlagPrev(nn,mm)=ImproveFlag(nn,mm);
+        
+        
+            YCoeffHHnew=YCoeffHH;
+            YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)+DeltaX(nn,mm);
+        
+        
+             %M11 is variance of first row of Hermite Series that is not altered.
+             %Below, we apply variance correction but this variance correction is not
+             %applied to first row of hermite series that is kept unaltered.
+
+            %         M11=0;
+            %         for qq=2:6
+            %         M11=M11+YCoeffHHnew(1,qq).^2*factorial(qq-1);
+            %         end
+             %Below, we calculate first and 2nd moment of 2D Hermite series       
+             [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+             %VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+             VarHH=M2HH-MeanHH.^2-M11;
+             %VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+             %       VarIn=YMoments(2)-YMoments(1).^2-M11;
+             %Variance correction is applied below to all rows but not to first row of hermite series.       
+             YCoeffHHnew(2:6,1:6)=YCoeffHHnew(2:6,1:6).*sqrt(VarIn/VarHH);
+            %We convert final 2D Hermite series to 2D Z-series        
+
+            [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);        
+            %Below array AMat contains all model cross-derivatives in a single
+            %arraay.
+            [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+        
+            %Below single dimensional arrays of model and market cross moments
+            %are assigned to two dimensional arrays.
+            for pp1=1:Order+1
+                for qq1=1:Order+1
+                    Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                    Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                end
+            end
+        
+            %Objective function is calculated.
+            [ObjFunc1] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+        
+            if(ObjFunc1&lt;ObjFuncBest)
+            
+                ObjFuncBest=ObjFunc1;
+            
+                YCoeffHH=YCoeffHHnew;
+                ImproveFlag(nn,mm)=1;
+            
+            else
+            
+                YCoeffHHnew=YCoeffHH;
+                YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)-DeltaX(nn,mm);
+            
+                %M11 is variance of first row of Hermite Series that is not altered.
+                %Below, we apply variance correction but this variance correction is not
+                %applied to first row of hermite series that is kept unaltered.
+
+  
+                %Below, we calculate first and 2nd moment of 2D Hermite series       
+                [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+                %VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+                VarHH=M2HH-MeanHH.^2-M11;
+                %VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+                %       VarIn=YMoments(2)-YMoments(1).^2-M11;
+                %Variance correction is applied below to all rows but not to first row of hermite series.       
+                YCoeffHHnew(2:6,1:6)=YCoeffHHnew(2:6,1:6).*sqrt(VarIn/VarHH);
+                %We convert final 2D Hermite series to 2D Z-series        
+        
+                [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);    
+        
+                [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+                for pp1=1:Order+1
+                    for qq1=1:Order+1
+                        Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                        Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                    end
+                end
+                [ObjFunc2] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+                if(ObjFunc2&lt;ObjFuncBest)
+  
+                    ObjFuncBest=ObjFunc2;
+                    YCoeffHH=YCoeffHHnew;
+                
+                    ImproveFlag(nn,mm)=-1;
+                else
+                    ImproveFlag(nn,mm)=0;
+                end
+            end    
+            end
+        end
+    end
+    
+    if(rem(kk,1)==0)
+    kk
+    ObjFunc1
+    ObjFunc2
+    ObjFuncBest
+    DeltaX
+    ImproveCount
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+       if(ImproveFlag(nn,mm)==0)
+           DeltaX(nn,mm)=DeltaX(nn,mm)*.88;
+           %ImproveFlag0=1;
+       end
+       if((ImproveFlag(nn,mm)==1)||(ImproveFlag(nn,mm)==-1))
+           DeltaX(nn,mm)=DeltaX(nn,mm)*1.1;
+           %ImproveFlag0=1;
+       end
+       
+       if(DeltaX(nn,mm)&gt;DeltaXMax(nn,mm))
+           DeltaX(nn,mm)=DeltaXMax(nn,mm);
+       end
+        end
+    end
+
+   
+end
+
+ObjFunc=ObjFuncBest;
+
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [YCoeffHH,ObjFunc] = HSeriesCoeffsFromCrossMomentsIterative2D1st(YCoeffHH,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D)
+
+
+%This program computes coeffs of 2D Hermite-series when values of raw cross-moments are
+%given using Iterative method. 
+
+%MomentsYX0 are raw cross-moments stacked in a single array;
+%YCoeffHH are coeffs of 2D Hermite-series to be found and when passed as parameters
+%contain starting guess for 2D Hermite-series coeffs.
+
+%Total number of Iterations of the iterative method are given by input 
+%parameter MaxIter.
+%The present program is written for SeriesOrder=6*6.
+ SeriesOrder=6;  %Z-series till 7th power.
+ 
+ NMoments=6;
+ Order=5;
+
+ %The following function calculates Moments of 1D Zseries of Y
+ [YMoments]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6);
+
+ %In the following block, we keep mean and variance of Hermite-Series equal
+ %to input value of mean and Variance found from 1D Z-series of Y. We do
+ %not alter the coefficients on the first line that are associated with 1st
+ %order correlation between Y and X of first five hermite polynomials.
+ 
+ %M11 is variance of first row of Hermite Series that is not altered.
+ %Below, we apply variance correction but this variance correction is not
+ %applied to first row of hermite series that is kept unaltered.
+
+M11=0;
+for qq=2:6
+M11=M11+YCoeffHH(1,qq).^2*factorial(qq-1);
+end
+%Below, we calculate first and 2nd moment of 2D Hermite series       
+[MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHH,Order,Order);
+%VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+VarHH=M2HH-MeanHH.^2-M11;
+%VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+VarIn=YMoments(2)-YMoments(1).^2-M11;
+%Variance correction is applied below to all rows but not to first row of hermite series.       
+YCoeffHH(2:6,1:6)=YCoeffHH(2:6,1:6).*sqrt(VarIn/VarHH);
+%We convert final 2D Hermite series to 2D Z-series        
+
+[YCoeffZZ] = Convert2DHermitesInto2DSeriesNew(YCoeffHH,Order,Order);
+
+%%%%%%Choose the iteration step size.
+for nn=1:SeriesOrder
+    for mm=1:SeriesOrder
+        DeltaX(nn,mm)=.00125/(factorial(nn+1))/factorial(mm+1)/2^(nn/2);
+        DeltaXMax(nn,mm)=DeltaX(nn,mm)*5;
+    end
+end
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+%%%Weights on objective function that shows fit to moments
+w2D(NMoments,NMoments)=1;
+for nn=NMoments-1:-1:1
+    for mm=NMoments-1:-1:1
+        w2D(nn,mm)=w2D(nn+1,mm+1)*(nn+1).^0*(mm+1).^0;
+    end
+end
+
+%[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+[AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,Order,Order);
+
+
+
+
+for pp1=1:Order+1
+     for qq1=1:Order+1
+         Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+         Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+     end
+ end
+[ObjFuncBest] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+
+
+ImproveFlag(1:SeriesOrder,1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder,1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder,1:SeriesOrder)=0;
+kk=0;
+while ((kk&lt;MaxIter)&amp;&amp;(ObjFuncBest&gt;1))
+kk=kk+1;    
+    %We only iteratively alter c(2:7), first and second moments are
+    %retrieved automatically in our set up
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+            if((nn==1))
+                ;
+            else
+            
+            ImproveFlagPrev(nn,mm)=ImproveFlag(nn,mm);
+        
+        
+            YCoeffHHnew=YCoeffHH;
+            YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)+DeltaX(nn,mm);
+        
+        
+             %M11 is variance of first row of Hermite Series that is not altered.
+             %Below, we apply variance correction but this variance correction is not
+             %applied to first row of hermite series that is kept unaltered.
+
+            %         M11=0;
+            %         for qq=2:6
+            %         M11=M11+YCoeffHHnew(1,qq).^2*factorial(qq-1);
+            %         end
+             %Below, we calculate first and 2nd moment of 2D Hermite series       
+             [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+             %VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+             VarHH=M2HH-MeanHH.^2-M11;
+             %VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+             %       VarIn=YMoments(2)-YMoments(1).^2-M11;
+             %Variance correction is applied below to all rows but not to first row of hermite series.       
+             YCoeffHHnew(2:6,1:6)=YCoeffHHnew(2:6,1:6).*sqrt(VarIn/VarHH);
+            %We convert final 2D Hermite series to 2D Z-series        
+
+            [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);        
+            %Below array AMat contains all model cross-derivatives in a single
+            %arraay.
+            [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+        
+            %Below single dimensional arrays of model and market cross moments
+            %are assigned to two dimensional arrays.
+            for pp1=1:Order+1
+                for qq1=1:Order+1
+                    Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                    Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                end
+            end
+        
+            %Objective function is calculated.
+            [ObjFunc1] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+        
+            if(ObjFunc1&lt;ObjFuncBest)
+            
+                ObjFuncBest=ObjFunc1;
+            
+                YCoeffHH=YCoeffHHnew;
+                ImproveFlag(nn,mm)=1;
+            
+            else
+            
+                YCoeffHHnew=YCoeffHH;
+                YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)-DeltaX(nn,mm);
+            
+                %M11 is variance of first row of Hermite Series that is not altered.
+                %Below, we apply variance correction but this variance correction is not
+                %applied to first row of hermite series that is kept unaltered.
+
+  
+                %Below, we calculate first and 2nd moment of 2D Hermite series       
+                [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+                %VarHH is model variance and it is adjusted by removing variance of 1st row of 2D Hermite series.      
+                VarHH=M2HH-MeanHH.^2-M11;
+                %VarIn is input variance that is adjusted by removing variance of 1st row of hermite series       
+                %       VarIn=YMoments(2)-YMoments(1).^2-M11;
+                %Variance correction is applied below to all rows but not to first row of hermite series.       
+                YCoeffHHnew(2:6,1:6)=YCoeffHHnew(2:6,1:6).*sqrt(VarIn/VarHH);
+                %We convert final 2D Hermite series to 2D Z-series        
+        
+                [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);    
+        
+                [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+                for pp1=1:Order+1
+                    for qq1=1:Order+1
+                        Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                        Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                    end
+                end
+                [ObjFunc2] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+                if(ObjFunc2&lt;ObjFuncBest)
+  
+                    ObjFuncBest=ObjFunc2;
+                    YCoeffHH=YCoeffHHnew;
+                
+                    ImproveFlag(nn,mm)=-1;
+                else
+                    ImproveFlag(nn,mm)=0;
+                end
+            end    
+            end
+        end
+    end
+    
+    if(rem(kk,1)==0)
+    kk
+    ObjFunc1
+    ObjFunc2
+    ObjFuncBest
+    DeltaX
+    ImproveCount
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+       if(ImproveFlag(nn,mm)==0)
+           DeltaX(nn,mm)=DeltaX(nn,mm)*.88;
+           %ImproveFlag0=1;
+       end
+       if((ImproveFlag(nn,mm)==1)||(ImproveFlag(nn,mm)==-1))
+           DeltaX(nn,mm)=DeltaX(nn,mm)*1.1;
+           %ImproveFlag0=1;
+       end
+       
+       if(DeltaX(nn,mm)&gt;DeltaXMax(nn,mm))
+           DeltaX(nn,mm)=DeltaXMax(nn,mm);
+       end
+        end
+    end
+
+   
+end
+
+ObjFunc=ObjFuncBest;
+
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHH,OrderY,OrderX)
+
+MeanHH=YCoeffHH(1,1);
+
+M2HH=0;
+for mm=1:OrderY+1
+    for nn=1:OrderX+1
+        M2HH=M2HH+YCoeffHH(mm,nn).^2.*factorial(mm-1).*factorial(nn-1);
+    end
+end
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,OrderY,OrderX)
+
+NMomentsY=OrderY+1;
+NMomentsX=OrderX+1;
+
+YpCoeff(1:(OrderY+1)*(OrderY+1),1:(OrderX+1)*(OrderX+1),1:OrderY+1)=0.0;
+
+%YpCoeff(1:Order+1,1:Order+1,1)=YCoeffZZ(1:Order+1,1:Order+1);
+
+XqCoeff0(1:(OrderX+1)*(OrderX+1),1:OrderX+1)=0;
+
+XqCoeff(1:1,1:(OrderX+1)*(OrderX+1),1:OrderX+1)=0;
+
+AMat(1:(OrderY+1)*(OrderX+1),1)=0.0;
+
+%DMat(1:(OrderY+1)*(OrderX+1),1:(OrderY+1)*(OrderX+1))=0.0;
+
+%Ypq1Coeff(1:(Order+1)*(Order+1),1:2*(Order+1)*(Order+1))=0.0;
+
+
+SeriesOrder10=OrderY+1;
+SeriesOrder01=OrderX+1;
+SeriesOrder20=OrderY+1;
+SeriesOrder02=OrderX+1;
+
+YpCoeff(1:OrderY+1,1:OrderX+1,1)=YCoeffZZ(1:OrderY+1,1:OrderX+1);
+
+
+for pp=2:NMomentsY
+
+  SeriesOrder30=SeriesOrder10+SeriesOrder20-1;
+  SeriesOrder03=SeriesOrder01+SeriesOrder02-1;
+% %  
+% %  %Below calculate the product: 2D product of Z-series [Y|X](Zy,Zx)*X(Zx)
+  [YpCoeff(1:SeriesOrder30,1:SeriesOrder03,pp),EYp(pp)] =SeriesProduct2DAlgorithmicNew(YpCoeff(1:SeriesOrder10,1:SeriesOrder01,pp-1),YCoeffZZ(1:OrderX+1,1:OrderY+1),SeriesOrder10,SeriesOrder01,SeriesOrder20,SeriesOrder02);
+    
+  YMoments(pp)=EYp(pp);
+  
+  SeriesOrder10=SeriesOrder30;
+SeriesOrder01=SeriesOrder03;
+SeriesOrder20=OrderY+1;
+SeriesOrder02=OrderX+1;
+  
+end
+
+
+XqCoeff0(1:OrderX+1,1)=XCoeffZ(1:OrderX+1);
+
+  SeriesOrder1=OrderX+1;
+  SeriesOrder2=OrderX+1;
+
+for qq=2:NMomentsX
+
+  SeriesOrder3=SeriesOrder1+SeriesOrder2-1;  
+  [XqCoeff0(1:SeriesOrder3,qq),EXq(qq)] =SeriesProduct1D(XqCoeff0(1:SeriesOrder1,qq-1),XqCoeff0(1:SeriesOrder2,1),SeriesOrder1,SeriesOrder2);
+
+ SeriesOrder1=SeriesOrder3;
+ SeriesOrder2=OrderX+1;
+
+end
+
+
+[EZ] = EZZ2();
+
+for pp1=1:OrderY+1
+    for qq1=1:OrderX+1
+%        DMat((pp1-1)*(Order+1)+qq1
+            ASeriesOrder10=(pp1)*OrderY+1;
+            ASeriesOrder01=(pp1)*OrderY+1; 
+            ASeriesOrder20=1;
+            ASeriesOrder02=(qq1)*OrderX+1; 
+            ASeriesOrder30=ASeriesOrder10+ASeriesOrder20-1;
+            ASeriesOrder03=ASeriesOrder01+ASeriesOrder02-1;
+            XqCoeff(1:1,1:ASeriesOrder02,qq1)=XqCoeff0(1:ASeriesOrder02,qq1);
+      %size(XqCoeff)
+      %qq1
+      %size(YpCoeff)
+      %pp1
+      %str=input("Look at sizes")
+            [TempMat,AMat((pp1-1)*(OrderX+1)+qq1,1)] =SeriesProduct2DAlgorithmicNew(YpCoeff(1:ASeriesOrder10,1:ASeriesOrder01,pp1),XqCoeff(1:ASeriesOrder20,1:ASeriesOrder02,qq1),ASeriesOrder10,ASeriesOrder01,ASeriesOrder20,ASeriesOrder02);
+
+    end
+end
+
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [gZZ] = Convert2DHermitesInto2DSeriesNew(gHH,OrderX,OrderY)
+
+
+for nn=1:OrderY+1
+[gZH(nn,1:OrderX+1)] = ConvertHermiteSeriesToZSeries01(gHH(nn,1:OrderX+1),OrderX);
+end
+
+for mm=1:OrderX+1
+[gZZ(1:OrderY+1,mm)] = ConvertHermiteSeriesToZSeries01(gZH(1:OrderY+1,mm),OrderY);
+end
+
+
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [YCoeffHH,ObjFunc] = HSeriesCoeffsFromCrossMomentsIterative2D2nd(YCoeffHH,XCoeffZ,MomentsYX0,YCoeffZ,MaxIter,w2D)
+
+
+
+SeriesOrder=6; 
+NMoments=6;
+Order=5;
+ 
+[YMoments]=CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:6),5,6);
+        
+%Below, we calculate first and 2nd moment of 2D Hermite series       
+[MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHH,Order,Order);
+%VarHH is model variance .      
+VarHH=M2HH-MeanHH.^2;
+%VarIn is input variance 
+VarIn=YMoments(2)-YMoments(1).^2;
+%Variance correction is applied below to all rows but not to first row of hermite series.       
+YCoeffHH(1:6,1:6)=YCoeffHH(1:6,1:6).*sqrt(VarIn/VarHH);
+%We convert final 2D Hermite series to 2D Z-series        
+
+[YCoeffZZ] = Convert2DHermitesInto2DSeriesNew(YCoeffHH,Order,Order);
+
+for nn=1:SeriesOrder
+    for mm=1:SeriesOrder
+        DeltaX(nn,mm)=.00125/(factorial(nn+1))/factorial(mm+1)/2^(nn/2);
+        DeltaXMax(nn,mm)=DeltaX(nn,mm)*5;
+    end
+end
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+%%%Weights on objective function that shows fit to moments
+w2D(NMoments,NMoments)=1;
+for nn=NMoments-1:-1:1
+    for mm=NMoments-1:-1:1
+        w2D(nn,mm)=w2D(nn+1,mm+1)*(nn+1).^0*(mm+1).^0;
+    end
+end
+
+[AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZ,XCoeffZ,Order,Order);
+
+for pp1=1:Order+1
+     for qq1=1:Order+1
+         Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+         Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+     end
+    % Moments1D(pp1)=AMat((Order+1)*(Order+1)+pp1,1);
+ end
+[ObjFuncBest] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+%[ObjFuncBest] = CalculateObjMoment(sMu,Moments,w,mOrder);
+
+%cBest=c;
+
+ImproveFlag(1:SeriesOrder,1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder,1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder,1:SeriesOrder)=0;
+kk=0;
+while ((kk&lt;MaxIter)&amp;&amp;(ObjFuncBest&gt;1))
+kk=kk+1;    
+    %We only iteratively alter c(2:7), first and second moments are
+    %retrieved automatically in our set up
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+            
+            ImproveFlagPrev(nn,mm)=ImproveFlag(nn,mm);
+
+
+            YCoeffHHnew=YCoeffHH;
+            YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)+DeltaX(nn,mm);
+
+            %Below, we calculate first and 2nd moment of 2D Hermite series       
+            [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+            %VarHH is model variance .      
+            VarHH=M2HH-MeanHH.^2;
+            %VarIn is input variance 
+            VarIn=YMoments(2)-YMoments(1).^2;
+            %Variance correction is applied below to all rows but not to first row of hermite series.       
+            YCoeffHHnew(1:6,1:6)=YCoeffHHnew(1:6,1:6).*sqrt(VarIn/VarHH);
+            %We convert final 2D Hermite series to 2D Z-series        
+        
+            [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);
+        
+        
+            [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+            for pp1=1:Order+1
+                for qq1=1:Order+1
+                    Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                    Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                end
+            end
+            [ObjFunc1] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+        
+            if(ObjFunc1&lt;ObjFuncBest)
+            
+                ObjFuncBest=ObjFunc1;
+            
+                YCoeffHH=YCoeffHHnew;
+                ImproveFlag(nn,mm)=1;
+            
+            else
+            
+                YCoeffHHnew=YCoeffHH;
+                YCoeffHHnew(nn,mm)=YCoeffHHnew(nn,mm)-DeltaX(nn,mm);
+        
+                %Below, we calculate first and 2nd moment of 2D Hermite series       
+                [MeanHH,M2HH] = CalculateMeanAndVarOf2DHSeriesY(YCoeffHHnew,Order,Order);
+                %VarHH is model variance .      
+                VarHH=M2HH-MeanHH.^2;
+                %VarIn is input variance 
+                VarIn=YMoments(2)-YMoments(1).^2;
+                 %Variance correction is applied below to all rows but not to first row of hermite series.       
+                YCoeffHHnew(1:6,1:6)=YCoeffHHnew(1:6,1:6).*sqrt(VarIn/VarHH);
+                %We convert final 2D Hermite series to 2D Z-series        
+        
+                [YCoeffZZnew] = Convert2DHermitesInto2DSeriesNew(YCoeffHHnew,Order,Order);
+        
+        
+                [AMat] = CalculateCrossMomentsofTwo2Dand1DZSeries(YCoeffZZnew,XCoeffZ,Order,Order);
+                for pp1=1:Order+1
+                    for qq1=1:Order+1
+                        Moments2D(pp1,qq1)=AMat((pp1-1)*(Order+1)+qq1,1);
+                        Moments2D0(pp1,qq1)=MomentsYX0((pp1-1)*(Order+1)+qq1,1);
+                    end
+            
+                end
+                [ObjFunc2] = CalculateObjMoment2D1D(Moments2D0,Moments2D,w2D,Order+1,Order+1);
+                if(ObjFunc2&lt;ObjFuncBest)
+
+                    ObjFuncBest=ObjFunc2;
+                    YCoeffHH=YCoeffHHnew;
+            
+                    ImproveFlag(nn,mm)=-1;
+                else
+                    ImproveFlag(nn,mm)=0;
+                end
+            end
+            
+        end    
+    end
+    
+    
+    if(rem(kk,1)==0)
+    kk
+    ObjFunc1
+    ObjFunc2
+    ObjFuncBest
+    DeltaX
+    ImproveCount
+    end
+    
+    ImproveFlag0=0;
+    for nn=1:SeriesOrder
+        for mm=1:SeriesOrder
+       if(ImproveFlag(nn,mm)==0)
+           DeltaX(nn,mm)=DeltaX(nn,mm)*.88;
+           %ImproveFlag0=1;
+       end
+       if((ImproveFlag(nn,mm)==1)||(ImproveFlag(nn,mm)==-1))
+           DeltaX(nn,mm)=DeltaX(nn,mm)*1.1;
+           %ImproveFlag0=1;
+       end
+       
+       if(DeltaX(nn,mm)&gt;DeltaXMax(nn,mm))
+           DeltaX(nn,mm)=DeltaXMax(nn,mm);
+       end
+        end
+    end
+   
+end
+
+ObjFunc=ObjFuncBest;
+
+
+
+end</code></pre></div>
+.<br>
+.<br>
+.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+This is the final output.<br>
+<br>
+Y1DMoments =<br>
+  Columns 1 through 3<br>
+   1.188448918920995   1.723397425644299   3.067812986950702<br>
+  Columns 4 through 6<br>
+   6.700584591906397  17.764315333035949  56.010501087010887<br>
+YMoments =<br>
+  Columns 1 through 3<br>
+   1.182349731814849   1.708937481082462   3.062024413444629<br>
+  Columns 4 through 6<br>
+   6.752002492332380  17.890920580917061  55.321626483497297<br>
+Look at comparison of second moments/moments<br>
+IndexMax =<br>
+   201<br>
+YMomentsModel =<br>
+   1.0e+02 *<br>
+  Columns 1 through 3<br>
+   0.014188255217491   0.024902151831170   0.053283506244849<br>
+  Columns 4 through 6<br>
+   0.136542256849359   0.409631421915406   1.404651936517120<br>
+DataMoments =<br>
+   1.0e+02 *<br>
+  Columns 1 through 3<br>
+   0.014093548080371   0.024261167751951   0.050965861322233<br>
+  Columns 4 through 6<br>
+   0.129743173500164   0.394852638957946   1.408447178065625<br>
+Look at comparison of moments<br>
+Look at density<br>
+This is the first version without altering the moments of conditional density<br>
+str =<br>
+     []<br>
+YMoments0 =<br>
+   1.0e+02 *<br>
+  Columns 1 through 3<br>
+   0.014188255217491   0.024902151831170   0.053283506244849<br>
+  Columns 4 through 6<br>
+   0.136542256849359   0.409631421915406   1.404651936517120<br>
+PIsValidFlag =<br>
+     1<br>
+NIsValidFlag =<br>
+     1<br>
+Look at density<br>
+This is the Second version after possibly altering the moments of conditional density when needed</div>
+
+			
+									
+									<div id="sig889139" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889140">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889140">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889140">
+
+			<h3 ><a href="#p889140">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889140&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889140" title="Post #2801">#2801</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 2nd, 2025, 8:26 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, in the iterative optimization program, step size of a coefficient is roughly inversely proportional to variance of associated hermite. Please try to see how it works with different step sizes. I think keeping step size smaller increases the quality of optimization. Please try different number of iterations.<br>
+<br>
+There are two iterative optimization programs. In the first program that does most of the work, the first row associated with zeroth hermite of Y is kept fixed and is borrowed from regression. This makes the regression robust. When close to optimum, we use the 2nd iterative optimization program that includes even the first row in optimization.</div>
+
+			
+									
+									<div id="sig889140" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889144">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889144">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889144">
+
+			<h3 ><a href="#p889144">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889144&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889144" title="Post #2802">#2802</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 3rd, 2025, 3:04 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am travelling tomorrow and will go to Islamabad early tomorrow morning. My parents will go through medical checkup in Islamabad. My sister, who is also a doctor, has arranged for their medical checkup and I will accompany them. <br>
+<br>
+Friends, eventually we want to take our research to multidimensions and want to answer questions of the sort that we are given seven or eight random variables (or random attributes) and we want to find out the future probability density of the target variable given the attributes (or random variables). For example, we might specify seven or eight attributes of the stock market and the stock itself and we would want to find the conditional density of future value of stock given the attributes.<br>
+<br>
+I have been thinking about multidimensions and I realize in order to describe the effect of ten attributes on a target random variable, we would need a hermite series of size ten into 36=360. We would not need 6^10 variables as could be naively supposed. and we would not need to optimize 360 coefficients simultaneously and we could do that in N stages recursively for N variables.  I will give details of this arrangement of hermite series in a detailed post from Islamabad in a day or two.<br>
+<br>
+We will soon move to multidimensions and I hope that soon we would be doing a lot of things with Hermite-series that is otherwise tried to be done by blackbox AI.<br>
+<br>
+Please give me a day or two as I want to give a complete detail of how different things would fit together in multidimensional Hermite-Series.</div>
+
+			
+									
+									<div id="sig889144" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889160">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889160">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889160">
+
+			<h3 ><a href="#p889160">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889160&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889160" title="Post #2803">#2803</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 7th, 2025, 1:27 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I travelled back to Lahore this morning. Weather is becoming pleasant. And I am looking forward to a winters in which we would do some interesting research.<br>
+<br>
+I had mentioned that we could easily condition a random variable on several other random variables. Suppose, we have a random variable Y that depends upon random variables U, V, W and X and we want to capture all this dependence structure mathematically using multi-dimensional Hermite-Series/ZSeries. <br>
+<br>
+I will describe the  detailed strategy to calculate the underlying multi-dimensional Hermite-Series but first, I want to write the form of this five dimensional Hermite-Series of Y that depends upon random variables U, V, W and X. The form of the underlying hermite-Series would be <br>
+<br>
+<br>
+\begin{align}<br>
+<br>
+\left[  Y\,  \,|X,W,V,U \right]&amp;(Z_y \, , \, Z_x,\,Z_w\,,Z_v,\, Z_u))\, \,\\<br>
+&amp;=\, \Big[\, cH_0 \, + \, cH_{1} \,H_1(Z_y) \,+\, cH_{2} \, H_2(Z_y) \,\, + \, cH_{3} \,H_3(Z_y)\,\,+\, cH_{4} \, H_4(Z_y) \,\, + \, cH_{5} \,H_5(Z_y)\,\,\Big] \\<br>
+&amp;+\, \Big[\, 0.0 \, + \, cH_{0,1} \,H_1(Z_x) \,+\, cH_{0,2} \, H_2(Z_x) \,\, + \, cH_{0,3} \,H_3(Z_x)\,\,+\,\ldots\,\Big] \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{1,1} \,H_1(Z_x) \,+\, cH_{1,2} \, H_2(Z_x) \,\, + \, cH_{1,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{2,1} \,H_1(Z_x) \,+\, cH_{2,2} \, H_2(Z_x) \,\, + \, cH_{2,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{3,1} \,H_1(Z_x) \,+\, cH_{3,2} \, H_2(Z_x) \, \,+ \, cH_{3,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{4,1} \,H_1(Z_x) \,+\, cH_{4,2} \, H_2(Z_x) \,\, + \, cH_{4,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{5,1} \,H_1(Z_x) \,+\, cH_{5,2} \, H_2(Z_x) \, \,+ \, cH_{5,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{1,0,1} \,H_1(Z_w) \,+\, cH_{1,0,2} \, H_2(Z_w) \,\, + \, cH_{1,0,3} \,H_3(Z_w)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{2,0,1} \,H_1(Z_w) \,+\, cH_{2,0,2} \, H_2(Z_w) \,\, + \, cH_{2,0,3} \,H_3(Z_w)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{3,0,1} \,H_1(Z_w) \,+\, cH_{3,0,2} \, H_2(Z_w) \, \,+ \, cH_{3,0,3} \,H_3(Z_w)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{4,0,1} \,H_1(Z_w) \,+\, cH_{4,0,2} \, H_2(Z_w) \,\, + \, cH_{4,0,3} \,H_3(Z_w)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{5,0,1} \,H_1(Z_w) \,+\, cH_{5,0,2} \, H_2(Z_w) \, \,+ \, cH_{5,0,3} \,H_3(Z_w)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{1,0,0,1} \,H_1(Z_v) \,+\, cH_{1,0,0,2} \, H_2(Z_v) \,\, + \, cH_{1,0,0,3} \,H_3(Z_v)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{2,0,0,1} \,H_1(Z_v) \,+\, cH_{2,0,0,2} \, H_2(Z_v) \,\, + \, cH_{2,0,0,3} \,H_3(Z_v)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{3,0,0,1} \,H_1(Z_v) \,+\, cH_{3,0,0,2} \, H_2(Z_v) \, \,+ \, cH_{3,0,0,3} \,H_3(Z_v)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0  \, + \, cH_{4,0,0,1} \,H_1(Z_v) \,+\, cH_{4,0,0,2} \, H_2(Z_v) \,\, + \, cH_{4,0,0,3} \,H_3(Z_v)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{5,0,0,1} \,H_1(Z_v) \,+\, cH_{5,0,0,2} \, H_2(Z_v) \, \,+ \, cH_{5,0,0,3} \,H_3(Z_v)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{1,0,0,0,1} \,H_1(Z_u) \,+\, cH_{1,0,0,0,2} \, H_2(Z_u) \,\, + \, cH_{1,0,0,0,3} \,H_3(Z_u)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0  \, + \, cH_{2,0,0,0,1} \,H_1(Z_u) \,+\, cH_{2,0,0,0,2} \, H_2(Z_u) \,\, + \, cH_{2,0,0,0,3} \,H_3(Z_u)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{3,0,0,0,1} \,H_1(Z_u) \,+\, cH_{3,0,0,0,2} \, H_2(Z_u) \, \,+ \, cH_{3,0,0,0,3} \,H_3(Z_u)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{4,0,0,0,1} \,H_1(Z_u) \,+\, cH_{4,0,0,0,2} \, H_2(Z_u) \,\, + \, cH_{4,0,0,0,3} \,H_3(Z_u)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0 \, + \, cH_{5,0,0,0,1} \,H_1(Z_u) \,+\, cH_{5,0,0,0,2} \, H_2(Z_u) \, \,+ \, cH_{5,0,0,0,3} \,H_3(Z_u)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+\end{align} <br>
+<br>
+<br>
+The above form seems very unwieldy and difficult to calculate its coefficients but we can break down the problem of calculation of its coefficients into recursive four 2D coefficients calculation problems. I will describe this numerical strategy in the next post.</div>
+
+			
+									
+									<div id="sig889160" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889176">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889176">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889176">
+
+			<h3 ><a href="#p889176">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889176&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889176" title="Post #2804">#2804</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 9th, 2025, 12:22 am</span></p>
+			
+			
+			
+			<div class="content">Friends, here is my strategy to find the Coefficients of a multi-dimensional Hermite-Series.<br>
+<br>
+<span style="font-size: 175%; line-height: normal">Estimation procedure for Multi Dimensional Joint or Conditional Hermite-Series/Z-Series From Joint Observation Data of Multiple Random Variables.</span><br>
+<br>
+Suppose, we have a random variable Y that depends upon random variables U, V, W and X and we want to capture all this dependence structure mathematically using multi-dimensional Hermite-Series/ZSeries. We would have to find \( \left[  Y\,  \,|X,W,V,U \right](Z_y \, , \, Z_x,\,Z_w\,,Z_v,\, Z_u))\, \,\) as pointed in previous post.<br>
+<br>
+Suppose we start our calculations with first estimating the effect of X on Y. We would have to find the effect of X on other variables. For this, we use our 2D calibration procedures to find the value of Y, W, V and U conditional on X. This will be in the following form for Y (The case of W, V and U would be exactly similar).<br>
+<br>
+\begin{align}<br>
+\left[  Y\,  \,|X \right]&amp;(Z_y \, , \, Z_x))\, \,\\<br>
+&amp;=\, \Big[\, cH_{0,0} \, + \, cH_{0,1} \,H_1(Z_x) \,+\, cH_{0,2} \, H_2(Z_x) \,\, + \, cH_{0,3} \,H_3(Z_x)\,\,+\,\ldots\,\Big] \\<br>
+&amp;+\, \Big[ \, cH_{1,0} \, + \, cH_{1,1} \,H_1(Z_x) \,+\, cH_{1,2} \, H_2(Z_x) \,\, + \, cH_{1,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \, cH_{2,0} \, + \, cH_{2,1} \,H_1(Z_x) \,+\, cH_{2,2} \, H_2(Z_x) \,\, + \, cH_{2,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \, cH_{3,0} \, + \, cH_{3,1} \,H_1(Z_x) \,+\, cH_{3,2} \, H_2(Z_x) \, \,+ \, cH_{3,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \, cH_{4,0} \, + \, cH_{4,1} \,H_1(Z_x) \,+\, cH_{4,2} \, H_2(Z_x) \,\, + \, cH_{4,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \, cH_{5,0} \, + \, cH_{5,1} \,H_1(Z_x) \,+\, cH_{5,2} \, H_2(Z_x) \, \,+ \, cH_{5,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+\end{align} <br>
+<br>
+<br>
+<span style="font-size: 100%; line-height: normal">After fitting the above conditional version of Y on X, We sort the data of Y and line it in an increasing order. This way, we can assign a  \(Z_y\)  to every data value. We remove the effect of Zx based hermite polynomials from Y|X by subtracting them from Y|X.  The value being subtracted is given below (we could do this since, we know \(Z_y\) and \(Z_x\) associated with each data entry after sorting for \(Z_y\)). The following value is subtracted from data of Y</span><br>
+<br>
+\begin{align}<br>
+&amp;=\, \Big[\, 0.0 \, + \, cH_{0,1} \,H_1(Z_x) \,+\, cH_{0,2} \, H_2(Z_x) \,\, + \, cH_{0,3} \,H_3(Z_x)\,\,+\,\ldots\,\Big] \\<br>
+&amp;+\, \Big[ \, 0.0 \, + \, cH_{1,1} \,H_1(Z_x) \,+\, cH_{1,2} \, H_2(Z_x) \,\, + \, cH_{1,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_1(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0 \, + \, cH_{2,1} \,H_1(Z_x) \,+\, cH_{2,2} \, H_2(Z_x) \,\, + \, cH_{2,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_2(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0 \, + \, cH_{3,1} \,H_1(Z_x) \,+\, cH_{3,2} \, H_2(Z_x) \, \,+ \, cH_{3,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_3(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0 \, + \, cH_{4,1} \,H_1(Z_x) \,+\, cH_{4,2} \, H_2(Z_x) \,\, + \, cH_{4,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_4(Z_y) \, \\<br>
+&amp;+\, \Big[ \,0.0 \, + \, cH_{5,1} \,H_1(Z_x) \,+\, cH_{5,2} \, H_2(Z_x) \, \,+ \, cH_{5,3} \,H_3(Z_x)\,\,+\,\ldots\, \Big] \, H_5(Z_y) \, \\<br>
+\end{align} <br>
+<br>
+We similarly subtract the effect of X from W, V and U.<br>
+<br>
+Please recall that we have removed the effect of X from data values of Y, W, V and U and these removed effect values are still in the form of slightly changed data. We calculate cross-moments between these removed effect data values of W and Y, V and U and from these cross-moments, we would calibrate the new coefficients of \(\left[\,Y\,-\,X\,|\,W\,\right](Z_y,Z_w)\). From respective cross-moments, we calibrate the coefficients of V and U given W.<br>
+<br>
+Our \(Z_y\) remains the same. We again line up the data in order of increasing \(Z_y\) and subtract the effect of W (We could do this since we know the value of Z_y and Z_w associated with each data element).<br>
+<br>
+Similarly we calibrate removed effect coefficients to V through removed effect cross-moments. And we continue with removing the effect of V and fitting the remaining data to coefficients of Y given U. And this would complete our calibration process.<br>
+<br>
+I will try to post a program about this next week.</div>
+
+			
+									
+									<div id="sig889176" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p889218">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile889218">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=f76bb4f369ad49a095737e73e606f6c2">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content889218">
+
+			<h3 ><a href="#p889218">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=889218&amp;sid=f76bb4f369ad49a095737e73e606f6c2" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p889218" title="Post #2805">#2805</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">October 13th, 2025, 5:18 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have been thinking about the problem of finding coefficients of multidimensional Hermite series for past one day or so. I am very sure that in a few weeks, we would be dealing with several interesting and applied problems. Currently, I am trying to see how to approach the problem so that we can solve everything recursively and break the larger problem into smaller parts. However, some things still might need to be understood. For example, when we remove correlations, we do it at variance level and do not bother with higher moments and do not properly know how higher moments have to be altered for everything to remain in sync. I want to work on these minor issues so that we can easily deal with removal of effect of one random variable from other random variables on a higher moments level and not merely on variance level. <br>
+<br>
+I look forward to a very well worked out solution of the problem.</div>
+
+			
+									
+									<div id="sig889218" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f76bb4f369ad49a095737e73e606f6c2" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2760" role="button">185</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" role="button">186</a></li>
+							<li class="active"><span>187</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" role="button">188</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2820" role="button">189</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2790&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;f76bb4f369ad49a095737e73e606f6c2" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2760" role="button">185</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2775" role="button">186</a></li>
+							<li class="active"><span>187</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" role="button">188</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2820" role="button">189</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=f76bb4f369ad49a095737e73e606f6c2&amp;start=2805" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2790&amp;sid=f76bb4f369ad49a095737e73e606f6c2">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=f76bb4f369ad49a095737e73e606f6c2" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=f76bb4f369ad49a095737e73e606f6c2"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=f76bb4f369ad49a095737e73e606f6c2"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=f76bb4f369ad49a095737e73e606f6c2" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#2b4a4f4642456b5c424746445f5f05484446">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>187</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=f76bb4f369ad49a095737e73e606f6c2";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=f76bb4f369ad49a095737e73e606f6c2";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2c946af180f2","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

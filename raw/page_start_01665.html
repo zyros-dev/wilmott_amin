@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 112 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=14e9670de53f1d32a098c1b999b6989b" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=14e9670de53f1d32a098c1b999b6989b?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=14e9670de53f1d32a098c1b999b6989b?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=14e9670de53f1d32a098c1b999b6989b?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1665" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="14e9670de53f1d32a098c1b999b6989b" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=14e9670de53f1d32a098c1b999b6989b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=14e9670de53f1d32a098c1b999b6989b" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="14e9670de53f1d32a098c1b999b6989b" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=14e9670de53f1d32a098c1b999b6989b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=14e9670de53f1d32a098c1b999b6989b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=14e9670de53f1d32a098c1b999b6989b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=14e9670de53f1d32a098c1b999b6989b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1665%26t%3D99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1665&amp;t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" />
+<input type="hidden" name="creation_time" value="1768907787" />
+<input type="hidden" name="form_token" value="e07c5606b86b7515f8864c9d234043dabd40d1b8" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1665&amp;sid=14e9670de53f1d32a098c1b999b6989b">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1665&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=14e9670de53f1d32a098c1b999b6989b">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="14e9670de53f1d32a098c1b999b6989b" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;14e9670de53f1d32a098c1b999b6989b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1635" role="button">110</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" role="button">111</a></li>
+							<li class="active"><span>112</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" role="button">113</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1695" role="button">114</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873927">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873927">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873927">
+
+			<h3 class="first"><a href="#p873927">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873927&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873927" title="Post #1666">#1666</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 14th, 2023, 4:24 pm</span></p>
+			
+			
+			
+			<div class="content">Sorry, doubled.<br>
+Friends, another new idea that I want to include in my new paper is about non-linear regressions with Z-Series Hermite polynomials. The standard linear regression that we currently use is as if we are regressing on data represented by first hermite polynomial. But with Z-Series, we can extend the idea of linear regression on first hermite to non-linear regressions on multiple hermite polynomials.<br>
+Suppose we want to do a nonlinear regression on W from two explanatory variables X and Y<br>
+I will give brief details to outline the new method in a few points.<br>
+First we would have to find Z-series representation of all the variables involved including regressand and regressors. Usually this would be done by calculating moments of all the data and fitting a Z-series density on each of the regressand and regressors.<br>
+For example in our case we would have.<br>
+First we find Z-Series of regressand<br>
+[$]W=a_0 + a_1 \, Z_1 + a_2 \, Z_1^2 + a_3 \, Z_1^3 + a_4 \, Z_1^4 + ... +a_7 \, Z_1^7[$]<br>
+Then we find Z-series of regressors <br>
+[$]X=b_0 + b_1 \, Z_2 + b_2 \, Z_2^2 + b_3 \, Z_2^3 + b_4 \, Z_2^4 + ... +b_7 \, Z_2^7[$] <br>
+[$]Y=c_0 + c_1 \, Z=3 + c_2 \, Z_3^2 + c_3 \, Z_3^3 + c_4 \, Z_3^4 + ... +c_7 \, Z_3^7[$]<br>
+<br>
+Then we convert from Z-Series representation to hermite representation as I have done many times on this forum and also mentioned in last incomplete version of my paper above as<br>
+[$]W=ah_0 + ah_1 \, H_1(Z_1) + ah_2 \, H_2(Z_1) + ah_3 \, H_3(Z_1) + ah_4 \, H_4(Z_1) + ... +ah_7 \, H_7(Z_1)[$]<br>
+and<br>
+[$]X=bh_0 + bh_1 \, H_1(Z_2) + bh_2 \, H_2(Z_2) + bh_3 \, H_3(Z_2) + bh_4 \, H_4(Z_2) + ... +bh_7 \, H_7(Z_2)[$]<br>
+[$]Y=ch_0 + ch_1 \, H_1(Z_3) + ch_2 \, H_2(Z_3) + ch_3 \, H_3(Z_3) + ch_4 \, H_4(Z_3) + ... +ch_7 \, H_7(Z_3)[$]<br>
+<br>
+The purpose of converting to hermites is that we can convert our problem of regression into several sub-problems since hermite polynomials are orthogonal to each other.<br>
+We want to regress each hermite polynomial term of the regressand on same order hermite polynomial terms of the regressors<br>
+Now we regress 1st hermite term of regressand on first hermite terms of regressors as<br>
+Here [$]k_{11}[$] and [$]k_{12}[$] are regression coefficients that we will find through ordinary least squares algorithm.<br>
+[$]ah_1 \, H_1(Z_1) =k_{11} (bh_1 \, H_1(Z_2) )+k_{12} (ch_1 \, H_1(Z_3))[$]<br>
+and for second hermite polynomial regress as<br>
+Here [$]k_{21}[$] and [$]k_{22}[$] are regression coefficients that we will find through ordinary least squares algorithm.<br>
+[$]ah_2 \, H_2(Z_1) =k_{21} (bh_2 \, H_2(Z_2) )+k_{22} (ch_2 \, H_2(Z_3))[$]<br>
+and for third polynomial ,we will regress as<br>
+[$]ah_3 \, H_3(Z_1) =k_{31} (bh_3 \, H_3(Z_2) )+k_{32} (ch_3 \, H_3(Z_3))[$]<br>
+<br>
+after doing these regressions to possibly seventh order, and finding [$]k_{n1}[$] and [$]k_{n2}[$] through least squares algorithm, we could write the non-linear  regression relationship solution for W as<br>
+<br>
+[$]W=k_0+\displaystyle\sum_{n=1}^{7} \, k_{n1} \, bh_n \, H_n(Z_2) +\displaystyle\sum_{n=1}^{7} \, k_{n2} \, ch_n \, H_n(Z_3) [$]<br>
+<br>
+Friends, I am sure that this new method and its variants would be able to find all sorts of non-linear relationships that we could not find with linear regressions. And it would also make new AI a lot more efficient.<br>
+I urge friends to play with this method. I will also include it in the applications of Z-series in my working research paper.</div>
+
+			
+									
+									<div id="sig873927" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873929">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873929">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873929">
+
+			<h3 ><a href="#p873929">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873929&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873929" title="Post #1667">#1667</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 14th, 2023, 4:39 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Sorry, doubled.<br>
+Friends, another new idea that I want to include in my new paper is about non-linear regressions with Z-Series Hermite polynomials. The standard linear regression that we currently use is as if we are regressing on data represented by first hermite polynomial. But with Z-Series, we can extend the idea of linear regression on first hermite to non-linear regressions on multiple hermite polynomials.<br>
+Suppose we want to do a nonlinear regression on W from two explanatory variables X and Y<br>
+I will give brief details to outline the new method in a few points.<br>
+First we would have to find Z-series representation of all the variables involved including regressand and regressors. Usually this would be done by calculating moments of all the data and fitting a Z-series density on each of the regressand and regressors.<br>
+For example in our case we would have.<br>
+First we find Z-Series of regressand<br>
+[$]W=a_0 + a_1 \, Z_1 + a_2 \, Z_1^2 + a_3 \, Z_1^3 + a_4 \, Z_1^4 + ... +a_7 \, Z_1^7[$]<br>
+Then we find Z-series of regressors <br>
+[$]X=b_0 + b_1 \, Z_2 + b_2 \, Z_2^2 + b_3 \, Z_2^3 + b_4 \, Z_2^4 + ... +b_7 \, Z_2^7[$] <br>
+[$]Y=c_0 + c_1 \, Z=3 + c_2 \, Z_3^2 + c_3 \, Z_3^3 + c_4 \, Z_3^4 + ... +c_7 \, Z_3^7[$]<br>
+<br>
+Then we convert from Z-Series representation to hermite representation as I have done many times on this forum and also mentioned in last incomplete version of my paper above as<br>
+[$]W=ah_0 + ah_1 \, H_1(Z_1) + ah_2 \, H_2(Z_1) + ah_3 \, H_3(Z_1) + ah_4 \, H_4(Z_1) + ... +ah_7 \, H_7(Z_1)[$]<br>
+and<br>
+[$]X=bh_0 + bh_1 \, H_1(Z_2) + bh_2 \, H_2(Z_2) + bh_3 \, H_3(Z_2) + bh_4 \, H_4(Z_2) + ... +bh_7 \, H_7(Z_2)[$]<br>
+[$]Y=ch_0 + ch_1 \, H_1(Z_3) + ch_2 \, H_2(Z_3) + ch_3 \, H_3(Z_3) + ch_4 \, H_4(Z_3) + ... +ch_7 \, H_7(Z_3)[$]<br>
+<br>
+The purpose of converting to hermites is that we can convert our problem of regression into several sub-problems since hermite polynomials are orthogonal to each other.<br>
+We want to regress each hermite polynomial term of the regressand on same order hermite polynomial terms of the regressors<br>
+Now we regress 1st hermite term of regressand on first hermite terms of regressors as<br>
+Here [$]k_{11}[$] and [$]k_{12}[$] are regression coefficients that we will find through ordinary least squares algorithm.<br>
+[$]ah_1 \, H_1(Z_1) =k_{11} (bh_1 \, H_1(Z_2) )+k_{12} (ch_1 \, H_1(Z_3))[$]<br>
+and for second hermite polynomial regress as<br>
+Here [$]k_{21}[$] and [$]k_{22}[$] are regression coefficients that we will find through ordinary least squares algorithm.<br>
+[$]ah_2 \, H_2(Z_1) =k_{21} (bh_2 \, H_2(Z_2) )+k_{22} (ch_2 \, H_2(Z_3))[$]<br>
+and for third polynomial ,we will regress as<br>
+[$]ah_3 \, H_3(Z_1) =k_{31} (bh_3 \, H_3(Z_2) )+k_{32} (ch_3 \, H_3(Z_3))[$]<br>
+<br>
+after doing these regressions to possibly seventh order, and finding [$]k_{n1}[$] and [$]k_{n2}[$] through least squares algorithm, we could write the non-linear  regression relationship solution for W as<br>
+<br>
+[$]W=k_0+\displaystyle\sum_{n=1}^{7} \, k_{n1} \, bh_n \, H_n(Z_2) +\displaystyle\sum_{n=1}^{7} \, k_{n2} \, ch_n \, H_n(Z_3) [$]<br>
+<br>
+Friends, I am sure that this new method and its variants would be able to find all sorts of non-linear relationships that we could not find with linear regressions. And it would also make new AI a lot more efficient.<br>
+I urge friends to play with this method. I will also include it in the applications of Z-series in my working research paper.
+</div></blockquote>
+.<br>
+.<br>
+.<br>
+Friends, please keep in mind that when we are regressing to find [$]k_{n1}[$] and [$]k_{n2}[$], we would have to arrange the data into observations as in ordinary least square regressions.<br>
+So in the regression for first hermite polynomial below<br>
+[$]ah_1 \, H_1(Z_1) =k_{11} (bh_1 \, H_1(Z_2) )+k_{12} (ch_1 \, H_1(Z_3))[$]<br>
+We use the tuple (Z1,Z2,Z3) associated with each of the joint observations of (W,X,Y) that are observed together. This tuple will be different for each observation in set of data and would be found by inverting the observation from original variable into underlying Z in each of the Z-series representation and we would use the same tuple with different hermite polynomials regressions associated with the same observation.  <br>
+So for second hermite polynomial regression associated with the same observation, we would use the same tuple (Z1,Z2,Z3) as we used for first hermite polynomial for the same observation.</div>
+
+			
+									
+									<div id="sig873929" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873972">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873972">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873972">
+
+			<h3 ><a href="#p873972">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873972&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873972" title="Post #1668">#1668</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 16th, 2023, 6:01 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am writing this post to request for help against continuing torture with mind control. During past one day, they have released gas on me in my room several times. They have dozens of different gases they use to control their targets and this particular one is very sickening and makes it very difficult to breathe. They also continue to try to target me with bad food and water everyday. Most of the bakeries in adjacent areas and a large number of small restaurants have been given drugs by army to freely add to their cooked food so when a victim would eat food at some restaurant or baker in the area, he would automatically get mind control chemicals. Water and beverages are extremely thoroughly drugged in large number of areas in the city and I have to drive 10 to 15 kilometers into other sides of the city to get good water. Even though I try to be very careful and go to remote parts of the city to get water and food, I still got hit with mind control drugs several times in past few days.<br>
+But a very difficult thing is to be forced to breathe when they have released sickening mind control gases in the room. Please protest against mind control torture of innocent people by rich gold-fathers of united states who beacon US military to torture innocent people due to their hatred and venom for muslims and many others.</div>
+
+			
+									
+									<div id="sig873972" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874004">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874004">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874004">
+
+			<h3 ><a href="#p874004">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874004&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874004" title="Post #1669">#1669</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 18th, 2023, 10:57 am</span></p>
+			
+			
+			
+			<div class="content">Friends, very sorry that I was unable to complete first preliminary version of the paper by end of last weekend. I had to fight both the widespread drugging of food and water in Lahore city and the super-sedating effect of antipsychotic injection. But I have done enough work and in next 3-4 days, I will complete preliminary work on most sections of the Z-Series paper and also point to related matlab programs already posted on this forum in a way that most friends would easily understand everything. I will release this first preliminary version in next 3-4 days.<br>
+I will continue to work to improve it later and release new versions but a self-contained initial version should be ready in 3-4 days. Very sorry again for this delay.</div>
+
+			
+									
+									<div id="sig874004" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874009">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874009">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874009">
+
+			<h3 ><a href="#p874009">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874009&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874009" title="Post #1670">#1670</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 18th, 2023, 5:34 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am writing this post again to complain about constant release of gas in my room by mind control agents. Despite it is so cold, I keep window of my room totally open to have fresh air in my room but mind control agents continue to release gas in my room and I continue to feel constant smell of gas accompanied with difficulty in breathing. This is really annoying since I continue to complain about the same thing but mind control agents never seem to care and continue to release gas in my room.<br>
+I want to request friends to please protest to mind control agency and American defense against brazen use of sickening and brain-numbing gases on peaceful civilians.</div>
+
+			
+									
+									<div id="sig874009" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874011">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874011">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874011">
+
+			<h3 ><a href="#p874011">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874011&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874011" title="Post #1671">#1671</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 18th, 2023, 6:02 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am working on a new matlab program with stochastic volatility monte carlo simulation. In this program, you can construct the Z-series density of both the asset and stochastic volatility from the simulated raw moments that are found in monte carlo simulation. I want to use this program to calculate non-linear correlation between orthogonal variance components of the simulated variables. I also want to use this program as an example of non-linear regression with regression broken up on orthogonal polynomial basis as I suggested a few posts ago.<br>
+However one most important thing I learnt that if we want to construct the density in original coordinates, it would be really advisable and prudent to convert the simulation into bessel coordinates and then fit bessel coordinates simulated moments on the Z-series density. If we try to construct the density in original coordinates(simulated), then many times noise in simulation is so high that inaccuracies in simulated tails throw moment away and it becomes very difficult to construct the Z-series density. For example, in original coordinates, I noticed that Z-series density from simulated moments could be constructed on one monte carlo step but could not be constructed for next several steps and then could again be constructed for a few time steps and so on. This is because variance and tails are much larger in original coordinates and hence simulated moments can have large inaccuracies due to slight inaccuracies in simulation. <br>
+However, we can easily construct Z-series densities from simulated moments in Bessel coordinates and it almost always works very nicely due to decreased variance and much smaller tails. And we can always convert these Z-series densities in Bessel coordinates to densities in original coordinates using functional transformation of the Bessel density. Mostly Z-series constructed densities from simulation are just as good as our analytic densities were that we constructed from addition of cumulants method in the past and overlay the monte carlo density very well just as niscely as the analytic densities we earlier constructed.<br>
+I hope to post new matlab programs on Friday or Saturday.</div>
+
+			
+									
+									<div id="sig874011" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874018">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874018">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874018">
+
+			<h3 ><a href="#p874018">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874018&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874018" title="Post #1672">#1672</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 19th, 2023, 3:51 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">However one most important thing I learnt that if we want to construct the density in original coordinates, it would be really advisable and prudent to convert the simulation into bessel coordinates and then fit bessel coordinates simulated moments on the Z-series density. If we try to construct the density in original coordinates(simulated), then many times noise in simulation is so high that inaccuracies in simulated tails throw moment away and it becomes very difficult to construct the Z-series density. For example, in original coordinates, I noticed that Z-series density from simulated moments could be constructed on one monte carlo step but could not be constructed for next several steps and then could again be constructed for a few time steps and so on. This is because variance and tails are much larger in original coordinates and hence simulated moments can have large inaccuracies due to slight inaccuracies in simulation. </span></div></blockquote>
+We can perform monte carlo simulation in any coordinates people prefer. But for finding the density, we simply need to transform the simulated data from original coordinates to bessel coordinates by using transformation, w=x^(1-gamma)/(1-gamma). <br>
+You can do actual simulation in any coordinates you prefer which would usually be original coordinates. Only simulated data has to be transformed to find the Z-series representation in a stable way in Bessel coordinates.</div>
+
+			
+									
+									<div id="sig874018" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874028">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874028">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874028">
+
+			<h3 ><a href="#p874028">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874028&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874028" title="Post #1673">#1673</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 19th, 2023, 6:40 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, in this post I want to present the ideas about hermite-specific correlation and regression that I have been mentioning for some time.<br>
+Suppose we have Z-series hermite representations of two correlated random variables as<br>
+<br>
+[$]X= ah_0 \, + \, ah_1 H_1(Z_1)\, + \, ah_2 H_2(Z_1)\, + \, ah_3 H_3(Z_1)\, + \, ... + \, ah_n H_n(Z_1) [$]<br>
+<br>
+and for Y<br>
+<br>
+[$]Y= bh_0 \, + \, bh_1 H_1(Z_2)\, + \, bh_2 H_2(Z_2)\, + \, bh_3 H_3(Z_2)\, + \, ... + \, ah_n H_n(Z_2) [$]<br>
+<br>
+please note that in hermite representation the constant term in RHS is always equal to mean. So we could have equally written<br>
+<br>
+[$]X= \mu_X \, + \, ah_1 H_1(Z_1)\, + \, ah_2 H_2(Z_1)\, + \, ah_3 H_3(Z_1)\, + \, ... + \, ah_n H_n(Z_1) [$]<br>
+<br>
+[$]Y= \mu_Y \, + \, bh_1 H_1(Z_2)\, + \, bh_2 H_2(Z_2)\, + \, bh_3 H_3(Z_2)\, + \, ... + \, ah_n H_n(Z_2) [$]<br>
+<br>
+Suppose we have a large set of observations in pairs of X and Y and we want to find their hermite-wise correlation. This is only very natural since all hermite polynomial components of variance within each of the probability distribution are orthogonal to each other.<br>
+<br>
+Suppose we have a total of P (as in total paths of joint evolution of both stochastic processes)  joint observations of stochastic processes X and Y.<br>
+For Finding Correlation between first hermite polynomial components, we write the equation for the correlation between first hermites as<br>
+<br>
+[$]\rho_{XY,1} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_1 \, Z_{1,p} \, bh_1 \, Z_{2,p} \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_1^2 \, {Z_{1,p}}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_1^2 \, {Z_{2,p}}^2 \,}}[$]<br>
+<br>
+Please notice that for calculation of above equation, we first have to find the specific values of [$] Z_{1,p}[$] and [$]Z_{2,p}[$] that are associated with particular pth observation of [$]X_p[$] and [$]Y_p[$] by some inversion method. I will comment on this inversion at the end of this post.<br>
+Similarly for 2nd hermite polynomial, we would have the correlation between X and Y equation calculated over joint observations of RVs as<br>
+<br>
+[$]\rho_{XY,2} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_2 \, ({Z_{1,p}}^2-1) \, bh_2 \, ({Z_{2,p}}^2-1) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_2^2 \, {(Z_{1,p}^2-1)}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_2^2 \, {({Z_{2,p}}^2-1})^2 \,}}[$]<br>
+<br>
+similarly for nth hermite polynaomial correlations, we would write as<br>
+<br>
+[$]\rho_{XY,n} \, = \,  \frac{\displaystyle\sum_{p=1}^{P} ah_n \, H_n(Z_1) \, bh_n \, H_n(Z_2) \,}{\sqrt{\displaystyle\sum_{p=1}^{P} ah_n^2 \, {H_n(Z_1)}^2 \,\displaystyle\sum_{p=1}^{P} \, bh_n^2 \, {H_n(Z_2)}^2 \,}}[$]<br>
+<br>
+Please note that correlations are in joint products of hermite polynomials and their coefficients are only good to make sure they are non-zero and are important to determine the sign of correlation only.<br>
+<br>
+We know from simple regression theory that once we know correlation between two variables, we can write the regression equation between them as<br>
+<br>
+[$]Y \, = \, \mu_Y \, + \, \rho_{XY} \frac{s_Y}{s_X} \, (X\, - \, \mu_X) [$]<br>
+<br>
+So we could write a variant of the above traditional formula in our new case with hermite correlations as<br>
+<br>
+[$]Y \, = \, \mu_Y \, + \, \rho_{XY,1} \frac{bh_1}{ah_1} \, Z_1 \, + \, \rho_{XY,2} \frac{bh_2}{ah_2} \, ({Z_1}^2 -1) \, + \, \rho_{XY,3} \frac{bh_3}{ah_3} \, ({Z_1}^3 -3 Z_1) + ...+\, \rho_{XY,n} \frac{bh_n}{ah_n} \, H_n(Z_1)[$]<br>
+<br>
+There is one caveat and that is when we are in mote carlo framework and we want to find above correlations and regressions, we have to invert extremely large number of observations of X and Y to find their underlying Z's as monte carlo paths usually would be very large. But this can safely be done by inverse-series in Bessel coordinates. The specific value of Z associated with observed/simulated data points remains the same in both bessel and original coordinates. Finding them in Bessel coordinates has extremely small error for most SDE distributions I encountered in 2D stochastic volatility models when inverse-series method is used. The error is somewhat larger in deep tails  but still quite small and we would get very valid estimates of correlations and regressions using this series inversion method as used in mathematica. <br>
+Using series inversion in original coordinates would generally have much larger errors deep in the tail. But since The specific value of Z associated with observed/simulated data points remains the same in both bessel and original coordinates, we can find them in bessel coordinates (for much better accuracy) and then safely use the same value of Z for correlation and regression analytics in original coordinates.<br>
+I hope to post a worked out matlab program on this in another 2 days.</div>
+
+			
+									
+									<div id="sig874028" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874034">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874034">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874034">
+
+			<h3 ><a href="#p874034">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874034&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874034" title="Post #1674">#1674</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 20th, 2023, 2:01 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I want to make a special request for help in this post. As I told friends several times, I have been on antipsychotics since 1999 with the exception of a few brief periods of a few months each. Doctor says the reason behind forcing antipsychotics on me are my baseless fears that CIA somehow wants to hurt me and damage my brain. Doctors call me paranoid schizophrenic. Psychiatrists are very aware that I am perfectly healthy but they connive with Pakistan military who ask them to declare me mentally sick, and use force when I argue against their forced treatment. Most friends in US know about mind control have learnt over time that CIA in fact does try to retard innocent civilians who they do not like for whatever reasons. Many people even know complete truth how innocent victims are cornered by adding mind control drugs in the food, beverages and water supply of entire cities on behest of CIA. And when a victim complains about it, he is called schizophrenic and this has become a very useful tactic in the hands of CIA and military agencies to target and victimize people they do not like.<br>
+Though I never liked antipsychotics, I have been taking them in one form or another for more than past twenty years. When I was young, I was still able to take antipsychotics and run for a few kilometers everyday and be able to work since I used to have enough energy and stimulation. But I am already 50 years old now and it continues to become very difficult for my body to stand antipsychotic medication now. I am excessively over-weight due to low metabolism rate associated with decades of antipsychotics. My current weight is roughly 108 Kg which is more than thirty kilograms higher than the right weight for my height. I suffer from so many other physical problems due to antipsychotics. For example in the two weeks following an antipsychotic injection (fluanxol) that is given to me every 23 days, my breathing remains disturbed and is remarkably noisy as compared to breathing of an ordinary healthy human. Sometimes, I would even give involuntarily snorting like sounds when breathing. And many times I would have difficulty sleeping at night due to heavy and forced breathing. My family and doctors are not ready to compromise on my antipsychotics so it is useless to argue with them to end the antipsychotics as I have tried this several times to no avail. My heart beat that used to be around 75 more than 20 years ago as I recall, now remained around 120 for past twenty years due to high antipsychotics. These antipsychotics continue to slowly weaken the heart and negatively affect its functioning. I am grateful that I still do not have diabetes but I am sure that I would be diabetic in next few years because of high weight and low metabolism. Continued use of antipsychotics also have a positive correlation with diabetes even when controlled for other factors like weight. Due to continued use of antipsychotics at old age of 50 years, I am rarely upbeat and mostly remain lethargic and highly sedated. I have constant body aches and pains due to weakness caused by continued use of antipsychotics.<br>
+I know I can do some good research but it is only possible since this is the only thing I did in past twenty years of my life. Apart from research, there is no bright spot especially regarding my body and physical health. I really want to request American friends to please force your government and military agencies to not force psychiatrists to give me any more antipsychotics. My greatest wish at this part of my life is to be able to live a life without antipsychotics forced on me. I really cannot thank friends enough who could lobby for this or protest to American army against forced antipsychotics on me. Please help me me live a life without antipsychotics and I would be truly grateful to you.</div>
+
+			
+									
+									<div id="sig874034" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874038">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874038">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=1061&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./download/file.php?avatar=1061_1415926536.gif" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1061&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Marsden</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1061&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">1340</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">August 20th, 2001, 5:42 pm</span></dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Maryland</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874038">
+
+			<h3 ><a href="#p874038">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874038&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874038" title="Post #1675">#1675</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 20th, 2023, 5:06 pm</span></p>
+			
+			
+			
+			<div class="content">Amin, what do you understand the CIA's interest in you to be that they would want you declared paranoid schizophrenic and put on antipsychotics?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874040">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874040">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874040">
+
+			<h3 ><a href="#p874040">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874040&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874040" title="Post #1676">#1676</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2023, 4:55 am</span></p>
+			
+			
+			
+			<div class="content">Marsden, you were at forefront of calling me paranoid schizophrenic when British had drugged beverages, water and a lot of food in London and police was harassing me everyday. My thread is filled with all the details. All your humanity is about pretending innocence and naivette so that 24 years of torture on me could continue. <br>
+I really want to request people if they really have any true humanity to please forgive me now. At this age it is too difficult for me to take antipsychotic torture cruelly forced on me. <br>
+When I write about my cruel treatment somebody always makes someone insensitive on this forum to cast doubt on my health that I am indeed schizophrenic and my torture really should continue.</div>
+
+			
+									
+									<div id="sig874040" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874046">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874046">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874046">
+
+			<h3 ><a href="#p874046">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874046&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874046" title="Post #1677">#1677</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2023, 7:42 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, another side effect of antipsychotics I forgot to mention was that my vision is getting impaired. About three years ago when I was given the same injection fluanxol, I went to see a doctor about my eye sight and he suggested I should use glasses. I bought two pairs of glasses and started using them. But later there was a two and a half month period in which I was not taking antipsychotics and my eye-sight became good again (This was about two years ago.) and I stopped using glasses. Most of us take our good eyesight for granted but it is a real joy to see the world perfectly in its good colors and we only value it when we lose those colors. Though I am not using glasses again but my eyesight has deteriorated remarkably again and sometimes I am seriously afraid that this would be irreversible this time.<br>
+I want friends to know that I like to try doing good research and sharing it with others and I would really want to continue doing that regardless of what happens. But please do not strip me of the joy of living something that happens when people are forced on antipsychotics. Since I am not young anymore, when antipsychotic injection is given to me, for two weeks after that, it is difficult for me to even pass time and it feels as if some heavy sack has been placed on my head. I want to request people to please do not be cruel to people who try to be good.</div>
+
+			
+									
+									<div id="sig874046" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874047">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874047">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=1061&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./download/file.php?avatar=1061_1415926536.gif" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1061&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Marsden</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1061&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">1340</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">August 20th, 2001, 5:42 pm</span></dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Maryland</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874047">
+
+			<h3 ><a href="#p874047">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874047&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874047" title="Post #1678">#1678</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2023, 10:32 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+Marsden, you were at forefront of calling me paranoid schizophrenic when British had drugged beverages, water and a lot of food in London and police was harassing me everyday. My thread is filled with all the details. All your humanity is about pretending innocence and naivette so that 24 years of torture on me could continue. <br>
+I really want to request people if they really have any true humanity to please forgive me now. At this age it is too difficult for me to take antipsychotic torture cruelly forced on me. <br>
+When I write about my cruel treatment somebody always makes someone insensitive on this forum to cast doubt on my health that I am indeed schizophrenic and my torture really should continue.
+</div></blockquote>
+
+Amin, I asked you what you understood the CIA's interest in you to be that they would <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">want you declared paranoid schizophrenic and put on antipsychotics. You might have answered that to the best of your ability.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Instead you accuse me of hostility and insensitivity toward you and pointed me to the depths of this 1675-post thread.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Isn't your response consistent with you being a paranoid schizophrenic?</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Can we start over?</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Amin, what do you understand the CIA's interest in you to be that they would want you declared paranoid schizophrenic and put on antipsychotics?</span></span></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874048">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874048">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874048">
+
+			<h3 ><a href="#p874048">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874048&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874048" title="Post #1679">#1679</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 21st, 2023, 10:35 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I had been trying for past few days to construct Z-Series densities from monte carlo simulations in correlated stochastic volatility setting. But I continued to run across problems and the whole thing would sometimes work and not work some other times. However I had new better ideas and I was able to find Z-series coefficients of simulations in an explicit way and this new method is very stable and always works in my experiments. I was able to extract hermite coefficients of Z-series densities by taking inner product of monte carlo random variable with various hermite polynomials over the normal distribution. Inner product with each hermite polynomial extracts its coefficient due to orthogonality in this new setting. I was surprised since this method is explicit and only requires very cheap integrations over simulated data and is also super stable for monte carlo simulations. It works much better for simulations as compared to calculating simulated moments and feeding them to Z-Series coefficient calculation program. <br>
+I would have made a more detailed post with equations but it is already 3:30 am and a bit late so I decided to make a detailed post with the matlab program tomorrow.</div>
+
+			
+									
+									<div id="sig874048" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p874049">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile874049">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=14e9670de53f1d32a098c1b999b6989b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content874049">
+
+			<h3 ><a href="#p874049">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=874049&amp;sid=14e9670de53f1d32a098c1b999b6989b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p874049" title="Post #1680">#1680</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">January 22nd, 2023, 6:43 am</span></p>
+			
+			
+			
+			<div class="content">Friends, in a previous post I told friends how staff at a lady psychiatrist's hospital started beating me and abused me. During past twenty three years, there have been many many instances of my obvious abuse by different psychiatrists. I will describe some of those instances in this post.<br>
+When I came from United States and till fifteen years after that, my father would proudly ask me that I could see any psychiatrist I wish. This was because Pakistan army was managing my persecution and they would force psychiatrists to declare me schizophrenic and my father was told that every psychiatrist would be forced to cooperate. However, by chance in 2016, I came  across a psychiatrist who was far better. I never told him that I was under mind control but whenever he interviewed me, he always said after the interview that I was perfectly sane and mentally healthy. When my family would force him to increase the dosage of antipsychotics, the doctor first told me that I should not live with my family and make a comprehensive plan to support myself and become independent (such a plan could never work since Pakistan army was threatening people in Pakistan to not give me any business and CIA was making sure that every contact I would reach for work in Europe (and Singapore/ Japan /Australia) would be approached by CIA telling them that I was a very bad guy and they must not do business with me. I had not told the doctor any such thing that intelligence agencies were after me.)  When I told the good doctor how previous psychiatrists had abused me, he would tell me that this used to be a very widespread practice in America hundred years ago to wrong mentally healthy humans by using corrupt psychiatrists as instruments to detain them and strip them of their sanity. The good doctor I am talking about was American national with Pakistan background who had practiced psychiatry in America for over twenty years and had returned to Pakistan. That good doctor kept me on very low antipsychotics (1 mg resperidone per day) and that too on extreme insistence of my family. It was only during that time of treatment by that doctor that I got my first break in research and I solved the problem of high order monte carlo simulations (and analytic series solution of ODEs)  and posted that solution on this thread. Ok, when my family was fed with the doctor, they detained me with another doctor. They detained me again two years ago when I requested my family that I wanted to see the same doctor of my choice again( I have been detained every year for past six or seven years by different doctors), they detained me through a different doctor. So my family now stubbornly refuses to allow me to see a professional qualified American psychiatrist of my own choice and detains me every time I try to approach him.<br>
+Now back to my obvious abuse by two other psychiatrists. I was detained by this doctor who was running a mental health facility and was not a psychiatrist himself. At that time I did not use to walk very much and my blood pressure used to be somewhat high. Since other antipsychotics had failed to retard me, doctor suggested I take aripperizole injections. These injections affect the heart and also elevate blood pressure but doctor who wanted to retard me had no regard for my health while pretending to cure me. In initial days of my detention, staff at the hospital when checked my blood pressure told me high enough blood pressure in line with what I used to have but after I complained about aripperizole and its effect on blood pressure the staff started doctoring blood pressure and started telling me that my blood pressure was very good or even low. This is a post I wrote on another thread in this forum about it. <a href="https://forum.wilmott.com/viewtopic.php?f=15&amp;t=94796&amp;start=465#p785440" class="postlink">How to safeguard my research - Page 32 - wilmott.com</a><br>
+.
+<blockquote class="uncited"><div class="blockquote__inner"><span style="font-size: 100%; line-height: normal"><br>
+<strong>Amin:</strong><br>
+<br>
+Since I wrote about high blood pressure and mentioned high blood pressure before the hospital staff, they have started to doctor blood pressure. Now, everyday they tell me that my blood pressure is 120/80 or 110/70. While they always told me that my blood pressure was 130/90 or 140/100 prior to injections. I have never had so good blood pressure for years that they have started to tell me now. Friends would recall a previous post when I could not sleep at night and had to take a sleeping pill. When the dispenser came to me at night(The hospital has no MBBS who stays here at night in Ramadan. Dr. AS used to stay here on some nights earlier but has been totally absent in Ramadan). When the dispenser checked my blood pressure, he told me that it upper blood pressure is 110. I did not believe him at all. He asked me to check on my own and put the stethoscope head assembly in my ears. I could easily tell that upper blood pressure was more than 140 and lower was more than 100. The staff has already started to doctor blood pressure. My parents are going to Saudi Arabia for two weeks in a few days. Now Dr. AS has the plan to hold me in detention while my parents are abroad. I had a complete settlement with Dr. N and we(I and the doctor N) both agreed that I would be visiting him every fifteen days and all modalities were agreed. I do think as a patient it is my right to choose the psychiatrist and Dr. AS( who is incharge of facility Pav.) has no right to change the doctor after I have selected a psychiatrist and we both agree on terms of any treatment. Dr. AS has imposed another psychiatrist Dr. M who has not even seen me and has already started giving me injections and increased medicine without looking at my present condition. Dr. N had explicitly stated that I would be free to leave if it were his facility. Most major reason for detaining me now is that Dr.AS wants to continue to detain me while my parents are leaving for abroad for more than two weeks</span></div></blockquote>
+.<br>
+Later after a few days, I was given a second aripperizole injection and released from detention. An injection was due every fifteen days. My parents were in Saudi Arabia and I was living with my sister. She insisted after fifteen days that I get a new aripperizole injection. I complained about too much side effects and other serious problems but my sister insisted that I must get the injection. She talked to another doctor and the doctor told her that if his blood pressure and pulse are fine, just give him the injection. I asked my sister that my blood pressure must be checked before I get the new injection. We went to a small hospital close to her house and when my blood pressure was checked my lower blood pressure was 110. The hospital staff recommended that I stay at the hospital in their care until my blood pressure decreases. It was a totally random blood perssure check. When hospital staff came to know that I had been given aripperizole injections, they told my sister to not give me those injections any more. My sister asked the staff to relieve me and we came home but I was not given aripperizole injections after that. <br>
+But this is interesting that the psychiatrist was initially desperate to prescribe aripperizole despite that I had told him about my heart and blood pressure problems and his staff was asked to doctor blood pressure so that I would accept the injections.<br>
+Good thing is that only after stopping aripperizole, I started my treatment with good psychiatrist  doctor Naeem Aftab (who is an American national) and he gave me enough relief that I was able to get a break in my research and solve the problem of high order monte carlo simulations. I would always be thankful to Dr. Naeem Aftab for giving me relief at such a crucial point in my life.<br>
+<br>
+Yet another experience for abuse was with a seasoned psychiatrist who is known for his connections with Pakistan army. When army dictator Pervaiz Musharraf ruled the country, he made this doctor the dean(president) of the university of health sciences which regulates most medical universities in Pakistan. He had treated me for three years in year 2001. He started my treatment without interviewing me and gave me electric shocks at the start to jumpstart the therapy. <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">I was given electric shocks for fifteen days in early 2001. I still recall that doctor would place a wooden wedge between my teeth and then give me an injection and I still recall how numbness would move in my body from feet to the upper body after the injection. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">When going to that doctor's psychiatrist facility in 2001 I had to travel from Kot Addu to Rawalpindi. My family had given me some drug in my food and I became unconscious after an hour or so. I still recall how I was begging my younger brother to help me that I do not want to go anywhere and if he could help me but he like everybody else in the family refused. Slowly drug in food showed its effect and I have absolutely no memory of being taken in my father's car despite that it would have taken him at least eight hours to take me to Rawalpindi. Psychiatrist did not interview me and detained me and started giving me electric shocks. I still recall how I defecated in my bed there and they had to wash it. </span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Anyway, I was taken to this psychiatrist in 2017 again. He was very clearly told that I had been given antipsychotic drug larjactil by another doctor and it backfired and I had extremely severe drug-induced jaundice. But the doctor was so haughty and cavalier and so desperate to retard me that he still insisted that I must get the same drug larjactil and said that it was not necessary that it would cause jaundice every time. Problem for the doctor was that most antipsychotics had failed to retard me and he wanted to give me some potent antipsychotic that had not been well-tried on me. Though the drug was given to me earlier and later discontinued, the doctor wanted to take his chances to retard me and he had no regard for my health. This doctor is a big crony of Pakistan army and really wanted to please the generals and therefore he decided to give me larjactil again. And as would already be obvious to most friends, after two weeks, I started to show all signs of drug-induced jaundice again and my body and eyes were all yellow. My Biluribin shot like anything. And it took more than two months to control jaundice after that. Though my biluribin came back to normal after two months, several less known enzymes in my liver remained disturbed for several years after that and continued to show as abnormal in my liver function test reports.</span></div>
+
+			
+									
+									<div id="sig874049" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;14e9670de53f1d32a098c1b999b6989b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1635" role="button">110</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" role="button">111</a></li>
+							<li class="active"><span>112</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" role="button">113</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1695" role="button">114</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1665&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;14e9670de53f1d32a098c1b999b6989b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1635" role="button">110</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1650" role="button">111</a></li>
+							<li class="active"><span>112</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" role="button">113</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1695" role="button">114</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=14e9670de53f1d32a098c1b999b6989b&amp;start=1680" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1665&amp;sid=14e9670de53f1d32a098c1b999b6989b">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=14e9670de53f1d32a098c1b999b6989b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=14e9670de53f1d32a098c1b999b6989b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=14e9670de53f1d32a098c1b999b6989b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=14e9670de53f1d32a098c1b999b6989b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#d5b4b1b8bcbb95a2bcb9b8baa1a1fbb6bab8">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>112</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=14e9670de53f1d32a098c1b999b6989b";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=14e9670de53f1d32a098c1b999b6989b";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2842fb6a571b","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

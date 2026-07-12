@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 62 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=791f96073014da9fbb93191bd02baa4b" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=791f96073014da9fbb93191bd02baa4b?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=791f96073014da9fbb93191bd02baa4b?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=791f96073014da9fbb93191bd02baa4b?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=915" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=791f96073014da9fbb93191bd02baa4b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="791f96073014da9fbb93191bd02baa4b" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=791f96073014da9fbb93191bd02baa4b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=791f96073014da9fbb93191bd02baa4b" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=791f96073014da9fbb93191bd02baa4b" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="791f96073014da9fbb93191bd02baa4b" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=791f96073014da9fbb93191bd02baa4b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=791f96073014da9fbb93191bd02baa4b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=791f96073014da9fbb93191bd02baa4b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=791f96073014da9fbb93191bd02baa4b" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D915%26t%3D99702&amp;sid=791f96073014da9fbb93191bd02baa4b" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=791f96073014da9fbb93191bd02baa4b" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=915&amp;t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" />
+<input type="hidden" name="creation_time" value="1768907744" />
+<input type="hidden" name="form_token" value="0a2fa5272b6a8c9c6fb06be822bdd7f34fc62c9f" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=791f96073014da9fbb93191bd02baa4b" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=915&amp;sid=791f96073014da9fbb93191bd02baa4b">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=915&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=791f96073014da9fbb93191bd02baa4b">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="791f96073014da9fbb93191bd02baa4b" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;791f96073014da9fbb93191bd02baa4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=885" role="button">60</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" role="button">61</a></li>
+							<li class="active"><span>62</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" role="button">63</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=945" role="button">64</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p856533">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856533">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856533">
+
+			<h3 class="first"><a href="#p856533">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856533&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856533" title="Post #916">#916</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 3rd, 2020, 9:50 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<span style="font-size: 100%; line-height: normal">Dear friends, I was trying to think how to derive the proper equations for the evolution of density in Ito-hermite method. I was able to find some other interesting equations that I decided to share here with friends. </span><br>
+Before I write the main equations, I want to mention that this idea is based on equivalence between two densities. I take one density that is standard normal called Z (could also be taken as brownian motion) and then I try to find the evolution of a particular point on the density of SDE variable X(t,Z) and this particular point is related to a specific fixed value of Z which is already known. Z is a static density that does not change with time at all.<br>
+I will write a few equations first that we will use later in the main derivation. Here are the equations<br>
+<br>
+[$]P(Z)=P(X,t) |{\frac{\partial X}{\partial Z}}|[$]   Follows from change of variable formula for densities.<br>
+[$]\frac{\partial P(X,t)}{\partial X}= \frac{\partial p(Z)}{\partial Z} (\frac{\partial Z}{\partial X})^2[$] <br>
+<br>
+[$]\frac{d}{dt} \big[ {\frac{\partial X}{\partial Z}} \big]=\frac{\partial}{\partial X}\big[ {\frac{\partial X}{\partial Z}} \big] \frac{\partial X}{\partial t}[$]<br>
+[$]=-{(\frac{\partial X}{\partial Z})}^2 \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}[$]<br>
+<br>
+[$]\frac{\partial P(X,t)}{\partial t} = f(X)[$] where f(X) is the fokker planck equation.<br>
+<br>
+Now we come towards the main equation derivation(which might as well possibly be wrong)<br>
+<br>
+Since standard normal is a static density and it does not change with time, we can write<br>
+<br>
+[$]\frac{d}{dt}[p(Z)]=0[$]<br>
+since we can write densities in terms of each other using change of variable formula, we can write<br>
+[$]\frac{d}{dt}[p(X,t)\frac{\partial X}{\partial Z}]=0[$]<br>
+taking the derivatives, we can expand the above equation as<br>
+[$]\big [ \frac{\partial p(X,t)}{\partial t}+\frac{\partial p(X,t)}{\partial X}\frac{\partial X}{\partial t}  ]\frac{\partial X}{\partial Z} [$]<br>
+[$]-p(X,t){(\frac{\partial X}{\partial Z})}^2 \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}=0[$]<br>
+<br>
+using <br>
+[$]P(Z)=P(X,t) |{\frac{\partial X}{\partial Z}}|[$] <br>
+[$]\frac{\partial P(X,t)}{\partial X}= \frac{\partial p(Z)}{\partial Z} (\frac{\partial Z}{\partial X})^2[$] <br>
+and [$]\frac{\partial P(X,t)}{\partial t} = f(X)[$]<br>
+in the above equation ,we get<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{ \frac{\partial p(X,t)}{\partial t}}{ \big[ (p(Z) \frac{\partial^2 Z}{\partial X^2}+ Z p(Z) ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+<br>
+using the above equation, we can probably solve every SDE so that we can solve for evolution of X as a function of Z and t. More detailed post and notes tomorrow.
+</div></blockquote>
+
+Sorry It was too late yesterday when I wrote the above post and it took me more than one and a half hour to write it and I slept and woke up several times on my desk in between. So I resume yesterday's post.<br>
+copying from the above post we have<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{ \frac{\partial p(X,t)}{\partial t}}{ \big[ (p(Z) \frac{\partial^2 Z}{\partial X^2}+ Z p(Z) ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+<br>
+where [$]\frac{\partial p(X,t)}{\partial t}[$] is the fokker planck equation for the related SDE.<br>
+We can use the change of variable formula in fokker-planck again to get rid of the densities and get an evolution equation solely in terms of Z and SDE variable X(Z,t). Suppose the structure of fokker planck is given as<br>
+<br>
+[$]\frac{\partial p(X,t)}{\partial t}=a(X,t) + b(X,t) p(X,t) + c(X,t) \frac{\partial p(X,t)}{\partial X} + d(X,t) \frac{\partial^2 p(X,t)}{\partial X^2}[$] <br>
+<br>
+when we have [$]a(X,t)=0[$] we can eliminate the densities from the equation by converting p(X,t) into p(Z) and cancelling the p(Z) in the equation. using the following formulas, we get<br>
+<br>
+[$]p(X)=p(Z) |\frac{\partial Z}{\partial X}|[$]  This follows from the standard change of variables in a density.<br>
+[$]\frac{\partial p(X)}{\partial X}=\frac{\partial p(Z)}{\partial Z} {(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} =-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} [$]<br>
+[$]\frac{\partial^2 p(X)}{\partial X^2}=\frac{\partial^2 p(Z)}{\partial Z^2} {(\frac{\partial Z}{\partial X})}^3+3 \frac{\partial p(Z)}{\partial Z} \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2}+p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+[$]=(Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+<br>
+[$]\frac{\partial p(X,t)}{\partial t}= b(X,t) p(Z) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2}\big][$]<br>
+[$]+ d(X,t) \big[ (Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}  \big][$]<br>
+<br>
+putting the above value of fokker planck in the first equation and cancelling p(Z) we get<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{  b(X,t) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}\big] + d(X,t) \big[ (Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}  \big]}{ \big[ \frac{\partial^2 Z}{\partial X^2}+ Z ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+Please be careful with signs as I might have missed some absolute in change of probability derivatives.<br>
+<br>
+In order to work out a proper evolution equation, We can take the value of Z and its derivatives [$]\frac{\partial Z}{\partial X}[$] and [$]\frac{\partial^2 Z}{\partial X^2}[$] and [$]\frac{\partial Z^3}{\partial X^3}[$] as constant at start of the time step and expand the integrals of the kind like [$]\int_0^t b(X,s) H_n(Z) ds[$],  [$]\int_0^t c(X,s)H_n(Z) ds[$] and [$]\int_0^t d(X,s) H_n(Z) ds[$] for a particular value of Z related to each grid point using stochastics just like we did for monte carlo simulations and then form a valid evolution equation. In the above integrals [$]H_n(Z)[$] is a standard normal hermite polynomial of nth degree.<br>
+These are very basic thoughts that I just worked out quickly and there is also some possibility that we might have to use the equivalence relation with brownian motion density instead of standard normal density but if required doing the same exercise on brownian motion should also be straightforward. <br>
+I will be doing my experiments and coming out with a more detailed post in a day.<br>
+Again since I recently did this and never numerically tried it there is a chance that we might have to use brownian motion density instead of standard normal density but that should also be straightforward.</div>
+
+			
+									
+									<div id="sig856533" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p856578">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856578">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856578">
+
+			<h3 ><a href="#p856578">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856578&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856578" title="Post #917">#917</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 4th, 2020, 8:50 am</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Dear friends, the method proposed in previous post to solve for the densities of SDEs by doing a change of variable with static density of standard normal will work for other SDEs only if it works for the simplest SDE which is that of brownian motion. And doing it for brownian motion SDE will give us insights about how to solve more complicated SDEs since mathematics there can become very tedious and knowing basic principles towards solution of brownian motion SDE will be very helpful. Therefore I tried to solve the brownian motion SDE with this method and it does work. Here are the details.</span><br>
+In what follows, we use the notation [$]B(t)[$] for standard brownian motion and [$]Z[$] for standard normal.<br>
+<br>
+The fokker planck equation for Brownian motion is given as<br>
+[$]\frac{\partial P(B,t)}{\partial t}=.5 \frac{\partial ^2 P(B,t)}{\partial B^2}[$]  Equation(1)<br>
+<br>
+and we apply time derivative on static standard normal density as<br>
+[$]\frac{d}{dt}[P(Z)]=0[$]     Equation(2)<br>
+Changing to standard brownian motion density inside the brackets by application of change of variable formula<br>
+[$]\frac{d}{dt}[P(B,t)|\frac{\partial B(t)}{\partial Z}|]=0[$]    Equation(3)<br>
+applying the time derivative to equation (3), we get the equation<br>
+[$][\frac{\partial P(B,t)}{\partial t} +\frac{\partial P(B,t)}{\partial B}\frac{\partial B(t)}{\partial t}]\frac{\partial B(t)}{\partial Z} [$]<br>
+[$]-  P(B,t) (\frac{\partial B(t)}{\partial Z})^2 \frac{\partial^2 Z}{\partial B^2} \frac{\partial B(t)}{\partial t} =0[$]   Equation(4)<br>
+I have removed absolute signs since the derivative between brownian motion and standard normal will be positive.<br>
+We put the expression for standard brownian fokker-planck equation from equation(1) to above equation (4)<br>
+[$][.5 \frac{\partial^2 P(B,t)}{\partial B^2} +\frac{\partial P(B,t)}{\partial B}\frac{\partial B(t)}{\partial t}]\frac{\partial B(t)}{\partial Z} [$]<br>
+[$]-  P(B,t) (\frac{\partial B(t)}{\partial Z})^2 \frac{\partial^2 Z}{\partial B^2} \frac{\partial B(t)}{\partial t} =0[$]  Equation(5)<br>
+now we want to convert the derivatives [$] \frac{\partial^2 P(B,t)}{\partial B^2}[$], [$] \frac{\partial P(B,t)}{\partial B}[$] and [$]P(B,t)[$] again to standard normal density so that we can cancel the densities from our equation.<br>
+We use the following equations<br>
+[$]P(B,t)=P(Z)\frac{\partial Z}{\partial B}[$]<br>
+[$]\frac{\partial P(B,t)}{\partial B}=\frac{\partial P(Z)}{\partial Z}{(\frac{\partial Z}{\partial B})}^2+p(Z)\frac{\partial^2 Z}{\partial B^2}[$]<br>
+[$]=P(Z)[-Z{(\frac{\partial Z}{\partial B})}^2+\frac{\partial^2 Z}{\partial B^2}][$]<br>
+[$]\frac{\partial^2 P(B,t)}{\partial B^2}=\frac{\partial^2 P(Z)}{\partial Z^2}{(\frac{\partial Z}{\partial B})}^3+3 \frac{\partial P(Z)}{\partial Z}\frac{\partial Z}{\partial B} \frac{\partial^2 Z}{\partial B^2}+p(Z)\frac{\partial^3 Z}{\partial B^3}[$]<br>
+[$]=p(Z)[(Z^2-1) {(\frac{\partial Z}{\partial B})}^3-3 Z \frac{\partial Z}{\partial B} \frac{\partial^2 Z}{\partial B^2}+\frac{\partial^3 Z}{\partial B^3}][$]<br>
+where I have used <br>
+[$]\frac{\partial^2 P(Z)}{\partial Z^2}=(Z^2-1)p(Z)[$] and<br>
+[$]\frac{\partial P(Z)}{\partial Z}=-Z P(Z)[$] which are derivatives of standard normal density.<br>
+After applying the above formulas in previous equation(5) and cancelling P(Z) that is common throughout, we get<br>
+[$][.5 [(Z^2-1) {(\frac{\partial Z}{\partial B})}^3-3 Z \frac{\partial Z}{\partial B} \frac{\partial^2 Z}{\partial B^2}+\frac{\partial^3 Z}{\partial B^3}]\frac{\partial B(t)}{\partial Z} [$]<br>
+[$]+[-Z{(\frac{\partial Z}{\partial B})}^2+\frac{\partial^2 Z}{\partial B^2}]\frac{\partial B(t)}{\partial t}\frac{\partial B(t)}{\partial Z} [$]<br>
+[$]- (\frac{\partial B(t)}{\partial Z})^2 \frac{\partial^2 Z}{\partial B^2} \frac{\partial B(t)}{\partial t} =0[$]  Equation(6)<br>
+For general solution of SDEs, we will have to find out the derivatives like [$]\frac{\partial B(t)}{\partial Z}[$] and [$]\frac{\partial^2 B(t)}{\partial Z^2}[$] and the third derivative using finite differences or some other analytic procedure. But in case of brownian motion, we know these derivatives and apply them in the above equation<br>
+[$]\frac{\partial B(t)}{\partial Z}=\sqrt{t}[$]<br>
+[$]\frac{\partial^2 B(t)}{\partial Z^2}=0[$]<br>
+[$]\frac{\partial^3 B(t)}{\partial Z^3}=0[$]<br>
+and now our above equation (6)  becomes<br>
+[$].5 (Z^2-1) \frac{\partial Z}{\partial B}-Z \frac{\partial B(t)}{\partial t}=0 [$] Equation(7)<br>
+But [$]\frac{\partial Z}{\partial B}=\frac{1}{\sqrt{t}}[$]   and [$]Z \sqrt{t}=B(t)[$]<br>
+So we get from Equation(7)<br>
+[$].5 (Z^2-1) -Z \sqrt{t} \frac{\partial B(t)}{\partial t}=0 [$]<br>
+[$]=.5 (Z^2-1) -B(t) \frac{\partial B(t)}{\partial t}=0 [$]<br>
+taking dt to the other side of the equation(i.e multiply by dt.), we get<br>
+[$]B(t)dB(t)= .5 (Z^2-1) dt[$]<br>
+or<br>
+[$]B(t)dB(t)+.5 dt = .5 Z^2 dt[$]<br>
+The expression on the left can be solved(by integration on both sides) to get<br>
+[$]{B(t)}^2=Z^2 t[$] or in general<br>
+[$]{B(t_2)}^2={B(t_1)}^2+Z^2 \int_{t_1}^{t_2} ds[$]   Equation(8)<br>
+<br>
+Of course we will have to take care of signs on Z when taking root on the above formula.<br>
+<span style="font-size: 100%; line-height: normal">So we can solve for Brownian motion with this method and the good thing is that we learnt that we will have to do some mathematical manipulation of the equations to solve the general SDE and turn the solution expression into squared form and this seems to be very helpful that we know in advance that complicated SDEs will also have to be solved for squared expressions.</span></div>
+
+			
+									
+									<div id="sig856578" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856610">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856610">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856610">
+
+			<h3 ><a href="#p856610">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856610&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856610" title="Post #918">#918</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 4th, 2020, 8:04 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner"><blockquote class="uncited"><div class="blockquote__inner">
+Dear friends, I was trying to think how to derive the proper equations for the evolution of density in Ito-hermite method. I was able to find some other interesting equations that I decided to share here with friends. <br>
+Before I write the main equations, I want to mention that this idea is based on equivalence between two densities. I take one density that is standard normal called Z (could also be taken as brownian motion) and then I try to find the evolution of a particular point on the density of SDE variable X(t,Z) and this particular point is related to a specific fixed value of Z which is already known. Z is a static density that does not change with time at all.<br>
+I will write a few equations first that we will use later in the main derivation. Here are the equations<br>
+<br>
+[$]P(Z)=P(X,t) |{\frac{\partial X}{\partial Z}}|[$]   Follows from change of variable formula for densities.<br>
+[$]\frac{\partial P(X,t)}{\partial X}= \frac{\partial p(Z)}{\partial Z} (\frac{\partial Z}{\partial X})^2[$] <br>
+<br>
+[$]\frac{d}{dt} \big[ {\frac{\partial X}{\partial Z}} \big]=\frac{\partial}{\partial X}\big[ {\frac{\partial X}{\partial Z}} \big] \frac{\partial X}{\partial t}[$]<br>
+[$]=-{(\frac{\partial X}{\partial Z})}^2 \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}[$]<br>
+<br>
+[$]\frac{\partial P(X,t)}{\partial t} = f(X)[$] where f(X) is the fokker planck equation.<br>
+<br>
+Now we come towards the main equation derivation(which might as well possibly be wrong)<br>
+<br>
+Since standard normal is a static density and it does not change with time, we can write<br>
+<br>
+[$]\frac{d}{dt}[p(Z)]=0[$]<br>
+since we can write densities in terms of each other using change of variable formula, we can write<br>
+[$]\frac{d}{dt}[p(X,t)\frac{\partial X}{\partial Z}]=0[$]<br>
+taking the derivatives, we can expand the above equation as<br>
+[$]\big [ \frac{\partial p(X,t)}{\partial t}+\frac{\partial p(X,t)}{\partial X}\frac{\partial X}{\partial t}  ]\frac{\partial X}{\partial Z} [$]<br>
+[$]-p(X,t){(\frac{\partial X}{\partial Z})}^2 \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}=0[$]<br>
+<br>
+using <br>
+[$]P(Z)=P(X,t) |{\frac{\partial X}{\partial Z}}|[$] <br>
+[$]\frac{\partial P(X,t)}{\partial X}= \frac{\partial p(Z)}{\partial Z} (\frac{\partial Z}{\partial X})^2[$] <br>
+and [$]\frac{\partial P(X,t)}{\partial t} = f(X)[$]<br>
+in the above equation ,we get<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{ \frac{\partial p(X,t)}{\partial t}}{ \big[ (p(Z) \frac{\partial^2 Z}{\partial X^2}+ Z p(Z) ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+<br>
+using the above equation, we can probably solve every SDE so that we can solve for evolution of X as a function of Z and t. More detailed post and notes tomorrow.
+</div></blockquote>
+
+Sorry It was too late yesterday when I wrote the above post and it took me more than one and a half hour to write it and I slept and woke up several times on my desk in between. So I resume yesterday's post.<br>
+copying from the above post we have<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{ \frac{\partial p(X,t)}{\partial t}}{ \big[ (p(Z) \frac{\partial^2 Z}{\partial X^2}+ Z p(Z) ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+<br>
+where [$]\frac{\partial p(X,t)}{\partial t}[$] is the fokker planck equation for the related SDE.<br>
+We can use the change of variable formula in fokker-planck again to get rid of the densities and get an evolution equation solely in terms of Z and SDE variable X(Z,t). Suppose the structure of fokker planck is given as<br>
+<br>
+[$]\frac{\partial p(X,t)}{\partial t}=a(X,t) + b(X,t) p(X,t) + c(X,t) \frac{\partial p(X,t)}{\partial X} + d(X,t) \frac{\partial^2 p(X,t)}{\partial X^2}[$] <br>
+<br>
+when we have [$]a(X,t)=0[$] we can eliminate the densities from the equation by converting p(X,t) into p(Z) and cancelling the p(Z) in the equation. using the following formulas, we get<br>
+<br>
+[$]p(X)=p(Z) |\frac{\partial Z}{\partial X}|[$]  This follows from the standard change of variables in a density.<br>
+[$]\frac{\partial p(X)}{\partial X}=\frac{\partial p(Z)}{\partial Z} {(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} =-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} [$]<br>
+[$]\frac{\partial^2 p(X)}{\partial X^2}=\frac{\partial^2 p(Z)}{\partial Z^2} {(\frac{\partial Z}{\partial X})}^3+3 \frac{\partial p(Z)}{\partial Z} \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2}+p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+[$]=(Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+<br>
+[$]\frac{\partial p(X,t)}{\partial t}= b(X,t) p(Z) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2}\big][$]<br>
+[$]+ d(X,t) \big[ (Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}  \big][$]<br>
+<br>
+putting the above value of fokker planck in the first equation and cancelling p(Z) we get<br>
+[$]\frac{\partial X(Z,t)}{\partial t} =\frac{  b(X,t) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}\big] + d(X,t) \big[ (Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}  \big]}{ \big[ \frac{\partial^2 Z}{\partial X^2}+ Z ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+Please be careful with signs as I might have missed some absolute in change of probability derivatives.<br>
+<br>
+In order to work out a proper evolution equation, We can take the value of Z and its derivatives [$]\frac{\partial Z}{\partial X}[$] and [$]\frac{\partial^2 Z}{\partial X^2}[$] and [$]\frac{\partial Z^3}{\partial X^3}[$] as constant at start of the time step and expand the integrals of the kind like [$]\int_0^t b(X,s) H_n(Z) ds[$],  [$]\int_0^t c(X,s)H_n(Z) ds[$] and [$]\int_0^t d(X,s) H_n(Z) ds[$] for a particular value of Z related to each grid point using stochastics just like we did for monte carlo simulations and then form a valid evolution equation. In the above integrals [$]H_n(Z)[$] is a standard normal hermite polynomial of nth degree.<br>
+These are very basic thoughts that I just worked out quickly and there is also some possibility that we might have to use the equivalence relation with brownian motion density instead of standard normal density but if required doing the same exercise on brownian motion should also be straightforward. <br>
+I will be doing my experiments and coming out with a more detailed post in a day.<br>
+Again since I recently did this and never numerically tried it there is a chance that we might have to use brownian motion density instead of standard normal density but that should also be straightforward.</div></blockquote>
+Though the solution of brownian motion density from fokker-planck turned out to be very simple, the solution of general SDEs should not be very difficult. <br>
+As I gave the general expression for the "pre-solution" form which is <br>
+[$]\frac{d X(Z,t)}{dt} =\frac{  b(X,t) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}\big] + d(X,t) \big[ (Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}  \big]}{ \big[ \frac{\partial^2 Z}{\partial X^2}+ Z ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+<br>
+I suppose we have calculated all required derivatives numerically or analytically. Then the above equation can be written as<br>
+<br>
+[$]\frac{dX(Z,t)}{dt}{ \big[ \frac{\partial^2 Z}{\partial X^2}+ Z ({\frac{\partial Z}{\partial X}})^2\big]}[$]<br>
+[$]=  b(X,t) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}\big][$]<br>
+[$] + d(X,t) \big[ (Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}  \big][$]<br>
+<br>
+Please note that in our Ito-hermite expanding contracting grid framework, each point on the grid takes a constant value of Z so in X(t,Z) the value of X changes as a function of time and Z remains constant throughout the time evolution of the grid.<br>
+We want to change the right hand side of the equation so that after multiplication by dt and taking it to right hand side of previous equation, we have on left hand side of the equation<br>
+[$]dX(Z,t)\big[ \frac{\partial^2 Z}{\partial X^2}+ Z ({\frac{\partial Z}{\partial X}})^2 \big][$]<br>
+[$]= d\big [C_0 {X(Z,t)}^2 + C_1 X(Z,t) \big][$]<br>
+<span style="font-size: 100%; line-height: normal"> </span><br>
+<span style="font-size: 100%; line-height: normal">please note that [$]C_0[$] and [$]C_1[$] though different for every point on the X-grid and therefore depends upon X(Z) in a cross-sectional way, it has no role to play in time evolution dynamics as it is not an explicit function of X. Both are like</span><span style="font-size: 100%; line-height: normal"> constants that are different for each point on the grid.</span><br>
+We expand <br>
+[$]= d\big [C_0 {X(Z,t)}^2 + C_1 X(Z,t) \big][$]<br>
+[$]=C_0 [2 X dX + &lt;dX^2&gt;] + C_1 dX [$] here zero in subscript [$]g_0[$] means that it has no role to play in time evolution and depends upon initial cross-sectional value of X.<br>
+<span style="font-size: 100%; line-height: normal">Now equating first terms of  relevant equations</span><br>
+<span style="font-size: 100%; line-height: normal">[$]dX(Z,t)  Z ({\frac{\partial Z}{\partial X}})^2=C_0 2 X dX(Z,t)[$]</span><br>
+<span style="font-size: 100%; line-height: normal">meaning</span><br>
+<span style="font-size: 100%; line-height: normal">[$]C_0=\frac{Z ({\frac{\partial Z}{\partial X}})^2}{2 X(Z) }[$]</span><br>
+and then we equate <br>
+[$] [C_0 &lt;dX^2&gt; + C_1 dX(Z,t)]=dX(Z,t) \frac{\partial^2 Z}{\partial X^2}[$]<br>
+which would after a little algebra give us the value of [$]C_1[$]<br>
+so after integration our solution of the equation becomes<br>
+[$]\int d\big [C_0 {X(Z,t)}^2 + C_1 X(Z,t) \big] [$]<br>
+[$]=\int_0^t \Big[ b(X,t) |\frac{\partial Z}{\partial X}| + c(X,t) \big[-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}\big][$]<br>
+[$] + d(X,t) \big[ (Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}  \big] \Big ] ds[$]<br>
+<br>
+which can probably be solved after a bit of effort as left side is a complete integral though we will have to do further manipulations on the line of solution of ODEs to get a valid numerical answer. <br>
+I will come up with more numerical experiments in a day or two.</div>
+
+			
+									
+									<div id="sig856610" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856646">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856646">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856646">
+
+			<h3 ><a href="#p856646">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856646&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856646" title="Post #919">#919</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 5th, 2020, 4:34 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">I will be writing a formal paper on the solution of densities of SDEs using my proposed way to solve the fokker-planck equation. Since so many work has already been done, work on the paper should not take more than 10-14 days and I will be updating this thread with numerical material almost everyday. I hope to publish the paper in Wilmott magazine since I have been writing here for so long and Paul was so kind to let me continue this thread despite so many errors I made in the past.</span><br>
+For the sake of reference of friends, I tried to solve the fokker-planck equation several months ago in October 2019 and almost nailed it but I when I tried to test the equations for brownian motion, I failed to complete the total differential of square of brownian motion and therefore thought that there might be some error and it is the "complete differential of square of brownian motion part" that I completed now. You do not have to take the time derivative of normal density as I did in past few posts written very recently. You can try the change of density variable derivatives(with respect to standard normal density) directly in fokker-planck to arrive at exactly the same equations and that is what I had done in early October 2019.   In October last year I was being given antipsychotic injections regularly and therefore I was not able to think very clearly and I really want to thank those friends who pressed on mind control agencies to be better and I was able to get off antipsychotic injections and do better work and became able to suggest the solution to FP equation by making a complete differential as in the simple case of brownian motion and later for general equations. <br>
+Here are two posts that I wrote and I copy them here for friends where I had done all the work to solve FP equation in October last year(2019)<br>
+<span style="font-size: 100%; line-height: normal">Here is my post written on Sun Oct 06, 2019 1:53 pm this is post 812 on this thread. Here is the post link: </span><a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=810#p849953" class="postlink"><span style="font-size: 100%; line-height: normal">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=810#p849953</span></a><br>
+
+<blockquote class="uncited"><div class="blockquote__inner"><strong>Amin:</strong><br>
+I have made some quick notes on solution of fokker planck equation with hermite polynomials. I have not numerically verified anything so please pardon any errors but the main ideas would stay the same.<br>
+<br>
+Let us suppose we want to solve a general SDE given as<br>
+[$]dX(t)=\mu(X) dt + \sigma(X) dz(t)[$]<br>
+The fokker planck equation of this SDE is given as<br>
+[$]\frac{\partial p(X,t)}{\partial t} = -\frac{\partial [\mu(X) p(X,t)]}{\partial X} + .5 \frac{\partial^2 [{\sigma(X)}^2 p(X,t)]}{\partial X^2}[$]<br>
+<br>
+First a very brief primer on derivatives of normal and derivatives of the SDE variable.<br>
+I denote the standard normal density as p(Z)<br>
+We want to convert derivatives of the SDE density of X(t) into derivatives of standard normal density. Here are the main equations<br>
+[$]p(Z)=\frac{1}{\sqrt{2 \pi}} exp[-.5 Z^2][$]<br>
+derivatives of standard normal density are given in terms of hermite polynomials.<br>
+[$]\frac{\partial p(Z)}{\partial Z}=-Z p(Z)[$]<br>
+[$]\frac{\partial^2 p(Z)}{\partial Z^2}=(Z^2-1) p(Z)[$]<br>
+now we want to convert the density of X(t) and its derivatives in terms of density of Z. In the density of X, each value of X(t) is associated with a particular value of Z through constant CDF points on corresponding densities. So we calculate the density and derivatives of X(t) in terms of Z.<br>
+[$]p(X)=p(Z) |\frac{\partial Z}{\partial X}|[$]  This follows from the standard change of variables in a density.<br>
+[$]\frac{\partial p(X)}{\partial X}=\frac{\partial p(Z)}{\partial Z} {(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} =-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2} [$]<br>
+[$]\frac{\partial^2 p(X)}{\partial X^2}=\frac{\partial^2 p(Z)}{\partial Z^2} {(\frac{\partial Z}{\partial X})}^3+3 \frac{\partial p(Z)}{\partial Z} \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2}+p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+[$]=(Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}[$]<br>
+<br>
+Now I write the fokker planck equation after applying the derivatives as<br>
+[$]\frac{\partial p(X,t)}{\partial t} = -\mu(X) \frac{\partial p(X,t)}{\partial X} - \frac{\partial \mu(X)}{\partial X} p(X,t)[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) p(X,t)[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X} \frac{\partial p(X,t)}{\partial X}+ .5 {\sigma(X)}^2 \frac{\partial^2 p(X,t)}{\partial X^2}[$]<br>
+<br>
+Now we write the density of X(t) in terms of density of standard normal Z by substituting from above equations<br>
+<br>
+[$]\frac{\partial [p(Z) \frac{\partial Z}{\partial X} ]}{\partial t} = -\mu(X) (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2}) - \frac{\partial \mu(X)}{\partial X} p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X} (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]+ .5 {\sigma(X)}^2 ((Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}) [$]<br>
+<br>
+We see that [$]p(Z)[$] which is a static density is common throughout the equations. We eliminate it and write the new equation as<br>
+<br>
+[$]\frac{\partial [ \frac{\partial Z}{\partial X} ]}{\partial t} = \mu(X)  (-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}) - \frac{\partial \mu(X)}{\partial X}  |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X}  (-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]+ .5 {\sigma(X)}^2 ((Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z  \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3})[$]<br>
+<br>
+So we get an explicit equation in terms of hermite polynomials describing how  [$]\frac{\partial [ \frac{\partial Z}{\partial X} ]}{\partial t}[$] is locally expanding/contracting in time. We can easily use this to write a numerical program for the evolution of constant CDF lines associated with a particular value of Z ranging from -5 to +5. There can be an infinite amount of analytics that can be done on this form of equation. So we have effectively eliminated the density and we are now directly dealing with how the density is changing/scaling as a function of Z.<br>
+Please bookmark this thread as I will be coming with more numerical examples and analytic techniques.<br>
+I will also be distributing a numerical program based on these analytics. Hope friends enjoyed reading this.</div></blockquote>
+And here is where I tried to find the solution for brownian motion from the above equations but failed to complete the last step to form a complete differential of the square of brownian motion and therefore did not know what to make of the solution. This post No. 813 was written on  Tue Oct 08, 2019 3:18 pm. Here is the address to the post: <a href="https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=810#p850017" class="postlink">https://forum.wilmott.com/viewtopic.php?f=4&amp;t=99702&amp;start=810#p850017</a><br>
+Since I was not being able to make acomplete differential of square of brownian motion, I made several silly mistakes (please be kind and pardon the mistakes) to somehow equate the equations and then dropped the idea since it did not seem to work(as I failed to make a complete differential on the left)<br>
+<br>
+
+<blockquote class="uncited"><div class="blockquote__inner">I copy the second last equation from the previous post.<br>
+<br>
+[$]\frac{\partial [p(Z) \frac{\partial Z}{\partial X} ]}{\partial t} = -\mu(X) (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2}) - \frac{\partial \mu(X)}{\partial X} p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X} (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]+ .5 {\sigma(X)}^2 ((Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}) [$]<br>
+<br>
+I had not expnded the left hand side derivative with respect to t. This expansion is <br>
+[$]\frac{\partial p(X)}{\partial t}=\frac{\partial [p(Z) \frac{\partial Z}{\partial X}]}{\partial t}= \frac{\partial p(Z)}{\partial Z} {(\frac{\partial Z}{\partial X})}^2 \frac{\partial X}{\partial t}+ p(Z) \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}[$]<br>
+[$]=-Zp(Z) {(\frac{\partial Z}{\partial X})}^2 \frac{\partial X}{\partial t}+ p(Z) \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}[$]<br>
+<br>
+putting this expansion on left side of the first equation, we get<br>
+[$]-Zp(Z) {(\frac{\partial Z}{\partial X})}^2 \frac{\partial X}{\partial t}+ p(Z) \frac{\partial^2 Z}{\partial X^2} \frac{\partial X}{\partial t}[$]<br>
+[$]= -\mu(X) (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2}) - \frac{\partial \mu(X)}{\partial X} p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) p(Z) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X} (-Z p(Z){(\frac{\partial Z}{\partial X})}^2+p(Z) \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]+ .5 {\sigma(X)}^2 ((Z^2-1) p(Z) {(\frac{\partial Z}{\partial X})}^3 -3 Z p(Z) \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} +p(Z) \frac{\partial^3 Z}{\partial X^3}) [$]<br>
+<br>
+eliminating [$]p(Z)[$] from the equation we get an explicit formula for evolution of [$]X(t)[$] as<br>
+<br>
+[$]\frac{\partial X}{\partial t} (-Z {(\frac{\partial Z}{\partial X})}^2 + \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]= -\mu(X) (-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2}) - \frac{\partial \mu(X)}{\partial X} |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+({(\frac{\partial \sigma(X)}{\partial X})}^2+\sigma(X) \frac{\partial^2 \sigma(X)}{\partial X^2}) |\frac{\partial Z}{\partial X}|[$]<br>
+[$]+2 \sigma(X) \frac{\partial \sigma(X)}{\partial X} (-Z {(\frac{\partial Z}{\partial X})}^2+ \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]+ .5 {\sigma(X)}^2 ((Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}) [$]<br>
+<br>
+Let us apply it on toy problem of brownian motion where these partial derivatives with respect to standard normal are known. Please pardon me for some formulas as we are not in a formal brownian motion framework. We are in brownian motion density simulation framework where density is evolving in time along constant CDF lines. Here are some formulas for these constant CDF lines <br>
+[$]B(t)=\sigma \sqrt{t} Z[$]<br>
+[$]\frac{\partial B}{\partial Z}=\sigma \sqrt{t}[$]<br>
+[$]\frac{\partial B}{\partial t}=\frac{\sigma}{2 \sqrt{t}} Z[$]<br>
+[$]\frac{\partial^2 B}{\partial Z^2}=0[$]<br>
+[$]\frac{\partial^3 B}{\partial Z^3}=0[$]<br>
+<br>
+Fokker planck for brownian motion is given as<br>
+[$]\frac{\partial p(X)}{\partial t}=.5 \sigma^2 \frac{\partial^2 p(X)}{\partial X^2}[$]<br>
+expanding both sides in our framework into derivatives with respect to density of standard normal and after eliminating the density on both sides we get<br>
+[$]\frac{\partial X}{\partial t} (-Z {(\frac{\partial Z}{\partial X})}^2 + \frac{\partial^2 Z}{\partial X^2})[$]<br>
+[$]= .5 {\sigma}^2 ((Z^2-1) {(\frac{\partial Z}{\partial X})}^3 -3 Z \frac{\partial Z}{\partial X} \frac{\partial^2 Z}{\partial X^2} + \frac{\partial^3 Z}{\partial X^3}) [$]<br>
+<br>
+substituting the known values of partial derivatives, we get<br>
+<br>
+[$]\frac{\partial B}{\partial t} (-Z {( \frac{1}{\sigma \sqrt{t}} )}^2 )=.5 {\sigma}^2 ((Z^2-1) {( \frac{1}{\sigma \sqrt{t}} )}^3)[$]<br>
+from which follows<br>
+[$]\frac{\partial B}{\partial t} = \frac{(Z^2-1) }{-Z} .5 {\sigma}^2  {( {\sigma \sqrt{t}} )}^2{( \frac{1}{\sigma \sqrt{t}} )}^3)=\frac{(Z^2-1) }{-Z} .5 \frac{\sigma}{\sqrt{t}}[$]<br>
+I believe [$]\frac{(Z^2-1) }{-Z}[$] approaches Z from the properties of hermite polynomials and normal density(I am looking on it if it is an error). Then<br>
+[$]\frac{\partial B}{\partial t} = .5 \frac{\sigma}{\sqrt{t}} Z[$] and integrating it we retrieve the original equation of brownian motion along constant CDF lines as<br>
+[$]B(t) = \sigma \sqrt{t} Z[$] </div></blockquote></div>
+
+			
+									
+									<div id="sig856646" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856662">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856662">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856662">
+
+			<h3 ><a href="#p856662">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856662&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856662" title="Post #920">#920</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 5th, 2020, 7:48 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Here I re-did the calculations to solve the fokker-planck in Lamperti coordinates. I will post a numerical program in another day possibly tomorrow.</span><br>
+We have the equation from previous posts that we workd out and I copy it here in terms of SDE of w in lamperti coordinates<br>
+<br>
+[$]\frac{dw}{dt}[Z {(\frac{\partial Z}{\partial w})}^2 + \frac{\partial Z^2}{\partial w^2}][$]<br>
+[$]=-\mu(w)[-Z {(\frac{\partial Z}{\partial w})}^2 + \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial Z}{\partial w})}[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2-1) {(\frac{\partial Z}{\partial w})}^3-3 Z {(\frac{\partial Z}{\partial w})} {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial Z^3}{\partial w^3})}[$]<br>
+<br>
+We multiply both sides of the equation by [$]{(\frac{\partial w}{\partial Z})}^3[$] and taking dt to the RHS of the equation, we get <br>
+<br>
+[$]{dw}[Z {(\frac{\partial w}{\partial Z})} +{(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}][$]<br>
+[$]=\Big[-\mu(w)[-Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2-1)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}] \Big] dt[$]<br>
+<br>
+<span style="font-size: 100%; line-height: normal">Manipulating to make the left hand side a complete integral, we first write</span><br>
+[$]w(Z)=[Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}]-C_0(Z)[$]<br>
+which means <br>
+[$][Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}]=w(Z) + C_0(Z)[$]<br>
+where w(Z) means that w is different on different grid points as a function of Z and for every individual grid point the value of Z remains constant.<br>
+<br>
+ putting the above expression in the LHS of fokker-planck equation, we get<br>
+[$]dw[w(Z) + C_0(Z)][$]<br>
+[$]=\Big[-\mu(w)[-Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2-1)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}\big] \Big]dt [$]<br>
+<br>
+Now the left hand side is still not a complete integral since we still need to add quadratic variations in Lamperti coordinates [$].5 {\sigma}^2 dt[$]  for square of w. We notice that in the RHS, the [$].5 {\sigma}^2 dt[$] part in term [$].5 {\sigma}^2 (Z^2-1) dt[$] has the precisely right quadratic variations for [$].5 w^2[$] in lamperti coordinates and shift the [$].5 {\sigma}^2 dt[$] part to the left hand side of the equation and leave  [$].5 {\sigma}^2 Z^2 dt[$] on the RHS as such and<br>
+doing that we get<br>
+[$]w(Z)dw+.5{\sigma}^2 dt + C_0(Z)dw[$]<br>
+[$]=\Big[-\mu(w)[-Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}\big] \Big]dt[$]<br>
+<br>
+Now the left hand side is a complete integral as <br>
+[$]d[.5 w^2 + C_0 w] =\Big[-\mu(w)[-Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}\big] \Big]dt[$]<br>
+<br>
+And then we get the solution as<br>
+[$].5 {w(t_1)}^2 + C_0 w(t_1) =.5 {w(t_0)}^2 + C_0 w(t_0)[$]<br>
+[$]+ \int_{t_0}^{t_1} \Big[ -\mu(w) [-Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3\frac{\partial^2 Z}{\partial w^2}][$]<br>
+<span style="font-size: 100%; line-height: normal">[$] -\frac{\partial \mu(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]</span><br>
+[$]+.5 {\sigma}^2 \big[ (Z^2)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}\big] \Big]ds[$]</div>
+
+			
+									
+									<div id="sig856662" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856688">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856688">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856688">
+
+			<h3 ><a href="#p856688">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856688&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856688" title="Post #921">#921</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 6th, 2020, 1:02 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">I am writing about progress in my work. As I showed in previous posts copied from October 2019, I have developed this approach to solve the fokker-planck equation. I do not keep any research secret and distribute it with friends regularly. Many of the people working with Statistics and probability theory have brilliant minds both in academia and industry. But I will request friends to let me take this research on Fokker-planck towards conclusion and a formal paper. I would certainly love other friends doing research but I hope that they quote my initial effort and resulting formal paper which might be out in a few weeks.</span><br>
+<span style="font-size: 100%; line-height: normal">Coming back to research work, the significant progress in yesterday's work was that we came to know that second hermite polynomial contains exactly the right quadratic variations for square of the diffusion but the form of solution I obtained might still not work as I came to know when I did numerical experiments today.</span><br>
+For the right solution form, we will have to look again at the simplest diffusion i.e the diffusion of brownian motion with drift. Previously I looked at brownian motion with centre at origin and that was very instructive and gave us the idea that FP equations can indeed be solved by this method.<br>
+Now we look at brownian motion that takes a starting value different from origin. I am not going to write the complete solution but it can only be solved in the form if we take squared difference from the mean.<br>
+<br>
+Here is the second equation from top in yesterday's post.<br>
+[$]{dw}[Z {(\frac{\partial w}{\partial Z})} +{(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}][$]<br>
+[$]=\Big[-\mu_t(w)[Z {(\frac{\partial w}{\partial Z})} + {(\frac{\partial w}{\partial Z})}^3 \frac{\partial Z^2}{\partial w^2}] -\frac{\partial \mu_t(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+[$]+.5 {\sigma}^2 \big[ (Z^2-1)-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}] \Big] dt[$]<br>
+<br>
+Please note that in following [$]\mu_{B}[$] is mean of the density and [$]\mu_t[$] is drift of the stochastic differential equation.<br>
+First thing to observe is that [$]Z {\frac{\partial w}{\partial Z}}[$] on LHS of above equation which in case of brownian motion is equal to  [$]Z {\frac{\partial B}{\partial Z}}=\sigma \sqrt{t}Z =[B(t)-\mu_{B}][$].<br>
+And second observation is that there is no other possible way to solve for brownian motion that does not originate from zero (but has no time drift )than the following equations<br>
+[$](B(t_1)-\mu_{B})^2 = (B(t_0)-\mu_{B})^2 + {\sigma}^2 Z^2 dt[$] <br>
+Please note that this very simple example perfectly agrees with Ito-hermite method where the above would be solved as<br>
+[$]B(t_1) = \mu_{B} + \sqrt{ (B(t_0)-\mu_{B})^2 + {\sigma}^2 Z^2 dt}[$] and we had paid special care to signs. <br>
+<br>
+And then we notice that Brownian motion with constand drift [$]\mu_t[$] would have to be solved as<br>
+[$](B(t_1)-\mu_{B}-\mu_t dt)^2 = (B(t_0)-\mu_{B})^2 + {\sigma}^2 Z^2 dt[$] <br>
+<br>
+which perfectly agrees with out Ito-hermite method as the solution of brownian motion with drift there was<br>
+[$]B(t_1) = \mu_{B} +\mu_{t} dt + \sqrt{ (B(t_0)-\mu_{B})^2 + {\sigma}^2 Z^2 dt}[$]<br>
+<br>
+<br>
+Please note that these are initial informal notes that point towards the shape of the final formal solution but many of these things will slightly change in the coming days and in the final work. These are yet not the final equations or formal solution. There is a good possibility that [$]\mu_w[$] in final formal solution will be slightly different and agree with the terms in Fokker-planck equation. These notes are only for motivation towards the formal solution.</div>
+
+			
+									
+									<div id="sig856688" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856722">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856722">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856722">
+
+			<h3 ><a href="#p856722">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856722&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856722" title="Post #922">#922</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 7th, 2020, 7:30 am</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">In order to make a more informed attempt at the proper solution of fokker-planck equation, we look at the short term solution that comes from fourier transform.</span><br>
+<br>
+Let us suppose we are given an SDE of the form<br>
+<span style="font-size: 100%; line-height: normal">[$]dX(t)=\mu(X) dt + \sigma(X) dz(t)[$]</span><br>
+The short term solution to the associated fokker planck given by fourier transform is given as  <br>
+refrence for the above is (  <a href="https://digital.library.adelaide.edu.au/dspace/bitstream/2440/56951/8/02main.pdf" class="postlink" target="_blank" rel="noopener noreferrer">https://digital.library.adelaide.edu.au ... 02main.pdf</a> ) : page 143<br>
+[$]P(t+\Delta t,y,t,x)=\frac{1}{\sqrt{4 Pi {\sigma(X)}^2 \Delta t }} \exp[-\frac{{(y-x-\mu(x) \Delta t +2 \frac{\partial {[\sigma(x)]}^2}{\partial x} \Delta t)}^2}{4{\sigma(x)}^2 \Delta t}][$]<br>
+[$]* \exp[-\frac{\partial \mu(x)}{\partial x} \Delta t+ \frac{\partial^2 [{\sigma(x)}^2]}{\partial x^2}\Delta t][$]<br>
+<br>
+We can from the above formula easily infer which terms would have to go into a square-form and which terms would be added linearly. Every term inside the square on the above density would have to be added in a squared fashion with volatility. And the terms that are outside the square on second exponential would have to be added linearly. For people who are not familiar with previous work I did on Ito-hermite, please note that we are not in the above direct density framework. Informally you can know that by removing the normal density from the equation, we are dealing directly with terms on the exponential solution of FP equation, in a rough sense to take guidance about the proper formal solution in our framework.<br>
+We will have to be careful with expansion of second derivative term of fokker-planck (in Lamperti/Bessel form) since in the following term<br>
+[$]{\sigma}^2 \Big[ Z^2-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}] \Big] dt [$]  <br>
+it is only <br>
+[$]{\sigma}^2 Z^2 dt[$] <br>
+that would probably appear in squared form  and other terms might have to be added later outside the squared expression. When a term in Fokker-planck of the SDE is expanded into multiple terms due to change of density derivatives, the above fourier transform guidance to include the terms inside squared complete differential expression will work for the first principal term only. just like in the above expansion of [$].5 {\sigma}^2 \frac{d^2 P}{dw^2}[$] the following terms are derived<br>
+[$]{\sigma}^2 \Big[ Z^2-3 Z{(\frac{\partial w}{\partial Z})}^2 {(\frac{\partial^2 Z}{\partial w^2})}+{(\frac{\partial w}{\partial Z})}^3 {(\frac{\partial Z^3}{\partial w^3})}] \Big] dt [$] while only [$]{\sigma}^2 Z^2 dt[$] would probably appear in squared complete differential and rest of the terms will be manipulated and later added like our corrections in Ito-hermite algorithm. And I expect that case with drift is also similar.<br>
+I will come back with more experiments in another day or probably later today.</div>
+
+			
+									
+									<div id="sig856722" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856727">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856727">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856727">
+
+			<h3 ><a href="#p856727">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856727&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856727" title="Post #923">#923</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 7th, 2020, 4:51 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">It seems that the terms that do not go inside the square and are not added in a squared fashion cannot be added directly. These terms have to be multiplied with  </span><br>
+[$]\frac{1}{{(2 \pi)}^2}[$] first and then added. I tried adding the following term <br>
+[$]-\frac{\partial \mu_t(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$] after multiplying it with [$]\frac{1}{{(2 \pi)}^2}[$]<br>
+and added<br>
+[$]-\frac{1}{{(2 \pi)}^2} \frac{\partial \mu_t(w)}{\partial w}{(\frac{\partial w}{\partial Z})}^2[$]<br>
+<span style="font-size: 100%; line-height: normal">to the existing Ito-hermite program that I posted last time and it seemed to remarkably improve the mean without mean correction while preserving the original good shape of the density. Please note that previous corrections to Ito-hermite program were also multiplied by [$]\frac{1}{{(2 \pi)}^2}[$]</span><br>
+<span style="font-size: 100%; line-height: normal">If you add any of the terms(that do not appear inside complete squared differential) directly in Ito-hermite density evolution, it will right away blow the program.</span><br>
+<span style="font-size: 100%; line-height: normal">I am working on a new version of Ito-hermite density evolution program taking guidance from the Fokker-planck derivatives and hope to post it in a day.</span></div>
+
+			
+									
+									<div id="sig856727" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856739">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856739">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856739">
+
+			<h3 ><a href="#p856739">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856739&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856739" title="Post #924">#924</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 7th, 2020, 9:59 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">In order to experiment with terms and to determine the exact solution of Fokker-planck, I tried to play with different terms that are not included in squared form. And without any detailed mathematical anlaysis, I tried some of those terms obtained from previous intermediate solution of fokker-planck equation. And I realized that simulation of densities of several SDEs especially improved in the tail and I got much better mean with mean-correction disabled. As I mentioned in previous post, every term that is not included in the squared form had to be scaled by [$]\frac{1}{{(2 \pi)}^2}[$]. I am including the program and I hope that it would be very helpful for other friends who are working on this or similar research. </span><br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [TrueMean,ItoHermiteMean,MCMean] = ItoHermiteWilmottMeanCorrected080FP(x0,theta,kappa,gamma,sigma0,T)
+
+%Copyright Ahsan Amin. Infiniti derivatives Technologies.
+%Please fell free to connect on linkedin: linkedin.com/in/ahsan-amin-0a53334 
+%or skype ahsan.amin2999
+%In this program, I am simulating the SDE given as
+%dy(t)=mu1 x(t)^beta1 dt + mu2 x(t)^beta2 dt +sigma x(t)^gamma dz(t)
+
+%I have not directly simulated the SDE but simulated the transformed 
+%Besse1l process version of the SDE and then changed coordinates to retreive
+%the SDE in original coo
+%rdinates.
+%The present program will analytically evolve only the Bessel Process version of the
+%SDE in transformed coordinates.
+%In this version, the mean correction has been disabled. If you are
+%simulating standard mean-reverting SV type SDEs, please enable the mean 
+%correction by uncommenting the appropriate line in the body of code below.
+
+dt=.125/16;   % Simulation time interval.%Fodiffusions close to zero
+             %decrease dt for accuracy.
+Tt=128*T;%16*16;     % Number of simulation levels. Terminal time= Tt*dt; //.125/32*32*16=2 year; 
+OrderA=4;  %
+OrderM=4;  %
+%dtM=.125/8;%Monte carlo time interval size dtM.
+%TtM=8*8;%Monte carlo number of simulation intervals.
+dtM=dt*1;
+TtM=Tt/1;
+
+
+dNn=.2/1;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=48;  % No of normal density subdivisions
+NnMidl=25;%One half density Subdivision left from mid of normal density(low)
+NnMidh=26;%One half density subdivision right from the mid of normal density(high)
+NnMid=4.0;
+
+%theta=mu1/(-mu2);
+%kappa=-mu2;
+
+%x0=.25;   % starting value of SDE
+beta1=0.0;
+beta2=1.0;   % Second drift term power.
+%gamma=.95;%50;   % volatility power.                                                                                                                                                                                                                                                                     
+%kappa=.5;   %mean reversion parameter.
+%theta=.075;%mean reversion target
+
+%you can specify any general mu1 and mu2 and beta1 and beta2.
+%The present program is not perfect but quite reasonably good.
+%if there is only one term in drift with beta=0, there will be minor
+%errors. This case is yet not covered.
+
+mu1=+1*theta*kappa;   %first drift coefficient.
+mu2=-1*kappa;    % Second drift coefficient.
+%sigma0=1.0;%Volatility value
+alpha=1;% x^alpha is being expanded. This is currently for monte carlo only.
+alpha1=1-gamma;
+                
+w(1:Nn)=x0^(1-gamma)/(1-gamma);
+
+Z(1:Nn)=(((1:Nn)-5.5)*dNn-NnMid);
+
+Z
+str=input('Look at Z');
+ZProb(1)=normcdf(.5*Z(1)+.5*Z(2),0,1)-normcdf(.5*Z(1)+.5*Z(2)-dNn,0,1);
+ZProb(Nn)=normcdf(.5*Z(Nn)+.5*Z(Nn-1)+dNn,0,1)-normcdf(.5*Z(Nn)+.5*Z(Nn-1),0,1);
+
+for nn=2:Nn-1
+    ZProb(nn)=normcdf(.5*Z(nn)+.5*Z(nn+1),0,1)-normcdf(.5*Z(nn)+.5*Z(nn-1),0,1);
+    %Above calculate probability mass in each probability subdivision.
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sigma11(1:OrderA+1)=0;
+mu11(1:OrderA+1)=0;
+mu22(1:OrderA+1)=0;
+sigma22(1:OrderA+1)=0;
+% index 1 correponds to zero level since matlab indexing starts at one. 
+sigma11(1)=1;
+mu11(1)=1;
+mu22(1)=1;
+sigma22(1)=1;
+
+for k=1:(OrderA+1)
+    if sigma0~=0
+        sigma11(k)=sigma0^(k-1);
+    end
+    if mu1 ~= 0
+        mu11(k)=mu1^(k-1);
+    end
+    if mu2 ~= 0
+        mu22(k)=mu2^(k-1);
+    end
+    if sigma0~=0
+        sigma22(k)=sigma0^(2*(k-1));
+    end
+end
+%Ft(1:TtM+1,1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0; %General time powers on hermite polynomials
+Fp(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;%General x powers on coefficients of hermite polynomials.
+Fp1(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;%General x powers for bessel transformed coordinates.
+
+%YCoeff0 and YCoeff are coefficents for original coordinates monte carlo.
+%YqCoeff0 and YqCoeff are bessel/lamperti version monte carlo.
+
+YCoeff0(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;
+YqCoeff0(1:(OrderA+1),1:(OrderA+1),1:(OrderA+1),1:(OrderA+1))=0;
+%Pre-compute the time and power exponent values in small multi-dimensional arrays
+YCoeff = ItoTaylorCoeffsNew(alpha,beta1,beta2,gamma); %expand y^alpha where alpha=1;
+YqCoeff = ItoTaylorCoeffsNew(alpha1,beta1,beta2,gamma);%expand y^alpha1 where alpha1=(1-gamma)
+YqCoeff=YqCoeff/(1-gamma); %Transformed coordinates coefficients have to be 
+%further divided by (1-gamma)
+
+for k = 0 : (OrderA)
+    for m = 0:k
+        l4 = k - m + 1;
+        for n = 0 : m
+            l3 = m - n + 1;
+            for j = 0:n
+                l2 = n - j + 1;
+                l1 = j + 1;
+                %Ft(l1,l2,l3,l4) = dtM^((l1-1) + (l2-1) + (l3-1) + .5* (l4-1));
+                Fp(l1,l2,l3,l4) = (alpha + (l1-1) * beta1 + (l2-1) * beta2 + (l3-1) * 2* gamma + (l4-1) * gamma ...
+                    - (l1-1) - (l2-1) - 2* (l3-1) - (l4-1));
+                Fp1(l1,l2,l3,l4) = (alpha1 + (l1-1) * beta1 + (l2-1) * beta2 + (l3-1) * 2* gamma + (l4-1) * gamma ...
+                    - (l1-1) - (l2-1) - 2* (l3-1) - (l4-1));
+                
+                YCoeff0(l1,l2,l3,l4) =YCoeff(l1,l2,l3,l4).*mu11(l1).*mu22(l2).*sigma22(l3).*sigma11(l4);
+                YqCoeff0(l1,l2,l3,l4) =YqCoeff(l1,l2,l3,l4).*mu11(l1).*mu22(l2).*sigma22(l3).*sigma11(l4);
+            end
+        end
+    end
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+wnStart=1;%
+d2wdZ2(1:Nn)=0;
+dwdZ(1:Nn)=0;
+yy(wnStart:Nn)=((1-gamma)*w(wnStart:Nn)).^(1/(1-gamma));
+tic
+
+for tt=1:Tt
+  
+     yy(wnStart:Nn)=((1-gamma)*w(wnStart:Nn)).^(1/(1-gamma));
+         
+    [wMu0dt,dwMu0dtdw,d2wMu0dtdw2,d3wMu0dtdw3,c1,c2,c3,c4] = CalculateDriftAndVolOrder4(w,wnStart,Nn,YqCoeff0,Fp1,gamma,dt);
+
+    dw(wnStart:Nn)=c1(wnStart:Nn).*Z(wnStart:Nn) ;% ...
+    dw2(wnStart:Nn)=dw(wnStart:Nn).^2;
+   % d2w(wnStart:Nn)=c2(wnStart:Nn).*(Z(wnStart:Nn).^2-1);
+   % d3w(wnStart:Nn)=c3(wnStart:Nn).*(Z(wnStart:Nn).^3-3*Z(wnStart:Nn));
+    w(isnan(w)==1)=0;
+    wMu0dt(isnan(wMu0dt)==1)=0;  
+    wMeanPrev=sum(ZProb(wnStart:Nn).*w(wnStart:Nn));%Calculate the mean.
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[w0,Sigma00,Sigma11,Sigma22,Sigma33,Sigma1,Sigma2,Sigma3,Sigma0] = CalculateHermiteRepresentationOfDensityOrderThreeNew(w,Z,wnStart,Nn,dNn,NnMidh,NnMidl);
+d2wdZ2(wnStart:Nn)=d2wdZ2(wnStart:Nn)+ d2wMu0dtdw2(wnStart:Nn).*dwdZ(wnStart:Nn).^2+dwMu0dtdw(wnStart:Nn).*d2wdZ2(wnStart:Nn);%+ ...
+
+dwdZ(wnStart:Nn)=(Sigma00)+Sigma1(wnStart:Nn).*2.*Z(wnStart:Nn);%.*ExpDamp(wnStart:Nn);
+
+H2(wnStart:Nn)=(Z(wnStart:Nn).^2-1);
+H3(wnStart:Nn)=(Z(wnStart:Nn).^3-3*Z(wnStart:Nn));
+H4(wnStart:Nn)=(Z(wnStart:Nn).^4-6*Z(wnStart:Nn).^2+3);
+CTerm(wnStart:Nn)=(.5*d2wMu0dtdw2(wnStart:Nn).*dwdZ(wnStart:Nn).^2 - ...
+          1*dwMu0dtdw(wnStart:Nn).*d2wdZ2(wnStart:Nn));       
+
+%Saved last      
+%Correction1(wnStart:Nn)=-1*sqrt(gamma)*(1+gamma*(1-gamma)*sigma0^2)*sqrt(8/8)/(22/7)^2.*CTerm(wnStart:Nn).*H2(wnStart:Nn);   
+%Correction0(wnStart:Nn)=-1*sqrt(gamma)*(1+(gamma)*(1-gamma)*sigma0^2)*sqrt(8/8)/(22/7)^2.*dt.*(d2wdZ2(wnStart:Nn)-.5*dwdZ(wnStart:Nn).^2).*H2(wnStart:Nn);   
+    
+ 
+Correction1(wnStart:Nn)=-(1+gamma^2.*(1-gamma)*sigma0^2)/(22/7)^2.*CTerm(wnStart:Nn).*H2(wnStart:Nn);   
+Correction0(wnStart:Nn)=-(1+gamma^2.*(1-gamma)*sigma0^2)/(22/7)^2.*dt*(d2wdZ2(wnStart:Nn)-.5*dwdZ(wnStart:Nn).^2).*H2(wnStart:Nn); 
+ 
+ 
+
+if(tt==1)
+w(wnStart:Nn)=wMeanPrev+wMu0dt(wnStart:Nn)+ ...
+          sign(w(wnStart:Nn)-wMeanPrev+dw(wnStart:Nn)).* ...
+          sqrt(abs(sign(w(wnStart:Nn)-wMeanPrev).*(w(wnStart:Nn)-wMeanPrev).^2+ ...
+          sign(dw(wnStart:Nn)).*dw2(wnStart:Nn)));
+end
+
+     
+     
+%[dwdZ,d2wdZ2,d3wdZ3,d4wdZ4] = First4Derivatives2ndOrderEqSpaced(wnStart,Nn,dNn,w,Z);
+dZdw(wnStart:Nn)=1.0./dwdZ(wnStart:Nn);
+d2Zdw2(wnStart:Nn)=-1.*d2wdZ2(wnStart:Nn).*dZdw(wnStart:Nn).^3;
+%d3Zdw3(1:Nn)=-d3wdZ3(1:Nn).*dZdw(1:Nn).^4+3*d2wdZ2(1:Nn).^2.*dZdw(1:Nn).^5;
+
+
+if(tt&gt;1)
+    
+
+    fw0(wnStart:Nn)=exp(-.5*(1-gamma)*sigma0.^2.*Z(wnStart:Nn).^2);
+
+  %  dw(wnStart:Nn)=sigma0*sqrt(dt).*Z(wnStart:Nn);
+  %  dw2(wnStart:Nn)=sigma0^2*dt*Z(wnStart:Nn).^2;
+    
+       w(wnStart:Nn)=wMeanPrev+wMu0dt(wnStart:Nn)+ ...
+        sign(w(wnStart:Nn)-wMeanPrev+dw(wnStart:Nn)).* ...
+            sqrt(abs(sign(w(wnStart:Nn)-wMeanPrev).*(w(wnStart:Nn)-wMeanPrev).^2+ ...
+            sign(dw(wnStart:Nn)).*dw2(wnStart:Nn)))+ ...
+            +1/(2*pi)^2*dwMu0dtdw(wnStart:Nn).*dwdZ(wnStart:Nn).^2+ ...
+            -1/(2*pi)^2*wMu0dt(wnStart:Nn).*d2wdZ2(wnStart:Nn)+ ...
+            +1/(2*pi)^2*wMu0dt(wnStart:Nn).*Z(wnStart:Nn).*dwdZ(wnStart:Nn)+ ...
+            1*Correction1(wnStart:Nn).*fw0(wnStart:Nn) + ...
+            1*Correction0(wnStart:Nn).*fw0(wnStart:Nn) - ...
+            .5/(2*pi)^2*3*Z(wnStart:Nn).^1.*dZdw(wnStart:Nn).*d2wdZ2(wnStart:Nn)*sigma0^2.*dt;%.*fw0(wnStart:Nn);
+
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Below are instability correction equations. There is instability in the 
+% SDE representation equation roughly between -.5 SD to +.5 SD in normal terms.
+%Instability correction Algorithm takes two ends that are here given as
+%lower end=w(NnMidl-2) and upper end=w(NnMidh+3).
+%In the block below the interpolation starts from lower end.
+%1st equation is
+%wll(NnMidl-1)=w(NnMidl-2)+(D1wl+CTheta*D2wl*dNn/1+.5*DeltaD1w)*dNn;
+%Second equation is: wll(NnMidl)=wll(NnMidl-1)+(D1wl+CTheta*D2wl*dNn+1.5*DeltaD1w)*dNn;
+%And so on.
+%There is a sixth equation that is not written below(since it takes us to 
+%the upper interpolation point which is already known) which is 
+%wll(NnMidh+3)=wll(NnMidh+2)+(D1wl+CTheta*D2wl*dNn+5.5*DeltaD1w)*dNn;
+%Sum of these six equations add up to the distance between upper and lower
+%interpolation points.
+%In the sum there are six instances of first derivative which is already 
+%calculated at the boundary, six instances of second derivative which is also
+%already calculated at lower boundary and 18.0 instances of DeltaD1w which is 
+%unknown. This equation calculates the value of one unit of DeltaD1w addition
+%DeltaD1w=(w(NnMidh+3)-w(NnMidl-2)-6*D1wl*dNn-6.0*CTheta*D2wl*dNn.^2.0/1.0)/18.0/dNn;
+% I hope to find a better analytical method to tackle this issue. Friends
+% are welcome to play with slightly changed related alternatives to the 
+%above interpolation.
+    CTheta=1.0;
+    D1wl=(11/6*w(NnMidl-2)-3*w(NnMidl-3)+3/2*w(NnMidl-4)-1/3*w(NnMidl-5))/dNn;
+    D2wl=(35/12*w(NnMidl-2) -26/3*w(NnMidl-3)+ 19/2*w(NnMidl-4)-14/3*w(NnMidl-5)+11/12*w(NnMidl-6))/dNn.^2;
+    DeltaD1w=(w(NnMidh+3)-w(NnMidl-2)-6*D1wl*dNn-6.0*CTheta*D2wl*dNn.^2.0/1.0)/18.0/dNn;
+    
+    wll(NnMidl-1)=w(NnMidl-2)+  (D1wl+CTheta*D2wl*dNn+.5*DeltaD1w)*dNn;
+    wll(NnMidl)=wll(NnMidl-1)+  (D1wl+CTheta*D2wl*dNn+1.5*DeltaD1w)*dNn;
+    wll(NnMidh)=wll(NnMidl)+    (D1wl+CTheta*D2wl*dNn+2.5*DeltaD1w)*dNn;
+    wll(NnMidh+1)=wll(NnMidh)+  (D1wl+CTheta*D2wl*dNn+3.5*DeltaD1w)*dNn;
+    wll(NnMidh+2)=wll(NnMidh+1)+(D1wl+CTheta*D2wl*dNn+4.5*DeltaD1w)*dNn;
+    %wll(NnMidh+3)=wll(NnMidh+2)+(D1wl+CTheta*D2wl*dNn+5.5*DeltaD1w)*dNn;
+%The last equation is not used since point w(NnMidh+3)is given but it is used in 
+%calculation of distance between two interpolation points. This distance is
+%used to determine the value of DeltaD1w.
+
+    D1wh=(-11/6*w(NnMidh+3)+3*w(NnMidh+4)-3/2*w(NnMidh+5)+1/3*w(NnMidh+6))/dNn;
+    D2wh=(35/12*w(NnMidh+3) -26/3*w(NnMidh+4)+ 19/2*w(NnMidh+5)-14/3*w(NnMidh+6)+11/12*w(NnMidh+7))/dNn.^2;
+    DeltaD1w=(w(NnMidh+3)-w(NnMidl-2)-6*D1wh*dNn-6.0*CTheta*D2wh*dNn.^2.0/1.0)/18.0/dNn;
+%     DeltaD1w=(w(NnMidh+2)-w(NnMidl-1)-4*D1wh*dNn-16.0*D2wh*dNn.^2.0/1.0)/6.0/dNn;
+
+
+    whh(NnMidh+2)=w(NnMidh+3)-(D1wh+CTheta*D2wh*dNn+.5*DeltaD1w)*dNn;
+    whh(NnMidh+1)=w(NnMidh+2)-(D1wh+CTheta*D2wh*dNn+1.5* DeltaD1w)*dNn;
+    whh(NnMidh)=whh(NnMidh+1)-(D1wh+CTheta*D2wh*dNn+2.5* DeltaD1w)*dNn;
+    whh(NnMidl)=whh(NnMidh)-(D1wh+CTheta*D2wh*dNn+3.5* DeltaD1w)*dNn;
+    whh(NnMidl-1)=whh(NnMidl)-(D1wh+CTheta*D2wh*dNn+4.5* DeltaD1w)*dNn;
+
+    %whh(NnMidl-2)=whh(NnMidl-1)-(D1wh+CTheta*D2wh*dNn/1+5.5* DeltaD1w)*dNn;
+
+% 
+      w(NnMidh+2)=.5*whh(NnMidh+2)+.5*wll(NnMidh+2);
+      w(NnMidh+1)=.5*whh(NnMidh+1)+.5*wll(NnMidh+1);
+      w(NnMidh)=.5*whh(NnMidh)+.5*wll(NnMidh);
+      w(NnMidl)=.5*whh(NnMidl)+.5*wll(NnMidl);
+      w(NnMidl-1)=.5*whh(NnMidl-1)+.5*wll(NnMidl-1);
+
+
+
+        w1(1:Nn-1)=w(1:Nn-1);
+        w2(1:Nn-1)=w(2:Nn);
+             
+%         w1(1:Nn-2)=w(1:Nn-2);
+%         w2(1:Nn-2)=w(2:Nn-1);
+%         w3(1:Nn-2)=w(3:Nn);
+%         w(w1(:)&gt;w2(:))=w2(w1(:)&gt;w2(:))-.25*(w3(w1(:)&gt;w2(:))-w2(w1(:)&gt;w2(:)));
+   
+
+%w(w1(:)&gt;w2(:))=0;%Be careful;might not universally hold;
+     
+        w(w&lt;0)=0.0;
+        for nn=1:Nn
+            if(w(nn)&lt;=0)
+                wnStart=nn+1;
+           end
+        end
+        
+        %%1st order mean correction. We know the mean in original
+        %%coordinates so I shift the density into original coordinates,
+        %%apply the mean correction and then transform again into Lamperti
+        %%coordinates. Algebra solves two equations in two unknowns.
+        %%Equations are Sum_0^N{(Y_w(wnStart:Nn)-Y0)*W0}=1 and the second
+        %%equation is Sum_0^N{Y_w(wnStart:Nn).*(Y_w(wnStart:Nn)-Y0)*W0}=u0
+        %%Two unknows are Y0 and W0. u0 is known mean.
+        tt;
+        u0=theta+(x0-theta)*exp(-kappa*(tt*dt)); %analytic mean of the density
+        
+        %If you are not using stochastic volatility, replace above with
+        %true mean otherwise results would become garbage. 
+
+        Y_w(wnStart:Nn) = ((1-gamma)*w(wnStart:Nn)).^(1/(1-gamma));
+    
+        Yn2Pn=sum(Y_w(wnStart:Nn).*Y_w(wnStart:Nn).*ZProb(wnStart:Nn));
+        YnPn=sum(Y_w(wnStart:Nn).*ZProb(wnStart:Nn));
+        Pn=1.0;%%Sum(ZProb(1:Nn))
+        Y0=(Yn2Pn-u0*YnPn)/(YnPn-u0*Pn);
+    
+        Y0Pn=Y0*Pn;
+        W0=1/(YnPn-Y0Pn);
+        YCorrected(wnStart:Nn)=Y_w(wnStart:Nn).*(Y_w(wnStart:Nn)-Y0)*W0;
+        wCorrected(wnStart:Nn)=(YCorrected(wnStart:Nn).^(1-gamma))./(1-gamma);
+        w(wnStart:Nn)=wCorrected(wnStart:Nn);
+        
+   %I have disabled the mean correction. The above mean correction is only valid for 
+   %standard mean reverting stochastic volatility type SDEs. To enable mean
+   %correction please uncomment the above last line in the block.
+        
+        
+end
+
+ y_w(1:Nn)=0;
+ y_w(wnStart:Nn) = ((1-gamma)*w(wnStart:Nn)).^(1/(1-gamma));
+ Dfy_w(wnStart:Nn)=0;
+ Dfw(wnStart:Nn)=0;
+for nn=wnStart+1:Nn-1
+    Dfy_w(nn) = (y_w(nn + 1) - y_w(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    Dfw(nn) = (w(nn + 1) - w(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+fy_w(1:Nn)=0;
+fw(1:Nn)=0;
+for nn = wnStart:Nn-1
+    fy_w(nn) = (normpdf(Z(nn),0, 1))/abs(Dfy_w(nn));%Origianl coordinates density
+    fw(nn) = (normpdf(Z(nn),0, 1))/abs(Dfw(nn));
+end
+
+toc
+%str=input('Analytic Values calculated; Press a key to start monte carlo');
+
+ rng(29079137, 'twister')
+ paths=100000;
+ YY(1:paths)=x0;  %Original process monte carlo.
+ Random1(1:paths)=0;
+ YYMean(1:TtM)=0;
+ for tt=1:TtM
+     Random1=randn(size(Random1));
+     HermiteP1(1,1:paths)=1;
+     HermiteP1(2,1:paths)=Random1(1:paths);
+     HermiteP1(3,1:paths)=Random1(1:paths).^2-1;
+     HermiteP1(4,1:paths)=Random1(1:paths).^3-3*Random1(1:paths);
+     HermiteP1(5,1:paths)=Random1(1:paths).^4-6*Random1(1:paths).^2+3;
+
+     YY(1:paths)=YY(1:paths) + ...
+      (YCoeff0(1,1,2,1).*YY(1:paths).^Fp(1,1,2,1)+ ...
+      YCoeff0(1,2,1,1).*YY(1:paths).^Fp(1,2,1,1)+ ...
+      YCoeff0(2,1,1,1).*YY(1:paths).^Fp(2,1,1,1))*dtM + ...
+      (YCoeff0(1,1,3,1).*YY(1:paths).^Fp(1,1,3,1)+ ...
+      YCoeff0(1,2,2,1).*YY(1:paths).^Fp(1,2,2,1)+ ...
+      YCoeff0(2,1,2,1).*YY(1:paths).^Fp(2,1,2,1)+ ...
+      YCoeff0(1,3,1,1).*YY(1:paths).^Fp(1,3,1,1)+ ...
+      YCoeff0(2,2,1,1).*YY(1:paths).^Fp(2,2,1,1)+ ...
+      YCoeff0(3,1,1,1).*YY(1:paths).^Fp(3,1,1,1))*dtM^2 + ...
+      ((YCoeff0(1,1,1,2).*YY(1:paths).^Fp(1,1,1,2).*sqrt(dtM))+ ...
+    (YCoeff0(1,1,2,2).*YY(1:paths).^Fp(1,1,2,2)+ ...
+    YCoeff0(1,2,1,2).*YY(1:paths).^Fp(1,2,1,2)+ ...
+    YCoeff0(2,1,1,2).*YY(1:paths).^Fp(2,1,1,2)).*dtM^1.5) .*HermiteP1(2,1:paths) + ...
+    ((YCoeff0(1,1,1,3).*YY(1:paths).^Fp(1,1,1,3) *dtM) + ...
+    (YCoeff0(1,1,2,3).*YY(1:paths).^Fp(1,1,2,3)+ ...
+    YCoeff0(1,2,1,3).*YY(1:paths).^Fp(1,2,1,3)+ ...
+    YCoeff0(2,1,1,3).*YY(1:paths).^Fp(2,1,1,3)).*dtM^2).*HermiteP1(3,1:paths) + ...
+    ((YCoeff0(1,1,1,4).*YY(1:paths).^Fp(1,1,1,4)*dtM^1.5 )).*HermiteP1(4,1:paths) + ...
+    (YCoeff0(1,1,1,5).*YY(1:paths).^Fp(1,1,1,5)*dtM^2.0).*HermiteP1(5,1:paths);
+
+%Uncomment for fourth order monte carlo
+
+%   
+%   YY(1:paths)=YY(1:paths) + ...
+%       (YCoeff0(1,1,2,1).*YY(1:paths).^Fp(1,1,2,1)+YCoeff0(1,2,1,1).*YY(1:paths).^Fp(1,2,1,1)+ ...
+%       YCoeff0(2,1,1,1).*YY(1:paths).^Fp(2,1,1,1))*dtM + ...
+%       (YCoeff0(1,1,3,1).*YY(1:paths).^Fp(1,1,3,1)+YCoeff0(1,2,2,1).*YY(1:paths).^Fp(1,2,2,1)+ ...
+%       YCoeff0(2,1,2,1).*YY(1:paths).^Fp(2,1,2,1)+YCoeff0(1,3,1,1).*YY(1:paths).^Fp(1,3,1,1)+ ...
+%       YCoeff0(2,2,1,1).*YY(1:paths).^Fp(2,2,1,1)+YCoeff0(3,1,1,1).*YY(1:paths).^Fp(3,1,1,1))*dtM^2 + ...
+%       (YCoeff0(1,1,4,1).*YY(1:paths).^Fp(1,1,4,1)+YCoeff0(1,2,3,1).*YY(1:paths).^Fp(1,2,3,1)+ ...
+%       YCoeff0(2,1,3,1).*YY(1:paths).^Fp(2,1,3,1)+YCoeff0(1,3,2,1).*YY(1:paths).^Fp(1,3,2,1)+ ...
+%       YCoeff0(2,2,2,1).*YY(1:paths).^Fp(2,2,2,1)+YCoeff0(3,1,2,1).*YY(1:paths).^Fp(3,1,2,1)+ ...
+%       YCoeff0(1,4,1,1).*YY(1:paths).^Fp(1,4,1,1)+YCoeff0(2,3,1,1).*YY(1:paths).^Fp(2,3,1,1)+ ...
+%       YCoeff0(3,2,1,1).*YY(1:paths).^Fp(3,2,1,1)+YCoeff0(4,1,1,1).*YY(1:paths).^Fp(4,1,1,1))*dtM^3 + ...
+%        (YCoeff0(1,1,5,1).*YY(1:paths).^Fp(1,1,5,1)+YCoeff0(1,2,4,1).*yy(1:paths).^Fp(1,2,4,1)+ ...
+%     YCoeff0(2,1,4,1).*YY(1:paths).^Fp(2,1,4,1)+YCoeff0(2,1,1,1).*yy(1:paths).^Fp(2,1,1,1)+ ...
+%      YCoeff0(2,2,3,1).*YY(1:paths).^Fp(2,2,3,1)+ ...
+%      YCoeff0(3,1,3,1).*YY(1:paths).^Fp(3,1,3,1)+YCoeff0(1,4,2,1).*YY(1:paths).^Fp(1,4,2,1)+ ...
+%      YCoeff0(2,3,2,1).*YY(1:paths).^Fp(2,3,2,1)+YCoeff0(3,2,2,1).*YY(1:paths).^Fp(3,2,2,1)+ ...
+%      YCoeff0(4,1,2,1).*YY(1:paths).^Fp(4,1,2,1)+YCoeff0(1,5,1,1).*YY(1:paths).^Fp(1,5,1,1)+ ...
+%      YCoeff0(2,4,1,1).*YY(1:paths).^Fp(2,4,1,1)+ ...
+%      YCoeff0(3,3,1,1).*YY(1:paths).^Fp(3,3,1,1)+YCoeff0(4,2,1,1).*YY(1:paths).^Fp(4,2,1,1)+ ...
+%      YCoeff0(5,1,1,1).*YY(1:paths).^Fp(5,1,1,1))*dtM^4+ ...
+%       ((YCoeff0(1,1,1,2).*YY(1:paths).^Fp(1,1,1,2).*sqrt(dtM))+ ...
+%     (YCoeff0(1,1,2,2).*YY(1:paths).^Fp(1,1,2,2)+YCoeff0(1,2,1,2).*YY(1:paths).^Fp(1,2,1,2)+ ...
+%     YCoeff0(2,1,1,2).*YY(1:paths).^Fp(2,1,1,2)).*dtM^1.5+ ...
+%     (YCoeff0(1,1,3,2).*YY(1:paths).^Fp(1,1,3,2)+YCoeff0(1,2,2,2).*YY(1:paths).^Fp(1,2,2,2)+ ...
+%     YCoeff0(2,1,2,2).*YY(1:paths).^Fp(2,1,2,2)+YCoeff0(1,3,1,2).*YY(1:paths).^Fp(1,3,1,2)+ ...
+%     YCoeff0(2,2,1,2).*YY(1:paths).^Fp(2,2,1,2)+YCoeff0(3,1,1,2).*YY(1:paths).^Fp(3,1,1,2)).*dtM^2.5+ ...
+%     (YCoeff0(1,1,4,2).*YY(1:paths).^Fp(1,1,4,2)+YCoeff0(1,2,3,2).*YY(1:paths).^Fp(1,2,3,2)+ ...
+%     YCoeff0(2,1,3,2).*YY(1:paths).^Fp(2,1,3,2)+YCoeff0(1,3,2,2).*YY(1:paths).^Fp(1,3,2,2)+ ...
+%     YCoeff0(2,2,2,2).*YY(1:paths).^Fp(2,2,2,2)+ YCoeff0(3,1,2,2).*YY(1:paths).^Fp(3,1,2,2)+ ...
+%     YCoeff0(1,4,1,2).*YY(1:paths).^Fp(1,4,1,2)+YCoeff0(2,3,1,2).*YY(1:paths).^Fp(2,3,1,2)+ ...
+%     YCoeff0(3,2,1,2).*YY(1:paths).^Fp(3,2,1,2)+YCoeff0(4,1,1,2).*YY(1:paths).^Fp(4,1,1,2)).*dtM^3.5) .*HermiteP1(2,1:paths) + ...
+%     ((YCoeff0(1,1,1,3).*YY(1:paths).^Fp(1,1,1,3) *dtM) + ...
+%     (YCoeff0(1,1,2,3).*YY(1:paths).^Fp(1,1,2,3)+YCoeff0(1,2,1,3).*YY(1:paths).^Fp(1,2,1,3)+ ...
+%     YCoeff0(2,1,1,3).*YY(1:paths).^Fp(2,1,1,3)).*dtM^2+ ...
+%     (YCoeff0(1,1,3,3).*YY(1:paths).^Fp(1,1,3,3)+YCoeff0(1,2,2,3).*YY(1:paths).^Fp(1,2,2,3)+ ...
+%     YCoeff0(2,1,2,3).*YY(1:paths).^Fp(2,1,2,3) + YCoeff0(1,3,1,3).*YY(1:paths).^Fp(1,3,1,3)+ ...
+%     YCoeff0(2,2,1,3).*YY(1:paths).^Fp(2,2,1,3)+YCoeff0(3,1,1,3).*YY(1:paths).^Fp(3,1,1,3)).*dtM^3).*HermiteP1(3,1:paths) + ...
+%     ((YCoeff0(1,1,1,4).*YY(1:paths).^Fp(1,1,1,4)*dtM^1.5 )+ ...
+%     (YCoeff0(1,1,2,4).*YY(1:paths).^Fp(1,1,2,4)+YCoeff0(1,2,1,4).*YY(1:paths).^Fp(1,2,1,4)+ ...
+%     YCoeff0(2,1,1,4).*YY(1:paths).^Fp(2,1,1,4))*dtM^2.5).*HermiteP1(4,1:paths) + ...
+%     (YCoeff0(1,1,1,5).*YY(1:paths).^Fp(1,1,1,5)*dtM^2.0).*HermiteP1(5,1:paths);
+%     
+ 
+     YYMean(tt)=YYMean(tt)+sum(YY(1:paths))/paths;
+ end
+ YY(YY&lt;0)=0;
+ disp('Original process average from monte carlo');
+ MCMean=sum(YY(:))/paths %origianl coordinates monte carlo average.
+ disp('Original process average from our simulation');
+ ItoHermiteMean=sum(y_w(wnStart+1:Nn-1).*ZProb(wnStart+1:Nn-1)) %Original process average from coordinates 
+ 
+ disp('true Mean only applicble to standard SV mean reverting type models otherwise disregard');
+ TrueMean=theta+(x0-theta)*exp(-kappa*dt*Tt)%Mean reverting SDE original variable true average
+ 
+ 
+ MaxCutOff=30;
+ NoOfBins=round(500*gamma^2*1*sigma0);%Decrease the number of bins if the graph is too rough and increase if too straight lines. 
+ [YDensity,IndexOutY,IndexMaxY] = MakeDensityFromSimulation_Infiniti_NEW(YY,paths,NoOfBins,MaxCutOff );
+ plot(y_w(wnStart+1:Nn-1),fy_w(wnStart+1:Nn-1),'r',IndexOutY(1:IndexMaxY),YDensity(1:IndexMaxY),'g');
+ %plot(y_w(wnStart+1:Nn-1),fy_w(wnStart+1:Nn-1),'r',IndexOutY(1:IndexMaxY),YDensity(1:IndexMaxY),'g',Z(wnStart+1:Nn-1),fy_w(wnStart+1:Nn-1),'b');
+ 
+ title(sprintf('Ito-Hermite Method VS Monte Carlo Density, x0 = %.2f,theta=%.2f,kappa=%.2f,gamma=%.3f,sigma=%.2f,T=%.2f', x0,theta,kappa,gamma,sigma0,T));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+ 
+ %title('text',sprintf('x0 = %f', x0),sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T))
+ %xlabel(a)
+ %title('Graphical Comparison of Ito-Hermite Method and Monte Carlo Method Density')
+ legend({'Ito-Hermite Density','Monte Carlo Density'},'Location','northeast')
+ 
+ str=input('red line is density of SDE from Ito-Hermite method, green is monte carlo.');
+ 
+end
+</code></pre></div>
+when you run the program with the following command,<br>
+ItoHermiteWilmottMeanCorrected080FP(1,1,1,.85,1,2)<br>
+here is the result from the program<br>
+<span style="font-size: 100%; line-height: normal">ItoHermiteMean =</span><span style="font-size: 100%; line-height: normal">0.999932367147095</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">One last thing about graphs in my program. When the monte carlo simulation density graphs are too rough, please decrease the variable </span>NoOfBins  in the above program and when the graphs are too straight lines, increase the variable NoOfBins. I have also indicated it in the program.</div>
+
+			
+									
+									<div id="sig856739" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856747">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856747">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856747">
+
+			<h3 ><a href="#p856747">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856747&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856747" title="Post #925">#925</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 8th, 2020, 6:30 am</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Sorry friends, a quick update about yesterday's post. I believe that multiplier in terms that are not in the squared form is not [$]\frac{1}{{(2 \pi)}^2}[$]. It should rather probably be another  [$]4 \Delta t[$]  on top of first time integration. Here is the main update equation changed so can just plug it in the previous program and run it.</span><br>
+<br>
+C_f=4*dt;<br>
+w(wnStart:Nn)=wMeanPrev+wMu0dt(wnStart:Nn)+ ...<br>
+sign(w(wnStart:Nn)-wMeanPrev+dw(wnStart:Nn)).* ...<br>
+sqrt(abs(sign(w(wnStart:Nn)-wMeanPrev).*(w(wnStart:Nn)-wMeanPrev).^2+ ...<br>
+sign(dw(wnStart:Nn)).*dw2(wnStart:Nn)))+ ...<br>
++C_f*dwMu0dtdw(wnStart:Nn).*dwdZ(wnStart:Nn).^2+ ...<br>
+-C_f*wMu0dt(wnStart:Nn).*d2wdZ2(wnStart:Nn)+ ...<br>
++C_f*wMu0dt(wnStart:Nn).*Z(wnStart:Nn).*dwdZ(wnStart:Nn)+ ...<br>
+ 1*Correction1(wnStart:Nn).*fw0(wnStart:Nn) + ...<br>
+ 1*Correction0(wnStart:Nn).*fw0(wnStart:Nn) - ...<br>
+ C_f*.5*3*Z(wnStart:Nn).^1.*dZdw(wnStart:Nn).*d2wdZ2(wnStart:Nn)*sigma0^2.*dt;<br>
+<br>
+also attached as code<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">C_f=4*dt;
+       w(wnStart:Nn)=wMeanPrev+wMu0dt(wnStart:Nn)+ ...
+        sign(w(wnStart:Nn)-wMeanPrev+dw(wnStart:Nn)).* ...
+            sqrt(abs(sign(w(wnStart:Nn)-wMeanPrev).*(w(wnStart:Nn)-wMeanPrev).^2+ ...
+            sign(dw(wnStart:Nn)).*dw2(wnStart:Nn)))+ ...
+            +C_f*dwMu0dtdw(wnStart:Nn).*dwdZ(wnStart:Nn).^2+ ...
+            -C_f*wMu0dt(wnStart:Nn).*d2wdZ2(wnStart:Nn)+ ...
+            +C_f*wMu0dt(wnStart:Nn).*Z(wnStart:Nn).*dwdZ(wnStart:Nn)+ ...
+            1*Correction1(wnStart:Nn).*fw0(wnStart:Nn) + ...
+            1*Correction0(wnStart:Nn).*fw0(wnStart:Nn) - ...
+            C_f*.5*3*Z(wnStart:Nn).^1.*dZdw(wnStart:Nn).*d2wdZ2(wnStart:Nn)*sigma0^2.*dt;</code></pre></div>
+ </div>
+
+			
+									
+									<div id="sig856747" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856765">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856765">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856765">
+
+			<h3 ><a href="#p856765">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856765&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856765" title="Post #926">#926</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 8th, 2020, 4:30 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Friends, I had been working with the older program and tried to improve it and came back to a new version of the density simulation program based totally on fokker-planck derivatives. </span><span style="font-size: 100%; line-height: normal">I completed the square for the solution of FP equation in bessel/Lamperti coordinates and I am trying to work out all the details of the numerical algorithm based totally on the derivatives derived from the solution of the FP equations and hope to post the new program in another day or two if things go well.  </span></div>
+
+			
+									
+									<div id="sig856765" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856779">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856779">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856779">
+
+			<h3 ><a href="#p856779">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856779&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856779" title="Post #927">#927</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 8th, 2020, 7:57 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Though densities are different and more complicated, consider this following simple expression and its application to more complex SDEs.</span><br>
+If [$]B_t[$] is brownian motion with volatility [$]\sigma[$] the interesting expression is<br>
+<br>
+<span style="font-size: 100%; line-height: normal">[$]d\big[ \frac{{(B_t - B_0)}^2}{{\sigma}^2 \Delta t} - Z^2 \big] =0[$]</span><br>
+<br>
+<span style="font-size: 100%; line-height: normal">and consider its applications to more complicated SDEs.</span></div>
+
+			
+									
+									<div id="sig856779" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856816">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856816">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856816">
+
+			<h3 ><a href="#p856816">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856816&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856816" title="Post #928">#928</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 9th, 2020, 2:56 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">I have previously asked friends on this forum to let me take this work on fokker-planck and densities of SDEs towards conclusion but I think there are many friends who can do this work far better than I can. And therefore I will ask those friends who are experts in this domain or have strong interest in this area to openly share and publish any related research and not wait for anything like a formal research paper from me as I had earlier asked. I would still request friends to please give me credit for whatever work I have presented on Wilmott forum. I will continue to do further research, keep posting it on Wilmott forum and might even write a paper but I would still want friends to go ahead with their research and not wait for me to present any formal research work.</span></div>
+
+			
+									
+									<div id="sig856816" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856883">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856883">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856883">
+
+			<h3 ><a href="#p856883">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856883&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856883" title="Post #929">#929</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 10th, 2020, 6:53 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Dear friends I made some notes about simulation of SDEs using Ito-hermite method. In order to simulate the SDEs with this method, first we have to calculate the complete differential of square of terms as they appear inside the normal exponential. I will start with a general SDE in Lamperti form. Here is the form of the SDE  </span><br>
+[$]dw_s=\mu(w_s) ds + \sigma dZ(s)[$]   Equation(1)<br>
+<br>
+Let us suppose[$]\zeta_w[$] is the mean of density when we want to calculate the one time step ahead value of [$]w_t[$] to calculate  the density. <br>
+First of all we want to calculate the differential and later we will go to fokker-planck<br>
+<br>
+[$]\int_0^t d\Big[ {(w_s -\zeta_w - \int_0^s \mu(w_v) dv )}^2 \Big] = {\sigma}^2 Z^2 \Delta t [$]     Equation(2)<br>
+<br>
+Let us suppose that we indicate the integral of drift by uppercase letter as<br>
+[$]M_t=\int_0^t \mu(w_s) ds[$]   Equation(3)<br>
+<br>
+Expanding the left side in the equation(2), we get<br>
+<br>
+[$] \int_0^t d\Big[ {({w_s}^2+ {\zeta_w}^2 + {M_s}^2 - 2 w_s \zeta_w -2 w_s M_s + 2 \zeta_w M_s )} \Big]  [$]<br>
+<br>
+applying the differential we get<br>
+<br>
+[$]\int_0^t \Big[ 2w_s dw_s +{\sigma}^2 ds +2 M_s dM_s - 2  \zeta_w dw_s -2 d[w_s M_s] + 2 \zeta_w dM_s \Big]  [$]<br>
+The first integral given as <br>
+[$]\int_0^t \Big[ 2w_s dw_s +{\sigma}^2 ds \Big][$] is straightforward. The only two integrals that are relatively difficult are calculated below<br>
+<br>
+[$]\int_0^t M_s dM_s[$]<br>
+In order to calculate the above integral, we first calculate<br>
+[$]M_s=\int_0^s \mu(w_v) dv[$]<br>
+[$]dM_s= \mu(w_s) ds[$]<br>
+[$]M_s= \mu(w_0) \int_0^s dv +  \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0)  \int_0^s \int_0^v du dv + \frac{\partial \mu(w_0)}{\partial w}  \sigma  \int_0^s \int_0^v dz(u) dv + .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2  \int_0^s \int_0^v du dv[$] <br>
+[$]=\mu(w_0) s + \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0)  \frac{s^2}{2} +  \frac{\partial \mu(w_0)}{\partial w}  \sigma  (1-\frac{1}{\sqrt{3}}) s z(s) [$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2  \frac{s^2}{2}[$] <br>
+<br>
+Now <br>
+[$]\int_0^t M_s dM_s= \int_0^t\Big[ \mu(w_0) s + \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0)  \frac{s^2}{2} +  \frac{\partial \mu(w_0)}{\partial w}  \sigma  (1-\frac{1}{\sqrt{3}}) s z(s) [$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2  \frac{s^2}{2} \Big ] dMs[$]<br>
+[$]= \int_0^t\Big[ {\mu(w_0)}^2 s ds+ \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)}^2  \frac{s^2}{2} ds+  \frac{\partial \mu(w_0)}{\partial w} \mu(w_0) \sigma  (1-\frac{1}{\sqrt{3}}) s z(s) ds[$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{s^2}{2} ds \Big ][$]<br>
+[$]=  {\mu(w_0)}^2 \frac{t^2}{2}+ \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)}^2  \frac{t^3}{6}+  \frac{\partial \mu(w_0)}{\partial w} \mu(w_0) \sigma  (1-\frac{1}{\sqrt{3}}) \frac{1}{2} (1-\frac{1}{\sqrt{5}}) t^2 z(s)[$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{t^3}{6}[$]<br>
+<br>
+The other difficult and more important integral is calculated as<br>
+[$]= \int_0^t d[w_s M_s]=  \int_0^t M_s dw_s +w_s dM_s[$]<br>
+We substitute the value of [$]M_s[$] from above equation No.  into the above equation as<br>
+[$]=  \int_0^t \Big[ \big[ \mu(w_0) s + \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0)  \frac{s^2}{2} +  \frac{\partial \mu(w_0)}{\partial w}  \sigma  (1-\frac{1}{\sqrt{3}}) s z(s) [$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2  \frac{s^2}{2} \big] \big[\mu(w_0) ds + \sigma dz(s) \big] [$]<br>
+[$] +w_0 \mu(w_0) ds + w_0 \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0) s ds + w_0 \frac{\partial \mu(w_0)}{\partial w}  \sigma z(s) ds[$]<br>
+[$]+w_0 .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2 s ds \Big][$]<br>
+<span style="font-size: 100%; line-height: normal">[$]=  \Big[ \big[ {\mu(w_0)}^2  \frac {t^2}{2} + \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)}^2  \frac{t^3}{6}[$]</span><br>
+<span style="font-size: 100%; line-height: normal">[$]+\frac{\partial \mu(w_0)}{\partial w} \sigma (1-\frac{1}{\sqrt{3}}) \frac{1}{2} (1-\frac{1}{\sqrt{5}}) t^2 z(t)[$]</span><br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{t^3}{6} \big] [$]<br>
+[$] + \big[ {\mu(w_0)} \sigma  (1-\frac {1}{\sqrt{3}}) t z(t) + \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)} .5 t^2 z(t)/\sqrt{2}/\sqrt{6} [$]<br>
+[$]+\frac{\partial \mu(w_0)}{\partial w} \sigma (1-\frac{1}{\sqrt{3}})  \frac{t ({z(t)}^2-1)}{2\sqrt{2}}[$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{t^2 z(t)}{\sqrt{2}}{\sqrt{6}} \big]  [$]<br>
+[$] +w_0 \mu(w_0) t + w_0 \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0) \frac{t^2}{2} + w_0 \frac{\partial \mu(w_0)}{\partial w}  \sigma (1-\frac{1}{\sqrt{3}}) t z(t)[$]<br>
+[$]+w_0 .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2 \frac{t^2}{2} \Big][$]</div>
+
+			
+									
+									<div id="sig856883" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p856898">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile856898">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=791f96073014da9fbb93191bd02baa4b" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=791f96073014da9fbb93191bd02baa4b">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content856898">
+
+			<h3 ><a href="#p856898">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=856898&amp;sid=791f96073014da9fbb93191bd02baa4b" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p856898" title="Post #930">#930</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">April 11th, 2020, 10:32 am</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 100%; line-height: normal">Dear friends, when I wrote the post last night, it was already very late and by the time I completed the post I was barely awake and I had already slept briefly multiple times on my desk so I was unable to correct every mistake. In the expansion of second term in the integral  [$]\int_0^t d[w_s M_s]=  \int_0^t \big[ M_s dw_s +w_s dM_s \big] [$] , I did not properly expand [$]w_s[$] and just used [$]w_0[$] in its place and a proper expansion would require replacing [$]w_s[$] by </span><br>
+[$] w_0+ \mu(w_0) s + \sigma dz(s)[$]  and then solving the resulting integrals after multiplication with [$]dM_s[$]<br>
+This would not be important to mention but there are some second order terms that we would miss if we do not expand this integral properly.  <br>
+<br>
+
+<blockquote class="uncited"><div class="blockquote__inner">
+The other difficult and more important integral is calculated as<br>
+[$]= \int_0^t d[w_s M_s]=  \int_0^t M_s dw_s +w_s dM_s[$]<br>
+We substitute the value of [$]M_s[$] from above equation No.  into the above equation as<br>
+[$]=  \int_0^t \Big[ \big[ \mu(w_0) s + \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0)  \frac{s^2}{2} +  \frac{\partial \mu(w_0)}{\partial w}  \sigma  (1-\frac{1}{\sqrt{3}}) s z(s) [$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2  \frac{s^2}{2} \big] \big[\mu(w_0) ds + \sigma dz(s) \big] [$]<br>
+[$] +w_0 \mu(w_0) ds + w_0 \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0) s ds + w_0 \frac{\partial \mu(w_0)}{\partial w}  \sigma z(s) ds[$]<br>
+[$]+w_0 .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2 s ds \Big][$]<br>
+[$]=  \Big[ \big[ {\mu(w_0)}^2  \frac {t^2}{2} + \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)}^2  \frac{t^3}{6}[$]<br>
+[$]+\frac{\partial \mu(w_0)}{\partial w} \sigma (1-\frac{1}{\sqrt{3}}) \frac{1}{2} (1-\frac{1}{\sqrt{5}}) t^2 z(t)[$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{t^3}{6} \big] [$]<br>
+[$] + \big[ {\mu(w_0)} \sigma  (1-\frac {1}{\sqrt{3}}) t z(t) + \frac{\partial \mu(w_0)}{\partial w}  {\mu(w_0)} .5 t^2 z(t)/\sqrt{2}/\sqrt{6} [$]<br>
+[$]+\frac{\partial \mu(w_0)}{\partial w} \sigma (1-\frac{1}{\sqrt{3}})  \frac{t ({z(t)}^2-1)}{2\sqrt{2}}[$]<br>
+[$]+ .5 \frac{\partial^2 \mu(w_0)}{\partial w^2} \mu(w_0) {\sigma}^2  \frac{t^2 z(t)}{\sqrt{2}}{\sqrt{6}} \big]  [$]<br>
+[$] +w_0 \mu(w_0) t + w_0 \frac{\partial \mu(w_0)}{\partial w}  \mu(w_0) \frac{t^2}{2} + w_0 \frac{\partial \mu(w_0)}{\partial w}  \sigma (1-\frac{1}{\sqrt{3}}) t z(t)[$]<br>
+[$]+w_0 .5 \frac{\partial^2 \mu(w_0)}{\partial w^2}  {\sigma}^2 \frac{t^2}{2} \Big][$]</div></blockquote></div>
+
+			
+									
+									<div id="sig856898" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;791f96073014da9fbb93191bd02baa4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=885" role="button">60</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" role="button">61</a></li>
+							<li class="active"><span>62</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" role="button">63</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=945" role="button">64</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=915&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;791f96073014da9fbb93191bd02baa4b" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=885" role="button">60</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=900" role="button">61</a></li>
+							<li class="active"><span>62</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" role="button">63</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=945" role="button">64</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=791f96073014da9fbb93191bd02baa4b&amp;start=930" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=915&amp;sid=791f96073014da9fbb93191bd02baa4b">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=791f96073014da9fbb93191bd02baa4b" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=791f96073014da9fbb93191bd02baa4b"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=791f96073014da9fbb93191bd02baa4b"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=791f96073014da9fbb93191bd02baa4b" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#89e8ede4e0e7c9fee0e5e4e6fdfda7eae6e4">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>62</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=791f96073014da9fbb93191bd02baa4b";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=791f96073014da9fbb93191bd02baa4b";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e276e1e90d5e2","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

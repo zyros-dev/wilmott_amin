@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 108 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=e6d16b44d416c53a4c628291ea07bda0" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=e6d16b44d416c53a4c628291ea07bda0?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=e6d16b44d416c53a4c628291ea07bda0?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=e6d16b44d416c53a4c628291ea07bda0?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1605" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="e6d16b44d416c53a4c628291ea07bda0" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=e6d16b44d416c53a4c628291ea07bda0" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=e6d16b44d416c53a4c628291ea07bda0" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="e6d16b44d416c53a4c628291ea07bda0" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=e6d16b44d416c53a4c628291ea07bda0" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=e6d16b44d416c53a4c628291ea07bda0"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=e6d16b44d416c53a4c628291ea07bda0"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=e6d16b44d416c53a4c628291ea07bda0" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D1605%26t%3D99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=1605&amp;t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" />
+<input type="hidden" name="creation_time" value="1768907849" />
+<input type="hidden" name="form_token" value="ab967a3ab1ef690d143354618af74fef720e0ec5" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=1605&amp;sid=e6d16b44d416c53a4c628291ea07bda0">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1605&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="e6d16b44d416c53a4c628291ea07bda0" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;e6d16b44d416c53a4c628291ea07bda0" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1575" role="button">106</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" role="button">107</a></li>
+							<li class="active"><span>108</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" role="button">109</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1635" role="button">110</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873249">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873249">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873249">
+
+			<h3 class="first"><a href="#p873249">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873249&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873249" title="Post #1606">#1606</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 19th, 2022, 2:08 am</span></p>
+			
+			
+			
+			<div class="content">Friends somebody out of the blue complained and linkedin suspended my account without even giving me any notice. This is strange. LinkedIn has removed my article post and blocked my account. I have not received any email from linkedin about it whatsoever.<br>
+<br>
+My latest post has been removed: <a href="https://www.linkedin.com/pulse/trading-venture-proposition-ahsan-amin/" class="postlink" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/pulse/trading-venture-proposition-ahsan-amin/</a><br>
+<br>
+When I tried to change my password, I was told that I needed to upload an identity verification document. I uploaded image of my passport and I later received an auto-generated message about the passport that my passport will be reviewed in 3-5 days.<br>
+<br>
+Again I am looking to start a small Hedge Fund in HK/China though I can consider some place in mainland Europe if I can get a good deal. My email is anan2999(at)yahoo(dot)com.<br>
+You can call me on whatsapp but you have to send a message earlier. My mobile whatsapp is  +92-336-2602125<br>
+<br>
+Here is the content of post on linkedin at web address: <a href="https://www.linkedin.com/pulse/trading-venture-proposition-ahsan-amin/" class="postlink" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/pulse/trading-venture-proposition-ahsan-amin/</a><br>
+<br>
+<br>
+Trading Venture Proposition.<br>
+<br>
+Algorithmic Model Description.<br>
+Our model is close to high frequency trading models where trades take place roughly every thirty seconds to a minute. <br>
+Our model makes a prediction of the market fifteen seconds ahead and then makes decision to buy the stock asset if the market is predicted to go up and sell it if it is predicted by the model to go down. Once a trade has been made, we keep the trade alive after fifteen seconds if it is profitable to continue the trade and end the trade if it is not profitable to continue the trade. <br>
+Depending upon the market conditions, our model makes between six hundred to one thousand trades per day with average lifetime of a trade around thirty seconds to more than a minute. <br>
+We enter the trades through limit orders and earn a portion of bid-ask spread.<br>
+Our trading style and philosophy is similar to that of the most profitable firms on Wall Street especially Renaissance Technologies that makes billions of dollars in profits every year. We believe we have equally good trading algorithms. <br>
+<br>
+Machine Learning Techniques Behind the Model.<br>
+Our model uses predictive machine learning to make trading decisions. We do research on independent factors that affect the short-term evolution of the financial asset and then apply machine learning to optimize for the parameters that best describe the short-term dynamics of the financial asset.<br>
+In our back-testing simulations, these optimized parameters are learnt from previous day’s data and are used to make trading decisions during the following day.<br>
+We tested our algorithms on large scale data with above rolling window of training on 24 hours of data and then applying the model to next 24 hours of data. <br>
+Our machine learning method is a new technique and is not known to people in financial markets. This results in more accurate prediction of the market than any time series model or process that analysts and quants usually use in financial markets to make a prediction of financial assets.<br>
+<br>
+Calculation of Profits Associated with Our High Frequency Algorithmic Trading.<br>
+Author has experience with American stocks data and have previously run several algorithms on Nasdaq Stocks. However empirical calculations of profit and loss with this algorithm were done on major crypto currencies including Bitcoin and Ethereum using Binance data. Our algorithms consistently turned profits on both cryptocurrencies despite that they are far more volatile as compared to US stocks. Our algorithms consistently made profits in both highly bullish and highly bearish markets. <br>
+We used zero leverage in our projection of profits and costs.  <br>
+In our trading back-testing, we made a profit of 1.5 cents per hundred dollars without including any earned spreads. Our models made roughly about one thousand trades per day as crypto market remains open for 24 hours. For high volume traders that trade Binance futures, Binance pays a rebate of one cent per hundred dollars. Adding our profits and rebate means we can make 2.5 cents per hundred dollars per trade on average. There are roughly one thousand trades per day taking our profits to (1000 *.025/100=25%) per day.<br>
+At this point, I will stop and reassure the reader that these profits are real and I can demonstrate them in independent back-testing. Such profits became possible due to our superior statistical machine learning model that correctly captures 20%-30% of all the variation in the financial assets.   <br>
+When we applied our model on Cryptocurrencies, our Sharpe ratio was roughly 2.0. This is considered excellent Sharpe ratio with little downside risk. <br>
+In our back-testing simulations with Bitcoin and Ethereum there were several months in the data in which we made no loss during any single day of the month. <br>
+In the past, Author has applied vastly inferior models on Nasdaq stocks data and was able to find reasonable profits with those models. If this superior algorithm is run on Nasdaq stocks data, it can easily earn one cent per hundred dollars after accounting for round trip brokerage costs associated with every trade. This would result in extremely profitable trading strategy for Nasdaq stocks trading.   <br>
+Again, very small but consistent profits when aggregated over a large number of trades become very significant and usually become several percentage points of the capital for even a single day. <br>
+<br>
+Independent Verification of the Model<br>
+We fully welcome independent back-testing and verification of the claims made about profitability of our trading algorithms. Though we would not be willing to reveal machine learning techniques behind the algorithm, there can be several ways in which we can pass on parameters from my machine learning optimization that can then be used on future data to independently verify my claims about the profitability of the algorithms. In fact, I welcome friends to independently verify the model before sponsoring any capital for the new company. <br>
+<br>
+Risks Associated with the Model.<br>
+There are much smaller risks associated with our fast and, short term trading style as compared to plain vanilla buy and hold strategies. When we make quick trades, it also becomes easier to limit losses since risk management techniques can be used when model loses money in small successive trades before the accrued losses could become large to make a significant decline in previously earned profits. Our trading style results in very high Sharpe Ratio for most of the financial assets we used in historical study. Our trading style is relatively safer as compared to existing trading strategies used to make profits in financial markets. While trading stocks, we do not intend to use any leverage which would make risk management of our models much easier. Before trading financial assets, we strongly vet that there are little known risks of large unexpected moves in the target stock. Our vetting stocks for large unexpected moves, our short-term trading style and zero leverage ensures that risk management of the trading portfolio remains relatively simple and straightforward process.   <br>
+<br>
+Prospective Financial Markets for Trading.<br>
+We want to use our model to trade HK stocks, Nasdaq Stocks, Stock exchange Index futures, currencies and commodities like oil and gold futures.<br>
+<br>
+Limitations of the Model.<br>
+We have tried our models extensively on historical data but we have not done live trading with our models. We want to train our models comprehensively on paper trading with some good brokers and then use them for live trading in the final step.<br>
+<br>
+Capital Requirements.<br>
+We will require initial amount of roughly two hundred thousand dollars. We need money for office space, a few fast computers, and high-speed internet. We will also need to hire about a staff of three to four mathematicians and programmers. We will also need infrastructure to secure the property.  <br>
+As the profitability of our models becomes evident, we will continue to scale the trading capital with time once our market trading strategies continue to generate large profits. As we demonstrate that our trading strategies remain profitable with time, we will gradually increase the trading capital to several hundred million dollars.<br>
+<br>
+About the Author.<br>
+Author is a mathematician who has made several important discoveries in mathematics.<br>
+For instance, millions of computers in tens of thousands of financial institutions use Monte Carlo simulations of stochastic differential equations every day to price derivatives and project risk of financial portfolios. Author discovered for the first time how to do higher order accurate Monte Carlo simulations of stochastic differential equations (SDEs).<br>
+Fokker-Planck partial differential equation is among ten major equations of mathematics and describes the time evolution of probability densities associated with SDEs. For the first time, author discovered several analytic ways to solve the Fokker-Planck equation.<br>
+Author has found analytic series solutions to first order ODEs, nth order ODEs and systems of ODEs. The series solution presents the true series of the analytic solution of the ODE. The method applies to all ODEs unless the ODE is singular when it has to be transformed into a non-singular form.</div>
+
+			
+									
+									<div id="sig873249" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p873250">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873250">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873250">
+
+			<h3 ><a href="#p873250">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873250&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873250" title="Post #1607">#1607</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 19th, 2022, 6:27 am</span></p>
+			
+			
+			
+			<div class="content">This is so ridiculous that instead of promoting business and exchange, linkedin is destroying business. <br>
+I had written emails to 5-6 smart connections in Hong Kong and CIA is threatened that I would take cutting edge knowledge and algorithms to China or HK and it will hurt American interests. So they asked linkedin and my public profile has been deleted and my article post about my algorithms has been removed. <br>
+They want my Chinese friends and connections to think that I am some sort of fake and therefore linkedin has deleted my public account.<br>
+I am a free human being and I suppose I am free to go where-ever I feel like. </div>
+
+			
+									
+									<div id="sig873250" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873251">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873251">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873251">
+
+			<h3 ><a href="#p873251">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873251&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873251" title="Post #1608">#1608</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 19th, 2022, 7:01 am</span></p>
+			
+			
+			
+			<div class="content">I made the following email to LinkedIn customer support.<br>
+<br>
+Re: LinkedIn Account Recovery Appeal [Case: 221118-017263] <br>
+From: Ahsan Amin (<a href="/cdn-cgi/l/email-protection#88e9e6e9e6bab1b1b1c8f1e9e0e7e7a6ebe7e5"><span class="__cf_email__" data-cfemail="6b0a050a05595252522b120a03040445080406">[email&#160;protected]</span></a>) <br>
+To: <a href="/cdn-cgi/l/email-protection#a5c9cccbcec0c1cccbfad6d0d5d5cad7d1e5c6d68bc9cccbcec0c1cccb8bc6cac8"><span class="__cf_email__" data-cfemail="b9d5d0d7d2dcddd0d7e6caccc9c9d6cbcdf9daca97d5d0d7d2dcddd0d797dad6d4">[email&#160;protected]</span></a>; <a href="/cdn-cgi/l/email-protection#7819100b1916191511164a414141381f15191114561b1715"><span class="__cf_email__" data-cfemail="33525b40525d525e5a5d010a0a0a73545e525a5f1d505c5e">[email&#160;protected]</span></a>; <a href="/cdn-cgi/l/email-protection#2e4f404f401c1717176e574f464141004d4143"><span class="__cf_email__" data-cfemail="b3d2ddd2dd818a8a8af3cad2dbdcdc9dd0dcde">[email&#160;protected]</span></a> <br>
+Date: Saturday, 19 November 2022 at 11:57 GMT+5 <br>
+Hi, <br>
+This morning I noticed that my linkedin account has been suspended, my public profile has been deleted and my article posts have been removed from linkedin. I never believe how linkedin can block my account without contacting me. If I have done anything wrong in somebody's opinion, you have to give me an opportunity to present my point of view before arbitrarily blocking my account and deleting my public profile. <br>
+Just yesterday, I contacted 6-7 of my Chinese connections for a partnership with my firm. This is a very significant step in my life and career. Since LinkedIn arbitrarily suspended my account, and blocked my profile, all of my Chinese friends would be thinking that I am a fake and therefore LinkedIn has blocked my account. I want Linkedin to restore my account as early as possible and also want an apology from LinkedIn. <br>
+Kind regards, <br>
+Ahsan Amin</div>
+
+			
+									
+									<div id="sig873251" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873277">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873277">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./download/file.php?avatar=26631_1726781574.jpg" width="75" height="75" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Cuchulainn</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=26631&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">23029</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 16th, 2004, 7:38 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873277">
+
+			<h3 ><a href="#p873277">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873277&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873277" title="Post #1609">#1609</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 19th, 2022, 7:58 pm</span></p>
+			
+			
+			
+			<div class="content"><em><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Author has found analytic series solutions to first order ODEs, nth order ODEs and systems of ODEs. The series solution presents the true series of the analytic solution of the ODE. The method applies to all ODEs unless the ODE is singular when it has to be transformed into a non-singular form.</span></em><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">That's what intrigues me.</span><br>
+<br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Analytics series solutions sounds too good to be true (in general, we might get <em>serendipitous solutions</em>) On paper, I agree but numerically and in a computer is a different ball game.</span><br>
+<span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">What I like in articles is 10% text (bla bla) and 90% maths (AI/ML is the other way around..)</span></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873286">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873286">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873286">
+
+			<h3 ><a href="#p873286">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873286&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873286" title="Post #1610">#1610</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 1:07 am</span></p>
+			
+			
+			
+			<div class="content">Please, read the article first and then criticize on merit before making vague statements.<br>
+When I did the paper on ODEs, I ran my mathematica expansion algorithm (given in paper and on this forum) on a large number of ODEs to find their series solutions. Whenever the true solution was known in closed form, the series solution was always series expansion of the known closed form solution. </div>
+
+			
+									
+									<div id="sig873286" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873288">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873288">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873288">
+
+			<h3 ><a href="#p873288">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873288&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873288" title="Post #1611">#1611</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 2:41 am</span></p>
+			
+			
+			
+			<div class="content">My method for solution of ODE's is a cousin of Taylor series.<br>
+What Taylor Series is to analytic functions, my method is to analytic ODE's.<br>
+Taylor Series find a true series solution to analytic functions.<br>
+My method finds true series solutions to analytic ODEs.<br>
+When closed form solution of the ODE is known, the solution from my method is exact Taylor expansion of the closed form solution of the ODE. </div>
+
+			
+									
+									<div id="sig873288" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873290">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873290">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873290">
+
+			<h3 ><a href="#p873290">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873290&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873290" title="Post #1612">#1612</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 7:27 am</span></p>
+			
+			
+			
+			<div class="content">Cuch, I know you will find something else after this to say about my method to solve SDEs. Just to end the argument, I have decided to show equivalence of my method to solve ODE's with Taylor Series. I thought of doing it since I am sure mathematicians would be better able to appreciate my work once they know this equivalence and I believe there are many generalizations of my method that can be further applied to a lot of other problems especially to PDEs. <span style="font-size: 100%; line-height: normal">The way I will present the problem again and pose solution, it will be very easy for friends to generalize it to other problems very easily.</span><br>
+My only purpose about openly presenting my research here is that it is mostly science and mathematics and their innovative applications that has changed the destiny of humanity as we see it today and caused the advance of civilization. CIA stopped people all over the world from doing business with me. If I cannot benefit from my own discoveries, I would still want people to use them in innovative ways and benefit from it. <br>
+I am really proud that I try to do good science/mathematics.<br>
+<span style="font-size: 100%; line-height: normal">Within a day, I will write mathematical equations so most mathematicians would be easily able to appreciate the equivalence between my method and similarity in their derivation to Taylor Series. And then also be able to use it in many other innovative ways.  </span></div>
+
+			
+									
+									<div id="sig873290" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873291">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873291">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873291">
+
+			<h3 ><a href="#p873291">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873291&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873291" title="Post #1613">#1613</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 7:44 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner"><span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Cuch, I know you will find something else after this to say about my method to solve SDEs.</span></div></blockquote>
+Sorry, I meant: <span style="font-family:-apple-system, Helvetica Neue, Helvetica, sans-serif">Cuch, I know you will find something else after this to say about my method to solve ODEs.</span></div>
+
+			
+									
+									<div id="sig873291" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873296">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873296">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./download/file.php?avatar=26631_1726781574.jpg" width="75" height="75" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Cuchulainn</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=26631&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">23029</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 16th, 2004, 7:38 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873296">
+
+			<h3 ><a href="#p873296">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873296&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873296" title="Post #1614">#1614</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 2:22 pm</span></p>
+			
+			
+			
+			<div class="content"><img src="https://www.azquotes.com/picture-quotes/quote-the-heart-of-mathematics-consists-of-concrete-examples-and-concrete-problems-big-general-paul-halmos-73-98-13.jpg" class="postimage" alt="Image"></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873297">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873297">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873297">
+
+			<h3 ><a href="#p873297">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873297&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873297" title="Post #1615">#1615</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 2:55 pm</span></p>
+			
+			
+			
+			<div class="content">For Cuch and other friends, here I want to explain the sheer similarities between my Taylor series method for functions and my method for ODEs. <br>
+First, I will make an intuitive derivation of Taylor Series. I will do everything step by step and sometimes even do trivial steps but please bear with me. I want to make things as simple and easy as possible. You just need basic calculus to understand everything.<br>
+<br>
+Intuitive Derivation of Taylor Series.<br>
+Suppose We are given a function f(t) whose all derivatives with respect to t can be found. We know the value of function at a starting point [$]t_0[$] and want to find the value of function at point in neighborhood given by  [$]t_0+\Delta t[$]<br>
+<br>
+We write <br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \int_{t_0}^{t_0+\Delta t} \, \frac{df(s)}{ds} \, ds [$] <br>
+In above, We have taken value of function at starting point [$]t_0[$] and added integral of first derivative so that it becomes equal to function value in LHS.<br>
+Now we take the first derivative in second term on RHS at initial value and add a second derivative terms so that terms on RHS equal the function value on LHS.<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \int_{t_0}^{t_0+\Delta t} \, \frac{df(t_0)}{ds} \, ds \, + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, \frac{d^2f(v)}{dv^2} \, dv \, ds [$]<br>
+In above, we have taken value of function and its first derivative at [$]t_0[$] and used integral of second derivative of function so that all terms on RHS are equal to function value on LHS.<br>
+Please also note that we can take [$] \frac{df(t_0)}{ds}[$] outside of complete integral  [$]\int_{t_0}^{t_0+\Delta t} \, \frac{df(0)}{ds} \, ds \,[$] because it is a constant term evaluated at initial point [$]t_0[$]<br>
+So we write<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(t_0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, \frac{d^2f(v)}{dv^2} \, dv \, ds [$]<br>
+Now we expand the second derivative integral term on RHS into a second derivative term evaluated at initial value [$]t_0[$] plus an integral of third derivative term as<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(t_0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \,  \frac{d^2f(t_0)}{dt^2} \,\int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, dv \, ds + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,  \,\int_{t_0}^{v}  \frac{d^3f(u)}{du^3} \,du \, dv \, ds[$]<br>
+Repeating similarly for one more step, we obtain<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \,  \frac{d^2f(0)}{dt^2} \,\int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, dv \, ds[$]<br>
+[$] + \,  \frac{d^3f(t_0)}{dt^3} \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,  \,\int_{t_0}^{v}  \,du \, dv \, ds + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+By solving iterated integrals, we retrieve first three terms of Taylor Series and a remainder term as<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(0)}{dt} \, \Delta t, + \,  \frac{d^2f(0)}{dt^2} \,{\Delta t}^2/2  + \,  \frac{d^3f(t_0)}{dt^3} {\Delta t}^3/6[$]<br>
+[$] + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+<br>
+where remainder term after expansion up to three derivatives is given as<br>
+[$] + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+We cannot take integrand in remainder term out of integral signs until we take its value at zero and then also add a fifth remainder term under integral signs.<br>
+<br>
+The expansions for my method for ODEs follow exactly similar steps but does require some hack.<br>
+<br>
+ Intuitive Derivation of Method of iterated Integrals for ODEs.<br>
+Suppose we are given an ODE as<br>
+[$]\, \frac{dx(t)}{dt} \, = \, G(x(t),t) \,[$]  Eq(1),  with initial value [$]x(t_0)\,=x_0[$]<br>
+<br>
+The obvious solution to above problem for a small step is<br>
+<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(s),s) \,ds [$]  Eq(2)<br>
+<br>
+Now we expand the integral on RHS in above equation just like we expanded integrals in Taylor series expansion. We want friends to be careful and expand [$]G(x(t),t)[$] only in first variable x(t) and not in second variable t which will always be directly integrated in our exposition. I want friends to know that it is not a two dimensional Taylor expansion at all. We are only expanding in dependent variable x(t) and directly integrating the explicit terms in t.<br>
+So taking the above equation as<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(s),s) \,ds [$]  Eq(2)<br>
+<br>
+but we can expand the term inside second integral on right as (This is crucial to understand). I have used chain rule in the last term below<br>
+[$]\,G(x(s),s) \, = \, \,G(x(t_0),s) \,+  \int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \, \frac{dx(v)}{dv} \,dv[$] Eq(3)<br>
+but <br>
+[$]\frac{dx(v)}{dv}=G(x(v),v) [$] by definition of ODE at start given in Eq(1), So we have<br>
+[$]\,G(x(s),s) \, = \, \,G(x(t_0),s) \,+  \int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \,G(x(v),v) \,dv[$]  Eq(4)<br>
+<br>
+Inserting above Eq(4) in Eq(2), we get<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \,G(X(v),v) \,dv \,ds [$]  Eq(5)<br>
+<br>
+We notice that term on RHS with single integral is evaluated at starting value [$]x(t_0)[$] which is a constant. This term also has dependence on s which can be easily explicitly integrated.<br>
+However now the term on RHS with double integrals remains difficult to solve unless we repeat the same trick on it and evaluate it at [$]x(t_0)[$] but we would still have to add a three integrals term to it to maintain equality with LHS.  <br>
+We take the term inside double integral and expand it again with a starting value term and a second term using chain rule as<br>
+[$]\,\frac{\partial G(x(v),s)}{\partial x} \,G(x(v),v)= \, \frac{\partial G(x(t_0),s)}{\partial x} \,G(x(t_0),v) + \int_{t_0}^{v} \frac{\partial [\frac{\partial G(x(u),s)}{\partial x} \,G(X(u),v)]}{\partial x}  \frac{dx(u)}{du}[$]<br>
+We change notation here and represent partial derivative of G(X(v),v) with respect to x as G'(x(v),v) <br>
+i.e [$]G'(x(v),v)=\frac{\partial G(x(v),v)}{\partial x}[$] , it should not be confusing since we never take derivative of G(x(t),t) with respect to second parameter time.<br>
+and write the above term as<br>
+[$] G'(x(v),s)\,G(x(v),v)= \, G'(x(t_0),s) \,G(x(t_0),v) + \int_{t_0}^{v} \frac{\partial [G'(x(u),s) \,G(X(u),v)]}{\partial x}  \frac{dx(u)}{du} \, du[$]<br>
+[$]= \, G'(x(t_0),s) \,G(x(t_0),v) + \int_{t_0}^{v} [G''(x(u),s) \,G(X(u),v)+G'(x(u),s) \,G'(X(u),v)] G(x(u),u) \, du[$]  Eq(6)<br>
+<br>
+Now substituting Eq(6) in Eq(5) above, we get<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \, G'(x(t_0),s) \,G(x(t_0),v)  \,dv \,ds [$]<br>
+[$]+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \int_{t_0}^{v} [G''(x(u),s) \,G(X(u),v)+G'(x(u),s) \,G'(X(u),v)] G(x(u),u) \, du \,dv \,ds [$]  Eq(7)<br>
+<br>
+The above expression is exact but third integral term cannot be evaluated easily. To take a third order approximation, we evaluate x in third integral at initial value [$]x(t_0)[$] but we would have to add a fourth order remainder term to make the expression exact. So we can write up to third order as<br>
+<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \, G'(x(t_0),s) \,G(x(t_0),v)  \,dv \,ds [$]<br>
+[$]+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \int_{t_0}^{v} [G''(x(t_0),s) \,G(X(t_0),v)+G'(x(t_0),s) \,G'(X(t_0),v)] G(x(t_0),u) \, du \,dv \,ds [$]<br>
+[$]+ Fourth Order Remainder [$]  Eq(8)<br>
+<br>
+<br>
+So friends can easily see the similarity in derivation of Taylor Series and my method. I am sure Taylor derived Taylor series from similar integrals. My derivation of method of iterated integrals for ODEs is exactly similar to derivation of Taylor series but applied to a more complex problem. <br>
+<br>
+Cuch, if you have any questions, please point the equation number and I would love to explain in more details.<br>
+<br>
+I do believe that method could be applied to PDEs as well and will try to present my thoughts on that in a few days.</div>
+
+			
+									
+									<div id="sig873297" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873299">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873299">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./download/file.php?avatar=26631_1726781574.jpg" width="75" height="75" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Cuchulainn</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=26631&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">23029</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 16th, 2004, 7:38 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873299">
+
+			<h3 ><a href="#p873299">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873299&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873299" title="Post #1616">#1616</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2022, 5:07 pm</span></p>
+			
+			
+			
+			<div class="content">Thanks. I'll have a look!</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873301">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873301">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873301">
+
+			<h3 ><a href="#p873301">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873301&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873301" title="Post #1617">#1617</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 21st, 2022, 1:23 am</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+For Cuch and other friends, here I want to explain the sheer similarities between my Taylor series method for functions and my method for ODEs. <br>
+First, I will make an intuitive derivation of Taylor Series. I will do everything step by step and sometimes even do trivial steps but please bear with me. I want to make things as simple and easy as possible. You just need basic calculus to understand everything.<br>
+<br>
+Intuitive Derivation of Taylor Series.<br>
+Suppose We are given a function f(t) whose all derivatives with respect to t can be found. We know the value of function at a starting point [$]t_0[$] and want to find the value of function at point in neighborhood given by  [$]t_0+\Delta t[$]<br>
+<br>
+We write <br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \int_{t_0}^{t_0+\Delta t} \, \frac{df(s)}{ds} \, ds [$] <br>
+In above, We have taken value of function at starting point [$]t_0[$] and added integral of first derivative so that it becomes equal to function value in LHS.<br>
+Now we take the first derivative in second term on RHS at initial value and add a second derivative terms so that terms on RHS equal the function value on LHS.<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \int_{t_0}^{t_0+\Delta t} \, \frac{df(t_0)}{ds} \, ds \, + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, \frac{d^2f(v)}{dv^2} \, dv \, ds [$]<br>
+In above, we have taken value of function and its first derivative at [$]t_0[$] and used integral of second derivative of function so that all terms on RHS are equal to function value on LHS.<br>
+Please also note that we can take [$] \frac{df(t_0)}{ds}[$] outside of complete integral  [$]\int_{t_0}^{t_0+\Delta t} \, \frac{df(0)}{ds} \, ds \,[$] because it is a constant term evaluated at initial point [$]t_0[$]<br>
+So we write<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(t_0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, \frac{d^2f(v)}{dv^2} \, dv \, ds [$]<br>
+Now we expand the second derivative integral term on RHS into a second derivative term evaluated at initial value [$]t_0[$] plus an integral of third derivative term as<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(t_0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \,  \frac{d^2f(t_0)}{dt^2} \,\int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, dv \, ds + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,  \,\int_{t_0}^{v}  \frac{d^3f(u)}{du^3} \,du \, dv \, ds[$]<br>
+Repeating similarly for one more step, we obtain<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(0)}{dt} \, \int_{t_0}^{t_0+\Delta t} \, ds \, + \,  \frac{d^2f(0)}{dt^2} \,\int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \, dv \, ds[$]<br>
+[$] + \,  \frac{d^3f(t_0)}{dt^3} \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,  \,\int_{t_0}^{v}  \,du \, dv \, ds + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+By solving iterated integrals, we retrieve first three terms of Taylor Series and a remainder term as<br>
+[$]\, f(t_0 + \Delta t) \, = \, f(t_0) \, + \, \frac{df(0)}{dt} \, \Delta t, + \,  \frac{d^2f(0)}{dt^2} \,{\Delta t}^2/2  + \,  \frac{d^3f(t_0)}{dt^3} {\Delta t}^3/6[$]<br>
+[$] + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+<br>
+where remainder term after expansion up to three derivatives is given as<br>
+[$] + \, \int_{t_0}^{t_0+\Delta t} \,\int_{t_0}^{s} \,\int_{t_0}^{v} \,\int_{t_0}^{u}  \frac{d^4f(h)}{dh^4} \, dh\,du \, dv \, ds[$]<br>
+We cannot take integrand in remainder term out of integral signs until we take its value at zero and then also add a fifth remainder term under integral signs.<br>
+<br>
+The expansions for my method for ODEs follow exactly similar steps but does require some hack.<br>
+<br>
+ Intuitive Derivation of Method of iterated Integrals for ODEs.<br>
+Suppose we are given an ODE as<br>
+[$]\, \frac{dx(t)}{dt} \, = \, G(x(t),t) \,[$]  Eq(1),  with initial value [$]x(t_0)\,=x_0[$]<br>
+<br>
+The obvious solution to above problem for a small step is<br>
+<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(s),s) \,ds [$]  Eq(2)<br>
+<br>
+Now we expand the integral on RHS in above equation just like we expanded integrals in Taylor series expansion. We want friends to be careful and expand [$]G(x(t),t)[$] only in first variable x(t) and not in second variable t which will always be directly integrated in our exposition. I want friends to know that it is not a two dimensional Taylor expansion at all. We are only expanding in dependent variable x(t) and directly integrating the explicit terms in t.<br>
+So taking the above equation as<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(s),s) \,ds [$]  Eq(2)<br>
+<br>
+but we can expand the term inside second integral on right as (This is crucial to understand). I have used chain rule in the last term below<br>
+[$]\,G(x(s),s) \, = \, \,G(x(t_0),s) \,+  \int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \, \frac{dx(v)}{dv} \,dv[$] Eq(3)<br>
+but <br>
+[$]\frac{dx(v)}{dv}=G(x(v),v) [$] by definition of ODE at start given in Eq(1), So we have<br>
+[$]\,G(x(s),s) \, = \, \,G(x(t_0),s) \,+  \int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \,G(x(v),v) \,dv[$]  Eq(4)<br>
+<br>
+Inserting above Eq(4) in Eq(2), we get<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \,\frac{\partial G(x(v),s)}{\partial x} \,G(X(v),v) \,dv \,ds [$]  Eq(5)<br>
+<br>
+We notice that term on RHS with single integral is evaluated at starting value [$]x(t_0)[$] which is a constant. This term also has dependence on s which can be easily explicitly integrated.<br>
+However now the term on RHS with double integrals remains difficult to solve unless we repeat the same trick on it and evaluate it at [$]x(t_0)[$] but we would still have to add a three integrals term to it to maintain equality with LHS.  <br>
+We take the term inside double integral and expand it again with a starting value term and a second term using chain rule as<br>
+[$]\,\frac{\partial G(x(v),s)}{\partial x} \,G(x(v),v)= \, \frac{\partial G(x(t_0),s)}{\partial x} \,G(x(t_0),v) + \int_{t_0}^{v} \frac{\partial [\frac{\partial G(x(u),s)}{\partial x} \,G(X(u),v)]}{\partial x}  \frac{dx(u)}{du}[$]<br>
+We change notation here and represent partial derivative of G(X(v),v) with respect to x as G'(x(v),v) <br>
+i.e [$]G'(x(v),v)=\frac{\partial G(x(v),v)}{\partial x}[$] , it should not be confusing since we never take derivative of G(x(t),t) with respect to second parameter time.<br>
+and write the above term as<br>
+[$] G'(x(v),s)\,G(x(v),v)= \, G'(x(t_0),s) \,G(x(t_0),v) + \int_{t_0}^{v} \frac{\partial [G'(x(u),s) \,G(X(u),v)]}{\partial x}  \frac{dx(u)}{du} \, du[$]<br>
+[$]= \, G'(x(t_0),s) \,G(x(t_0),v) + \int_{t_0}^{v} [G''(x(u),s) \,G(X(u),v)+G'(x(u),s) \,G'(X(u),v)] G(x(u),u) \, du[$]  Eq(6)<br>
+<br>
+Now substituting Eq(6) in Eq(5) above, we get<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \, G'(x(t_0),s) \,G(x(t_0),v)  \,dv \,ds [$]<br>
+[$]+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \int_{t_0}^{v} [G''(x(u),s) \,G(X(u),v)+G'(x(u),s) \,G'(X(u),v)] G(x(u),u) \, du \,dv \,ds [$]  Eq(7)<br>
+<br>
+The above expression is exact but third integral term cannot be evaluated easily. To take a third order approximation, we evaluate x in third integral at initial value [$]x(t_0)[$] but we would have to add a fourth order remainder term to make the expression exact. So we can write up to third order as<br>
+<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \, G'(x(t_0),s) \,G(x(t_0),v)  \,dv \,ds [$]<br>
+[$]+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \int_{t_0}^{v} [G''(x(t_0),s) \,G(X(t_0),v)+G'(x(t_0),s) \,G'(X(t_0),v)] G(x(t_0),u) \, du \,dv \,ds [$]<br>
+[$]+ Fourth Order Remainder [$]  Eq(8)<br>
+<br>
+<br>
+So friends can easily see the similarity in derivation of Taylor Series and my method. I am sure Taylor derived Taylor series from similar integrals. My derivation of method of iterated integrals for ODEs is exactly similar to derivation of Taylor series but applied to a more complex problem. <br>
+<br>
+Cuch, if you have any questions, please point the equation number and I would love to explain in more details.<br>
+<br>
+I do believe that method could be applied to PDEs as well and will try to present my thoughts on that in a few days.
+</div></blockquote>
+.<br>
+.<br>
+Sorry friends, In some equations in derivation of method for ODEs, an uppercase X appears as in [$]G'(X(t_0),v)[$] that can be confusing. It is actually [$]G'(x(t_0),v)[$]. Everywhere I have used uppercase X in above post, it is actually lowercase x. I should not have used uppercase X anywhere. I made a mistake somewhere which inadvertently propagated due to copy and paste.<br>
+<br>
+The final lines should be<br>
+[$]x(t_0+\Delta t) = \, x(t_0)\, + \, \int_{t_0}^{t_0+ \Delta t} \, G(x(t_0),s) \,ds+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \, G'(x(t_0),s) \,G(x(t_0),v)  \,dv \,ds [$]<br>
+[$]+ \, \int_{t_0}^{t_0+ \Delta t} \,\int_{t_0}^{s} \ \int_{t_0}^{v} [G''(x(t_0),s) \,G(x(t_0),v)+G'(x(t_0),s) \,G'(x(t_0),v)] G(x(t_0),u) \, du \,dv \,ds [$]<br>
+[$]+ Fourth Order Remainder [$]  Eq(8)</div>
+
+			
+									
+									<div id="sig873301" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873308">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873308">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873308">
+
+			<h3 ><a href="#p873308">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873308&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873308" title="Post #1618">#1618</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 21st, 2022, 3:00 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am seriously aghast. How can LinkedIn do this? They have restored my account and my posts, but they have given me no reason whatsoever for blocking my account for three days. How can they possibly do this so cold-bloodedly?<br>
+Here is their new email.<br>
+<br>
+LinkedIn Account Recovery Appeal [Case: 221118-017263] <br>
+From: LinkedIn Customer Support (<a href="/cdn-cgi/l/email-protection#3a565354515f5e535465494f4a4a55484e7a594914565354515f5e535414595557"><span class="__cf_email__" data-cfemail="b3dfdaddd8d6d7daddecc0c6c3c3dcc1c7f3d0c09ddfdaddd8d6d7dadd9dd0dcde">[email&#160;protected]</span></a>) <br>
+To: <a href="/cdn-cgi/l/email-protection#a8c9c6c9c69a919191e8d1c9c0c7c786cbc7c5"><span class="__cf_email__" data-cfemail="b0d1ded1de82898989f0c9d1d8dfdf9ed3dfdd">[email&#160;protected]</span></a> <br>
+Date: Monday, 21 November 2022 at 19:45 GMT+5 <br>
+Status: Closed<br>
+Reference # 221118-017263 <br>
+View your case(s) on our Help Center You may reply to this case for up to 14 days Response (11/21/2022 08:45 CST) <br>
+Hi Ahsan, <br>
+Thanks for your patience. We've verified your information and the restriction has been removed from your account. If you still can't sign in, please let me know and I'll help you get access to your account right away. <br>
+Regards, <br>
+Dean LinkedIn Member Safety and Recovery Consultant <br>
+Member (11/19/2022 00:58 CST) <br>
+<br>
+Hi, <br>
+This morning I noticed that my linkedin account has been suspended, my public profile has been deleted and my article posts have been removed from linkedin. I never believe how linkedin can block my account without contacting me. If I have done anything wrong in somebody's opinion, you have to give me an opportunity to present my point of view before arbitrarily blocking my account and deleting my public profile. Just yesterday, I contacted 6-7 of my Chinese connections for a partnership with my firm. This is a very significant step in my life and career. Since LinkedIn arbitrarily suspended my account, and blocked my profile, all of my Chinese friends would be thinking that I am a fake and therefore LinkedIn has blocked my account. I want Linkedin to restore my account as early as possible and also want an apology from LinkedIn. <br>
+Kind regards, <br>
+Ahsan Amin <br>
+Auto-Response (11/18/2022 19:21 CST)</div>
+
+			
+									
+									<div id="sig873308" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873312">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873312">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873312">
+
+			<h3 ><a href="#p873312">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873312&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873312" title="Post #1619">#1619</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 22nd, 2022, 3:23 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I had an antipsychotic injection this Friday and it is already showing effect and I was unable to do anything today. <br>
+Mind control agents release gas again and again both in my room and in attached wash room. I am already tired but gas saps all energy out of me. And they are releasing gas again and again despite my protests. I was not going to write anything like that but repeated use of gas when I am trying to sleep has forced me to write about it.<br>
+Mind control agencies continue to drug bottled water at a lot of stores in Johar Town and many surrounding neighborhoods. I also bought drugged bottled water this noon despite that I was very careful. <br>
+Every morning, I have to be very very careful about food since pak army secret service agents continue to approach small food shops to drug the food. I have not been hit in past few days but only because I was extra careful about choosing where to eat. Despite my being very careful, it becomes obvious that mind control agents are looking for opportunity to drug my food since many small food-shops try to delay giving me food (so that pak army agents could come in the meantime and give them drugs that would be added to food) and I have to be too straightforward that I would leave if food would not be given to me immediately. They have already distributed mind control drugs at a large number of food shops, and I would have already been hit by bad food unless I were not very careful.</div>
+
+			
+									
+									<div id="sig873312" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p873335">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile873335">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="avatar"><img class="avatar" src="./download/file.php?avatar=26631_1726781574.jpg" width="75" height="75" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=26631&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="username">Cuchulainn</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=26631&amp;sr=posts&amp;sid=e6d16b44d416c53a4c628291ea07bda0">23029</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 16th, 2004, 7:38 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content873335">
+
+			<h3 ><a href="#p873335">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=873335&amp;sid=e6d16b44d416c53a4c628291ea07bda0" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p873335" title="Post #1620">#1620</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 24th, 2022, 8:34 pm</span></p>
+			
+			
+			
+			<div class="content">I have read the equations which are formal mathematics at the moment. My initial approach is to take 2 concrete examples:<br>
+<br>
+[$]dx/dt = x/t[$] general solution [$]x = Ct[$], [$]C[$] is a constant (A)<br>
+<br>
+[$]dx/dt = x^2, x(0) = 1[$] general solution [$]x = 1/(1-t)[$] (B)<br>
+<br>
+<br>
+Attention Points <br>
+<br>
+1. Your ODE Eq. (1) does it have a solution and in which interval, e.g. the above A and B.<br>
+2. Your Eq. (4) scheme applied to A and B.... what do the schemes look like?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;e6d16b44d416c53a4c628291ea07bda0" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1575" role="button">106</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" role="button">107</a></li>
+							<li class="active"><span>108</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" role="button">109</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1635" role="button">110</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=1605&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;e6d16b44d416c53a4c628291ea07bda0" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1575" role="button">106</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1590" role="button">107</a></li>
+							<li class="active"><span>108</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" role="button">109</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1635" role="button">110</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=e6d16b44d416c53a4c628291ea07bda0&amp;start=1620" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=1605&amp;sid=e6d16b44d416c53a4c628291ea07bda0">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=e6d16b44d416c53a4c628291ea07bda0" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=e6d16b44d416c53a4c628291ea07bda0"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=e6d16b44d416c53a4c628291ea07bda0"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=e6d16b44d416c53a4c628291ea07bda0" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#d5b4b1b8bcbb95a2bcb9b8baa1a1fbb6bab8">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>108</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=e6d16b44d416c53a4c628291ea07bda0";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=e6d16b44d416c53a4c628291ea07bda0";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e29ebdde5d5df","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,2773 @@
+<!DOCTYPE html>
+<!--
+                  inf    1
+                  ====  /   n    n
+                  \     [  x  log (x)
+                   >    I  ---------- dx
+                  /     ]  gamma(n x)
+                  ====  /
+                  n = 0  0
+-->
+<!-- Here be dragons -->
+        
+        
+  
+
+
+
+
+<html class="slickthemes no-js pinchZoom" dir="ltr" lang="en-gb">
+<head>
+    <script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CU911718" async="async"></script>
+
+
+<!--  <script data-ad-client="ca-pub-8041047752354163" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
+  
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00597b">
+<meta name="theme-color" content="#00597b">
+
+  <title>Breakthrough in the theory of stochastic differential equations and their simulation - Page 169 - wilmott.com</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['[$]','[$]'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+// <![CDATA[
+MathJax.Hub.PreProcess.disabled = true;
+MathJax.Hub.Config({messageStyle:"none"});
+ready(function() {phpbb2jax()});
+// ]]>
+</script>
+<script type="text/javascript" src="./ext/marcovo/mathjax/assets/javascript/phpbb2jax-combined-min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <link rel="alternate" type="application/atom+xml" title="Feed - wilmott.com" href="/feed?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" />            <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed?sid=2e5acf6e8fe7ca9e13877f682ca55f9c?mode=topics" />        <link rel="alternate" type="application/atom+xml" title="Feed - Forum - Technical Forum" href="/feed?sid=2e5acf6e8fe7ca9e13877f682ca55f9c?f=4" />    <link rel="alternate" type="application/atom+xml" title="Feed - Topic - Breakthrough in the theory of stochastic differential equations and their simulation" href="/feed?sid=2e5acf6e8fe7ca9e13877f682ca55f9c?f=4&amp;t=99702" />  
+      <link rel="canonical" href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2520" />
+  
+    <style type="text/css">
+    html.slickthemes {
+      overflow-y: scroll;
+      background-attachment: fixed;
+    }
+    html.slickthemes, #st-bgimg {
+      background-color: rgb(202, 202, 202);
+
+      
+              background-position: 0 0;
+      
+              background-size: cover;
+          }
+      </style>
+  
+      <link href="./styles/wilmott2/theme/css/main.min.css?assets_version=650" rel="stylesheet" type="text/css" media="screen" />
+  <link href="./styles/wilmott2/theme/print.css?assets_version=650" rel="stylesheet" type="text/css" media="print" title="printonly" />
+
+  
+  
+  <link href="./ext/sitmo/bibtex/styles/all/theme/bibtex.css?assets_version=650" rel="stylesheet" media="screen">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/ads/styles/all/theme/phpbbads.css?assets_version=650" rel="stylesheet" media="screen">
+
+
+    <style type="text/css" id="st_userconfig_CSS">
+  /* slickpanel overrides. please do not eat */
+  
+  /* Typography */
+    
+    
+    
+  .postbody .content {
+		  }
+  
+  /* text logo */
+  .logo h1 {
+		color: rgb(255, 255, 255);
+		  }
+  
+  /* image logo */
+  .logo h1 img {
+	max-width: 290px;
+  }
+  
+  /* colors */
+    .itemlist__item--colbar,.cp-main h3, #tabs, .st-section__header,.btn-primary, .thead, .category-header, .section-header {
+	background-color: rgb(65, 69, 75)
+  }
+  .forum-icon {
+	color: rgb(65, 69, 75)
+  } 
+   {
+	border-color: rgb(65, 69, 75)
+  }
+  
+  /* header */
+  .main-header {
+	background-color: rgb(255, 255, 255);
+	
+		background-image: none;
+		
+		
+	background-position: left no-repeat;
+	
+	  }
+  
+  /* Search */
+  .quicksearch fieldset {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+  }
+  .quicksearch__placeholder {
+	color: rgba(0, 0, 0, 0.5);
+  }
+  .quicksearch .quicksearch--focus {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  /* footer */
+  #page-footer {
+	background-color: rgb(68, 79, 98);
+	
+		
+	background-position: ;
+	
+	  }
+
+  /* Post Author Label */
+  .topic-author-label .label {
+  	background-color: rgb(0, 0, 0);
+  }
+  
+</style>
+  
+  <!-- Wilmott customisation -->
+  <link href="./styles/wilmott2/theme/css/wilmott.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+
+  
+
+  
+  <style type="text/css">
+  /* Put your custom CSS here */
+#menu-top-menu li:hover { background-color: #000; }
+  </style>
+
+  <style id="elementState_restore" type="text/css"></style>
+  <script type="text/javascript">
+    window._st = window._st || {};
+    _st.onloadfunctions = _st.onloadfunctions || [];
+    _st.utils = {};
+  </script>
+
+</head>
+<body id="phpbb" class="section-viewtopic ltr  postAuthorAlign-left layout-stretched h-nb grayscaleForumIcons">
+
+
+  <link href="./styles/wilmott2/theme/css/mdi.css?assets_version=650" rel="stylesheet" type="text/css">
+
+<div id="st-bgimg"></div>
+<!-- skip to content -->
+<a href="#start__content" class="skiplink" style="display: none">Skip to content</a>
+
+
+<div class="offcanvas-wrapper">
+<div class="offcanvas-content">
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-backlink">
+    <i class="fi fi-arrow-left"></i>
+  </a>
+      <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="2e5acf6e8fe7ca9e13877f682ca55f9c" />
+
+	  </fieldset>
+	</form>
+  </div>
+  <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+  </div>
+
+<div class="oncanvas-content">
+<div id="wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+
+  
+  <header class="main-header">
+    <div class="container">
+
+        <!-- Branding: LOGO -->
+        <div class="branding">
+            <a class="logo" href="./index.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Forum Index">
+                        <h1><img src="./styles/wilmott2/theme/images/wilmottlogo.gif" alt="wilmott.com" /></h1>
+                        </a>
+            <div class='mh-header-widget-2'>
+            
+            	<div style="margin: 0px 0;padding:0;float:right" data-phpbb-ads-id="46">
+		<iframe src="https://wilmott.com/wp-admin/admin-ajax.php?action=aa-server-select&p=forum" scrolling="no" width="468" height="60" style="overflow: hidden;border:none;"></iframe>
+	</div>
+            </div>
+            <p class="site-description">Serving the Quantitative Finance Community</p>
+        </div>
+
+
+        <!-- QuickSearch -->
+          <div id="search-box" class="quicksearch">
+	<form action="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" method="get" id="search">
+	  <fieldset>
+		<div class="quicksearch__placeholder">Search…</div>
+		<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="form-control" size="20" value="" />
+		<button class="btn btn-default quicksearch-go hidden" type="submit" title="Search">Search</button>
+		<a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="btn btn-link quicksearch-advanced hidden" title="Advanced search"><i class="glyphicon glyphicon-cog"></i></a>
+		<input type="hidden" name="sid" value="2e5acf6e8fe7ca9e13877f682ca55f9c" />
+
+	  </fieldset>
+	</form>
+  </div>
+
+    </div>
+
+        <div class="mh-main-nav-wrap">
+	<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+		<div class="menu-top-menu-container">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-56"><a href="https://www.wilmott.com/">Home</a></li>
+				<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.wilmott.com/category/magazine">Magazine</a></li>
+				<li id="menu-item-24916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24916"><a href="https://www.wilmott.com/category/news">News</a></li>
+				<li id="menu-item-3671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3671"><a href="https://www.wilmott.com/category/wilmott-inner-circle">Inner Circle</a></li>
+				<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.wilmott.com/category/articles">Free Articles</a></li>
+				<li id="menu-item-31748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31748"><a href="https://www.wilmott.com/category/cqfi">CQF/i</a></li>
+				<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="https://www.wilmott.com/category/blogs">Blogs</a></li>			
+				<li id="menu-item-26782" class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-26782"><a href="https://forum.wilmott.com/">Forums</a></li>
+				<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.wilmott.com/jobs">Jobs Board</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<ul id="menu" style='display:none;'>
+	<li class="scroll"><a href="https://www.wilmott.com/" role="menuitem">Home</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/magazine" role="menuitem">Magazine</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/news" role="menuitem">News</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/wilmott-inner-circle" role="menuitem">Inner Circle</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/articles" role="menuitem">Free Articles</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/cqfi" role="menuitem">CQF/i</a></li>
+	<li class="scroll"><a href="https://www.wilmott.com/category/blogs" role="menuitem">Blogs</a></li>
+	<li class="scroll"><a href="https://forum.wilmott.com/" role="menuitem">Forums</a></li>
+	<li class="scroll"><a href="http://www.wilmott.com/jobs" role="menuitem">Jobs Board</a></li>
+</ul>
+
+  </header>
+
+
+
+  
+
+  <div id="page-body">
+
+        <div class="breadcrumbs-bar breadcrumbs-bar--top ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+
+
+    <div class="utility-bar clearfix" role="menubar">
+    <div class="container">
+      <a href="javascript:void(0)" class="offcanvas-toggle offcanvas-navigation-toggle">
+    <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+</a>
+
+
+
+<ul class="navigation top-nav list-unstyled">
+
+    <li class="nav-item quick-links dd-container">
+		<a href="javascript:void(0)" id="quickLinksdrop" title="Quick links" class="quick-links-dropdown-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-menu-bars"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></span>
+			<span class="quick-links-label">Quick links</span>
+        </a>
+        <ul class="quick-links-dropdown dropdown-menu" role="menu" aria-labelledby="quickLinksdrop">
+            
+                            
+                
+                				<li role="presentation"><a href="./search.php?search_id=unanswered&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Unanswered topics</a></li>
+				<li role="presentation"><a href="./search.php?search_id=active_topics&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Active topics</a></li>
+                <li role="presentation" class="divider"></li>
+				<li role="presentation"><a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1">Search</a></li>
+			
+            <!--<li role="presentation"><a href="/help/faq?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" rel="help" title="Frequently Asked Questions" role="menuitem" tabindex="-1">FAQ</a></li>-->
+
+            
+                    </ul>
+	</li>
+
+        	</ul>
+
+      <div class="user-area">
+    <ul class="guest-view list-unstyled has-register">
+	
+	
+		<li class="guest-register"><a class="btn btn-link" href="./ucp.php?mode=register&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem">Register</a></li>	
+		<li class="guest-login quicklogin dd-container">
+	  <a class="btn btn-link" href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fstart%3D2520%26t%3D99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" data-toggle="dropdown" title="Login" accesskey="x" role="menuitem">Login</a>
+	  <div class="quicklogin-dropdown dropdown-menu" role="menu">
+		<form method="post" action="./ucp.php?mode=login&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="quicklogin-form">
+
+    
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-account"></i></span>
+	<input type="text" name="username" id="QL_username" class="quicklogin__username-input form-control" />
+  </div>
+	
+  <div class="input-group">
+	<span class="input-group-addon"><i class="fi fi-key"></i></span>
+	<input type="password" name="password" id="QL_password" class="quicklogin__password-input form-control" />
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" name="autologin"> Remember me
+    </label>
+  </div>
+    
+  <input type="submit" name="login" value="Login" class="quicklogin__login-btn btn btn-success" />
+  
+    
+  <input type="hidden" name="redirect" value="./viewtopic.php?start=2520&amp;t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" />
+<input type="hidden" name="creation_time" value="1768907923" />
+<input type="hidden" name="form_token" value="219564f9ca307eeb1c36d7b289452f51c663d817" />
+
+  
+</form>	  </div>
+	</li>
+		
+	  </ul>
+  </div>    </div>
+  </div>
+  
+
+    <div class="container">
+
+              
+    
+    <a id="start__content" class="anchor"></a>
+    
+    <!-- Global Alerts -->
+    <!-- REMOVE THIS LINE TO ENABLE
+
+<div class="alert alert-info alert-dismissible fade in" role="alert" id="globalAlertExample1">
+  <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+
+  This alert shows on all pages. Feel free to edit this text
+
+</div>
+
+REMOVE THIS LINE TO ENABLE -->
+
+<div class="big-grid">
+<div class="col-maincontent">
+<div class="page-header">
+	<div class="page-header-inner">
+	
+		<ul class="jump-nav list-unstyled">
+			<li class="quick-nav-link dd-container jumpbox">
+				<a href="javascript:void(0)" data-toggle="dropdown" title="Jump to">
+					<i class="fa fa-2x fa-toggle-down"></i>
+				</a>
+
+				<ul class="dropdown-menu jumpbox-dropdown" role="menu">
+																													<li ><a href="./viewforum.php?f=56&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Principal Discussion Forums</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=3&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>General Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=4&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Technical Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=38&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Trading Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=34&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Numerical Methods Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=10&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Programming and Software Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=41&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Economics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=73&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Politics Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=11&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Book And Research Paper Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=8&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Student Forum</span></a></li>
+																								<li ><a href="./viewforum.php?f=49&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Careers, Jobs And Events</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=16&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Careers Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=53&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Jobs Board</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=20&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Events Board</span></a></li>
+																								<li ><a href="./viewforum.php?f=50&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Community Projects</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=19&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>The Quantitative Finance FAQs Project</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=44&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>The Quantitative Finance Code Library Project</span></a></li>
+																								<li ><a href="./viewforum.php?f=51&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Off Topic And Miscellaneous</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=15&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Off Topic</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=26&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Brainteaser Forum</span></a></li>
+																								<li class="jumpbox-subforum"><a href="./viewforum.php?f=24&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="menuitem" tabindex="-1"><span>Forum and Website Bugs and Suggestions</span></a></li>
+															</ul>
+			</li>
+		</ul>
+			
+		<h2 class="page-title">
+		<a href="./viewtopic.php?t=99702&amp;start=2520&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">Breakthrough in the theory of stochastic differential equations and their simulation</a>		</h2>
+	</div>
+	<!--<div class="action-bar">-->
+	
+	<!--</div>-->
+</div>
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+							
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2520&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+			</div>
+
+	
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c">
+			<div class="input-group">
+				<input class="search form-control" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="submit" title="Search"><i class="fi fi-arrow-right"></i></button>
+				<a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="btn btn-default" title="Advanced search"><i class="fi fi-settings"></i></a>
+				</span>
+			</div>
+			<input type="hidden" name="t" value="99702" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="2e5acf6e8fe7ca9e13877f682ca55f9c" />
+
+			</form>
+		</div>
+	
+			<div class="right-side">
+						<!--2913 posts-->
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2e5acf6e8fe7ca9e13877f682ca55f9c" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2490" role="button">167</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" role="button">168</a></li>
+							<li class="active"><span>169</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" role="button">170</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2550" role="button">171</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+		</div>
+
+<div class="postlist">
+		<div class="post has-profile">
+		<a class="st-anchor" id="p884831">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884831">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884831">
+
+			<h3 class="first"><a href="#p884831">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884831&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884831" title="Post #2521">#2521</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 12th, 2024, 6:39 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I have completed work on a slightly different version of the proposed way to add two Z-series random variables. Unfortunately, the variance based method was close to true density but it was not precise. But I learnt many new things working on the method and I am very happy that I tried. I really think that my matlab program would be very useful for some friends who have similar but more robust ideas to add two random variables not because of the logic of the method I used but because of so many small matlab functions that I used to solve the problem that could be of great help with other different ideas.  I will post the program with comments hopefully tomorrow. <br>
+<br>
+About finding dependence structure of noises of random variables, the right approach is to follow this post # 2448: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2445#p883896" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=2445#p883896</a><br>
+I will try to program it some time in next few days or weeks.<br>
+<br>
+I am restarting work with Math AI research and now I plan to write a new program that solves for joint SDEs correlated system of stochastic volatility SDE and asset SDE given the parameters of two correlated SDEs. We will be finding the hermite series representation of both asset and SV random variables given the parameters of the correlated SDEs. I hope to be posting new programs in a few days.<br>
+<br>
+I also want to work further towards secondary hermite/Legendre polynomial regression in original variables. Obviously the solution to regression problems would have to be found using common standard normal/uniform density but later we can possibly represent the solution back in terms of original variables instead of standard normal or uniform densities.</div>
+
+			
+									
+									<div id="sig884831" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+				
+		<div class="post has-profile">
+		<a class="st-anchor" id="p884873">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884873">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884873">
+
+			<h3 ><a href="#p884873">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884873&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884873" title="Post #2522">#2522</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 14th, 2024, 10:55 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, sorry for delay in my post on the forum. Unfortunately, everyday, I have to deal with many unwanted things other than my work and research and on some days they can take too much of my time to not let me work properly. People behind my persecution are totally unrelenting and they continue to create some problems all the time.<br>
+<br>
+Coming back to our theme of Math AI, I have been thinking about ways to systematically improve the simple method of hermite/Legendre regression on parameters that I earlier presented. We all know that we can find intelligent mathematical variables related to variable being predicted and use them in hermite/legendre regression with big improvement. But I think we have to be able to systematically, even though possibly with trial and error, find functions of parameters that would greatly improve the results of our hermite/legendre regression. Basically we can try a few types of functions that cannot be easily captured by polynomials like logarithmic function, and many other special functions like Hermite functions (not polynomials directly), Legendre functions, Bessel functions, and other specialized functions of parameters and combinations of parameters. We will have to systematically do trial and error at first to find out if any of these or other special functions  of parameters have a very good R-squared and include them in the regression. Even though this trial and error may take some time but this would be many orders of magnitude cheaper than neural networks that have to be optimized for hours or days while we can find our R-squared for any function of interest with a single least squares regression taking less than a second. But writing an organized program and iterating over special functions would still require some effort. Once some functions of parameters have been identified with high R-squared, we can use  them with parameters or without parameters as dictated by the problem and use them in hermite/legendre regressions after mapping all special functions and chosen parameters on normal or uniform density (as I had done in my earlier SDE program with more intelligent math functions of parameters). <br>
+<br>
+So, among other ways, we can improve on simple Math AI systematically by finding other functions that are not in direct span of the low order polynomials but have high R-squared when used to predict the target variable and we can use them in hermite/legendre polynomial regression after mapping them on normal/uniform density along with other parameters to improve the results of regression. <br>
+<br>
+I still have to write comments on my program I wrote for addition of Z-series random variables by matching variances of hermite polynomials that I mentioned in a past post and I would soon be doing that and then put the matlab program on forum.<br>
+<br>
+I am also thinking of capturing time in the same single hermite polynomial regression for the SDEs and have done most work for that. I have decided to complete that and after posting the program on forum, I want to take two or three days to write a small paper about Math AI and post it on SSRN and Arxiv.  Even though most friends know about my Math AI research, it would be nice to put it in the form of a small formal paper.</div>
+
+			
+									
+									<div id="sig884873" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884874">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884874">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884874">
+
+			<h3 ><a href="#p884874">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884874&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884874" title="Post #2523">#2523</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 14th, 2024, 11:54 pm</span></p>
+			
+			
+			
+			<div class="content">I have decided to write this post to tell friends that my persecution is not decreasing at all. There are constant and fierce attempts by authorities to drug my food and deter my work and research. If anything, this activity has strongly intensified over past few days. And I am worried that they want to hold me back as much as possible for sometime and then detain me with a psychiatrist who would again diagnose me of strong schizophrenia. The people behind my persecution are thoroughly resolved to continue it and stop me at all cost and they are absolutely not ready to give in. And they are waiting for the right time to forcefully detain me and take all good neurotransmitters out of my brain especially since I have not been detained since early 2001. They used to detain me every year or sometimes twice a year to take all good neurotransmitters out of my brain every time those neurotransmitters would come back. <br>
+<br>
+I am thankful to so many good American people who strongly protested to their government and forced American defense to not detain me again. If it were not for efforts of so many good American people, it would never have been possible for me to do any meaningful research that I did over last three years. I want to ask friends that I will again need their support even more once again now and next few months an be very crucial. I am perfectly sure if American friends did not help me again,  I will surely be detained again for 30-50 days to take all good and working neurotransmitters out of me again. I want to request all readers of my forum to please force American defense and government to end my mind control forever before it is too late and if you know anyone in authority well in US, please ask for my freedom.</div>
+
+			
+									
+									<div id="sig884874" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884897">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884897">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884897">
+
+			<h3 ><a href="#p884897">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884897&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884897" title="Post #2524">#2524</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 15th, 2024, 6:53 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, I am not in good shape at the moment. Something is very wrong and it seems that they recently introduced some new frequencies and related NEW weapons where I live. I continued to try to work all day but still could not work as I was repeatedly getting very disoriented. And in past two days, I have eaten like anything, really way too much but still I am feeling very exhausted and having muscles pain. Right now I was trying to work but kept on drowsing for past two hours, I just could not help it. It is hardly twelve while I am used to working till 3:00 or 4:00 in the morning on many days. And when I gained some consciousness in gaps between deep drowsiness, I l vividly felt that my body was literally having vibrations. I have been on mind control for more than 25 years but vibrations like this were never noticed by me ever before. And I am feeling huge muscles pain all over the body at the moment. <br>
+<br>
+Please help me. As they are using new EM weapons and technologies they never used on me before. </div>
+
+			
+									
+									<div id="sig884897" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884917">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884917">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884917">
+
+			<h3 ><a href="#p884917">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884917&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884917" title="Post #2525">#2525</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 17th, 2024, 8:20 am</span></p>
+			
+			
+			
+			<div class="content">/*Edited Again on Sunday noon.*/<br>
+<br>
+Friends, last night after writing my post, I took a lot of protective measures and tried to be serious about breaking their control. And then I went to sleep without doing any further work. Today, I was a bit better in the morning but when I went out to buy food, it was a challenge and I could see at several places that mind control agents reached when I was trying to buy something.<br>
+<br>
+What I am writing is my honest opinion even though a lot of friends might differ with it to some degree. I think it is very important that all of us try to have rule of law, and good governance for the benefit of our country and society. We promote freedom of speech and freedom of press in our societies so that people can criticize bad or wrong actions of other people and make each other aware of their observations of wrongdoings by some people especially the ones in the authority in the society while, obviously, every body has to try to investigate the truth on their own without blindly believing anyone. The purpose of such criticism and related discussions is to try to root out bad practices from the society and promote good ethics and practices.<br>
+<br>
+Another thing I want to suggest is that true patriotism is not about hiding bad practices taking place in our country from others, instead it is about exposing such bad practices by unethical people in the public with the final goal that these bad practices are rooted out from our societies.<br>
+<br>
+Now I will come to the point that I have been suggesting for years that there is a jewish billionaire and his rich cohort who are behind indiscriminate mind control of a large number of intelligent American people and others . And a large number of people in American defense have become a mercenerary army that play in the hands of these rich jews. These rich jews hire quite a few of senior officers from Pentagon and army after their retirement in their large enterprises and these people are paid millions of dollars each and they enjoy very high social status. One of the most important purpose of these retired officers is to convince their juniors who are still in official service and have reached positions of authority to do illegal, extrajudicial and extraconstitutional mind control control of Americans and others suggested by the rich jewish cohort. This thing is so well known in some jewish circles that many jews continuously report thousands of people among intelligent students and many others who fall out with these jews for any reason to mind control by American defense. You do not always have to be extra intelligent, sometimes falling out with a jew who knows how to approach the rich jewish cohort will seal the fate of the victim by mind control forever. As always, I would like to mention that there are large number of jews who are opposed to this practice and have absolutely nothing to do with mind control of innocent people. Please let me specifically say again that there are many very rich jews and billionaires who have nothing to do with mind control. But I definitely own that I am suggesting this rich jewish billionaire and his cohort of rich jews are behind most of the mind control and this is a common knowledge in many jewish circles and many people among these circles know who to approach for mind control of anyone they do not like.<br>
+<br>
+But what is even more alarming is that all the bad actors behind mind control including rich jewish cohort and mercenary criminals in American defense, when exposed in public, have absolutely no remorse about their crimes and they become even more adamant to use all machinatory tactics so that they+ can continue illegal and extrajudicial mind control of innocent and intelligent people. They have lost all sense of good and evil and have no qualms about continuing the evil practices at all. It seems many of these bad actors have no conception that retarding innocent human beings is a wrong thing and an evil practice and they think that mind control of innocent people in the society they do not like is indeed a good thing.<br>
+<br>
+I know that many good Americans want to end the bad practice of mind control of innocent people from their society without any retribution against the bad actors behind such evil practices. The bad actors, on the other hand, have absolutely no remorse about their evil actions and are ready to go to any limit to thwart the attempts of good people to end mind control and they always try to undermine all good people and their actions towards amicably ending the evil of mind control from American society. These bad actors are not willing to gracefully acknowledge and be thankful that good American people do not want to hurt them beyond ending the inhuman practice of mind control from American society and instead these bad actors are adamantly using all sort of machinatory and bellicose tactics so they can continue and increase the evil of inhuman mind control of intelligent and innocent human beings.<br>
+<br>
+I really want to suggest if all amicable attempts by good Americans to end mind control fail, it does not mean that they have to yield to inhuman practices in our society by continuing to play nice. As there is very huge evidence about existence of extra-judicial, extra-constitutional and cruel mind control and resulting retarding of very large number of innocent people by American defense and a large number of stories are circulating in academia about people who were targeted by American defense on behest of jewish cohort, I really believe that it is a great opportunity for some good journalists in American and international media to write in detail about the hugely widespread evil of extrajudicial, extraconstitutional, inhuman and cruel practice of mind control and also about nexus between some bad jews and corrupt people in American defense that has been the dominating force behind this inhuman evil in our societies. I want to request good American people that if all else fails, please motivate some brave and patriotic journalists to write in complete detail about the evil of mind control. If it is not possible to write about this inhuman practice in American newspapers due to possible reprisal from american defense, please break the news in some large British or European newspaper. I am sure there is enough evidence about existence of mind control and related inhuman and cruel practices that any serious journalist can firmly stand behind a well written article that completely exposes mind control and associated cruelties and retarding of thousands of innocent persons by corrupt people in American defense. As I earlier suggested Patriotism does not consist in saving any false pride or hiding evil practices of our countrymen, it consists in rationally doing what is broader good for people in our societies by trying to put an end to evil practices.<br>
+<br>
+I will also request readers, for good of our societies, to let at least one journalist you know in the following American, European and Pakistani newspapers about true nature of mind control and about my thread. <br>
+<br>
+New York Times.<br>
+Washington  Post.<br>
+CNN.<br>
+Fox News.<br>
+USA Today.<br>
+Los Angeles Times.<br>
+Chicago Tribune.<br>
+Boston Globe.<br>
+Minnesota Star Tribune<br>
+New York Post<br>
+Newsday<br>
+San Fransisco Chronicle<br>
+The Dallas Morning News<br>
+Tampa Bay Times<br>
+Hartford Courant<br>
+Publick Occurrences Both Forreign and Domestick<br>
+The Michigan Daily<br>
+The Denver Post<br>
+Pittsburgh Post-Gazette<br>
+The Seattle Times<br>
+Las Vegas Sun<br>
+Bourbon County Citizen<br>
+The Register Star<br>
+NewYork Metro<br>
+The Queens Ledger<br>
+Philadelphia Tribune<br>
+Baltimore Afro-American<br>
+Portland Tribune<br>
+Indianapolis Recorder<br>
+The Patriot-News<br>
+El Diario NY<br>
+The Modesto Bee<br>
+Fairfax County Times<br>
+The Epoch Times<br>
+Barron's<br>
+Queens Chronicle<br>
+Phoenix New Times<br>
+El Informador<br>
+The Philadelphia Inquirer<br>
+New York Daily News<br>
+The Star-Ledger<br>
+St. Louis Post-Dispatch<br>
+The Mercury News<br>
+The Arizona Republic<br>
+The Plain Dealer<br>
+Detroit Free Press<br>
+The Press-Enterprise<br>
+The Tennessean<br>
+Sun Sentinel<br>
+<br>
+<br>
+The Copenhagen Post<br>
+The Slovak Spectator<br>
+The Budapest Times<br>
+Tirana Times<br>
+Menorca Sun<br>
+The Vienna Review<br>
+Le News<br>
+The Irish Times<br>
+Die Welt<br>
+Het Nieuwsblad<br>
+Le Soir<br>
+Albania Today<br>
+Algemeen Dagblad<br>
+De Telegraaf<br>
+de Volkskrant<br>
+The European<br>
+Het Laatste Nieuws<br>
+The Daily Telegraph<br>
+Daily Mirror<br>
+The Sun<br>
+Pravda<br>
+The Moscow Times<br>
+The Guardian<br>
+Le Figaro<br>
+Le Monde<br>
+ABC<br>
+la Repubblica<br>
+Il Messaggero<br>
+El Periódico de Catalunya<br>
+El Mundo<br>
+Libération<br>
+El País<br>
+Kronen Zeitung<br>
+La Stampa<br>
+Frankfurter Allgemeine Zeitung<br>
+Bild<br>
+20 minutes<br>
+Sport<br>
+Aftenposten<br>
+Marca<br>
+Gazeta Wyborcza<br>
+Izvestia<br>
+Die Presse<br>
+Süddeutsche Zeitung<br>
+La Tribune<br>
+Novaya Gazeta<br>
+Neue Zürcher Zeitung<br>
+Dagens Nyheter<br>
+Expressen<br>
+La Gazzetta dello Sport<br>
+Mladá fronta Dnes<br>
+<br>
+Urdu News<br>
+Daily Pakistan<br>
+Dawn<br>
+Daily Express<br>
+Daily Jang<br>
+The Express Tribune<br>
+The News International<br>
+The Nation<br>
+Pakistan Today<br>
+Daily Dunya<br>
+Daily Ummat<br>
+Nawaiwaqt<br>
+The Regional Times of Sindh<br>
+Pakistan Observer<br>
+Khabrain<br>
+Daily Ausaf<br>
+Daily Jasarat<br>
+Daily Nai Baat<br>
+Daily Basharat<br>
+Daily Times<br>
+The Frontier Post<br>
+Daily Sarhad<br>
+Daily Imroze<br>
+The Pakistan Times<br>
+The Financial Daily<br>
+Daily Aaj<br>
+Daily Mashriq<br>
+Millat<br>
+Business Recorder<br>
+Daily Inqilab<br>
+Kawish<br>
+Daily Lokaai<br>
+Talár<br>
+Maidan Daily<br>
+Daily Asas<br>
+Christian Voice<br>
+The Friday Times<br>
+Awam<br>
+Daily Awami Awaz<br>
+The Star<br>
+Al Akhbar<br>
+Khyber Mail<br>
+Nawai Watan<br>
+Sajjan<br>
+Daily Hilal Pakistan<br>
+Daily Sindhu<br>
+Daily Koshish<br>
+Daily Mehran<br>
+Bhulekha<br>
+Civil and Military Gazette</div>
+
+			
+									
+									<div id="sig884917" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884919">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884919">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884919">
+
+			<h3 ><a href="#p884919">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884919&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884919" title="Post #2526">#2526</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 17th, 2024, 4:04 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, very sorry for being away from technical and research posts. But things had become too difficult and were getting out of my control and I was unable to properly do my research work.<br>
+<br>
+I tried to resume my research this evening and had some very interesting ideas that I want to share with friends. We have found, when we are doing hermite or legendre regression with all the products of various orders included, the number of regression variables increase at a rate of 2^n-1  which effectively limits how to include large number of regressors in the orthogonal polynomial regression. I have been trying to think of ways to include larger number of variables in the regression but without increasing the total number of regression variables exponentially. It turns out that there could be ways to limit the number of variables included in regression if covariance matrix across each hermite polynomial of all regression variables could be described by a small number of eigenvectors by PCA(Principal component analysis) or alternatively using techniques of CCA(canonical corrrelation analysis). This can hugely reduce the number of total regressors in the regression but at the cost of possibly very small loss of R-squared.<br>
+<br>
+I describe the ideas in detail in the next post.</div>
+
+			
+									
+									<div id="sig884919" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884926">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884926">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884926">
+
+			<h3 ><a href="#p884926">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884926&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884926" title="Post #2527">#2527</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 17th, 2024, 7:23 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 175%; line-height: normal">Limiting the Number of Variables in Math AI Hermite/Legendre Polynomial Regression</span><br>
+<br>
+We have found, when we are doing hermite or legendre regression with all the products of various orders included, the number of regression variables increase at a rate of    \( \,C_1^n \,+\,C_2^n \,+C_3^n\,+\, \ldots\, C_n^n\,=\,2^n-1 \)  which effectively limits how to include large number of regressors in the orthogonal polynomial regression. <br>
+<br>
+It turns out that there could be ways to limit the number of variables included in regression if covariance matrix across each hermite polynomial of all regression variables could be described by a small number of eigenvectors with significant eigenvalues using PCA(Principal component analysis) . This can hugely reduce the number of total regressors in the regression but at the cost of possibly very small loss of R-squared. For example if there are M=8 input variables and there are N=10 hermite polynomials associated with each variable, we would have 1 + 255 * 10 total basis functions in the regression. However if (255 * 255) covariance matrix of each of the ten hermite polynomials could be described by 20 significant principle components, the number of basis functions could reduce to 1 + 20 * 10 basis functions in total. Since there is one covariance matrix for each polynomial order in Hermite series, we would have to do one PCA for each covariance matrix. If there are ten hermite polynomials in regression, there would be ten covariance matrices and ten PCAs in total with one PCA for each of these matrices<br>
+<br>
+We first revisit Hermite polynomial Regression.  Let us consider the case of hermite polynomial regression with M variables and N Hermite polynomials in regression. This means that when we include all products of M variables, the total number of basis functions would be \(2^{(M-1)} \, \, N\, \).<br>
+Suppose we want to regress a random variable  Y on \(X_1,\,, X_2,\,X_3,\, \ldots, X_M \),  and their products of all order. Let us suppose \(K\, =\,2^{(M-1)}\),  We would have to make hermite/Legendre series of all of the above variables as<br>
+<br>
+\[\, X_k(Z_{X_k})\,=\, ah_0 \, + \, ah_1 \, H_1(Z_{X_k}) \,+ \, ah_2 \, H_2(Z_{X_k}) \,+ \ldots \,+ \, ah_N \, H_N(Z_{X_k}) \,\text{where} \, k\,=\,1,\,2,\, \dots, \,K \] <br>
+<br>
+\[\, Y(Z_Y)\,=\, bh_0 \, + \, bh_1 \, H_1(Z_Y) \,+ \, bh_2 \, H_2(Z_Y) \,+ \ldots \,+ \, bh_N \, H_N(Z_Y) \, \] <br>
+<br>
+<br>
+<br>
+Let us suppose that we have a total of P joint data observations of above K regressors  and we include N hermite polynomials for each of the K explanatory variable in the regression. And we also have P joint observations of the target regressand and all of the three explanatory variables. In order to perform a regression of Y on hermite polynomials of \(X_k\) , We would have to map data of  \(X_k\) and \(Y\) on Standard normal density to find corresponding \(Z_{X_{k,p}}\) and \(Z_{Y_{p}}\). Then we would find first N Hermite polynomial values for each of the mapped  \(Z_{X_{k,p}}\) and \(Z_{Y_{p}}\). The final regression equation would be given in the matrix form as<br>
+<br>
+<br>
+\begin{equation}<br>
+\begin{bmatrix}<br>
+1 &amp; H_1(Z_{X_{1,1}}) &amp; \ldots &amp; H_N(Z_{X_{1,1}}) &amp; H_1(Z_{X_{2,1}}).&amp; \ldots.. &amp; H_N(Z_{X_{2,1}}) &amp; \ldots  &amp; \ldots  &amp; H_1(Z_{X_{K,1}}).&amp; \ldots.. &amp; H_N(Z_{X_{K,1}}) \\ <br>
+1 &amp; H_1(Z_{X_{1,2}}) &amp; \ldots &amp; H_N(Z_{X_{1,2}}) &amp; H_1(Z_{X_{2,2}}).&amp; \ldots.. &amp; H_N(Z_{X_{2,2}}) &amp; \ldots &amp; \ldots  &amp; H_1(Z_{X_{K,2}}).&amp; \ldots.. &amp; H_N(Z_{X_{K,2}}) \\\ldots &amp; \ldots &amp; \ldots &amp; \ &amp; \ldots &amp; \ldots.. &amp; \ldots \\   1 &amp; H_1(Z_{X_{1,p}}) &amp; \ldots &amp; H_N(Z_{X_{1,p}}) &amp; H_1(Z_{X_{2,p}}).&amp; \ldots.. &amp; H_N(Z_{X_{2,p}}) &amp; \ldots &amp; \ldots  &amp; H_1(Z_{X_{K,p}}).&amp; \ldots.. &amp; H_N(Z_{X_{K,p}}) \\ \ldots &amp; \ldots &amp; \ldots &amp; \ &amp; \ldots &amp; \ldots.. &amp; \ldots \\<br>
+1 &amp; H_1(Z_{X_{1,P}}) &amp; \ldots &amp; H_N(Z_{X_{1,P}}) &amp; H_1(Z_{X_{2,P}}).&amp; \ldots.. &amp; H_N(Z_{X_{2,P}}) &amp; \ldots &amp; \ldots  &amp; H_1(Z_{X_{K,P}}).&amp; \ldots.. &amp; H_N(Z_{X_{K,P}}) \\ <br>
+\end{bmatrix}   \begin{bmatrix} \beta_0 \\ \beta_{X_{1,1}} \\ \ldots \\ \beta_{X_{1,N}} \\ \beta_{X_{2,1}}\\ \ldots \\ \beta_{X_{2,N}} \\ \ldots\\ \ldots\\ \beta_{X_{K,1}}\, \\ \ldots \\ \beta_{X_{K,N}} \end{bmatrix} \\ \,=\, \begin{bmatrix} Y_1 \\ Y_2 \\ ...  \\  Y_p \\ ... \\  Y_P \end{bmatrix}<br>
+\end{equation}<br>
+<br>
+<br>
+\begin{equation}<br>
+\boldsymbol{H \, \beta}\,=\,\boldsymbol{y}<br>
+\end{equation}<br>
+<br>
+<br>
+Friends, I am a bit tired and fatigued but would complete this post tomorrow.</div>
+
+			
+									
+									<div id="sig884926" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884966">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884966">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884966">
+
+			<h3 ><a href="#p884966">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884966&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884966" title="Post #2528">#2528</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 20th, 2024, 12:22 am</span></p>
+			
+			
+			
+			<div class="content">/* Edited and Re-Posted*/<br>
+<br>
+Friends, I would complete the last post later in a proper formal style but here are the main ideas.<br>
+<br>
+Let us consider the case of hermite polynomial regression with M variables and N Hermite polynomials in regression. This means that when we include all products of M variables, the total number of basis functions would be \(2^{(M-1)} \, \, N\, \).<br>
+<br>
+Suppose we want to regress a random variable  Y on \(X_1,\,, X_2,\,X_3,\, \ldots, X_M \),  and their products of all order. Let us suppose \(K\, =\,2^{(M-1)}\),  We would have to make hermite/Legendre series of all of the above variables as<br>
+<br>
+\[\, X_k(Z_{X_k})\,=\, ah_0 \, + \, ah_1 \, H_1(Z_{X_k}) \,+ \, ah_2 \, H_2(Z_{X_k}) \,+ \ldots \,+ \, ah_N \, H_N(Z_{X_k}) \,\text{where} \, k\,=\,1,\,2,\, \dots, \,K \] <br>
+<br>
+\[\, Y(Z_Y)\,=\, bh_0 \, + \, bh_1 \, H_1(Z_Y) \,+ \, bh_2 \, H_2(Z_Y) \,+ \ldots \,+ \, bh_N \, H_N(Z_Y) \, \] <br>
+<br>
+Since there are N hermite polynomials and we already know that there is a different Covariance matrix/Correlation matrix associated with each of the N polynomials.<br>
+<br>
+In Order to decrease the number of regressors in Hermite/Legendre regression and limit the least square regression to only relevant regressors, we follow an analytics based numerical procedure.<br>
+<br>
+Let us suppose we calculate Covariance matrix of \(X_1, \,X_2,\,\ldots\,,X_K\) with Y. This is a (K+1)*(K+1) matrix. If there are N hermite polynomials of every regressor in regression, there will be N such matrices described as  \(\boldsymbol{\rho_{X_k\, Y,n}}\)<br>
+<br>
+<br>
+\begin{equation}<br>
+\boldsymbol{\rho_{X_k\, Y,n}}\,=\,\begin{bmatrix}  \rho_{X_{1}X_{1}, n} &amp; \rho_{X_{1}X_{2},n} &amp; ....&amp; ..... &amp;  \rho_{X_{1}X_{K},n} &amp;  \rho_{X_{1}Y,n} \\ <br>
+\rho_{X_{2}X_1, n} &amp; \rho_{X_{2}X_{2},n} &amp; ....&amp; ..... &amp;  \rho_{X_{2}X_{K},n} &amp;  \rho_{X_{2}Y,n} \\ .... &amp; .... &amp; ....&amp; .... &amp; ....\\ \rho_{X_{k}X_1, n} &amp; \rho_{X_{k}X_{2},n} &amp; ....&amp; ..... &amp;  \rho_{X_{k}X_{K},n} &amp;  \rho_{X_{k}Y,n} \\.... &amp; ... &amp; ... &amp; ... &amp; ... \\ <br>
+\rho_{X_{K}X_1, n} &amp; \rho_{X_{k}X_{2},n} &amp; ....&amp; ..... &amp;  \rho_{X_{K}X_{K},n} &amp;  \rho_{X_{K}Y,n} \\<br>
+\rho_{Y\,X_1, n} &amp; \rho_{Y\,X_{2},n} &amp; ....&amp; ..... &amp;  \rho_{Y \,X_{K},n} &amp;  \rho_{Y\,Y,n} \\<br>
+\end{bmatrix}   <br>
+\end{equation}<br>
+<br>
+for the new readers, I will write the equation for correlation between hermite polynomials as<br>
+<br>
+<br>
+\begin{equation}<br>
+<br>
+\rho_{XY,n} \, = \,  \frac{\sum\limits_{p=1}^{P}\, H_n(Z_{X,p}) \, \, H_n(Z_{Y,p}) \,}{\sqrt{\sum\limits_{p=1}^{P} \, {H_n(Z_{X,p})}^2 \,\sum\limits_{p=1}^{P} \, \, {H_n(Z_{Y,p})}^2 \,}}<br>
+\end{equation}<br>
+<br>
+In what follows, we use notation \(H_n(Z)\) for a proper normalized hermite polynomial while  \(\bar{H}_n(Z)\) with a bar on it, will be used for all later calculations and bookkeeping and will continue to change value. <br>
+<br>
+<br>
+We start with   \(H_n(Z)\)  equal to   \(\bar{H}_n(Z)\)  at start.<br>
+<br>
+\[ \,E \left[{\bar{H}_n}^2(Z_{X_k}) \right]=\, E \left[ {H_n}^2(Z_{X_k})\, \right]=\, n! \,,\,\,\,\,{k\,=\,1,\,2\, \ldots\,K}\]    <br>
+\[ \,E \left[ {\bar{H}_n}^2(Z_Y) \, \right]=\, E \left[\,{H_n}^2(Z_{Y})\,\right]=\, n! \, \]  <br>
+<br>
+We remove the effect of first regressors \(X_1\)'s hermite polynomial from all other hermite polynomials of regressors and regressands as<br>
+<br>
+\[ \,E \left[{\bar{H}_n}^2(Z_{X_k})\, \right]=\,\,E \left [ {\bar{H}_n}^2(Z_{X_k})\, \right]\,- \,{\rho}^2_{X_1 X_k,n}  E \left[{H_n}^2(Z_{X_1}) \right] \,,\,\,\,\,{k\,=\,1,\,2\, \ldots\,K}\]    <br>
+\[ \,E \left[{\bar{H}_n}^2(Z_Y)\, \right]=\, E \left[{\bar{H}_n}^2(Z_{Y}) \, \right]\,- \,{\rho}^2_{X_1 Y,n} \, E \left[ {H_n}^2(Z_{X_1}) \right]\]  <br>
+<br>
+which means in terms of correlations<br>
+<br>
+\[ \,{\bar{\rho}}^2_{X_k\,Xk,n}\,=\,\,{\rho}^2_{X_k\,X_k,n}\,- \,{\rho}^2_{X_1 X_k,n}  \,{\rho}^2_{X_1 X_1,n}  \,,\,\,\,\,{k\,=\,1,\,2\, \ldots\,K}\]    <br>
+<br>
+\[ \,{\bar{\rho}}^2_{Y\,Y,n}\,=\,\,{\rho}^2_{Y\,Y,n}\,- \,{\rho}^2_{X_1 Y,n}  \,{\rho}^2_{X_1 X_1,n}  \,,\,\]    <br>
+<br>
+We will also have to alter the other non-diagonal correlations as<br>
+<br>
+\[\, {\bar{\rho}}^2_{X_{k1}\,X_{k2},\, n} \,=\,{\rho}^2_{X_{k1}\,X_{k2},n} \,-\,\,{\rho}_{X_1\,X_{k1},n} \,\,{\rho}_{X_1\,X_{k2},n} \,\,\,{\rho}^2_{X_1\,X_1,n} \,\,\]<br>
+\[\, {\bar{\rho}}^2_{X_{k1}\,Y,\,n} \,=\,{\rho}^2_{X_{k1}\,Y,n} \,-\,\,\rho_{X_1\,X_{k1},n} \,\,\rho_{X_1\,Y,n} \,\,\,{\rho}^2_{X_1\,X_1,n} \,\,\]<br>
+  <br>
+Now we remove the effect of We remove the effect of second regressors \(X_2\)'s hermite polynomial from all other hermite polynomials of regressors and regressands which means in terms of correlations<br>
+<br>
+\[ \,{\bar{\rho}}^2_{X_k\,Xk,n}\,=\,\,{\bar{\rho}}^2_{X_k\,X_k,n}\,- \,{\bar{\rho}}^2_{X_2 X_k,n}  \,{\bar{\rho}}^2_{X_2 X_2,n}  \,,\,\,\,\,{k\,=\,2,\,3\, \ldots\,K}\]    <br>
+<br>
+\[ \,{\bar{\rho}}^2_{Y\,Y,n}\,=\,\,{\bar{\rho}}^2_{Y\,Y,n}\,- \,{\bar{\rho}}^2_{X_2 Y,n}  \,{\bar{\rho}}^2_{X_2 X_2,n}  \,,\,\]    <br>
+<br>
+We will also have to alter the other non-diagonal (k1,k2) correlations as<br>
+<br>
+\[\, {\bar{\rho}}^2_{X_{k1}\,X_{k2},n} \,=\,{\bar{\rho}}^2_{X_{k1}\,X_{k2},n} \,-\,\,\bar{\rho}_{X_2\,X_{k1},n} \,\,\bar{\rho}_{X_2\,X_{k2},n} \,\,{\bar{\rho}}^2_{X_2\,X_2,n} \,\,\]<br>
+\[\, {\bar{\rho}}^2_{X_{k1}\,Y,n} \,=\,{\bar{\rho}}^2_{X_{k1}\,Y,n} \,-\,\,\bar{\rho}_{X_2\,X_{k1},n} \,\,\bar{\rho}_{X_2\,Y,n} \,\,\,{\bar{\rho}}^2_{X_2\,X_2,n} \,\]<br>
+<br>
+So in a similar fashion, We continue to remove the effect of all regressors from regressand Y.<br>
+<br>
+We notice the individual effect of correlation from each regressor variable \(X_k\) onto regressand Y  after effect of all previous variables have been removed, if this effect is too small and trivial, we do not include that regressor variable in our following least squares regression that finds global coefficients for our Hermite/Legendre equations. So we find this effect for all \(2^{m}\,-\,1\) regressor variables and decide based on pure correlations(after removal of effect of previous common correlations) which regressor variables to keep in least squares regression and which regressor variables to remove from regression without sacrificing any R-squared. </div>
+
+			
+									
+									<div id="sig884966" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p884994">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile884994">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content884994">
+
+			<h3 ><a href="#p884994">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=884994&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p884994" title="Post #2529">#2529</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 21st, 2024, 8:16 pm</span></p>
+			
+			
+			
+			<div class="content"><span style="font-size: 175%; line-height: normal">How To Represent Normal Density based Hermite Regressors Back into Polynomial Functions of Original Parameter Variable</span><br>
+<br>
+<br>
+<br>
+Suppose we want to regress a random variable V on random variables X, Y and their product XY. We would have to make hermite/Legendre series of all of the above variables as<br>
+<br>
+\[\, X(Z_X)\,=\, ah_0 \, + \, ah_1 \, H_1(Z_X) \,+ \, ah_2 \, H_2(Z_X) \,+ \ldots \,+ \, ah_N \, H_N(Z_X) \, \] <br>
+\[\, Y(Z_Y)\,=\, bh_0 \, + \, bh_1 \, H_1(Z_Y) \,+ \, bh_2 \, H_2(Z_Y) \,+ \ldots \,+ \, bh_N \, H_N(Z_Y) \, \] <br>
+\[\, XY(Z_{XY})\,=\, ch_0 \, + \, ch_1 \, H_1(Z_{XY}) \,+ \, ch_2 \, H_2(Z_{XY}) \,+ \ldots \,+ \, ch_N \, H_N(Z_{XY}) \, \] <br>
+<br>
+<br>
+Let us suppose that we have a total of P joint data observations of above three regressors  and we include N hermite polynomials for each of the three explanatory variable in the regression. And we also have P joint observations of the target regressand and all of the three explanatory variables. In order to perform a regression of V on hermite polynomials of \(X\) and \(Y\) and \(XY\), We would have to first construct hermite series of  \(X\) and \(Y\)  and \(XY\) as shown before the start of this paragraph. Then, for each of the pth \((p\,=\,1, \ldots,P\,)\) data observation  we would have to invert the Hermite-Series equations of \(X\) and \(Y\)  and \(XY\) for pth data observations \(X_{p}\) and \(Y_{p}\) and \(XY_{p} \) to find corresponding \(Z_{X_{p}}\) and \(Z_{Y_{p}}\) and \(Z_{XY_{p}}\). Then we would find first N Hermite polynomial values for each of the inverted  \(Z_{X_{p}}\) and \(Z_{Y_{p}}\) and and \(Z_{XY_{p}}\). The final regression equation would be given in the matrix form as<br>
+<br>
+\begin{equation}<br>
+\begin{bmatrix} 1 &amp; H_1(Z_{X_1}) &amp; \ldots &amp; H_N(Z_{X_1}) &amp; H_1(Z_{Y_1}).&amp; \ldots.. &amp; H_N(Z_{Y_1}) &amp; H_1(Z_{XY_1}).&amp; \ldots.. &amp; H_N(Z_{XY_1}) \\ <br>
+1 &amp; H_1(Z_{X_2}) &amp; \ldots &amp; H_N(Z_{X_2}) &amp; H_1(Z_{Y_2}).&amp; \ldots.. &amp; H_N(Z_{Y_2}) &amp; H_1(Z_{XY_2}).&amp; \ldots.. &amp; H_N(Z_{XY_2})  \\ \ldots &amp; \ldots &amp; \ldots &amp; \ &amp; \ldots &amp; \ldots.. &amp; \ldots \\   1 &amp; H_1(Z_{X_p}) &amp; \ldots &amp; H_N(Z_{X_p}) &amp; H_1(Z_{Y_p}) &amp; \ldots &amp; H_N(Z_{Y_p}) &amp; H_1(Z_{XY_p}).&amp; \ldots.. &amp; H_N(Z_{XY_p}) \\ \ldots &amp; \ldots &amp; \ldots &amp; \ &amp; \ldots &amp; \ldots.. &amp; \ldots \\<br>
+1 &amp; H_1(Z_{X_P}) &amp; \ldots &amp; H_N(Z_{X_P})  &amp; H_1(Z_{Y_P})  &amp; \ldots &amp;  H_N(Z_{YP}) &amp; H_1(Z_{XY_P}).&amp; \ldots.. &amp; H_N(Z_{XY_P}) \\<br>
+\end{bmatrix}   \begin{bmatrix} \beta_0 \\ \beta_{X,1} \\ \ldots \\ \beta_{X,N} \\ \beta_{Y,1}\\\dots \\ \beta_{Y,N} \\ \beta_{XY,1}\\\dots \\ \beta_{XY,N} \end{bmatrix} \\ \,=\, \begin{bmatrix} V_1 \\ V_2 \\ ...  \\  V_p \\ ... \\  V_P \end{bmatrix}<br>
+\end{equation}<br>
+<br>
+\begin{equation}\label{5.1.11}<br>
+\boldsymbol{H \, \beta}\,=\,\boldsymbol{v}<br>
+\end{equation}<br>
+<br>
+and we solve this equation with least squares to find the regression coefficients of equation as<br>
+<br>
+\begin{equation}\label{5.1.12}<br>
+\boldsymbol{\beta}\,=\,\boldsymbol{{\left(H^T\, H \right)}^{-1}\,H^T\, v }<br>
+\end{equation}<br>
+<br>
+since there are three random variable regressors and Hermite-Series of each random variable includes Hermite polynomials terms up to Nth order and there are a total of P joint data observations, then matrix \(\boldsymbol{H} \) has matrix size as  \( \text{P  X (1 + 3 N)} \) , \(\boldsymbol{\beta}\) has array size of \(\text{(1 +  3 N ) X 1} \) and \(\boldsymbol{v}\) has array size of \(\,\text{P X 1} \).<br>
+<br>
+After regression coefficients have been found, we can write the solution of regression equation as<br>
+ <br>
+\[\,V\,=\,\beta_0 \,+\,\beta_{X,1} \,H_1(Z_{X}) \,+\, \ldots\, +\, \beta_{X,N}\, H_N(Z_{X}) \\+\,\beta_{Y,1} \, H_1(Z_{Y}).\,+ \, \ldots\,+\,\beta_{Y,N} \, H_N(Z_{Y})\\+\,\beta_{XY,1} \,H_1(Z_{XY}).+\, \ldots \, +\,\beta_{XY,N} \, H_N(Z_{XY}) \]<br>
+or <br>
+\[\,V\,=\,\beta_0 \,+\,W_1(Z_X) +\, W_2(Z_Y)\,+\,W_3(Z_{XY}) \, \]<br>
+<br>
+\[\,W_1(Z_X) \,=\, \beta_{X,1} \,H_1(Z_{X}) \,+\, \ldots\, +\, \beta_{X,N}\, H_N(Z_{X})\,=\, \bar{\beta}_{X,1} \,Z_{X} \,+\, \ldots\, +\, \bar{\beta}_{X,N}\, {Z_{X}}^N \,\]<br>
+\[\,W_2(Z_Y) \,=\, \beta_{Y,1} \,H_1(Z_{Y}) \,+\, \ldots\, +\, \beta_{Y,N}\, H_N(Z_{Y}) \,=\, \bar{\beta}_{Y,1} \,Z_{Y} \,+\, \ldots\, +\, \bar{\beta}_{Y,N}\, {Z_{Y}}^N\,\]<br>
+\[\,W_3(Z_{XY}) \,=\, \beta_{XY,1} \,H_1(Z_{XY}) \,+\, \ldots\, +\, \beta_{XY,N}\, H_N(Z_{XY})\,=\, \bar{\beta}_{XY,1} \,Z_{XY} \,+\, \ldots\, +\, \bar{\beta}_{XY,N}\, {Z_{XY}}^N\,\]<br>
+<br>
+We want to represent each of the above expressions given by Ws  which are represented by standard normal into their original variables. <span style="font-size: 100%; line-height: normal">We could expand \(W_1(Z_X)\) which is already a series into a different series around median of original variable \(X\,=\,X_0\). Similarly, we could expand  \(W_1(Z_Y)\)  and \(W_1(Z_{XY})\)  around   \(Y\,=\,Y_0\)  and  \(XY\,=\,{XY}_0\) respectively.</span><br>
+ <br>
+<br>
+<br>
+<span class="text-center"><span style="font-size: 175%; line-height: normal">Converting a Z-series Expression into a Polynomial Series in Original Variable Through Taylor Series Expansion</span></span><br>
+<br>
+<br>
+Suppose we have calculated Z-series of a random variable W which is denoted as \(W(Z)\) and now we want to convert it into a polynomial function  of  \(X\) then this resulting series is found through Taylor expansion . First we define a Variable F as<br>
+<br>
+\begin{equation}<br>
+ F(X)=f(Z(X)) <br>
+\end{equation}<br>
+<br>
+We will expand the right hand side of above Equation as a Taylor series around median of standard normal density at \(Z(X_0)\,=\,Z_0\) and it is given to fourth order as (please note that derivatives between non-Gaussian random variable X and normal random variable Z of all orders \(\frac{d^n X}{dZ^n}\) have previously been calculated at median either from differentiating Z_series of X on both sides repeatedly.<br>
+<br>
+We want to emphasize that in Taylor expansion below, \(f(Z)\) represents the Z-series polynomial which has to be converted to a different polynomial in original variable X. <br>
+<br>
+\begin{multline}\label{2.5.2}<br>
+ <br>
+F(X)\,\, = \, f(Z_0)+(X-X_0) \, \frac{dZ}{dX} \, f'(Z_0) \\<br>
+  + \frac{1}{2} \left( X-X_0 \right)^2  \left[ \, {\left( \frac{dZ}{dX} \right) }^2 f''(Z_0)+ \, \frac{d^2Z}{dX^2} \, f'(Z_0) \right]  \\<br>
+  + \frac{1}{6} \left(X-X_0 \right)^3 \left[ \, f^{(3)}(Z(X_0))  \, { \left( \frac{dZ}{dX} \right)}^3 \, +3  \, \frac{dZ}{dX} \,  \, \frac{d^2Z}{dX^2} \, f''(Z_0)+ \, \frac{d^3Z}{dX^3} \, f'(Z_0) \right] \\<br>
++ \frac{1}{24} \left(X-X_0 \right)^4 \left[ \, f^{(4)}(Z_0)  \, {\left( \frac{dZ}{dX} \right)}^4 \,+6 f^{(3)}(Z_0 ) \, { \left( \frac{dZ}{dX} \right) }^2 \, \, \frac{d^2Z}{dX^2} \, \right] \\<br>
+  + \frac{1}{24} \left(X-X_0 \right)^4 \left[ +3 \, { \left( \frac{d^2Z}{dX^2} \right) }^2 \, f''(Z_0) + \, 4 \, \frac{d^3Z}{dX^3} \, \, \frac{dZ}{dX} \, f''(Z_0) \, +\, { \frac{d^4Z}{dX^4}} \, f'(Z_0) \right]  <br>
+<br>
+<br>
+\end{multline}</div>
+
+			
+									
+									<div id="sig884994" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885018">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885018">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885018">
+
+			<h3 ><a href="#p885018">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885018&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885018" title="Post #2530">#2530</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 23rd, 2024, 12:17 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, my monthly antipsychotic injection is due tomorrow. My persecution continues unabatedly and I have not been able to program for past 7-10 days. Programming requires some strength in the brain and they have been able to keep me sedated most of the time over past one week and I have not been able to do any programming. I have been trying to make interesting posts for friends who want to pursue similar work but I have not programmed for quite some time now. <br>
+<br>
+I am afraid that I would be sharply worse off and more sedated after the antipsychotic injection tomorrow and I may not be able to write with perfect clarity. I want to tell friends that American defense has absolutely no plans to end my persecution and they want to take my persecution to the logical end when I would have been mentally retarded and they are ready to go to any limits to achieve that target. They have still continued my persecution in full swing and once more suitable time comes, they would openly detain me and take all good neurotransmitters out of my brain possibly forever.<br>
+<br>
+I am extremely thankful to all good Americans who tried to protect me from more severe and cruel persecution in the past even when nobody in my country was ready to help me at all. If they had not been protesting strongly to American government resulting in quite decreased mind control for me, I would not have been able to do any decent research at all. And I am very grateful to people who became interested in my work and tried to use some of my suggested mathematical methods in their research ideas. It is a very good feeling to know that many intelligent people would be able to do interesting things with some helpful research I was able to do. <br>
+<br>
+I would want to take this opportunity to request all Americans to please help end my mind control forever. One way you could truly help me could be by asking any friends or connections in newspapers and TV News companies to follow my case here on wilmott. Please ask any media outlets and jouranlists you know to follow my thread about everyday stories of persecution by American defense. And please suggest to them to write or speak about it in their media about ending extra-constitutional and extra-judicial mind control by American defense forever. I want to request European researchers to please bring attention of European news media towards my case, research and continuing persecution that increases as my research becomes more successful. And please ask your Pakistani students abroad to tell Pakistani news media about stories of mind control of intelligent people in our country by our own army for hefty bribes they get from American defense. <br>
+<br>
+Please approach 2-3 of these meida outlets and tell them about my research and continuing mind control and ask them to follow my case and possibly write very bravely about huge extrajudicial mind control by American defense. I do not realistically think that my persecution is going to end anytime soon and I will need strong support from good Americans and good people from all over the world.<br>
+<br>
+Please continue to follow my thread since I expect that my persecution is going to be even more eventful in coming days and weeks and a lot of interesting even though very inhuman and cruel things might follow.<br>
+<br>
+<br>
+<br>
+<br>
+MSNBC<br>
+NBC<br>
+CNN<br>
+Fox Business<br>
+Fox News<br>
+American Broadcasting Company<br>
+USA Network<br>
+CBS<br>
+CNBC<br>
+Fox<br>
+HLN<br>
+Blaze Media<br>
+Al Jazeera America<br>
+Discovery Channel<br>
+RT<br>
+HBO<br>
+NewsNation<br>
+MyNetworkTV<br>
+Free Speech TV<br>
+Newsmax TV<br>
+Scripps News<br>
+CNN en Español<br>
+PBS<br>
+ABC News Live<br>
+Link TV<br>
+Lifetime<br>
+VH1<br>
+France 24<br>
+Univision<br>
+ION Television<br>
+NBC News<br>
+Investigation Discovery<br>
+MeTV<br>
+DD India<br>
+ESPNews<br>
+BBC America<br>
+CNBC Europe<br>
+C-SPAN<br>
+A &amp; E Network<br>
+Hallmark Channel<br>
+DoD News Channel<br>
+National Geographic<br>
+TNT<br>
+euronews<br>
+Sky News<br>
+Bloomberg Television<br>
+<br>
+New York Times.<br>
+Washington  Post.<br>
+CNN.<br>
+Fox News.<br>
+USA Today.<br>
+Los Angeles Times.<br>
+Chicago Tribune.<br>
+Boston Globe.<br>
+Minnesota Star Tribune<br>
+New York Post<br>
+Newsday<br>
+San Fransisco Chronicle<br>
+The Dallas Morning News<br>
+Tampa Bay Times<br>
+Hartford Courant<br>
+Publick Occurrences Both Forreign and Domestick<br>
+The Michigan Daily<br>
+The Denver Post<br>
+Pittsburgh Post-Gazette<br>
+The Seattle Times<br>
+Las Vegas Sun<br>
+Bourbon County Citizen<br>
+The Register Star<br>
+NewYork Metro<br>
+The Queens Ledger<br>
+Philadelphia Tribune<br>
+Baltimore Afro-American<br>
+Portland Tribune<br>
+Indianapolis Recorder<br>
+The Patriot-News<br>
+El Diario NY<br>
+The Modesto Bee<br>
+Fairfax County Times<br>
+The Epoch Times<br>
+Barron's<br>
+Queens Chronicle<br>
+Phoenix New Times<br>
+El Informador<br>
+The Philadelphia Inquirer<br>
+New York Daily News<br>
+The Star-Ledger<br>
+St. Louis Post-Dispatch<br>
+The Mercury News<br>
+The Arizona Republic<br>
+The Plain Dealer<br>
+Detroit Free Press<br>
+The Press-Enterprise<br>
+The Tennessean<br>
+Sun Sentinel<br>
+<br>
+<br>
+The Copenhagen Post<br>
+The Slovak Spectator<br>
+The Budapest Times<br>
+Tirana Times<br>
+Menorca Sun<br>
+The Vienna Review<br>
+Le News<br>
+The Irish Times<br>
+Die Welt<br>
+Het Nieuwsblad<br>
+Le Soir<br>
+Albania Today<br>
+Algemeen Dagblad<br>
+De Telegraaf<br>
+de Volkskrant<br>
+The European<br>
+Het Laatste Nieuws<br>
+The Daily Telegraph<br>
+Daily Mirror<br>
+The Sun<br>
+Pravda<br>
+The Moscow Times<br>
+The Guardian<br>
+Le Figaro<br>
+Le Monde<br>
+ABC<br>
+la Repubblica<br>
+Il Messaggero<br>
+El Periódico de Catalunya<br>
+El Mundo<br>
+Libération<br>
+El País<br>
+Kronen Zeitung<br>
+La Stampa<br>
+Frankfurter Allgemeine Zeitung<br>
+Bild<br>
+20 minutes<br>
+Sport<br>
+Aftenposten<br>
+Marca<br>
+Gazeta Wyborcza<br>
+Izvestia<br>
+Die Presse<br>
+Süddeutsche Zeitung<br>
+La Tribune<br>
+Novaya Gazeta<br>
+Neue Zürcher Zeitung<br>
+Dagens Nyheter<br>
+Expressen<br>
+La Gazzetta dello Sport<br>
+Mladá fronta Dnes<br>
+<br>
+Urdu News<br>
+Daily Pakistan<br>
+Dawn<br>
+Daily Express<br>
+Daily Jang<br>
+The Express Tribune<br>
+The News International<br>
+The Nation<br>
+Pakistan Today<br>
+Daily Dunya<br>
+Daily Ummat<br>
+Nawaiwaqt<br>
+The Regional Times of Sindh<br>
+Pakistan Observer<br>
+Khabrain<br>
+Daily Ausaf<br>
+Daily Jasarat<br>
+Daily Nai Baat<br>
+Daily Basharat<br>
+Daily Times<br>
+The Frontier Post<br>
+Daily Sarhad<br>
+Daily Imroze<br>
+The Pakistan Times<br>
+The Financial Daily<br>
+Daily Aaj<br>
+Daily Mashriq<br>
+Millat<br>
+Business Recorder<br>
+Daily Inqilab<br>
+Kawish<br>
+Daily Lokaai<br>
+Talár<br>
+Maidan Daily<br>
+Daily Asas<br>
+Christian Voice<br>
+The Friday Times<br>
+Awam<br>
+Daily Awami Awaz<br>
+The Star<br>
+Al Akhbar<br>
+Khyber Mail<br>
+Nawai Watan<br>
+Sajjan<br>
+Daily Hilal Pakistan<br>
+Daily Sindhu<br>
+Daily Koshish<br>
+Daily Mehran<br>
+Bhulekha<br>
+Civil and Military Gazette</div>
+
+			
+									
+									<div id="sig885018" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885022">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885022">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885022">
+
+			<h3 ><a href="#p885022">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885022&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885022" title="Post #2531">#2531</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 23rd, 2024, 3:20 pm</span></p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div class="blockquote__inner">
+<span class="text-center"><span style="font-size: 175%; line-height: normal">Converting a Z-series Expression into a Polynomial Series in Original Variable Through Taylor Series Expansion</span></span><br>
+<br>
+<br>
+Suppose we have calculated Z-series of a random variable W which is denoted as \(W(Z)\) and now we want to convert it into a polynomial function  of  \(X\) then this resulting series is found through Taylor expansion . First we define a Variable F as<br>
+<br>
+\begin{equation}<br>
+ F(X)=f(Z(X)) <br>
+\end{equation}<br>
+<br>
+We will expand the right hand side of above Equation as a Taylor series around median of standard normal density at \(Z(X_0)\,=\,Z_0\) and it is given to fourth order as (please note that derivatives between non-Gaussian random variable X and normal random variable Z of all orders \(\frac{d^n X}{dZ^n}\) have previously been calculated at median either from differentiating Z_series of X on both sides repeatedly.<br>
+<br>
+We want to emphasize that in Taylor expansion below, \(f(Z)\) represents the Z-series polynomial which has to be converted to a different polynomial in original variable X. <br>
+<br>
+\begin{multline}\label{2.5.2}<br>
+ <br>
+F(X)\,\, = \, f(Z_0)+(X-X_0) \, \frac{dZ}{dX} \, f'(Z_0) \\<br>
+  + \frac{1}{2} \left( X-X_0 \right)^2  \left[ \, {\left( \frac{dZ}{dX} \right) }^2 f''(Z_0)+ \, \frac{d^2Z}{dX^2} \, f'(Z_0) \right]  \\<br>
+  + \frac{1}{6} \left(X-X_0 \right)^3 \left[ \, f^{(3)}(Z(X_0))  \, { \left( \frac{dZ}{dX} \right)}^3 \, +3  \, \frac{dZ}{dX} \,  \, \frac{d^2Z}{dX^2} \, f''(Z_0)+ \, \frac{d^3Z}{dX^3} \, f'(Z_0) \right] \\<br>
++ \frac{1}{24} \left(X-X_0 \right)^4 \left[ \, f^{(4)}(Z_0)  \, {\left( \frac{dZ}{dX} \right)}^4 \,+6 f^{(3)}(Z_0 ) \, { \left( \frac{dZ}{dX} \right) }^2 \, \, \frac{d^2Z}{dX^2} \, \right] \\<br>
+  + \frac{1}{24} \left(X-X_0 \right)^4 \left[ +3 \, { \left( \frac{d^2Z}{dX^2} \right) }^2 \, f''(Z_0) + \, 4 \, \frac{d^3Z}{dX^3} \, \, \frac{dZ}{dX} \, f''(Z_0) \, +\, { \frac{d^4Z}{dX^4}} \, f'(Z_0) \right]  <br>
+<br>
+<br>
+\end{multline}
+</div></blockquote>
+
+.<br>
+.<br>
+Friends, in the above copied part of post, I have mentioned that you need to know  \(\frac{d^n Z}{dX^n}\)  which is directly not available and has to be found from different derivatives given by \(\frac{d^n X}{dZ^n}\) which is known.<br>
+<br>
+specifically if use the notation   \(Gn\,=\,\frac{d^n Z}{dX^n}\)  and  \(Fn\,=\,\frac{d^n X}{dZ^n}\)<br>
+Then formulas for first eight inverse derivatives \(Gn\,=\,\frac{d^n Z}{dX^n}\)   are given in terms of known derivatives  \(Fn\,=\,\frac{d^n X}{dZ^n}\)  as<br>
+<br>
+G1 = 1/F1;       %First derivative of inverse function<br>
+<br>
+G2 = -F2/F1^3;   %second derivative of inverse function<br>
+<br>
+G3 =(3 *F2^2)/F1^5 - F3/F1^4; %Third derivative of inverse function<br>
+<br>
+G4 = -15* F2^3/F1^7 + 10*F2* F3/F1^6 - F4/F1^5 ;%Fourth derivative of inverse function<br>
+<br>
+G5=(105* F2^4 - 105* F1 *F2^2* F3 + 10* F1^2* F3^2 + 15* F1^2* F2* F4 - F1^3* F5)/F1^9;<br>
+<br>
+G6=(1/(F1^11))*(-945* F2^5 + 1260* F1* F2^3* F3 - 280* F1^2* F2* F3^2 - ... <br>
+  210* F1^2 * F2^2* F4 + 35* F1^3* F3* F4 + 21* F1^3 *F2* F5 - F1^4* F6);<br>
+<br>
+G7=(1/(F1^13))*(10395* F2^6 - 17325* F1* F2^4 *F3 + 6300* F1^2* F2^2* F3^2 - ... <br>
+  280* F1^3* F3^3 + 3150* F1^2* F2^3* F4 - 1260* F1^3* F2* F3* F4 + ... <br>
+  35 *F1^4* F4^2 - 378* F1^3* F2^2* F5 + 56* F1^4* F3* F5 + 28* F1^4* F2* F6 - ... <br>
+  F1^5* F7);<br>
+<br>
+G8=(1/(F1^15))*(155925* F2^7 - 214830* F1* F2^5 *F3 + 37800 *F1^2 *F2^3* F3^2 + ... <br>
+  7560* F1^3* F2* F3^3 + 36225* F1^2* F2^4* F4 - 630* F1^3* F2^2* F3* F4 - ... <br>
+  2100* F1^4 *F3^2* F4 - 595* F1^4* F2* F4^2 - 3654* F1^3* F2^3* F5 - ...<br>
+  952* F1^4* F2* F3* F5 + 126* F1^5* F4* F5 + 154* F1^4* F2^2* F6 + ... <br>
+  84* F1^5 *F3 *F6 + 8* F1^5* F2* F7 - F1^6* F8 - 28* F1^13* F2* G7);<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Please read my posts about inverse function derivatives here as: <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1305#p868932" class="postlink">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1305#p868932</a> <br>
+and  <a href="https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1305#p868935" class="postlink"><span style="font-size: 100%; line-height: normal">https://forum.wilmott.com/viewtopic.php?t=99702&amp;start=1305#p868935</span></a><br>
+<br>
+<br>
+<br>
+Suppose we have a function y=f(x) and g(f(x)) is its inverse so that <br>
+[$]y=\, f(x)[$]<br>
+[$]g(f(x))=x [$]<br>
+<br>
+We are given an initial pair of solution [$](x_0,y_0)[$], and we want to find out x given a certain value of function y. This can easily be done by a Taylor expansion in terms of inverse derivatives of g as<br>
+[$] x \, = \, x_0 \, + \, g'(f(x)) \, (y-y_0) \, + 1/2 \, g''(f(x)) \, {(y-y_0)}^2 \,+ 1/6 \, g'''(f(x)) \, {(y-y_0)}^3 \, + 1/24 \, g^{iv}(f(x)) \, {(y-y_0)}^4 \,+ ....[$]<br>
+<br>
+All these inverse derivatives can easily be found from derivatives of [$]f(x)[$] as<br>
+<br>
+[$]g'(f(x)) = 1/f'(x)[$]       %First derivative of inverse function<br>
+[$]g''(f(x)) = -f''(x)/{f'(x)}^3[$]   %second derivative of inverse function<br>
+[$]g'''(f(x)) =3  \, {f''(x)}^2/{f'(x)}^5 - f'''(x)/{f'(x)}^4[$]; %Third derivative of inverse function<br>
+[$]g^{iv}(f(x)) = -15 \, {f''(x)}^3/{f'(x)}^7 + 10 \, f''(x) \, f'''(x)/{f'(x)}^6 - f^{iv}(x)/{f'(x)}^5 [$];%Fourth derivative of inverse function<br>
+<br>
+If you take enough terms in Taylor series and it converges well, you can easily approximate the inverse function over a large enough domain. According to my understanding it will only give a real root if derivatives are real and that can be both helpful in some cases but may be undesirable in some other cases. For root search, you can easily do one or two extra iterations of the explicit function to get to the root. <br>
+<br>
+I am attaching a program that does root-search of a simple quadratic equation.<br>
+
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [] = InverseFunctionRoot()
+
+%y=f(x); here f(x) is simply a quadratic equation.
+%Given an inital pair (x0,y0), the program finds x that corresponds to the target value y.
+%For a real root make sure that b^2-4*a*c&gt;0;
+%The method works for real roots.
+
+a=.05;
+b=1;
+c=5.0;
+x0=4;
+
+
+y0=a*x0^2 + b * x0+ c
+F1=2*a*x0+b;  %first derivative of f(x)
+F2=2*a; %second derivative of f(x)
+F3=0;  %Third derivative of f(x)
+F4=0;  %Fourth derivative of f(x)
+F5=0;
+F6=0;
+F7=0;
+F8=0;
+
+G1 = 1/F1;       %First derivative of inverse function
+G2 = -F2/F1^3;   %second derivative of inverse function
+G3 =(3 *F2^2)/F1^5 - F3/F1^4; %Third derivative of inverse function
+G4 = -15* F2^3/F1^7 + 10*F2* F3/F1^6 - F4/F1^5 ;%Fourth derivative of inverse function
+G5=(105* F2^4 - 105* F1 *F2^2* F3 + 10* F1^2* F3^2 + 15* F1^2* F2* F4 - F1^3* F5)/F1^9;
+G6=(1/(F1^11))*(-945* F2^5 + 1260* F1* F2^3* F3 - 280* F1^2* F2* F3^2 - ... 
+  210* F1^2 * F2^2* F4 + 35* F1^3* F3* F4 + 21* F1^3 *F2* F5 - F1^4* F6);
+G7=(1/(F1^13))*(10395* F2^6 - 17325* F1* F2^4 *F3 + 6300* F1^2* F2^2* F3^2 - ... 
+  280* F1^3* F3^3 + 3150* F1^2* F2^3* F4 - 1260* F1^3* F2* F3* F4 + ... 
+  35 *F1^4* F4^2 - 378* F1^3* F2^2* F5 + 56* F1^4* F3* F5 + 28* F1^4* F2* F6 - ... 
+  F1^5* F7);
+
+G8=(1/(F1^15))*(155925* F2^7 - 214830* F1* F2^5 *F3 + 37800 *F1^2 *F2^3* F3^2 + ... 
+  7560* F1^3* F2* F3^3 + 36225* F1^2* F2^4* F4 - 630* F1^3* F2^2* F3* F4 - ... 
+  2100* F1^4 *F3^2* F4 - 595* F1^4* F2* F4^2 - 3654* F1^3* F2^3* F5 - ...
+  952* F1^4* F2* F3* F5 + 126* F1^5* F4* F5 + 154* F1^4* F2^2* F6 + ... 
+  84* F1^5 *F3 *F6 + 8* F1^5* F2* F7 - F1^6* F8 - 28* F1^13* F2* G7);
+
+y=5;  %The target value for which we want to find x.
+
+c1=c-y;
+x_true1=(-b+sqrt(b^2-4*a*c1))/(2*a);
+x_true2=(-b-sqrt(b^2-4*a*c1))/(2*a);
+
+%Taylor expansion for x using inverse derivatives.
+x=x0+G1*(y-y0)+1/2*G2*(y-y0)^2+1/6*G3*(y-y0)^3+1/24*G4*(y-y0)^4;
+x6=x0+G1*(y-y0)+1/2*G2*(y-y0)^2+1/6*G3*(y-y0)^3+1/24*G4*(y-y0)^4+1/120*G5*(y-y0)^5 + 1/720*G6*(y-y0)^6;
+x7=x0+G1*(y-y0)+1/2*G2*(y-y0)^2+1/6*G3*(y-y0)^3+1/24*G4*(y-y0)^4+1/120*G5*(y-y0)^5 + 1/720*G6*(y-y0)^6 +1/(7*720)*G7*(y-y0)^7;
+x8=x0+G1*(y-y0)+1/2*G2*(y-y0)^2+1/6*G3*(y-y0)^3+1/24*G4*(y-y0)^4+1/120*G5*(y-y0)^5 + 1/720*G6*(y-y0)^6 +1/(7*720)*G7*(y-y0)^7+1/(8*7*720)*G8*(y-y0)^8;
+
+y0
+y
+x_true1
+x_true2
+x0
+x
+x6
+x7
+x8
+x_true1
+end</code></pre></div>
+
+.<br>
+.<br>
+.</div>
+
+			
+									
+									<div id="sig885022" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885023">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885023">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885023">
+
+			<h3 ><a href="#p885023">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885023&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885023" title="Post #2532">#2532</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 23rd, 2024, 4:00 pm</span></p>
+			
+			
+			
+			<div class="content">I found another old matlab program for inverse function derivatives that you can easily use directly to convert derivatives till eighth order. It is basically the same thing but more convenient.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function [G] = FindInverseFunctionDerivatives(F)
+
+F1=F(1);  %first derivative of f(x)
+F2=F(2); %second derivative of f(x)
+F3=F(3);  %Third derivative of f(x)
+F4=F(4);  %Fourth derivative of f(x)
+F5=F(5);
+F6=F(6);
+F7=F(7);
+F8=F(8);
+
+G(1) = 1/F1;       %First derivative of inverse function
+G(2) = -F2/F1^3;   %second derivative of inverse function
+G(3) =(3 *F2^2)/F1^5 - F3/F1^4; %Third derivative of inverse function
+G(4) = -15* F2^3/F1^7 + 10*F2* F3/F1^6 - F4/F1^5 ;%Fourth derivative of inverse function
+G(5)=(105* F2^4 - 105* F1 *F2^2* F3 + 10* F1^2* F3^2 + 15* F1^2* F2* F4 - F1^3* F5)/F1^9;
+G(6)=(1/(F1^11))*(-945* F2^5 + 1260* F1* F2^3* F3 - 280* F1^2* F2* F3^2 - ... 
+  210* F1^2 * F2^2* F4 + 35* F1^3* F3* F4 + 21* F1^3 *F2* F5 - F1^4* F6);
+G(7)=(1/(F1^13))*(10395* F2^6 - 17325* F1* F2^4 *F3 + 6300* F1^2* F2^2* F3^2 - ... 
+  280* F1^3* F3^3 + 3150* F1^2* F2^3* F4 - 1260* F1^3* F2* F3* F4 + ... 
+  35 *F1^4* F4^2 - 378* F1^3* F2^2* F5 + 56* F1^4* F3* F5 + 28* F1^4* F2* F6 - ... 
+  F1^5* F7);
+
+G(8)=(1/(F1^15))*(155925* F2^7 - 214830* F1* F2^5 *F3 + 37800 *F1^2 *F2^3* F3^2 + ... 
+  7560* F1^3* F2* F3^3 + 36225* F1^2* F2^4* F4 - 630* F1^3* F2^2* F3* F4 - ... 
+  2100* F1^4 *F3^2* F4 - 595* F1^4* F2* F4^2 - 3654* F1^3* F2^3* F5 - ...
+  952* F1^4* F2* F3* F5 + 126* F1^5* F4* F5 + 154* F1^4* F2^2* F6 + ... 
+  84* F1^5 *F3 *F6 + 8* F1^5* F2* F7 - F1^6* F8 - 28* F1^13* F2* G(7));
+
+end
+
+</code></pre></div>
+.<br>
+.<br>
+.</div>
+
+			
+									
+									<div id="sig885023" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885041">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885041">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885041">
+
+			<h3 ><a href="#p885041">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885041&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885041" title="Post #2533">#2533</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 24th, 2024, 6:08 am</span></p>
+			
+			
+			
+			<div class="content">Friends, today I will try to calculate inverse function derivatives formulas beyond eight order  till 12th or possibly 14th order and hope to post the formulas for these higher derivatives conversions  later tonight. </div>
+
+			
+									
+									<div id="sig885041" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885055">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885055">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885055">
+
+			<h3 ><a href="#p885055">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885055&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885055" title="Post #2534">#2534</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 24th, 2024, 5:20 pm</span></p>
+			
+			
+			
+			<div class="content">Friends, here is the matlab program that calculates first sixteen inverse function derivatives.<br>
+If we use the notation   \(G(n)\,=\,\frac{d^n Z}{dX^n}\)  and  \(F(n)\,=\,\frac{d^n X}{dZ^n}\), <span style="font-size: 100%; line-height: normal">Then formulas for first sixteen inverse derivatives \(G(n)\,=\,\frac{d^n Z}{dX^n}\)   are given in terms of </span><span style="font-size: 100%; line-height: normal">known derivatives  \(F(n)\,=\,\frac{d^n X}{dZ^n}\) and  </span>\(G(m)\,=\,\frac{d^m Z}{dX^m}\) where m &lt; n.<br>
+<br>
+You can comment higher derivatives, if you do not want them.<br>
+.<br>
+.<br>
+.
+<div class="codebox"><div class="codebox__header">Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></div><pre><code class="prettyprint">function[G]=FindInverseFunctionDerivatives16(F)
+
+
+%If use the notation   \(G(n)\,=\,\frac{d^n Z}{dX^n}\)  and  \(F(n)\,=\,\frac{d^n X}{dZ^n}\)
+%Then formulas for first sixteen inverse derivatives \(G(n)\,=\,\frac{d^n Z}{dX^n}\)   are given in terms of 
+%known derivatives  \(F(n)\,=\,\frac{d^n X}{dZ^n}\) and
+%\(G(m)\,=\,\frac{d^m Z}{dX^m}\) where m &lt; n.
+
+
+G(1)=1./F(1);
+
+
+G(2)=-(G(1).*F(2))./F(1).^2;
+
+
+G(3)=-(3.*F(1).*F(2).*G(2)+G(1).*F(3))./F(1).^3;
+
+
+G(4)=-(3.*F(2).^2.*G(2)+4.*F(1).*G(2).*F(3)+6.*F(1).^2.*F(2).*G(3)+G(1).*F(4))./F(1).^4;
+
+
+G(5)=-(10.*F(2).*G(2).*F(3)+15.*F(1).*F(2).^2.*G(3)+10.*F(1).^2.*F(3).*G(3)+5.*F(1).*G(2).*F(4)+10.*F(1).^3.*F(2).*G(4)+G(1).*F(5))./F(1).^5;
+
+
+G(6)=-(10.*G(2).*F(3).^2+15.*F(2).^3.*G(3)+60.*F(1).*F(2).*F(3).*G(3)+15.*F(2).*G(2).*F(4)+15.*F(1).^2.*G(3).*F(4)+45.*F(1).^2.*F(2).^2.*G(4)+20.*F(1).^3.*F(3).*G(4)+6.*F(1).*G(2).*F(5)+15.*F(1).^4.*F(2).*G(5)+G(1).*F(6))./F(1).^6;
+
+
+G(7)=-(105.*F(2).^2.*F(3).*G(3)+70.*F(1).*F(3).^2.*G(3)+35.*G(2).*F(3).*F(4)+105.*F(1).*F(2).*G(3).*F(4)+105.*F(1).*F(2).^3.*G(4)+210.*F(1).^2.*F(2).*F(3).*G(4)+35.*F(1).^3.*F(4).*G(4)+21.*F(2).*G(2).*F(5)+21.*F(1).^2.*G(3).*F(5)+105.*F(1).^3.*F(2).^2.*G(5)+35.*F(1).^4.*F(3).*G(5)+7.*F(1).*G(2).*F(6)+21.*F(1).^5.*F(2).*G(6)+G(1).*F(7))./F(1).^7;
+
+
+G(8)=-(280.*F(2).*F(3).^2.*G(3)+210.*F(2).^2.*G(3).*F(4)+280.*F(1).*F(3).*G(3).*F(4)+35.*G(2).*F(4).^2+105.*F(2).^4.*G(4)+840.*F(1).*F(2).^2.*F(3).*G(4)+280.*F(1).^2.*F(3).^2.*G(4)+420.*F(1).^2.*F(2).*F(4).*G(4)+56.*G(2).*F(3).*F(5)+168.*F(1).*F(2).*G(3).*F(5)+56.*F(1).^3.*G(4).*F(5)+420.*F(1).^2.*F(2).^3.*G(5)+560.*F(1).^3.*F(2).*F(3).*G(5)+70.*F(1).^4.*F(4).*G(5)+28.*F(2).*G(2).*F(6)+28.*F(1).^2.*G(3).*F(6)+210.*F(1).^4.*F(2).^2.*G(6)+56.*F(1).^5.*F(3).*G(6)+8.*F(1).*G(2).*F(7)+28.*F(1).^6.*F(2).*G(7)+G(1).*F(8))./F(1).^8;
+
+
+G(9)=-(280.*F(3).^3.*G(3)+1260.*F(2).*F(3).*G(3).*F(4)+315.*F(1).*G(3).*F(4).^2+1260.*F(2).^3.*F(3).*G(4)+2520.*F(1).*F(2).*F(3).^2.*G(4)+1890.*F(1).*F(2).^2.*F(4).*G(4)+1260.*F(1).^2.*F(3).*F(4).*G(4)+378.*F(2).^2.*G(3).*F(5)+504.*F(1).*F(3).*G(3).*F(5)+126.*G(2).*F(4).*F(5)+756.*F(1).^2.*F(2).*G(4).*F(5)+945.*F(1).*F(2).^4.*G(5)+3780.*F(1).^2.*F(2).^2.*F(3).*G(5)+840.*F(1).^3.*F(3).^2.*G(5)+1260.*F(1).^3.*F(2).*F(4).*G(5)+126.*F(1).^4.*F(5).*G(5)+84.*G(2).*F(3).*F(6)+252.*F(1).*F(2).*G(3).*F(6)+84.*F(1).^3.*G(4).*F(6)+1260.*F(1).^3.*F(2).^3.*G(6)+1260.*F(1).^4.*F(2).*F(3).*G(6)+126.*F(1).^5.*F(4).*G(6)+36.*F(2).*G(2).*F(7)+36.*F(1).^2.*G(3).*F(7)+378.*F(1).^5.*F(2).^2.*G(7)+84.*F(1).^6.*F(3).*G(7)+9.*F(1).*G(2).*F(8)+36.*F(1).^7.*F(2).*G(8)+G(1).*F(9))./F(1).^9;
+
+
+G(10)=-(2100.*F(3).^2.*G(3).*F(4)+1575.*F(2).*G(3).*F(4).^2+6300.*F(2).^2.*F(3).^2.*G(4)+2800.*F(1).*F(3).^3.*G(4)+3150.*F(2).^3.*F(4).*G(4)+12600.*F(1).*F(2).*F(3).*F(4).*G(4)+1575.*F(1).^2.*F(4).^2.*G(4)+2520.*F(2).*F(3).*G(3).*F(5)+1260.*F(1).*G(3).*F(4).*F(5)+3780.*F(1).*F(2).^2.*G(4).*F(5)+2520.*F(1).^2.*F(3).*G(4).*F(5)+126.*G(2).*F(5).^2+945.*F(2).^5.*G(5)+12600.*F(1).*F(2).^3.*F(3).*G(5)+12600.*F(1).^2.*F(2).*F(3).^2.*G(5)+9450.*F(1).^2.*F(2).^2.*F(4).*G(5)+4200.*F(1).^3.*F(3).*F(4).*G(5)+2520.*F(1).^3.*F(2).*F(5).*G(5)+630.*F(2).^2.*G(3).*F(6)+840.*F(1).*F(3).*G(3).*F(6)+210.*G(2).*F(4).*F(6)+1260.*F(1).^2.*F(2).*G(4).*F(6)+210.*F(1).^4.*G(5).*F(6)+4725.*F(1).^2.*F(2).^4.*G(6)+12600.*F(1).^3.*F(2).^2.*F(3).*G(6)+2100.*F(1).^4.*F(3).^2.*G(6)+3150.*F(1).^4.*F(2).*F(4).*G(6)+252.*F(1).^5.*F(5).*G(6)+120.*G(2).*F(3).*F(7)+360.*F(1).*F(2).*G(3).*F(7)+120.*F(1).^3.*G(4).*F(7)+3150.*F(1).^4.*F(2).^3.*G(7)+2520.*F(1).^5.*F(2).*F(3).*G(7)+210.*F(1).^6.*F(4).*G(7)+45.*F(2).*G(2).*F(8)+45.*F(1).^2.*G(3).*F(8)+630.*F(1).^6.*F(2).^2.*G(8)+120.*F(1).^7.*F(3).*G(8)+10.*F(1).*G(2).*F(9)+45.*F(1).^8.*F(2).*G(9)+G(1).*F(10))./F(1).^10;
+
+
+G(11)=-(6930.*F(2).*G(3).*F(4).*F(5)+6930.*F(2).^3.*G(4).*F(5)+15400.*F(3).^3.*(F(2).*G(4)+F(1).^2.*G(5))+462.*G(2).*F(5).*F(6)+990.*F(2).^2.*G(3).*F(7)+330.*G(2).*F(4).*F(7)+330.*F(1).^4.*(21.*F(2).*F(5).*G(6)+G(5).*F(7))+462.*F(1).^6.*F(5).*G(7)+4620.*F(3).^2.*(G(3).*F(5)+5.*F(1).*(F(4).*G(4)+3.*F(2).^2.*G(5))+10.*F(1).^3.*F(2).*G(6)+F(1).^5.*G(7))+165.*F(1).^3.*(35.*F(4).^2.*G(5)+28.*F(2).*G(5).*F(6)+210.*F(2).^2.*F(4).*G(6)+105.*F(2).^4.*G(7)+G(4).*F(8))+462.*F(1).^5.*(F(6).*G(6)+15.*(F(2).*F(4).*G(7)+F(2).^3.*G(8)))+55.*F(2).*G(2).*F(9)+55.*F(1).^2.*(126.*F(4).*G(4).*F(5)+378.*F(2).^2.*F(5).*G(5)+36.*F(2).*G(4).*F(7)+G(3).*F(9))+165.*F(3).*(105.*F(2).^4.*G(5)+56.*F(1).^3.*F(5).*G(5)+28.*F(1).^2.*G(4).*F(6)+420.*F(1).^2.*F(2).^3.*G(6)+70.*F(1).^4.*F(4).*G(6)+G(3).*(35.*F(4).^2+28.*F(2).*F(6)+8.*F(1).*F(7))+210.*F(2).^2.*(F(4).*G(4)+F(1).^4.*G(7))+G(2).*F(8)+28.*F(1).*F(2).*(6.*G(4).*F(5)+15.*F(1).*F(4).*G(5)+F(1).^5.*G(8))+F(1).^8.*G(9))+330.*F(1).^7.*(F(4).*G(8)+3.*F(2).^2.*G(9))+11.*F(1).*(3150.*F(2).^3.*F(4).*G(5)+630.*F(2).^2.*G(4).*F(6)+42.*G(3).*(3.*F(5).^2+5.*F(4).*F(6))+945.*F(2).^5.*G(6)+45.*F(2).*(35.*F(4).^2.*G(4)+G(3).*F(8))+G(2).*F(10))+55.*F(1).^9.*F(2).*G(10)+G(1).*F(11))./F(1).^11;
+
+
+G(12)=-(15400.*F(3).^4.*G(4)+51975.*F(2).^2.*F(4).^2.*G(4)+83160.*F(1).*F(2).*F(4).*G(4).*F(5)+8316.*F(1).^2.*G(4).*F(5).^2+51975.*F(2).^4.*F(4).*G(5)+103950.*F(1).^2.*F(2).*F(4).^2.*G(5)+83160.*F(1).*F(2).^3.*F(5).*G(5)+27720.*F(1).^3.*F(4).*F(5).*G(5)+13860.*F(2).^3.*G(4).*F(6)+13860.*F(1).^2.*F(4).*G(4).*F(6)+41580.*F(1).^2.*F(2).^2.*G(5).*F(6)+462.*G(2).*F(6).^2+10395.*F(2).^6.*G(6)+207900.*F(1).^2.*F(2).^3.*F(4).*G(6)+17325.*F(1).^4.*F(4).^2.*G(6)+83160.*F(1).^3.*F(2).^2.*F(5).*G(6)+13860.*F(1).^4.*F(2).*F(6).*G(6)+61600.*F(3).^3.*(3.*F(1).*F(2).*G(5)+F(1).^3.*G(6))+11880.*F(1).*F(2).^2.*G(4).*F(7)+792.*G(2).*F(5).*F(7)+7920.*F(1).^3.*F(2).*G(5).*F(7)+792.*F(1).^5.*G(6).*F(7)+62370.*F(1).^2.*F(2).^5.*G(7)+103950.*F(1).^4.*F(2).^2.*F(4).*G(7)+16632.*F(1).^5.*F(2).*F(5).*G(7)+924.*F(1).^6.*F(6).*G(7)+495.*G(2).*F(4).*F(8)+2970.*F(1).^2.*F(2).*G(4).*F(8)+495.*F(1).^4.*G(5).*F(8)+51975.*F(1).^4.*F(2).^4.*G(8)+13860.*F(1).^6.*F(2).*F(4).*G(8)+792.*F(1).^7.*F(5).*G(8)+9240.*F(3).^2.*(15.*F(2).^3.*G(5)+45.*F(1).^2.*F(2).^2.*G(6)+15.*F(2).*(F(4).*G(4)+F(1).^4.*G(7))+F(1).*(6.*G(4).*F(5)+15.*F(1).*F(4).*G(5)+F(1).^5.*G(8)))+220.*F(1).^3.*G(4).*F(9)+13860.*F(1).^6.*F(2).^3.*G(9)+495.*F(1).^8.*F(4).*G(9)+66.*F(2).*G(2).*F(10)+33.*G(3).*(175.*F(4).^3+280.*F(3).^2.*F(6)+60.*F(4).*(14.*F(3).*F(5)+7.*F(2).*F(6)+2.*F(1).*F(7))+45.*F(2).^2.*F(8)+60.*F(1).*F(3).*F(8)+4.*F(2).*(63.*F(5).^2+60.*F(3).*F(7)+5.*F(1).*F(9))+2.*F(1).*(84.*F(5).*F(6)+F(1).*F(10)))+1485.*F(1).^8.*F(2).^2.*G(10)+220.*F(3).*(378.*F(2).^2.*G(4).*F(5)+126.*F(1).^4.*F(5).*G(6)+63.*F(1).*(5.*F(4).^2.*G(4)+30.*F(2).^2.*F(4).*G(5)+4.*F(2).*G(4).*F(6)+15.*F(2).^4.*G(6))+36.*F(1).^2.*(21.*F(2).*F(5).*G(5)+G(4).*F(7))+84.*F(1).^3.*(G(5).*F(6)+15.*(F(2).*F(4).*G(6)+F(2).^3.*G(7)))+126.*F(1).^5.*(F(4).*G(7)+3.*F(2).^2.*G(8))+G(2).*F(9)+36.*F(1).^7.*F(2).*G(9)+F(1).^9.*G(10))+12.*F(1).*G(2).*F(11)+66.*F(1).^10.*F(2).*G(11)+G(1).*F(12))./F(1).^12;
+
+
+G(13)=-(45045.*G(3).*F(4).^2.*F(5)+270270.*F(2).^2.*F(4).*G(4).*F(5)+200200.*F(1).*F(3).^4.*G(5)+135135.*F(2).^4.*F(5).*G(5)+36036.*F(2).*G(3).*F(5).*F(6)+25740.*F(2).*G(3).*F(4).*F(7)+25740.*F(2).^3.*G(4).*F(7)+1716.*G(2).*F(6).*F(7)+200200.*F(3).^3.*(F(4).*G(4)+3.*F(2).^2.*G(5)+6.*F(1).^2.*F(2).*G(6)+F(1).^4.*G(7))+1287.*G(2).*F(5).*F(8)+1716.*F(1).^6.*(F(7).*G(7)+21.*F(2).*F(5).*G(8))+2145.*F(2).^2.*G(3).*F(9)+715.*G(2).*F(4).*F(9)+715.*F(1).^4.*(126.*F(4).*F(5).*G(6)+36.*F(2).*G(6).*F(7)+378.*F(2).^2.*F(5).*G(7)+G(5).*F(9))+1287.*F(1).^8.*F(5).*G(9)+17160.*F(3).^2.*(21.*F(1).^2.*F(5).*G(5)+7.*F(1).*G(4).*F(6)+105.*F(1).*F(2).^3.*G(6)+35.*F(1).^3.*F(4).*G(6)+G(3).*F(7)+105.*F(1).^3.*F(2).^2.*G(7)+21.*F(2).*(G(4).*F(5)+5.*F(1).*F(4).*G(5)+F(1).^5.*G(8))+F(1).^7.*G(9))+1287.*F(1).^5.*(35.*F(4).^2.*G(7)+28.*F(2).*F(6).*G(7)+G(6).*F(8)+210.*F(2).^2.*F(4).*G(8)+105.*F(2).^4.*G(9))+286.*F(1).^3.*(126.*F(5).^2.*G(5)+1575.*F(2).*F(4).^2.*G(6)+630.*F(2).^2.*F(6).*G(6)+210.*F(4).*(G(5).*F(6)+15.*F(2).^3.*G(7))+45.*F(2).*G(5).*F(8)+945.*F(2).^5.*G(8)+G(4).*F(10))+1716.*F(1).^7.*(F(6).*G(8)+15.*(F(2).*F(4).*G(9)+F(2).^3.*G(10)))+78.*F(2).*G(2).*F(11)+78.*F(1).^2.*(6930.*F(2).^3.*F(5).*G(6)+990.*F(2).^2.*G(5).*F(7)+66.*G(4).*(7.*F(5).*F(6)+5.*F(4).*F(7))+55.*F(2).*(126.*F(4).*F(5).*G(5)+G(4).*F(9))+G(3).*F(11))+286.*F(3).*(126.*G(3).*F(5).^2+210.*G(3).*F(4).*F(6)+945.*F(2).^5.*G(6)+210.*F(1).^4.*F(6).*G(6)+120.*F(1).^3.*G(5).*F(7)+4725.*F(1).^2.*F(2).^4.*G(7)+252.*F(1).^5.*F(5).*G(7)+45.*F(1).^2.*(35.*F(4).^2.*G(5)+G(4).*F(8))+210.*F(1).^6.*F(4).*G(8)+3150.*F(2).^3.*(F(4).*G(5)+F(1).^4.*G(8))+10.*F(1).*(126.*F(4).*G(4).*F(5)+G(3).*F(9))+630.*F(2).^2.*(6.*F(1).*F(5).*G(5)+G(4).*F(6)+15.*F(1).^2.*F(4).*G(6)+F(1).^6.*G(9))+G(2).*F(10)+45.*F(2).*(35.*F(4).^2.*G(4)+28.*F(1).^2.*G(5).*F(6)+56.*F(1).^3.*F(5).*G(6)+8.*F(1).*G(4).*F(7)+70.*F(1).^4.*F(4).*G(7)+G(3).*F(8)+F(1).^8.*G(10))+F(1).^10.*G(11))+715.*F(1).^9.*(F(4).*G(10)+3.*F(2).^2.*G(11))+13.*F(1).*(5775.*F(4).^3.*G(4)+51975.*F(2).^2.*F(4).^2.*G(5)+13860.*F(2).^3.*G(5).*F(6)+462.*G(3).*F(6).^2+792.*G(3).*F(5).*F(7)+10395.*F(2).^6.*G(7)+1485.*F(2).^2.*G(4).*F(8)+495.*F(4).*(28.*F(2).*G(4).*F(6)+105.*F(2).^4.*G(6)+G(3).*F(8))+66.*F(2).*(126.*G(4).*F(5).^2+G(3).*F(10))+G(2).*F(12))+78.*F(1).^11.*F(2).*G(12)+G(1).*F(13))./F(1).^13;
+
+
+G(14)=-(630630.*F(1).*F(4).^2.*G(4).*F(5)+126126.*G(3).*F(4).*F(5).^2+525525.*F(1).^2.*F(4).^3.*G(5)+105105.*G(3).*F(4).^2.*F(6)+168168.*F(1).^3.*F(5).*G(5).*F(6)+42042.*F(1).^2.*G(4).*F(6).^2+126126.*F(1).^4.*F(5).^2.*G(6)+210210.*F(1).^4.*F(4).*F(6).*G(6)+1401400.*F(3).^4.*(F(2).*G(5)+F(1).^2.*G(6))+72072.*F(1).^2.*G(4).*F(5).*F(7)+120120.*F(1).^3.*F(4).*G(5).*F(7)+24024.*F(1).*G(3).*F(6).*F(7)+1716.*G(2).*F(7).^2+135135.*F(2).^7.*G(7)+252252.*F(1).^5.*F(4).*F(5).*G(7)+45045.*F(1).^2.*F(4).*G(4).*F(8)+18018.*F(1).*G(3).*F(5).*F(8)+3003.*G(2).*F(6).*F(8)+3003.*F(1).^6.*G(7).*F(8)+945945.*F(1).^2.*F(2).^6.*G(8)+105105.*F(1).^6.*F(4).^2.*G(8)+3432.*F(1).^7.*F(7).*G(8)+560560.*F(3).^3.*(G(4).*F(5)+F(1).*(5.*F(4).*G(5)+15.*F(2).^2.*G(6)+10.*F(1).^2.*F(2).*G(7)+F(1).^4.*G(8)))+10010.*F(1).*G(3).*F(4).*F(9)+2002.*G(2).*F(5).*F(9)+2002.*F(1).^5.*G(6).*F(9)+3003.*F(1).^8.*F(6).*G(9)+945945.*F(2).^5.*(F(4).*G(6)+F(1).^4.*G(9))+1001.*G(2).*F(4).*F(10)+1001.*F(1).^4.*G(5).*F(10)+2002.*F(1).^9.*F(5).*G(10)+30030.*F(3).^2.*(35.*F(4).^2.*G(4)+28.*F(2).*G(4).*F(6)+105.*F(2).^4.*G(6)+56.*F(1).^3.*F(5).*G(6)+8.*F(1).*(21.*F(2).*F(5).*G(5)+G(4).*F(7))+70.*F(4).*(3.*F(2).^2.*G(5)+6.*F(1).^2.*F(2).*G(6)+F(1).^4.*G(7))+28.*F(1).^2.*(G(5).*F(6)+15.*F(2).^3.*G(7))+G(3).*F(8)+210.*F(1).^4.*F(2).^2.*G(8)+28.*F(1).^6.*F(2).*G(9)+F(1).^8.*G(10))+315315.*F(2).^4.*(G(5).*F(6)+F(1).*(6.*F(5).*G(6)+15.*F(1).*F(4).*G(7)+F(1).^5.*G(10)))+364.*F(1).^3.*G(4).*F(11)+1001.*F(1).^10.*F(4).*G(11)+45045.*F(2).^3.*(35.*F(4).^2.*G(5)+28.*F(1).^2.*F(6).*G(6)+8.*F(1).*G(5).*F(7)+56.*F(1).^3.*F(5).*G(7)+G(4).*F(8)+70.*F(1).^4.*F(4).*G(8)+F(1).^8.*G(11))+91.*F(1).^2.*G(3).*F(12)+3003.*F(2).^2.*(1260.*F(1).*F(4).*F(5).*G(5)+120.*F(1).^3.*G(6).*F(7)+210.*F(1).^4.*F(6).*G(7)+45.*F(1).^2.*(35.*F(4).^2.*G(6)+G(5).*F(8))+252.*F(1).^5.*F(5).*G(8)+2.*G(4).*(63.*F(5).^2+105.*F(4).*F(6)+5.*F(1).*F(9))+210.*F(1).^6.*F(4).*G(9)+G(3).*F(10)+F(1).^10.*G(12))+364.*F(3).*(462.*G(3).*F(5).*F(6)+330.*G(3).*F(4).*F(7)+330.*F(1).^4.*G(6).*F(7)+10395.*F(1).*F(2).^5.*G(7)+462.*F(1).^5.*F(6).*G(7)+165.*F(1).^3.*(35.*F(4).^2.*G(6)+G(5).*F(8))+17325.*F(1).^3.*F(2).^4.*G(8)+462.*F(1).^6.*F(5).*G(8)+55.*F(1).^2.*(126.*F(4).*F(5).*G(5)+G(4).*F(9))+330.*F(1).^7.*F(4).*G(9)+6930.*F(2).^3.*(F(5).*G(5)+5.*F(1).*F(4).*G(6)+F(1).^5.*G(9))+11.*F(1).*(42.*G(4).*(3.*F(5).^2+5.*F(4).*F(6))+G(3).*F(10))+990.*F(2).^2.*(7.*F(1).*G(5).*F(6)+21.*F(1).^2.*F(5).*G(6)+G(4).*F(7)+35.*F(1).^3.*F(4).*G(7)+F(1).^7.*G(10))+G(2).*F(11)+55.*F(2).*(315.*F(1).*F(4).^2.*G(5)+84.*F(1).^3.*F(6).*G(6)+36.*F(1).^2.*G(5).*F(7)+126.*F(1).^4.*F(5).*G(7)+9.*F(1).*G(4).*F(8)+126.*F(4).*(G(4).*F(5)+F(1).^5.*G(8))+G(3).*F(9)+F(1).^9.*G(11))+F(1).^11.*G(12))+14.*F(1).*G(2).*F(13)+91.*F(2).*(5775.*F(4).^3.*G(4)+462.*G(3).*F(6).^2+792.*G(3).*F(5).*F(7)+17325.*F(1).^4.*F(4).^2.*G(7)+792.*F(1).^5.*F(7).*G(7)+495.*F(1).^4.*G(6).*F(8)+924.*F(1).^6.*F(6).*G(8)+220.*F(1).^3.*G(5).*F(9)+792.*F(1).^7.*F(5).*G(9)+66.*F(1).^2.*(126.*F(5).^2.*G(5)+G(4).*F(10))+495.*F(4).*(28.*F(1).^2.*G(5).*F(6)+56.*F(1).^3.*F(5).*G(6)+8.*F(1).*G(4).*F(7)+G(3).*F(8)+F(1).^8.*G(10))+12.*F(1).*(462.*G(4).*F(5).*F(6)+G(3).*F(11))+G(2).*F(12)+F(1).^12.*G(13))+G(1).*F(14))./F(1).^14;
+
+
+G(15)=-(1891890.*F(1).*F(4).*G(4).*F(5).^2+126126.*G(3).*F(5).^3+1401400.*F(3).^5.*G(5)+4729725.*F(1).^2.*F(4).^2.*F(5).*G(5)+1576575.*F(1).*F(4).^2.*G(4).*F(6)+630630.*G(3).*F(4).*F(5).*F(6)+210210.*F(1).^3.*G(5).*F(6).^2+2627625.*F(1).^3.*F(4).^3.*G(6)+630630.*F(1).^4.*F(5).*F(6).*G(6)+225225.*G(3).*F(4).^2.*F(7)+360360.*F(1).^3.*F(5).*G(5).*F(7)+180180.*F(1).^2.*G(4).*F(6).*F(7)+450450.*F(1).^4.*F(4).*G(6).*F(7)+25740.*F(1).*G(3).*F(7).^2+378378.*F(1).^5.*F(5).^2.*G(7)+630630.*F(1).^5.*F(4).*F(6).*G(7)+7007000.*F(3).^4.*(3.*F(1).*F(2).*G(6)+F(1).^3.*G(7))+135135.*F(1).^2.*G(4).*F(5).*F(8)+225225.*F(1).^3.*F(4).*G(5).*F(8)+45045.*F(1).*G(3).*F(6).*F(8)+6435.*G(2).*F(7).*F(8)+2027025.*F(1).*F(2).^7.*G(8)+630630.*F(1).^6.*F(4).*F(5).*G(8)+6435.*F(1).^7.*F(8).*G(8)+75075.*F(1).^2.*F(4).*G(4).*F(9)+30030.*F(1).*G(3).*F(5).*F(9)+5005.*G(2).*F(6).*F(9)+5005.*F(1).^6.*G(7).*F(9)+4729725.*F(1).^3.*F(2).^6.*G(9)+225225.*F(1).^7.*F(4).^2.*G(9)+6435.*F(1).^8.*F(7).*G(9)+1401400.*F(3).^3.*(6.*F(1).*F(5).*G(5)+G(4).*F(6)+15.*F(2).^3.*G(6)+15.*F(1).^2.*F(4).*G(6)+45.*F(1).^2.*F(2).^2.*G(7)+15.*F(2).*(F(4).*G(5)+F(1).^4.*G(8))+F(1).^6.*G(9))+15015.*F(1).*G(3).*F(4).*F(10)+3003.*G(2).*F(5).*F(10)+3003.*F(1).^5.*G(6).*F(10)+5005.*F(1).^9.*F(6).*G(10)+2837835.*F(2).^5.*(F(5).*G(6)+5.*F(1).*F(4).*G(7)+F(1).^5.*G(10))+1365.*G(2).*F(4).*F(11)+1365.*F(1).^4.*G(5).*F(11)+3003.*F(1).^10.*F(5).*G(11)+675675.*F(2).^4.*(7.*F(1).*F(6).*G(6)+G(5).*F(7)+21.*F(1).^2.*F(5).*G(7)+35.*F(1).^3.*F(4).*G(8)+F(1).^7.*G(11))+50050.*F(3).^2.*(315.*F(1).*F(4).^2.*G(5)+84.*F(1).^3.*F(6).*G(6)+36.*F(1).^2.*G(5).*F(7)+945.*F(1).*F(2).^4.*G(7)+126.*F(1).^4.*F(5).*G(7)+9.*F(1).*G(4).*F(8)+1260.*F(1).^3.*F(2).^3.*G(8)+126.*F(4).*(G(4).*F(5)+15.*F(1).*F(2).^2.*G(6)+10.*F(1).^3.*F(2).*G(7)+F(1).^5.*G(8))+G(3).*F(9)+378.*F(2).^2.*(F(5).*G(5)+F(1).^5.*G(9))+36.*F(2).*(7.*F(1).*G(5).*F(6)+21.*F(1).^2.*F(5).*G(6)+G(4).*F(7)+F(1).^7.*G(10))+F(1).^9.*G(11))+455.*F(1).^3.*G(4).*F(12)+1365.*F(1).^11.*F(4).*G(12)+75075.*F(2).^3.*(315.*F(1).*F(4).^2.*G(6)+36.*F(1).^2.*G(6).*F(7)+84.*F(1).^3.*F(6).*G(7)+9.*F(1).*G(5).*F(8)+126.*F(1).^4.*F(5).*G(8)+G(4).*F(9)+126.*F(4).*(F(5).*G(5)+F(1).^5.*G(9))+F(1).^9.*G(12))+105.*F(1).^2.*G(3).*F(13)+4095.*F(2).^2.*(66.*G(4).*(7.*F(5).*F(6)+5.*F(4).*F(7))+330.*F(1).^4.*F(7).*G(7)+165.*F(1).^3.*(35.*F(4).^2.*G(7)+G(6).*F(8))+462.*F(1).^5.*F(6).*G(8)+55.*F(1).^2.*(126.*F(4).*F(5).*G(6)+G(5).*F(9))+462.*F(1).^6.*F(5).*G(9)+11.*F(1).*(126.*F(5).^2.*G(5)+210.*F(4).*G(5).*F(6)+G(4).*F(10))+330.*F(1).^7.*F(4).*G(10)+G(3).*F(11)+F(1).^11.*G(13))+455.*F(3).*(5775.*F(4).^3.*G(4)+8316.*F(1).^2.*F(5).^2.*G(5)+5544.*F(1).*G(4).*F(5).*F(6)+462.*G(3).*F(6).^2+792.*G(3).*F(5).*F(7)+10395.*F(2).^6.*G(7)+792.*F(1).^5.*F(7).*G(7)+17325.*F(4).^2.*(3.*F(2).^2.*G(5)+6.*F(1).^2.*F(2).*G(6)+F(1).^4.*G(7))+495.*F(1).^4.*G(6).*F(8)+62370.*F(1).^2.*F(2).^5.*G(8)+924.*F(1).^6.*F(6).*G(8)+220.*F(1).^3.*G(5).*F(9)+51975.*F(1).^4.*F(2).^4.*G(9)+792.*F(1).^7.*F(5).*G(9)+66.*F(1).^2.*G(4).*F(10)+13860.*F(2).^3.*(G(5).*F(6)+6.*F(1).*F(5).*G(6)+F(1).^6.*G(10))+495.*F(4).*(28.*F(2).*G(4).*F(6)+105.*F(2).^4.*G(6)+56.*F(1).^3.*F(5).*G(6)+8.*F(1).*(21.*F(2).*F(5).*G(5)+G(4).*F(7))+28.*F(1).^2.*(G(5).*F(6)+15.*F(2).^3.*G(7))+G(3).*F(8)+210.*F(1).^4.*F(2).^2.*G(8)+28.*F(1).^6.*F(2).*G(9)+F(1).^8.*G(10))+12.*F(1).*G(3).*F(11)+1485.*F(2).^2.*(28.*F(1).^2.*F(6).*G(6)+8.*F(1).*G(5).*F(7)+56.*F(1).^3.*F(5).*G(7)+G(4).*F(8)+F(1).^8.*G(11))+G(2).*F(12)+66.*F(2).*(120.*F(1).^3.*G(6).*F(7)+210.*F(1).^4.*F(6).*G(7)+45.*F(1).^2.*G(5).*F(8)+252.*F(1).^5.*F(5).*G(8)+2.*G(4).*(63.*F(5).^2+5.*F(1).*F(9))+G(3).*F(10)+F(1).^10.*G(12))+F(1).^12.*G(13))+15.*F(1).*G(2).*F(14)+105.*F(2).*(75075.*F(1).*F(4).^3.*G(5)+1716.*G(3).*F(6).*F(7)+1287.*G(3).*F(5).*F(8)+1287.*F(1).^5.*G(7).*F(8)+1716.*F(1).^6.*F(7).*G(8)+45045.*F(4).^2.*(G(4).*F(5)+F(1).^5.*G(8))+715.*F(1).^4.*G(6).*F(9)+1716.*F(1).^7.*F(6).*G(9)+286.*F(1).^3.*(126.*F(5).^2.*G(6)+G(5).*F(10))+1287.*F(1).^8.*F(5).*G(10)+78.*F(1).^2.*(462.*F(5).*G(5).*F(6)+G(4).*F(11))+715.*F(4).*(84.*F(1).^3.*F(6).*G(6)+36.*F(1).^2.*G(5).*F(7)+126.*F(1).^4.*F(5).*G(7)+9.*F(1).*G(4).*F(8)+G(3).*F(9)+F(1).^9.*G(11))+13.*F(1).*(66.*G(4).*(7.*F(6).^2+12.*F(5).*F(7))+G(3).*F(12))+G(2).*F(13)+F(1).^13.*G(14))+G(1).*F(15))./F(1).^15;
+
+
+G(16)=-(2627625.*F(4).^4.*G(4)+2018016.*F(1).*G(4).*F(5).^3+15135120.*F(2).^3.*F(5).^2.*G(5)+1009008.*G(3).*F(5).^2.*F(6)+30270240.*F(1).*F(2).^2.*F(5).*G(5).*F(6)+2522520.*F(2).^2.*G(4).*F(6).^2+5045040.*F(1).^2.*F(2).*G(5).*F(6).^2+22422400.*F(1).*F(3).^5.*G(6)+45405360.*F(1).^2.*F(2).^2.*F(5).^2.*G(6)+7567560.*F(2).^5.*F(6).*G(6)+20180160.*F(1).^3.*F(2).*F(5).*F(6).*G(6)+840840.*F(1).^4.*F(6).^2.*G(6)+4324320.*F(2).^2.*G(4).*F(5).*F(7)+8648640.*F(1).^2.*F(2).*F(5).*G(5).*F(7)+2882880.*F(1).*F(2).*G(4).*F(6).*F(7)+960960.*F(1).^3.*G(5).*F(6).*F(7)+10810800.*F(1).*F(2).^4.*G(6).*F(7)+1441440.*F(1).^4.*F(5).*G(6).*F(7)+205920.*F(2).*G(3).*F(7).^2+205920.*F(1).^2.*G(4).*F(7).^2+45405360.*F(1).*F(2).^5.*F(5).*G(7)+15135120.*F(1).^4.*F(2).*F(5).^2.*G(7)+37837800.*F(1).^2.*F(2).^4.*F(6).*G(7)+2018016.*F(1).^5.*F(5).*F(6).*G(7)+14414400.*F(1).^3.*F(2).^3.*F(7).*G(7)+10510500.*F(4).^3.*(3.*F(2).^2.*G(5)+4.*F(1).*F(3).*G(5)+6.*F(1).^2.*F(2).*G(6)+F(1).^4.*G(7))+2162160.*F(1).*F(2).*G(4).*F(5).*F(8)+1351350.*F(2).^4.*G(5).*F(8)+720720.*F(1).^3.*F(5).*G(5).*F(8)+360360.*F(2).*G(3).*F(6).*F(8)+360360.*F(1).^2.*G(4).*F(6).*F(8)+5405400.*F(1).^2.*F(2).^3.*G(6).*F(8)+102960.*F(1).*G(3).*F(7).*F(8)+2702700.*F(1).^4.*F(2).^2.*G(7).*F(8)+6435.*G(2).*F(8).^2+2027025.*F(2).^8.*G(8)+75675600.*F(1).^3.*F(2).^4.*F(5).*G(8)+1009008.*F(1).^6.*F(5).^2.*G(8)+25225200.*F(1).^4.*F(2).^3.*F(6).*G(8)+4324320.*F(1).^5.*F(2).^2.*F(7).*G(8)+360360.*F(1).^6.*F(2).*F(8).*G(8)+28028000.*F(3).^4.*(3.*F(2).^2.*G(6)+6.*F(1).^2.*F(2).*G(7)+F(1).^4.*G(8))+240240.*F(2).*G(3).*F(5).*F(9)+240240.*F(1).^2.*G(4).*F(5).*F(9)+1201200.*F(1).*F(2).^3.*G(5).*F(9)+80080.*F(1).*G(3).*F(6).*F(9)+1201200.*F(1).^3.*F(2).^2.*G(6).*F(9)+11440.*G(2).*F(7).*F(9)+240240.*F(1).^5.*F(2).*G(7).*F(9)+11440.*F(1).^7.*G(8).*F(9)+16216200.*F(1).^2.*F(2).^7.*G(9)+30270240.*F(1).^5.*F(2).^3.*F(5).*G(9)+5045040.*F(1).^6.*F(2).^2.*F(6).*G(9)+411840.*F(1).^7.*F(2).*F(7).*G(9)+12870.*F(1).^8.*F(8).*G(9)+120120.*F(2).^3.*G(4).*F(10)+48048.*F(1).*G(3).*F(5).*F(10)+360360.*F(1).^2.*F(2).^2.*G(5).*F(10)+8008.*G(2).*F(6).*F(10)+120120.*F(1).^4.*F(2).*G(6).*F(10)+8008.*F(1).^6.*G(7).*F(10)+18918900.*F(1).^4.*F(2).^6.*G(10)+4324320.*F(1).^7.*F(2).^2.*F(5).*G(10)+360360.*F(1).^8.*F(2).*F(6).*G(10)+11440.*F(1).^9.*F(7).*G(10)+3203200.*F(3).^3.*(7.*F(1).*G(5).*F(6)+21.*F(1).^2.*F(5).*G(6)+G(4).*F(7)+105.*F(1).*F(2).^3.*G(7)+105.*F(1).^3.*F(2).^2.*G(8)+21.*F(2).*(F(5).*G(5)+F(1).^5.*G(9))+F(1).^7.*G(10))+450450.*F(4).^2.*(28.*F(2).*G(4).*F(6)+105.*F(2).^4.*G(6)+56.*F(1).^3.*F(5).*G(6)+280.*F(3).^2.*(F(2).*G(5)+F(1).^2.*G(6))+8.*F(1).*(21.*F(2).*F(5).*G(5)+G(4).*F(7))+28.*F(1).^2.*(G(5).*F(6)+15.*F(2).^3.*G(7))+G(3).*F(8)+210.*F(1).^4.*F(2).^2.*G(8)+56.*F(3).*(G(4).*F(5)+15.*F(1).*F(2).^2.*G(6)+10.*F(1).^3.*F(2).*G(7)+F(1).^5.*G(8))+28.*F(1).^6.*F(2).*G(9)+F(1).^8.*G(10))+65520.*F(1).*F(2).^2.*G(4).*F(11)+4368.*G(2).*F(5).*F(11)+43680.*F(1).^3.*F(2).*G(5).*F(11)+4368.*F(1).^5.*G(6).*F(11)+7567560.*F(1).^6.*F(2).^5.*G(11)+240240.*F(1).^9.*F(2).*F(5).*G(11)+8008.*F(1).^10.*F(6).*G(11)+5460.*F(2).^2.*G(3).*F(12)+10920.*F(1).^2.*F(2).*G(4).*F(12)+1820.*F(1).^4.*G(5).*F(12)+1351350.*F(1).^8.*F(2).^4.*G(12)+4368.*F(1).^11.*F(5).*G(12)+80080.*F(3).^2.*(120.*F(1).^3.*G(6).*F(7)+945.*F(2).^5.*G(7)+210.*F(1).^4.*F(6).*G(7)+45.*F(1).^2.*G(5).*F(8)+4725.*F(1).^2.*F(2).^4.*G(8)+252.*F(1).^5.*F(5).*G(8)+G(4).*(126.*F(5).^2+45.*F(2).*F(8)+10.*F(1).*F(9))+3150.*F(1).^4.*F(2).^3.*G(9)+G(3).*F(10)+630.*F(2).^2.*(G(5).*F(6)+6.*F(1).*F(5).*G(6)+F(1).^6.*G(10))+45.*F(1).*F(2).*(28.*F(1).*F(6).*G(6)+8.*G(5).*F(7)+56.*F(1).^2.*F(5).*G(7)+F(1).^7.*G(11))+F(1).^10.*G(12))+1680.*F(1).*F(2).*G(3).*F(13)+560.*F(1).^3.*G(4).*F(13)+120120.*F(1).^10.*F(2).^3.*G(13)+1820.*F(4).*(15400.*F(3).^4.*G(5)+8316.*F(1).^2.*F(5).^2.*G(5)+5544.*F(1).*G(4).*F(5).*F(6)+462.*G(3).*F(6).^2+792.*G(3).*F(5).*F(7)+10395.*F(2).^6.*G(7)+61600.*F(1).^3.*F(3).^3.*G(7)+792.*F(1).^5.*F(7).*G(7)+495.*F(1).^4.*G(6).*F(8)+62370.*F(1).^2.*F(2).^5.*G(8)+924.*F(1).^6.*F(6).*G(8)+220.*F(1).^3.*G(5).*F(9)+792.*F(1).^7.*F(5).*G(9)+51975.*F(2).^4.*(4.*F(1).*F(3).*G(7)+F(1).^4.*G(9))+9240.*F(3).^2.*(6.*F(1).*F(5).*G(5)+G(4).*F(6)+F(1).^6.*G(9))+66.*F(1).^2.*G(4).*F(10)+13860.*F(2).^3.*(G(5).*F(6)+10.*F(3).^2.*G(6)+6.*F(1).*F(5).*G(6)+20.*F(1).^3.*F(3).*G(8)+F(1).^6.*G(10))+12.*F(1).*G(3).*F(11)+1485.*F(2).^2.*(28.*F(1).^2.*F(6).*G(6)+8.*F(1).*G(5).*F(7)+280.*F(1).^2.*F(3).^2.*G(7)+56.*F(1).^3.*F(5).*G(7)+G(4).*F(8)+56.*F(3).*(F(5).*G(5)+F(1).^5.*G(9))+F(1).^8.*G(11))+220.*F(3).*(84.*F(1).^3.*F(6).*G(6)+36.*F(1).^2.*G(5).*F(7)+126.*F(1).^4.*F(5).*G(7)+9.*F(1).*G(4).*F(8)+G(3).*F(9)+F(1).^9.*G(11))+G(2).*F(12)+66.*F(2).*(280.*F(1).*(3.*F(3).*G(5).*F(6)+10.*F(3).^3.*G(6))+120.*F(1).^3.*G(6).*F(7)+45.*F(1).^2.*(56.*F(3).*F(5).*G(6)+G(5).*F(8))+252.*F(1).^5.*F(5).*G(8)+210.*F(1).^4.*(F(6).*G(7)+10.*F(3).^2.*G(8))+2.*G(4).*(63.*F(5).^2+60.*F(3).*F(7)+5.*F(1).*F(9))+G(3).*F(10)+120.*F(1).^7.*F(3).*G(10)+F(1).^10.*G(12))+F(1).^12.*G(13))+120.*F(2).*G(2).*F(14)+120.*F(1).^2.*G(3).*F(14)+5460.*F(1).^12.*F(2).^2.*G(14)+560.*F(3).*(135135.*F(2).^4.*F(5).*G(6)+25740.*F(2).^3.*G(5).*F(7)+1716.*G(3).*F(6).*F(7)+1287.*G(3).*F(5).*F(8)+2145.*F(2).^2.*G(4).*F(9)+715.*F(1).^4.*(36.*F(2).*F(7).*G(7)+378.*F(2).^2.*F(5).*G(8)+G(6).*F(9))+1716.*F(1).^6.*(F(7).*G(8)+21.*F(2).*F(5).*G(9))+286.*F(1).^3.*(126.*F(5).^2.*G(6)+630.*F(2).^2.*F(6).*G(7)+45.*F(2).*G(6).*F(8)+945.*F(2).^5.*G(9)+G(5).*F(10))+1287.*F(1).^8.*F(5).*G(10)+1287.*F(1).^5.*(G(7).*F(8)+28.*F(2).*F(6).*G(8)+105.*F(2).^4.*G(10))+78.*F(2).*(462.*G(4).*F(5).*F(6)+G(3).*F(11))+78.*F(1).^2.*(990.*F(2).^2.*G(6).*F(7)+462.*F(5).*(G(5).*F(6)+15.*F(2).^3.*G(7))+55.*F(2).*G(5).*F(9)+G(4).*F(11))+1716.*F(1).^7.*(F(6).*G(9)+15.*F(2).^3.*G(11))+13.*F(1).*(13860.*F(2).^3.*F(6).*G(6)+66.*G(4).*(7.*F(6).^2+12.*F(5).*F(7))+1485.*F(2).^2.*G(5).*F(8)+10395.*F(2).^6.*G(8)+66.*F(2).*(126.*F(5).^2.*G(5)+G(4).*F(10))+G(3).*F(12))+2145.*F(1).^9.*F(2).^2.*G(12)+G(2).*F(13)+78.*F(1).^11.*F(2).*G(13)+F(1).^13.*G(14))+16.*F(1).*G(2).*F(15)+120.*F(1).^14.*F(2).*G(15)+G(1).*F(16))./F(1).^16;
+
+
+
+end
+
+</code></pre></div></div>
+
+			
+									
+									<div id="sig885055" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+					<div class="post has-profile">
+		<a class="st-anchor" id="p885060">&nbsp;</a>
+				<div class="inner">
+
+		<dl class="postprofile" id="profile885060">
+			
+			<dt class="avatar-container">
+													<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="avatar"><img class="avatar" src="./images/avatars/gallery/default.gif" width="38" height="51" alt="User avatar" /></a>											</dt>
+			
+			<dt class="profile-main no-profile-rank">
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2792&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="username">Amin</a><span class="has-tooltip user-status-indicator" title="Offline"></span>
+								
+							</dt>
+
+							<div class="topic-author-label"><span class="label label-info">Topic Author</span></div>
+			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2792&amp;sr=posts&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">3222</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> <span class="timestamp">July 14th, 2002, 3:00 am</span></dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content885060">
+
+			<h3 ><a href="#p885060">Re: Breakthrough in the theory of stochastic differential equations and their simulation</a></h3>
+
+							<ul class="post-buttons">
+																																	<li>
+						<a href="./posting.php?mode=quote&amp;p=885060&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="Reply with quote" class="button has-tooltip icon-button quote-icon"><span>Quote</span></a>
+					</li>
+												<li>
+					<a class="icon_post_target" href="#p885060" title="Post #2535">#2535</a>
+				</li>
+			</ul>
+				
+						<p class="author"><span class="timestamp">November 25th, 2024, 6:26 am</span></p>
+			
+			
+			
+			<div class="content">Friends, I frequently use Mathematica for Taylor series expansions, other series manipulation, related algebra and calculus and will suggest to younger people on the forum to make extensive use of mathematica for their research.<br>
+<br>
+I am attaching a PDF version of first page of very simple mathematica notebook that I used to calculate inverse function derivatives. If you are not perfectly oriented with inverse derivatives, Please make sure that you read first about them on wikipedia or some good book.<br>
+<br>
+In the following image, the first derivative is equated to one and rest are equated to zero. You have to do some algebra with the last term in derivatives expansion.<br>
+<br>
+<br>
+<a href="https://postimg.cc/Y4y51m6N" class="postlink" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/0Q891Yr4/Inverse-Function-Derivatives.png" class="postimage" alt="Image"></a></div>
+
+			
+									
+									<div id="sig885060" class="signature">You think life is a secret,  Life is only love of flying,  It has seen many ups and downs,  But it likes travel more than the destination.  Allama Iqbal</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+	
+	
+			</div>
+
+
+
+	<!--
+		<div class="right-side" style='text-align:right'>
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2e5acf6e8fe7ca9e13877f682ca55f9c" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2490" role="button">167</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" role="button">168</a></li>
+							<li class="active"><span>169</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" role="button">170</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2550" role="button">171</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+-->
+		
+
+<!--
+<div class="action-bar bottom">
+	<div class="buttons">
+			
+								<a href="./posting.php?mode=reply&amp;t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" class="btn btn-success btn-createnew" title="Post a reply">
+				<i class="fi fi-plus"></i> Post Reply
+			</a>
+					
+			<div class="dd-container topic-tools">
+		<span title="Topic tools" data-toggle="dropdown" class="btn btn-default" title="Topic tools"><i class="fi fi-settings"></i></span>
+		<ul class="dropdown-menu" role="menu">
+																		<li class="small-icon icon-print"><a href="./viewtopic.php?t=99702&amp;start=2520&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;view=print" title="Print view" accesskey="p"><i class="fi fi-printer"></i> Print view</a></li>					</ul>
+	</div>
+
+				
+			</div>
+
+			<div class="right-side">
+			 
+<ul class="pagination">
+	
+			<li class="dd-container dropdown-page-jump page-jump">
+			<a href="#" class="dropdown-trigger" title="Click to jump to page…" data-toggle="dropdown" role="button"><i class="fi fi-arrow-up"></i></a>
+			<div class="dropdown-menu page-jump-form" role="menu">
+				Jump to page:
+				<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="15" data-base-url=".&#x2F;viewtopic.php&#x3F;t&#x3D;99702&amp;amp&#x3B;sid&#x3D;2e5acf6e8fe7ca9e13877f682ca55f9c" data-start-name="start" />
+				<input class="button2" value="Go" type="button" />
+			</div>
+		</li>
+		
+					<li class="previous"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" rel="prev" role="button"><i class="fi fi-chevron-double-left"></i></a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c" role="button">1</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2490" role="button">167</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2505" role="button">168</a></li>
+							<li class="active"><span>169</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" role="button">170</a></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2550" role="button">171</a></li>
+							<li class="ellipsis" role="separator"><span>…</span></li>
+							<li><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2910" role="button">195</a></li>
+							<li class="next"><a href="./viewtopic.php?t=99702&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c&amp;start=2535" rel="next" role="button"><i class="fi fi-chevron-double-right"></i></a></li>
+				
+</ul>
+		</div>
+	</div>
+-->
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?t=99702&amp;start=2520&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<button type="submit" name="sort" value="Go" class="btn btn-link"><i class="fi fi-arrow-right"></i></button>
+			</fieldset>
+	</form>
+
+
+<!-- remove clutter
+<div class="hoverbox online-list">
+	<h3 class="block-header"><i class="fi fi-earth"></i> Who is online</h3>
+	<div class="block-content">Users browsing this forum: No registered users and 0 guests</div>
+</div>
+-->
+</div>
+</div>
+
+
+	
+	</div><!-- .container END -->
+
+<!-- patch: remove clutter
+		<div class="breadcrumbs-bar breadcrumbs-bar--bottom ">
+    <ol id="nav-breadcrumbs" class="nav-breadcrumbs" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb crumb--home" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" accesskey="h" data-navbar-reference="index"><span itemprop="name">Forum Index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="56"><a itemprop="item" href="./viewforum.php?f=56&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c"><span itemprop="name">Principal Discussion Forums</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a itemprop="item" href="./viewforum.php?f=4&amp;sid=2e5acf6e8fe7ca9e13877f682ca55f9c"><span itemprop="name">Technical Forum</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=2e5acf6e8fe7ca9e13877f682ca55f9c" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ol>
+</div>
+-->
+
+</div><!-- #page-body END -->
+
+
+		<footer id="page-footer" class="page-footer page-footer--basic">
+		<!-- xxINCLUDExx components/footer_basic.html -->
+			<div class="copyright">
+			<div class="container">
+			<div class="text-center">
+			&copy; All material, including contents and design, copyright Wilmott Electronic Media Limited | <a href="https://www.wilmott.com/privacy/">Privacy</a> |  <a href="https://wilmott.com/team-wilmott">About</a> | <a href="/cdn-cgi/l/email-protection#6e0f0a0307002e19070203011a1a400d0103">Contact us</a>
+									</div>
+			</div>
+		</div>
+			</footer>
+
+	</div><!-- #wrap END -->
+</div><!-- .oncanvas-content END -->
+</div><!-- .offcanvas-wrapper END -->
+
+<div class="hidden">
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+</div>
+
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+
+<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="javascript:void(0)" class="alert_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+		<div class="alert_text"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="./styles/wilmott2/theme/js/modernizr.custom.js?assets_version=650"></script>
+
+<script type="text/javascript" src="./styles/wilmott2/theme/bower_components/jquery/dist/jquery.min.js?assets_version=650"></script>
+
+	<script type="text/javascript" src="./styles/wilmott2/theme/js/sceditor/jquery.sceditor.bbcode.min.js"></script>
+	
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=650"></script>
+
+
+
+<script src="./styles/wilmott2/theme/js/main.min.js?assets_version=650"></script>
+
+
+<script>
+(function(){
+	var styleTag = document.getElementById('elementState_restore');
+
+	//restore alert states
+	for (var key in localStorage) {
+		if (key.indexOf('st_canvas_Alert_') == 0) {
+
+			var hidden 	= (localStorage[key]) ? true:false,
+					elm 		= document.getElementById(key.replace('st_canvas_Alert_',''));
+
+			if (elm && hidden) {
+				elm.style.display = 'none'
+				$(elm).data('hidden', true);
+			}
+
+		}
+	}
+	$('#page-body > .container > .alert').each(function(){
+		if (!$(this).data('hidden')) {
+			$(this).show();
+		}
+	})
+
+	if ($('body').hasClass('section-index')) {
+		var
+		catHead 	= $('.category-header'),
+		delay 		= parseFloat(catHead.css('transition-duration')) * 1000;
+
+		//animation-less collapse
+		catHead.css('transition','0s');
+		setTimeout(function(){
+			catHead.css('transition','')
+		},delay+100);
+
+		for(var key in localStorage){
+			if (key.indexOf('st_canvas_collapsible_') == 0) {
+				var $this = $('#'+key.replace('st_canvas_collapsible_', ''));
+
+				if (localStorage[key] == 'hidden') {
+					$this.removeClass('in').parent().addClass('collapsed');
+				}
+				else if (localStorage[key] == 'visible') {
+					$this.addClass('in').parent().removeClass('collapsed')
+				}
+			}
+		}
+
+	}
+
+	//import phpbb template variables ===========
+	phpbb.SCRIPT_NAME 				= "viewtopic".split('/')[0];
+	$('body').addClass('section-'+phpbb.SCRIPT_NAME)
+	phpbb.PER_PAGE 						= "15";
+	phpbb.ON_PAGE 						= "";
+	phpbb.PAGE_NUMBER 				= "Page <strong>169</strong> of <strong>195</strong>";
+	_st.themePath 						= "./styles/wilmott2/theme";
+	_st.THEMEPANEL_INSTALLED 	= true;
+	_st.THEMEPANEL_LINK 			= "/slickpanel?sid=2e5acf6e8fe7ca9e13877f682ca55f9c";
+	_st.THEMEPANEL_PAGE_LINK 	= "/slickpanel/page?sid=2e5acf6e8fe7ca9e13877f682ca55f9c";
+	_st.TOPIC_SOLVED_STYLE = '';
+	_st.TOPIC_SOLVED_TITLE = "";
+
+	//import language strings
+	_st.lang = {
+		topic: 'Topic',
+		topics: 'Topics',
+		topic_solved: 'TOPIC_SOLVED'
+	};
+	_st.fpermissions = {
+		RULES_ATTACH_CAN: 'You <strong>can</strong> post attachments in this forum',
+		RULES_DELETE_CAN: 'You <strong>can</strong> delete your posts in this forum',
+		RULES_DOWNLOAD_CAN: 'You <strong>can</strong> download attachments in this forum',
+		RULES_EDIT_CAN: 'You <strong>can</strong> edit your posts in this forum',
+		RULES_LOCK_CAN: 'You <strong>can</strong> lock your topics in this forum',
+		RULES_POST_CAN: 'You <strong>can</strong> post new topics in this forum',
+		RULES_REPLY_CAN: 'You <strong>can</strong> reply to topics in this forum',
+		RULES_VOTE_CAN: 'You <strong>can</strong> vote in polls in this forum'
+	}
+	$(document).on('ready', function(){
+		_st.init({
+			stickyheader: "0",
+			timestamps: "0",
+			fastclick: "1",
+			wysiwyg: "1",
+			quickscroll: "1"
+		});
+	})
+
+})();
+</script>
+
+
+<script src="./styles/wilmott2/template/forum_fn.js?assets_version=650"></script>
+<script src="./styles/wilmott2/template/ajax.js?assets_version=650"></script>
+
+
+
+<link href="./styles/wilmott2/theme/css/slicknav.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./styles/wilmott2/theme/js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#menu').slicknav();
+		$('.slicknav_menu').prepend('<a href="index.php"><img class="slicknav_logo" src="https://www.wilmott.com/wp-content/themes/wilmottlogomob.gif" alt="wilmott" /></a>');
+	});
+</script>
+
+
+<script type="text/javascript">
+/* Google webfont loader */
+WebFontConfig = {
+  google: { families: [ 'Roboto:400,500,400italic,300,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  //s.parentNode.insertBefore(wf, s);
+})();
+
+//Put your custom javascript here
+//This is executed after other scripts
+</script>
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42805348-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42805348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42805348-1');
+</script>
+
+<script type="text/javascript">
+	
+	if(window.self !== window.top){
+   $( ".main-header" ).hide();
+  }
+ 
+ 
+// START MANDATORY CHANGES
+document.domain = 'wilmott.com'; // MANDATORY! // Set/Change this value to fit your domain (example: axew3.com (or leave localhost if on localhost)) 
+var wordpress_url_page_forum = 'https://wilmott.com/forums'; // MANDATORY! // (DO NOT ADD/INCLUDE final slash here) Url that point to your iframed wordpress forum page
+var w3all_custom_wp_w3fancyurl = 'qfc'; // MANDATORY! If you changed w3 to have 'fancy URL' query string into WP plugin admin, then change this value to match what your choosed fancy URL setting is
+// END MANDATORY CHANGES
+ 
+var w3all_doc_domain = document.domain;
+var w3allappend = false;
+var boardU = "https://forum.wilmott.com/";
+ 
+var w3uid = "".split("u=");
+var w3uidck = 0;
+ if( typeof w3uid[1] != 'undefined' ){
+  w3uidck = w3uid[1];
+ }
+ 
+// Lightbox scroll fix:
+// remove /* and */ to activate, also more below to complete ...
+/*
+$(".postimage").on("click", function(event) {
+var pos = event.pageY - 100;
+ $(parent.window).scrollTop( 200 );
+var el = document.getElementById("lightbox");
+$("#lightboxOverlay").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lb-close").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+$(".lightbox").on("click", function() {
+$(parent.window).scrollTop( pos );
+});
+});
+*/
+ 
+function w3allNormalize_phpBBUrl(href){
+// try to 'normalize' passed relative links: needed all after last slash /
+// exception are kind of passed urls like: /phpbb323/app.php/help/faq
+// and if SEO mods that may assign some different kind of links values
+// by the way, SEO absolute urls http(s) should be (all?) already considered here ...
+var phpbbRUrl = href.split(/^.+?(\w+.+)$/);
+if( href.indexOf('app.php') > -1 ){ // since the previous not 'normalize' this type of passed value (and may miss something else)
+	 phpbburl = href.split(/^.+?(app\.php.+)$/);
+	 w3allappend = phpbburl[1];
+ } else if ( /^https?/ig.exec(href) !== null ){ // absolute http(s) passed: try to 'normalize' a possible seo mod
+   phpbburl = href.split(boardU);
+	 w3allappend = phpbburl[1];
+ } else if ( phpbbRUrl[1] && phpbbRUrl[1].length > 1 ){ // 'normalize' any other
+   w3allappend = phpbbRUrl[1];
+ } else if ( phpbbRUrl[0].length > 1 ){
+   w3allappend = phpbbRUrl[0];
+   }
+// ... if still not normalized
+if(/^\W/ig.exec(w3allappend) !== null){
+ 	w3allappend = w3allappend.split(/^.+?(\w+.+)$/);
+ 	if(w3allappend[1]){
+ 		w3allappend = w3allappend[1];
+ 	}
+ 	if ( w3allappend[1] && w3allappend[1].charAt(0) == '/' ){
+ 		w3allappend = w3allappend[1].substr(1);
+ 	}
+}
+return w3allappend;
+}
+ 
+$(document).on("click", "a", function(e) {
+  var href = $(this).attr("href"); 
+  var w3all_onview_attach = (href.indexOf('file.php') > -1);
+ 
+// really basic
+if( this.getAttribute('target') !== null ){
+  e.preventDefault();
+  window.open(href,'_blank');
+return;
+}
+ 
+if ( href.charAt(0) == '#' || href.indexOf('\./download\/file\.php') > -1 ){ return; }
+ 
+// external link?
+if ((this.href.indexOf(boardU) > -1) != true){
+ if(/^(f|ht)tps?:\/\//i.test(href)){
+	e.preventDefault();
+	parent.location.replace(href);
+ return;
+ }
+}
+ 
+if ( href.indexOf('view=print') > -1 !== false || /\/adm\//ig.exec(href) !== null ){
+ e.preventDefault();
+ window.open(href,'_blank');
+return;
+}
+ 
+if ( href.indexOf('quickmod') > -1 ) {
+	 w3allNOappend = true;
+  	return;
+}
+ 
+if( /#w3allmchatif/ig.exec(document.URL) != null || /#w3allmchatif/ig.exec(document.location.href) != null ){
+	 w3allNOappend = true;
+    return;
+}
+ 
+if( /posting\.php\?mode=[reply|post|bump]/ig.exec(href) !== null || /mcp\.php\?/ig.exec(href) !== null ){
+	w3allNOappend = true;
+}
+ 
+// complete Lightbox correct attachment display // activate removing /* and */ 
+// or used to open on new tab attachments
+/*
+if(w3all_onview_attach !== false){
+e.preventDefault();
+window.open(href,'_blank');
+return;
+} */
+ 
+w3allappend = w3allNormalize_phpBBUrl(href);
+ 
+if ('parentIFrame' in window){
+  if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+    window.parentIFrame.sendMessage(w3allappend);
+  }
+ }
+});
+ 
+$("#quickmod,.bookmark-link").on("click", function(event) {
+var pos = event.pageY - 100;
+  $(parent.window).scrollTop( 200 );
+$("#darkenwrapper").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+ $("#darken").on("click", function() {
+  $(parent.window).scrollTop( pos );
+});
+});
+ 
+///////////////////////////////////////////////////////////////////////////
+// w3all UPDATES for phpBB events
+ 
+if(window.self !== window.top){
+var pmn = "0"; 
+var w3all_phpbb_u_logged = ""; 
+ 
+var hash = window.location.hash.substr(1);
+ 
+if( hash == 'unread' ){
+ var postN = 1;
+ $( "h3 > a" ).each(function (e) {
+  ns = this.href.split('#p');
+  if( typeof ns != 'undefined' && /viewtopic.php\?p=/ig.exec(this.href) != null ){
+   if(ns[1] > postN){
+     w3lh = ns[1];
+    }
+  }
+ })
+ 
+ if( typeof w3lh != 'undefined' ){
+  hash = "p" + w3lh;
+ }
+}
+ 
+ if(hash != 'w3allmchatif'){
+    location.hash = "#" + hash;
+  if( location.hash.length < 2 ){
+  	var w3all_lochash = 0;
+  } else {
+  	var w3all_lochash = $(location.hash).offset().top;
+  }} else { var w3all_lochash = 0; }
+ 
+var w3appendevents = '#w3all_phpbbpmcount=' + pmn + '#w3all_phpbb_u_logged=' + w3all_phpbb_u_logged + '#w3all_lochash=' + w3all_lochash + '#w3all_uidck=' + w3uidck; 
+//if(parent.location.href.indexOf(wordpress_url_page_forum) > -1){
+if( typeof w3allNOappend == 'undefined' || w3allNOappend == false ){
+$( window ).on( "load", function() {
+if( /#w3allmchatif/ig.exec(document.URL) == null || /#w3allmchatif/ig.exec(document.location.href) == null ){
+parent.w3all_ajaxup_from_phpbb(w3appendevents); 
+}
+});
+}
+//}
+ 
+// fix vertical iframe centered on certain cases
+var w3iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(w3iOS == false){
+$(window).on( "load", function() {
+var bd = document.getElementsByTagName("body");
+for (var i = 0; i < bd.length; i++) { 
+    var bdID = bd[i].getAttribute("id"); 
+}
+var elt = document.getElementById(bdID);	
+elt.setAttribute("style", "position:fixed;top:0%;left:0%;width:100%;margin:0px;");
+});
+}
+ 
+/*$( "a" ).contextmenu(function() {
+ var ohref = $(this).attr("href");
+ var href = this.href; // treath like an external because only open New tab or New window
+  d = w3allNormalize_phpBBUrl(href);
+  hrefEnc = window.btoa(unescape(encodeURIComponent(d)));
+  href1 =  wordpress_url_page_forum + '/?' + w3all_custom_wp_w3fancyurl + '=' + hrefEnc;  
+    
+  $(this).attr("href", href1); // send out encoded
+  $(this).mouseleave(function() { // reset (replaced 'mouseup')
+  $(this).attr("href", ohref);
+  });
+});*/
+ 
+} // END if (window.frameElement) {
+</script>
+<script type="text/javascript" src="https://forum.wilmott.com/iframeResizer.contentWindow.min.js" defer></script>
+<div data-iframe-height="100%"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c0e2ba1792ba808","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"b4a8f3d1640847a69999db4554bd8360","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>
