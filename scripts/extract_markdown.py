@@ -3,7 +3,7 @@
 Extract Wilmott forum thread from raw HTML files into individual Markdown pages.
 
 Usage: python scripts/extract_markdown.py
-Output: ./thread_page/page_001.md, page_002.md, etc. + index.md
+Output: ./archive/thread_page/page_001.md, page_002.md, etc. + index.md
 """
 
 from __future__ import annotations
@@ -23,8 +23,8 @@ from pydantic import BaseModel, field_validator
 from latex_translator import translate, Ok, Err
 
 # Constants
-RAW_DIR: Final[Path] = Path("./raw")
-OUTPUT_DIR: Final[Path] = Path("./thread_page")
+RAW_DIR: Final[Path] = Path("./archive/raw")
+OUTPUT_DIR: Final[Path] = Path("./archive/thread_page")
 
 # Track translation errors during processing
 translation_errors: list[tuple[int, str, str, str]] = []  # (post_number, error, snippet, full_content)
@@ -32,7 +32,7 @@ SCRAPE_DATE: Final[datetime] = datetime(2026, 1, 20)
 LINE_WIDTH: Final[int] = 120
 POSTS_PER_PAGE: Final[int] = 50
 THREAD_TITLE: Final[str] = "Breakthrough in the theory of stochastic differential equations and their simulation"
-IMAGES_DIR: Final[Path] = Path("./images")
+IMAGES_DIR: Final[Path] = Path("./archive/images")
 
 
 def url_to_local_path(url: str) -> tuple[str, str] | None:
@@ -63,7 +63,7 @@ def url_to_local_path(url: str) -> tuple[str, str] | None:
     path = parsed.path
 
     # disk_path: for checking existence from script's working directory
-    disk_path = f"./images/{host}{path}"
+    disk_path = f"./archive/images/{host}{path}"
     # markdown_path: for use in markdown files (which are in thread_page/)
     markdown_path = f"../images/{host}{path}"
     return disk_path, markdown_path

@@ -14,9 +14,9 @@ MAX_IMAGE_DIM = 400
 JPEG_QUALITY = 50
 NUM_PARTS = 3
 BUILD_DIR = Path("/tmp/wilmott_html_build")
-RAW_DIR = Path("./raw")
-IMAGES_SRC = Path("./images")
-OUTPUT_PDF = Path("./wilmott_thread.pdf")
+RAW_DIR = Path("./archive/raw")
+IMAGES_SRC = Path("./archive/images")
+OUTPUT_PDF = Path("./archive/pdfs/wilmott_thread.pdf")
 
 
 def compress_images():
@@ -259,7 +259,7 @@ def main():
         pdf_file = html_to_pdf(html_file)
         final_pdf = compress_pdf(pdf_file)
 
-        output_name = Path(f"./wilmott_thread_part{i}.pdf")
+        output_name = Path(f"./archive/pdfs/wilmott_thread_part{i}.pdf")
         shutil.copy(final_pdf, output_name)
         output_pdfs.append(output_name)
 

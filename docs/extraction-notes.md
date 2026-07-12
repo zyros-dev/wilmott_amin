@@ -8,7 +8,7 @@
 ## "go fix" workflow
 ```
 while errors > 0:
-    rm -rf thread_page && python scripts/extract_markdown.py
+    rm -rf archive/thread_page && python scripts/extract_markdown.py
     fix in scripts/latex_translator.py based on error types
     python scripts/latex_translator.py
 
@@ -19,7 +19,7 @@ spawn 3 haiku agents to sample pages 1-20, 21-40, 41-59
 ## Files
 - `scripts/latex_translator.py` - Transform pipeline
 - `scripts/extract_markdown.py` - Main script
-- `thread_page/` - Output (59 pages)
+- `archive/thread_page/` - Output (59 pages)
 
 ## Transforms (in order)
 1. fix_sqrt_parens: `\sqrt()` → `\sqrt{}`

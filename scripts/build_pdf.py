@@ -15,9 +15,9 @@ from PIL import Image
 MAX_IMAGE_DIM = 400  # pixels
 JPEG_QUALITY = 55
 BUILD_DIR = Path("/tmp/wilmott_pdf_build")
-IMAGES_SRC = Path("./images")
-THREAD_DIR = Path("./thread_page")
-OUTPUT_PDF = Path("./wilmott_thread.pdf")
+IMAGES_SRC = Path("./archive/images")
+THREAD_DIR = Path("./archive/thread_page")
+OUTPUT_PDF = Path("./archive/pdfs/wilmott_thread.pdf")
 
 def compress_images():
     """Compress all images to BUILD_DIR/images/"""

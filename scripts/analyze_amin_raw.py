@@ -17,7 +17,7 @@ try:
 except:
     HAS_TEXTBLOB = False
 
-RAW_DIR = Path("./raw")
+RAW_DIR = Path("./archive/raw")
 
 def parse_posts():
     """Extract posts with metadata from raw HTML files."""
@@ -539,7 +539,7 @@ def main():
     results['interactions'] = analyze_interactions(all_posts, amin_posts)
 
     # Output
-    output = Path("./amin_analysis_raw.txt")
+    output = Path("./reports/amin_analysis_raw.txt")
     with open(output, 'w') as f:
         f.write("AMIN ANALYSIS - RAW STATS\n")
         f.write("=" * 60 + "\n\n")

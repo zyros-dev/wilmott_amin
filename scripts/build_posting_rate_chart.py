@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from analyze_thread import parse_posts
 
 
-OUTPUT = Path("posting_rate.png")
+OUTPUT = Path("assets/posting_rate.png")
 
 
 def month_range(start: datetime, end: datetime) -> list[datetime]:

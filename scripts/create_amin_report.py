@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 import numpy as np
 
-RAW_DIR = Path("./raw")
-OUTPUT_PDF = Path("./amin_report.pdf")
+RAW_DIR = Path("./archive/raw")
+OUTPUT_PDF = Path("./reports/amin_report.pdf")
 
 
 def parse_posts():

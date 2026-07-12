@@ -7,10 +7,10 @@ Images are downloaded from external sources while filtering out avatars,
 logos, emojis, and forum attachments.
 
 Requirements:
-- Extract image URLs from HTML files in ./raw/*.html
+- Extract image URLs from HTML files in ./archive/raw/*.html
 - Filter out forum attachments (download/file.php URLs)
 - Filter out avatars, icons, emojis, logos, and GIFs
-- Preserve URL path structure in ./images/
+- Preserve URL path structure in ./archive/images/
 - Use 32 thread pool with retries and exponential backoff
 - Idempotent operation with file existence checks
 - Track failures and exit on too many consecutive failures
@@ -35,8 +35,8 @@ MAX_WORKERS = 32
 MAX_RETRIES = 5
 INITIAL_BACKOFF = 1.0  # seconds
 MAX_CONSECUTIVE_FAILURES = 10
-RAW_DIR = Path("./raw")
-IMAGES_DIR = Path("./images")
+RAW_DIR = Path("./archive/raw")
+IMAGES_DIR = Path("./archive/images")
 MIN_IMAGE_SIZE = 100  # bytes
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -150,9 +150,9 @@ def get_image_output_path(url: str) -> Path:
 
     Examples:
     - https://i.postimg.cc/029J5LX5/Ito-Hermite-New-Exp09.png
-      -> ./images/i.postimg.cc/029J5LX5/Ito-Hermite-New-Exp09.png
+      -> ./archive/images/i.postimg.cc/029J5LX5/Ito-Hermite-New-Exp09.png
     - https://i.imgur.com/XK2jpwF.png
-      -> ./images/i.imgur.com/XK2jpwF.png
+      -> ./archive/images/i.imgur.com/XK2jpwF.png
     """
     parsed = urlparse(url)
 
@@ -231,7 +231,7 @@ def download_image(url: str) -> Tuple[str, bool, str]:
 
 def extract_urls_from_html_files() -> Generator[str, None, None]:
     """
-    Extract all unique image URLs from HTML files in ./raw/
+    Extract all unique image URLs from HTML files in ./archive/raw/
 
     Yields: Unique image URLs
     """

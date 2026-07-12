@@ -21,8 +21,8 @@ except ImportError:
     HAS_TEXTBLOB = False
     print("Note: pip install textblob for sentiment analysis")
 
-RAW_DIR = Path("./raw")
-OUTPUT_PDF = Path("./wilmott_analysis.pdf")
+RAW_DIR = Path("./archive/raw")
+OUTPUT_PDF = Path("./reports/wilmott_analysis.pdf")
 
 def parse_posts():
     """Extract posts with metadata from raw HTML files."""

@@ -3,7 +3,7 @@
 Wilmott Forum Thread Scraper
 
 Scrapes the forum thread with parallelization, retry logic, and idempotency.
-Raw HTML files are saved to ./raw/ directory.
+Raw HTML files are saved to ./archive/raw/ directory.
 """
 
 import os
@@ -21,9 +21,10 @@ MAX_WORKERS = 32
 MAX_RETRIES = 5
 INITIAL_BACKOFF = 1.0  # seconds
 MAX_CONSECUTIVE_FAILURES = 10
-RAW_DIR = Path("./raw")
+RAW_DIR = Path("./archive/raw")
 
-# Request headers and cookies from browser session
+# Ordinary browser-like request headers. Authentication material must not be
+# committed; supply any future session handling outside the repository.
 HEADERS = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
     'accept-language': 'en-GB,en;q=0.8',
@@ -42,13 +43,7 @@ HEADERS = {
     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36',
 }
 
-COOKIES = {
-    'phpbb3_s5zyt_u': '1',
-    'phpbb3_s5zyt_k': '',
-    'phpbb3_s5zyt_sid': '2706e66118029e38d3fcd54309a6c033',
-    'wpjb_transient_id': '1768906509-9240',
-    'cf_clearance': 'IlVutH5qnNbMQvZPScd8nIdcKYkCxFeoIScucg3RElo-1768906870-1.2.1.1-d0jcg8HEqbDUpQU33daQAl7dYEogsdbD_Xnay.pUeLVVkw5uP26vi78Plu4jFSSTmoV1Pgb6z_zlEGw0VoUwPgebvMGzyrbPHNRqftEIqJ2lYz9oVfsXnVEut2nDIY_N4U81PUVitxV63xfeQPh8pKOfoX2pVxr60bJCeo1Ps6yFZMr10HbAfDDGOM0fHrhIBtsW6.njkls.nWLVGdhd_vszGgFNywLhHwX5LXazLMw',
-}
+COOKIES: dict[str, str] = {}
 
 # Global failure tracking
 consecutive_failures = 0
@@ -192,7 +187,7 @@ def main():
     except Exception as e:
         print(f"ERROR: {e}")
         print("\nThe Cloudflare cookies may have expired.")
-        print("Please update the COOKIES dict with fresh values from your browser.")
+        print("The forum rejected the request. Configure session handling outside the repository if needed.")
         sys.exit(1)
 
     # Generate all page offsets

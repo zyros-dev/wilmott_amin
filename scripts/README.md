@@ -1,12 +1,12 @@
 # Utility scripts
 
-Run these commands from the repository root. Generated archives, reports, and charts are written back to the root-level paths documented in the main README.
+Run these commands from the repository root. Generated archives, reports, and charts are written into `archive/`, `reports/`, and `assets/`.
 
 ## Collection and extraction
 
-- `scrape_wilmott.py` — download the forum thread into `raw/`
-- `image_scraper.py` — download externally linked images into `images/`
-- `extract_markdown.py` — convert the raw HTML into `thread_page/`
+- `scrape_wilmott.py` — download the forum thread into `archive/raw/`
+- `image_scraper.py` — download externally linked images into `archive/images/`
+- `extract_markdown.py` — convert the raw HTML into `archive/thread_page/`
 - `latex_translator.py` — normalize the forum's LaTeX while extracting Markdown
 
 ```bash
@@ -26,8 +26,8 @@ python scripts/latex_translator.py
 
 - `analyze_thread.py` — shared thread parser and exploratory report
 - `analyze_amin_raw.py` — raw Amin-focused analysis
-- `create_amin_report.py` — build `amin_report.pdf`
-- `build_posting_rate_chart.py` — build the README's `posting_rate.png`
+- `create_amin_report.py` — build `reports/amin_report.pdf`
+- `build_posting_rate_chart.py` — build the README's `assets/posting_rate.png`
 
 ```bash
 python scripts/analyze_thread.py
