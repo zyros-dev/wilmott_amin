@@ -16,6 +16,14 @@ The thread was started by the forum user **Amin** and combines proposed mathemat
 
 The Markdown archive begins at [`thread_page/index.md`](thread_page/index.md). The combined PDF is [`wilmott_thread.pdf`](wilmott_thread.pdf); three smaller parts are also included.
 
+For a narrative overview, see [`TIMELINE.md`](TIMELINE.md), which summarizes the full archive and maps its major mathematical and personal shifts.
+
+## Posting rate
+
+The chart counts all timestamped posts in the thread by month. Of 2,913 archived posts, 2,910 have timestamps parsed by the analysis script.
+
+![Monthly posting rate from April 2016 to January 2026](posting_rate.png)
+
 ## Repository contents
 
 - `raw/` — HTML responses captured from the forum
@@ -28,6 +36,9 @@ The Markdown archive begins at [`thread_page/index.md`](thread_page/index.md). T
 - `build_*_pdf.py` — PDF generation scripts
 - `wilmott_thread*.pdf` — rendered editions of the thread
 - `wilmott_analysis.pdf` and `amin_report.pdf` — exploratory reports generated from the archive
+- `TIMELINE.md` — full-thread summary and chronology
+- `posting_rate.png` — monthly posting-rate chart
+- `build_posting_rate_chart.py` — reproducible chart generator
 
 ## Extraction notes
 
