@@ -10,25 +10,25 @@ The January 2017 spike is **249 posts in one month**. The new six-month run adds
 
 ## In his own words
 
-> “I would request people to know that under brain control, the brain control agencies continue to take neurotransmitters out of the brain that occasionally results in such lapses. These agencies then ask their favorite pawns to start making fun of the target.”
->
-> — [Post #514, March 20, 2017](archive/thread_page/page_011.md)
-
-> “This morning when I went out in my car to take food, they started passing high-frequency waves into my back and it was extremely painful. I stopped at a Gourmet bakery and bought a round metal box they had for their sweets. I placed the metal cover of the box on my car seat and then drove my car but waves were so high frequency that thin sheet of metal was not enough to stop it and there was sheer pain again after a few minutes and it was extremely difficult to stand the physical torture in the back.”
+> “I placed the metal cover of the box on my car seat and then drove my car but waves were so high frequency that thin sheet of metal was not enough to stop it and there was sheer pain again after a few minutes and it was extremely difficult to stand the physical torture in the back.”
 >
 > — [Post #1032, January 2, 2021](archive/thread_page/page_021.md)
 
-> “Crooks of Pakistan army openly come to my house in my absence and do whatever they want with my stuff especially lowly things like stealing my under-wears or jeans that do not allow mind control frequencies to be effective (once they stole some of my books that I was using for research) and my family fully cooperates with them. When I complain about any such thing to my mother, she starts laughing in a goofy style and blames everything on my schizophrenia.”
+> “Crooks of Pakistan army openly come to my house in my absence and do whatever they want with my stuff especially lowly things like stealing my under-wears or jeans that do not allow mind control frequencies to be effective (once they stole some of my books that I was using for research) and my family fully cooperates with them.”
 >
 > — [Post #1159, May 29, 2021](archive/thread_page/page_024.md)
 
-> “Friends, my claim that mind control agents were changing my programs was wrong. I had not used matlab surf command carefully before and was mistakenly thinking that (Xn,Vm,Z(n,m)) would be the proper order. I earlier worked with both V and X both around one on a square grid so got under the very wrong impression that my program was working fine.”
+> “Friends, my claim that mind control agents were changing my programs was wrong. I had not used matlab surf command carefully before and was mistakenly thinking that (Xn,Vm,Z(n,m)) would be the proper order. […] It was very silly.”
 >
 > — [Post #1985, September 27, 2023](archive/thread_page/page_040.md)
 
-> “Friends, it is 5:15 am in the morning and the anals of mind control continued to target microwaves on my head and I have been kept forcefully awake. Friends, I could not sleep all night and continued to have conscious fleeting thoughts with a very heavy head due to directed microwaves.”
+> “I will keep posting a detailed daily journal for at least next few months in addition to matlab programs that follow from my research. Edit: I was working in Lounge when I made the above post. When I went inside my room, they started to release heavy ionized gas in my room.”
 >
-> — [Posts #2601–#2602, January 21, 2025](archive/thread_page/page_053.md)
+> — [Post #2603, January 21, 2025](archive/thread_page/page_053.md)
+
+> “Friends, I am writing this post to tell friends about how anti-psychotic injection Fluanxol and other medicine are drugged in Pakistan on the orders of Leprechauns of our army. Two years ago, the Fluanxol injection was so highly drugged that they would remove all neurotransmitters related to thought from my brain.”
+>
+> — [Post #3226, July 11, 2026](archive/thread_page/page_065.md)
 
 ## Timeline
 
