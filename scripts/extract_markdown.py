@@ -2,7 +2,7 @@
 """
 Extract Wilmott forum thread from raw HTML files into individual Markdown pages.
 
-Usage: python extract_markdown.py
+Usage: python scripts/extract_markdown.py
 Output: ./thread_page/page_001.md, page_002.md, etc. + index.md
 """
 
