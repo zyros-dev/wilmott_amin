@@ -1,6 +1,6 @@
 # Broken LaTeX Posts
 
-Total: 46 posts with errors
+Total: 64 posts with errors
 
 ---
 
@@ -15661,6 +15661,15306 @@ end
 .
 
 .
+```
+
+---
+
+## Error 47: Unbalanced $: 27
+
+**Snippet:** `Friends, I have deleted my last post made yesterday. In my last post, the calcul`
+
+**Full content:**
+
+```
+Friends, I have deleted my last post made yesterday. In my last post, the calculation of moments of the conditional variable was wrong. I had written 
+
+
+
+Expected value of mth moment of Y given X is given as
+
+$$E\left[\left[Y|X\right]^m|X=X_0\right]\,=\,\,\left(\sum\limits_{n=0}^{N}\,a_n\,\rho_n\,  H_n(Z_x) \right)^m| Z_x=Z_{x_0}\,$$
+
+
+
+The above equation was basically wrong since it does not give us moments of  $\left[Y|X\right]$ and merely gives us square or cube or mth power of the conditional point value. This is obviously wrong. 
+
+
+
+I had earlier done proper calculations of moments of the conditional expected value by making a local Taylor series around the conditional point $Z_x=Z_{X_0}$. I had mentioned about it in post 2924 and post 2925. Yesterday, I had taken too much drugged food and even though I was able to continue working reasonably well with extreme amount of caffeine, I was still somewhat muddled and made the above mistake.
+
+
+
+Here I first describe how to find the local moments around some point on a density using local Taylor series as I had previously mentioned. And then post the corrected version of yesterday's post.
+
+
+
+Suppose we have a Hermite-series of random variable Y given as
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,a_n\,H_n(Z_y)$$
+
+
+
+We suppose its equivalent Z-series of Y is given as
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n$$
+
+
+
+The average expected moments are obviously given as
+
+
+
+$$E\left[{Y(Z_y)}^m\right]\,=\,E\left[\left(\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n\,\right)^m\,\right]$$
+
+
+
+But these are average moments of the distribution. And we want to find conditional moments at some point on the distribution. We can also sometimes call them local moments.
+
+
+
+Suppose we want to find conditional moments of Y given $Y\,=\,Y_0$. At $Y_0$ the value of $Z_y$ is $Z_{y_0}$. We take the derivatives of Z-series at $Z_{y_0}$ and re-expand the Z-series as a Taylor series around  (Z_{y_0}$ using derivatives calculated there. We take the coefficients of this new Z-Series/Hermite-Series around the conditional  value $Z_y\,=\,Z_{y_0}$ to find the conditional moments/local moments.
+
+
+
+Taking above Example of the Z-series
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n$$
+
+
+
+Taking conditional value at $Z_{y_0}$, we have
+
+
+
+$$Y_0\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_{y_0}}^n$$
+
+
+
+The value of first derivative at $Z_{y_0}$ is given as
+
+
+
+$$\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-1}\,(n+1)\,\tilde{a}_{n+1} \,\,{Z_{y_0}}^n$$
+
+
+
+Similarly
+
+
+
+$$\frac{d^2Y}{dZ^2}\,|^{\,\left(\, Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-2}\,(n+1)\,(n+2)\,\tilde{a}_{n+2} \,\,{Z_{y_0}}^n$$
+
+
+
+and mth derivative is given as
+
+
+
+$$\frac{d^mY}{dZ^m}\,|^{\,\left(\, Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-m}\,(n+1)\,(n+2)\,\ldots\,(n+m)\,\tilde{a}_{n+m} \,\,{Z_{y_0}}^n$$
+
+
+
+We use above derivatives to form a local Taylor series around $Z_y\,=\,Z_{y_0}$ as
+
+\begin{align}
+
+Y(Z_y\,-\,Z_{y_0})\,&=\,Y_0\,+\,\left[\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,\left(Z_y\,-Z_{y_0}\right) \\
+
+&+\,\frac{1}{2}\,\left[\frac{d^2Y}{dZ^2}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^2 \\
+
+&+\,\frac{1}{6}\,\left[\frac{d^3Y}{dZ^3}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^3 \\
+
+&+\,\ldots \\
+
+&+\,\frac{1}{N!}\,\left[\frac{d^NY}{dZ^N}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^N \\
+
+\end{align}
+
+
+
+We convert the above Taylor to our familiar  Z-series by using
+
+
+
+\begin{align}
+
+\tilde{c}_0\,&=\,Y_0\,\\
+
+\tilde{c}_1\,&=\left[\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+
+\tilde{c}_2\,&=\frac{1}{2}\,\left[\frac{d^2Y}{dZ^2}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+
+\tilde{c}_3\,&=\,\frac{1}{6}\,\left[\frac{d^3Y}{dZ^3}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+
+\,\ldots \\
+
+\tilde{c}_N\,&=\frac{1}{N!}\,\left[\frac{d^NY}{dZ^N}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+
+\end{align}
+
+
+
+and get our new Z-series as
+
+
+
+$$Y(Z_y-Z_{y_0})\,=\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{(Z_y\,-Z_{y_0})}^n$$
+
+
+
+We do a change of variable and define $Z\,=(Z_y-Z_{y_0})$ to get
+
+
+
+$$Y(Z)\,=\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{Z}^n$$
+
+
+
+The conditional or local moments of the value $ Z_y\,=\,Z_{y_0}\,$ can be found as the expectation of the Z-Series below
+
+
+
+$$\,E\left[ \,Y^m\,|\,Y\,=\,Y_{0}\right]\,=\,E\left[ \,Y^m\,|\,Z_y\,=\,Z_{y_0}\right]\,=E\left[\left(\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{Z}^n\right)^m\right]$$ where Z in above Z-series is a standard normal random variable.
+
+
+
+For example if the associated equivalent hermite-series is given as
+
+
+
+$$Y(Z)\,=\,\sum\limits_{n=0}^{N}\,c_n\,H_n(Z)$$
+
+
+
+then we can automatically calculate the conditional second moment as
+
+
+
+$$E\left[Y^2|(Y\,=Y_0)\right]\,=\,\sum\limits_{n=0}^{N}\,c_n^2\,n!$$
+
+
+
+and variance would be given as (just omitting the zeroth index term)
+
+
+
+$$E\left[Var(Y)|(Y\,=Y_0)\right]\,=\,\sum\limits_{n=1}^{N}\,c_n^2\,n!$$
+```
+
+---
+
+## Error 48: Unbalanced $: 1
+
+**Snippet:** `.  .  .  .  ``` function []= ConditionalDensityHermitesBivariateSequential()  %S`
+
+**Full content:**
+
+```
+.
+
+.
+
+.
+
+.
+
+```
+function []= ConditionalDensityHermitesBivariateSequential()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+NMomentsY=Order+1;
+NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%5
+
+V0=1.00;%.32;
+V00=V0;
+thetaV=1.0;%.045;%1;%.04;
+kappaV=0.000;%1.5;%1.5;
+mu1=kappaV*thetaV;
+mu2=-kappaV;
+beta1=0;
+beta2=1;
+%gamma=.5;%.950;
+%sigma0=.55;%.45;%
+gamma=.65;%.75
+sigma0=.85;%.35
+dt=.03125/2;
+Tt=64*2;
+T=Tt*dt;
+
+seed0=52130649;
+%seed0=94210876;
+rng(seed0, 'twister')
+paths=10000;
+V(1:paths,1)=V0;
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+ TT1=60; %Transition distribution start
+ TT2=124; %Transition distribution end
+
+Random2(1:paths/2,1)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2)=randn(paths/2,1);
+    Random2(paths/2+1:paths)=-Random2(1:paths/2);
+
+    V(1:paths,1)=V(1:paths,1)+ ...
+        (mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*sqrt(dt) + ...
+        (mu1.*beta1*V(1:paths,1).^(beta1-1) + mu2.*beta2.*V(1:paths,1).^(beta2-1)).* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt^2/2 + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1.*beta1.*(beta1-1).*V(1:paths,1).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths,1).^(beta2-2)).* ...    
+        sigma0^2.*V(1:paths,1).^(2*gamma).*dt^2/2 + ...
+        sigma0*gamma*V(1:paths,1).^(gamma-1) .* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2).*Random2(1:paths,1).*1/sqrt(3)*dt^1.5 + ...
+        sigma0.*V(1:paths,1).^gamma .*(Random2(1:paths,1).^2-1)*dt/2) + ...
+        .5*sigma0*gamma*(gamma-1).*V(1:paths,1).^(gamma-2) .* ...
+        sigma0^2.*V(1:paths,1).^(2*gamma) .*Random2(1:paths,1).*1/sqrt(3)*dt^1.5;
+
+    V(V<0)=.00001;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,1)=V(1:paths,1);
+    end
+        
+    if(tt==TT2)
+        Yin(1:paths,1)=V(1:paths,1);
+    end
+end
+
+str=input("I have reached stone 1");
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+Order=7;
+clf;
+%CalculateHermiteCorrelations02(Xin,Yin,paths);
+[HCorr2,YPowersH,XPowersH,Zy,Zx] = CalculateHermiteCorrelations02(Xin,Yin,paths);
+
+
+
+HH=Order;
+[HnZx] = EvalHermiteArrayH0(Zx,HH);
+
+ 
+for pp=1:paths    
+ Yxi(pp)=YPowersH(1,1);
+ 
+  for nn=2:Order+1
+     Yxi(pp)=Yxi(pp)+YPowersH(nn,1).*HCorr2(nn-1).*HnZx(pp,nn);
+  end
+  
+  YYxi(pp)=Yin(pp)-Yxi(pp);
+  
+ end
+ 
+% 
+ [HCorr3,YxiPowersH,XPowersH,Zyxi,Zx] = CalculateHermiteCorrelations02(Xin,YYxi,paths);
+
+ str=input("I have reached stone 2")
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% save("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\pqfileA.mat","HCorr2","YPowersH","XPowersH");
+% 
+% str=input("Variables have been saved");
+% %load("C:\Users\Lenovo\Documents\MATLAB\MATLAB1\pqfileA.mat","HCorr2","YPowersH","XPowersH");
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% %In this block, we do conditional Monte Carlo of SDE which is the true
+% %numerical 1D conditional density of Y conditional on X having a given
+% %value. This value of X on which we are conditionin is defined by V10 below.
+% %We can alter V10 below and it will take out a 1D slice from the 2D density
+% %of Y conditional on X  taking a specific value (here V10).
+
+V10=2.0;
+%[XCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(XPowersH(1:Order+1,1),Order);
+%V10=XCoeffZ(1);
+V(1:paths)=V10;
+Random2(1:paths,1)=0;
+
+for tt=TT1+1:TT2
+    
+    Random2(1:paths/2)=randn(paths/2,1);
+    Random2(paths/2+1:paths)=-Random2(1:paths/2);
+
+
+    V(1:paths,1)=V(1:paths,1)+ ...
+        (mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*sqrt(dt) + ...
+        (mu1.*beta1*V(1:paths,1).^(beta1-1) + mu2.*beta2.*V(1:paths,1).^(beta2-1)).* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt^2/2 + ...
+        sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1.*beta1.*(beta1-1).*V(1:paths,1).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths,1).^(beta2-2)).* ...    
+        sigma0^2.*V(1:paths,1).^(2*gamma).*dt^2/2 + ...
+        sigma0*gamma*V(1:paths,1).^(gamma-1) .* ...
+        ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2).*Random2(1:paths,1).*1/sqrt(3)*dt^1.5 + ...
+        sigma0.*V(1:paths,1).^gamma .*(Random2(1:paths,1).^2-1)*dt/2) + ...
+        .5*sigma0*gamma*(gamma-1).*V(1:paths,1).^(gamma-2) .* ...
+        sigma0^2.*V(1:paths,1).^(2*gamma) .*Random2(1:paths,1).*1/sqrt(3)*dt^1.5;
+
+    V(V<0)=.00001;
+
+end
+
+%Below
+
+NoOfBins=200;
+MaxCutOff=10;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(V,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(V(:).^qq)/paths;
+    
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+%Below, we calculate the value of Zx0 corresponding to X0 (here V10). This
+%comes from inverting the Z-series of X so that X=V10;
+
+xOrder=Order;
+yOrder=Order;
+XCoeffH(1:Order+1)=XPowersH(1:Order+1,1);
+
+[Zxc] = CalculateZgivenXAndHSeriesCoeffs(V10,XCoeffH,xOrder);
+
+HH=Order;
+[HnZxc] = EvalHermiteArrayH0(Zxc,HH);
+
+Yxc=YPowersH(1,1);
+
+for nn=2:Order+1
+    %Yxi(pp)=Yxi(pp)+YPowersH(nn,1).*HCorr2(nn-1).*HnZx(pp,nn);
+    Yxc=Yxc+YPowersH(nn,1).*HCorr2(nn-1).*HnZxc(1,nn);
+end
+ 
+YxcFirst=Yxc;
+
+
+YCoeffH(1:Order+1)=YPowersH(1:Order+1,1);
+ 
+ 
+YxCoeffH(1)=YCoeffH(1);
+
+for nn=2:Order+1
+    %Yxi(pp)=Yxi(pp)+YPowersH(nn,1).*HCorr2(nn-1).*HnZx(pp,nn);
+    YxCoeffH(nn)=YPowersH(nn,1).*HCorr2(nn-1);
+end
+
+
+ 
+%CalculateConditionaMoments(Yxc,Zxc,YCoeffH,YxCoeffH,Order)
+[EMu,TMu] = CalculateConditionalMoments(Yxc,Zxc,YCoeffH,YxCoeffH,Order)
+
+
+str=input("I am here at stone 3");
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+[YxCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YxCoeffH(1:Order+1),Order);
+
+[c0,c,FittedMoments] = CalculateZSeriesDensityFromRawMoments02FromGuess02NoData(EMu(1:8));%,YxCoeffZ(2:8));
+ YCoeffz(1)=c0;
+ YCoeffz(2:Order+1)=c(1:Order);
+
+ YCoeffz
+ 
+ 
+ [YCoeffh(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(YCoeffz(1:Order+1),Order);
+ 
+ Order=7;
+ 
+ NMoments=8;
+ [YCoeffz(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffh(1:Order+1),Order);
+ cMoments=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,NMoments);
+ 
+ 
+ YxiPowersH
+ [YxiCoeffz(1:8)] = ConvertZSeriesToHermiteSeriesNew(YxiPowersH(1:8,1),7);
+ YxiMoments=CalculateMomentsOfZSeries(YxiCoeffz(1),YxiCoeffz(2:8),7,NMoments);
+ 
+ DataMoments
+ 
+ cMoments
+ 
+ YxcFirst
+ 
+ YxiMoments(1:8)
+ 
+ str=input("Look at comparison of moments");
+ 
+ YCoeffh
+ 
+ YxCoeffH
+ 
+ str=input("Look at coeffs of Hermite-Series");
+ 
+ 
+ 
+clf;
+
+PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh(2:Order+1),'b')
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+
+
+%hold on
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytic Density','Numerical Density'}, ...
+    'Location','northeast')
+
+str=input("This is the first version without altering the moments of conditional density")
+
+
+%[YMoments0]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:6),5,6)
+
+
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [HCorr2,YPowersH,XPowersH,Zy,Zx] = CalculateHermiteCorrelations02(Xin,Yin,NData)
+
+
+
+Order=7;
+NMoments=8;
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+
+
+[XCoeffH,Zx] = CalculateHermiteSeriesFromData01(Xin,Order,ZI); 
+[XCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(XCoeffH(1:Order+1),Order);
+
+ for pp=1:Order+1
+     XrMu(pp)=sum(Xin(1:NData).^pp)/NData;
+ end
+ 
+ 
+ %[SecondMomentX] = CalculateSecondMomentC7(XCoeffZ(1),XCoeffZ(2:Order+1));
+ 
+ [MomentsX] = CalculateMomentsOfZSeries(XCoeffZ(1),XCoeffZ(2:Order+1),Order,NMoments);
+
+XCoeffZs=XCoeffZ/sqrt(MomentsX(2)-MomentsX(1).^2);
+ 
+ [c0,c] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Xin,ZI);%,XCoeffZ(2:Order+1));
+ XCoeffZ(1)=c0;
+ XCoeffZ(2:Order+1)=c(1:Order);
+ 
+ 
+ 
+ 
+ [XCoeffH(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1),Order);
+XPowersH(1:Order+1,1)=XCoeffH(1:Order+1);
+for nn=1:NData
+  
+  %[Zx(nn)]=CalculateZgivenXAndZSeriesBisection2C5Improved(Xin(nn),XCoeffZ(1),XCoeffZ(2:6));
+end
+[Zx] = CalculateZgivenXAndHSeriesCoeffs(Xin,XCoeffH,Order);
+
+ XPowersZ(1:Order+1,1)=XCoeffZ(1:Order+1);
+% %[cc,EX] =SeriesProduct1D(aa,bb,SeriesOrder1,SeriesOrder2)
+% [XPowersZ(1:Order*2+1,2),EX2]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:Order+1,1),Order+1,Order+1);
+% [XPowersZ(1:Order*3+1,3),EX3]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:2*Order+1,2),Order+1,2*Order+1);
+% [XPowersZ(1:Order*4+1,4),EX4]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:3*Order+1,3),Order+1,3*Order+1);
+% [XPowersZ(1:Order*5+1,5),EX5]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:4*Order+1,4),Order+1,4*Order+1);
+% [XPowersZ(1:Order*6+1,6),EX6]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:5*Order+1,5),Order+1,5*Order+1);
+% [XPowersZ(1:Order*7+1,7),EX7]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:6*Order+1,6),Order+1,6*Order+1);
+% [XPowersZ(1:Order*8+1,8),EX8]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:7*Order+1,7),Order+1,7*Order+1);
+
+for nn=2:Order+1
+[XPowersZ(1:Order*nn+1,nn),EXn(nn)]=SeriesProduct1D(XPowersZ(1:Order+1,1),XPowersZ(1:Order*(nn-1)+1,nn-1),Order+1,(nn-1)*Order+1);
+XPowersH(1:Order*nn+1,nn)=ConvertZSeriesToHermiteSeriesNew(XPowersZ(1:Order*nn+1,nn),Order*nn);
+end
+
+XrMu
+EXn
+
+
+XPowersH(1,1:Order+1)
+
+
+str=input("Look at moments of X----1")
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+Order=7;
+
+[YCoeffH,Zy] = CalculateHermiteSeriesFromData01(Yin,Order,ZI); 
+[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+for qq=1:Order+1
+     YrMu(qq)=sum(Yin(1:NData).^qq)/NData;
+end
+ 
+[MomentsY] = CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:Order+1),Order,NMoments);
+
+YCoeffZs=YCoeffZ/sqrt(MomentsY(2)-MomentsY(1).^2);
+
+ [c0,c] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Yin,ZI);%,YCoeffZ(2:Order+1));
+ YCoeffZ(1)=c0;
+ YCoeffZ(2:Order+1)=c(1:Order);
+
+
+ 
+ 
+
+for nn=1:NData
+  %[Zy(nn)]=CalculateZgivenXAndZSeriesBisection2C5Improved(Yin(nn),YCoeffZ(1),YCoeffZ(2:6));
+end
+
+
+YPowersZ(1:Order+1,1)=YCoeffZ(1:Order+1);
+[YCoeffH(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ(1:Order+1),Order);
+
+[Zy] = CalculateZgivenXAndHSeriesCoeffs(Yin,YCoeffH,Order);
+
+
+
+YPowersH(1:Order+1,1)=YCoeffH(1:Order+1);
+for nn=2:Order+1
+[YPowersZ(1:Order*nn+1,nn),EYn(nn)]=SeriesProduct1D(YPowersZ(1:Order+1,1),YPowersZ(1:Order*(nn-1)+1,nn-1),Order+1,(nn-1)*Order+1);
+YPowersH(1:Order*nn+1,nn)=ConvertZSeriesToHermiteSeriesNew(YPowersZ(1:Order*nn+1,nn),Order*nn);
+
+end
+
+YrMu
+EYn
+
+% mm=0;
+% for nn=1:NData
+%     if((abs(Zx(nn))1)
+% ExistingCorr(1:(pp-1)*Order)=HCorr3(1:(pp-1)*Order);
+% else
+% ExistingCorr=0;    
+% end
+% %[HCorr3] = CalculateHCorrIterative(YPowersH(1:Order+1,1),XPowersH,EXYin,ExistingCorr,NewCorr,LenECorr,LenNCorr,Order);
+% %[HCorr3] = CalculateHCorrIterative02(YPowersH(1:pp*Order+1,pp),XPowersH,EXYin,ExistingCorr,NewCorr,LenECorr,LenNCorr,Order,pp);
+% [HCorr3] = CalculateHCorrIterative04(YPowersH,XPowersH,EXY1in,EXY2in,ExistingCorr,NewCorr,LenECorr,LenNCorr,Order,pp);
+% 
+% for mm=1:Order
+% %EXY1(mm)=YPowersH(1,2)*XPowersH(1,mm); 
+% EXY2(mm)=YPowersH(1,pp)*XPowersH(1,mm); 
+% EXY3(mm)=YPowersH(1,pp)*XPowersH(1,mm); 
+% EXY0(mm)=YPowersH(1,pp).*XPowersH(1,mm);
+% EXY00(mm)=YPowersH(1,pp).*XPowersH(1,mm);
+% EXY000(mm)=YPowersH(1,pp).*XPowersH(1,mm);
+% for nn=1:Order*pp
+%  %EXY1(mm)=EXY1(mm)+YPowersH(nn+1,1).*XPowersH(nn+1,mm).*factorial(nn)*HCorr1(nn);
+%  EXY2(mm)=EXY2(mm)+YPowersH(nn+1,pp).*XPowersH(nn+1,mm).*factorial(nn)*HCorr2(nn);
+%  EXY3(mm)=EXY3(mm)+YPowersH(nn+1,pp).*XPowersH(nn+1,mm).*factorial(nn)*HCorr3(nn);
+% end
+% for nn=1:Order
+%  %EXY1(mm)=EXY1(mm)+YPowersH(nn+1,1).*XPowersH(nn+1,mm).*factorial(nn)*HCorr1(nn);
+%  EXY00(mm)=EXY00(mm)+YPowersH(nn+1,pp).*XPowersH(nn+1,mm).*factorial(nn)*HCorr3(nn);
+% end
+% 
+% if(pp<2)
+%     pp2=1;
+% else
+%     pp2=2;
+% end
+% for nn=1:Order*pp2
+%  %EXY1(mm)=EXY1(mm)+YPowersH(nn+1,1).*XPowersH(nn+1,mm).*factorial(nn)*HCorr1(nn);
+%  EXY000(mm)=EXY000(mm)+YPowersH(nn+1,pp).*XPowersH(nn+1,mm).*factorial(nn)*HCorr3(nn);
+% end
+% end
+% 
+% HCorr2
+% HCorr3
+% 
+% EXY1in
+% 
+% EXY2
+% EXY3
+% EXY0
+% EXY00
+% EXY000
+% 
+% HCorr3
+% %YPowersH
+% %XPowersH
+% pp
+% 
+% str=input("Look at comparison of moments data")       
+% end
+% 
+% HCorr3(pp*Order+1:pp*Order+Order)=HCorr2(pp*Order+1:pp*Order+Order);
+%     
+% %HCorr3=HCorr2;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % 
+% Order=7;
+% 
+% for pp=1:Order+1
+% 
+% for qq=1:Order
+% EXYin(pp,qq)=sum(Yin(1:NData).^pp.*Xin(1:NData).^qq)/NData;
+% end
+% end
+% 
+% 
+% 
+% %[HCorr3] = CalculateHCorrIterative04(YPowersH,XPowersH,EXY1in,EXY2in,ExistingCorr,NewCorr,LenECorr,LenNCorr,Order,pp);
+% [HCorr3] = CalculateHCorrIterative08(YPowersH,XPowersH,EXYin,HCorr2,Order);
+% 
+% 
+% for pp1=1:(Order+1)
+%     for qq1=1:Order
+%         if(pp1<=qq1)
+%             NN1=pp1;
+%         else
+%             NN1=qq1;
+%         end
+%         EXY1(pp1,qq1)=YPowersH(1,pp1)*XPowersH(1,qq1); 
+%         for nn1=1:NN1*Order
+%             EXY1(pp1,qq1)=EXY1(pp1,qq1)+YPowersH(nn1+1,pp1)*XPowersH(nn1+1,qq1).*factorial(nn1)*HCorr3(nn1);
+%         end
+%     end
+% end
+% 
+% HCorr2
+% HCorr3
+% 
+% EXYin
+% 
+% EXY1
+% 
+% 
+% 
+% str=input("Look at comparison of moments data")       
+end
+
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [ZnNew] = MomentMatchedStandardNormalDiscretizedDensity(Ndata)
+
+[ZnNew] = StandardNormalIdealDesity02(Ndata,1);
+
+if((Ndata=30))
+    MOrder=6;
+
+
+alpha(1) =1.002706567896411;
+alpha(3)=-0.001341612601616;
+alpha(5)=0.000431803496557;
+
+
+elseif((Ndata>=250)&&(Ndata=2000)&&(Ndata=50000)&&(Ndata=150000)&&(Ndata=250000))
+    MOrder=12;  
+    
+    
+    alpha(1) =1.000899195470733;
+    alpha(3)=-0.000414380757501;
+  alpha(5)=0.000161271457889;
+  alpha(7)=0.000037987998807;
+  alpha(9)=0;%.000016308099635;
+  alpha(11)=0.;%000002045556572;                   0
+  alpha(13)=0;%.000000157715037;
+end
+
+
+%[ZnNew,alpha,Moment] = MatchMomentParametersOfIdealZhalfNew01(ZnNew,MOrder);
+
+% alpha(1)=0.998665620502348;
+% alpha(3)=0.000729818387735;
+% alpha(5)=0.000026530286747;
+% alpha(7)=0.000021718051556;
+% alpha(9)=0.000008734265559;
+% alpha(11)=-0.000000362716896;                  0
+% alpha(13)=-0.000000010818264;
+
+
+
+
+[ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(ZnNew,alpha,MOrder);
+
+
+% alpha
+% 
+% str=input("Look at alpha");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [ZZ] = StandardNormalIdealDesity02(Ndata,Sigma)
+%Ndata is number of data points in sample, for which we want to find the
+%coefficients of the Z-series.
+%Sigma=1+.06;
+%Sigma=1;
+if (rem(Ndata,2)==0)
+    NnMid=Ndata/2;
+    NnMid
+    ZZ(NnMid+1)=norminv(.5+1/Ndata*.5,0,Sigma);
+    ZZ(NnMid)=norminv(.5-1/Ndata*.5,0,Sigma);
+    for nn=2:NnMid-1
+        ZZ(nn+NnMid)=norminv(.5+(nn-.5)*1/Ndata,0,Sigma);
+        ZZ(-nn+1+NnMid)=norminv(.5-(nn-.5)*1/Ndata,0,Sigma);
+    end
+    %A=normcdf((Ndata-1)/Ndata);
+    %ZZ(Ndata)=exp(-5*A^2)/(1/Ndata);
+    A=norminv((Ndata-1)/Ndata);
+    ZZ(Ndata)=A +0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+    ZZ(1)=-A-0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+end
+
+if (rem(Ndata,2)==1)
+    NnMid=(Ndata+1)/2;
+    ZZ(NnMid)=0;
+    for nn=1:NnMid-2
+        ZZ(nn+NnMid)=norminv(.5+(nn)*1/Ndata,0,Sigma);
+        ZZ(-nn+NnMid)=norminv(.5-(nn)*1/Ndata,0,Sigma);
+    end
+   A=norminv((Ndata-1)/Ndata);
+    ZZ(Ndata)=A +0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+    ZZ(1)=-A-0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+end
+
+%ZZ
+%A
+%plot(ZZ)
+%str=input("Look at density plot standard")
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(Zn,alpha,MOrder)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+Ndata=length(Zn);
+ 
+ %MOrder=12;
+ HOrder=MOrder-2;
+ 
+ EZ(1)=0;
+EZ(2)=1;
+for nn=3:MOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %EZ(nn)
+    end
+end
+
+TMoment(1:MOrder)=EZ(1:MOrder);
+ %CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder);
+ [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+ 
+% F
+% dF
+% str=input("Look at results");
+ 
+ 
+
+w(MOrder)=1;
+for nn=MOrder-2:-2:2
+w(nn)=w(nn+2).*(nn+2)*(nn+1);%*.5;    
+end
+%w(2)=w(2)*1024;
+%w(8)=w(8)*2;
+%w(10)=w(10)*sqrt(2);
+%w
+%str=input("Look at weights--12")
+
+
+[ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+end
+
+
+ObjFuncBest=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+%str=input("Look at ObjFuncBest");
+%b0Best=c0;
+alphaBest(1:HOrder+1)=alpha(1:HOrder+1);
+
+
+    
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+    
+
+nn=0;
+while((nn.000000000001) || (abs(F(2,1))>.000000000001) || (abs(F(3,1))>.000000000001)))% || (abs(F(4,1))>.00000000001)))%|| (abs(F(5,1))>.00000000001)))%|| (abs(F(6,1))>.00000000001)))%|| (abs(F(7,1))>.00000000001)|| (abs(F(8,1))>.00000000001)  ))
+
+    nn=nn+1;
+    %Below Newton matrix equation to improve the Z-series coefficients guess at previous step.
+    da=da-dF\F;
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        alpha(mm-1)=da(qq,1);
+    end
+    %b(1:SeriesOrder)=da(2:SeriesOrder+1,1);
+    
+ 
+    
+    [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+    
+    for mm=1:MOrder
+        Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    end
+
+  
+ 
+    ObjFuncNew=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+ObjFuncNew
+%str=input("Look at objfunction--11--");
+
+%alpha
+
+%str=input("Look at alpha");
+
+    if(ObjFuncBest>ObjFuncNew)
+      
+       ObjFuncBest=ObjFuncNew;
+       alphaBest=alpha;
+       %bBest(1:SeriesOrder)=b(1:SeriesOrder);
+    end
+    
+    [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+end
+alpha=alphaBest;%Best;
+
+
+   [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+ 
+ 
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment)
+
+
+
+Ndata=length(Zn);
+
+
+
+[Hz] = HermitePoly(HOrder);
+
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    %Ndata
+    %nn
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    for nn=2:2:HOrder
+        HermiteZ(1:Ndata)=0;
+        for kk=1:2:(nn+1)
+            HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,kk).*ZZ(kk,1:Ndata);
+        end
+        dG(mm,nn)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1).*HermiteZ(1:Ndata))/Ndata;
+        
+    end
+    
+    dG0(mm)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1))/Ndata;
+    
+    G(mm,1)=Moment(mm)-TMoment(mm);
+end
+
+%dG0
+
+%str=input("Look at dG0");
+QQ=round(MOrder/2);
+qq=0;
+for nn=2:2:MOrder
+qq=qq+1;
+F(qq,1)=G(nn,1);
+dF(qq,1)=dG0(nn);
+dF(qq,2:QQ)=dG(nn,2:2:(2+(QQ-2)*2));
+end
+
+% F(1,1)=G(2,1);
+% F(2,1)=G(4,1);
+% F(3,1)=G(6,1);
+% F(4,1)=G(8,1);
+% F(5,1)=G(10,1);
+% F(6,1)=G(12,1);
+% 
+% dF(1,1)=dG0(2);
+% dF(2,1)=dG0(4);
+% dF(3,1)=dG0(6);
+% dF(4,1)=dG0(8);
+% dF(5,1)=dG0(10);
+% dF(6,1)=dG0(12);
+% 
+% dF(1,2)=dG(2,2);
+% dF(2,2)=dG(4,2);
+% dF(3,2)=dG(6,2);
+% dF(4,2)=dG(8,2);
+% dF(5,2)=dG(10,2);
+% dF(6,2)=dG(12,2);
+% 
+% dF(1,3)=dG(2,4);
+% dF(2,3)=dG(4,4);
+% dF(3,3)=dG(6,4);
+% dF(4,3)=dG(8,4);
+% dF(5,3)=dG(10,4);
+% dF(6,3)=dG(12,4);
+% 
+% dF(1,4)=dG(2,6);
+% dF(2,4)=dG(4,6);
+% dF(3,4)=dG(6,6);
+% dF(4,4)=dG(8,6);
+% dF(5,4)=dG(10,6);
+% dF(6,4)=dG(12,6);
+% 
+% dF(1,5)=dG(2,8);
+% dF(2,5)=dG(4,8);
+% dF(3,5)=dG(6,8);
+% dF(4,5)=dG(8,8);
+% dF(5,5)=dG(10,8);
+% dF(6,5)=dG(12,8);
+% 
+% dF(1,6)=dG(2,10);
+% dF(2,6)=dG(4,10);
+% dF(3,6)=dG(6,10);
+% dF(4,6)=dG(8,10);
+% dF(5,6)=dG(10,10);
+% dF(6,6)=dG(12,10);
+%Moment
+
+%dMoment
+
+% F
+% dF
+% dG
+% Moment
+% 
+% str=input("Look at moments and F");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Hz] = HermitePoly(Order)
+Hz(1:Order+1,1:Order+1)=0.0;
+Hz(1,1)=1.0;
+for k=1:Order
+    for m=1:k
+       Hz(k+1,m+1)=Hz(k,m);
+       if (m>1)
+            Hz(k+1,m-1)=Hz(k+1,m-1)-(m-1)*Hz(k,m);
+       end
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder)
+
+HOrder=MOrder-2;
+
+Ndata=length(Zn);
+
+[Hz] = HermitePoly(HOrder);
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    Ndata;
+    nn;
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+% Moment2=sum(ZnNew(1:Ndata).^2)*1/Ndata
+% Moment4=sum(ZnNew(1:Ndata).^4)*1/Ndata
+% Moment6=sum(ZnNew(1:Ndata).^6)*1/Ndata        
+% Moment8=sum(ZnNew(1:Ndata).^8)*1/Ndata
+% Moment10=sum(ZnNew(1:Ndata).^10)*1/Ndata
+% Moment12=sum(ZnNew(1:Ndata).^12)*1/Ndata 
+% Moment14=sum(ZnNew(1:Ndata).^14)*1/Ndata 
+
+
+
+plot((1:Ndata),Zn(1:Ndata),'g',(1:Ndata),ZnNew(1:Ndata),'r')
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [ObjMomentOut] = CalculateObjMoment(Moment0,Moment,w,MOrder)
+
+ObjMomentOut=0;
+for nn=1:MOrder
+    ObjMomentOut=ObjMomentOut+(Moment(nn)-Moment0(nn)).^2.*w(nn);
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Coeff,Zy] = CalculateHermiteSeriesFromData01(Yin,Order,ZI)
+
+Ndata=length(Yin);
+
+%Hz=HermitePoly(Order);  
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+
+
+ %[Zn] = StandardNormalIdealDesity02(Ndata,1);
+% %[ZI] = CalculateZI(Zn);
+% 
+% 
+% ZI1=Zn;
+%Below W is the design matrix for least squares regression i.e the matrix
+%that contains all the hermite polynomials calculated at ideal normal
+%density grid of size Ndata. 
+[W] = EvalHermiteArrayH0(ZI,Order);
+%[W1] = EvalHermiteArrayH0(ZI1,Order);
+
+
+
+for nn=1:Ndata
+    for hh=1:Order+1
+W(nn,hh)=W(nn,hh);%sqrt(normpdf(ZI(1,1:Ndata)));
+    end
+end
+
+%We first sort the data so that we can assign one appropriate Z-grid
+%point(and associated hermite polynomials calculated at that grid point)
+%to each data element. This ideal normal density Z-grid is
+%constructed so that its size is equal to data observations count. We
+%suppose that first derivative of random variables with repsect to Z
+%does not switch sign meaning that increasing values of data
+%observations have to aligned with increasing values of ideal normal
+%density grid.
+[Ys,I]=sort(Y(1:Ndata));
+%In the line below, the data sort is reversed so that now the ideal 
+%normal density grid elements assigned to various observations of random 
+%variable face it on data observations index. For details, Please look 
+%on interent the definition of matlab sort command with role of "I" 
+%in output and how it alters the index.   
+
+%%Zs1(I(1:Ndata))=ZI(1:Ndata);
+
+%Below the values to be regressed facing the design matrix are assigned
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+%Below, implement least squares regression.
+WW=(W'*W);
+
+coeff=(WW)$W'*Ymu);
+
+
+%str=input("Look at variances of hermite polynomials inside function")
+
+%Store in coefficietns array of all random varaibles
+Coeff(1:Order+1)= coeff(1:Order+1,1);
+%Store the associated Z in Z-array of all coefficients.   
+Zy(I(1:Ndata))=W(1:Ndata,2);
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+end
+
+
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [c] = ConvertHermiteSeriesToZSeries01(ch,Order)
+
+c(1:Order+1)=0;
+[Hz] = HermitePoly(Order);
+for nn=1:Order+1
+    for mm=1:Order+1
+        c(mm)=c(mm)+ch(nn).*Hz(nn,mm);
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Moments] = CalculateMomentsOfZSeries(a0,a,SeriesOrder,NMoments)
+
+
+%aa0=a0;
+%a0=0;% ---1
+
+EZ(1)=0;
+EZ(2)=1;
+%LogEZ(2)=0;
+for nn=3:NMoments*SeriesOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %LogEZ(nn)=log(EZ(nn-2))+log(nn-1);
+        %EZ(nn);
+    end
+end
+%EZ
+%EZ(1:30)
+%str=input('Look at numbers')
+a(SeriesOrder+1:SeriesOrder*NMoments+1)=0;
+b0=a0;
+b=a;
+
+
+for mm=1:NMoments
+    if(mm>1)
+        %[b0,b] =SeriesProductLogarithmic(a0,a,b0,b,SeriesOrder*mm);
+        
+        [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm);
+        
+        %b0-bb0
+        
+        %b-bb
+        
+        %str=input('Look at two products')
+        
+        
+        b(SeriesOrder*mm+1:SeriesOrder*NMoments+1)=0;
+    end
+   % Logb=log(abs(b));
+   % Signb=sign(b);
+    EXZ(mm,1)=b0;
+    for pp2=1:SeriesOrder*mm
+        if rem(pp2,2)==0
+            %EXZ(mm,1)=EXZ(mm,1)+exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2);
+            EXZ(mm,1)=EXZ(mm,1)+b(pp2).*EZ(pp2);
+ %           b(pp2).*EZ(pp2)
+ %           exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2)
+ %           mm
+ %           pp2
+            %str=input('Look at moment values')
+        end
+    end
+end
+
+    
+for nn=1:NMoments
+    Moments(nn)=EXZ(nn,1);
+end
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [c0,c,FittedMoments] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Xin,ZI)
+%The above function takes data as input.
+%And returns Z-series Coeffs upto 7th power of Z as
+%Y=c0+c(1)*Z+c(2)*Z^2+c(3)*Z^3+c(4)*Z^4+c(5)*Z^5+c(6)*Z^6+c(7)*Z^7
+%Fitted Moments are raw moments of the Z-series density and usually are exactly
+%the same as input raw moments rMu(1:8).i.e  FittedMoments(1:8)==rMu(1:8)
+%with high precision.
+
+
+Ndata=length(Xin);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for mm=1:8
+    rMu(mm)=sum(Xin(:).^mm)/Ndata;
+end
+
+for nn=1:Ndata
+    Xs(nn)=(Xin(nn)-rMu(1))./sqrt(rMu(2)-rMu(1).^2);
+end
+
+for mm=1:8
+    sMu1(mm)=sum(Xs(:).^mm)/Ndata;
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+SeriesOrder=7;    %Z-series till 7th power. hardcoded here cannot chagne.
+mOrder=8;         %Number of raw moments in calibration. hardcoded here cannot chagne.      
+Order=7;
+NMoments=mOrder;
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+sMu(7)=cMu(7)/cMu(2).^3.5;
+sMu(8)=cMu(8)/cMu(2).^4.0;
+
+
+
+%sMu
+%sMu1
+
+%str=input("Look at comparison of standardized moments:");
+
+
+[cGuess,Zx] = CalculateHermiteSeriesFromData01(Xs,Order,ZI); 
+
+wm(1:Order+1)=1;
+for mm=Order+1:-1:2
+    wm(mm-1)=wm(mm)*(mm+1).^2;
+end
+
+
+MaxIter=750;
+
+[cGuess,ObjBest] = ZSeries1DCoeffsIterativeForGuess(cGuess,sMu,Order,MaxIter,wm);
+
+
+
+
+
+
+
+%iter=5;           %Number of iterations in the calibration.
+                  %Please experiment and play around.  
+bGuess(1:7)=cGuess(2:8);    %We have assigned initial values of coefficients 
+
+
+c0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));
+c(1:7)=bGuess(1:7);
+
+[IsValidFlag] = CheckIsValidDensity(c0,c);
+
+[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+
+ObjBest=0.0;
+for nn1=1:Order+1
+    ObjBest=ObjBest+(sMu(nn1)-Moments(nn1)).^2.*wm(nn1);
+end
+
+bGuess0Best=c0;
+    bGuessBest=bGuess;
+
+Iterations=20;
+
+SuccessFlag=0;
+FailCount=0;
+for iterA=1:Iterations
+
+    SuccessFlag=0;
+    
+    
+    iter=3;
+[bGuess0,bGuess(1:7),ObjNew] = PreSmoothingGuessAdvancedFromGuessBestNew(sMu,bGuess,iter,wm);
+
+[IsValidFlag] = CheckIsValidDensity(bGuess0,bGuess);
+
+
+if((ObjNew=3)
+Random(1:7)=0;
+
+Random=randn(size(Random));
+
+bGuess(2:7)=bGuessBest(2:7)-bGuessBest(2:7).*.0002.*(Random(2:7)).*sqrt(2:7);
+bGuess0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));
+
+[SecondMoment] = CalculateSecondMomentC7(bGuess0,bGuess);
+bGuess=bGuess/sqrt(SecondMoment);
+
+end
+
+else
+  FailCount=0;  
+
+end
+
+
+end
+
+c0=-(bGuessBest(2)+3*bGuessBest(4)+15*bGuessBest(6));
+[SecondMoment] = CalculateSecondMomentC7(c0,bGuessBest);
+bGuessBest=bGuessBest/sqrt(SecondMoment);
+c(1:7)=bGuessBest(1:7);
+
+
+c0
+c
+%str=input("Look at pre-smoothing Guess result")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Comment this block if you do not want multidimensional Newton pass
+%Even though preSmoothing guess is very close to optimal, slight
+%inaccuracies can change the shape of probabioity density so this 
+%Multidimensional Newton is usually required.
+
+[F,dF] = CalculateMomentsAndDerivatives_0(sMu,c0,c,SeriesOrder,SeriesOrder,NMoments);
+
+da(1,1)=c0;
+da(2:SeriesOrder+1,1)=c(1:SeriesOrder);
+
+[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+ObjBest=0.0;
+for nn1=1:Order+1
+    ObjBest=ObjBest+(sMu(nn1)-Moments(nn1)).^2.*wm(nn1);
+end
+
+
+
+b0Best=c0;
+bBest(1:SeriesOrder)=c(1:SeriesOrder);
+
+nn=0;
+SuccessFlag=0;
+FailCount=0;
+
+while((nn.000000000001) || (abs(F(2,1))>.000000000001) || (abs(F(3,1))>.000000000001) || (abs(F(4,1))>.00000000001)|| (abs(F(5,1))>.00000000001)|| (abs(F(6,1))>.00000000001)|| (abs(F(7,1))>.00000000001)|| (abs(F(8,1))>.00000000001)  ))
+SuccessFlag=0;
+    nn=nn+1;
+    
+    if(nnObjNew) &&( IsValidFlag))
+      
+       ObjBest=ObjNew;
+       b0Best=b0;
+       bBest(1:SeriesOrder)=b(1:SeriesOrder);
+       SuccessFlag=1;
+    end
+    
+    if(SuccessFlag==0)
+        FailCount=FailCount+1;
+    else
+        FailCount=0;
+    end
+    
+    if(FailCount>=3)
+        Random(1:7)=0;
+
+        Random=randn(size(Random));
+        
+        b(1:7)=bBest(1:7)+bBest(1:7).*.0002.*(Random(1:7)).*sqrt(1:7);
+        b0=-(b(2)+3*b(4)+15*b(6));
+
+        [SecondMoment] = CalculateSecondMomentC7(b0,b);
+        b=b/sqrt(SecondMoment);
+        %b0=-(b(2)+3*b(4)+15*b(6));    
+    end
+
+    da(1,1)=b0;
+    da(2:SeriesOrder+1,1)=b(1:SeriesOrder);
+
+end
+c0=b0Best;%Best;
+c(1:SeriesOrder)=bBest;%Best(1:SeriesOrder);
+  
+
+%Multidimensional Newton root search ends. Comment till here if you like to
+%exclude this
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+c0
+c
+
+%str=input("Look at standardized output coefficients");
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Make sure you do not comment the lines below
+
+c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+c=c*sqrt(cMu(2));   %convert from standardized to central moments
+
+c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+
+[FittedMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Please Uncomment this if you want to see a comparison of input moments and
+%fitted moments
+rMu
+FittedMoments
+str=input('Look at comparison of fitted moments with input moments: Warning: Large Mismatch implies that many results would be off');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%COMMENT lines below if you do not want to see the density of new Z-series random variable with
+%fitted moments.
+%First calculate normal random variable on a grid below
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z
+%str=input('Look at Z');
+%Now calculate Y as a function of normal random variable.
+Y(1:Nn)=c0;
+for nn=1:7
+    Y(1:Nn)=Y(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Now take change of densities derivative of Y with respect to normal
+DfY(1:Nn)=0;
+for nn=2:Nn-1
+    DfY(nn) = (Y(nn + 1) - Y(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+DfY(Nn)=DfY(Nn-1);
+DfY(1)=DfY(2);
+
+%Now calculate the density of Y from density of normal random variable
+%using change of probability derivative.
+pY(1:Nn)=0;
+for nn = 1:Nn    
+    pY(nn) = (normpdf(Z(nn),0, 1))/abs(DfY(nn));
+end
+
+plot(Y(1:Nn),pY(1:Nn),'b');
+title('Density of the Z-Series Variable with Fitted Moments');
+
+%str=input('Look at the density of Z-series random variable')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [mu1,cMu] = ConvertRawMomentsToCentralMoments(Mu,mOrder)
+
+%cu
+%mu
+% %mOrder
+%str=input('Look at numbers');
+mu1=Mu(1);
+for mm=2:mOrder
+    cMu(mm)=0;
+    for jj=0:mm
+        if(jj==0)
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*1*mu1.^(mm-jj);
+            
+        else
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*Mu(jj)*mu1.^(mm-jj);
+            
+        end
+    end
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [YCoeffZ,ObjFunc] = ZSeries1DCoeffsIterativeForGuess(YCoeffZ,TargetMoments,Order,MaxIter,w1D)
+
+
+%Order=5;
+SeriesOrder=Order+1; 
+NMoments=Order+1;
+MOrder=Order+1;
+
+for nn=1:SeriesOrder
+    
+        DeltaX(nn)=.00125*2/factorial(nn+1);
+end
+DeltaXMax=DeltaX*10;
+
+% w1D(1:NMoments)=1;
+% for nn=NMoments-1:-1:1
+%         w1D(nn)=w1D(nn+1)*(nn+1).^0;
+% end
+
+
+
+%[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+[FittedMoments] = CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:Order+1),SeriesOrder,NMoments);
+
+
+
+[ObjFuncBest] = CalculateObjMoment(TargetMoments,FittedMoments,w1D,MOrder);
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+ObjFuncBest
+str=input("Look objFuncBest");
+%cBest=c;
+
+ImproveFlag(1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder)=0;
+ContinueFlag=1;
+kk=0;
+%while ((kk.0001))
+while ((ContinueFlag)&&(ObjFuncBest>.0001))
+kk=kk+1;
+    for nn=3:Order+1%SeriesOrder
+       
+
+            YCoeffZnew=YCoeffZ;
+            YCoeffZnew(1)=-(YCoeffZnew(3)+3*YCoeffZnew(5)+15*YCoeffZnew(7));
+            %[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            YCoeffZnew(:)=YCoeffZnew(:)./sqrt(FittedMoments(2));
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            
+            DoCalculations=0;
+            if(FittedMoments(nn)0)&&(DValue2>0)&&(DValue3>0)&&(DValue4>0)&&(DValue5>0)&&(DValue6>0);
+ %DValue1=1;
+ %DValue2=1;
+            end
+ DFlag1=1;
+ DFlag2=1;
+                if((DoCalculations)&&(ObjFunc1TargetMoments(nn))
+                YCoeffZnew(nn)=YCoeffZnew(nn)-DeltaX(nn);
+                DoCalculations=1;
+            end
+            if(DoCalculations)
+            YCoeffZnew(1)=-(YCoeffZnew(3)+3*YCoeffZnew(5)+15*YCoeffZnew(7));    
+            %[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            YCoeffZnew(:)=YCoeffZnew(:)./sqrt(FittedMoments(2));
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            [ObjFunc2] = CalculateObjMoment(TargetMoments,FittedMoments,w1D,MOrder);
+            
+                
+            end
+ 
+ DFlag1=1;
+ DFlag2=1;
+                if((DoCalculations)&&(ObjFunc2DeltaXMax(nn))
+           DeltaX(nn)=DeltaXMax(nn);
+       end
+    end
+        
+    ContinueFlag=(ContinueFlag || ImproveFlag(nn));
+    
+   
+end
+
+ObjFunc=ObjFuncBest;
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [c0Best,cBest,ObjBest] = PreSmoothingGuessAdvancedFromGuessBestNew(cmu,cin,iter,wm)
+
+
+%Mul=1.0;
+SeriesOrder=7;
+Order=7;
+NMoments=8;
+
+ EZ(1)=0;
+ EZ(2)=1;
+ for nn=3:NMoments*SeriesOrder+SeriesOrder+2
+     if rem(nn,2)==1
+         EZ(nn)=0;
+     else
+         EZ(nn)=EZ(nn-2)*(nn-1);
+         EZ(nn);
+     end
+ end
+
+
+c0=-(cin(2)+3*cin(4)+15*cin(6));  %This is for zero mean condition.
+c=cin;
+
+
+Moments=CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+ObjBest=0.0;
+for nn1=1:Order+1
+    ObjBest=ObjBest+(cmu(nn1)-Moments(nn1)).^2.*wm(nn1);
+end
+c0Best=c0;
+cBest(1:SeriesOrder)=c(1:SeriesOrder);
+
+
+
+MaxIter=10;
+
+for nn=1:iter     %increase the iterations over coefficients if neeeded
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+%tolerance=.0000001*cmu(3);
+tolerance=.001*cmu(3)/nn;
+mm=0;
+while ((abs(M3-cmu(3)) >tolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmObjNew)
+    ObjBest=ObjNew;
+    cBest=c;
+    c0Best=c0;
+end
+
+
+
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [EnMoment,dEnMomentdCoeff] = CalculateParticularMomentAndDerivativeOfItsCoeff(a0,a,SeriesOrder,nMoment,EZ)
+
+
+% if(SeriesOrder>=8)
+% a0=-(a(2)+3*a(4)+15*a(6)+105*a(8));% ---1
+% end
+% if(SeriesOrder<8)
+% a0=-(a(2)+3*a(4)+15*a(6));% ---1
+% end
+% 
+% EZ(1)=0;
+% EZ(2)=1;
+% for nn=3:NMoments*SeriesOrder+NZterms+2
+%     if rem(nn,2)==1
+%         EZ(nn)=0;
+%     else
+%         EZ(nn)=EZ(nn-2)*(nn-1);
+%         EZ(nn);
+%     end
+% end
+% EZ;
+
+%EXZ(1,1)=1;
+%for pp1=1:NZterms
+%        EXZ(1,pp1+1)=EZ(pp1);
+%end
+
+
+a(SeriesOrder+1:nMoment*SeriesOrder+1+SeriesOrder)=0;
+b0=a0;
+b=a;
+
+for mm=2:nMoment
+    
+    [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm+SeriesOrder+1);
+     b(SeriesOrder*mm+1:nMoment*SeriesOrder+SeriesOrder+1)=0;
+     if(mm==nMoment-1)
+         dEnMomentdCoeff=b0.*EZ(nMoment-1);
+         for pp2=1:SeriesOrder*nMoment-1
+            
+            dEnMomentdCoeff=dEnMomentdCoeff+b(pp2).*EZ(pp2+nMoment-1);
+        end
+        dEnMomentdCoeff=dEnMomentdCoeff*nMoment; 
+     end
+     if(mm==nMoment)
+        EnMoment=b0;
+        for pp2=1:SeriesOrder*nMoment
+            EnMoment=EnMoment+b(pp2).*EZ(pp2);
+    
+        end
+     end
+end   
+
+    
+
+end
+
+
+```
+
+.
+
+.
+```
+
+---
+
+## Error 49: Unbalanced $: 61
+
+**Snippet:** `>  > Friends, I have deleted my last post made yesterday. In my last post, the c`
+
+**Full content:**
+
+```
+> 
+> Friends, I have deleted my last post made yesterday. In my last post, the calculation of moments of the conditional variable was wrong. I had written 
+> 
+> 
+> 
+> Expected value of mth moment of Y given X is given as
+> 
+> $$E\left[\left[Y|X\right]^m|X=X_0\right]\,=\,\,\left(\sum\limits_{n=0}^{N}\,a_n\,\rho_n\,  H_n(Z_x) \right)^m| Z_x=Z_{x_0}\,$$
+> 
+> 
+> 
+> The above equation was basically wrong since it does not give us moments of  $\left[Y|X\right]$ and merely gives us square or cube or mth power of the conditional point value. This is obviously wrong. 
+> 
+> 
+> 
+> I had earlier done proper calculations of moments of the conditional expected value by making a local Taylor series around the conditional point $Z_x=Z_{X_0}$. I had mentioned about it in post 2924 and post 2925. Yesterday, I had taken too much drugged food and even though I was able to continue working reasonably well with extreme amount of caffeine, I was still somewhat muddled and made the above mistake.
+> 
+> 
+> 
+> Here I first describe how to find the local moments around some point on a density using local Taylor series as I had previously mentioned. And then post the corrected version of yesterday's post.
+> 
+> 
+> 
+> Suppose we have a Hermite-series of random variable Y given as
+> 
+> 
+> 
+> $$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,a_n\,H_n(Z_y)$$
+> 
+> 
+> 
+> We suppose its equivalent Z-series of Y is given as
+> 
+> 
+> 
+> $$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n$$
+> 
+> 
+> 
+> The average expected moments are obviously given as
+> 
+> 
+> 
+> $$E\left[{Y(Z_y)}^m\right]\,=\,E\left[\left(\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n\,\right)^m\,\right]$$
+> 
+> 
+> 
+> But these are average moments of the distribution. And we want to find conditional moments at some point on the distribution. We can also sometimes call them local moments.
+> 
+> 
+> 
+> Suppose we want to find conditional moments of Y given $Y\,=\,Y_0$. At $Y_0$ the value of $Z_y$ is $Z_{y_0}$. We take the derivatives of Z-series at $Z_{y_0}$ and re-expand the Z-series as a Taylor series around  (Z_{y_0}$ using derivatives calculated there. We take the coefficients of this new Z-Series/Hermite-Series around the conditional  value $Z_y\,=\,Z_{y_0}$ to find the conditional moments/local moments.
+> 
+> 
+> 
+> Taking above Example of the Z-series
+> 
+> 
+> 
+> $$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_y}^n$$
+> 
+> 
+> 
+> Taking conditional value at $Z_{y_0}$, we have
+> 
+> 
+> 
+> $$Y_0\,=\,\sum\limits_{n=0}^{N}\,\tilde{a}_n\,{Z_{y_0}}^n$$
+> 
+> 
+> 
+> The value of first derivative at $Z_{y_0}$ is given as
+> 
+> 
+> 
+> $$\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-1}\,(n+1)\,\tilde{a}_{n+1} \,\,{Z_{y_0}}^n$$
+> 
+> 
+> 
+> Similarly
+> 
+> 
+> 
+> $$\frac{d^2Y}{dZ^2}\,|^{\,\left(\, Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-2}\,(n+1)\,(n+2)\,\tilde{a}_{n+2} \,\,{Z_{y_0}}^n$$
+> 
+> 
+> 
+> and mth derivative is given as
+> 
+> 
+> 
+> $$\frac{d^mY}{dZ^m}\,|^{\,\left(\, Z_y\,=\,Z_{y_0}\,\right)}\,=\,\sum\limits_{n=0}^{N-m}\,(n+1)\,(n+2)\,\ldots\,(n+m)\,\tilde{a}_{n+m} \,\,{Z_{y_0}}^n$$
+> 
+> 
+> 
+> We use above derivatives to form a local Taylor series around $Z_y\,=\,Z_{y_0}$ as
+> 
+> \begin{align}
+> 
+> Y(Z_y\,-\,Z_{y_0})\,&=\,Y_0\,+\,\left[\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,\left(Z_y\,-Z_{y_0}\right) \\
+> 
+> &+\,\frac{1}{2}\,\left[\frac{d^2Y}{dZ^2}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^2 \\
+> 
+> &+\,\frac{1}{6}\,\left[\frac{d^3Y}{dZ^3}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^3 \\
+> 
+> &+\,\ldots \\
+> 
+> &+\,\frac{1}{N!}\,\left[\frac{d^NY}{dZ^N}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\,{\left(Z_y\,-Z_{y_0}\right)}^N \\
+> 
+> \end{align}
+> 
+> 
+> 
+> We convert the above Taylor to our familiar  Z-series by using
+> 
+> 
+> 
+> \begin{align}
+> 
+> \tilde{c}_0\,&=\,Y_0\,\\
+> 
+> \tilde{c}_1\,&=\left[\frac{dY}{dZ}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+> 
+> \tilde{c}_2\,&=\frac{1}{2}\,\left[\frac{d^2Y}{dZ^2}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+> 
+> \tilde{c}_3\,&=\,\frac{1}{6}\,\left[\frac{d^3Y}{dZ^3}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+> 
+> \,\ldots \\
+> 
+> \tilde{c}_N\,&=\frac{1}{N!}\,\left[\frac{d^NY}{dZ^N}\,|^{\,\left( Z_y\,=\,Z_{y_0}\,\right)}\,\right]\, \\
+> 
+> \end{align}
+> 
+> 
+> 
+> and get our new Z-series as
+> 
+> 
+> 
+> $$Y(Z_y-Z_{y_0})\,=\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{(Z_y\,-Z_{y_0})}^n$$
+> 
+> 
+> 
+> We do a change of variable and define $Z\,=(Z_y-Z_{y_0})$ to get
+> 
+> 
+> 
+> $$Y(Z)\,=\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{Z}^n$$
+> 
+> 
+> 
+> The conditional or local moments of the value $ Z_y\,=\,Z_{y_0}\,$ can be found as the expectation of the Z-Series below
+> 
+> 
+> 
+> $$\,E\left[ \,Y^m\,|\,Y\,=\,Y_{0}\right]\,=\,E\left[ \,Y^m\,|\,Z_y\,=\,Z_{y_0}\right]\,=E\left[\left(\,\sum\limits_{n=0}^{N}\,\tilde{c}_n\,{Z}^n\right)^m\right]$$ where Z in above Z-series is a standard normal random variable.
+> 
+> 
+> 
+> For example if the associated equivalent hermite-series is given as
+> 
+> 
+> 
+> $$Y(Z)\,=\,\sum\limits_{n=0}^{N}\,c_n\,H_n(Z)$$
+> 
+> 
+> 
+> then we can automatically calculate the conditional second moment as
+> 
+> 
+> 
+> $$E\left[Y^2|(Y\,=Y_0)\right]\,=\,\sum\limits_{n=0}^{N}\,c_n^2\,n!$$
+> 
+> 
+> 
+> and variance would be given as (just omitting the zeroth index term)
+> 
+> 
+> 
+> $$E\left[Var(Y)|(Y\,=Y_0)\right]\,=\,\sum\limits_{n=1}^{N}\,c_n^2\,n!$$
+> 
+.
+
+.
+
+.
+
+Friends, I am a bit tired and do not feel like working tonight but decided to share my ideas with friends. I will come back and work on them tomorrow. The ideas are tentative.
+
+
+
+Friends, please review the copied post.
+
+
+
+In the context of previous posts, Suppose we have a Hermite-series of random variable Y given as
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{n=0}^{N}\,a_n\,H_n(Z_y)$$
+
+
+
+and value of Y given X is given as
+
+
+
+$$\left[Y|X\right](Z_x)\,=\,\,\sum\limits_{n=0}^{N}\,a_n\,\rho_n\,  H_n(Z_x) \,$$
+
+
+
+Since second equation is derived from first equation after replacing  $H_n(Z_y)$ with $\rho_n\,  H_n(Z_x)$, it implies that both equations change continuously with each other and when $Z_y=Z_0$, we also have $Z_x=Z_0$, but there are extra correlation values.
+
+
+
+Suppose we write the orthogonal part of Y with respect to X as $Y \perp X$, then let us suppose we have
+
+
+
+       $$\,Y(Z_y)\,=\,\left[Y \perp X\right](Z_{\bar{y}})\,+\,\left[Y|X\right](Z_x)$$
+
+
+
+I suspect that with the given definition of $Y(Z_y)$ and $\left[Y|X\right](Z_x)$, the above equation is related by slopes of the respective curves at all points. In other words, it should  somehow hold in distribution sense that 
+
+
+
+$$\,Y(Z_y\,=\,Z_0)\,=\,\left[Y \perp X\right](Z_{\bar{y}}\,=\,Z_0)\,+\,\left[Y|X\right](Z_x\,=\,Z_0)$$
+
+
+
+We have the equations for $Y(Z_y\,=\,Z_0)$ and $\,\left[Y|X\right](Z_x\,=\,Z_0)$ and from there we should be able to find out $\left[Y \perp X\right] (Z_{\bar{y}}\,=\,Z_0)\,$
+
+
+
+We should be able to find out all derivatives of the form $ \,\frac{d^nY}{d{Z_y}^n}\,|^{\,\left( Z_y\,=\,Z_{0}\,\right)}\,\,\,$ and $\,\,\frac{d^n\left[Y|X\right]}{d{Z_x}^n}\,|^{\,\left( Z_x\,=\,Z_{0}\,\right)}\,\,\,$
+
+
+
+I earlier suspected that we could have the relationship as
+
+
+
+$$ \,\,\frac{d^n\left[Y \perp X\right]}{d{Z_{\bar{y}}}^n}\,|^{\,\left( Z_{\bar{y}}\,=\,Z_{0}\,\right)}\,\,\,=\,\,\frac{d^nY}{d{Z_y}^n}\,|^{\,\left( Z_y\,=\,Z_{0}\,\right)}\,\,\,-\,\,\frac{d^n\left[Y|X\right]}{d{Z_x}^n}\,|^{\,\left( Z_x\,=\,Z_{0}\,\right)}\,\,$$
+
+
+
+but the above relationship might not work for hermite polynomials of orthogonal normals and we may have to try a relationship between moments based on moments calculus as given below. First we will use the above derivatives to calculate the moment of the respective random variable and then  find the moments of orthogonal part through moments calculus subtraction. The program for finding moments of orthogonal part through both other parts that are given can possibly be as below.
+
+
+
+Again when $Z_y\,=\,Z_{0}$ and when $Z_x\,=\,Z_{0}$, we can find the moments of $Y(Z_y)$ and $\left[Y|X\right](Z_x)$ at those points and find the moments of  $\left[Y \perp X\right](Z_{\bar{y}})$  through moment calculus as below.
+
+
+
+
+```
+function [Moment1] =SubtractCorrelatedRvsByMomentsSubtraction(XCoeffZ,YCoeffZ)
+
+
+SeriesOrder=7;
+NMoments=8;
+%[Moment2] = CalculateMomentsOfZSeries((XCoeffZ(1)-(XCoeffZ(3)+3*XCoeffZ(5)+15*XCoeffZ(7))),XCoeffZ(2:8),SeriesOrder,NMoments);
+
+%[Moment] = CalculateMomentsOfZSeries((YCoeffZ(1)-(YCoeffZ(3)+3*YCoeffZ(5)+15*YCoeffZ(7))),YCoeffZ(2:8),SeriesOrder,NMoments);
+
+
+[Moment2] = CalculateMomentsOfZSeries((XCoeffZ(1)),XCoeffZ(2:8),SeriesOrder,NMoments);
+
+[Moment] = CalculateMomentsOfZSeries((YCoeffZ(1)),YCoeffZ(2:8),SeriesOrder,NMoments);
+
+
+
+Moment1(1)= Moment(1) - Moment2(1);
+
+Moment1(2)=Moment(2) -( 2*Moment1(1).*Moment2(1) + Moment2(2));
+
+Moment1(3)=Moment(3) -( 3 *Moment1(2).*Moment2(1) + 3*Moment1(1).*Moment2(2) + Moment2(3));
+
+Moment1(4)=Moment(4) -( 4* Moment1(3).*Moment2(1) + 6*Moment1(2).*Moment2(2) + 4*Moment1(1).* Moment2(3) + Moment2(4));
+
+Moment1(5)=Moment(5) -( 5* Moment1(4).*Moment2(1) + 10*Moment1(3).*Moment2(2) + 10*Moment1(2).*Moment2(3) + 5*Moment1(1)* Moment2(4) + Moment2(5));
+
+Moment1(6)=Moment(6) -( 6* Moment1(5).* Moment2(1) + 15*Moment1(4).*Moment2(2)+ 20*Moment1(3).*Moment2(3) +15*Moment1(2).*Moment2(4)+6*Moment1(1).*Moment2(5)+Moment2(6));
+
+Moment1(7)=Moment(7)-( 7* Moment1(6).*Moment2(1) + 21* Moment1(5).*Moment2(2) + 35*Moment1(4).*Moment2(3)+ 35*Moment1(3).*Moment2(4)+ 21*Moment1(2).*Moment2(5) + 7*Moment1(1).*Moment2(6) + Moment2(7));
+
+Moment1(8)=Moment(8)-( 8*Moment1(7).* Moment2(1) + 28*Moment1(6).*Moment2(2) + 56*Moment1(5).*Moment2(3) + 70*Moment1(4).*Moment2(4)+56*Moment1(3).*Moment2(5) + ...
+ 28.*Moment1(2).*Moment2(6) + 8*Moment1(1).*Moment2(7) +Moment2(8));
+
+
+
+Moment1
+
+str=input("Look at Moment1")
+end
+```
+
+.
+
+.
+
+.
+```
+
+---
+
+## Error 50: Unbalanced $: 1
+
+**Snippet:** `Friends, I went ahead and made some changes to the conditional density generatio`
+
+**Full content:**
+
+```
+Friends, I went ahead and made some changes to the conditional density generation algorithm (I am posting the new matlab program at the end of this post). Now there are no complex coefficients in the analytical module. I turned out that problem was not with correlations, I rather realized that odd and even coefficients of hermite-series have to possibly not larger than ratios applied on hermite coefficients(you can see this change in the new matlab function module named CalculateHermiteSeriesFromData02(). There are also some other minor changes. Now it is possible to calculate analytical densities at many SDEs where the earlier program was resulting in garbage graphs. 
+
+
+
+However, this is still not the final version and we need to do more work in improving the accuracy of the program but since we are improving everything step by step, this version is a huge improvement on previous one. However, there will still be one or two new versions.
+
+
+
+Here are some graphs of three sets of SDEs with three starting values of SDEs each. These SDEs have some parameters for which earlier program was not working at all. The description of SDE parameters and conditional starting values are in the program code. I am posting the graphs here followed by the code.
+
+.
+
+.
+
+.
+
+[![Image](../images/i.postimg.cc/fWYD0VDW/M2Conditional-SDE1Set1.png)](https://postimg.cc/Yj2J5qvT)
+
+
+
+[![Image](../images/i.postimg.cc/mk34x58J/M2Conditional-SDE1Set2.png)](https://postimg.cc/Pvq9Y2GQ)
+
+
+
+[![Image](../images/i.postimg.cc/1X0SxjJb/M2Conditional-SDE1Set3.png)](https://postimg.cc/SYK3CD0G)
+
+
+
+[![Image](../images/i.postimg.cc/J038w2Pg/M2Conditional-SDE2Set1.png)](https://postimg.cc/5QtTLncq)
+
+
+
+[![Image](../images/i.postimg.cc/QCgDLy0z/M2Conditional-SDE2Set12png.png)](https://postimg.cc/K3YwBJX7)
+
+
+
+[![Image](../images/i.postimg.cc/Y0N7csbn/M2Conditional-SDE2Set13png.png)](https://postimg.cc/9wfKZJ3Z)
+
+
+
+[![Image](../images/i.postimg.cc/8cdG80tZ/M2Conditional-SDE3Set1png.png)](https://postimg.cc/4H3qVBCc)
+
+
+
+[![Image](../images/i.postimg.cc/6qVKsmYz/M2Conditional-SDE3Set2png.png)](https://postimg.cc/D4zHLBVb)
+
+
+
+[![Image](../images/i.postimg.cc/x8GQr4tt/M2Conditional-SDE3Set3png.png)](https://postimg.cc/jnjmPZV7).,
+
+,
+
+,
+
+,
+
+```
+function []= ConditionalDensityHermitesNvariate0A02()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+%NMomentsY=Order+1;
+%NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+dt=.03125/2/8;
+Tt=64*2*8;
+T=Tt*dt;
+seed0=12130649;
+seed0=94210876;
+%seed0=14210876;
+%seed0=53612297
+seed0=97459782
+rng(seed0, 'twister')
+paths=50000;
+TT1=100*8/2; %Transition distribution start
+TT2=256*8/2; %Transition distribution end
+
+%%%%%%%%%%%%%%%%%%%5
+
+NDims=3;
+
+V0(1)=1.000;%.32;
+V00(1)=V0(1);
+
+%SDE1
+% thetaV(1)=1.0;%.045;%1;%.04;
+% kappaV(1)=0.000;%1.5;%1.5;
+% gamma(1)=.75;%.75
+% sigma0(1)=.55;%.35
+
+%SDE2
+%thetaV(1)=.90;%.045;%1;%.04;
+%kappaV(1)=1.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.6;%.35
+
+%SDE3
+thetaV(1)=1.350;%.045;%1;%.04;
+kappaV(1)=2.000;%1.5;%1.5;
+gamma(1)=.75;%.75
+sigma0(1)=.6;%.35
+
+
+mu1(1)=kappaV(1)*thetaV(1);
+mu2(1)=-kappaV(1);
+beta1(1)=0;
+beta2(1)=1;
+
+
+
+V0(2)=1.000;%.32;
+V00(2)=V0(2);
+
+%SDE1
+%thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=0.000;%1.5;%1.5;
+% gamma(2)=.55;%.75
+% sigma0(2)=.55;%.35
+
+%SDE2 
+% thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=2.000;%1.5;%1.5;
+% gamma(2)=.65;%.75
+% sigma0(2)=.45;%.35
+
+%SDE3
+thetaV(2)=.850;%.045;%1;%.04;
+kappaV(2)=.35000;%1.5;%1.5;
+gamma(2)=.65;%.75
+sigma0(2)=.55;%.35
+
+
+mu1(2)=kappaV(2)*thetaV(2);
+mu2(2)=-kappaV(2);
+beta1(2)=0;
+beta2(2)=1;
+
+
+
+V0(3)=1.000;%.33;
+V00(3)=V0(3);
+
+%SDE1
+%thetaV(3)=1.0;%.045;%1;%.04;
+% kappaV(3)=0.000;%1.5;%1.5;
+% gamma(3)=.95;%.75
+% sigma0(3)=.35;%.35
+
+%SDE2 
+% thetaV(3)=.750;%.045;%1;%.04;
+% kappaV(3)=0.5000;%1.5;%1.5;
+% gamma(3)=.95;%.75
+% sigma0(3)=.35;%.35
+
+
+%SDE3 
+thetaV(3)=1.150;%.045;%1;%.04;
+kappaV(3)=1.5000;%1.5;%1.5;
+gamma(3)=.95;%.75
+sigma0(3)=.35;%.35
+
+mu1(3)=kappaV(3)*thetaV(3);
+mu2(3)=-kappaV(3);
+beta1(3)=0;
+beta2(3)=1;
+
+
+Corr1(1,1)=1;
+Corr1(1,2)=.4;
+Corr1(1,3)=.5;
+Corr1(2,2)=1;
+Corr1(2,1)=.4;
+Corr1(2,3)=.3;
+Corr1(3,1)=.5;
+Corr1(3,2)=.3;
+Corr1(3,3)=1;
+
+%Corr1(1:3,1:3)=0.0;
+
+R=chol(Corr1);
+
+ R(1:3,1:3)=0;
+ R(1,1)=1;
+ R(2,2)=1;
+ R(3,3)=1;
+
+
+% V0(4)=1.000;%.44;
+% V00(4)=V0(4);
+% thetaV(4)=1.0;%.045;%1;%.04;
+% kappaV(4)=0.000;%1.5;%1.5;
+% mu1(4)=kappaV(4)*thetaV(4);
+% mu2(4)=-kappaV(4);
+% beta1(4)=0;
+% beta2(4)=1;
+% gamma(4)=.95;%.75
+% sigma0(4)=.55;%.45
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+for nn=1:NDims
+V(1:paths,nn)=V0(nn);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %Random2=R'*Random2;
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=0)=.0001;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,nn)=real(V(1:paths,nn));
+    end
+        
+    if(tt==TT2)
+        
+        Xin2(1:paths,nn)=real(V(1:paths,nn));
+    end
+
+    end    
+    
+end
+
+
+Yin(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin(pp)=Yin(pp)+Xin2(pp,mm);%-Xin(pp,mm);
+%-Xin(pp,mm);
+end
+end
+
+
+
+str=input("I have reached stone 1");
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%Xin=log(Xin);
+%Yin=log(Yin);
+
+
+
+
+Order=7;
+clf;
+%CalculateHermiteCorrelations02(Xin,Yin,paths);
+%[HCorr2,YPowersH,XPowersH,Zy,Zx] = CalculateHermiteCorrelations0NA(Xin,Yin,paths);
+[BetaCorrH,YCoeffH,XCoeffH,CorrXX1st] = CalculateHermiteCorrelations0NA04(Xin,Yin,paths,NDims)
+YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+
+BetaCorrH
+
+CorrXX1st
+str=input("I have reached Stone2");
+
+
+%Calculate2DZSeriesNDim(YCoeffH,BetaCorrH,CorrXX1st,NDims,Order);
+%[cn,ccn] = Calculate2DZSeriesNDimCorrected(YCoeffH,BetaCorrH,CorrXX1st,NDims,Order);
+%[bn,dn,cn,ccn] = Calculate2DZSeriesNDimCorrected(YCoeffH,BetaCorrH,CorrXX1st,NDims,Order)
+[cn,dn,bnv,bbnv,ch] = Calculate2DZSeriesNDimCorrected(YCoeffH,BetaCorrH,CorrXX1st,NDims,Order);
+
+
+
+% %XCoeffH(1:Order+1)=XPowersH(1:Order+1,1);
+% %YCoeffH(1:Order+1)=YPowersH(1:Order+1,1);
+% XCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(XPowersH(1:Order+1,1),Order);
+% YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YPowersH(1:Order+1,1),Order);
+% 
+% 
+% YPowersH(1,1)
+% XPowersH(1,1)
+% 
+% 
+% HCorr2
+% 
+% str=input("Look at the means");
+% 
+% 
+% YxCoeffH(1)=YPowersH(1,1);
+% 
+% for nn=2:Order+1
+%     %Yxi(pp)=Yxi(pp)+YPowersH(nn,1).*HCorr2(nn-1).*HnZx(pp,nn);
+%     YxCoeffH(nn)=YPowersH(nn,1).*HCorr2(nn-1);
+%     %YxCoeffH(nn)=YxiPowersH(nn,1);
+% end
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% %In this block, we do conditional Monte Carlo of SDE which is the true
+% %numerical 1D conditional density of Y conditional on X having a given
+% %value. This value of X on which we are conditionin is defined by V10 below.
+% %We can alter V10 below and it will take out a 1D slice from the 2D density
+% %of Y conditional on X  taking a specific value (here V10).
+
+% V10=.65;
+% %[XCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(XPowersH(1:Order+1,1),Order);
+% %V10=XCoeffZ(1);
+% V(1:paths)=V10;
+% Random2(1:paths,1)=0;
+% 
+% for tt=1:TT2-TT1
+%     
+%     Random2(1:paths/2)=randn(paths/2,1);
+%     Random2(paths/2+1:paths)=-Random2(1:paths/2);
+% 
+% 
+%     V(1:paths,1)=V(1:paths,1)+ ...
+%         (mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt + ...
+%         sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*sqrt(dt) + ...
+%         (mu1.*beta1*V(1:paths,1).^(beta1-1) + mu2.*beta2.*V(1:paths,1).^(beta2-1)).* ...
+%         ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2)*dt^2/2 + ...
+%         sigma0*V(1:paths,1).^gamma .*Random2(1:paths,1)*(1-1/sqrt(3))*dt^1.5) + ...
+%         .5*(mu1.*beta1.*(beta1-1).*V(1:paths,1).^(beta1-2) + mu2.*beta2.*(beta2-1).*V(1:paths,1).^(beta2-2)).* ...    
+%         sigma0^2.*V(1:paths,1).^(2*gamma).*dt^2/2 + ...
+%         sigma0*gamma*V(1:paths,1).^(gamma-1) .* ...
+%         ((mu1.*V(1:paths,1).^beta1 + mu2.*V(1:paths,1).^beta2).*Random2(1:paths,1).*1/sqrt(3)*dt^1.5 + ...
+%         sigma0.*V(1:paths,1).^gamma .*(Random2(1:paths,1).^2-1)*dt/2) + ...
+%         .5*sigma0*gamma*(gamma-1).*V(1:paths,1).^(gamma-2) .* ...
+%         sigma0^2.*V(1:paths,1).^(2*gamma) .*Random2(1:paths,1).*1/sqrt(3)*dt^1.5;
+% 
+%     V(V<0)=.0001;
+% 
+% end
+% 
+% %V=log(V);
+% 
+% %logV10=log(V10);
+% %Below
+% 
+% NoOfBins=200;
+% MaxCutOff=10;
+% 
+% [XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(V,paths,NoOfBins,MaxCutOff );
+% 
+% for qq=1:8
+%     
+%     DataMoments(qq)=sum(V(:).^qq)/paths;
+%     
+% end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Set1
+%V10(1)=.65;%.65;
+%V10(2)=1.2;
+%V10(3)=.85;
+
+%Set2
+%V10(1)=1.65;
+%V10(2)=1.1;%1.2;
+%V10(3)=.7;
+
+%Set3
+V10(1)=1.1;
+V10(2)=.5;%1.2;
+V10(3)=1.45;
+
+
+
+for nn=1:NDims
+V(1:paths,nn)=V10(nn);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:TT2-TT1
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<0)=.0001;
+
+    
+    %if(tt==TT1)
+    %    XXin(1:paths,nn)=V(1:paths,nn);
+    %end
+        
+    if(tt==TT2-TT1)
+        
+        XXin2(1:paths,nn)=V(1:paths,nn);
+    end
+
+    end    
+    
+end
+
+
+Yin2(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin2(pp)=Yin2(pp)+XXin2(pp,mm);%-V10(mm);
+end
+end
+
+NoOfBins=200;
+MaxCutOff=10;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin2,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(Yin2(:).^qq)/paths;
+    
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for nn=1:NDims
+    [Zx0(nn)] = CalculateZgivenXAndHSeriesCoeffs(V10(nn),XCoeffH(1:Order+1,nn),Order);
+end
+
+%Zx00=0.0;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% % 
+%  ZxSign(1:Order+1)=0;
+% % 
+%  Vol(1:Order+1)=0.0;
+%  Zx(1:Order+1)=0.0;
+%  for hh=1:Order
+%  for nn=1:NDims
+%      ZxSign(hh+1) = ZxSign(hh+1) + bnv(nn+1,hh+1).^1 .*Zx0(nn);
+%      for mm=1:NDims
+%          Zx(hh+1) = Zx(hh+1) + bnv(nn+1,hh+1).^1.*bnv(mm+1,hh+1).^1 .*Zx0(nn).*Zx0(mm).*CorrXX1st(nn,mm);
+%          Vol(hh+1)=Vol(hh+1)+bnv(nn+1,hh+1).^1.*bnv(mm+1,hh+1).^1.*CorrXX1st(nn,mm);
+%      end
+%  end
+%  end
+% % 
+%  for hh=1:Order 
+%  Zx(hh)=sign(ZxSign(hh+1)).*sqrt(Zx(hh+1)/Vol(hh+1));%./bbnv(1,hh+1).^1;
+%  %Zx(hh+1)=Zx0(1)+Zx0(2);%(ZxSign(hh+1));%./bbnv(1,hh+1);%
+%  end
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+Zx(1:Order)=0; 
+
+for hh=1:Order
+    for nn=1:NDims
+        Zx(hh) = Zx(hh) + bnv(nn+1,hh+1).^1.*Zx0(nn);
+    end
+end
+
+bh0=YCoeffH(1);
+
+[W] = EvalHermiteArrayH0(Zx0,Order);
+
+for hh=1:Order
+    for nn=1:NDims
+        bh0 = bh0 + ch(nn+1,hh+1).^1.*W(nn,hh+1);
+    end
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+a0=YCoeffZ(1);
+a1=YCoeffZ(2);
+a2=YCoeffZ(3);
+a3=YCoeffZ(4);
+a4=YCoeffZ(5);
+a5=YCoeffZ(6);
+a6=YCoeffZ(7);
+a7=YCoeffZ(8);
+
+
+d1=dn(2);
+d2=dn(3);
+d3=dn(4);
+d4=dn(5);
+d5=dn(6);
+d6=dn(7);
+d7=dn(8);
+
+
+
+%b0=(a0+a1.* Zx(1) +a2.* Zx(2).^2+a3.* Zx(3).^3+a4* Zx(4).^4+a5 *Zx(5).^5+a6* Zx(6).^6+a7* Zx(7).^7);
+b1=(a1* d1+2* a2* Zx(2)* d2 +3* a3* Zx(3).^2* d3+4* a4* Zx(4).^3* d4+5* a5* Zx(5).^4* d5+6* a6* Zx(6).^5* d6+7* a7* Zx(7).^6* d7);
+b2=(a2* d2.^2+3* a3* Zx(3)* d3^2 +6* a4* Zx(4).^2* d4^2+10* a5* Zx(5).^3* d5^2+15* a6* Zx(6).^4* d6^2+21* a7* Zx(7).^5* d7^2);
+b3=(a3* d3^3+4* a4 *Zx(4)* d4^3 +10* a5* Zx(5).^2* d5^3+20* a6* Zx(6).^3* d6^3+35* a7* Zx(7).^4* d7^3);
+b4=(a4* d4^4+5* a5* Zx(5)* d5^4 +15* a6 *Zx(6).^2* d6^4+35* a7* Zx(7).^3 *d7^4);
+b5=(a5* d5^5+6* a6* Zx(6)* d6^5 +21* a7 *Zx(7).^2* d7^5);
+b6=(a6* d6^6+7* a7* Zx(7)* d7^6 );
+b7=(a7* d7^7);
+
+
+%bh0=b0+b2+3*b4+15*b6;
+bh1=b1+3*b3+15*b5+105*b7;
+bh2=b2+6*b4+45*b6;
+bh3=b3+10*b5+105*b7;
+bh4=b4+15*b6;
+bh5=b5+21*b7;
+bh6=b6;
+bh7=b7;
+
+
+bh(1)=bh0;
+bh(2)=bh1;
+bh(3)=bh2;
+bh(4)=bh3;
+bh(5)=bh4;
+bh(6)=bh5;
+bh(7)=bh6;
+bh(8)=bh7;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCoeffz(1:Order+1)= ConvertHermiteSeriesToZSeries01(bh(1:Order+1),Order);
+
+
+[YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,Order+1);
+ 
+YMomentsModel
+ 
+DataMoments
+ 
+str=input("Look at comparison of moments");
+
+
+clf;
+
+PlotZSeriesDensity(YCoeffz(1),YCoeffz(2:Order+1),'b')
+
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title("Graph of sum of three SDE's density conditional on starting values of three SDE random variables.")
+%title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytical Density','Numerical Density1'}, ...
+    'Location','northeast')
+
+str=input("This is the first version without altering the moments of conditional density")
+
+hold off 
+ 
+ 
+end
+```
+
+
+.
+
+.
+
+.
+
+.
+
+
+```
+function [BetaCorrH,YCoeffH,XCoeffH,CorrXX1st] = CalculateHermiteCorrelations0NA04(Xin,Yin,NData,NDims)
+
+%This program finds required correlations between NDims explanatory
+%variables given in Xin that has NDims dimensionality. Yin is variable
+%being explained and is one-diemsnional.
+
+
+Order=7;
+NMoments=8;
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+
+for nn=1:NDims
+[XCoeffH(1:Order+1,nn),Zx(1:NData,nn)] = CalculateHermiteSeriesFromData01(Xin(1:NData,nn),Order,ZI);
+
+[Zx(1:NData,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(1:NData,nn),XCoeffH(1:Order+1,nn),Order);
+
+end
+
+
+[YCoeffH,Zy] = CalculateHermiteSeriesFromData01(Yin,Order,ZI); 
+[Zy] = CalculateZgivenXAndHSeriesCoeffs(Yin,YCoeffH,Order);
+
+
+for nn1=1:NDims
+    for nn2=1:NDims
+        if(nn1==nn2)
+            HCorrXX(nn1,nn2,1:Order)=1.0;
+        else
+            HCorrXX(nn1,nn2,1:Order) = CalculateCorrelationBivariateHermiteCH0(Zx(1:NData,nn1),Zx(1:NData,nn2),NData,Order);
+        end
+    end
+end
+
+for nn1=1:NDims
+    HCorrXY(nn1,1:Order) = CalculateCorrelationBivariateHermiteCH0(Zx(1:NData,nn1),Zy(1:NData),NData,Order);
+end
+
+for hh=1:Order
+    [BCorrXY(:,hh),Is(:,hh)]=sort(HCorrXY(:,hh),'descend');
+end
+
+for hh=1:Order
+    CorrXX(1:NDims,1:NDims)=HCorrXX(Is(1:NDims,hh),Is(1:NDims,hh),hh);
+    CorrXY(1:NDims,1)=HCorrXY(Is(1:NDims,hh),hh);
+    BetaCorr0(1:NDims)=CorrXX\CorrXY;
+    BetaCorrH(Is(1:NDims,hh),hh)=BetaCorr0(1:NDims);
+end
+
+
+
+
+
+% for hh=1:Order
+%     CorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+%     CorrXY(1:NDims,1)=HCorrXY(1:NDims,hh);
+%     BetaCorrH(1:NDims,hh)=CorrXX\CorrXY;
+% end
+
+
+
+
+CorrXX1st(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,1)
+
+
+BetaCorrH(:,1)'*CorrXX
+
+CorrXY
+
+HCorrXX
+
+HCorrXY
+
+BetaCorrH
+
+str=input("Look at BetaCorrH");
+end
+
+
+
+```
+
+
+.
+
+.
+
+.
+
+```
+function [bn,dn,cn,ccn,ch] = Calculate2DZSeriesNDimCorrected(YCoeffH,BetaCorrH,CorrXX1st,NDims,Order)
+
+
+%NDims in all of the program would be N-1 as y-tilde would be dealt separately
+
+
+% for nn=1:NDims
+%     ccn0(nn+1,8)=cn(nn+1).^2;
+%     cnSqrSum=cnSqrSum+cn(nn+1,8).*cn(nn+1,8);
+%     for mm=1:NDims
+%         if(nn~=mm)
+%             ccn0(nn+1,8)=ccn0(nn+1,8)+2*cn(nn+1,8).*cn(mm+1,8).*CorrXX1st(nn,mm);
+%             cnSqrSum=cnSqrSum+2*cn(nn+1,8).*cn(mm+1,8).*CorrXX1st(nn,mm);
+%         end
+%     end
+%     ccn(nn+1,8)=sqrt(1-ccn0(nn+1,8));
+%     
+% end
+
+
+for hh=1:Order
+    for nn=1:NDims
+        ch(nn+1,hh+1)=BetaCorrH(nn,hh).*YCoeffH(hh+1);%make sure indices on all hermite-correlations match.check.
+        %%%% nn+1 since 1st index would go to y-tilde.
+    end
+end
+
+
+ch
+YCoeffH
+
+str=input("Look at above---00-1-1-1-1-");
+
+[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+YCoeffH
+
+YCoeffZ
+
+str=input("Look at the Hermite and Z-series coeffs");
+
+
+
+
+
+%YCoeffZ=YCoeffZA;
+%if(abs(YCoeffZ(4))>abs(YCoeffZ(2)))
+%    YCoeffZ(4)=sign(YCoeffZ(4)).*abs(YCoeffZ(2));
+%end
+%if(abs(YCoeffZ(6))>abs(YCoeffZ(4)))
+%    YCoeffZ(6)=sign(YCoeffZ(6)).*abs(YCoeffZ(4));
+%end
+%if(abs(YCoeffZ(8))>abs(YCoeffZ(6)))
+%    YCoeffZ(6)=sign(YCoeffZ(6)).*abs(YCoeffZ(8));
+%end
+
+
+%if(abs(YCoeffZ(5))>abs(YCoeffZ(3)))
+%    YCoeffZ(5)=sign(YCoeffZ(5)).*abs(YCoeffZ(3));
+%end
+%if(abs(YCoeffZ(7))>abs(YCoeffZ(5)))
+%    YCoeffZ(5)=sign(YCoeffZ(5)).*abs(YCoeffZ(7));
+%end
+
+
+
+
+
+for nn=1:NDims
+[c(nn+1,1:Order+1)] = ConvertHermiteSeriesToZSeries01(ch(nn+1,1:Order+1),Order);
+end
+
+
+for nn=1:NDims
+    rho_z(nn+1,7)=c(nn+1,8)./YCoeffZ(8);
+    cn(nn+1,8)=(abs(rho_z(nn+1,7))).^(1/7);
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,8)=cn(nn+1,8).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,8).*cn(nn+1,8);
+    for mm=1:NDims
+        if(nn~=mm)
+            %ccn0(nn+1,8)=ccn0(nn+1,8)+2*cn(nn+1,8).*cn(mm+1,8).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,8).*cn(mm+1,8).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,8)=sqrt(1-ccn0(nn+1,8));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,8)=cn(2:NDims+1,8)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,8)=sqrt(1-cnSqrSum);
+ccn(1,8)=sqrt(1-cn(1,8).^2);
+Cn(1,8)=cn(1,8).*YCoeffZ(8);
+
+cn
+ccn
+str=input("Compare the Eighth Element From NDim---2");
+
+
+% ccn00(2,8)=cn(2,8).^2+2*cn(2,8).*cn(3,8).*CorrXX1st(1,2)+2*cn(2,8).*cn(4,8).*CorrXX1st(1,3)+ ...
+%     cn(3,8).^2+2*cn(3,8).*cn(4,8).*CorrXX1st(2,3)+cn(4,8).^2
+% 
+% ccn00(2,8)=sqrt(1-(cn(2,8).^2+2*cn(2,8).*cn(3,8).*CorrXX1st(1,2)+2*cn(2,8).*cn(4,8).*CorrXX1st(1,3)))
+% 
+% cnSqrSum
+% 
+% ccn0(2,8)
+% 
+% ccn(1,8)
+% 
+% ccn(2,8)
+% 
+% str=input("Look at the variables Inside");
+% 
+
+
+
+
+
+
+
+cnSqrSum=0;
+for nn=1:NDims
+    rho_z(nn+1,6)=c(nn+1,7)./YCoeffZ(7);
+    cn(nn+1,7)=(abs(rho_z(nn+1,6))).^(1/6);
+    %ccn(nn+1,7)=sqrt(1-cn(nn+1,7).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,7)=cn(nn+1,7).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,7).*cn(nn+1,7);
+    for mm=1:NDims
+        if(nn~=mm)
+         %   ccn0(nn+1,7)=ccn0(nn+1,7)+2*cn(nn+1,7).*cn(mm+1,7).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,7).*cn(mm+1,7).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,7)=sqrt(1-ccn0(nn+1,7));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,7)=cn(2:NDims+1,7)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,7)=sqrt(1-cnSqrSum);
+ccn(1,7)=sqrt(1-cn(1,7).^2);
+Cn(1,7)=cn(1,7).*YCoeffZ(7);
+
+
+cn
+ccn
+str=input("Compare the Seventh Element From NDim---2");
+
+
+cnSqrSum=0;
+for nn=1:NDims
+    CC(3,6)=YCoeffZ(8).*(21*cn(nn+1,8).^5.*ccn(nn+1,8).^2);
+    rho_z(nn+1,5)=(c(nn+1,6)-CC(3,6))./YCoeffZ(6);
+    if(abs(rho_z(nn+1,5))>.995)
+        rho_z(nn+1,5)=sign(rho_z(nn+1,5)).*.995;
+    end
+    cn(nn+1,6)=(abs(rho_z(nn+1,5))).^(1/5);
+%    nn
+%    c(nn+1,6)
+%    CC(3,6)
+%    YCoeffZ(8)
+%    YCoeffZ(6)
+%    rho_z(nn+1,5)
+%    cn(nn+1,6)
+%    
+%    str=input("Look inside the correlations module loop");
+    
+    
+    
+    
+    
+%    ccn(nn+1,6)=sqrt(1-cn(nn+1,6).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,6)=cn(nn+1,6).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,6).*cn(nn+1,6);
+    for mm=1:NDims
+        if(nn~=mm)
+          %  ccn0(nn+1,6)=ccn0(nn+1,6)+2*cn(nn+1,6).*cn(mm+1,6).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,6).*cn(mm+1,6).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,6)=sqrt(1-ccn0(nn+1,6));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,6)=cn(2:NDims+1,6)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+
+
+cn(1,6)=sqrt(1-cnSqrSum);
+ccn(1,6)=sqrt(1-cn(1,6).^2);
+Cn(1,6)=cn(1,6).*YCoeffZ(6);
+
+cn
+ccn
+str=input("Compare the Sixth Element From NDim---2");
+
+
+
+cnSqrSum=0;
+for nn=1:NDims
+    CC(3,5)=YCoeffZ(7).*(15*cn(nn+1,7).^4.*ccn(nn+1,7).^2);
+    rho_z(nn+1,4)=(c(nn+1,5)-CC(3,5))./YCoeffZ(5);
+    cn(nn+1,5)=(abs(rho_z(nn+1,4))).^(1/4);
+    %ccn(nn+1,5)=sqrt(1-cn(nn+1,5).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,5)=cn(nn+1,5).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,5).*cn(nn+1,5);
+    for mm=1:NDims
+        if(nn~=mm)
+           % ccn0(nn+1,5)=ccn0(nn+1,5)+2*cn(nn+1,5).*cn(mm+1,5).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,5).*cn(mm+1,5).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,5)=sqrt(1-ccn0(nn+1,5));
+    
+end
+
+
+
+cn(1,5)=sqrt(1-cnSqrSum);
+ccn(1,5)=sqrt(1-cn(1,5).^2);
+Cn(1,5)=cn(1,5).*YCoeffZ(5);
+
+
+cn
+ccn
+str=input("Compare the Fifth Element From NDim---2");
+
+
+
+
+%CC(3,4)=YCoeffZ(6).*(10*cn(6).^3.*dn(6).^2*zeta^2);
+%CC(5,4)=YCoeffZ(8).*(35*cn(8).^3.*dn(8).^4.*zeta^4);
+cnSqrSum=0;
+for nn=1:NDims
+    CC(5,4)=YCoeffZ(8).*(35*cn(nn+1,8).^3.*ccn(nn+1,8).^4);
+    CC(3,4)=YCoeffZ(6).*(10*cn(nn+1,6).^3.*ccn(nn+1,6).^2);
+    rho_z(nn+1,3)=(c(nn+1,4)-3*CC(5,4)-CC(3,4))./YCoeffZ(4);
+    cn(nn+1,4)=(abs(rho_z(nn+1,3))).^(1/3);
+    %ccn(nn+1,4)=sqrt(1-cn(nn+1,4).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,4)=cn(nn+1,4).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,4).*cn(nn+1,4);
+    for mm=1:NDims
+        if(nn~=mm)
+          %  ccn0(nn+1,4)=ccn0(nn+1,4)+2*cn(nn+1,4).*cn(mm+1,4).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,4).*cn(mm+1,4).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,4)=sqrt(1-ccn0(nn+1,4));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,4)=cn(2:NDims+1,4)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,4)=sqrt(1-cnSqrSum);
+ccn(1,4)=sqrt(1-cn(1,4).^2);
+Cn(1,4)=cn(1,4).*YCoeffZ(4);
+
+cn
+ccn
+str=input("Compare the Fourth Element From NDim---2");
+
+
+
+%CC(3,3)=YCoeffZ(5).*(6* cn(5).^2.* dn(5).^2);
+%CC(5,3)=YCoeffZ(7).*(15*cn(7).^2.*dn(7).^4);
+cnSqrSum=0;
+for nn=1:NDims
+    CC(3,3)=YCoeffZ(5).*(6*cn(nn+1,5).^2.*ccn(nn+1,5).^2);
+    CC(5,3)=YCoeffZ(7).*(15*cn(nn+1,7).^2.*ccn(nn+1,7).^4);
+    rho_z(nn+1,2)=(c(nn+1,3)-3*CC(5,3)-CC(3,3))./YCoeffZ(3);
+    cn(nn+1,3)=(abs(rho_z(nn+1,2))).^(1/2);
+    %ccn(nn+1,3)=sqrt(1-cn(nn+1,3).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,3)=cn(nn+1,3).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,3).*cn(nn+1,3);
+    for mm=1:NDims
+        if(nn~=mm)
+           % ccn0(nn+1,3)=ccn0(nn+1,3)+2*cn(nn+1,3).*cn(mm+1,3).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,3).*cn(mm+1,3).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,3)=sqrt(1-ccn0(nn+1,3));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,3)=cn(2:NDims+1,3)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,3)=sqrt(1-cnSqrSum);
+ccn(1,3)=sqrt(1-cn(1,3).^2);
+Cn(1,3)=cn(1,3).*YCoeffZ(3);
+
+cn
+ccn
+str=input("Compare the Third Element From NDim---2");
+
+
+
+%CC(7,2)=YCoeffZ(8).*(7*cn(8).*dn(8).^6*zeta^6);
+%CC(5,2)=YCoeffZ(6).*(5*cn(6).*dn(6).^4.*zeta^4);
+%CC(3,2)=YCoeffZ(4).* (3.* cn(4).* dn(4).^2.* zeta^2);
+cnSqrSum=0;
+for nn=1:NDims
+    CC(4,2)=YCoeffZ(4).*(3*cn(nn+1,4).*ccn(nn+1,4).^2);
+    CC(6,2)=YCoeffZ(6).*(5*cn(nn+1,5).*ccn(nn+1,6).^4);
+    CC(8,2)=YCoeffZ(8).*(7*cn(nn+1,8).*ccn(nn+1,8).^6);
+    rho_z(nn+1,1)=(c(nn+1,2)-15*CC(8,2)-3*CC(6,2)-CC(4,2))./YCoeffZ(2);
+    cn(nn+1,2)=(abs(rho_z(nn+1,1)));
+    %ccn(nn+1,2)=sqrt(1-cn(nn+1,2).^2);
+    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+end
+
+cnSqrSum=0;
+for nn=1:NDims
+    ccn0(nn+1,2)=cn(nn+1,2).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,2).*cn(nn+1,2);
+    for mm=1:NDims
+        if(nn~=mm)
+        %    ccn0(nn+1,2)=ccn0(nn+1,2)+2*cn(nn+1,2).*cn(mm+1,2).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,2).*cn(mm+1,2).*CorrXX1st(nn,mm);
+        end
+    end
+    ccn(nn+1,2)=sqrt(1-ccn0(nn+1,2));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,2)=cn(2:NDims+1,2)*sqrt(.995);
+    cnSqrSum=.995;
+end
+cn(1,2)=sqrt(1-cnSqrSum);
+ccn(1,2)=sqrt(1-cn(1,2).^2);
+Cn(1,2)=cn(1,2).*YCoeffZ(2);
+
+cn
+ccn
+str=input("Compare the Second Element From NDim---2");
+
+
+
+%CC(3,1)=YCoeffZ(2).*(ccn(nn+1,2).^2);
+%CC(5,1)=YCoeffZ(4).*(ccn(nn+1,4).^4);
+%CC(7,1)=YCoeffZ(6).*(ccn(nn+1,6).^6);
+CC(3,1)=YCoeffZ(2).*(cn(1,2).^2);
+CC(5,1)=YCoeffZ(4).*(cn(1,4).^4);
+CC(7,1)=YCoeffZ(6).*(cn(1,6).^6);
+
+
+
+
+
+cn(1,1)=(YCoeffZ(1)-CC(3,1)-3*CC(5,1)-15*CC(7,1))./YCoeffZ(1);
+
+
+cn
+ccn
+str=input("Look at coefficients cn----PleASE lOOK");
+
+
+dn(1:Order+1)=cn(1,1:Order+1);
+bn(1:Order+1)=ccn(1,1:Order+1);
+
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Coeff,Zy] = CalculateHermiteSeriesFromData02(Yin,Order,ZI)
+
+Ndata=length(Yin);
+
+%Hz=HermitePoly(Order);  
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+
+
+ %[Zn] = StandardNormalIdealDesity02(Ndata,1);
+% %[ZI] = CalculateZI(Zn);
+% 
+% 
+% ZI1=Zn;
+%Below W is the design matrix for least squares regression i.e the matrix
+%that contains all the hermite polynomials calculated at ideal normal
+%density grid of size Ndata. 
+[W] = EvalHermiteArrayH0(ZI,Order);
+%[W1] = EvalHermiteArrayH0(ZI1,Order);
+
+
+
+for nn=1:Ndata
+    for hh=1:Order+1
+W(nn,hh)=W(nn,hh);%sqrt(normpdf(ZI(1,1:Ndata)));
+    end
+end
+
+%We first sort the data so that we can assign one appropriate Z-grid
+%point(and associated hermite polynomials calculated at that grid point)
+%to each data element. This ideal normal density Z-grid is
+%constructed so that its size is equal to data observations count. We
+%suppose that first derivative of random variables with repsect to Z
+%does not switch sign meaning that increasing values of data
+%observations have to aligned with increasing values of ideal normal
+%density grid.
+[Ys,I]=sort(Y(1:Ndata));
+%In the line below, the data sort is reversed so that now the ideal 
+%normal density grid elements assigned to various observations of random 
+%variable face it on data observations index. For details, Please look 
+%on interent the definition of matlab sort command with role of "I" 
+%in output and how it alters the index.   
+
+%%Zs1(I(1:Ndata))=ZI(1:Ndata);
+
+%Below the values to be regressed facing the design matrix are assigned
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+%Below, implement least squares regression.
+WW=(W'*W);
+
+coeff=(WW)$W'*Ymu);
+
+
+%str=input("Look at variances of hermite polynomials inside function")
+
+%Store in coefficietns array of all random varaibles
+Coeff(1:Order+1)= coeff(1:Order+1,1);
+%Store the associated Z in Z-array of all coefficients.   
+Zy(I(1:Ndata))=W(1:Ndata,2);
+
+
+
+
+if(abs(Coeff(4)) >1/4*abs(Coeff(2)))
+    Coeff(4)=sign(Coeff(4)).*1/4*abs(Coeff(2));
+end
+if(abs(Coeff(6))>1/11*abs(Coeff(4)))
+    Coeff(6)=sign(Coeff(6)).*1/11*abs(Coeff(4));
+end
+if(abs(Coeff(8))>1/22*abs(Coeff(6)))
+    Coeff(8)=sign(Coeff(8)).*1/22*abs(Coeff(6));
+end
+
+
+if(abs(Coeff(5))>1/7*abs(Coeff(3)))
+    Coeff(5)=sign(Coeff(5)).*1/7*abs(Coeff(3));
+end
+if(abs(Coeff(7))>1/16*abs(Coeff(5)))
+    Coeff(7)=sign(Coeff(7)).*1/16*abs(Coeff(5));
+end
+
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+
+
+
+end
+
+
+
+
+```
+
+
+.
+
+.
+
+.
+
+.
+
+
+
+This is the last output you should see when you run this program.
+
+
+
+YMomentsModel =
+
+   1.0e+04 *
+
+  Columns 1 through 3
+
+   0.000313584289904   0.001018906977507   0.003434192175299
+
+  Columns 4 through 6
+
+   0.012020114656206   0.043739018979739   0.165647100126957
+
+  Columns 7 through 8
+
+   0.653615855891066   2.689931826926921
+
+DataMoments =
+
+   1.0e+04 *
+
+  Columns 1 through 3
+
+   0.000314857148010   0.001024046603839   0.003441871146309
+
+  Columns 4 through 6
+
+   0.011960047303472   0.042989179456855   0.159934849046360
+
+  Columns 7 through 8
+
+   0.616336693535963   2.462631402579260
+```
+
+---
+
+## Error 51: Unbalanced $: 47
+
+**Snippet:** `This Post and Next post are relevant preliminaries From my Paper:** **https://pa`
+
+**Full content:**
+
+```
+This Post and Next post are relevant preliminaries From my Paper:** **https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933283
+
+
+
+
+
+**Introduction to Z-Series and Hermite-Series**
+
+
+
+An extremely broad class of continuous non-Gaussian random variables can be represented as a power series in base standard random variables with very simple densities. Standard Gaussian and Standard Uniform are examples of two simple random variables whose power series could be used to find simple and convenient analytical representation of non-Gaussian random variables within appropriate classes. Most of the continuous non-Gaussian random variables of Log Normal distribution, generalized gamma distribution, and non-central chi-squared distribution can be represented as a power series in standard Gaussian random variable. Similarly continuous random variables belonging to beta distribution and many other distributions defined on a finite interval can be represented as a power series in standard Uniform random variable.
+
+
+
+**Representation of Non-Gaussian Random Variables in terms of a Taylor Series in Standard Gaussian called Z-Series**
+
+
+
+We can represent a large class of non-Gaussian random variables in terms of a Taylor Series in Standard Gaussian Random variable around its median $Z_0\,=\,0$.
+
+
+
+\begin{equation}\label{2.1.1}
+
+X(Z)\,=\,X(Z_0) \,+\, \sum\limits_{n=1}^{N}\, \frac{d^nX}{dZ^n}\, \frac{{Z}^n}{n!} 
+
+\end{equation}
+
+
+
+ We want to mention that above relationship between X and Z holds through equivalent Cumulative Distribution Function of both random variables and following two equations hold for any related $X_m$ and $Z_m$ in $X_m(Z_m)$
+
+
+
+\begin{equation}\label{2.1.2}
+
+Z_{m} \,=\, {\Phi}^{-1}(P_X(X_m)) 
+
+\end{equation}
+
+
+
+and 
+
+
+
+\begin{equation}\label{2.1.3}
+
+X_{m} \,=\, P^{-1}_X(\Phi(Z_m)) 
+
+\end{equation}
+
+
+
+where $\Phi(.)$ and $\Phi^{-1}(.)$ and $P_X(.)$ and ${P}^{-1}_X(.)$ represent CDF and inverse CDF of standard Gaussian and non-Gaussian random variable X respectively. 
+
+
+
+
+
+In most of the rest of this paper will represent the above series as
+
+
+
+\begin{equation}\label{2.1.4}
+
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z}^n 
+
+\end{equation}
+
+
+
+where it is understood that 
+
+
+
+\begin{equation}\label{2.1.5}
+
+a_0\,=\, X(Z_0)\, 
+
+\end{equation}
+
+\begin{equation}\label{2.1.6}
+
+a_n\,=\, \frac{1}{n!}\, \frac{d^nX}{dZ^n}\,,n\,\geq\,1 \, 
+
+\end{equation}
+
+
+
+In some of the applications of Z-series, we do not directly know the derivatives $\frac{d^nX}{dZ^n}\, $ and we directly estimate the coefficients $a_n\,$ from moments of the non-Gaussain random variables or through other numerical methods but equations (\ref{2.1.5} and \ref{2.1.6}) nevertheless hold. 
+
+
+
+**Hermite-Series Random Variables Representation**
+
+
+
+There is another representation of many non-Gaussian Continuous random variables in terms of Hermite Polynomials of standard Gaussian random variable.
+
+\begin{equation}\label{2.2.1}
+
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, ah_n\, H_n(Z) 
+
+\end{equation}
+
+
+
+where $H_n(Z)$ represents nth hermite polynomial as a function of standard normal random variable.
+
+This Hermite series representation of a particular order is algebraically equivalent to Z-series representation of the same order discussed in section \ref{sec2.1}. There are many analytics on non-Gaussian random variables like transformation of random variables using Taylor series and multiplication of random variables where a Z-series representation is more useful while there are some other analytics associated with correlations, variances and conditional expectation of non-Gaussian random variables where Hermite-Series representation would be more useful. In many of our numerical algorithms, we continue to switch between Z-Series of a random variable and its equivalent Hermite series.
+
+
+
+
+
+**Statistical Properties of Z-Series and Hermite-Series Random variables**
+
+
+
+
+
+In order to find probability distribution function and cumulative distribution function of Z-series and Hermite Series random variables, we have to first invert the formulas (\ref{2.1.4}) and (\ref{2.2.1}) to find Z(X). We have discussed this inversion algorithm in section \ref{sec2.9} later in the paper. We want to emphasize that some statistical properties are easier to find in Z-Series form while Hermite-Series form is convenient for many other statistical properties.
+
+
+
+
+
+probability distribution function of X is given through change of variable formula with standard normal density as
+
+
+
+\begin{equation}\label{2.3.1}
+
+p_X(X) \,=\, p_Z(Z(X))\,  |\frac{dZ}{dX}|
+
+\end{equation}
+
+cumulative distribution function of X is found through calculation of cumulative distribution function of associated value of Gaussian random variable as
+
+
+
+\begin{equation}\label{2.3.2}
+
+P_X(X) \,=\,\int\limits_{-\infty}^{Z(X)} p_Z(Z)\, dZ
+
+\end{equation}
+
+
+
+Mean of the Hermite-series distribution in given as
+
+
+
+\begin{equation}\label{2.3.3}
+
+\text{Mean}= E \left[X \right] \,=\, ah_0
+
+\end{equation}
+
+
+
+In terms of Z-series, mean is a series in even coefficients taken till final index N of the Z-series as
+
+
+
+\begin{equation}\label{2.3.4}
+
+\text{Mean}= E \left[X \right] \,=\,a_0\,+\, a_2 \, + \, 3\, a_4 \, + 15 \, a_6 + \ldots
+
+\end{equation}
+
+
+
+Median of the Z-series random variable is given as
+
+
+
+\begin{equation}\label{2.3.5}
+
+\text{Median}=a_0
+
+\end{equation}
+
+Variance of the Hermite-Series random variables is given as
+
+
+
+\begin{equation}\label{2.3.6}
+
+Var(X)= E \left[ \,(X\,-\mu(X))^2 \right] \,=\, E \left[ \left(\sum\limits_{n=0}^{N}\, ah_n\, H_n(Z)\,-ah_0 \, \right)^2 \, \right] \,=\, \sum\limits_{n=1}^{N}\, n! \, {ah_n}^2 
+
+\end{equation}
+
+
+
+Moments of the Z-series random variables are calculated as
+
+
+
+\begin{equation}\label{2.3.7}
+
+\mu_m(X)= E \left[ \,(X(Z))^m \right] \,=\,\, E \left[ \left(\sum\limits_{n=0}^{N}\, a_n\, Z^n \,\right)^m \right] \,
+
+\end{equation}
+
+
+
+In practice, the above moments are calculated through repeated series product of coefficients of a Z-series with itself and later substituting the expected values of powers of standard Gaussian in the expression.
+
+
+
+
+
+**Equivalence of Hermite-Series and Z-Series Random Variables**
+
+
+
+Nth order Z-series and Nth order Hermite-Series share a common span of Nth order polynomials so any random variable that can be represented with Nth order Z-series, can also be represented by a Hermite-Series up to Nth order Hermite Polynomial. In fact, once coefficients of Z-series are known, it is easily possible to find coefficients of equivalent Hermite-Series and Vice versa and this is just consequence of simple algebra.\par
+
+If we have Z-series representation of a non-Gaussian random variable is given, we can easily find coefficients of its Hermite-Series and vice versa.
+
+
+
+If we represent a Z-series as 
+
+\begin{equation}\label{2.4.1}
+
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z}^n 
+
+\end{equation}
+
+and a hermite series as
+
+\begin{equation}\label{2.4.2}
+
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, ah_n\, H_n(Z) 
+
+\end{equation}
+
+then for $N=7$ (for $N\, **Algorithm for Inversion of Hermite-Series/Z-Series Random Variables**
+
+
+
+Many times in our analytics, we know the coefficients of Z-series associated with a random variable as
+
+
+
+\begin{equation}\label{2.9.1}
+
+X(Z)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z}^n 
+
+\end{equation}
+
+
+
+and we need to find the value of Z associated with a particular observation of X. Suppose we have a particular observation of $X\,=\,X_0$, then associated value of $Z(X_0)$ would be the one that solves the following equation 
+
+\begin{equation}\label{2.9.2}
+
+X_0\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z}^n 
+
+\end{equation}
+
+
+
+In order to find the inverse Z of a particualr value $X_0$, we divide the range of standard normal random variables between -7 to +7 into fourteen equal intervals. We call $Z_{u}$ as upper boundary and $Z_{d}$ as lower boundary of each interval. 
+
+
+
+We loop over these intervals one by one and find the values 
+
+\begin{align}\label{2.9.3}
+
+& X(Z_d)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z_d}^n \\
+
+& X(Z_u)\,=\, \sum\limits_{n=0}^{N}\, a_n\, {Z_u}^n 
+
+\end{align}
+
+
+
+and choose the interval where
+
+
+
+\begin{equation}\label{2.9.4}
+
+X(Z_{d}) X_{mid} $, we halve the bracketed interval by choosing 
+
+
+
+ $Z_{d}=Z_{mid}$ and  $Z_{u}=Z_{u} $ 
+
+ and if $X_0 **Estimation of Z-series Coefficients From Numerical Data**
+
+
+
+Estimation of coefficients of Hermite-Series From numerical data works by regressing data observations on hermite polynomials associated with a discrete grid version of standard normal density.  We know that in Hermite series of a random variable, our data observations of non-Gaussian random variable and the underlying standard normal random variable are mapped on each other through common CDF values.
+
+
+
+Therefore, in this method first we have to construct a discrete grid on standard normal density so that number of discrete grid points on standard normal density match the total number of data observations and  probability mass associated with each grid cell matches the probability of each data observation and CDF of each discrete standard normal grid center matches the CDF of Hermite representation of each data point.
+
+
+
+**Construction of Discrete Normal Density on Data Grid And Regression of Non-Gaussian Random Variable Data Observations on Hermite Polynomials.**
+
+
+
+We suppose there are a total of P data observations of random variable X whose Hermite-Series we want to find. In order to find coefficients of Hermite-Series, we have to regress each of the P data observation on N hermite polynomials of a discrete normal density point associated with the data observation therefore grid size of discrete normal density should also be P. We also know that probability mass of each data observation is $\frac{1}{P}$, so the probability mass of each grid cell on standard normal discrete grid should also be $\frac{1}{P}$. The centres of these grid cells represent the discrete grid normal density points. In order to numerically construct this discrete standard normal grid of size P, we start out symmetrically from median and make boundaries of grid cells so that probability mass within each grid cell is $\frac{1}{P}$. This way we can make a symmetric grid around median that can be mapped on data observations through equivalent CDF.
+
+
+
+We regress our observations of non-Gaussian random variables on the Hermite polynomials calculated at these discrete grid normal density points. 
+
+We have assumed that first derivative of non-Gaussian random variable with respect to standard normal random variable is positive, and it means that data can be re-ordered in increasing function (sorted in ascending order) and assigned to increasing order of grid points on discrete normal density grid points we constructed earlier.  
+
+
+
+Once we have constructed discrete normal grid and associated each point on it with sorted data points, we simply regress data points on Hermite polynomial values calculated at particular standard normal discrete grid point on the associated sorted data in a least square fashion to find regression coefficients that also represent the coefficients of Hermite polynomials in the Hermite-series.
+
+
+
+If there are P data points, and we use N Hermite polynomials to represent the Hermite-Series of X, then our regression equation for each pth data point would be
+
+
+
+\begin{equation}\label{3.2.1}
+
+X_p\,=\, ah_0 \, + \,ah_1\, H_1(Z_p)\,+ \,ah_2\, H_2(Z_p)\,+ \ldots \,+\,ah_N\, H_N(Z_p)\,
+
+\end{equation}
+
+
+
+with the matrix equation given as
+
+
+
+\begin{equation}\label{3.2.2}
+
+\begin{bmatrix} 1 & H_1(Z_1) & H_2(Z_1) & ..... & H_N(Z_1) \\ 
+
+1 & H_1(Z_2) & H_2(Z_2) & ..... & H_N(Z_2) \\ ... & ... & ... & ... \\1 & H_1(Z_p) & H_2(Z_p) & ..... & H_N(Z_p) \\  ... & ... & ... & ... & ... \\ 
+
+1 & H_1(Z_P) & H_2(Z_P) & ... & H_N(Z_P) 
+
+\end{bmatrix}   \begin{bmatrix} ah_0 \\ ah_{1} \\ ah_{2} \\ ... \\ ah_{N} \end{bmatrix} \\ \,=\, \begin{bmatrix} X_1 \\ X_2 \\ ...  \\  X_p \\ ... \\  X_P \end{bmatrix}
+
+\end{equation}
+
+
+
+\begin{equation}\label{3.2.3}
+
+\boldsymbol{H \, a_h}\,=\,\boldsymbol{x}
+
+\end{equation}
+
+
+
+and we solve this equation with least squares as
+
+
+
+\begin{equation}\label{3.2.4}
+
+\boldsymbol{a_h}\,=\,\boldsymbol{{\left(H^T\, H \right)}^{-1}\,H^T\, x }
+
+\end{equation}
+```
+
+---
+
+## Error 52: Unbalanced $: 1
+
+**Snippet:** `Here is the program used to create the above graphs. Please look at previous pos`
+
+**Full content:**
+
+```
+Here is the program used to create the above graphs. Please look at previous posts for the remaining matlab function files or search the forum as they have been posted before.
+
+.
+
+.
+
+```
+function []= ConditionalDensityHermitesNvariate0A08()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+%NMomentsY=Order+1;
+%NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+dt=.03125/2/8;
+Tt=64*2*8;
+T=Tt*dt;
+seed0=12130649;
+%seed0=94210876;
+%seed0=14210876;
+%seed0=53612297
+%seed0=97459782
+rng(seed0, 'twister')
+paths=50000;
+TT1=100*8/2; %Transition distribution start
+TT2=256*8/2; %Transition distribution end
+
+%%%%%%%%%%%%%%%%%%%5
+
+NDims=4;
+
+V0(1)=1.000;%.32;
+V00(1)=V0(1);
+
+%SDE1
+ thetaV(1)=1.0;%.045;%1;%.04;
+ kappaV(1)=0.000;%1.5;%1.5;
+ gamma(1)=.75;%.75
+ sigma0(1)=.5;%.35
+
+
+ 
+%SDE2%
+%thetaV(1)=.90;%.045;%1;%.04;
+%kappaV(1)=1.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.85;%.35
+
+%SDE3
+thetaV(1)=1.350;%.045;%1;%.04;
+kappaV(1)=2.000;%1.5;%1.5;
+gamma(1)=.75;%.75
+sigma0(1)=.95;%.35
+
+
+mu1(1)=kappaV(1)*thetaV(1);
+mu2(1)=-kappaV(1);
+beta1(1)=0;
+beta2(1)=1;
+
+
+
+V0(2)=1.000;%.32;
+V00(2)=V0(2);
+
+%SDE1
+%thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=0.000;%1.5;%1.5;
+% gamma(2)=.65;%.75
+% sigma0(2)=.45;%.35
+
+%SDE2 
+ thetaV(2)=1.0;%.045;%1;%.04;
+ kappaV(2)=2.000;%1.5;%1.5;
+ gamma(2)=.65;%.75
+ sigma0(2)=.95;%.35
+
+%SDE3
+thetaV(2)=.850;%.045;%1;%.04;
+kappaV(2)=.35000;%1.5;%1.5;
+gamma(2)=.65;%.75
+sigma0(2)=.55;%.35
+
+
+mu1(2)=kappaV(2)*thetaV(2);
+mu2(2)=-kappaV(2);
+beta1(2)=0;
+beta2(2)=1;
+
+
+
+V0(3)=1.000;%.33;
+V00(3)=V0(3);
+
+%SDE1
+%thetaV(3)=1.0;%.045;%1;%.04;
+% kappaV(3)=0.000;%1.5;%1.5;
+% gamma(3)=.85;%.75
+% sigma0(3)=.45;%.35
+
+%SDE2 
+ thetaV(3)=.750;%.045;%1;%.04;
+ kappaV(3)=0.5000;%1.5;%1.5;
+ gamma(3)=.95;%.75
+ sigma0(3)=.45;%.35
+
+
+%SDE3 
+thetaV(3)=1.150;%.045;%1;%.04;
+kappaV(3)=1.5000;%1.5;%1.5;
+gamma(3)=.95;%.75
+sigma0(3)=.75;%.35
+
+mu1(3)=kappaV(3)*thetaV(3);
+mu2(3)=-kappaV(3);
+beta1(3)=0;
+beta2(3)=1;
+
+
+Corr1(1,1)=1;
+Corr1(1,2)=.4;
+Corr1(1,3)=.5;
+Corr1(2,2)=1;
+Corr1(2,1)=.4;
+Corr1(2,3)=.3;
+Corr1(3,1)=.5;
+Corr1(3,2)=.3;
+Corr1(3,3)=1;
+
+87%Corr1(1:3,1:3)=0.0;
+
+R=chol(Corr1);
+
+ R(1:3,1:3)=0;
+ R(1,1)=1;
+ R(2,2)=1;
+ R(3,3)=1;
+
+
+V0(4)=1.000;%.44;
+V00(4)=V0(4);
+thetaV(4)=1.0;%.045;%1;%.04;
+kappaV(4)=1.000;%1.5;%1.5;
+mu1(4)=kappaV(4)*thetaV(4);
+mu2(4)=-kappaV(4);
+beta1(4)=0;
+beta2(4)=1;
+gamma(4)=.95;%.75
+sigma0(4)=.55;%.45
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+for nn=1:NDims
+V(1:paths,nn)=V0(nn);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %Random2=R'*Random2;
+ %   random1=Random2*R(:,1);
+ %   random2=Random2*R(:,2);
+ %   random3=Random2*R(:,3);
+    
+ %   Random2(:,1)=random1;
+ %   Random2(:,2)=random2;
+ %   Random2(:,3)=random3;
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=0)=.0001;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,nn)=real(V(1:paths,nn));
+    end
+        
+    if(tt==TT2)
+        
+        Xin2(1:paths,nn)=real(V(1:paths,nn));
+    end
+
+    end    
+    
+end
+
+
+Yin(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin(pp)=Yin(pp)+Xin2(pp,mm);%-Xin(pp,mm);
+%-Xin(pp,mm);
+end
+end
+
+randn()
+
+str=input("I have reached stone 1");
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+Order=7;
+clf;
+[BetaCorrH,YCoeffH,XCoeffH,HCorrXX] = CalculateHermiteCorrelations0NA04(Xin,Yin,paths,NDims);
+YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+%HCorrXX(:,:)=0.0;
+
+BetaCorrH
+
+
+randn
+%CorrXX1st
+str=input("I have reached Stone2");
+
+
+%[cn,dn,bnv,bbnv,ch] = Calculate2DZSeriesNDimCorrected(YCoeffH,BetaCorrH,HCorrXX,NDims,Order);
+%cn=bnv;
+[cn,ch]=CalculateGaussianCorrelationFromHermiteCorrelationsNDim(YCoeffH,XCoeffH,BetaCorrH,HCorrXX,NDims,Order);
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Set1
+V10(1)=.65;%.65;%
+V10(2)=1.2;
+V10(3)=.85;
+V10(4)=1.85;
+
+
+
+
+% %Set2
+V10(1)=.55;
+V10(2)=1.1;%1.2;
+V10(3)=.7;
+V10(4)=.65
+% 
+% %Set3
+ V10(1)=1.25;
+ V10(2)=1.35;%1.2;
+ V10(3)=1.25;
+ V10(4)=1.4
+
+  
+ V10(1)=.65;
+ V10(2)=.71;%1.2;
+ V10(3)=.67;
+ V10(4)=.6
+
+ 
+
+%V10(1)=.65;
+%V10(2)=.51;%1.2;
+%V10(3)=.73;
+
+%V10(1)=1.65;
+%V10(2)=1.51;%1.2;
+%V10(3111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)=1.63;
+
+for nn=1:NDims
+V(1:paths,nn)=V10(nn);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:TT2-TT1
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %random1=Random2*R(:,1);
+    %random2=Random2*R(:,2);
+    %random3=Random2*R(:,3);
+    
+    %Random2(:,1)=random1;
+    %Random2(:,2)=random2;
+    %Random2(:,3)=random3;
+    
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<0)=.0001;
+
+    
+    %if(tt==TT1)
+    %    XXin(1:paths,nn)=V(1:paths,nn);
+    %end
+        
+    if(tt==TT2-TT1)
+        
+        XXin2(1:paths,nn)=V(1:paths,nn);
+    end
+
+    end    
+    
+end
+
+
+Yin2(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin2(pp)=Yin2(pp)+XXin2(pp,mm);%-V10(mm);
+end
+end
+
+
+
+randn()
+
+str=input("I have reached stone 4");
+
+
+
+NoOfBins=200;
+MaxCutOff=10;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin2,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(Yin2(:).^qq)/paths;
+    
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for nn=1:NDims
+    [Zx0(nn)] = CalculateZgivenXAndHSeriesCoeffs(V10(nn),XCoeffH(1:Order+1,nn),Order);
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+Zx(1:Order)=0; 
+
+for hh=1:Order
+    for nn=1:NDims
+        %Zx(hh) = Zx(hh) + bnv(nn+1,hh+1).^1.*Zx0(nn);
+        Zx(hh) = Zx(hh) + cn(nn+1,hh+1).^1.*Zx0(nn);
+    end
+end
+
+bh0=YCoeffH(1);
+
+[W] = EvalHermiteArrayH0(Zx0,Order);
+
+for hh=1:Order
+    for nn=1:NDims
+        bh0 = bh0 + ch(nn+1,hh+1).^1.*W(nn,hh+1);
+    end
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+a0=YCoeffZ(1);
+a1=YCoeffZ(2);
+a2=YCoeffZ(3);
+a3=YCoeffZ(4);
+a4=YCoeffZ(5);
+a5=YCoeffZ(6);
+a6=YCoeffZ(7);
+a7=YCoeffZ(8);
+
+
+d1=cn(1,2);
+d2=cn(1,3);
+d3=cn(1,4);
+d4=cn(1,5);
+d5=cn(1,6);
+d6=cn(1,7);
+d7=cn(1,8);
+
+
+%b0=(a0+a1.* Zx(1) +a2.* Zx(2).^2+a3.* Zx(3).^3+a4* Zx(4).^4+a5 *Zx(5).^5+a6* Zx(6).^6+a7* Zx(7).^7);
+b1=(a1* d1+2* a2* Zx(2)* d2 +3* a3* Zx(3).^2* d3+4* a4* Zx(4).^3* d4+5* a5* Zx(5).^4* d5+6* a6* Zx(6).^5* d6+7* a7* Zx(7).^6* d7);
+b2=(a2* d2.^2+3* a3* Zx(3)* d3^2 +6* a4* Zx(4).^2* d4^2+10* a5* Zx(5).^3* d5^2+15* a6* Zx(6).^4* d6^2+21* a7* Zx(7).^5* d7^2);
+b3=(a3* d3^3+4* a4 *Zx(4)* d4^3 +10* a5* Zx(5).^2* d5^3+20* a6* Zx(6).^3* d6^3+35* a7* Zx(7).^4* d7^3);
+b4=(a4* d4^4+5* a5* Zx(5)* d5^4 +15* a6 *Zx(6).^2* d6^4+35* a7* Zx(7).^3 *d7^4);
+b5=(a5* d5^5+6* a6* Zx(6)* d6^5 +21* a7 *Zx(7).^2* d7^5);
+b6=(a6* d6^6+7* a7* Zx(7)* d7^6 );
+b7=(a7* d7^7);
+
+
+%bh0=b0+b2+3*b4+15*b6;
+bh1=b1+3*b3+15*b5+105*b7;
+bh2=b2+6*b4+45*b6;
+bh3=b3+10*b5+105*b7;
+bh4=b4+15*b6;
+bh5=b5+21*b7;
+bh6=b6;
+bh7=b7;
+
+
+bh(1)=bh0;
+bh(2)=bh1;
+bh(3)=bh2;
+bh(4)=bh3;
+bh(5)=bh4;
+bh(6)=bh5;
+bh(7)=bh6;
+bh(8)=bh7;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCoeffz(1:Order+1)= ConvertHermiteSeriesToZSeries01(bh(1:Order+1),Order);
+
+
+[YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,Order+1);
+ 
+YMomentsModel
+ 
+DataMoments
+ 
+str=input("Look at comparison of moments");
+
+[cMu1,YCentralMoments]=ConvertRawMomentsToCentralMoments(YMomentsModel,Order+1);
+
+YCentralMoments
+
+str=input("Look at central moments");
+
+% Order0=7;
+% Order1=13;
+% NData=paths;
+% [CondMomentYgivX,BetaCorrHxy] = CalculateConditionalMomentYgivXNDims(Xin,Yin,NData,Zx0,NDims,Order0,Order1)
+% 
+% [VarConditional]=FindSecondConditionalMoment(YCoeffH,BetaCorrH,Zx0)
+% 
+% 
+% BetaCorrHxy
+% BetaCorrH
+% 
+% str=input("Look at conditionalVariance");
+
+clf;
+
+PlotZSeriesDensity(YCoeffz(1),YCoeffz(2:Order+1),'b')
+
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title("Graph of Density of sum of Four SDE Variables conditional on starting values of the Four SDE random variables.")
+%title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytical Density','Numerical Density1'}, ...
+    'Location','northeast')
+
+str=input("This is the first version without altering the moments of conditional density")
+
+hold off 
+ 
+ 
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [BetaCorrH,YCoeffH,XCoeffH,HCorrXX] = CalculateHermiteCorrelations0NA04(Xin,Yin,NData,NDims)
+
+%This program finds required correlations between NDims explanatory
+%variables given in Xin that has NDims dimensionality. Yin is variable
+%being explained and is one-diemsnional.
+
+
+Order=7;
+NMoments=8;
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+
+for nn=1:NDims
+[XCoeffH(1:Order+1,nn),Zx(1:NData,nn)] = CalculateHermiteSeriesFromData02(Xin(1:NData,nn),Order,ZI);
+
+[Zx(1:NData,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(1:NData,nn),XCoeffH(1:Order+1,nn),Order);
+
+end
+
+
+[YCoeffH,Zy] = CalculateHermiteSeriesFromData02(Yin,Order,ZI); 
+[Zy] = CalculateZgivenXAndHSeriesCoeffs(Yin,YCoeffH,Order);
+
+
+for nn1=1:NDims
+    for nn2=1:NDims
+        if(nn1==nn2)
+            HCorrXX(nn1,nn2,1:Order)=1.0;
+        else
+            HCorrXX(nn1,nn2,1:Order) = CalculateCorrelationBivariateHermiteCH1(Zx(1:NData,nn1),Zx(1:NData,nn2),NData,Order);
+        end
+    end
+end
+
+for nn1=1:NDims
+    HCorrXY(nn1,1:Order) = CalculateCorrelationBivariateHermiteCH1(Zx(1:NData,nn1),Zy(1:NData),NData,Order);
+end
+
+for hh=1:Order
+    [BCorrXY(:,hh),Is(:,hh)]=sort(HCorrXY(:,hh),'descend');
+end
+
+for hh=1:Order
+    CorrXX(1:NDims,1:NDims)=HCorrXX(Is(1:NDims,hh),Is(1:NDims,hh),hh);
+    CorrXY(1:NDims,1)=HCorrXY(Is(1:NDims,hh),hh);
+    BetaCorr0(1:NDims)=CorrXX\CorrXY;
+    BetaCorrH(Is(1:NDims,hh),hh)=BetaCorr0(1:NDims);
+end
+
+
+
+
+
+% for hh=1:Order
+%     CorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+%     CorrXY(1:NDims,1)=HCorrXY(1:NDims,hh);
+%     BetaCorrH(1:NDims,hh)=CorrXX\CorrXY;
+% end
+
+
+
+
+%CorrXX1st(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,1)
+
+
+BetaCorrH(:,1)'*CorrXX
+
+CorrXY
+
+HCorrXX
+
+HCorrXY
+
+BetaCorrH
+
+str=input("Look at BetaCorrH");
+end
+
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [CorrH] = CalculateCorrelationBivariateHermiteCH1(Z1,Z2,paths,HH)
+
+CorrH(1:HH)=0;
+CovH(1:HH)=0;
+Var1H(1:HH)=0;
+Var2H(1:HH)=0;
+
+[X1h] = EvalHermiteArrayH0(Z1,HH);
+[X2h] = EvalHermiteArrayH0(Z2,HH);
+
+for hh=1:HH
+    CovH(hh)=CovH(hh)+sum(X1h(:,hh+1).*X2h(:,hh+1))/paths;
+    %Var1H(hh)=Var1H(hh)+sum(X1h(:,hh+1).*X1h(:,hh+1))/paths;
+    %Var2H(hh)=Var2H(hh)+sum(X2h(:,hh+1).*X2h(:,hh+1))/paths;
+    CorrH(hh)=CovH(hh)./factorial(hh);%sqrt(Var1H(hh))./sqrt(Var2H(hh));
+end
+
+% Var1H
+% Var2H
+% 
+% str=input("Look at variances of data hermites");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [cn,ch] = CalculateGaussianCorrelationFromHermiteCorrelationsNDim(YCoeffH,XCoeffH,BetaCorrHxy,CorrHxx,NDims,Order)
+
+
+
+
+
+for hh=1:Order
+    for nn=1:NDims
+        ch(nn+1,hh+1)=BetaCorrHxy(nn,hh).*YCoeffH(hh+1);%make sure indices on all hermite-correlations match.check.
+        %%%% nn+1 since 1st index would go to y-tilde.
+    end
+end
+
+
+ch
+YCoeffH
+
+str=input("Look at above---00-1-1-1-1-");
+
+[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+for nn=1:NDims
+    [XCoeffZ(1:Order+1,nn)] = ConvertHermiteSeriesToZSeries01(XCoeffH(1:Order+1,nn),Order);
+end
+
+
+
+
+YCoeffH
+
+YCoeffZ
+
+str=input("Look at the Hermite and Z-series coeffs");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%YCoeffZ=YCoeffZA;
+%if(abs(YCoeffZ(4))>abs(YCoeffZ(2)))
+%    YCoeffZ(4)=sign(YCoeffZ(4)).*abs(YCoeffZ(2));
+%end
+%if(abs(YCoeffZ(6))>abs(YCoeffZ(4)))
+%    YCoeffZ(6)=sign(YCoeffZ(6)).*abs(YCoeffZ(4));
+%end
+%if(abs(YCoeffZ(8))>abs(YCoeffZ(6)))
+%    YCoeffZ(6)=sign(YCoeffZ(6)).*abs(YCoeffZ(8));
+%end
+
+
+%if(abs(YCoeffZ(5))>abs(YCoeffZ(3)))
+%    YCoeffZ(5)=sign(YCoeffZ(5)).*abs(YCoeffZ(3));
+%end
+%if(abs(YCoeffZ(7))>abs(YCoeffZ(5)))
+%    YCoeffZ(5)=sign(YCoeffZ(5)).*abs(YCoeffZ(7));
+%end
+
+
+
+
+
+for nn=1:NDims
+[c(nn+1,1:Order+1)] = ConvertHermiteSeriesToZSeries01(ch(nn+1,1:Order+1),Order);
+end
+
+
+for nn=1:NDims
+    rhoxy(nn+1,8)=sign(BetaCorrHxy(nn,7)).^1.*(abs(BetaCorrHxy(nn,7))).^(1/7);
+    rhoxy(nn+1,7)=sign(BetaCorrHxy(nn,6)).^1.*(abs(BetaCorrHxy(nn,6))).^(1/6);
+    rhoxy(nn+1,6)=sign(BetaCorrHxy(nn,5)).^1.*(abs(   (YCoeffH(6).*BetaCorrHxy(nn,5)-21*YCoeffZ(8).*rhoxy(nn+1,8).^(5))./(YCoeffH(6)-21*YCoeffZ(8)))).^(1/5);
+    rhoxy(nn+1,5)=sign(BetaCorrHxy(nn,4)).^1.*(abs(  (YCoeffH(5).*BetaCorrHxy(nn,4)-15*YCoeffZ(7).*rhoxy(nn+1,7).^(4))./(YCoeffH(5)-15*YCoeffZ(7)))).^(1/4);
+    rhoxy(nn+1,4)=sign(BetaCorrHxy(nn,3)).^1.*(abs(  (YCoeffH(4).*BetaCorrHxy(nn,3)-10*YCoeffZ(6).*rhoxy(nn+1,6).^(3)-105*YCoeffZ(8).*rhoxy(nn+1,8).^(3))...
+        ./(YCoeffH(4)-10*YCoeffZ(6)-105*YCoeffZ(8)))).^(1/3);
+    rhoxy(nn+1,3)=sign(BetaCorrHxy(nn,2)).^1.*(abs( (YCoeffH(3).*BetaCorrHxy(nn,2)-6*YCoeffZ(5).*rhoxy(nn+1,5).^(2)-45*YCoeffZ(7).*rhoxy(nn+1,7).^(2)) ...
+        ./(YCoeffH(3)-6*YCoeffZ(5)-45*YCoeffZ(7)))).^(1/2);
+    rhoxy(nn+1,2)=sign(BetaCorrHxy(nn,1)).^1.*(abs(  (YCoeffH(2).*BetaCorrHxy(nn,1)-3*YCoeffZ(4).*rhoxy(nn+1,4).^(1)-15*YCoeffZ(6).*rhoxy(nn+1,6).^(1) ...
+        -105*YCoeffZ(8).*rhoxy(nn+1,8).^(1))...
+        ./(YCoeffH(2)-3*YCoeffZ(4)-15*YCoeffZ(6)-105*YCoeffZ(8)))).^(1/1);
+end
+
+
+% 
+% for nn=1:NDims
+%     for mm=1:NDims
+%         if(nn==mm)
+%             rhoxx(nn,mm,2)=1;
+%             rhoxx(nn,mm,3)=1;
+%             rhoxx(nn,mm,4)=1;
+%             rhoxx(nn,mm,5)=1;
+%             rhoxx(nn,mm,6)=1;
+%             rhoxx(nn,mm,7)=1;
+%             rhoxx(nn,mm,8)=1;
+%             
+%             
+%             
+%         elseif(nn.995)
+    cn(2:NDims+1,8)=cn(2:NDims+1,8)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,8)=sqrt(1-cnSqrSum);
+%ccn(1,8)=sqrt(1-cn(1,8).^2);
+%Cn(1,8)=cn(1,8).*YCoeffZ(8);
+
+cn
+%ccn
+str=input("Compare the Eighth Element From NDim---2");
+
+
+% ccn00(2,8)=cn(2,8).^2+2*cn(2,8).*cn(3,8).*CorrXX1st(1,2)+2*cn(2,8).*cn(4,8).*CorrXX1st(1,3)+ ...
+%     cn(3,8).^2+2*cn(3,8).*cn(4,8).*CorrXX1st(2,3)+cn(4,8).^2
+% 
+% ccn00(2,8)=sqrt(1-(cn(2,8).^2+2*cn(2,8).*cn(3,8).*CorrXX1st(1,2)+2*cn(2,8).*cn(4,8).*CorrXX1st(1,3)))
+% 
+% cnSqrSum
+% 
+% ccn0(2,8)
+% 
+% ccn(1,8)
+% 
+% ccn(2,8)
+% 
+% str=input("Look at the variables Inside");
+% 
+
+
+
+
+
+
+
+cnSqrSum=0;
+%for nn=1:NDims
+%    rho_z(nn+1,6)=c(nn+1,7)./YCoeffZ(7);
+%    cn(nn+1,7)=(abs(rho_z(nn+1,6))).^(1/6);
+%    cn(nn+1,7)=cn(nn+1,7).*sign(rho_z(nn+1,6));
+%    %ccn(nn+1,7)=sqrt(1-cn(nn+1,7).^2);
+%    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+%end
+
+cnSqrSum=0;
+for nn=1:NDims
+    %ccn0(nn+1,7)=cn(nn+1,7).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,7).*cn(nn+1,7);
+    for mm=1:NDims
+        if(nn~=mm)
+         %   ccn0(nn+1,7)=ccn0(nn+1,7)+2*cn(nn+1,7).*cn(mm+1,7).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,7).*cn(mm+1,7).*rhoxx(nn,mm,7);
+        end
+    end
+    %ccn(nn+1,7)=sqrt(1-ccn0(nn+1,7));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,7)=cn(2:NDims+1,7)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,7)=sqrt(1-cnSqrSum);
+%ccn(1,7)=sqrt(1-cn(1,7).^2);
+%Cn(1,7)=cn(1,7).*YCoeffZ(7);
+
+
+cn
+%ccn
+str=input("Compare the Seventh Element From NDim---2");
+
+
+%cnSqrSum=0;
+%for nn=1:NDims
+%    CC(3,6)=YCoeffZ(8).*(21*cn(nn+1,8).^5.*ccn(nn+1,8).^2);
+%    rho_z(nn+1,5)=(c(nn+1,6)-CC(3,6))./YCoeffZ(6);
+%    if(abs(rho_z(nn+1,5))>.995)
+%        rho_z(nn+1,5)=sign(rho_z(nn+1,5)).*.995;
+%    end
+%    cn(nn+1,6)=(abs(rho_z(nn+1,5))).^(1/5);
+%    cn(nn+1,6)=cn(nn+1,6).*sign(rho_z(nn+1,5));
+%%%    nn
+%%%    c(nn+1,6)
+%%%    CC(3,6)
+%%%    YCoeffZ(8)
+%%%    YCoeffZ(6)
+%%%    rho_z(nn+1,5)
+%%%    cn(nn+1,6)
+%%%    
+%%%    str=input("Look inside the correlations module loop");
+    
+    
+    
+    
+    
+%    ccn(nn+1,6)=sqrt(1-cn(nn+1,6).^2);
+%    %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+%end
+
+cnSqrSum=0;
+for nn=1:NDims
+%    ccn0(nn+1,6)=cn(nn+1,6).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,6).*cn(nn+1,6);
+    for mm=1:NDims
+        if(nn~=mm)
+          %  ccn0(nn+1,6)=ccn0(nn+1,6)+2*cn(nn+1,6).*cn(mm+1,6).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,6).*cn(mm+1,6).*rhoxx(nn,mm,6);
+        end
+    end
+    %ccn(nn+1,6)=sqrt(1-ccn0(nn+1,6));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,6)=cn(2:NDims+1,6)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+
+
+cn(1,6)=sqrt(1-cnSqrSum);
+%ccn(1,6)=sqrt(1-cn(1,6).^2);
+%Cn(1,6)=cn(1,6).*YCoeffZ(6);
+
+cn
+%ccn
+str=input("Compare the Sixth Element From NDim---2");
+
+
+
+% cnSqrSum=0;
+% for nn=1:NDims
+%     CC(3,5)=YCoeffZ(7).*(15*cn(nn+1,7).^4.*ccn(nn+1,7).^2);
+%     rho_z(nn+1,4)=(c(nn+1,5)-CC(3,5))./YCoeffZ(5);
+%     cn(nn+1,5)=(abs(rho_z(nn+1,4))).^(1/4);
+%     cn(nn+1,5)=cn(nn+1,5).*sign(rho_z(nn+1,4));
+%     %ccn(nn+1,5)=sqrt(1-cn(nn+1,5).^2);
+%     %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+% end
+
+cnSqrSum=0;
+for nn=1:NDims
+    %ccn0(nn+1,5)=cn(nn+1,5).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,5).*cn(nn+1,5);
+    for mm=1:NDims
+        if(nn~=mm)
+           % ccn0(nn+1,5)=ccn0(nn+1,5)+2*cn(nn+1,5).*cn(mm+1,5).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,5).*cn(mm+1,5).*rhoxx(nn,mm,5);
+        end
+    end
+    %ccn(nn+1,5)=sqrt(1-ccn0(nn+1,5));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,5)=cn(2:NDims+1,5)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+
+cn(1,5)=sqrt(1-cnSqrSum);
+%ccn(1,5)=sqrt(1-cn(1,5).^2);
+%Cn(1,5)=cn(1,5).*YCoeffZ(5);
+
+
+cn
+%ccn
+str=input("Compare the Fifth Element From NDim---2");
+
+
+
+
+%CC(3,4)=YCoeffZ(6).*(10*cn(6).^3.*dn(6).^2*zeta^2);
+%CC(5,4)=YCoeffZ(8).*(35*cn(8).^3.*dn(8).^4.*zeta^4);
+% cnSqrSum=0;
+% for nn=1:NDims
+%     CC(5,4)=YCoeffZ(8).*(35*cn(nn+1,8).^3.*ccn(nn+1,8).^4);
+%     CC(3,4)=YCoeffZ(6).*(10*cn(nn+1,6).^3.*ccn(nn+1,6).^2);
+%     rho_z(nn+1,3)=(c(nn+1,4)-3*CC(5,4)-CC(3,4))./YCoeffZ(4);
+%     cn(nn+1,4)=(abs(rho_z(nn+1,3))).^(1/3);
+%     cn(nn+1,4)=cn(nn+1,4).*sign(rho_z(nn+1,3));
+%     %ccn(nn+1,4)=sqrt(1-cn(nn+1,4).^2);
+%     %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+% end
+
+cnSqrSum=0;
+for nn=1:NDims
+%    ccn0(nn+1,4)=cn(nn+1,4).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,4).*cn(nn+1,4);
+    for mm=1:NDims
+        if(nn~=mm)
+          %  ccn0(nn+1,4)=ccn0(nn+1,4)+2*cn(nn+1,4).*cn(mm+1,4).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,4).*cn(mm+1,4).*rhoxx(nn,mm,4);
+        end
+    end
+    %ccn(nn+1,4)=sqrt(1-ccn0(nn+1,4));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,4)=cn(2:NDims+1,4)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,4)=sqrt(1-cnSqrSum);
+%ccn(1,4)=sqrt(1-cn(1,4).^2);
+%Cn(1,4)=cn(1,4).*YCoeffZ(4);
+
+cn
+%ccn
+str=input("Compare the Fourth Element From NDim---2");
+
+
+
+%CC(3,3)=YCoeffZ(5).*(6* cn(5).^2.* dn(5).^2);
+%CC(5,3)=YCoeffZ(7).*(15*cn(7).^2.*dn(7).^4);
+% cnSqrSum=0;
+% for nn=1:NDims
+%     CC(3,3)=YCoeffZ(5).*(6*cn(nn+1,5).^2.*ccn(nn+1,5).^2);
+%     CC(5,3)=YCoeffZ(7).*(15*cn(nn+1,7).^2.*ccn(nn+1,7).^4);
+%     rho_z(nn+1,2)=(c(nn+1,3)-3*CC(5,3)-CC(3,3))./YCoeffZ(3);
+%     cn(nn+1,3)=(abs(rho_z(nn+1,2))).^(1/2);
+%     cn(nn+1,3)=cn(nn+1,3).*sign(rho_z(nn+1,2));
+%     %ccn(nn+1,3)=sqrt(1-cn(nn+1,3).^2);
+%     %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+% end
+
+cnSqrSum=0;
+for nn=1:NDims
+    %ccn0(nn+1,3)=cn(nn+1,3).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,3).*cn(nn+1,3);
+    for mm=1:NDims
+        if(nn~=mm)
+           % ccn0(nn+1,3)=ccn0(nn+1,3)+2*cn(nn+1,3).*cn(mm+1,3).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,3).*cn(mm+1,3).*rhoxx(nn,mm,3);
+        end
+    end
+    %ccn(nn+1,3)=sqrt(1-ccn0(nn+1,3));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,3)=cn(2:NDims+1,3)*sqrt(.995);
+    cnSqrSum=.995;
+end
+
+cn(1,3)=sqrt(1-cnSqrSum);
+%ccn(1,3)=sqrt(1-cn(1,3).^2);
+%Cn(1,3)=cn(1,3).*YCoeffZ(3);
+
+cn
+%ccn
+str=input("Compare the Third Element From NDim---2");
+
+
+
+%CC(7,2)=YCoeffZ(8).*(7*cn(8).*dn(8).^6*zeta^6);
+%CC(5,2)=YCoeffZ(6).*(5*cn(6).*dn(6).^4.*zeta^4);
+%CC(3,2)=YCoeffZ(4).* (3.* cn(4).* dn(4).^2.* zeta^2);
+% cnSqrSum=0;
+% for nn=1:NDims
+%     CC(4,2)=YCoeffZ(4).*(3*cn(nn+1,4).*ccn(nn+1,4).^2);
+%     CC(6,2)=YCoeffZ(6).*(5*cn(nn+1,5).*ccn(nn+1,6).^4);
+%     CC(8,2)=YCoeffZ(8).*(7*cn(nn+1,8).*ccn(nn+1,8).^6);
+%     rho_z(nn+1,1)=(c(nn+1,2)-15*CC(8,2)-3*CC(6,2)-CC(4,2))./YCoeffZ(2);
+%     cn(nn+1,2)=(abs(rho_z(nn+1,1)));
+%     %ccn(nn+1,2)=sqrt(1-cn(nn+1,2).^2);
+%     %cnSqrSum=cnSqrSum+cn(7,nn+1).^2;
+% end
+
+cnSqrSum=0;
+for nn=1:NDims
+%    ccn0(nn+1,2)=cn(nn+1,2).^2;
+    cnSqrSum=cnSqrSum+cn(nn+1,2).*cn(nn+1,2);
+    for mm=1:NDims
+        if(nn~=mm)
+        %    ccn0(nn+1,2)=ccn0(nn+1,2)+2*cn(nn+1,2).*cn(mm+1,2).*CorrXX1st(nn,mm);
+            cnSqrSum=cnSqrSum+cn(nn+1,2).*cn(mm+1,2).*rhoxx(nn,mm,2);
+        end
+    end
+%    ccn(nn+1,2)=sqrt(1-ccn0(nn+1,2));
+    
+end
+
+if(cnSqrSum>.995)
+    cn(2:NDims+1,2)=cn(2:NDims+1,2)*sqrt(.995);
+    cnSqrSum=.995;
+end
+cn(1,2)=sqrt(1-cnSqrSum);
+%ccn(1,2)=sqrt(1-cn(1,2).^2);
+%Cn(1,2)=cn(1,2).*YCoeffZ(2);
+
+cn
+%ccn
+str=input("Compare the Second Element From NDim---2");
+
+
+% 
+% %CC(3,1)=YCoeffZ(2).*(ccn(nn+1,2).^2);
+% %CC(5,1)=YCoeffZ(4).*(ccn(nn+1,4).^4);
+% %CC(7,1)=YCoeffZ(6).*(ccn(nn+1,6).^6);
+% CC(3,1)=YCoeffZ(2).*(cn(1,2).^2);
+% CC(5,1)=YCoeffZ(4).*(cn(1,4).^4);
+% CC(7,1)=YCoeffZ(6).*(cn(1,6).^6);
+% 
+% 
+% 
+% 
+% 
+% cn(1,1)=(YCoeffZ(1)-CC(3,1)-3*CC(5,1)-15*CC(7,1))./YCoeffZ(1);
+% 
+% 
+% cn
+% ccn
+% str=input("Look at coefficients cn----PleASE lOOK");
+% 
+% 
+ dn(1:Order+1)=cn(1,1:Order+1);
+% bn(1:Order+1)=ccn(1,1:Order+1);
+% 
+% 
+% 
+% 
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Coeff,Zy] = CalculateHermiteSeriesFromData02(Yin,Order,ZI)
+
+Ndata=length(Yin);
+
+%Hz=HermitePoly(Order);  
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+
+
+ %[Zn] = StandardNormalIdealDesity02(Ndata,1);
+% %[ZI] = CalculateZI(Zn);
+% 
+% 
+% ZI1=Zn;
+%Below W is the design matrix for least squares regression i.e the matrix
+%that contains all the hermite polynomials calculated at ideal normal
+%density grid of size Ndata. 
+[W] = EvalHermiteArrayH0(ZI,Order);
+%[W1] = EvalHermiteArrayH0(ZI1,Order);
+
+
+
+for nn=1:Ndata
+    for hh=1:Order+1
+W(nn,hh)=W(nn,hh);%sqrt(normpdf(ZI(1,1:Ndata)));
+    end
+end
+
+%We first sort the data so that we can assign one appropriate Z-grid
+%point(and associated hermite polynomials calculated at that grid point)
+%to each data element. This ideal normal density Z-grid is
+%constructed so that its size is equal to data observations count. We
+%suppose that first derivative of random variables with repsect to Z
+%does not switch sign meaning that increasing values of data
+%observations have to aligned with increasing values of ideal normal
+%density grid.
+[Ys,I]=sort(Y(1:Ndata));
+%In the line below, the data sort is reversed so that now the ideal 
+%normal density grid elements assigned to various observations of random 
+%variable face it on data observations index. For details, Please look 
+%on interent the definition of matlab sort command with role of "I" 
+%in output and how it alters the index.   
+
+%%Zs1(I(1:Ndata))=ZI(1:Ndata);
+
+%Below the values to be regressed facing the design matrix are assigned
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+%Below, implement least squares regression.
+WW=(W'*W);
+
+coeff=(WW)$W'*Ymu);
+
+
+%str=input("Look at variances of hermite polynomials inside function")
+
+%Store in coefficietns array of all random varaibles
+Coeff(1:Order+1)= coeff(1:Order+1,1);
+%Store the associated Z in Z-array of all coefficients.   
+Zy(I(1:Ndata))=W(1:Ndata,2);
+
+
+
+
+if(abs(Coeff(4)) >1/3*abs(Coeff(2)))
+    Coeff(4)=sign(Coeff(4)).*1/3*abs(Coeff(2));
+end
+if(abs(Coeff(6))>1/11*abs(Coeff(4)))
+    Coeff(6)=sign(Coeff(6)).*1/11*abs(Coeff(4));
+end
+if(abs(Coeff(8))>1/22*abs(Coeff(6)))
+    Coeff(8)=sign(Coeff(8)).*1/22*abs(Coeff(6));
+end
+
+
+if(abs(Coeff(5))>1/7*abs(Coeff(3)))
+    Coeff(5)=sign(Coeff(5)).*1/7*abs(Coeff(3));
+end
+if(abs(Coeff(7))>1/16*abs(Coeff(5)))
+    Coeff(7)=sign(Coeff(7)).*1/16*abs(Coeff(5));
+end
+
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+
+
+
+end
+
+
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew] = MomentMatchedStandardNormalDiscretizedDensity(Ndata)
+
+[ZnNew] = StandardNormalIdealDesity02(Ndata,1);
+
+if((Ndata=30))
+    MOrder=6;
+
+
+alpha(1) =1.002706567896411;
+alpha(3)=-0.001341612601616;
+alpha(5)=0.000431803496557;
+
+
+elseif((Ndata>=250)&&(Ndata=2000)&&(Ndata=50000)&&(Ndata=150000)&&(Ndata=250000))
+    MOrder=12;  
+    
+    
+    alpha(1) =1.000899195470733;
+    alpha(3)=-0.000414380757501;
+  alpha(5)=0.000161271457889;
+  alpha(7)=0.000037987998807;
+  alpha(9)=0;%.000016308099635;
+  alpha(11)=0.;%000002045556572;                   0
+  alpha(13)=0;%.000000157715037;
+end
+
+
+%[ZnNew,alpha,Moment] = MatchMomentParametersOfIdealZhalfNew01(ZnNew,MOrder);
+
+% alpha(1)=0.998665620502348;
+% alpha(3)=0.000729818387735;
+% alpha(5)=0.000026530286747;
+% alpha(7)=0.000021718051556;
+% alpha(9)=0.000008734265559;
+% alpha(11)=-0.000000362716896;                  0
+% alpha(13)=-0.000000010818264;
+
+
+
+
+[ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(ZnNew,alpha,MOrder);
+
+
+% alpha
+% 
+% str=input("Look at alpha");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZZ] = StandardNormalIdealDesity02(Ndata,Sigma)
+%Ndata is number of data points in sample, for which we want to find the
+%coefficients of the Z-series.
+%Sigma=1+.06;
+%Sigma=1;
+if (rem(Ndata,2)==0)
+    NnMid=Ndata/2;
+    NnMid
+    ZZ(NnMid+1)=norminv(.5+1/Ndata*.5,0,Sigma);
+    ZZ(NnMid)=norminv(.5-1/Ndata*.5,0,Sigma);
+    for nn=2:NnMid-1
+        ZZ(nn+NnMid)=norminv(.5+(nn-.5)*1/Ndata,0,Sigma);
+        ZZ(-nn+1+NnMid)=norminv(.5-(nn-.5)*1/Ndata,0,Sigma);
+    end
+    %A=normcdf((Ndata-1)/Ndata);
+    %ZZ(Ndata)=exp(-5*A^2)/(1/Ndata);
+    A=norminv((Ndata-1)/Ndata);
+    ZZ(Ndata)=A +0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+    ZZ(1)=-A-0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+end
+
+if (rem(Ndata,2)==1)
+    NnMid=(Ndata+1)/2;
+    ZZ(NnMid)=0;
+    for nn=1:NnMid-2
+        ZZ(nn+NnMid)=norminv(.5+(nn)*1/Ndata,0,Sigma);
+        ZZ(-nn+NnMid)=norminv(.5-(nn)*1/Ndata,0,Sigma);
+    end
+   A=norminv((Ndata-1)/Ndata);
+    ZZ(Ndata)=A +0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+    ZZ(1)=-A-0.398942 *exp(-.5*A^2)/sqrt(1/Ndata)/sqrt(.5);
+end
+
+%ZZ
+%A
+%plot(ZZ)
+%str=input("Look at density plot standard")
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(Zn,alpha,MOrder)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+Ndata=length(Zn);
+ 
+ %MOrder=12;
+ HOrder=MOrder-2;
+ 
+ EZ(1)=0;
+EZ(2)=1;
+for nn=3:MOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %EZ(nn)
+    end
+end
+
+TMoment(1:MOrder)=EZ(1:MOrder);
+ %CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder);
+ [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+ 
+% F
+% dF
+% str=input("Look at results");
+ 
+ 
+
+w(MOrder)=1;
+for nn=MOrder-2:-2:2
+w(nn)=w(nn+2).*(nn+2)*(nn+1);%*.5;    
+end
+%w(2)=w(2)*1024;
+%w(8)=w(8)*2;
+%w(10)=w(10)*sqrt(2);
+%w
+%str=input("Look at weights--12")
+
+
+[ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+end
+
+
+ObjFuncBest=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+%str=input("Look at ObjFuncBest");
+%b0Best=c0;
+alphaBest(1:HOrder+1)=alpha(1:HOrder+1);
+
+
+    
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+    
+
+nn=0;
+while((nn.000000000001) || (abs(F(2,1))>.000000000001) || (abs(F(3,1))>.000000000001)))% || (abs(F(4,1))>.00000000001)))%|| (abs(F(5,1))>.00000000001)))%|| (abs(F(6,1))>.00000000001)))%|| (abs(F(7,1))>.00000000001)|| (abs(F(8,1))>.00000000001)  ))
+
+    nn=nn+1;
+    %Below Newton matrix equation to improve the Z-series coefficients guess at previous step.
+    da=da-dF\F;
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        alpha(mm-1)=da(qq,1);
+    end
+    %b(1:SeriesOrder)=da(2:SeriesOrder+1,1);
+    
+ 
+    
+    [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+    
+    for mm=1:MOrder
+        Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    end
+
+  
+ 
+    ObjFuncNew=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+ObjFuncNew
+%str=input("Look at objfunction--11--");
+
+%alpha
+
+%str=input("Look at alpha");
+
+    if(ObjFuncBest>ObjFuncNew)
+      
+       ObjFuncBest=ObjFuncNew;
+       alphaBest=alpha;
+       %bBest(1:SeriesOrder)=b(1:SeriesOrder);
+    end
+    
+    [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+end
+alpha=alphaBest;%Best;
+
+
+   [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+ 
+ 
+end
+```
+
+
+.
+
+.
+
+
+```
+function [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment)
+
+
+
+Ndata=length(Zn);
+
+
+
+[Hz] = HermitePoly(HOrder);
+
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    %Ndata
+    %nn
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    for nn=2:2:HOrder
+        HermiteZ(1:Ndata)=0;
+        for kk=1:2:(nn+1)
+            HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,kk).*ZZ(kk,1:Ndata);
+        end
+        dG(mm,nn)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1).*HermiteZ(1:Ndata))/Ndata;
+        
+    end
+    
+    dG0(mm)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1))/Ndata;
+    
+    G(mm,1)=Moment(mm)-TMoment(mm);
+end
+
+%dG0
+
+%str=input("Look at dG0");
+QQ=round(MOrder/2);
+qq=0;
+for nn=2:2:MOrder
+qq=qq+1;
+F(qq,1)=G(nn,1);
+dF(qq,1)=dG0(nn);
+dF(qq,2:QQ)=dG(nn,2:2:(2+(QQ-2)*2));
+end
+
+% F(1,1)=G(2,1);
+% F(2,1)=G(4,1);
+% F(3,1)=G(6,1);
+% F(4,1)=G(8,1);
+% F(5,1)=G(10,1);
+% F(6,1)=G(12,1);
+% 
+% dF(1,1)=dG0(2);
+% dF(2,1)=dG0(4);
+% dF(3,1)=dG0(6);
+% dF(4,1)=dG0(8);
+% dF(5,1)=dG0(10);
+% dF(6,1)=dG0(12);
+% 
+% dF(1,2)=dG(2,2);
+% dF(2,2)=dG(4,2);
+% dF(3,2)=dG(6,2);
+% dF(4,2)=dG(8,2);
+% dF(5,2)=dG(10,2);
+% dF(6,2)=dG(12,2);
+% 
+% dF(1,3)=dG(2,4);
+% dF(2,3)=dG(4,4);
+% dF(3,3)=dG(6,4);
+% dF(4,3)=dG(8,4);
+% dF(5,3)=dG(10,4);
+% dF(6,3)=dG(12,4);
+% 
+% dF(1,4)=dG(2,6);
+% dF(2,4)=dG(4,6);
+% dF(3,4)=dG(6,6);
+% dF(4,4)=dG(8,6);
+% dF(5,4)=dG(10,6);
+% dF(6,4)=dG(12,6);
+% 
+% dF(1,5)=dG(2,8);
+% dF(2,5)=dG(4,8);
+% dF(3,5)=dG(6,8);
+% dF(4,5)=dG(8,8);
+% dF(5,5)=dG(10,8);
+% dF(6,5)=dG(12,8);
+% 
+% dF(1,6)=dG(2,10);
+% dF(2,6)=dG(4,10);
+% dF(3,6)=dG(6,10);
+% dF(4,6)=dG(8,10);
+% dF(5,6)=dG(10,10);
+% dF(6,6)=dG(12,10);
+%Moment
+
+%dMoment
+
+% F
+% dF
+% dG
+% Moment
+% 
+% str=input("Look at moments and F");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Hz] = HermitePoly(Order)
+Hz(1:Order+1,1:Order+1)=0.0;
+Hz(1,1)=1.0;
+for k=1:Order
+    for m=1:k
+       Hz(k+1,m+1)=Hz(k,m);
+       if (m>1)
+            Hz(k+1,m-1)=Hz(k+1,m-1)-(m-1)*Hz(k,m);
+       end
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+
+
+
+
+.
+
+.
+
+.
+
+
+```
+function [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder)
+
+HOrder=MOrder-2;
+
+Ndata=length(Zn);
+
+[Hz] = HermitePoly(HOrder);
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    Ndata;
+    nn;
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+% Moment2=sum(ZnNew(1:Ndata).^2)*1/Ndata
+% Moment4=sum(ZnNew(1:Ndata).^4)*1/Ndata
+% Moment6=sum(ZnNew(1:Ndata).^6)*1/Ndata        
+% Moment8=sum(ZnNew(1:Ndata).^8)*1/Ndata
+% Moment10=sum(ZnNew(1:Ndata).^10)*1/Ndata
+% Moment12=sum(ZnNew(1:Ndata).^12)*1/Ndata 
+% Moment14=sum(ZnNew(1:Ndata).^14)*1/Ndata 
+
+
+
+plot((1:Ndata),Zn(1:Ndata),'g',(1:Ndata),ZnNew(1:Ndata),'r')
+
+end
+
+
+```
+
+
+
+.
+
+.
+
+
+```
+function [ObjMomentOut] = CalculateObjMoment(Moment0,Moment,w,MOrder)
+
+ObjMomentOut=0;
+for nn=1:MOrder
+    ObjMomentOut=ObjMomentOut+(Moment(nn)-Moment0(nn)).^2.*w(nn);
+end
+
+
+end
+```
+
+
+
+.
+
+
+```
+function [Z] = CalculateZgivenXAndHSeriesCoeffs(X,Coeff,Order)
+
+%Finds Z given an array of X-values and Coeffs of hermite series.
+
+Z(1:length(X))=0;
+Hz=HermitePoly(Order);
+median=0;
+for nn=1:Order+1
+    median=median+Coeff(nn).*Hz(nn,1);
+end
+
+for nn=1:length(X)
+    Z(nn)=CalculateZgivenXAndHermiteSeriesBisection(X(nn),Coeff,median,Hz,Order);
+end
+
+end
+
+
+```
+
+
+.
+
+.
+
+```
+function [c] = ConvertHermiteSeriesToZSeries01(ch,Order)
+
+c(1:Order+1)=0;
+[Hz] = HermitePoly(Order);
+for nn=1:Order+1
+    for mm=1:Order+1
+        c(mm)=c(mm)+ch(nn).*Hz(nn,mm);
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(X,Paths,NoOfBins,MaxCutOff )
+%Processes monte carlo paths to return a series Xdensity as a function of IndexOut. IndexMax is the maximum value of index.
+% 
+
+
+Xmin=0;
+Xmax=0;
+for p=1:Paths
+if(X(p)>MaxCutOff)
+X(p)=MaxCutOff;
+end
+%if(X(p)real(X(p)))
+Xmin=real(X(p));
+end
+if(XmaxIndexMax)
+index=IndexMax;
+end
+
+XDensity(index)=XDensity(index)+1.0/Paths/BinSize;
+
+end
+
+IndexOut(1:IndexMax)=Xmin+(0:(IndexMax-1))*BinSize;
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [Moments] = CalculateMomentsOfZSeries(a0,a,SeriesOrder,NMoments)
+
+
+%aa0=a0;
+%a0=0;% ---1
+
+EZ(1)=0;
+EZ(2)=1;
+%LogEZ(2)=0;
+for nn=3:NMoments*SeriesOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %LogEZ(nn)=log(EZ(nn-2))+log(nn-1);
+        %EZ(nn);
+    end
+end
+%EZ
+%EZ(1:30)
+%str=input('Look at numbers')
+a(SeriesOrder+1:SeriesOrder*NMoments+1)=0;
+b0=a0;
+b=a;
+
+
+for mm=1:NMoments
+    if(mm>1)
+        %[b0,b] =SeriesProductLogarithmic(a0,a,b0,b,SeriesOrder*mm);
+        
+        [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm);
+        
+        %b0-bb0
+        
+        %b-bb
+        
+        %str=input('Look at two products')
+        
+        
+        b(SeriesOrder*mm+1:SeriesOrder*NMoments+1)=0;
+    end
+   % Logb=log(abs(b));
+   % Signb=sign(b);
+    EXZ(mm,1)=b0;
+    for pp2=1:SeriesOrder*mm
+        if rem(pp2,2)==0
+            %EXZ(mm,1)=EXZ(mm,1)+exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2);
+            EXZ(mm,1)=EXZ(mm,1)+b(pp2).*EZ(pp2);
+ %           b(pp2).*EZ(pp2)
+ %           exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2)
+ %           mm
+ %           pp2
+            %str=input('Look at moment values')
+        end
+    end
+end
+
+    
+for nn=1:NMoments
+    Moments(nn)=EXZ(nn,1);
+end
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [mu1,cMu] = ConvertRawMomentsToCentralMoments(Mu,mOrder)
+
+%cu
+%mu
+% %mOrder
+%str=input('Look at numbers');
+mu1=Mu(1);
+for mm=2:mOrder
+    cMu(mm)=0;
+    for jj=0:mm
+        if(jj==0)
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*1*mu1.^(mm-jj);
+            
+        else
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*Mu(jj)*mu1.^(mm-jj);
+            
+        end
+    end
+end
+
+
+```
+
+,
+
+,
+
+,
+
+
+
+
+
+
+
+You should see the following output when you run the above program.
+
+
+
+YMomentsModel =
+
+   1.0e+05 *
+
+  Columns 1 through 3
+
+   0.000039753404983   0.000166876201574   0.000739658177026
+
+  Columns 4 through 6
+
+   0.003461477847473   0.017102173683420   0.089194854721399
+
+  Columns 7 through 8
+
+   0.490941907124178   2.850898827261638
+
+DataMoments =
+
+   1.0e+05 *
+
+  Columns 1 through 3
+
+   0.000040014161239   0.000168293795381   0.000744756815469
+
+  Columns 4 through 6
+
+   0.003472468211260   0.017089862518885   0.089007782776803
+
+  Columns 7 through 8
+
+   0.492296797162182   2.904613064108919
+
+Look at comparison of momentsYCentralMoments =
+
+   1.0e+02 *
+
+  Columns 1 through 3
+
+                   0   0.008842880799919   0.005961530373236
+
+  Columns 4 through 6
+
+   0.030746456659003   0.065270464873670   0.263975461329992
+
+  Columns 7 through 8
+
+   0.951758473327354   4.269583194858278
+```
+
+---
+
+## Error 53: Unbalanced $: 1
+
+**Snippet:** `Here is the matlab code with light comments to explain the logic of Newton metho`
+
+**Full content:**
+
+```
+Here is the matlab code with light comments to explain the logic of Newton method. These are only functions related to over-constrained Newton root search.
+
+.
+
+.
+
+.
+
+```
+function [cnOptim] = OptimizeCorrFromHermitesNewton(Zy,Zx,cnn,HCorrXX,NDims,paths,Order)
+
+%Order;Max Order of Hermites Calibration is seven.
+%Zx is paths X K array for joint values of Zx arranged for "paths" number of observations
+%Zy is paths X 1 array for Zy associated with each obsewrvation.
+%cnn is the original input of correlation coefficients used to derive seed for Newton methjod.
+%cnn is in format of the old program and its order and indexing is changed
+%in this NEwton program.
+
+ccn(1:NDims+1,1:Order)=cnn(1:NDims+1,2:Order+1); %Shift the indices back by one index.
+%so that index matches with order of associated hermite polynomial.
+
+cn(1:NDims,1:Order)=ccn(2:NDims+1,1:Order);%The first row in each hermite column earlier was 
+%associated zeta but zeta is shifted from first row to (K+1)th row.
+
+cn(NDims+1,1:Order)=ccn(1,1:Order);
+
+
+%The function below calculates the first hermites till "Order" from data of
+%Zy. WHy is (paths X K) array. kth hermite associated with pth observation appears in
+%WHy(p,k)
+[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+%The program below calculates moments of standard normal. Odd moments are
+%zero. 
+[EZ] = EZZ2();
+
+%The loop below repeats itself for optimization of correlation coefficients 
+%associated with highest power in each hermite. It repeatrs over all hermites one by one. 
+for nH=1:Order
+    cnIn(1:NDims+1,1:nH)=0.0;
+    if(nH==1)
+        cnIn(1:NDims+1,1)=cn(1:NDims+1,1);
+    else
+        %cnOptim is already optimized value of lower powers of Gaussians
+        %calculated in earlier loops of optimization over smaller hermites.
+        %This is already known from previous iterations of this loop.
+        cnIn(1:NDims+1,1:nH-1)=cnOptim(1:NDims+1,1:nH-1);
+        %The value of cnIn below is initial guess for correlation
+        %coefficients associated with optimization of current hermite
+        cnIn(1:NDims+1,nH)=cn(1:NDims+1,nH);
+    end
+    
+    %Below nH-th hermite observation values are assigned to one dimensional array for optimization target in Newton. 
+    WHyn(1:paths,1)=WHy(1:paths,nH);
+    
+    %Total iterations of Newton root search.
+    Iterations=50;
+    %Below is the function that actually does the Multi-dimensional Newton.
+    [cnbest,InitialObj(nH),FinalObj(nH)] = OptimizenthHermiteGaussianWithNewton(cnIn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths, Iterations);
+
+    %Below is optimum value of correlation coefficients associated with
+    %nH-th hermite after optimization. This will be used by the program as
+    %an input to optimization of higher hermites
+    cnOptim(1:NDims+1,nH)=cnbest(1:NDims+1,1);
+    
+    nH
+end
+
+
+InitialObj %Obj function at start of optimization of correlation coefficients for nH-th hermite
+FinalObj%Obj function after optimization of correlation coefficients for nH-th hermite
+str=input("Look at initial and Final Objs");
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [bnbest,InitialObj,FinalObj] = OptimizenthHermiteGaussianWithNewton(cn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths,Iterations)
+
+%Why0 in array of nth Hermite Values
+
+KK=NDims;
+
+bn(1:NDims+1,1)=cn(1:NDims+1,nH);
+%Below, Calculate the model contribution of lower Gaussian powers that have
+%already been calculated through associated lower hermites towards current
+%hermite polynomial.
+[dHermite] = EvaluatePrevGaussPowersForHCorrs(nH,cn,Zx,NDims,paths,EZ);
+%Remove the model contribution of lower Gaussian powers from data value of
+%current hermite.
+WHy0=WHyn+dHermite;
+
+%Below calcualte variance
+var=0.0;
+for kk1=1:KK
+    for kk2=1:KK    
+        var=var+bn(kk1,1).*bn(kk2,1).*HCorrXX(kk1,kk2,1);
+    end
+end
+
+var=var+bn(KK+1,1).^2;
+
+bn
+
+var
+%Below, make sure that variance is one.
+bn(:,1)=bn(:,1)/sqrt(var);
+
+%str=input("have reached 1st Stone")        
+
+
+%Below calculate the combined value of K correlated variables as described
+%on Wilmott post and Calculate G.
+GG1(1:paths,1)=0.0;
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+bn(kk,1).*Zx(1:paths,kk);
+end
+
+Zeta0=bn(KK+1,1);
+%Evaluate the nHth Gaussian power below.
+[GaussPH,GaussPh] = EvaluateHermitePolyForGaussCorrs(GG1,Zeta0,EZ,nH,paths);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Starting ObjBest and calculations here
+%cnbest here
+bnbest(1:NDims+1,1)=bn(1:NDims+1);
+
+ObjSqrdBestNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+
+InitialObj=ObjSqrdBestNewton;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Below, enter the Newton loop.
+for iter =1:Iterations
+
+    dGG1(1:paths,1:NDims)=0.0;
+    for kk=1:KK
+        dGG1(1:paths,kk)=Zx(1:paths,kk);
+    end
+    
+    bn=bnbest;
+    
+    GG1(1:paths,1)=0.0;
+    for kk=1:KK
+        GG1(1:paths,1)=GG1(1:paths,1)+bn(kk,1).*Zx(1:paths,kk);
+    end
+
+    Zeta0=bn(KK+1,1);
+    
+    bbn=0;
+    bbn(1:NDims,1)=bn(1:NDims,1);
+
+    
+    [GaussPH,GaussPh,DGaussPH] = EvaluateHermitePolyAndDerivsForGaussCorrs(GG1,dGG1,Zeta0,EZ,nH,NDims,paths);
+
+
+    %size(DGaussPH')
+    %size(DGaussPH)
+    %size(GaussPH)
+    %size(WHy0(:,1))
+    
+    %str=input("Look at sizes");
+    
+    %I am using a multiple of .1 in Newton equation below. this might have
+    %to be further decreased for some cases. Below is the Newton
+    %over-constrained iteration.
+    bbn=bbn+.1*((DGaussPH'*DGaussPH)$DGaussPH'*(WHy0(:,1)-GaussPH)));
+    
+    %DGaussPH'*DGaussPH
+    
+    %str=input("Look at matrix product");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Midfunction ObjBest and calculations here
+%cnbest here
+
+var=0.0;
+for kk1=1:KK
+    for kk2=1:KK    
+        var=var+bbn(kk1,1).*bbn(kk2,1).*HCorrXX(kk1,kk2,1);
+    end
+end
+
+bbn(KK+1,1)=sqrt(1-var);
+
+var=var+bbn(KK+1,1).^2;
+bn
+bbn
+
+var
+
+bbn=bbn/sqrt(var);
+
+
+
+GG1(1:paths,1)=0.0;
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+bbn(kk,1).*Zx(1:paths,kk);
+end
+
+
+Zeta0=bbn(KK+1,1);
+
+[GaussPH,GaussPh] = EvaluateHermitePolyForGaussCorrs(GG1,Zeta0,EZ,nH,paths);
+
+ObjSqrdNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+ObjSqrdBestNewton
+if(ObjSqrdNewton<ObjSqrdBestNewton)
+    ObjSqrdBestNewton=ObjSqrdNewton;
+    bnbest=bbn;
+else
+    %%%%change-step or Newton parameters
+end
+    
+ObjSqrdBestNewton
+ObjSqrdNewton
+iter
+
+%str=input("Look at the solution");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+
+end
+
+FinalObj=ObjSqrdBestNewton;
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [GaussPH] = EvaluateGaussianPowerForHCorrs(ccn,nH,Zx,NDims,paths,EZ)
+
+KK=NDims;
+
+GG1(1:paths,1)=0.0;
+%Below calculate the binomial expansion related to nH-th power of the sum
+%of correlated Gaussians
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+ccn(kk,nH).*Zx(1:paths,kk);
+end
+Zeta0=ccn(KK+1,nH);
+[GaussPH,GaussPh] = EvaluateHermitePolyForGaussCorrs(GG1,Zeta0,EZ,nH,paths);
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [dHermite] = EvaluatePrevGaussPowersForHCorrs(nH,ccn,Zx,NDims,paths,EZ)
+%This function clculates the contribution of lower Gaussian powers of sum
+%of K correlated Zx's towards the value of higher hermites. Please note
+%that sign is reversed so they are basically added in the calling function
+%to subtract them.
+if(nH==1)
+    dHermite(1:paths,1)=0.0;
+end
+
+if(nH==2)
+    dHermite(1:paths,1)=1.0;
+end
+
+if(nH==3)
+    nH1=1;
+    [GaussPH1] = EvaluateGaussianPowerForHCorrs(ccn,nH1,Zx,NDims,paths,EZ);
+    dHermite(1:paths,1)=3*GaussPH1(1:paths,1);
+end
+
+if(nH==4)
+     nH1=2;
+    [GaussPH1] = EvaluateGaussianPowerForHCorrs(ccn,nH1,Zx,NDims,paths,EZ);
+     dHermite(1:paths,1)=6*GaussPH1(1:paths,1)-3;
+end
+
+if(nH==5)
+    nH1=1;
+    [GaussPH1] = EvaluateGaussianPowerForHCorrs(ccn,nH1,Zx,NDims,paths,EZ);
+    
+    nH2=3;
+    [GaussPH2] = EvaluateGaussianPowerForHCorrs(ccn,nH2,Zx,NDims,paths,EZ);
+    dHermite(1:paths,1)=-(-10*GaussPH2(1:paths,1)+15*GaussPH1(1:paths,1));
+end
+
+if(nH==6)
+    nH1=2;
+    [GaussPH1] = EvaluateGaussianPowerForHCorrs(ccn,nH1,Zx,NDims,paths,EZ);
+    
+    nH2=4;
+    [GaussPH2] = EvaluateGaussianPowerForHCorrs(ccn,nH2,Zx,NDims,paths,EZ);
+    dHermite(1:paths,1)=-(-15*GaussPH2(1:paths,1)+45*GaussPH1(1:paths,1)-15);
+end
+
+if(nH==7)
+    nH1=1;
+    [GaussPH1] = EvaluateGaussianPowerForHCorrs(ccn,nH1,Zx,NDims,paths,EZ);
+    
+    nH2=3;
+    [GaussPH2] = EvaluateGaussianPowerForHCorrs(ccn,nH2,Zx,NDims,paths,EZ);
+    
+    nH3=5;
+    [GaussPH3] = EvaluateGaussianPowerForHCorrs(ccn,nH3,Zx,NDims,paths,EZ);
+    
+    dHermite(1:paths,1)=-(-21*GaussPH3(1:paths,1)+105*GaussPH2(1:paths,1)-105*GaussPH1(1:paths,1));
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [GaussPH,GaussPh,DGaussPH] = EvaluateHermitePolyAndDerivsForGaussCorrs(GG1,dGG1,Zeta0,EZ,HH,NDims,paths)
+%this function calculates the binomial expansion terms and their combined
+%expectations. The binaomial expansion is over G and zeta Z-tilde{y} as
+%described in Wilmott post. This function also calculates the sensitivities
+%of the Gaussian power terms expanded as binomial with respect to
+%correlation parameters.
+
+GaussPH(1:paths,1)=0.0;
+GaussPh(1:paths,1:HH+1)=0.0;
+DGaussPh(1:paths,1:HH+1)=0.0;
+DGaussPh0(1:paths,1:HH+1)=0.0;
+%dGG1(1:paths,1:NDims)=0;
+DGaussPH(1:paths,1:NDims)=0.0;
+for hh=0:HH
+    GaussPh(1:paths,hh+1)=factorial(HH)/factorial(hh)/factorial(HH-hh).*GG1(1:paths).^(HH-hh).*Zeta0.^(hh).*EZ(hh+1);
+    GaussPH(1:paths,1)=GaussPH(1:paths,1)+GaussPh(1:paths,hh+1);
+    DGaussPh(1:paths,hh+1)=factorial(HH)/factorial(hh)/factorial(HH-hh).*(HH-hh).*dGG1(1:paths).^(HH-hh-1).*Zeta0.^(hh).*EZ(hh+1);
+    DGaussPh0(1:paths,hh+1)=factorial(HH)/factorial(hh)/factorial(HH-hh).*GG1(1:paths).^(HH-hh).*hh.*Zeta0.^(hh-1).*EZ(hh+1);
+    DGaussPH(1:paths,1:NDims)=DGaussPH(1:paths,1:NDims)+DGaussPh(1:paths,hh+1).*dGG1(1:paths,1:NDims);
+    %DGaussPH(1:paths,NDims+1)=DGaussPH(1:paths,NDims+1)+DGaussPh0(1:paths,hh+1);
+end
+
+%DGaussPh0
+%DGaussPh0(1:paths,2)
+%Zeta0
+
+%str=input("Look at DGauss Ph0");
+
+
+end
+
+
+```
+
+```
+
+---
+
+## Error 54: Unbalanced $: 1
+
+**Snippet:** `For the friends who have been following my work, I am quickly posting the tentat`
+
+**Full content:**
+
+```
+For the friends who have been following my work, I am quickly posting the tentative version of the Z-series coefficients from moments calculation program and related other small programs with the new bounds on coefficients. I have posted older versions of these programs several times earlier and I am only posting the new programs and the ones I changed now. You can use these programs to run the yesterday's complete program.
+
+
+
+.
+
+.
+
+```
+function [c0,c,FittedMoments] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Xin,ZI)
+%The above function takes data as input.
+%And returns Z-series Coeffs upto 7th power of Z as
+%Y=c0+c(1)*Z+c(2)*Z^2+c(3)*Z^3+c(4)*Z^4+c(5)*Z^5+c(6)*Z^6+c(7)*Z^7
+%Fitted Moments are raw moments of the Z-series density and usually are exactly
+%the same as input raw moments rMu(1:8).i.e  FittedMoments(1:8)==rMu(1:8)
+%with high precision.
+
+
+Ndata=length(Xin);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for mm=1:8
+    rMu(mm)=sum(Xin(:).^mm)/Ndata;
+end
+
+for nn=1:Ndata
+    Xs(nn)=(Xin(nn)-rMu(1))./sqrt(rMu(2)-rMu(1).^2);
+end
+
+for mm=1:8
+    sMu1(mm)=sum(Xs(:).^mm)/Ndata;
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+SeriesOrder=7;    %Z-series till 7th power. hardcoded here cannot chagne.
+mOrder=8;         %Number of raw moments in calibration. hardcoded here cannot chagne.      
+Order=7;
+NMoments=mOrder;
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+sMu(7)=cMu(7)/cMu(2).^3.5;
+sMu(8)=cMu(8)/cMu(2).^4.0;
+
+
+
+%sMu
+%sMu1
+
+%str=input("Look at comparison of standardized moments:");
+
+
+[cGuess,Zx] = CalculateHermiteSeriesFromData02(Xs,Order,ZI); 
+
+wm(1:Order+1)=1;
+for mm=Order+1:-1:2
+    wm(mm-1)=wm(mm)*(mm+1).^2;
+end
+
+
+MaxIter=750;
+
+[cGuess,ObjBest] = ZSeries1DCoeffsIterativeForGuess(cGuess,sMu,Order,MaxIter,wm);
+
+
+
+c0=cGuess(1);
+c(1:Order)=cGuess(2:Order+1);
+
+
+
+%iter=5;           %Number of iterations in the calibration.
+                  %Please experiment and play around.  
+bGuess(1:7)=cGuess(2:8);    %We have assigned initial values of coefficients 
+
+
+c0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));
+c(1:7)=bGuess(1:7);
+
+[IsValidFlag] = CheckIsValidDensity(c0,c);
+
+[Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+
+ObjBest=0.0;
+for nn1=1:Order+1
+    ObjBest=ObjBest+(sMu(nn1)-Moments(nn1)).^2.*wm(nn1);
+end
+
+bGuess0Best=c0;
+    bGuessBest=bGuess;
+
+Iterations=20;
+
+SuccessFlag=0;
+FailCount=0;
+for iterA=1:Iterations
+
+    SuccessFlag=0;
+    
+    
+    iter=3;
+[bGuess0,bGuess(1:7),ObjNew] = PreSmoothingGuessAdvancedFromGuessBestNewLimits(sMu,bGuess,iter,wm);
+
+[IsValidFlag] = CheckIsValidDensity(bGuess0,bGuess);
+
+
+if((ObjNew=3)
+% Random(1:7)=0;
+% 
+% Random=randn(size(Random));
+% 
+% bGuess(2:7)=bGuessBest(2:7)-bGuessBest(2:7).*.0002.*(Random(2:7)).*sqrt(2:7);
+% bGuess0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));
+% 
+% [SecondMoment] = CalculateSecondMomentC7(bGuess0,bGuess);
+% bGuess=bGuess/sqrt(SecondMoment);
+% %bGuess0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));    
+% end
+% 
+% else
+%   FailCount=0;  
+% 
+% end
+% 
+% 
+% end
+% 
+% c0=-(bGuessBest(2)+3*bGuessBest(4)+15*bGuessBest(6));
+% [SecondMoment] = CalculateSecondMomentC7(c0,bGuessBest);
+% bGuessBest=bGuessBest/sqrt(SecondMoment);
+% c(1:7)=bGuessBest(1:7);
+% c0=c0/sqrt(SecondMoment);
+% 
+% 
+% 
+% c0
+% c
+% %str=input("Look at pre-smoothing Guess result")
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %Comment this block if you do not want multidimensional Newton pass
+% %Even though preSmoothing guess is very close to optimal, slight
+% %inaccuracies can change the shape of probabioity density so this 
+% %Multidimensional Newton is usually required.
+% 
+% [F,dF] = CalculateMomentsAndDerivatives_0(sMu,c0,c,SeriesOrder,SeriesOrder,NMoments);
+% 
+% da(1,1)=c0;
+% da(2:SeriesOrder+1,1)=c(1:SeriesOrder);
+% 
+% [Moments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+% 
+% ObjBest=0.0;
+% for nn1=1:Order+1
+%     ObjBest=ObjBest+(sMu(nn1)-Moments(nn1)).^2.*wm(nn1);
+% end
+% 
+% 
+% 
+% b0Best=c0;
+% bBest(1:SeriesOrder)=c(1:SeriesOrder);
+% 
+% nn=0;
+% SuccessFlag=0;
+% FailCount=0;
+% 
+% while((nn.000000000001) || (abs(F(2,1))>.000000000001) || (abs(F(3,1))>.000000000001) || (abs(F(4,1))>.00000000001)|| (abs(F(5,1))>.00000000001)|| (abs(F(6,1))>.00000000001)|| (abs(F(7,1))>.00000000001)|| (abs(F(8,1))>.00000000001)  ))
+% SuccessFlag=0;
+%     nn=nn+1;
+%     
+%     if(nnObjNew) &&( IsValidFlag))
+%       
+%        ObjBest=ObjNew;
+%        b0Best=b0;
+%        bBest(1:SeriesOrder)=b(1:SeriesOrder);
+%        SuccessFlag=1;
+%     end
+%     
+%     if(SuccessFlag==0)
+%         FailCount=FailCount+1;
+%     else
+%         FailCount=0;
+%     end
+%     
+%     if(FailCount>=3)
+%         Random(1:7)=0;
+% 
+%         Random=randn(size(Random));
+%         
+%         b(1:7)=bBest(1:7)+bBest(1:7).*.0002.*(Random(1:7)).*sqrt(1:7);
+%         b0=-(b(2)+3*b(4)+15*b(6));
+% 
+%         [SecondMoment] = CalculateSecondMomentC7(b0,b);
+%         b=b/sqrt(SecondMoment);
+%         b0=-(b(2)+3*b(4)+15*b(6));    
+%     end
+% 
+%     da(1,1)=b0;
+%     da(2:SeriesOrder+1,1)=b(1:SeriesOrder);
+% 
+% end
+% c0=b0Best;%Best;
+% c(1:SeriesOrder)=bBest;%Best(1:SeriesOrder);
+%   
+% 
+% %Multidimensional Newton root search ends. Comment till here if you like to
+% %exclude this
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% c0
+% c
+% 
+% %str=input("Look at standardized output coefficients");
+% 
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Make sure you do not comment the lines below
+
+c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+c=c*sqrt(cMu(2));   %convert from standardized to central moments
+
+c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+
+[FittedMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Please Uncomment this if you want to see a comparison of input moments and
+%fitted moments
+rMu
+FittedMoments
+str=input('Look at comparison of fitted moments with input moments: Warning: Large Mismatch implies that many results would be off');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%COMMENT lines below if you do not want to see the density of new Z-series random variable with
+%fitted moments.
+%First calculate normal random variable on a grid below
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z
+%str=input('Look at Z');
+%Now calculate Y as a function of normal random variable.
+Y(1:Nn)=c0;
+for nn=1:7
+    Y(1:Nn)=Y(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Now take change of densities derivative of Y with respect to normal
+DfY(1:Nn)=0;
+for nn=2:Nn-1
+    DfY(nn) = (Y(nn + 1) - Y(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+DfY(Nn)=DfY(Nn-1);
+DfY(1)=DfY(2);
+
+%Now calculate the density of Y from density of normal random variable
+%using change of probability derivative.
+pY(1:Nn)=0;
+for nn = 1:Nn    
+    pY(nn) = (normpdf(Z(nn),0, 1))/abs(DfY(nn));
+end
+
+plot(Y(1:Nn),pY(1:Nn),'b');
+title('Density of the Z-Series Variable with Fitted Moments');
+
+str=input('Look at the density of Z-series random variable')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [YCoeffZ,ObjFunc] = ZSeries1DCoeffsIterativeForGuess(YCoeffZ,TargetMoments,Order,MaxIter,w1D)
+
+
+%Order=5;
+SeriesOrder=Order+1; 
+NMoments=Order+1;
+MOrder=Order+1;
+
+for nn=1:SeriesOrder
+    
+        DeltaX(nn)=.00125*2/factorial(nn+1);
+end
+DeltaXMax=DeltaX*10;
+
+% w1D(1:NMoments)=1;
+% for nn=NMoments-1:-1:1
+%         w1D(nn)=w1D(nn+1)*(nn+1).^0;
+% end
+
+
+
+
+[YCoeffH] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ,Order);
+[YCoeffH] = FixTheHermiteSeriesDensity(YCoeffH,Order);
+[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+[FittedMoments] = CalculateMomentsOfZSeries(YCoeffZ(1),YCoeffZ(2:Order+1),SeriesOrder,NMoments);
+
+
+
+[ObjFuncBest] = CalculateObjMoment(TargetMoments,FittedMoments,w1D,MOrder);
+
+ObjFunc1=0;
+ObjFunc2=0;
+
+ObjFuncBest
+str=input("Look objFuncBest");
+%cBest=c;
+
+
+
+
+
+
+
+
+
+
+ImproveFlag(1:SeriesOrder)=1;
+ImproveFlagPrev(1:SeriesOrder)=0;
+ImproveCount(1:SeriesOrder)=0;
+ContinueFlag=1;
+kk=0;
+%while ((kk.0001))
+while ((ContinueFlag)&&(ObjFuncBest>.0001))
+kk=kk+1;
+    for nn=3:Order+1%SeriesOrder
+       
+
+            YCoeffZnew=YCoeffZ;
+            
+            [YCoeffHnew] = ConvertZSeriesToHermiteSeriesNew(YCoeffZnew,Order);
+[YCoeffHnew] = FixTheHermiteSeriesDensity(YCoeffHnew,Order);
+[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            
+            
+%             if(abs(YCoeffZnew(4)) >1/3*abs(YCoeffZnew(2)))
+%     YCoeffZnew(4)=sign(YCoeffZnew(4)).*1/3*abs(YCoeffZnew(2));
+% end
+% if(abs(YCoeffZnew(6))>1/11*abs(YCoeffZnew(4)))
+%     YCoeffZnew(6)=sign(YCoeffZnew(6)).*1/11*abs(YCoeffZnew(4));
+% end
+% if(abs(YCoeffZnew(8))>1/22*abs(YCoeffZnew(6)))
+%     YCoeffZnew(8)=sign(YCoeffZnew(8)).*1/22*abs(YCoeffZnew(6));
+% end
+% 
+% 
+% if(abs(YCoeffZnew(5))>1/7*abs(YCoeffZnew(3)))
+%     YCoeffZnew(5)=sign(YCoeffZnew(5)).*1/7*abs(YCoeffZnew(3));
+% end
+% if(abs(YCoeffZnew(7))>1/16*abs(YCoeffZnew(5)))
+%     YCoeffZnew(7)=sign(YCoeffZnew(7)).*1/16*abs(YCoeffZnew(5));
+% end
+            
+            
+            
+            
+            
+            YCoeffZnew(1)=-(YCoeffZnew(3)+3*YCoeffZnew(5)+15*YCoeffZnew(7));
+            %[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            YCoeffZnew(:)=YCoeffZnew(:)./sqrt(FittedMoments(2));
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            
+            DoCalculations=0;
+            if(FittedMoments(nn)abs(24/5*YCoeffHnew0(3)+503/5*YCoeffHnew0(5)+7360/5*YCoeffHnew0(7)))
+               DFlag1=1; 
+            end
+                
+                
+                %DFlag2=(DValue1>0)&&(DValue2>0)&&(DValue3>0)&&(DValue4>0)&&(DValue5>0)&&(DValue6>0);
+ 
+                
+                
+                %DValue1=1;
+ %DValue2=1;
+            end
+ %DFlag1=1;
+ DFlag2=1;
+                if((DoCalculations)&&(ObjFunc11/3*abs(YCoeffZnew(2)))
+%     YCoeffZnew(4)=sign(YCoeffZnew(4)).*1/3*abs(YCoeffZnew(2));
+% end
+% if(abs(YCoeffZnew(6))>1/11*abs(YCoeffZnew(4)))
+%     YCoeffZnew(6)=sign(YCoeffZnew(6)).*1/11*abs(YCoeffZnew(4));
+% end
+% if(abs(YCoeffZnew(8))>1/22*abs(YCoeffZnew(6)))
+%     YCoeffZnew(8)=sign(YCoeffZnew(8)).*1/22*abs(YCoeffZnew(6));
+% end
+% 
+% 
+% if(abs(YCoeffZnew(5))>1/7*abs(YCoeffZnew(3)))
+%     YCoeffZnew(5)=sign(YCoeffZnew(5)).*1/7*abs(YCoeffZnew(3));
+% end
+% if(abs(YCoeffZnew(7))>1/16*abs(YCoeffZnew(5)))
+%     YCoeffZnew(7)=sign(YCoeffZnew(7)).*1/16*abs(YCoeffZnew(5));
+% end
+
+                YCoeffZnew(1)=-(YCoeffZnew(3)+3*YCoeffZnew(5)+15*YCoeffZnew(7));
+            %[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            YCoeffZnew(:)=YCoeffZnew(:)./sqrt(FittedMoments(2));
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+
+            DoCalculations=0;
+            if(FittedMoments(nn)>TargetMoments(nn))
+                YCoeffZnew(nn)=YCoeffZnew(nn)-DeltaX(nn);
+                DoCalculations=1;
+                
+            [YCoeffHnew] = ConvertZSeriesToHermiteSeriesNew(YCoeffZnew,Order);
+[YCoeffHnew] = FixTheHermiteSeriesDensity(YCoeffHnew,Order);
+[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);    
+            end
+            DFlag1=0;
+            if(DoCalculations)
+            YCoeffZnew(1)=-(YCoeffZnew(3)+3*YCoeffZnew(5)+15*YCoeffZnew(7));    
+            %[YCoeffZnew(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffHnew(1:Order+1),Order);
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            YCoeffZnew(:)=YCoeffZnew(:)./sqrt(FittedMoments(2));
+            [FittedMoments] = CalculateMomentsOfZSeries(YCoeffZnew(1),YCoeffZnew(2:Order+1),SeriesOrder,NMoments);
+            [ObjFunc2] = CalculateObjMoment(TargetMoments,FittedMoments,w1D,MOrder);
+             [YCoeffHnew0] = ConvertZSeriesToHermiteSeriesNew(YCoeffZnew,Order);
+ 
+             if(YCoeffHnew0(2)+22*YCoeffHnew0(4)+390*YCoeffHnew0(6)+5020*YCoeffHnew0(8)>abs(24/5*YCoeffHnew0(3)+503/5*YCoeffHnew0(5)+7360/5*YCoeffHnew0(7)))
+               DFlag1=1; 
+            end
+            
+                
+            end
+ 
+ %DFlag1=1;
+ DFlag2=1;
+                if((DoCalculations)&&(ObjFunc2DeltaXMax(nn))
+           DeltaX(nn)=DeltaXMax(nn);
+       end
+    end
+        
+    ContinueFlag=(ContinueFlag || ImproveFlag(nn));
+    
+   
+end
+
+ObjFunc=ObjFuncBest;
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [c0Best,cBest,ObjBest] = PreSmoothingGuessAdvancedFromGuessBestNewLimits(cmu,cin,iter,wm)
+
+
+%Mul=1.0;
+SeriesOrder=7;
+Order=7;
+NMoments=8;
+
+ EZ(1)=0;
+ EZ(2)=1;
+ for nn=3:NMoments*SeriesOrder+SeriesOrder+2
+     if rem(nn,2)==1
+         EZ(nn)=0;
+     else
+         EZ(nn)=EZ(nn-2)*(nn-1);
+         EZ(nn);
+     end
+ end
+
+
+c0=-(cin(2)+3*cin(4)+15*cin(6));  %This is for zero mean condition.
+c=cin;
+
+
+Moments=CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+
+ObjBest=0.0;
+for nn1=1:Order+1
+    ObjBest=ObjBest+(cmu(nn1)-Moments(nn1)).^2.*wm(nn1);
+end
+c0Best=c0;
+cBest(1:SeriesOrder)=c(1:SeriesOrder);
+
+YCoeffZ(1)=c0;
+YCoeffZ(2:SeriesOrder+1)=c(1:SeriesOrder);
+Order=SeriesOrder;
+[YCoeffH] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ,Order);
+[YCoeffH] = FixTheHermiteSeriesDensity(YCoeffH,Order);
+[YCoeffZ(1:Order+1)] = ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+c0=YCoeffZ(1);
+c(1:SeriesOrder)=YCoeffZ(2:SeriesOrder+1);
+
+
+
+
+
+
+MaxIter=10;
+
+for nn=1:iter     %increase the iterations over coefficients if neeeded
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[M3,dc2] = CalculateParticularMomentAndDerivativeOfItsCoeff(c0,c,SeriesOrder,3,EZ);
+
+%tolerance=.0000001*cmu(3);
+tolerance=.001*cmu(3)/nn;
+mm=0;
+while ((abs(M3-cmu(3)) >tolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmtolerance ) && (mmObjNew)
+    ObjBest=ObjNew;
+    cBest=c;
+    c0Best=c0;
+end
+
+
+
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [YCoeffHnew0] = FixTheHermiteSeriesDensity(YCoeffHnew0,order)
+
+
+A=YCoeffHnew0(2)+22*YCoeffHnew0(4)+390*YCoeffHnew0(6)+5020*YCoeffHnew0(8);
+B=abs(24/5*YCoeffHnew0(3)+503/5*YCoeffHnew0(5)+7360/5*YCoeffHnew0(7));
+
+if(A<B)
+YCoeffHnew0(2)=YCoeffHnew0(2)*abs(B/A);
+YCoeffHnew0(4)=YCoeffHnew0(6)*abs(B/A);
+YCoeffHnew0(6)=YCoeffHnew0(4)*abs(B/A);
+YCoeffHnew0(8)=YCoeffHnew0(8)*abs(B/A);
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [CoeffR,XCoeffH,ZI] = RegressYOnX(Y,Xin,NData,Dim,Order)
+
+
+[ZI] = StandardNormalIdealDesity02(NData,1);
+
+for nn=1:Dim
+    
+ for pp=1:Order+1
+     XrMu(pp,nn)=sum(Xin(1:NData,nn).^pp)/NData;
+ end
+  
+ [c0(nn),c(1:Order,nn)] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Xin(1:NData,nn),ZI);%,XCoeffZ(2:Order+1));
+ XCoeffZ(1,nn)=c0(nn);
+ XCoeffZ(2:Order+1,nn)=c(1:Order,nn);
+ 
+[XCoeffH(1:Order+1,nn)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1,nn),Order);
+
+[Zx(:,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(:,nn),XCoeffH(1:Order+1,nn),Order);
+
+end
+
+
+%Zx
+
+%str=input("Match Zx with Zx in python")
+
+WW(1:NData,1:Order+1)=EvalHermiteArrayH0(Zx(1:NData,1),Order);
+
+
+%WW
+
+%str=input("Show me match of first EvalHermite Array0 with python")
+
+
+
+for mm=2:Dim
+    WW(1:NData,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:NData,mm),Order);
+    WW0(1:NData,1:Order)=EvalHermiteArrayH1(Zx(1:NData,mm),Order);
+    %WW0
+    %mm
+    
+ 
+    %str=input("Compare with EvalHermiteArray1")
+    
+    
+end
+
+
+
+
+Ymu(1:NData,1)=Y(1:NData);
+
+WWW=(WW'*WW);
+
+for mm=1:Dim*Order+1
+    WWW(mm,mm)=WWW(mm,mm)+.000001;
+end
+
+CoeffR=(WWW)$WW'*Ymu);
+
+
+
+
+
+
+
+
+
+% 
+% for nn=1:NData
+%     YProjected(nn,1)=0.0;
+%    for mm=1:Dim*Order+1
+%    YProjected(nn,1)=YProjected(nn,1)+WW(nn,mm).*CoeffR(mm,1);    
+%     
+%    end
+% end
+% 
+%  STot=sum((Ymu(1:NData,1)-sum(Ymu(1:NData,1))/NData).^2);
+%  SRes=sum((Ymu(1:NData,1)-YProjected(1:NData,1)).^2);
+% % 
+%  RSquared=1-SRes/STot;
+% % 
+%  RSquared
+% % 
+% YRight=0.0;
+% YWrong=0.0;
+% YPRExp=0.0;
+% YNRExp=0.0;
+% YPWExp=0.0;
+% YNWExp=0.0;
+% for nn=1:NData
+%     
+%    for mm=1:Dim*Order+1
+%    YProjected(nn,1)=YProjected(nn,1)+WW(nn,mm).*CoeffR(mm,1);    
+%    end
+%    if(Ymu(nn,1)>=0)
+%        if(YProjected(nn,1)>=0)
+%            YRight=YRight+1;
+%            YPRExp=YPRExp+(Ymu(nn,1));
+%        else
+%            YWrong=YWrong+1;
+%            YPWExp=YPWExp+(Ymu(nn,1));
+%        end
+%    end
+%    if(Ymu(nn,1)<0)
+%        if(YProjected(nn,1)<0)
+%            YRight=YRight+1;
+%            YNRExp=YNRExp+(Ymu(nn,1));
+%        else
+%            YWrong=YWrong+1;
+%            YNWExp=YNWExp+Ymu(nn,1);
+%        end
+%    end
+% end
+% 
+% YRight
+% YWrong
+% 
+% YPRExp
+% YNRExp
+% 
+% YPWExp
+% YNWExp
+% 
+% abs(YPRExp)+abs(YNRExp)-abs(YPWExp)-abs(YNWExp)
+% 
+% str=input("Look at RSquared--0002")
+% 
+% 
+% 
+%  mdl=fitlm(WW,Ymu)    
+%     
+% str=input("Matlab's first regression")    
+% 
+% 
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04(Xin,Yin,NData,NDims)
+
+%This program finds required correlations between NDims explanatory
+%variables given in Xin that has NDims dimensionality. Yin is variable
+%being explained and is one-diemsnional.
+
+
+Order=7;
+NMoments=8;
+
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+% 
+% for nn=1:NDims
+% [XCoeffH(1:Order+1,nn),Zx(1:NData,nn)] = CalculateHermiteSeriesFromData02(Xin(1:NData,nn),Order,ZI);
+% 
+% %[Zx(1:NData,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(1:NData,nn),XCoeffH(1:Order+1,nn),Order);
+% 
+% end
+
+
+for nn=1:NDims
+    
+ for pp=1:Order+1
+     XrMu(pp,nn)=sum(Xin(1:NData,nn).^pp)/NData;
+ end
+  
+ [c0(nn),c(1:Order,nn)] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Xin(1:NData,nn),ZI);%,XCoeffZ(2:Order+1));
+ XCoeffZ(1,nn)=c0(nn);
+ XCoeffZ(2:Order+1,nn)=c(1:Order,nn);
+ 
+[XCoeffH(1:Order+1,nn)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1,nn),Order);
+
+[Zx(:,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(:,nn),XCoeffH(1:Order+1,nn),Order);
+
+end
+
+
+ for pp=1:Order+1
+     YrMu(pp)=sum(Yin(1:NData).^pp)/NData;
+ end
+ 
+ 
+ [c0,c(1:Order)] = CalculateZSeriesDensityFromRawMoments02FromGuess02(Yin(1:NData),ZI);%,XCoeffZ(2:Order+1));
+ YCoeffZ(1)=c0;
+ YCoeffZ(2:Order+1)=c(1:Order);
+ 
+ [YCoeffH(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ(1:Order+1),Order);
+ %ConvertZSeriesToHermiteSeriesNew
+
+[Zy(:)] = CalculateZgivenXAndHSeriesCoeffs(Yin(:),YCoeffH(1:Order+1),Order);
+
+
+
+
+
+
+%[YCoeffH,Zy] = CalculateHermiteSeriesFromData02(Yin,Order,ZI); 
+% %[Zy] = CalculateZgivenXAndHSeriesCoeffs(Yin,YCoeffH,Order);
+
+
+for nn1=1:NDims
+    for nn2=1:NDims
+        if(nn1==nn2)
+            HCorrXX(nn1,nn2,1:Order)=1.0;
+        else
+            HCorrXX(nn1,nn2,1:Order) = CalculateCorrelationBivariateHermiteCH0(Zx(1:NData,nn1),Zx(1:NData,nn2),NData,Order);
+        end
+    end
+end
+for nn1=1:NDims
+    HCorrXX(nn1,nn1,1:Order)=1.0;
+end
+
+
+% for hh=1:Order
+%     for nn1=1:NDims
+%         HCorrXX
+%         ss2=0;
+%         for nn2=1:NDims
+%             if(nn2~=nn1)
+%                 ss2=ss2+1;
+%                 ss3=0;
+%                 for nn3=1:NDims
+%                     if(nn3~=nn1)
+%                         ss3=ss3+1;
+%                             HCorrXXmn(ss2,ss3)=HCorrXX(nn2,nn3,hh);
+%                     end
+%                     HCorrXmXn(ss2,1)=HCorrXX(nn1,nn2,hh);
+%                 end
+%             end
+%         end
+%         BetaCorrXX(1:NDims-1,nn1,hh)=HCorrXXmn(:,:)\HCorrXmXn(1:NDims-1,1);
+%             
+%     end
+%         
+%     BetaCorrXX
+%         
+%     nn1
+%        
+%         str=input("Look at important variables");
+%     
+% end
+% BetaCorrXX            
+% str=input("look at the BetacorrXX");       
+% for nn1=1:NDims
+%     for nn2=1:NDims-1
+%         if(nn2<nn1)
+%     BetaCorrXX0(nn2,nn1,1:Order)=BetaCorrXX(nn2,nn1,1:Order);
+%         elseif(nn2==nn1)
+%                % BetaCorrXX0(nn2,nn1,1:Order)=1;
+%             
+%             BetaCorrXX0(nn2+1:NDims,nn1,1:Order)=BetaCorrXX(nn2:NDims-1,nn1,1:Order);
+%         end
+%     end
+%     BetaCorrXX0(nn1,nn1,1:Order)=1;
+% end
+% BetaCorrXX
+% BetaCorrXX0
+
+
+% 
+% % % % str=input("Look at BetaCorrXX pairs");
+% % % % for hh=1:Order
+% % % %     for nn1=1:NDims
+% % % %         for nn2=1:NDims-1
+% % % %             BetaCorrXXn(nn1,nn2,hh)=sign(BetaCorrXXn(nn1,nn2,hh)).*(abs(BetaCorrXXn(nn1,nn2,hh))).^(1/hh);
+% % % %         end
+% % % %     end
+% % % % end
+
+
+
+for nn1=1:NDims
+    HCorrXY(nn1,1:Order) = CalculateCorrelationBivariateHermiteCH0(Zx(1:NData,nn1),Zy(1:NData),NData,Order);
+end
+
+for hh=1:Order
+    [BCorrXY(:,hh),Is(:,hh)]=sort(HCorrXY(:,hh),'descend');
+end
+
+for hh=1:Order
+    CorrXX(1:NDims,1:NDims)=HCorrXX(Is(1:NDims,hh),Is(1:NDims,hh),hh);
+    CorrXY(1:NDims,1)=HCorrXY(Is(1:NDims,hh),hh);
+    BetaCorr0(1:NDims)=CorrXX\CorrXY;
+    BetaCorrH(Is(1:NDims,hh),hh)=BetaCorr0(1:NDims);
+end
+
+
+
+%HCorrXX=BetaCorrXX0;
+%HCorrXX
+str=input("Look at HCOrrXX");
+
+% for hh=1:Order
+%     CorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+%     CorrXY(1:NDims,1)=HCorrXY(1:NDims,hh);
+%     BetaCorrH(1:NDims,hh)=CorrXX\CorrXY;
+% end
+
+
+
+
+%CorrXX1st(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,1)
+
+
+%BetaCorrH(:,1)'*CorrXX
+
+%CorrXY
+
+%HCorrXX
+
+%HCorrXY
+
+BetaCorrH
+
+str=input("Look at BetaCorrH");
+end
+```
+
+.
+
+.
+
+.
+```
+
+---
+
+## Error 55: Unbalanced $: 1
+
+**Snippet:** `Friends, I tried to specify median as a constant in the least squares regression`
+
+**Full content:**
+
+```
+Friends, I tried to specify median as a constant in the least squares regression to find the coefficients of Z-series. Data Median is specified as a constant and regression is done on only first seven powers of the ZI of ideal normal density grid. A constant is not specified in the regression. And it works extremely well. All moments are matched very closely by the regression calculated coefficients of the Z-series which was earlier not possible. I am posting the program, please use this program for finding optimal coefficients of Z-series.
+
+.
+
+.
+
+.
+
+.
+
+```
+function [Coeff,Zy] = CalculateZSeriesFromData02GivenMedian(Yin,Order,ZI)
+
+Ndata=length(Yin);
+
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+[Yss,I]=sort(Y(1:Ndata));
+
+DataMedian=(Yss(Ndata/2)+Yss(Ndata/2+1))/2;
+
+Ys=Yss-DataMedian;
+
+for hh=1:Order
+    W(1:Ndata,hh)=ZI(1:Ndata).^(hh);
+end
+
+
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+WW=(W'*W);
+
+coeff=(WW)$W'*Ymu);
+
+
+%Store in coefficietns array of all random varaibles
+Coeff(2:Order+1)= coeff(1:Order,1);
+Coeff(1)=DataMedian;
+%Store the associated Z in Z-array of all coefficients.   
+Zy(I(1:Ndata))=W(1:Ndata,2);
+
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+clf;
+PlotZSeriesDensity(Coeff(1),Coeff(2:Order+1),'r')
+hold on
+
+NoOfBins=150;
+MaxCutOff=20;
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin,Ndata,NoOfBins,MaxCutOff );
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'b');
+
+str=input("Look at comparison of Density");
+
+
+end
+
+
+
+
+```
+
+
+.
+
+.
+
+.
+
+For example in my first density, I calculated the coefficients from above regression function and here are the match of moments using least squares regression for Z-series coefficients..
+
+rMu =
+
+  Columns 1 through 3
+
+   0.999295452748394   1.198974001815090   1.690278464594609
+
+  Columns 4 through 6
+
+   2.753994571319678   5.117567287965246  10.725966391329102
+
+  Columns 7 through 8
+
+  25.108588412759644  65.040161369123126
+
+FittedMoments =
+
+  Columns 1 through 3
+
+   0.999295452748394   1.198965360544081   1.690225069802911
+
+  Columns 4 through 6
+
+   2.753824423082222   5.117410061147821  10.729855471809556
+
+  Columns 7 through 8
+
+  25.160471673738623  65.514802435978780
+
+Here is the graph of the constructed density with coefficients from regression VS the numerical density.
+
+.
+
+.
+
+[![Image](../images/i.postimg.cc/kXHSJckL/Match-Density-LS.png)](https://postimg.cc/0bpjZp5C)
+```
+
+---
+
+## Error 56: Unbalanced $: 1
+
+**Snippet:** `.  .  .  .  ``` function []= ConditionalDensityHermitesNvariateNewtonCondLoopXnX`
+
+**Full content:**
+
+```
+.
+
+.
+
+.
+
+.
+
+```
+function []= ConditionalDensityHermitesNvariateNewtonCondLoopXnXmCross()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+%NMomentsY=Order+1;
+%NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+dt=.03125/2/8;
+Tt=64*2*8;
+T=Tt*dt;
+seed0=12130649;
+%seed0=94210876;
+%seed0=14210876;
+seed0=53612297
+%seed0=97459782
+rng(seed0, 'twister')
+paths=100000;
+TT1=100*8/2; %Transition distribution start
+TT2=256*8/2; %Transition distribution end
+
+%%%%%%%%%%%%%%%%%%%5
+
+NDims=3;
+NDims2=3;
+% 
+V0(1)=1.000;%.32;
+V00(1)=V0(1);
+
+%SDE1
+ thetaV(1)=1.0;%.045;%1;%.04;
+ kappaV(1)=0.000;%1.5;%1.5;
+ gamma(1)=.75;%.75
+ sigma0(1)=.5;%.35
+
+
+ 
+%SDE2%
+%thetaV(1)=.90;%.045;%1;%.04;
+%kappaV(1)=1.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.85;%.35
+
+%SDE3%
+%thetaV(1)=1.350;%.045;%1;%.04;
+%kappaV(1)=2.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.95;%.35
+
+
+mu1(1)=kappaV(1)*thetaV(1);
+mu2(1)=-kappaV(1);
+beta1(1)=0;
+beta2(1)=1;
+
+
+
+V0(2)=1.000;%.32;
+V00(2)=V0(2);
+
+%SDE1
+thetaV(2)=1.0;%.045;%1;%.04;
+ kappaV(2)=0.000;%1.5;%1.5;
+ gamma(2)=.85;%.75
+ sigma0(2)=.5;%.35
+
+%SDE2 
+% thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=2.000;%1.5;%1.5;
+% gamma(2)=.65;%.75
+% sigma0(2)=.95;%.35
+
+%SDE3
+%thetaV(2)=.850;%.045;%1;%.04;
+%kappaV(2)=.35000;%1.5;%1.5;
+%gamma(2)=.65;%.75
+%sigma0(2)=.55;%.35
+
+
+mu1(2)=kappaV(2)*thetaV(2);
+mu2(2)=-kappaV(2);
+beta1(2)=0;
+beta2(2)=1;
+
+
+
+V0(3)=1.000;%.33;
+V00(3)=V0(3);
+
+%SDE1
+thetaV(3)=1.0;%.045;%1;%.04;
+ kappaV(3)=0.000;%1.5;%1.5;
+ gamma(3)=.95;%.75
+ sigma0(3)=.45;%.35
+
+%SDE2 
+% thetaV(3)=.750;%.045;%1;%.04;
+% kappaV(3)=0.5000;%1.5;%1.5;
+% gamma(3)=.95;%.75
+% sigma0(3)=.45;%.35
+
+
+%SDE3 
+%thetaV(3)=1.150;%.045;%1;%.04;
+%kappaV(3)=1.5000;%1.5;%1.5;
+%gamma(3)=.95;%.75
+%sigma0(3)=.75;%.35
+
+mu1(3)=kappaV(3)*thetaV(3);
+mu2(3)=-kappaV(3);
+beta1(3)=0;
+beta2(3)=1;
+
+
+
+Corr1(1,1)=1;
+Corr1(1,2)=.7;
+Corr1(1,3)=.8;
+Corr1(2,2)=1;
+Corr1(2,1)=.7;
+Corr1(2,3)=.5;
+Corr1(3,1)=.8;
+Corr1(3,2)=.5;
+Corr1(3,3)=1;
+% 
+% % % % Was very good.
+% Corr1(1,1)=1;
+% Corr1(1,2)=.7/3;
+% Corr1(1,3)=.8/3;
+% Corr1(2,2)=1;
+% Corr1(2,1)=.7/3;
+% Corr1(2,3)=.5/3;
+% Corr1(3,1)=.8/3;
+% Corr1(3,2)=.5/3;
+% Corr1(3,3)=1;
+% % % % % % % % 
+% % % % % % % % 
+% % % % % % % 
+Corr1(1,1)=1;
+Corr1(1,2)=-.7/3;
+Corr1(1,3)=.8/3;
+Corr1(2,2)=1;
+Corr1(2,1)=-.7/3;
+Corr1(2,3)=-.5/3;
+Corr1(3,1)=.8/3;
+Corr1(3,2)=-.5/3;
+Corr1(3,3)=1;
+% % % % % % 
+% % % % % % 
+% % % % % % 
+% Corr1(1,1)=1;
+% Corr1(1,2)=-.27;
+% Corr1(1,3)=-.28;
+% Corr1(2,2)=1;
+% Corr1(2,1)=-.27;
+% Corr1(2,3)=-.15;
+% Corr1(3,1)=-.28;
+% Corr1(3,2)=-.15;
+% Corr1(3,3)=1;
+%87%Corr1(1:3,1:3)=0.0;
+
+R=chol(Corr1);
+% 
+%  R(1:3,1:3)=0;
+%  R(1,1)=1;
+%  R(2,2)=1;
+%  R(3,3)=1;
+
+
+V0(4)=1.000;%.44;
+V00(4)=V0(4);
+thetaV(4)=1.0;%.045;%1;%.04;
+kappaV(4)=1.000;%1.5;%1.5;
+mu1(4)=kappaV(4)*thetaV(4);
+mu2(4)=-kappaV(4);
+beta1(4)=0;
+beta2(4)=1;
+gamma(4)=.95;%.75
+sigma0(4)=.55;%.45
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+for nn=1:NDims
+V(1:paths,nn)=V0(nn);
+Threshold(nn)=(sigma0(nn)*sqrt(dt)*2)^(1/(1-gamma(nn)));
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %Random2=R'*Random2;
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    %Random2(V(:,<Threshold,:)=
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0000;
+    
+    V(isnan(V(:,nn)),nn)=0;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,nn)=(V(1:paths,nn));
+    end
+        
+    if(tt==TT2)
+        
+        Xin2(1:paths,nn)=(V(1:paths,nn));
+    end
+
+    end    
+    
+end
+
+
+Yin(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin(pp)=Yin(pp)+Xin2(pp,mm);%-Xin(pp,mm);
+%-Xin(pp,mm);
+end
+end
+
+
+str=input("I have reached stone 1");
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% 
+ Order=7;
+ clf;
+ 
+     
+  NDims2=3;
+ 
+ 
+  
+ 
+[BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04(Xin,Yin,paths,NDims2);
+YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+%HCorrXX(:,:)=0.0;
+
+BetaCorrH
+
+HCorrXX
+
+str=input("I have reached Stone2");
+
+
+
+for hh=1:Order
+    for nn=1:NDims2
+        ch(nn+1,hh+1)=BetaCorrH(nn,hh).*YCoeffH(hh+1);%make sure indices on all hermite-correlations match.check.
+        %%%% nn+1 since 1st index would go to y-tilde.
+    end
+end
+
+
+for hh=1:Order
+HCorrXX(1:NDims,1:NDims,hh)=HCorrXX(1:NDims,1:NDims,1);
+end
+%bn=0;
+%[bn] = FindInitialGuessForNewton(Zy,Zx,NDims,paths,Order);
+
+
+
+
+
+%bn
+
+%str=input("Look at the coefficients from two different methods");
+
+
+
+NDims2=3;
+
+
+
+bn=0; 
+for mm=1:NDims
+    NDims0=1;
+    [bn] = FindInitialGuessForNewtonUnivariate(Zy,Zx(1:paths,mm),NDims0,paths,Order);
+    bn
+    HCorrXX0(1,1,1:Order)=1;
+    bnOptim0= OptimizeCorrFromHermitesNewtonWithoutVar(Zy,Zx(1:paths,mm),bn,HCorrXX0,NDims0,paths,Order);
+    bnOptim(mm,:)=bnOptim0(1,:);
+ mm
+ str=input("Let us look at bn");
+ 
+end
+
+
+bnOptim
+
+str=input("Look at the variabes of cnOptim from both ways");
+ 
+% for mm1=1:NDims
+%     for mm2=1:NDims
+%         if(mm1==mm2)
+%         HCorrXX(mm1,mm2,1:Order)=1;    
+%         end
+%         if(mm1<mm2)
+%         cn(1,:)=bnOptim(mm1,:);
+%         cn(2,:)=bnOptim(mm2,:);
+%         NDims0=2;
+%         [HCorrBest] = OptimizeXkCorrsFromHermitesWithoutVar(Zy,Zx,cn,NDims0,paths,Order); 
+%         HCorrXX(mm1,mm2,:)=HCorrBest(:);
+%         HCorrXX(mm2,mm1,:)=HCorrXX(mm1,mm2,:);
+%         end
+%     end
+% end
+% 
+
+
+
+
+
+
+
+
+mm1=1;
+mm2=2
+    NDims0=1;
+    [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+    bn
+    HCorrXX0(1,1,1:Order)=1;
+    CorrXX= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+    HCorrXX(mm1,mm2,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm2,mm1,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm1,mm1,1:Order)=1;
+
+mm1=1;
+mm2=3
+    NDims0=1;
+    [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+    bn
+    HCorrXX0(1,1,1:Order)=1;
+    CorrXX= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+    HCorrXX(mm1,mm2,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm2,mm1,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm2,mm2,1:Order)=1;
+
+mm1=2;
+mm2=3;
+    NDims0=1;
+    [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+    bn
+    HCorrXX0(1,1,1:Order)=1;
+    CorrXX= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+    HCorrXX(mm1,mm2,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm2,mm1,1:Order)=CorrXX(1,1:Order);
+    HCorrXX(mm1,mm1,1:Order)=1;
+
+
+
+
+
+
+
+HCorrXX
+
+str=input("Look at HCorrXX");
+
+
+for hh=1:Order
+    bCol(1:NDims,1)=bnOptim(1:NDims,hh);
+    HHCorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+    bb=HHCorrXX\bCol;
+    cn(1:NDims,hh)=bb(1:NDims);
+end
+Var(hh)=0.0;
+for hh=1:Order
+    for mm=1:NDims
+        Var(hh)=Var(hh)+cn(mm,hh).^2;
+    end
+    cn(NDims+1,hh)=sqrt(1-Var(hh));
+end
+
+
+
+
+[cn] = OptimizeCorrFromHermitesNewton(Zy,Zx,cn,HCorrXX,NDims,paths,Order);
+
+
+
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+
+
+
+
+for kk=1:4
+
+
+
+% %Set1
+  V10(1,1)=1.2+.25;%.65;%
+  V10(2,1)=.75-.125;
+  V10(3,1)=1.2+.25;
+  
+% 
+% % % % 
+% % % % % % % % % % %Set2
+       V10(1,2)=.75-.125;
+       V10(2,2)=1.2+.25;%1.2;
+       V10(3,2)=.7-.125;
+             
+       
+% % % % % % % % % % % % % % %V10(4)=.65
+% % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %Set3
+       V10(1,3)=1.25+.25;
+       V10(2,3)=1.35+.25;%1.2;
+       V10(3,3)=1.25+.25;
+%             
+%       
+%       
+% % % % % % % % % % % % % % % %   V10(4)=1.4
+% % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %   
+         V10(1,4)=.85-.125;
+         V10(2,4)=.81-.125;%1.2;
+         V10(3,4)=.77-.125;
+%         
+%                 
+% % % % % % % % % % %  V10(4)=.7
+% % 
+ 
+
+%V10(1)=.65;
+%V10(2)=.51;%1.2;
+%V10(3)=.73;
+
+%V10(1)=1.65;
+%V10(2)=1.51;%1.2;
+%V10(3111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)=1.63;
+
+for nn=1:NDims
+V(1:paths,nn)=V10(nn,kk);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:TT2-TT1
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0001;
+
+    
+    %if(tt==TT1)
+    %    XXin(1:paths,nn)=V(1:paths,nn);
+    %end
+        
+    if(tt==TT2-TT1)
+        
+        XXin2(1:paths,nn)=V(1:paths,nn);
+    end
+
+    end    
+    
+end
+
+
+Yin2(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin2(pp)=Yin2(pp)+XXin2(pp,mm);%-V10(mm);
+end
+end
+
+
+
+%randn()
+
+str=input("I have reached stone 4");
+
+
+
+NoOfBins=200;
+MaxCutOff=20;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin2,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(Yin2(:).^qq)/paths;
+    
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for nn=1:NDims2
+    [Zx0(nn)] = CalculateZgivenXAndHSeriesCoeffs(V10(nn,kk),XCoeffH(1:Order+1,nn),Order);
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+WW(1,1:Order+1)=EvalHermiteArrayH0(Zx0(1),Order);
+for mm=2:NDims
+    WW(1,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx0(mm),Order);
+end    
+
+
+
+
+     YProjected=0.0;
+    for mm=1:NDims*Order+1
+    YProjected=YProjected+WW(1,mm).*CoeffR(mm,1);    
+     
+    end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+Zx(1:Order)=0; 
+
+for hh=1:Order
+    for nn=1:NDims2
+        %Zx(hh) = Zx(hh) + bnv(nn+1,hh+1).^1.*Zx0(nn);
+        Zx(hh) = Zx(hh) + cn(nn,hh).^1.*Zx0(nn);
+    end
+end
+
+bh0=YCoeffH(1);
+
+[W] = EvalHermiteArrayH0(Zx0,Order);
+
+for hh=1:Order
+    for nn=1:NDims2
+        bh0 = bh0 + ch(nn+1,hh+1).^1.*W(nn,hh+1);
+    end
+end
+bh00=bh0;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+a0=YCoeffZ(1);
+a1=YCoeffZ(2);
+a2=YCoeffZ(3);
+a3=YCoeffZ(4);
+a4=YCoeffZ(5);
+a5=YCoeffZ(6);
+a6=YCoeffZ(7);
+a7=YCoeffZ(8);
+
+
+d1=cn(4,1);
+d2=cn(4,2);
+d3=cn(4,3);
+d4=cn(4,4);
+d5=cn(4,5);
+d6=cn(4,6);
+d7=cn(4,7);
+
+% d1=cn(7,1);
+% d2=cn(7,2);
+% d3=cn(7,3);
+% d4=cn(7,4);
+% d5=cn(7,5);
+% d6=cn(7,6);
+% d7=cn(7,7);
+
+
+
+
+%b0=(a0+a1.* Zx(1) +a2.* Zx(2).^2+a3.* Zx(3).^3+a4* Zx(4).^4+a5 *Zx(5).^5+a6* Zx(6).^6+a7* Zx(7).^7);
+b1=(a1* d1+2* a2* Zx(2)* d2 +3* a3* Zx(3).^2* d3+4* a4* Zx(4).^3* d4+5* a5* Zx(5).^4* d5+6* a6* Zx(6).^5* d6+7* a7* Zx(7).^6* d7);
+b2=(a2* d2.^2+3* a3* Zx(3)* d3^2 +6* a4* Zx(4).^2* d4^2+10* a5* Zx(5).^3* d5^2+15* a6* Zx(6).^4* d6^2+21* a7* Zx(7).^5* d7^2);
+b3=(a3* d3^3+4* a4 *Zx(4)* d4^3 +10* a5* Zx(5).^2* d5^3+20* a6* Zx(6).^3* d6^3+35* a7* Zx(7).^4* d7^3);
+b4=(a4* d4^4+5* a5* Zx(5)* d5^4 +15* a6 *Zx(6).^2* d6^4+35* a7* Zx(7).^3 *d7^4);
+b5=(a5* d5^5+6* a6* Zx(6)* d6^5 +21* a7 *Zx(7).^2* d7^5);
+b6=(a6* d6^6+7* a7* Zx(7)* d7^6 );
+b7=(a7* d7^7);
+
+
+%bh0=b0+b2+3*b4+15*b6;
+bh1=b1+3*b3+15*b5+105*b7;
+bh2=b2+6*b4+45*b6;
+bh3=b3+10*b5+105*b7;
+bh4=b4+15*b6;
+bh5=b5+21*b7;
+bh6=b6;
+bh7=b7;
+
+
+bh(1)=YProjected;
+bh(2)=bh1;
+bh(3)=bh2;
+bh(4)=bh3;
+bh(5)=bh4;
+bh(6)=bh5;
+bh(7)=bh6;
+bh(8)=bh7;
+
+YCentralMoment2=0;
+for nn=1:Order
+    YCentralMoment2=YCentralMoment2+bh(nn+1).^2*factorial(nn);
+end
+
+%bh(2:Order+1)=bh(2:Order+1).*sqrt(Y2Projected-YProjected.^2)/sqrt(YCentralMoment2);
+
+bh(2:Order+1)=bh(2:Order+1).*YProjected/bh0;
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCoeffz(1:Order+1)= ConvertHermiteSeriesToZSeries01(bh(1:Order+1),Order);
+
+
+[YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,Order+1);
+ 
+
+
+YMomentsModel
+ 
+DataMoments
+ 
+str=input("Look at comparison of moments");
+
+[cMu1,YCentralMoments]=ConvertRawMomentsToCentralMoments(YMomentsModel,Order+1);
+[cMu2,DataCentralMoments]=ConvertRawMomentsToCentralMoments(DataMoments,Order+1);
+
+
+YCentralMoments
+
+DataCentralMoments
+
+bh00
+YProjected
+% Y2Projected
+% DataMoments(2)
+% Y2Projected-YProjected.^2
+% DataCentralMoments(2)
+str=input("Look at central moments");
+
+
+clf;
+
+PlotZSeriesDensity(YCoeffz(1),YCoeffz(2:Order+1),'b')
+
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title("Graph of Density of sum of Three Correlated SDE Variables conditional on starting values of the three SDE random variables.")
+%title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytical Density','Numerical Density1'}, ...
+    'Location','northeast')
+kk
+str=input("This is the first version without altering the moments of conditional density")
+
+hold off 
+ 
+end
+
+
+
+
+end
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04(Xin,Yin,NData,NDims)
+
+%This program finds required correlations between NDims explanatory
+%variables given in Xin that has NDims dimensionality. Yin is variable
+%being explained and is one-diemsnional.
+
+
+Order=7;
+NMoments=8;
+
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+% 
+% for nn=1:NDims
+% [XCoeffH(1:Order+1,nn),Zx(1:NData,nn)] = CalculateHermiteSeriesFromData02(Xin(1:NData,nn),Order,ZI);
+% 
+% %[Zx(1:NData,nn)] = CalculateZgivenXAndHSeriesCoeffs(Xin(1:NData,nn),XCoeffH(1:Order+1,nn),Order);
+% 
+% end
+
+
+for nn=1:NDims
+    
+ for pp=1:Order+1
+     XrMu(pp,nn)=sum(Xin(1:NData,nn).^pp)/NData;
+ end
+ XinSorted(:,nn)=sort(Xin(:,nn));
+ XDataMedian(nn)=((XinSorted(NData/2,nn)+XinSorted(NData/2+1,nn))+(XinSorted(NData/2-1,nn)+XinSorted(NData/2+2,nn)) ...
+     +XinSorted(NData/2-2,nn)+XinSorted(NData/2+3,nn))/6;
+ %XDataMedian(nn)=(Xin(NData/2-2,nn)+Xin(NData/2-1,nn)+Xin(NData/2,nn)+Xin(NData/2+1,nn)+Xin(NData/2+2,nn)+Xin(NData/2+3,nn))/6;
+ [c0(nn),c(1:Order,nn),FittedMoments,Zx(:,nn)] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Xin(1:NData,nn),ZI);%,XCoeffZ(2:Order+1));
+ %[c0(nn),c(1:Order,nn),FittedMoments] = ZSeriesCoeffsFromMomentsIterWithMedian(XrMu(:,nn),XDataMedian(nn));%,SeriesOrder,NMoments,Iterations)
+nn
+str=input("Look at data results");
+ XCoeffZ(1,nn)=c0(nn);
+ XCoeffZ(2:Order+1,nn)=c(1:Order,nn);
+ 
+  XCoeffZ
+  XDataMedian
+  str=input("Look at XCoeffZ");
+[XCoeffH(1:Order+1,nn)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1,nn),Order);
+
+
+%[ZtryBest]=CalculateZgivenXAndHermiteSeriesBisection2ZData(Y,ZData,coeff,median,Hz,Order)
+%[Zx(:,nn)] = CalculateZgivenXAndHSeriesCoeffsUsingZData(Xin(:,nn),Zx1(:,nn),XCoeffH(1:Order+1,nn),Order);
+
+
+
+for mm=1:8
+    rMu(mm)=sum(Zx(1:NData,nn).^mm)/NData;
+end
+
+rMu
+
+%sum((Zx1(:,nn)-Zx(:,nn)).^2)/NData
+%str=input("Look at moments of Z in correlations calculation function");
+
+
+
+
+
+end
+
+
+
+
+
+
+ for pp=1:Order+1
+     YrMu(pp)=sum(Yin(1:NData).^pp)/NData;
+ end
+ %YDataMedian=(Yin(NData/2)+Yin(NData/2+1))/2;
+ YDataMedian=(Yin(NData/2-2)+Yin(NData/2-1)+Yin(NData/2)+Yin(NData/2+1)+Yin(NData/2+2)+Yin(NData/2+3))/6;
+ 
+ %[c0,c(1:Order),FittedMoments] = ZSeriesCoeffsFromMomentsIterWithMedian(YrMu(:),YDataMedian);
+ [c0,c(1:Order),FittedMoments,Zy] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Yin(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+ 
+str=input("Look at data results ofY");
+ YCoeffZ(1)=c0;
+ YCoeffZ(2:Order+1)=c(1:Order);
+ 
+ [YCoeffH(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ(1:Order+1),Order);
+ %ConvertZSeriesToHermiteSeriesNew
+
+%[Zy(:)] = CalculateZgivenXAndHSeriesCoeffs(Yin(:),YCoeffH(1:Order+1),Order);
+%[Zy(:)] = CalculateZgivenXAndHSeriesCoeffsUsingZData(Yin(:),Zy1(:),YCoeffH(1:Order+1),Order);
+
+
+
+
+
+
+%[YCoeffH,Zy] = CalculateHermiteSeriesFromData02(Yin,Order,ZI); 
+% %[Zy] = CalculateZgivenXAndHSeriesCoeffs(Yin,YCoeffH,Order);
+
+
+for nn1=1:NDims
+    for nn2=1:NDims
+        if(nn1==nn2)
+            HCorrXX(nn1,nn2,1:Order)=1.0;
+        else
+            HCorrXX(nn1,nn2,1:Order) = CalculateCorrelationBivariateHermiteCH1(Zx(1:NData,nn1),Zx(1:NData,nn2),NData,Order);
+        end
+    end
+end
+for nn1=1:NDims
+    HCorrXX(nn1,nn1,1:Order)=1.0;
+end
+
+
+% for hh=1:Order
+%     for nn1=1:NDims
+%         HCorrXX
+%         ss2=0;
+%         for nn2=1:NDims
+%             if(nn2~=nn1)
+%                 ss2=ss2+1;
+%                 ss3=0;
+%                 for nn3=1:NDims
+%                     if(nn3~=nn1)
+%                         ss3=ss3+1;
+%                             HCorrXXmn(ss2,ss3)=HCorrXX(nn2,nn3,hh);
+%                     end
+%                     HCorrXmXn(ss2,1)=HCorrXX(nn1,nn2,hh);
+%                 end
+%             end
+%         end
+%         BetaCorrXX(1:NDims-1,nn1,hh)=HCorrXXmn(:,:)\HCorrXmXn(1:NDims-1,1);
+%             
+%     end
+%         
+%     BetaCorrXX
+%         
+%     nn1
+%        
+%         str=input("Look at important variables");
+%     
+% end
+% BetaCorrXX            
+% str=input("look at the BetacorrXX");       
+% for nn1=1:NDims
+%     for nn2=1:NDims-1
+%         if(nn2<nn1)
+%     BetaCorrXX0(nn2,nn1,1:Order)=BetaCorrXX(nn2,nn1,1:Order);
+%         elseif(nn2==nn1)
+%                % BetaCorrXX0(nn2,nn1,1:Order)=1;
+%             
+%             BetaCorrXX0(nn2+1:NDims,nn1,1:Order)=BetaCorrXX(nn2:NDims-1,nn1,1:Order);
+%         end
+%     end
+%     BetaCorrXX0(nn1,nn1,1:Order)=1;
+% end
+% BetaCorrXX
+% BetaCorrXX0
+
+
+% 
+% % % % str=input("Look at BetaCorrXX pairs");
+% % % % for hh=1:Order
+% % % %     for nn1=1:NDims
+% % % %         for nn2=1:NDims-1
+% % % %             BetaCorrXXn(nn1,nn2,hh)=sign(BetaCorrXXn(nn1,nn2,hh)).*(abs(BetaCorrXXn(nn1,nn2,hh))).^(1/hh);
+% % % %         end
+% % % %     end
+% % % % end
+
+
+
+for nn1=1:NDims
+    HCorrXY(nn1,1:Order) = CalculateCorrelationBivariateHermiteCH1(Zx(1:NData,nn1),Zy(1:NData),NData,Order);
+end
+
+for hh=1:Order
+    [BCorrXY(:,hh),Is(:,hh)]=sort(HCorrXY(:,hh),'descend');
+end
+
+for hh=1:Order
+    CorrXX(1:NDims,1:NDims)=HCorrXX(Is(1:NDims,hh),Is(1:NDims,hh),hh);
+    CorrXY(1:NDims,1)=HCorrXY(Is(1:NDims,hh),hh);
+    BetaCorr0(1:NDims)=CorrXX\CorrXY;
+    BetaCorrH(Is(1:NDims,hh),hh)=BetaCorr0(1:NDims);
+end
+
+
+
+%HCorrXX=BetaCorrXX0;
+%HCorrXX
+str=input("Look at HCOrrXX");
+
+% for hh=1:Order
+%     CorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+%     CorrXY(1:NDims,1)=HCorrXY(1:NDims,hh);
+%     BetaCorrH(1:NDims,hh)=CorrXX\CorrXY;
+% end
+
+
+
+
+%CorrXX1st(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,1)
+
+
+%BetaCorrH(:,1)'*CorrXX
+
+%CorrXY
+
+%HCorrXX
+
+%HCorrXY
+
+BetaCorrH
+
+str=input("Look at BetaCorrH");
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [bn] = FindInitialGuessForNewtonUnivariate(Zy,Zx,NDims,paths,Order)
+
+Var(1:Order)=0.0;
+
+for hh=1:Order
+    WW(1:paths,1)=1;
+    for kk1=1:NDims
+        WW(1:paths,kk1+1)=Zx(1:paths,kk1).^hh;
+    end
+    SS=NDims+1;
+    
+    Ymu(1:paths,1)=Zy(1:paths).^hh;
+
+    WWW=(WW'*WW);
+    
+    CoeffR=(WWW)$WW'*Ymu);
+    
+    cn(1:SS,hh)=CoeffR(1:SS,1);
+    
+    bn(1:SS,hh)=sign(cn(1:SS,hh)).*(abs(cn(1:SS,hh))).^(1/hh);
+    
+    for ss=2:SS
+        Var(hh)=Var(hh)+bn(ss,hh).^2;
+    end
+    
+    bn(1:SS-1,hh)=bn(2:SS,hh);
+    
+    bn(SS,hh)=sqrt(1-Var(hh));
+    
+
+    
+  %  bn
+    
+  %  hh
+  %  str=input("Look at bn inside the loop");
+    
+    
+    
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [cnOptim] = OptimizeCorrFromHermitesNewtonWithoutVar(Zy,Zx,cn,HCorrXX,NDims,paths,Order)
+
+%Order;Max Order of Hermites Calibration is seven.
+%Zx is paths X K array for joint values of Zx arranged for "paths" number of observations
+%Zy is paths X 1 array for Zy associated with each obsewrvation.
+%cnn is the original input of correlation coefficients used to derive seed for Newton methjod.
+%cnn is in format of the old program and its order and indexing is changed
+%in this NEwton program.
+
+
+%The function below calculates the first hermites till "Order" from data of
+%Zy. WHy is (paths X K) array. kth hermite associated with pth observation appears in
+%WHy(p,k)
+[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+
+%sum(WHy.^2)/paths
+
+%sum(WHy)/paths
+
+%str=input("Look at variance of hermites");%
+
+
+
+
+%The program below calculates moments of standard normal. Odd moments are
+%zero. 
+[EZ] = EZZ2();
+
+%The loop below repeats itself for optimization of correlation coefficients 
+%associated with highest power in each hermite. It repeatrs over all hermites one by one. 
+for nH=1:Order
+    cnIn(1:NDims+1,1:nH)=0.0;
+    if(nH==1)
+        cnIn(1:NDims+1,1)=cn(1:NDims+1,1);
+    else
+        %cnOptim is already optimized value of lower powers of Gaussians
+        %calculated in earlier loops of optimization over smaller hermites.
+        %This is already known from previous iterations of this loop.
+        cnIn(1:NDims+1,1:nH-1)=cnOptim(1:NDims+1,1:nH-1);
+        %The value of cnIn below is initial guess for correlation
+        %coefficients associated with optimization of current hermite
+        cnIn(1:NDims+1,nH)=cn(1:NDims+1,nH);
+    end
+    
+    %Below nH-th hermite observation values are assigned to one dimensional array for optimization target in Newton. 
+    WHyn(1:paths,1)=WHy(1:paths,nH);
+    %WHyn(1:paths,1)=Zy(1:paths).^(nH);
+    
+    %Total iterations of Newton root search.
+    Iterations=80;
+    %Below is the function that actually does the Multi-dimensional Newton.
+    %[cnbest,InitialObj(nH),FinalObj(nH)] = OptimizenthHermiteSqrdGaussianWithNewton(cnIn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths, Iterations);
+     [cnbest,InitialObj(nH),FinalObj(nH)] = OptimizenthHermiteGaussianWithNewtonWithCrossCorrOptim(cnIn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths, Iterations);
+   
+%     [cnbest,InitialObj,FinalObj] = OptimizenthHermiteSqrdGaussianWithNewton(cnIn,Zy,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths,Iterations)
+
+     
+     
+    %Below is optimum value of correlation coefficients associated with
+    %nH-th hermite after optimization. This will be used by the program as
+    %an input to optimization of higher hermites
+    cnOptim(1:NDims+1,nH)=cnbest(1:NDims+1,1);
+    
+    nH
+end
+
+%cnOptim
+%InitialObj %Obj function at start of optimization of correlation coefficients for nH-th hermite
+%FinalObj%Obj function after optimization of correlation coefficients for nH-th hermite
+%str=input("Look at initial and Final Objs");
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [bnbest,InitialObj,FinalObj] = OptimizenthHermiteGaussianWithNewtonWithCrossCorrOptim(cn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths,Iterations)
+
+%Why0 in array of nth Hermite Values
+
+KK=NDims;
+
+bn(1:NDims+1,1)=cn(1:NDims+1,nH);
+%Below, Calculate the model contribution of lower Gaussian powers that have
+%already been calculated through associated lower hermites towards current
+%hermite polynomial.
+[dHermite] = EvaluatePrevGaussPowersForHCorrs(nH,cn,Zx,NDims,paths,EZ);
+%Remove the model contribution of lower Gaussian powers from data value of
+%current hermite.
+WHy0=WHyn+dHermite;
+
+%Below calcualte variance
+var=0.0;
+for kk1=1:KK
+    for kk2=1:KK    
+        var=var+bn(kk1,1).*bn(kk2,1).*sign(HCorrXX(kk1,kk2,nH)).*(abs(HCorrXX(kk1,kk2,nH)));%.^(1/nH);%Changed.
+    end
+end
+
+var=var+bn(KK+1,1).^2;
+
+bn
+
+var
+%Below, make sure that variance is one.
+bn(:,1)=bn(:,1)/sqrt(var);
+
+%str=input("have reached 1st Stone")        
+
+
+%Below calculate the combined value of K correlated variables as described
+%on Wilmott post and Calculate G.
+GG1(1:paths,1)=0.0;
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+bn(kk,1).*Zx(1:paths,kk);
+end
+
+Zeta0=bn(KK+1,1);
+%Evaluate the nHth Gaussian power below.
+[GaussPH,GaussPh] = EvaluateHermitePolyForGaussCorrs(GG1,Zeta0,EZ,nH,paths);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Starting ObjBest and calculations here
+%cnbest here
+bnbest(1:NDims+1,1)=bn(1:NDims+1);
+
+ObjSqrdBestNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+
+InitialObj=ObjSqrdBestNewton;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Below, enter the Newton loop.
+
+StallCount=0;
+iter=0;
+Mul=.1;
+ContinueIter=1;
+while ((iter 100)&&(StallCount>=5))
+        ContinueIter=0;
+    end
+%while ((iter =35)&&(rem(iter,4)==0))
+
+[HCorrXX] = OptimizeObjWithCrossCorrs(bbn,Zx,WHy0,HCorrXX,nH,EZ,NDims,paths);
+
+end
+
+
+var=0.0;
+for kk1=1:KK
+    for kk2=1:KK    
+        var=var+bbn(kk1,1).*bbn(kk2,1).*sign(HCorrXX(kk1,kk2,nH)).*(abs(HCorrXX(kk1,kk2,nH)));%.^(1/nH);%changed
+    end
+end
+
+if(var>.9925)
+    bbn(:,1)=bbn(:,1)/sqrt(var)*sqrt(.9925);
+    var=.9925;
+end
+if(var=35)&&(rem(iter,4)==0))
+        StallCount=StallCount+1;
+        end
+        Mul=Mul*.75
+        
+    end
+        
+    ObjSqrdBestNewton=ObjSqrdNewton;
+    bnbest=bbn;
+    
+else
+    if((iter>=35)&&(rem(iter,4)==0))
+    StallCount=StallCount+1;
+    end
+    %%%%change-step or Newton parameters
+end
+    
+ObjSqrdBestNewton
+ObjSqrdNewton
+bnbest
+iter
+
+%str=input("Look at the solution");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+
+end
+
+FinalObj=ObjSqrdBestNewton;
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [cnOptim] = OptimizeCorrFromHermitesNewton(Zy,Zx,cn,HCorrXX,NDims,paths,Order)
+
+%Order;Max Order of Hermites Calibration is seven.
+%Zx is paths X K array for joint values of Zx arranged for "paths" number of observations
+%Zy is paths X 1 array for Zy associated with each obsewrvation.
+%cnn is the original input of correlation coefficients used to derive seed for Newton methjod.
+%cnn is in format of the old program and its order and indexing is changed
+%in this NEwton program.
+
+% ccn(1:NDims+1,1:Order)=cnn(1:NDims+1,2:Order+1); %Shift the indices back by one index.
+% %so that index matches with order of associated hermite polynomial.
+% 
+% cn(1:NDims,1:Order)=ccn(2:NDims+1,1:Order);%The first row in each hermite column earlier was 
+% %associated zeta but zeta is shifted from first row to (K+1)th row.
+% 
+% cn(NDims+1,1:Order)=ccn(1,1:Order);
+
+% cn(1:NDims+1,1:Order)=1/(NDims+1);
+% 
+% for nn=1:NDims
+%     cn(nn,1:Order)=cn(nn,1:Order)+sum(HCorrXX(nn,:,1));
+% end
+
+
+%The function below calculates the first hermites till "Order" from data of
+%Zy. WHy is (paths X K) array. kth hermite associated with pth observation appears in
+%WHy(p,k)
+[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+
+sum(WHy.^2)/paths
+
+sum(WHy)/paths
+
+str=input("Look at variance of hermites");
+
+
+
+
+%The program below calculates moments of standard normal. Odd moments are
+%zero. 
+[EZ] = EZZ2();
+
+%The loop below repeats itself for optimization of correlation coefficients 
+%associated with highest power in each hermite. It repeatrs over all hermites one by one. 
+for nH=1:Order
+    cnIn(1:NDims+1,1:nH)=0.0;
+    if(nH==1)
+        cnIn(1:NDims+1,1)=cn(1:NDims+1,1);
+    else
+        %cnOptim is already optimized value of lower powers of Gaussians
+        %calculated in earlier loops of optimization over smaller hermites.
+        %This is already known from previous iterations of this loop.
+        cnIn(1:NDims+1,1:nH-1)=cnOptim(1:NDims+1,1:nH-1);
+        %The value of cnIn below is initial guess for correlation
+        %coefficients associated with optimization of current hermite
+        cnIn(1:NDims+1,nH)=cn(1:NDims+1,nH);
+    end
+    
+    %Below nH-th hermite observation values are assigned to one dimensional array for optimization target in Newton. 
+    WHyn(1:paths,1)=WHy(1:paths,nH);
+    %WHyn(1:paths,1)=Zy(1:paths).^(nH);
+    
+    %Total iterations of Newton root search.
+    Iterations=150;
+    %Below is the function that actually does the Multi-dimensional Newton.
+    %[cnbest,InitialObj(nH),FinalObj(nH)] = OptimizenthHermiteSqrdGaussianWithNewton(cnIn,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths, Iterations);
+     [cnbest,InitialObj(nH),FinalObj(nH)] = OptimizenthHermiteGaussianWithNewtonWithCrossCorrOptimVarWW(cnIn,Zx,Zy,WHyn,HCorrXX,nH,EZ,NDims,paths, Iterations);
+   
+%     [cnbest,InitialObj,FinalObj] = OptimizenthHermiteSqrdGaussianWithNewton(cnIn,Zy,Zx,WHyn,HCorrXX,nH,EZ,NDims,paths,Iterations)
+
+     
+     
+    %Below is optimum value of correlation coefficients associated with
+    %nH-th hermite after optimization. This will be used by the program as
+    %an input to optimization of higher hermites
+    cnOptim(1:NDims+1,nH)=cnbest(1:NDims+1,1);
+    
+    nH
+end
+
+cnOptim
+InitialObj %Obj function at start of optimization of correlation coefficients for nH-th hermite
+FinalObj%Obj function after optimization of correlation coefficients for nH-th hermite
+str=input("Look at initial and Final Objs");
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [bnbest,InitialObj,FinalObj] = OptimizenthHermiteGaussianWithNewtonWithCrossCorrOptimVarWW(cn,Zx,Zy,WHyn,HCorrXX,nH,EZ,NDims,paths,Iterations)
+
+%Why0 in array of nth Hermite Values
+
+KK=NDims;
+
+bn(1:NDims+1,1)=cn(1:NDims+1,nH);
+%Below, Calculate the model contribution of lower Gaussian powers that have
+%already been calculated through associated lower hermites towards current
+%hermite polynomial.
+[dHermite] = EvaluatePrevGaussPowersForHCorrs(nH,cn,Zx,NDims,paths,EZ);
+%Remove the model contribution of lower Gaussian powers from data value of
+%current hermite.
+WHy0=WHyn+dHermite;
+
+%Below calcualte variance
+var=0.0;
+for kk1=1:KK
+    for kk2=1:KK    
+        var=var+bn(kk1,1).*bn(kk2,1).*sign(HCorrXX(kk1,kk2,nH)).*(abs(HCorrXX(kk1,kk2,nH)));%.^(1/nH);%Changed.
+    end
+end
+
+var=var+bn(KK+1,1).^2;
+
+bn
+
+var
+%Below, make sure that variance is one.
+bn(:,1)=bn(:,1)/sqrt(var);
+
+str=input("have reached 1st Stone")        
+
+
+%Below calculate the combined value of K correlated variables as described
+%on Wilmott post and Calculate G.
+GG1(1:paths,1)=0.0;
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+bn(kk,1).*Zx(1:paths,kk);
+end
+
+Zeta0=bn(KK+1,1);
+%Evaluate the nHth Gaussian power below.
+[GaussPH,GaussPh] = EvaluateHermitePolyForGaussCorrs(GG1,Zeta0,EZ,nH,paths);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Starting ObjBest and calculations here
+%cnbest here
+bnbest(1:NDims+1,1)=bn(1:NDims+1);
+
+ObjSqrdBestNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+
+InitialObj=ObjSqrdBestNewton;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Below, enter the Newton loop.
+
+StallCount=0;
+iter=0;
+Mul=.1;
+ContinueIter=1;
+while ((iter 100)&&(StallCount>=5))
+        ContinueIter=0;
+    end
+%while ((iter =35)&&(rem(iter,4)==0))
+
+%[HCorrXX] = OptimizeObjWithCrossCorrs(bbn,Zx,WHy0,HCorrXX,nH,EZ,NDims,paths);
+
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+
+Var0=sum(Zy.^(2*nH))./paths;
+
+    dGG1(1:paths,1:NDims)=0.0;
+    for kk=1:KK
+        dGG1(1:paths,kk)=Zx(1:paths,kk);
+    end
+    
+    bn0(1:NDims,1)=bbn(1:NDims,1);
+
+    
+    GG1(1:paths,1)=0.0;
+    for kk=1:KK
+        GG1(1:paths,1)=GG1(1:paths,1)+bn0(kk,1).*Zx(1:paths,kk);
+    end
+    
+    [GaussPH,GaussPh,DGaussPH] = EvaluateHermitePolyAndDerivsForGaussCorrsZeta(GG1,dGG1,Zeta0,EZ,2*nH,NDims,paths);
+
+    SGaussPH=sum(GaussPH)./paths;
+    SDGaussPH=sum(DGaussPH(1:paths,NDims+1))./paths;
+    
+    DefectBest=abs((Var0-SGaussPH));
+    ZetaBest=Zeta0;
+    
+    mul=1.0;
+    EndLoopFlag=0;
+    gg=0;
+    while(( gg.9925)
+%     bbn(:,1)=bbn(:,1)/sqrt(var)*sqrt(.9925);
+%     var=.9925;
+% end
+% if(var=35)&&(rem(iter,4)==0))
+        StallCount=StallCount+1;
+        end
+        Mul=Mul*.75
+        
+    end
+        
+    ObjSqrdBestNewton=ObjSqrdNewton;
+    bnbest=bbn;
+    
+else
+    if((iter>=35)&&(rem(iter,4)==0))
+    StallCount=StallCount+1;
+    end
+    %%%%change-step or Newton parameters
+end
+    
+ObjSqrdBestNewton
+ObjSqrdNewton
+bnbest
+iter
+
+%str=input("Look at the solution");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+
+end
+
+FinalObj=ObjSqrdBestNewton;
+
+end
+```
+
+.
+
+.
+
+.
+```
+
+---
+
+## Error 57: Unbalanced $: 19
+
+**Snippet:** `Friends, I have been thinking about other ways to solve the problem. And I reali`
+
+**Full content:**
+
+```
+Friends, I have been thinking about other ways to solve the problem. And I realize that we could also solve the conditional density problem by a regression on Ideal normal density vector just like we have been doing with univariate densities with median as constant term in regression.
+
+
+
+I had thought this method several times but I could not think of a way since for a regression based density, we need in our case to sort the density according to $Z_{\tilde{y}}$. It was not obvious how to make this sort since this was not the same as sorting with respect to $Z_y$. However after some thought, I realized today that ordering or $Z_y$ and $Z_{\tilde{y}}$ are related through conditional mean of the density. If we remove conditional mean (conditional on explaining variables) from every data value of Y, we are left with a value that can be sorted and mapped on $Z_{\tilde{y}}$. The cross products of powers of $Z_{x_1}$,$Z_{x_2}$ and $Z_{x_3}$ with $Z_{\tilde{y}}$ will also appear in regression. I want to give it a quick try today. 
+
+
+
+We can also try using ideal normal density values for (Z_{\tilde{y}}$ in our current non-linear regression framework and there are many other possibilities.
+
+
+
+Friends, We are after the proper solution of the conditional density problem and there are many possibilities but it may still be a month or two before our research matures in every way. And I am willing to try whatever it takes to make attempts for a very good solution.
+```
+
+---
+
+## Error 58: Unbalanced $: 25
+
+**Snippet:** `Friends, I am posting a preliminary version of the new program. I want to make f`
+
+**Full content:**
+
+```
+Friends, I am posting a preliminary version of the new program. I want to make further changes during next few days but want to post this preliminary version at the moment.
+
+
+
+In this program, I try to remove the correlation effect of explaining variables and then assign values to $Z_{\tilde{y}}$ on the Gaussian grid after sorting the correlation effect removed version of Y. I could not perfectly remove the correlation effect and there is a room for big improvement yet and I want to work on that for next few days.
+
+
+
+I first removed the correlation effect of explaining variables by removing the conditional mean. I then do a regression to find coefficients of powers of Zy. I again remove the correlation effect based on this new regression and re-assign values to $Z_{\tilde{y}}$ on the Gaussian grid. This works far better than just improving the conditional mean. The process can be repeated many times but I am trying to see all possibilities to know what to do next.
+
+
+
+I am posting the new program.
+
+
+```
+function []= ConditionalDensityHermitesNvariateNewtonCondLoop02NewAlgo()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+%NMomentsY=Order+1;
+%NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+dt=.03125/2/8;
+Tt=64*2*8;
+T=Tt*dt;
+seed0=12130649;
+%seed0=94210876;
+%seed0=14210876;
+seed0=53612297
+%seed0=97459782
+rng(seed0, 'twister')
+paths=50000;
+TT1=100*8/2; %Transition distribution start
+TT2=256*8/2; %Transition distribution end
+
+%%%%%%%%%%%%%%%%%%%5
+
+NDims=3;
+NDims2=3;
+% 
+V0(1)=1.000;%.32;
+V00(1)=V0(1);
+
+%SDE1
+ thetaV(1)=1.0;%.045;%1;%.04;
+ kappaV(1)=0.000;%1.5;%1.5;
+ gamma(1)=.75;%.75
+ sigma0(1)=.5;%.35
+
+
+ 
+%SDE2%
+%thetaV(1)=.90;%.045;%1;%.04;
+%kappaV(1)=1.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.85;%.35
+
+%SDE3%
+%thetaV(1)=1.350;%.045;%1;%.04;
+%kappaV(1)=2.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.95;%.35
+
+
+mu1(1)=kappaV(1)*thetaV(1);
+mu2(1)=-kappaV(1);
+beta1(1)=0;
+beta2(1)=1;
+
+
+
+V0(2)=1.000;%.32;
+V00(2)=V0(2);
+
+%SDE1
+thetaV(2)=1.0;%.045;%1;%.04;
+ kappaV(2)=0.000;%1.5;%1.5;
+ gamma(2)=.85;%.75
+ sigma0(2)=.5;%.35
+
+%SDE2 
+% thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=2.000;%1.5;%1.5;
+% gamma(2)=.65;%.75
+% sigma0(2)=.95;%.35
+
+%SDE3
+%thetaV(2)=.850;%.045;%1;%.04;
+%kappaV(2)=.35000;%1.5;%1.5;
+%gamma(2)=.65;%.75
+%sigma0(2)=.55;%.35
+
+
+mu1(2)=kappaV(2)*thetaV(2);
+mu2(2)=-kappaV(2);
+beta1(2)=0;
+beta2(2)=1;
+
+
+
+V0(3)=1.000;%.33;
+V00(3)=V0(3);
+
+%SDE1
+thetaV(3)=1.0;%.045;%1;%.04;
+ kappaV(3)=0.000;%1.5;%1.5;
+ gamma(3)=.95;%.75
+ sigma0(3)=.45;%.35
+
+%SDE2 
+% thetaV(3)=.750;%.045;%1;%.04;
+% kappaV(3)=0.5000;%1.5;%1.5;
+% gamma(3)=.95;%.75
+% sigma0(3)=.45;%.35
+
+
+%SDE3 
+%thetaV(3)=1.150;%.045;%1;%.04;
+%kappaV(3)=1.5000;%1.5;%1.5;
+%gamma(3)=.95;%.75
+%sigma0(3)=.75;%.35
+
+mu1(3)=kappaV(3)*thetaV(3);
+mu2(3)=-kappaV(3);
+beta1(3)=0;
+beta2(3)=1;
+
+
+
+Corr1(1,1)=1;
+Corr1(1,2)=.7;
+Corr1(1,3)=.8;
+Corr1(2,2)=1;
+Corr1(2,1)=.7;
+Corr1(2,3)=.5;
+Corr1(3,1)=.8;
+Corr1(3,2)=.5;
+Corr1(3,3)=1;
+% 
+% % % % Was very good.
+Corr1(1,1)=1;
+Corr1(1,2)=.7/3;
+Corr1(1,3)=.8/3;
+Corr1(2,2)=1;
+Corr1(2,1)=.7/3;
+Corr1(2,3)=.5/3;
+Corr1(3,1)=.8/3;
+Corr1(3,2)=.5/3;
+Corr1(3,3)=1;
+% % % % % % % % 
+% % % % % % % % 
+% % % % % % % 
+% Corr1(1,1)=1;
+% Corr1(1,2)=-.7/3;
+% Corr1(1,3)=.8/3;
+% Corr1(2,2)=1;
+% Corr1(2,1)=-.7/3;
+% Corr1(2,3)=-.5/3;
+% Corr1(3,1)=.8/3;
+% Corr1(3,2)=-.5/3;
+% Corr1(3,3)=1;
+% % % % % % 
+% % % % % % 
+% % % % % % 
+% Corr1(1,1)=1;
+% Corr1(1,2)=-.27;
+% Corr1(1,3)=-.28;
+% Corr1(2,2)=1;
+% Corr1(2,1)=-.27;
+% Corr1(2,3)=-.15;
+% Corr1(3,1)=-.28;
+% Corr1(3,2)=-.15;
+% Corr1(3,3)=1;
+%87%Corr1(1:3,1:3)=0.0;
+
+R=chol(Corr1);
+% 
+%  R(1:3,1:3)=0;
+%  R(1,1)=1;
+%  R(2,2)=1;
+%  R(3,3)=1;
+
+
+V0(4)=1.000;%.44;
+V00(4)=V0(4);
+thetaV(4)=1.0;%.045;%1;%.04;
+kappaV(4)=1.000;%1.5;%1.5;
+mu1(4)=kappaV(4)*thetaV(4);
+mu2(4)=-kappaV(4);
+beta1(4)=0;
+beta2(4)=1;
+gamma(4)=.95;%.75
+sigma0(4)=.55;%.45
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+for nn=1:NDims
+V(1:paths,nn)=V0(nn);
+Threshold(nn)=(sigma0(nn)*sqrt(dt)*2)^(1/(1-gamma(nn)));
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %Random2=R'*Random2;
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    %Random2(V(:,<Threshold,:)=
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0000;
+    
+    V(isnan(V(:,nn)),nn)=0;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,nn)=(V(1:paths,nn));
+    end
+        
+    if(tt==TT2)
+        
+        Xin2(1:paths,nn)=(V(1:paths,nn));
+    end
+
+    end    
+    
+end
+
+
+Yin(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin(pp)=Yin(pp)+Xin2(pp,mm);%-Xin(pp,mm);
+%-Xin(pp,mm);
+end
+end
+
+
+str=input("I have reached stone 1");
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% 
+ Order=7;
+ clf;
+ 
+     
+  NDims2=3;
+ 
+ 
+  
+ 
+[BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04(Xin,Yin,paths,NDims2);
+YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+%ConditionalDensityByRegressionOnIdealNormal(Yin,Zy,Zx,NDims,Order,paths)
+[coeff1,coeff2,coeff3,coeff4,coeff5,coeff6,coeff7] = ConditionalDensityByRegressionOnIdealNormal04(Yin,Zy,Zx,NDims,Order,paths,YCoeffZ);
+
+str=input("Reached New Stone");
+
+%[TotalTermCount,Coeffs,pp] = OptimizeCorrFromHermitesNewtonNewAlgo(Zy,Zx,NDims,paths,Order);
+
+
+%%%%FindCorrelationCoefficientsnthHermite(Zy,Zx,7,paths);
+
+
+
+
+
+
+
+
+
+%HCorrXX(:,:)=0.0;
+
+BetaCorrH
+
+HCorrXX
+
+str=input("I have reached Stone2");
+
+
+
+for hh=1:Order
+    for nn=1:NDims2
+        ch(nn+1,hh+1)=BetaCorrH(nn,hh).*YCoeffH(hh+1);%make sure indices on all hermite-correlations match.check.
+        %%%% nn+1 since 1st index would go to y-tilde.
+    end
+end
+
+
+for hh=1:Order
+HCorrXX(1:NDims,1:NDims,hh)=HCorrXX(1:NDims,1:NDims,1);
+end
+%bn=0;
+%[bn] = FindInitialGuessForNewton(Zy,Zx,NDims,paths,Order);
+
+
+
+
+
+%bn
+
+%str=input("Look at the coefficients from two different methods");
+
+
+
+%NDims2=3;
+
+
+
+% bn=0; 
+% for mm=1:NDims
+%     NDims0=1;
+%     [bn] = FindInitialGuessForNewtonUnivariate(Zy,Zx(1:paths,mm),NDims0,paths,Order);
+%     bn
+%     HCorrXX0(1,1,1:Order)=1;
+%     bnOptim0= OptimizeCorrFromHermitesNewtonWithoutVar(Zy,Zx(1:paths,mm),bn,HCorrXX0,NDims0,paths,Order);
+%     bnOptim(mm,:)=bnOptim0(1,:);
+%  mm
+%  str=input("Let us look at bn");
+%  
+% end
+% 
+% 
+% bnOptim
+% 
+% str=input("Look at the variabes of cnOptim from both ways");
+ 
+% for mm1=1:NDims
+%     for mm2=1:NDims
+%         if(mm1==mm2)
+%         HCorrXX(mm1,mm2,1:Order)=1;    
+%         end
+%         if(mm1<mm2)
+%         cn(1,:)=bnOptim(mm1,:);
+%         cn(2,:)=bnOptim(mm2,:);
+%         NDims0=2;
+%         [HCorrBest] = OptimizeXkCorrsFromHermitesWithoutVar(Zy,Zx,cn,NDims0,paths,Order); 
+%         HCorrXX(mm1,mm2,:)=HCorrBest(:);
+%         HCorrXX(mm2,mm1,:)=HCorrXX(mm1,mm2,:);
+%         end
+%     end
+% end
+% 
+
+
+% 
+% 
+% 
+% 
+% 
+% 
+% mm1=1;
+% mm2=2
+%     NDims0=1;
+%     [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+%     bn
+%     HCorrXX0(1,1,1:Order)=1;
+%     CorrXX1= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+%     %CorrXX2= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm2),Zx(1:paths,mm1),bn,HCorrXX0,NDims0,paths,Order);
+%     HCorrXX(mm1,mm2,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     HCorrXX(mm2,mm1,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     HCorrXX(mm1,mm1,1:Order)=1;
+% 
+% mm1=1;
+% mm2=3
+%     NDims0=1;
+%     [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+%     bn
+%     HCorrXX0(1,1,1:Order)=1;
+%     CorrXX1= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+%     %CorrXX2= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm2),Zx(1:paths,mm1),bn,HCorrXX0,NDims0,paths,Order);
+%     HCorrXX(mm1,mm2,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     %HCorrXX(mm1,mm2,1:Order)=CorrXX(1,1:Order);
+%     HCorrXX(mm2,mm1,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     HCorrXX(mm2,mm2,1:Order)=1;
+% 
+% mm1=2;
+% mm2=3;
+%     NDims0=1;
+%     [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+%     bn
+%     HCorrXX0(1,1,1:Order)=1;
+%     CorrXX1= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+%    % CorrXX2= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm2),Zx(1:paths,mm1),bn,HCorrXX0,NDims0,paths,Order);
+%     HCorrXX(mm1,mm2,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     %HCorrXX(mm1,mm2,1:Order)=CorrXX(1,1:Order);
+%     HCorrXX(mm2,mm1,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%     HCorrXX(mm1,mm1,1:Order)=1;
+% 
+% 
+% 
+% 
+% 
+% 
+% 
+% HCorrXX
+% 
+% str=input("Look at HCorrXX");
+% 
+% 
+% for hh=1:Order
+%     bCol(1:NDims,1)=bnOptim(1:NDims,hh);
+%     HHCorrXX(1:NDims,1:NDims)=HCorrXX(1:NDims,1:NDims,hh);
+%     bb=HHCorrXX\bCol;
+%     cn(1:NDims,hh)=bb(1:NDims);
+% end
+% Var(hh)=0.0;
+% for hh=1:Order
+%     for mm=1:NDims
+%         Var(hh)=Var(hh)+cn(mm,hh).^2;
+%     end
+%     cn(NDims+1,hh)=sqrt(1-Var(hh));
+% end
+
+
+
+
+%[cn] = OptimizeCorrFromHermitesNewton(Zy,Zx,cn,HCorrXX,NDims,paths,Order);
+
+
+% Iterations=100;
+% 
+% [EZ] = EZZ2();
+% 
+% [cnbest,InitialObj,FinalObj] = OptimizeYTildeWithGaussianNewtonOptim(cn,Zx,Yin,YCoeffZ,Order,EZ,NDims,paths,Iterations)
+% 
+% 
+% cn
+% cnbest
+% 
+% str=input("Look at the new values and variables");
+% 
+% cn=cnbest;
+
+
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+
+
+
+
+for kk=1:4
+
+
+
+% %Set1
+  V10(1,1)=1.2+.25*2;%.65;%
+  V10(2,1)=.75-.125*2;
+  V10(3,1)=1.2+.25*2;
+  
+% 
+% % % % 
+% % % % % % % % % % %Set2
+       V10(1,2)=.75-.125*2;
+       V10(2,2)=1.2+.25*2;%1.2;
+       V10(3,2)=.7-.125*2;
+             
+       
+% % % % % % % % % % % % % % %V10(4)=.65
+% % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %Set3
+       V10(1,3)=1.25+.25*2;
+       V10(2,3)=1.35+.25*2;%1.2;
+       V10(3,3)=1.25+.25*2;
+%             
+%       
+%       
+% % % % % % % % % % % % % % % %   V10(4)=1.4
+% % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %   
+         V10(1,4)=.85-.125;
+         V10(2,4)=.81-.125;%1.2;
+         V10(3,4)=.77-.125;
+%         
+%                 
+% % % % % % % % % % %  V10(4)=.7
+% % 
+ 
+
+%V10(1)=.65;
+%V10(2)=.51;%1.2;
+%V10(3)=.73;
+
+%V10(1)=1.65;
+%V10(2)=1.51;%1.2;
+%V10(3111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)=1.63;
+
+for nn=1:NDims
+V(1:paths,nn)=V10(nn,kk);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:TT2-TT1
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0001;
+
+    
+    %if(tt==TT1)
+    %    XXin(1:paths,nn)=V(1:paths,nn);
+    %end
+        
+    if(tt==TT2-TT1)
+        
+        XXin2(1:paths,nn)=V(1:paths,nn);
+    end
+
+    end    
+    
+end
+
+
+Yin2(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin2(pp)=Yin2(pp)+XXin2(pp,mm);%-V10(mm);
+end
+end
+
+
+
+%randn()
+
+str=input("I have reached stone 4");
+
+
+
+NoOfBins=200;
+MaxCutOff=20;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin2,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(Yin2(:).^qq)/paths;
+    
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for nn=1:NDims2
+    [Zx0(nn)] = CalculateZgivenXAndHSeriesCoeffs(V10(nn,kk),XCoeffH(1:Order+1,nn),Order);
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+WW(1,1:Order+1)=EvalHermiteArrayH0(Zx0(1),Order);
+for mm=2:NDims
+    WW(1,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx0(mm),Order);
+end    
+
+
+
+
+     YProjected=0.0;
+    for mm=1:NDims*Order+1
+    YProjected=YProjected+WW(1,mm).*CoeffR(mm,1);    
+     
+    end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% Zx(1:Order)=0; 
+% 
+% for hh=1:Order
+%     for nn=1:NDims2
+%         %Zx(hh) = Zx(hh) + bnv(nn+1,hh+1).^1.*Zx0(nn);
+%         Zx(hh) = Zx(hh) + cn(nn,hh).^1.*Zx0(nn);
+%     end
+% end
+
+bh0=YCoeffH(1);
+
+[W] = EvalHermiteArrayH0(Zx0,Order);
+
+for hh=1:Order
+    for nn=1:NDims2
+        bh0 = bh0 + ch(nn+1,hh+1).^1.*W(nn,hh+1);
+    end
+end
+bh00=bh0;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% 
+% V(1)=1;
+% V(2)=Zx0(1);
+% V(3)=Zx0(2);
+% V(4)=Zx0(3);
+% V(5)=Zx0(1).^2;
+% V(6)=Zx0(2).^2;
+% V(7)=Zx0(3).^2;
+% V(8)=Zx0(1).^3;
+% V(9)=Zx0(2).^3;
+% V(10)=Zx0(3).^3;
+% V(11)=Zx0(1).^4;
+% V(12)=Zx0(2).^4;
+% V(13)=Zx0(3).^4;
+% V(14)=Zx0(1).^5;
+% V(15)=Zx0(2).^5;
+% V(16)=Zx0(3).^5;
+% V(17)=Zx0(1).^6;
+% V(18)=Zx0(2).^6;
+% V(19)=Zx0(3).^6;
+% V(20)=1;
+% V(21)=Zx0(1);
+% V(22)=Zx0(2);
+% V(23)=Zx0(3);
+% V(24)=Zx0(1).^2;
+% V(25)=Zx0(2).^2;
+% V(26)=Zx0(3).^2;
+% V(27)=Zx0(1).^3;
+% V(28)=Zx0(2).^3;
+% V(29)=Zx0(3).^3;
+% V(30)=Zx0(1).^4;
+% V(31)=Zx0(2).^4;
+% V(32)=Zx0(3).^4;
+% V(33)=Zx0(1).^5;
+% V(34)=Zx0(2).^5;
+% V(35)=Zx0(3).^5;
+% V(36)=1;
+% V(37)=Zx0(1);
+% V(38)=Zx0(2);
+% V(39)=Zx0(3);
+% V(40)=Zx0(1).^2;
+% V(41)=Zx0(2).^2;
+% V(42)=Zx0(3).^2;
+% V(43)=Zx0(1).^3;
+% V(44)=Zx0(2).^3;
+% V(45)=Zx0(3).^3;
+% V(46)=Zx0(1).^4;
+% V(47)=Zx0(2).^4;
+% V(48)=Zx0(3).^4;
+% V(49)=1;
+% V(50)=Zx0(1);
+% V(51)=Zx0(2);
+% V(52)=Zx0(3);
+% V(53)=Zx0(1).^2;
+% V(54)=Zx0(2).^2;
+% V(55)=Zx0(3).^2;
+% V(56)=Zx0(1).^3;
+% V(57)=Zx0(2).^3;
+% V(58)=Zx0(3).^3;
+% V(59)=1;
+% V(60)=Zx0(1);
+% V(61)=Zx0(2);
+% V(62)=Zx0(3);
+% V(63)=Zx0(1).^2;
+% V(64)=Zx0(2).^2;
+% V(65)=Zx0(3).^2;
+% V(66)=1;
+% V(67)=Zx0(1);
+% V(68)=Zx0(2);
+% V(69)=Zx0(3);
+% V(70)=1;
+% 
+% b1=0;
+% for nn=1:19
+%     b1=b1+coeff(nn,1).*V(nn);
+% end
+% 
+% b2=0;
+% for nn=20:35
+%     b2=b2+coeff(nn,1).*V(nn);
+% end
+% 
+% b3=0;
+% for nn=36:48
+%     b3=b3+coeff(nn,1).*V(nn);
+% end
+% 
+% b4=0;
+% for nn=49:58
+%     b4=b4+coeff(nn,1).*V(nn);
+% end
+% 
+% b5=0;
+% for nn=59:65
+%     b5=b5+coeff(nn,1).*V(nn);
+% end
+% 
+% b6=0;
+% for nn=66:69
+%     b6=b6+coeff(nn,1).*V(nn);
+% end
+% 
+% 
+% b7=coeff(70,1).*V(70);
+
+
+
+b1= YCoeffZ(8).*(coeff7(5,1).*Zx0(1).^6+coeff7(6,1).*Zx0(2).^6+coeff7(7,1).*Zx0(3).^6) + ...
+    YCoeffZ(7).*(coeff6(5,1).*Zx0(1).^5+coeff6(6,1).*Zx0(2).^5+coeff6(7,1).*Zx0(3).^5)+...
+    YCoeffZ(6).*(coeff5(5,1).*Zx0(1).^4+coeff5(6,1).*Zx0(2).^4+coeff5(7,1).*Zx0(3).^4)+ ...
+    YCoeffZ(5).*(coeff4(5,1).*Zx0(1).^3+coeff4(6,1).*Zx0(2).^3+coeff4(7,1).*Zx0(3).^3)+ ...
+    YCoeffZ(4).*(coeff3(5,1).*Zx0(1).^2+coeff3(6,1).*Zx0(2).^2+coeff3(7,1).*Zx0(3).^2)+ ...
+    YCoeffZ(3).*(coeff2(5,1).*Zx0(1)+coeff2(6,1).*Zx0(2)+coeff2(7,1).*Zx0(3))+ ...
+    YCoeffZ(2).*(coeff1(1,1));
+
+
+
+
+b2=YCoeffZ(8).*(coeff7(8,1).*Zx0(1).^5+coeff7(9,1).*Zx0(2).^5+coeff7(10,1).*Zx0(3).^5) + ...
+    YCoeffZ(7).*(coeff6(8,1).*Zx0(1).^4+coeff6(9,1).*Zx0(2).^4+coeff6(10,1).*Zx0(3).^4)+ ...
+    YCoeffZ(6).*(coeff5(8,1).*Zx0(1).^3+coeff5(9,1).*Zx0(2).^3+coeff5(10,1).*Zx0(3).^3)+ ...
+    YCoeffZ(5).*(coeff4(8,1).*Zx0(1).^2+coeff4(9,1).*Zx0(2).^2+coeff4(10,1).*Zx0(3).^2)+ ...
+    YCoeffZ(4).*(coeff3(8,1).*Zx0(1)+coeff3(9,1).*Zx0(2)+coeff3(10,1).*Zx0(3))+ ...
+    YCoeffZ(3).*(coeff2(1,1));
+
+
+    
+
+b3=YCoeffZ(8).*(coeff7(11,1).*Zx0(1).^4+coeff7(12,1).*Zx0(2).^4+coeff7(13,1).*Zx0(3).^4)+ ...
+    YCoeffZ(7).*(coeff6(11,1).*Zx0(1).^3+coeff6(12,1).*Zx0(2).^3+coeff6(13,1).*Zx0(3).^3)+ ...
+    YCoeffZ(6).*(coeff5(11,1).*Zx0(1).^2+coeff5(12,1).*Zx0(2).^2+coeff5(13,1).*Zx0(3).^2)+ ...
+    YCoeffZ(5).*(coeff4(11,1).*Zx0(1).^1+coeff4(12,1).*Zx0(2).^1+coeff4(13,1).*Zx0(3).^1)+ ...
+    YCoeffZ(4).*(coeff3(1,1));
+
+
+
+b4=YCoeffZ(8).*(coeff7(14,1).*Zx0(1).^3+coeff7(15,1).*Zx0(2).^3+coeff7(16,1).*Zx0(3).^3 )+ ...
+    YCoeffZ(7).*(coeff6(14,1).*Zx0(1).^2+coeff6(15,1).*Zx0(2).^2+coeff6(16,1).*Zx0(3).^2)+ ...
+    YCoeffZ(6).*(coeff5(14,1).*Zx0(1).^1+coeff5(15,1).*Zx0(2).^1+coeff5(16,1).*Zx0(3).^1)+ ...
+    YCoeffZ(5).*(coeff4(1,1));
+
+
+b5=YCoeffZ(8).*(coeff7(17,1).*Zx0(1).^2+coeff7(18,1).*Zx0(2).^2+coeff7(19,1).*Zx0(3).^2)+ ...
+    YCoeffZ(7).*(coeff6(17,1).*Zx0(1).^1+coeff6(18,1).*Zx0(2).^1+coeff6(19,1).*Zx0(3).^1)+ ...
+    YCoeffZ(6).*(coeff5(1,1));
+    
+
+b6=YCoeffZ(8).*(coeff7(20,1).*Zx0(1).^1+coeff7(21,1).*Zx0(2).^1+coeff7(22,1).*Zx0(3).^1)+ ...
+    YCoeffZ(7).*(coeff6(1,1));
+
+b7=YCoeffZ(8).*(coeff7(1,1));
+
+
+%bh0=b0+b2+3*b4+15*b6;
+bh1=b1+3*b3+15*b5+105*b7;
+bh2=b2+6*b4+45*b6;
+bh3=b3+10*b5+105*b7;
+bh4=b4+15*b6;
+bh5=b5+21*b7;
+bh6=b6;
+bh7=b7;
+
+
+bh(1)=YProjected;
+bh(2)=bh1;
+bh(3)=bh2;
+bh(4)=bh3;
+bh(5)=bh4;
+bh(6)=bh5;
+bh(7)=bh6;
+bh(8)=bh7;
+
+YCentralMoment2=0;
+for nn=1:Order
+    YCentralMoment2=YCentralMoment2+bh(nn+1).^2*factorial(nn);
+end
+
+%bh(2:Order+1)=bh(2:Order+1).*sqrt(Y2Projected-YProjected.^2)/sqrt(YCentralMoment2);
+
+bh(2:Order+1)=bh(2:Order+1).*YProjected/bh0;
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCoeffz(1:Order+1)= ConvertHermiteSeriesToZSeries01(bh(1:Order+1),Order);
+
+
+[YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,Order+1);
+ 
+
+
+YMomentsModel
+ 
+DataMoments
+ 
+str=input("Look at comparison of moments");
+
+[cMu1,YCentralMoments]=ConvertRawMomentsToCentralMoments(YMomentsModel,Order+1);
+[cMu2,DataCentralMoments]=ConvertRawMomentsToCentralMoments(DataMoments,Order+1);
+
+
+YCentralMoments
+
+DataCentralMoments
+
+bh00
+YProjected
+% Y2Projected
+% DataMoments(2)
+% Y2Projected-YProjected.^2
+% DataCentralMoments(2)
+str=input("Look at central moments");
+
+
+clf;
+
+PlotZSeriesDensity(YCoeffz(1),YCoeffz(2:Order+1),'b')
+
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title("Graph of Density of sum of Three Correlated SDE Variables conditional on starting values of the three SDE random variables.")
+%title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytical Density','Numerical Density1'}, ...
+    'Location','northeast')
+kk
+str=input("This is the first version without altering the moments of conditional density")
+
+hold off 
+ 
+end
+
+
+
+
+end
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [coeff1,coeff2,coeff3,coeff4,coeff5,coeff6,coeff7] = ConditionalDensityByRegressionOnIdealNormal04(Yin,Zyin0,Zx,NDims,Order,paths,YCoeffZ)
+
+NData=paths;
+Order=7;
+NMoments=8;
+
+Zyin(1:NData,1)=Zyin0(1:NData);
+
+Yin0(1:NData,1)=Yin(1:NData);
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+
+WW(1:paths,1:Order+1)=EvalHermiteArrayH0(Zx(1:paths,1),Order);
+for mm=2:NDims
+    WW(1:paths,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:paths,mm),Order);
+end    
+
+
+
+
+YProjected(1:paths,1)=0.0;
+for mm=1:NDims*Order+1
+    YProjected(1:paths,1)=YProjected(1:paths,1)+WW(1:paths,mm).*CoeffR(mm,1);    
+end
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+
+
+
+
+b1(1:paths,1)= YCoeffZ(8).*(coeff7(5,1).*Zx(1:paths,1).^6+coeff7(6,1).*Zx(1:paths,2).^6+coeff7(7,1).*Zx(1:paths,3).^6) + ...
+    YCoeffZ(7).*(coeff6(5,1).*Zx(1:paths,1).^5+coeff6(6,1).*Zx(1:paths,2).^5+coeff6(7,1).*Zx(1:paths,3).^5)+...
+    YCoeffZ(6).*(coeff5(5,1).*Zx(1:paths,1).^4+coeff5(6,1).*Zx(1:paths,2).^4+coeff5(7,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(5).*(coeff4(5,1).*Zx(1:paths,1).^3+coeff4(6,1).*Zx(1:paths,2).^3+coeff4(7,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(4).*(coeff3(5,1).*Zx(1:paths,1).^2+coeff3(6,1).*Zx(1:paths,2).^2+coeff3(7,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(3).*(coeff2(5,1).*Zx(1:paths,1)+coeff2(6,1).*Zx(1:paths,2)+coeff2(7,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(2).*(coeff1(1,1));
+
+
+
+
+b2(1:paths,1)=YCoeffZ(8).*(coeff7(8,1).*Zx(1:paths,1).^5+coeff7(9,1).*Zx(1:paths,2).^5+coeff7(10,1).*Zx(1:paths,3).^5) + ...
+    YCoeffZ(7).*(coeff6(8,1).*Zx(1:paths,1).^4+coeff6(9,1).*Zx(1:paths,2).^4+coeff6(10,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(6).*(coeff5(8,1).*Zx(1:paths,1).^3+coeff5(9,1).*Zx(1:paths,2).^3+coeff5(10,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(5).*(coeff4(8,1).*Zx(1:paths,1).^2+coeff4(9,1).*Zx(1:paths,2).^2+coeff4(10,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(4).*(coeff3(8,1).*Zx(1:paths,1)+coeff3(9,1).*Zx(1:paths,2)+coeff3(10,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(3).*(coeff2(1,1));
+
+
+    
+
+b3(1:paths,1)=YCoeffZ(8).*(coeff7(11,1).*Zx(1:paths,1).^4+coeff7(12,1).*Zx(1:paths,2).^4+coeff7(13,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(7).*(coeff6(11,1).*Zx(1:paths,1).^3+coeff6(12,1).*Zx(1:paths,2).^3+coeff6(13,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(6).*(coeff5(11,1).*Zx(1:paths,1).^2+coeff5(12,1).*Zx(1:paths,2).^2+coeff5(13,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(5).*(coeff4(11,1).*Zx(1:paths,1).^1+coeff4(12,1).*Zx(1:paths,2).^1+coeff4(13,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(4).*(coeff3(1,1));
+
+
+
+b4(1:paths,1)=YCoeffZ(8).*(coeff7(14,1).*Zx(1:paths,1).^3+coeff7(15,1).*Zx(1:paths,2).^3+coeff7(16,1).*Zx(1:paths,3).^3 )+ ...
+    YCoeffZ(7).*(coeff6(14,1).*Zx(1:paths,1).^2+coeff6(15,1).*Zx(1:paths,2).^2+coeff6(16,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(6).*(coeff5(14,1).*Zx(1:paths,1).^1+coeff5(15,1).*Zx(1:paths,2).^1+coeff5(16,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(5).*(coeff4(1,1));
+
+
+b5(1:paths,1)=YCoeffZ(8).*(coeff7(17,1).*Zx(1:paths,1).^2+coeff7(18,1).*Zx(1:paths,2).^2+coeff7(19,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(7).*(coeff6(17,1).*Zx(1:paths,1).^1+coeff6(18,1).*Zx(1:paths,2).^1+coeff6(19,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(6).*(coeff5(1,1));
+    
+
+b6(1:paths,1)=YCoeffZ(8).*(coeff7(20,1).*Zx(1:paths,1).^1+coeff7(21,1).*Zx(1:paths,2).^1+coeff7(22,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(7).*(coeff6(1,1));
+
+%b7(1:paths,1)=YCoeffZ(8).*(coeff7(1,1));
+
+
+CrossContrib(1:paths,1)=b1.*Zy(1:paths,1)+b2.*Zy(1:paths,1).^2+b3.*Zy(1:paths,1).^3+ ...
+    b4.*Zy(1:paths,1).^4+b5.*Zy(1:paths,1).^5+b6.*Zy(1:paths,1).^6;
+
+
+
+
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1)-CrossContrib(1:paths,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+
+str=input("Look at second density and moments");
+
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [coeff1,coeff2,coeff3,coeff4,coeff5,coeff6,coeff7] = ConditionalDensityByRegressionOnIdealNormal02(Yin,Zyin0,Zx,NDims,Order,paths)
+
+NData=paths;
+Order=7;
+NMoments=8;
+
+Zyin(1:NData,1)=Zyin0(1:NData);
+
+Yin0(1:NData,1)=Yin(1:NData);
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+
+WW(1:paths,1:Order+1)=EvalHermiteArrayH0(Zx(1:paths,1),Order);
+for mm=2:NDims
+    WW(1:paths,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:paths,mm),Order);
+end    
+
+
+
+
+YProjected(1:paths,1)=0.0;
+for mm=1:NDims*Order+1
+    YProjected(1:paths,1)=YProjected(1:paths,1)+WW(1:paths,mm).*CoeffR(mm,1);    
+end
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+Here is the last graph you should see.
+
+
+
+[![Image](../images/i.postimg.cc/5tXxYQv4/Conditional-Density-New-Algo01.png)](https://postimg.cc/67NsF3Yg)
+
+.
+
+.
+
+.
+
+Here is the last output
+
+
+
+YCentralMoments =
+
+   1.0e+02 *
+
+  Columns 1 through 3
+
+                   0   0.006494962683890   0.005374936417934
+
+  Columns 4 through 6
+
+   0.019943751025528   0.048609481265512   0.173340612884258
+
+  Columns 7 through 8
+
+   0.653886522543471   2.853965485160970
+
+DataCentralMoments =
+
+   1.0e+02 *
+
+  Columns 1 through 3
+
+                   0   0.006963897844845   0.005952849483616
+
+  Columns 4 through 6
+
+   0.022719449068775   0.055817360783397   0.199683088337636
+
+  Columns 7 through 8
+
+   0.736395761491362   3.072245867243055
+
+bh00 =
+
+   2.066610190913697
+
+YProjected =
+
+   2.059448018136333
+```
+
+---
+
+## Error 59: Unbalanced $: 23
+
+**Snippet:** `I repeated the process of assigning value of Gaussian to $Z_{\tilde{y}}$ three t`
+
+**Full content:**
+
+```
+I repeated the process of assigning value of Gaussian to $Z_{\tilde{y}}$ three times in the function below and it is perfect for the case I was trying. It only has a few regressions and you can do the process of re-assigning 5 or 6 times or even more and it will take only a few seconds. Please try to experiment with this at your end.
+
+
+
+
+
+.
+
+.
+
+```
+function [coeff1,coeff2,coeff3,coeff4,coeff5,coeff6,coeff7] = ConditionalDensityByRegressionOnIdealNormal04B(Yin,Zyin0,Zx,NDims,Order,paths,YCoeffZ)
+
+NData=paths;
+Order=7;
+NMoments=8;
+
+Zyin(1:NData,1)=Zyin0(1:NData);
+
+Yin0(1:NData,1)=Yin(1:NData);
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+
+WW(1:paths,1:Order+1)=EvalHermiteArrayH0(Zx(1:paths,1),Order);
+for mm=2:NDims
+    WW(1:paths,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:paths,mm),Order);
+end    
+
+
+
+
+YProjected(1:paths,1)=0.0;
+for mm=1:NDims*Order+1
+    YProjected(1:paths,1)=YProjected(1:paths,1)+WW(1:paths,mm).*CoeffR(mm,1);    
+end
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+
+
+
+
+b1(1:paths,1)= YCoeffZ(8).*(coeff7(5,1).*Zx(1:paths,1).^6+coeff7(6,1).*Zx(1:paths,2).^6+coeff7(7,1).*Zx(1:paths,3).^6) + ...
+    YCoeffZ(7).*(coeff6(5,1).*Zx(1:paths,1).^5+coeff6(6,1).*Zx(1:paths,2).^5+coeff6(7,1).*Zx(1:paths,3).^5)+...
+    YCoeffZ(6).*(coeff5(5,1).*Zx(1:paths,1).^4+coeff5(6,1).*Zx(1:paths,2).^4+coeff5(7,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(5).*(coeff4(5,1).*Zx(1:paths,1).^3+coeff4(6,1).*Zx(1:paths,2).^3+coeff4(7,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(4).*(coeff3(5,1).*Zx(1:paths,1).^2+coeff3(6,1).*Zx(1:paths,2).^2+coeff3(7,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(3).*(coeff2(5,1).*Zx(1:paths,1)+coeff2(6,1).*Zx(1:paths,2)+coeff2(7,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(2).*(coeff1(1,1));
+
+
+
+
+b2(1:paths,1)=YCoeffZ(8).*(coeff7(8,1).*Zx(1:paths,1).^5+coeff7(9,1).*Zx(1:paths,2).^5+coeff7(10,1).*Zx(1:paths,3).^5) + ...
+    YCoeffZ(7).*(coeff6(8,1).*Zx(1:paths,1).^4+coeff6(9,1).*Zx(1:paths,2).^4+coeff6(10,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(6).*(coeff5(8,1).*Zx(1:paths,1).^3+coeff5(9,1).*Zx(1:paths,2).^3+coeff5(10,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(5).*(coeff4(8,1).*Zx(1:paths,1).^2+coeff4(9,1).*Zx(1:paths,2).^2+coeff4(10,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(4).*(coeff3(8,1).*Zx(1:paths,1)+coeff3(9,1).*Zx(1:paths,2)+coeff3(10,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(3).*(coeff2(1,1));
+
+
+    
+
+b3(1:paths,1)=YCoeffZ(8).*(coeff7(11,1).*Zx(1:paths,1).^4+coeff7(12,1).*Zx(1:paths,2).^4+coeff7(13,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(7).*(coeff6(11,1).*Zx(1:paths,1).^3+coeff6(12,1).*Zx(1:paths,2).^3+coeff6(13,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(6).*(coeff5(11,1).*Zx(1:paths,1).^2+coeff5(12,1).*Zx(1:paths,2).^2+coeff5(13,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(5).*(coeff4(11,1).*Zx(1:paths,1).^1+coeff4(12,1).*Zx(1:paths,2).^1+coeff4(13,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(4).*(coeff3(1,1));
+
+
+
+b4(1:paths,1)=YCoeffZ(8).*(coeff7(14,1).*Zx(1:paths,1).^3+coeff7(15,1).*Zx(1:paths,2).^3+coeff7(16,1).*Zx(1:paths,3).^3 )+ ...
+    YCoeffZ(7).*(coeff6(14,1).*Zx(1:paths,1).^2+coeff6(15,1).*Zx(1:paths,2).^2+coeff6(16,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(6).*(coeff5(14,1).*Zx(1:paths,1).^1+coeff5(15,1).*Zx(1:paths,2).^1+coeff5(16,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(5).*(coeff4(1,1));
+
+
+b5(1:paths,1)=YCoeffZ(8).*(coeff7(17,1).*Zx(1:paths,1).^2+coeff7(18,1).*Zx(1:paths,2).^2+coeff7(19,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(7).*(coeff6(17,1).*Zx(1:paths,1).^1+coeff6(18,1).*Zx(1:paths,2).^1+coeff6(19,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(6).*(coeff5(1,1));
+    
+
+b6(1:paths,1)=YCoeffZ(8).*(coeff7(20,1).*Zx(1:paths,1).^1+coeff7(21,1).*Zx(1:paths,2).^1+coeff7(22,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(7).*(coeff6(1,1));
+
+%b7(1:paths,1)=YCoeffZ(8).*(coeff7(1,1));
+
+
+CrossContrib(1:paths,1)=b1.*Zy(1:paths,1)+b2.*Zy(1:paths,1).^2+b3.*Zy(1:paths,1).^3+ ...
+    b4.*Zy(1:paths,1).^4+b5.*Zy(1:paths,1).^5+b6.*Zy(1:paths,1).^6;
+
+
+
+
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1)-CrossContrib(1:paths,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+
+str=input("Look at second density and moments");
+
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+
+b1(1:paths,1)= YCoeffZ(8).*(coeff7(5,1).*Zx(1:paths,1).^6+coeff7(6,1).*Zx(1:paths,2).^6+coeff7(7,1).*Zx(1:paths,3).^6) + ...
+    YCoeffZ(7).*(coeff6(5,1).*Zx(1:paths,1).^5+coeff6(6,1).*Zx(1:paths,2).^5+coeff6(7,1).*Zx(1:paths,3).^5)+...
+    YCoeffZ(6).*(coeff5(5,1).*Zx(1:paths,1).^4+coeff5(6,1).*Zx(1:paths,2).^4+coeff5(7,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(5).*(coeff4(5,1).*Zx(1:paths,1).^3+coeff4(6,1).*Zx(1:paths,2).^3+coeff4(7,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(4).*(coeff3(5,1).*Zx(1:paths,1).^2+coeff3(6,1).*Zx(1:paths,2).^2+coeff3(7,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(3).*(coeff2(5,1).*Zx(1:paths,1)+coeff2(6,1).*Zx(1:paths,2)+coeff2(7,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(2).*(coeff1(1,1));
+
+
+
+
+b2(1:paths,1)=YCoeffZ(8).*(coeff7(8,1).*Zx(1:paths,1).^5+coeff7(9,1).*Zx(1:paths,2).^5+coeff7(10,1).*Zx(1:paths,3).^5) + ...
+    YCoeffZ(7).*(coeff6(8,1).*Zx(1:paths,1).^4+coeff6(9,1).*Zx(1:paths,2).^4+coeff6(10,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(6).*(coeff5(8,1).*Zx(1:paths,1).^3+coeff5(9,1).*Zx(1:paths,2).^3+coeff5(10,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(5).*(coeff4(8,1).*Zx(1:paths,1).^2+coeff4(9,1).*Zx(1:paths,2).^2+coeff4(10,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(4).*(coeff3(8,1).*Zx(1:paths,1)+coeff3(9,1).*Zx(1:paths,2)+coeff3(10,1).*Zx(1:paths,3))+ ...
+    0*YCoeffZ(3).*(coeff2(1,1));
+
+
+    
+
+b3(1:paths,1)=YCoeffZ(8).*(coeff7(11,1).*Zx(1:paths,1).^4+coeff7(12,1).*Zx(1:paths,2).^4+coeff7(13,1).*Zx(1:paths,3).^4)+ ...
+    YCoeffZ(7).*(coeff6(11,1).*Zx(1:paths,1).^3+coeff6(12,1).*Zx(1:paths,2).^3+coeff6(13,1).*Zx(1:paths,3).^3)+ ...
+    YCoeffZ(6).*(coeff5(11,1).*Zx(1:paths,1).^2+coeff5(12,1).*Zx(1:paths,2).^2+coeff5(13,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(5).*(coeff4(11,1).*Zx(1:paths,1).^1+coeff4(12,1).*Zx(1:paths,2).^1+coeff4(13,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(4).*(coeff3(1,1));
+
+
+
+b4(1:paths,1)=YCoeffZ(8).*(coeff7(14,1).*Zx(1:paths,1).^3+coeff7(15,1).*Zx(1:paths,2).^3+coeff7(16,1).*Zx(1:paths,3).^3 )+ ...
+    YCoeffZ(7).*(coeff6(14,1).*Zx(1:paths,1).^2+coeff6(15,1).*Zx(1:paths,2).^2+coeff6(16,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(6).*(coeff5(14,1).*Zx(1:paths,1).^1+coeff5(15,1).*Zx(1:paths,2).^1+coeff5(16,1).*Zx(1:paths,3).^1)+ ...
+    0*YCoeffZ(5).*(coeff4(1,1));
+
+
+b5(1:paths,1)=YCoeffZ(8).*(coeff7(17,1).*Zx(1:paths,1).^2+coeff7(18,1).*Zx(1:paths,2).^2+coeff7(19,1).*Zx(1:paths,3).^2)+ ...
+    YCoeffZ(7).*(coeff6(17,1).*Zx(1:paths,1).^1+coeff6(18,1).*Zx(1:paths,2).^1+coeff6(19,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(6).*(coeff5(1,1));
+    
+
+b6(1:paths,1)=YCoeffZ(8).*(coeff7(20,1).*Zx(1:paths,1).^1+coeff7(21,1).*Zx(1:paths,2).^1+coeff7(22,1).*Zx(1:paths,3).^1)+ ...
+   0* YCoeffZ(7).*(coeff6(1,1));
+
+%b7(1:paths,1)=YCoeffZ(8).*(coeff7(1,1));
+
+
+CrossContrib(1:paths,1)=b1.*Zy(1:paths,1)+b2.*Zy(1:paths,1).^2+b3.*Zy(1:paths,1).^3+ ...
+    b4.*Zy(1:paths,1).^4+b5.*Zy(1:paths,1).^5+b6.*Zy(1:paths,1).^6;
+
+
+
+
+
+Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1)-CrossContrib(1:paths,1);
+Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+
+Zy0=0;
+Zy=0;
+
+[c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+
+str=input("Look at second density and moments");
+
+
+for nn=1:NData
+Zy(nn,1)=Zy0(nn);
+end
+
+[Yss,I]=sort(Y_tilde(1:NData,1));
+
+DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+
+Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+
+%for hh=1:Order
+%    W(1:NData,hh)=ZI(1:NData).^(hh);
+%end
+
+
+
+%[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+% WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+
+
+The graph in previous post after one further re-assignment improved into the following graph.
+
+.
+
+.
+
+[![Image](../images/i.postimg.cc/1XqnpYqn/Conditional-Density-New-Algo02.png)](https://postimg.cc/7JqZ49Xw)
+```
+
+---
+
+## Error 60: Unbalanced $: 33
+
+**Snippet:** `Friends, I have calculated the order of $Z_{\tilde{y}}$ by sorting Y after remov`
+
+**Full content:**
+
+```
+Friends, I have calculated the order of $Z_{\tilde{y}}$ by sorting Y after removing the effects of all the explaining variables and then sorting the remaining Y and assigning that order to $Z_{\tilde{y}}$. But I believe that same thing can be done possibly more accurately by using first order variables including $Z_y$, $Z_{x_1}$, $Z_{x_2}$ and $Z_{x_3}$. We can regress  (Z_{x_1}$, $Z_{x_2}$ and $Z_{x_3}$ on $Z_y$ and remove their effect from $Z_y$ and then assign the order of remaining $Z_y$ (after removing the effect of correlated variables) to  $Z_{\tilde{y}}$.
+
+
+
+Working on Y and finding order from it needs to calculate all sort of higher correlations and cross-correlations but if we use only $Z_y$, $Z_{x_1}$, $Z_{x_2}$ and $Z_{x_3}$, there are only first order correlations to deal with. I want to try this idea and thought that I would share it with friends as well.
+```
+
+---
+
+## Error 61: Unbalanced $: 9
+
+**Snippet:** `A quick update but still preliminary.  .  .  .  ``` function [coeff1,coeff2,coef`
+
+**Full content:**
+
+```
+A quick update but still preliminary.
+
+.
+
+.
+
+.
+
+```
+function [coeff1,coeff2,coeff3,coeff4,coeff5,coeff6,coeff7] = ConditionalDensityByRegressionOnIdealNormal08(Yin,Zyin0,Zx,NDims,Order,paths)
+
+NData=paths;
+Order=7;
+NMoments=8;
+
+Zyin(1:NData,1)=Zyin0(1:NData);
+
+Yin0(1:NData,1)=Yin(1:NData);
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+% [CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+% 
+% WW(1:paths,1:Order+1)=EvalHermiteArrayH0(Zx(1:paths,1),Order);
+% for mm=2:NDims
+%     WW(1:paths,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:paths,mm),Order);
+% end    
+% 
+% 
+% 
+% 
+% YProjected(1:paths,1)=0.0;
+% for mm=1:NDims*Order+1
+%     YProjected(1:paths,1)=YProjected(1:paths,1)+WW(1:paths,mm).*CoeffR(mm,1);    
+% end
+% 
+% Y_tilde(1:NData,1)=Yin0(1:NData,1)-YProjected(1:NData,1);
+% Y_tilde0(1:NData)=Y_tilde(1:NData,1);
+% 
+% Zy0=0;
+% Zy=0;
+% 
+% [c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Y_tilde0(1:NData),ZI);%,XCoeffZ(2:Order+1));
+% 
+% for nn=1:NData
+% Zy(nn,1)=Zy0(nn);
+% end
+% 
+% [Yss,I]=sort(Y_tilde(1:NData,1));
+% 
+% DataMedian=(Yss(NData/2,1)+Yss(NData/2+1,1))/2;
+% 
+% Ys(1:NData,1)=Yss(1:NData,1);%-DataMedian;
+% 
+% %for hh=1:Order
+% %    W(1:NData,hh)=ZI(1:NData).^(hh);
+% %end
+% 
+% 
+% 
+% %[WHy] = EvalHermiteArrayH1(Zy,Order);
+% 
+% % WHyn(1:paths,1)=WHy(1:paths,nH);
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zx(1:NData,1);
+W(1:NData,2)=Zx(1:NData,2);
+W(1:NData,3)=Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff0=(WW)$W'*Ymu);
+
+
+Zy2(1:paths,1)=Zyin(1:paths,1)-coeff0(1,1).*Zx(1:paths,1)-coeff0(2,1).*Zx(1:paths,2)-coeff0(3,1).*Zx(1:paths,3);
+
+
+
+ [c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Zy2(1:NData,1),ZI);%,XCoeffZ(2:Order+1));
+ 
+ for nn=1:NData
+ Zy(nn,1)=Zy0(nn);
+ end
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zx(1:NData,1);
+W(1:NData,2)=Zx(1:NData,2);
+W(1:NData,3)=Zx(1:NData,3);
+W(1:NData,4)=Zy(1:NData,1);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff0=(WW)$W'*Ymu);
+
+
+Zy2(1:paths,1)=Zyin(1:paths,1)-coeff0(1,1).*Zx(1:paths,1)-coeff0(2,1).*Zx(1:paths,2)-coeff0(3,1).*Zx(1:paths,3);
+
+
+
+ [c0,c(1:Order),FittedMoments,Zy0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Zy2(1:NData,1),ZI);%,XCoeffZ(2:Order+1));
+ 
+ for nn=1:NData
+ Zy(nn,1)=Zy0(nn);
+ end
+
+
+
+%coeff1(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1);
+
+
+W=0;
+
+W(1:NData,1)=Zy(1:NData,1);
+W(1:NData,2)=Zx(1:NData,1);
+W(1:NData,3)=Zx(1:NData,2);
+W(1:NData,4)=Zx(1:NData,3);
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff1=(WW)$W'*Ymu);
+
+%coeff1(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^2;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^2;
+W(1:NData,2)=Zx(1:NData,1).^2;
+W(1:NData,3)=Zx(1:NData,2).^2;
+W(1:NData,4)=Zx(1:NData,3).^2;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1);
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2);
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3);
+W(1:NData,8)=Zx(1:NData,1).*Zx(1:NData,2);
+W(1:NData,9)=Zx(1:NData,1).*Zx(1:NData,3);
+W(1:NData,10)=Zx(1:NData,2).*Zx(1:NData,3);
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff2=(WW)$W'*Ymu);
+
+% coeff2(5,1).*Zx(1)+coeff2(6,1).*Zx(2)+coeff2(7,1).*Zx(3)
+% 
+% coeff2(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^3;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^3;
+W(1:NData,2)=Zx(1:NData,1).^3;
+W(1:NData,3)=Zx(1:NData,2).^3;
+W(1:NData,4)=Zx(1:NData,3).^3;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^2;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1);
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,11)=Zx(1:NData,1).*Zx(1:NData,2).^2;
+W(1:NData,12)=Zx(1:NData,1).*Zx(1:NData,3).^2;
+W(1:NData,13)=Zx(1:NData,2).*Zx(1:NData,3).^2;
+W(1:NData,14)=Zx(1:NData,1).^2.*Zx(1:NData,2);
+W(1:NData,15)=Zx(1:NData,1).^2.*Zx(1:NData,3);
+W(1:NData,16)=Zx(1:NData,2).^2.*Zx(1:NData,3);
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff3=(WW)$W'*Ymu);
+
+
+% coeff3(5,1).*Zx(1).^2+coeff3(6,1).*Zx(2).^2+coeff3(7,1).*Zx(3).^2
+% 
+% coeff3(8,1).*Zx(1)+coeff3(9,1).*Zx(2)+coeff3(10,1).*Zx(3)
+% 
+% coeff3(1,1)
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^4;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^4;
+W(1:NData,2)=Zx(1:NData,1).^4;
+W(1:NData,3)=Zx(1:NData,2).^4;
+W(1:NData,4)=Zx(1:NData,3).^4;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^3;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^2;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^1;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,14)=Zx(1:NData,1).*Zx(1:NData,2).^3;
+W(1:NData,15)=Zx(1:NData,1).*Zx(1:NData,3).^3;
+W(1:NData,16)=Zx(1:NData,2).*Zx(1:NData,3).^3;
+W(1:NData,17)=Zx(1:NData,1).^2.*Zx(1:NData,2).^2;
+W(1:NData,18)=Zx(1:NData,1).^2.*Zx(1:NData,3).^2;
+W(1:NData,19)=Zx(1:NData,2).^2.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zx(1:NData,1).^3.*Zx(1:NData,2).^1;
+W(1:NData,21)=Zx(1:NData,1).^3.*Zx(1:NData,3).^1;
+W(1:NData,22)=Zx(1:NData,2).^3.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff4=(WW)$W'*Ymu);
+
+
+% coeff4(5,1).*Zx(1).^3+coeff4(6,1).*Zx(2).^3+coeff4(7,1).*Zx(3).^3
+% 
+% coeff4(8,1).*Zx(1).^2+coeff4(9,1).*Zx(2).^2+coeff4(10,1).*Zx(3).^2
+% 
+% coeff4(11,1).*Zx(1).^1+coeff4(12,1).*Zx(2).^1+coeff4(13,1).*Zx(3).^1
+% 
+% coeff4(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^5;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^5;
+W(1:NData,2)=Zx(1:NData,1).^5;
+W(1:NData,3)=Zx(1:NData,2).^5;
+W(1:NData,4)=Zx(1:NData,3).^5;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^4;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^3;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^2;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^1;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,17)=Zx(1:NData,1).*Zx(1:NData,2).^4;
+W(1:NData,18)=Zx(1:NData,1).*Zx(1:NData,3).^4;
+W(1:NData,19)=Zx(1:NData,2).*Zx(1:NData,3).^4;
+W(1:NData,20)=Zx(1:NData,1).^2.*Zx(1:NData,2).^3;
+W(1:NData,21)=Zx(1:NData,1).^2.*Zx(1:NData,3).^3;
+W(1:NData,22)=Zx(1:NData,2).^2.*Zx(1:NData,3).^3;
+W(1:NData,23)=Zx(1:NData,1).^3.*Zx(1:NData,2).^2;
+W(1:NData,24)=Zx(1:NData,1).^3.*Zx(1:NData,3).^2;
+W(1:NData,25)=Zx(1:NData,2).^3.*Zx(1:NData,3).^2;
+W(1:NData,26)=Zx(1:NData,1).^4.*Zx(1:NData,2).^1;
+W(1:NData,27)=Zx(1:NData,1).^4.*Zx(1:NData,3).^1;
+W(1:NData,28)=Zx(1:NData,2).^4.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff5=(WW)$W'*Ymu);
+
+
+
+
+% coeff5(5,1).*Zx(1).^4+coeff5(6,1).*Zx(2).^4+coeff5(7,1).*Zx(3).^4
+% 
+% coeff5(8,1).*Zx(1).^3+coeff5(9,1).*Zx(2).^3+coeff5(10,1).*Zx(3).^3
+% 
+% coeff5(11,1).*Zx(1).^2+coeff5(12,1).*Zx(2).^2+coeff5(13,1).*Zx(3).^2
+% 
+% coeff5(14,1).*Zx(1).^1+coeff5(15,1).*Zx(2).^1+coeff5(16,1).*Zx(3).^1
+% 
+% coeff5(1,1)
+
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^6;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^6;
+W(1:NData,2)=Zx(1:NData,1).^6;
+W(1:NData,3)=Zx(1:NData,2).^6;
+W(1:NData,4)=Zx(1:NData,3).^6;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^5;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^4;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^3;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^2;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^1;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,20)=Zx(1:NData,1).*Zx(1:NData,2).^5;
+W(1:NData,21)=Zx(1:NData,1).*Zx(1:NData,3).^5;
+W(1:NData,22)=Zx(1:NData,2).*Zx(1:NData,3).^5;
+W(1:NData,23)=Zx(1:NData,1).^2.*Zx(1:NData,2).^4;
+W(1:NData,24)=Zx(1:NData,1).^2.*Zx(1:NData,3).^4;
+W(1:NData,25)=Zx(1:NData,2).^2.*Zx(1:NData,3).^4;
+W(1:NData,26)=Zx(1:NData,1).^3.*Zx(1:NData,2).^3;
+W(1:NData,27)=Zx(1:NData,1).^3.*Zx(1:NData,3).^3;
+W(1:NData,28)=Zx(1:NData,2).^3.*Zx(1:NData,3).^3;
+W(1:NData,29)=Zx(1:NData,1).^4.*Zx(1:NData,2).^2;
+W(1:NData,30)=Zx(1:NData,1).^4.*Zx(1:NData,3).^2;
+W(1:NData,31)=Zx(1:NData,2).^4.*Zx(1:NData,3).^2;
+W(1:NData,32)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,33)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,34)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff6=(WW)$W'*Ymu);
+
+
+
+% coeff6(5,1).*Zx(1).^5+coeff6(6,1).*Zx(2).^5+coeff6(7,1).*Zx(3).^5
+% 
+% coeff6(8,1).*Zx(1).^4+coeff6(9,1).*Zx(2).^4+coeff6(10,1).*Zx(3).^4
+% 
+% coeff6(11,1).*Zx(1).^3+coeff6(12,1).*Zx(2).^3+coeff6(13,1).*Zx(3).^3
+% 
+% coeff6(14,1).*Zx(1).^2+coeff6(15,1).*Zx(2).^2+coeff6(16,1).*Zx(3).^2
+% 
+% coeff6(17,1).*Zx(1).^1+coeff6(18,1).*Zx(2).^1+coeff6(19,1).*Zx(3).^1
+% 
+% coeff6(1,1)
+
+
+
+
+Ys(1:NData,1)=Zyin(1:NData,1).^7;
+W=0;
+W(1:NData,1)=Zy(1:NData,1).^7;
+W(1:NData,2)=Zx(1:NData,1).^7;
+W(1:NData,3)=Zx(1:NData,2).^7;
+W(1:NData,4)=Zx(1:NData,3).^7;
+W(1:NData,5)=Zy(1:NData,1).*Zx(1:NData,1).^6;
+W(1:NData,6)=Zy(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,7)=Zy(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,8)=Zy(1:NData,1).^2.*Zx(1:NData,1).^5;
+W(1:NData,9)=Zy(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,10)=Zy(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,11)=Zy(1:NData,1).^3.*Zx(1:NData,1).^4;
+W(1:NData,12)=Zy(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,13)=Zy(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,14)=Zy(1:NData,1).^4.*Zx(1:NData,1).^3;
+W(1:NData,15)=Zy(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,16)=Zy(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,17)=Zy(1:NData,1).^5.*Zx(1:NData,1).^2;
+W(1:NData,18)=Zy(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,19)=Zy(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,20)=Zy(1:NData,1).^6.*Zx(1:NData,1).^1;
+W(1:NData,21)=Zy(1:NData,1).^6.*Zx(1:NData,2).^1;
+W(1:NData,22)=Zy(1:NData,1).^6.*Zx(1:NData,3).^1;
+W(1:NData,23)=Zx(1:NData,1).*Zx(1:NData,2).^6;
+W(1:NData,24)=Zx(1:NData,1).*Zx(1:NData,3).^6;
+W(1:NData,25)=Zx(1:NData,2).*Zx(1:NData,3).^6;
+W(1:NData,26)=Zx(1:NData,1).^2.*Zx(1:NData,2).^5;
+W(1:NData,27)=Zx(1:NData,1).^2.*Zx(1:NData,3).^5;
+W(1:NData,28)=Zx(1:NData,2).^2.*Zx(1:NData,3).^5;
+W(1:NData,29)=Zx(1:NData,1).^3.*Zx(1:NData,2).^4;
+W(1:NData,30)=Zx(1:NData,1).^3.*Zx(1:NData,3).^4;
+W(1:NData,31)=Zx(1:NData,2).^3.*Zx(1:NData,3).^4;
+W(1:NData,32)=Zx(1:NData,1).^4.*Zx(1:NData,2).^3;
+W(1:NData,33)=Zx(1:NData,1).^4.*Zx(1:NData,3).^3;
+W(1:NData,34)=Zx(1:NData,2).^4.*Zx(1:NData,3).^3;
+W(1:NData,35)=Zx(1:NData,1).^5.*Zx(1:NData,2).^2;
+W(1:NData,36)=Zx(1:NData,1).^5.*Zx(1:NData,3).^2;
+W(1:NData,37)=Zx(1:NData,2).^5.*Zx(1:NData,3).^2;
+W(1:NData,38)=Zx(1:NData,1).^5.*Zx(1:NData,2).^1;
+W(1:NData,39)=Zx(1:NData,1).^5.*Zx(1:NData,3).^1;
+W(1:NData,40)=Zx(1:NData,2).^5.*Zx(1:NData,3).^1;
+
+
+
+Ymu(1:NData,1)=Ys(1:NData);
+
+WW=(W'*W);
+
+coeff7=(WW)$W'*Ymu);
+
+
+
+% coeff7(5,1).*Zx(1).^6+coeff7(6,1).*Zx(2).^6+coeff7(7,1).*Zx(3).^6
+% 
+% coeff7(8,1).*Zx(1).^5+coeff7(9,1).*Zx(2).^5+coeff7(10,1).*Zx(3).^5
+% 
+% coeff7(11,1).*Zx(1).^4+coeff7(12,1).*Zx(2).^4+coeff7(13,1).*Zx(3).^4
+% 
+% coeff7(14,1).*Zx(1).^3+coeff7(15,1).*Zx(2).^3+coeff7(16,1).*Zx(3).^3
+% 
+% coeff7(17,1).*Zx(1).^2+coeff7(18,1).*Zx(2).^2+coeff7(19,1).*Zx(3).^2
+% 
+% coeff7(20,1).*Zx(1).^1+coeff7(21,1).*Zx(2).^1+coeff7(22,1).*Zx(3).^1
+% 
+% coeff7(1,1)
+
+
+
+
+coeff1
+
+coeff2
+
+coeff3
+
+coeff4
+
+coeff5
+
+coeff6
+
+coeff7
+
+str=input("Look at all sets of coefficients");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+```
+
+---
+
+## Error 62: Unbalanced $: 5
+
+**Snippet:** `Hello Tradeslayer, thank you very much for your question. Please give me a minut`
+
+**Full content:**
+
+```
+Hello Tradeslayer, thank you very much for your question. Please give me a minute. I come back to explaining your question carefully. I am posting the program and you can run the program for various conditional starting points to get the numerical verification to your question. But I will come back to answering your question in more detail in next post later today.
+
+
+
+Here is the new program for friends.
+
+.
+
+.
+
+```
+function []= ConditionalDensityHermitesNvariateNewtonWithZyBar02()
+
+%SV SDE is 
+%dV(t)=mu1 V(t)^beta1 dt+ mu2 V(t)^beta2 dt + sigma0 V(t)^gamma dZ(t)
+%In mean reverting SDEs we ususally have
+%mu1= kappaV * thetaV
+%beta1=0
+%mu2=-kappa
+%beta2=0
+%The present program works only when drift is zero (for pure noises)
+%meaning mu1=0 and mu2=0;
+
+Order=7;
+%NDim=4;%Three assets and one SV.
+%NMomentsY=Order+1;
+%NMomentsX=Order+1;
+
+%%%%%%%%%%%%%%%%%%%5
+dt=.03125/2/8;
+Tt=64*2*8;
+T=Tt*dt;
+seed0=12130649;
+%seed0=94210876;
+%seed0=14210876;
+seed0=53612297
+%seed0=97459782
+rng(seed0, 'twister')
+paths=25000;
+TT1=100*8/2; %Transition distribution start
+TT2=256*8/2; %Transition distribution end
+
+%%%%%%%%%%%%%%%%%%%5
+
+NDims=3;
+NDims2=3;
+% 
+V0(1)=1.000;%.32;
+V00(1)=V0(1);
+
+%SDE1
+ thetaV(1)=1.0;%.045;%1;%.04;
+ kappaV(1)=0.000;%1.5;%1.5;
+ gamma(1)=.75;%.75
+ sigma0(1)=.5;%.35
+
+
+ 
+%SDE2%
+%thetaV(1)=.90;%.045;%1;%.04;
+%kappaV(1)=1.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.85;%.35
+
+%SDE3%
+%thetaV(1)=1.350;%.045;%1;%.04;
+%kappaV(1)=2.000;%1.5;%1.5;
+%gamma(1)=.75;%.75
+%sigma0(1)=.95;%.35
+
+
+mu1(1)=kappaV(1)*thetaV(1);
+mu2(1)=-kappaV(1);
+beta1(1)=0;
+beta2(1)=1;
+
+
+
+V0(2)=1.000;%.32;
+V00(2)=V0(2);
+
+%SDE1
+thetaV(2)=1.0;%.045;%1;%.04;
+ kappaV(2)=0.000;%1.5;%1.5;
+ gamma(2)=.85;%.75
+ sigma0(2)=.5;%.35
+
+%SDE2 
+% thetaV(2)=1.0;%.045;%1;%.04;
+% kappaV(2)=2.000;%1.5;%1.5;
+% gamma(2)=.65;%.75
+% sigma0(2)=.95;%.35
+
+%SDE3
+%thetaV(2)=.850;%.045;%1;%.04;
+%kappaV(2)=.35000;%1.5;%1.5;
+%gamma(2)=.65;%.75
+%sigma0(2)=.55;%.35
+
+
+mu1(2)=kappaV(2)*thetaV(2);
+mu2(2)=-kappaV(2);
+beta1(2)=0;
+beta2(2)=1;
+
+
+
+V0(3)=1.000;%.33;
+V00(3)=V0(3);
+
+%SDE1
+thetaV(3)=1.0;%.045;%1;%.04;
+ kappaV(3)=0.000;%1.5;%1.5;
+ gamma(3)=.95;%.75
+ sigma0(3)=.45;%.35
+
+%SDE2 
+% thetaV(3)=.750;%.045;%1;%.04;
+% kappaV(3)=0.5000;%1.5;%1.5;
+% gamma(3)=.95;%.75
+% sigma0(3)=.45;%.35
+
+
+%SDE3 
+%thetaV(3)=1.150;%.045;%1;%.04;
+%kappaV(3)=1.5000;%1.5;%1.5;
+%gamma(3)=.95;%.75
+%sigma0(3)=.75;%.35
+
+mu1(3)=kappaV(3)*thetaV(3);
+mu2(3)=-kappaV(3);
+beta1(3)=0;
+beta2(3)=1;
+
+
+
+Corr1(1,1)=1;
+Corr1(1,2)=.7;
+Corr1(1,3)=.8;
+Corr1(2,2)=1;
+Corr1(2,1)=.7;
+Corr1(2,3)=.5;
+Corr1(3,1)=.8;
+Corr1(3,2)=.5;
+Corr1(3,3)=1;
+% 
+% % % % Was very good.
+Corr1(1,1)=1;
+Corr1(1,2)=.7/3;
+Corr1(1,3)=.8/3;
+Corr1(2,2)=1;
+Corr1(2,1)=.7/3;
+Corr1(2,3)=.5/3;
+Corr1(3,1)=.8/3;
+Corr1(3,2)=.5/3;
+Corr1(3,3)=1;
+% % % % % % % % 
+% % % % % % % % 
+% % % % % % % 
+% Corr1(1,1)=1;
+% Corr1(1,2)=-.7/3;
+% Corr1(1,3)=.8/3;
+% Corr1(2,2)=1;
+% Corr1(2,1)=-.7/3;
+% Corr1(2,3)=-.5/3;
+% Corr1(3,1)=.8/3;
+% Corr1(3,2)=-.5/3;
+% Corr1(3,3)=1;
+% % % % % % 
+% % % % % % 
+
+
+R=chol(Corr1);
+% 
+%  R(1:3,1:3)=0;
+%  R(1,1)=1;
+%  R(2,2)=1;
+%  R(3,3)=1;
+
+
+V0(4)=1.000;%.44;
+V00(4)=V0(4);
+thetaV(4)=1.0;%.045;%1;%.04;
+kappaV(4)=1.000;%1.5;%1.5;
+mu1(4)=kappaV(4)*thetaV(4);
+mu2(4)=-kappaV(4);
+beta1(4)=0;
+beta2(4)=1;
+gamma(4)=.95;%.75
+sigma0(4)=.55;%.45
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+for nn=1:NDims
+V(1:paths,nn)=V0(nn);
+Threshold(nn)=(sigma0(nn)*sqrt(dt)*2)^(1/(1-gamma(nn)));
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:Tt
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    %Random2=R'*Random2;
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    %Random2(V(:,<Threshold,:)=
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0000;
+    
+    V(isnan(V(:,nn)),nn)=0;
+
+    
+    if(tt==TT1)
+        Xin(1:paths,nn)=(V(1:paths,nn));
+    end
+        
+    if(tt==TT2)
+        
+        Xin2(1:paths,nn)=(V(1:paths,nn));
+    end
+
+    end    
+    
+end
+
+
+Yin(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    %Yin(pp)=Yin(pp)+Xin2(pp,mm);%-Xin(pp,mm);
+    Yin(pp)=Yin(pp)+Xin2(pp,mm);
+%-Xin(pp,mm);
+end
+end
+
+
+str=input("I have reached stone 1");
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% 
+ Order=7;
+ clf;
+ 
+     
+  NDims2=3;
+ 
+ 
+  
+ 
+%[BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04WithZyBar(Xin,Yin,paths,NDims2);
+%[BetaCorrH,YCoeffH,XCoeffH,Zy,Zx] = CalculateHermiteCorrelations0NA04WithZyBar(Xin,Yin,paths,NDims2);
+[YCoeffH,XCoeffH,Zy,Zx] = CalculateHermiteSeries0NA04WithZyBar(Xin,Yin,paths,NDims);
+YCoeffZ(1:Order+1)= ConvertHermiteSeriesToZSeries01(YCoeffH(1:Order+1),Order);
+
+
+
+
+
+NDims2=NDims+1;%Three SDE variables and one YBar.
+
+[cn] = FindInitialGuessForNewtonUnivariate(Zy,Zx,NDims2,paths,Order);
+
+% bn=0; 
+% for mm=1:NDims2
+%     NDims0=1;
+%     [bn] = FindInitialGuessForNewtonUnivariate(Zy,Zx(1:paths,mm),NDims0,paths,Order);
+%     bn
+% %    HCorrXX0(1,1,1:Order)=1;
+% %    bnOptim0= OptimizeCorrFromHermitesNewtonWithoutVar(Zy,Zx(1:paths,mm),bn,HCorrXX0,NDims0,paths,Order);
+%     bnOptim(mm,:)=bnOptim0(1,:);
+%  mm
+% % str=input("Let us look at bn");
+%  
+% end
+% 
+% 
+% bnOptim
+% 
+% str=input("Look at the variabes of cnOptim");
+%  
+% 
+% 
+% 
+% for mm1=1:NDims2
+%     for mm2=1:NDims2
+%         NDims0=1;
+%         [bn] = FindInitialGuessForNewtonUnivariate(Zx(1:paths,mm1),Zx(1:paths,mm2),NDims0,paths,Order);
+%         bn
+%         HCorrXX0(1,1,1:Order)=1;
+%         CorrXX1= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm1),Zx(1:paths,mm2),bn,HCorrXX0,NDims0,paths,Order);
+%         %CorrXX2= OptimizeCorrFromHermitesNewtonWithoutVar(Zx(1:paths,mm2),Zx(1:paths,mm1),bn,HCorrXX0,NDims0,paths,Order);
+%         HCorrXX(mm1,mm2,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%         HCorrXX(mm2,mm1,1:Order)=(CorrXX1(1,1:Order));%+CorrXX2(1,1:Order))/2;
+%         HCorrXX(mm1,mm1,1:Order)=1;
+%     end
+% end
+% 
+%  
+%     
+%     
+% for hh=1:Order
+%     bCol(1:NDims2,1)=bnOptim(1:NDims2,hh);
+%     HHCorrXX(1:NDims2,1:NDims2)=HCorrXX(1:NDims2,1:NDims2,hh);
+%     bb=HHCorrXX\bCol;
+%     cn(1:NDims2,hh)=bb(1:NDims2);
+% end
+% Var(hh)=0.0;
+% for hh=1:Order
+%     for mm=1:NDims2
+%         Var(hh)=Var(hh)+cn(mm,hh).^2;
+%     end
+%     cn(NDims2+1,hh)=abs(sqrt(1-Var(hh)));
+% end
+% 
+% cn0=cn;
+% 
+% cn
+
+str=input("Look at cn before input to Newton correlation finding function");
+ [cnOptim] = OptimizeCorrFromHermitesNewtonNewAlgoZytilde(Zy,Zx,cn,NDims2,paths,Order);
+ 
+ cn=cnOptim;
+
+
+
+%[CoeffR] = RegressYOnXGivenZx(Yin,Zx,paths,NDims,Order);
+%Above function would have to be decommented when SDEs are not martingales.
+
+
+
+for kk=1:4%Loop over four conditional starting points of Density.
+
+
+
+% %Set1
+  V10(1,1)=1.2+.25*2;%.65;%
+  V10(2,1)=.75-.125*2;
+  V10(3,1)=1.2+.25*2;
+  V10(4,1)=V10(1,1)+V10(2,1)+V10(3,1);
+% 
+% % % % 
+% % % % % % % % % % %Set2
+       V10(1,2)=.75-.125*2;
+       V10(2,2)=1.2+.25*2;%1.2;
+       V10(3,2)=.7-.125*2;
+       V10(4,2)=V10(1,2)+V10(2,2)+V10(3,2);
+             
+       
+% % % % % % % % % % % % % % %V10(4)=.65
+% % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %Set3
+       V10(1,3)=1.25+.25*2;
+       V10(2,3)=1.35+.25*2;%1.2;
+       V10(3,3)=1.25+.25*2;
+       V10(4,3)=V10(1,3)+V10(2,3)+V10(3,3);
+%             
+%       
+%       
+% % % % % % % % % % % % % % % %   V10(4)=1.4
+% % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % %   
+         V10(1,4)=.85-.125*2;
+         V10(2,4)=.81-.125*2;%1.2;
+         V10(3,4)=.77-.125*2;
+         V10(4,4)=V10(1,4)+V10(2,4)+V10(3,4);
+%         
+%                 
+% % % % % % % % % % %  V10(4)=.7
+% % 
+ 
+for nn=1:NDims
+V(1:paths,nn)=V10(nn,kk);
+end
+%V(1:paths,1:NDims)=V0(1,1:NDims);
+
+Random1(1:paths/2,1:NDims)=0;
+
+for tt=1:TT2-TT1
+    
+    Random2(1:paths/2,1:NDims)=randn(size(Random1));
+    Random2(paths/2+1:paths,1:NDims)=-Random2(1:paths/2,1:NDims);
+
+    random1=Random2*R(:,1);
+    random2=Random2*R(:,2);
+    random3=Random2*R(:,3);
+    
+    Random2(:,1)=random1;
+    Random2(:,2)=random2;
+    Random2(:,3)=random3;
+    
+    Random2(V(:,1)<Threshold(1),1)=0.0;
+    Random2(V(:,2)<Threshold(2),2)=0.0;
+    Random2(V(:,3)<Threshold(3),3)=0.0;
+    
+    
+    for nn=1:NDims
+    
+    V(1:paths,nn)=V(1:paths,nn)+ ...
+        (mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*sqrt(dt) + ...
+        (mu1(nn).*beta1(nn)*V(1:paths,nn).^(beta1(nn)-1) + mu2(nn).*beta2(nn).*V(1:paths,nn).^(beta2(nn)-1)).* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn))*dt^2/2 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*Random2(1:paths,nn)*(1-1/sqrt(3))*dt^1.5) + ...
+        .5*(mu1(nn).*beta1(nn).*(beta1(nn)-1).*V(1:paths,nn).^(beta1(nn)-2) + mu2(nn).*beta2(nn).*(beta2(nn)-1).*V(1:paths,nn).^(beta2(nn)-2)).* ...    
+        sigma0(nn)^2.*V(1:paths,nn).^(2*gamma(nn)).*dt^2/2 + ...
+        sigma0(nn).*gamma(nn).*V(1:paths,nn).^(gamma(nn)-1) .* ...
+        ((mu1(nn).*V(1:paths,nn).^beta1(nn) + mu2(nn).*V(1:paths,nn).^beta2(nn)).*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5 + ...
+        sigma0(nn).*V(1:paths,nn).^gamma(nn) .*(Random2(1:paths,nn).^2-1)*dt/2) + ...
+        .5*sigma0(nn).*gamma(nn).*(gamma(nn)-1).*V(1:paths,nn).^(gamma(nn)-2) .* ...
+        sigma0(nn).^2.*V(1:paths,nn).^(2*gamma(nn)) .*Random2(1:paths,nn).*1/sqrt(3)*dt^1.5;
+
+    V(V(:,nn)<=.00001,nn)=.0001;
+
+    
+    %if(tt==TT1)
+    %    XXin(1:paths,nn)=V(1:paths,nn);
+    %end
+        
+    if(tt==TT2-TT1)
+        
+        XXin2(1:paths,nn)=V(1:paths,nn);
+    end
+
+    end    
+    
+end
+
+
+Yin2(1:paths)=0.0;
+
+for pp=1:paths
+for mm=1:NDims
+    Yin2(pp)=Yin2(pp)+XXin2(pp,mm);%-V10(mm);
+end
+end
+
+
+
+%randn()
+
+str=input("I have reached stone 4");
+
+
+
+NoOfBins=200;
+MaxCutOff=20;
+
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin2,paths,NoOfBins,MaxCutOff );
+
+for qq=1:8
+    
+    DataMoments(qq)=sum(Yin2(:).^qq)/paths;
+    
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for nn=1:NDims2
+    [Zx0(nn)] = CalculateZgivenXAndHSeriesCoeffs(V10(nn,kk),XCoeffH(1:Order+1,nn),Order);
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% 
+% WW(1,1:Order+1)=EvalHermiteArrayH0(Zx0(1),Order);
+% for mm=2:NDims
+%     WW(1,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx0(mm),Order);
+% end    
+% 
+% 
+% 
+% 
+%      YProjected=0.0;
+%     for mm=1:NDims*Order+1
+%     YProjected=YProjected+WW(1,mm).*CoeffR(mm,1);    
+%      
+%     end
+%  
+
+%Above conditional expected value finding function would have to be decommented 
+%when SDEs are not martingales. 
+
+
+%When SDEs are martingales, use the line below but comment if they are not.
+    YProjected=V10(1,kk)+V10(2,kk)+V10(3,kk);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+Zx(1:Order)=0; 
+
+for hh=1:Order
+    for nn=1:NDims2
+        %Zx(hh) = Zx(hh) + bnv(nn+1,hh+1).^1.*Zx0(nn);
+        Zx(hh) = Zx(hh) + cn(nn,hh).^1.*Zx0(nn);
+    end
+end
+
+%bh0=YCoeffH(1);
+
+% [W] = EvalHermiteArrayH0(Zx0,Order);
+% 
+% for hh=1:Order
+%     for nn=1:NDims2
+%         bh0 = bh0 + ch(nn+1,hh+1).^1.*W(nn,hh+1);
+%     end
+% end
+% bh00=bh0;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 
+a0=YCoeffZ(1);
+a1=YCoeffZ(2);
+a2=YCoeffZ(3);
+a3=YCoeffZ(4);
+a4=YCoeffZ(5);
+a5=YCoeffZ(6);
+a6=YCoeffZ(7);
+a7=YCoeffZ(8);
+
+
+
+
+
+d1=cn(NDims+2,1);
+d2=cn(NDims+2,2);
+d3=cn(NDims+2,3);
+d4=cn(NDims+2,4);
+d5=cn(NDims+2,5);
+d6=cn(NDims+2,6);
+d7=cn(NDims+2,7);
+
+
+
+% %b0=(a0+a1.* Zx(1) +a2.* Zx(2).^2+a3.* Zx(3).^3+a4* Zx(4).^4+a5 *Zx(5).^5+a6* Zx(6).^6+a7* Zx(7).^7);
+b1=(a1* d1+2* a2* Zx(2)* d2 +3* a3* Zx(3).^2* d3+4* a4* Zx(4).^3* d4+5* a5* Zx(5).^4* d5+6* a6* Zx(6).^5* d6+7* a7* Zx(7).^6* d7);
+b2=(a2* d2.^2+3* a3* Zx(3)* d3^2 +6* a4* Zx(4).^2* d4^2+10* a5* Zx(5).^3* d5^2+15* a6* Zx(6).^4* d6^2+21* a7* Zx(7).^5* d7^2);
+b3=(a3* d3^3+4* a4 *Zx(4)* d4^3 +10* a5* Zx(5).^2* d5^3+20* a6* Zx(6).^3* d6^3+35* a7* Zx(7).^4* d7^3);
+b4=(a4* d4^4+5* a5* Zx(5)* d5^4 +15* a6 *Zx(6).^2* d6^4+35* a7* Zx(7).^3 *d7^4);
+b5=(a5* d5^5+6* a6* Zx(6)* d6^5 +21* a7 *Zx(7).^2* d7^5);
+b6=(a6* d6^6+7* a7* Zx(7)* d7^6 );
+b7=(a7* d7^7);
+
+
+%bh0=b0+b2+3*b4+15*b6;
+bh1=b1+3*b3+15*b5+105*b7;
+bh2=b2+6*b4+45*b6;
+bh3=b3+10*b5+105*b7;
+bh4=b4+15*b6;
+bh5=b5+21*b7;
+bh6=b6;
+bh7=b7;
+
+
+bh(1)=YProjected;
+bh(2)=bh1;
+bh(3)=bh2;
+bh(4)=bh3;
+bh(5)=bh4;
+bh(6)=bh5;
+bh(7)=bh6;
+bh(8)=bh7;
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCentralMoment2=0;
+for nn=1:Order
+    YCentralMoment2=YCentralMoment2+bh(nn+1).^2*factorial(nn);
+end
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+YCoeffz(1:Order+1)= ConvertHermiteSeriesToZSeries01(bh(1:Order+1),Order);
+
+
+[YMomentsModel]=CalculateMomentsOfZSeries(YCoeffz(1),YCoeffz(2:Order+1),Order,Order+1);
+ 
+
+
+YMomentsModel
+ 
+DataMoments
+ 
+str=input("Look at comparison of moments");
+
+[cMu1,YCentralMoments]=ConvertRawMomentsToCentralMoments(YMomentsModel,Order+1);
+[cMu2,DataCentralMoments]=ConvertRawMomentsToCentralMoments(DataMoments,Order+1);
+
+
+YCentralMoments
+
+DataCentralMoments
+
+YProjected
+str=input("Look at central moments");
+
+
+clf;
+
+PlotZSeriesDensity(YCoeffz(1),YCoeffz(2:Order+1),'b')
+
+
+
+hold on
+
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'r');
+
+%PlotHermiteSeriesDensityAndRvGraph(YCoeffh(1),YCoeffh1(2:yOrder+1),'g')
+title("Graph of Density of sum of Three Correlated SDE Variables conditional on starting values of the three SDE random variables.")
+%title(sprintf('V00 = %.3f; kappa=%.3f, theta=%.3f,gamma=%.3f,sigma=%.3f;V10=%.3f at TT1=%.3f;TT2=%.3f;Paths=%d ',V00, kappaV, thetaV,gamma,sigma0, V10,(TT1*dt),(TT2*dt),paths));%,sprintf('theta= %f', theta), sprintf('kappa = %f', kappa),sprintf('sigma = %f', sigma0),sprintf('T = %f', T));
+legend({'Analytical Density','Numerical Density1'}, ...
+    'Location','northeast')
+kk
+str=input("This is the first version without altering the moments of conditional density")
+
+hold off 
+ 
+end
+
+
+
+
+end
+
+```
+
+.
+
+.
+
+.
+
+.
+
+```
+function [YCoeffH,XCoeffH,Zy,Zx] = CalculateHermiteSeries0NA04WithZyBar(Xin,Yin,NData,NDims)
+
+%function [BetaCorrH,YCoeffH,XCoeffH,HCorrXX,Zy,Zx] = CalculateHermiteCorrelations0NA04WithZyBar(Xin,Yin,NData,NDims)
+
+%This program finds required correlations between NDims explanatory
+%variables given in Xin that has NDims dimensionality. Yin is variable
+%being explained and is one-diemsnional.
+
+
+Order=7;
+NMoments=8;
+
+
+[ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+
+
+
+for nn=1:NDims
+
+    [c0(nn),c(1:Order,nn),FittedMoments,Zx(:,nn)] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Xin(1:NData,nn),ZI);%,XCoeffZ(2:Order+1));
+ 
+
+ XCoeffZ(1,nn)=c0(nn);
+ XCoeffZ(2:Order+1,nn)=c(1:Order,nn);
+ 
+[XCoeffH(1:Order+1,nn)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1,nn),Order);
+
+
+% for mm=1:8
+%     rMu(mm)=sum(Zx(1:NData,nn).^mm)/NData;
+% end
+
+nn
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+[CoeffR] = RegressYOnXGivenZx(Yin,Zx,NData,NDims,Order);
+
+ WW(1:NData,1:Order+1)=EvalHermiteArrayH0(Zx(1:NData,1),Order);
+ for mm=2:NDims
+     WW(1:NData,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:NData,mm),Order);
+ end    
+ 
+
+ YBar(1:NData,1)=0.0;
+ for mm=1:NDims*Order+1
+    YBar(1:NData,1)=YBar(1:NData,1)+WW(1:NData,mm).*CoeffR(mm,1);
+ end
+
+
+% YBar(1:NData,1)=0.0;
+% for nn=1:NDims
+%     YBar(1:NData,1)=YBar(1:NData,1)+Xin(1:NData,nn); 
+% end
+% %YBar contains conditional expected value of Y(t2) but
+% %the above calculation of conditional value would work only
+% %for SDEs that are a martingale. We put conditional expected 
+% %value equal to sum of starting values of X's.
+% %When SDes are not martinglaes, you would have to do a regression here
+% %and replace above with regression function.
+
+
+%YBar is absorbed in X's vector below
+
+Xin(1:NData,NDims+1)=YBar(1:NData,1);
+
+
+[c0(NDims+1),c(1:Order,NDims+1),FittedMoments,Zx(:,NDims+1)] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Xin(1:NData,NDims+1),ZI);%,XCoeffZ(2:Order+1));
+
+ XCoeffZ(1,NDims+1)=c0(NDims+1);
+ XCoeffZ(2:Order+1,NDims+1)=c(1:Order,NDims+1);
+ 
+[XCoeffH(1:Order+1,NDims+1)] = ConvertZSeriesToHermiteSeriesNew(XCoeffZ(1:Order+1,NDims+1),Order);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+ for pp=1:Order+1
+     YrMu(pp)=sum(Yin(1:NData).^pp)/NData;
+ end
+ %YDataMedian=(Yin(NData/2)+Yin(NData/2+1))/2;
+ YDataMedian=(Yin(NData/2-2)+Yin(NData/2-1)+Yin(NData/2)+Yin(NData/2+1)+Yin(NData/2+2)+Yin(NData/2+3))/6;
+ 
+ %[c0,c(1:Order),FittedMoments] = ZSeriesCoeffsFromMomentsIterWithMedian(YrMu(:),YDataMedian);
+ [c0,c(1:Order),FittedMoments,Zy] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Yin(1:NData),ZI);%,XCoeffZ(2:Order+1));
+
+ 
+str=input("Look at data results ofY");
+ YCoeffZ(1)=c0;
+ YCoeffZ(2:Order+1)=c(1:Order);
+ 
+ [YCoeffH(1:Order+1)] = ConvertZSeriesToHermiteSeriesNew(YCoeffZ(1:Order+1),Order);
+ %ConvertZSeriesToHermiteSeriesNew
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [c0,c,FittedMoments,Zx] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Xin,ZI)
+%The above function takes data as input.
+%And returns Z-series Coeffs upto 7th power of Z as
+%Y=c0+c(1)*Z+c(2)*Z^2+c(3)*Z^3+c(4)*Z^4+c(5)*Z^5+c(6)*Z^6+c(7)*Z^7
+%Fitted Moments are raw moments of the Z-series density and usually are exactly
+%the same as input raw moments rMu(1:8).i.e  FittedMoments(1:8)==rMu(1:8)
+%with high precision.
+
+
+Order=7;
+
+Ndata=length(Xin);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+for mm=1:Order+1
+    rMu(mm)=sum(Xin(:).^mm)/Ndata;
+end
+
+for nn=1:Ndata
+    Xs(nn)=(Xin(nn)-rMu(1))./sqrt(rMu(2)-rMu(1).^2);
+end
+
+for mm=1:Order+1
+    sMu1(mm)=sum(Xs(:).^mm)/Ndata;
+end
+
+Xsorted=sort(Xs);
+
+StandardizedMedian=(Xsorted(Ndata/2)+Xsorted(Ndata/2+1))/2;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+SeriesOrder=Order;
+%SeriesOrder=7;    %Z-series till 7th power. hardcoded here cannot chagne.
+mOrder=Order+1;         %Number of raw moments in calibration. hardcoded here cannot chagne.      
+%Order=7;
+NMoments=mOrder;
+                  %Find central Moments from raw moments  
+[Mu1,cMu] = ConvertRawMomentsToCentralMoments(rMu,mOrder);
+                  %Find standardized Moments from central moments  
+sMu(1)=0;
+sMu(2)=1;
+sMu(3)=cMu(3)/cMu(2).^1.5;
+sMu(4)=cMu(4)/cMu(2).^2.0;
+sMu(5)=cMu(5)/cMu(2).^2.5;
+sMu(6)=cMu(6)/cMu(2).^3.0;
+sMu(7)=cMu(7)/cMu(2).^3.5;
+sMu(8)=cMu(8)/cMu(2).^4.0;
+% sMu(9)=cMu(9)/cMu(2).^4.50;
+% sMu(10)=cMu(10)/cMu(2).^5.0;
+% sMu(11)=cMu(11)/cMu(2).^5.50;
+% sMu(12)=cMu(12)/cMu(2).^6.0;
+% sMu(13)=cMu(13)/cMu(2).^6.50;
+% sMu(14)=cMu(14)/cMu(2).^7.0;
+% sMu(15)=cMu(15)/cMu(2).^7.50;
+% sMu(16)=cMu(16)/cMu(2).^8.0;
+
+
+
+%sMu
+%sMu1
+
+%str=input("Look at comparison of standardized moments:");
+
+
+%[cGuess,Zx] = CalculateHermiteSeriesFromData02(Xs,Order,ZI); 
+[cGuess,Zx] = CalculateZSeriesFromData02GivenMedian(Xs,Order,ZI);
+
+wm(1:Order+1)=1;
+for mm=Order+1:-1:2
+    wm(mm-1)=wm(mm)*(mm+1).^3;
+end
+
+
+MaxIter=750;
+
+%[cGuess,ObjBest] = ZSeries1DCoeffsIterativeForGuess(cGuess,sMu,Order,MaxIter,wm);
+%[cGuess(1),cGuess(2:8),FittedMoments] = ZSeriesCoeffsFromMomentsIterWithMedian02(rMu,DataMedian)
+
+%[cGuess,ObjBest] = ZSeries1DCoeffsIterativeForGuessMedianW(cGuess,sMu,Order,MaxIter,wm,StandardizedMedian);
+
+
+                  %Please experiment and play around.  
+bGuess(1:Order)=cGuess(2:Order+1);    %We have assigned initial values of coefficients 
+
+if(Order==7)
+c0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6));
+c(1:7)=bGuess(1:7);
+
+end
+
+
+% if(Order==15)
+% c0=-(bGuess(2)+3*bGuess(4)+15*bGuess(6)+105*bGuess(8)+945*bGuess(10)+945*11*bGuess(12)+945*11*13*bGuess(14));
+% c(1:15)=bGuess(1:15);
+% 
+% end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Make sure you do not comment the lines below
+
+c0=c0*sqrt(cMu(2)); %convert from standardized to central moments
+c=c*sqrt(cMu(2));   %convert from standardized to central moments
+
+c0=c0+Mu1;          %convert from central to raw moments by adding mean.
+
+[FittedMoments] = CalculateMomentsOfZSeries(c0,c,SeriesOrder,NMoments);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Please Uncomment this if you want to see a comparison of input moments and
+%fitted moments
+rMu
+FittedMoments
+str=input('Look at comparison of fitted moments with input moments: Warning: Large Mismatch implies that many results would be off');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%COMMENT lines below if you do not want to see the density of new Z-series random variable with
+%fitted moments.
+%First calculate normal random variable on a grid below
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=70*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z
+%str=input('Look at Z');
+%Now calculate Y as a function of normal random variable.
+Y(1:Nn)=c0;
+for nn=1:7
+    Y(1:Nn)=Y(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Now take change of densities derivative of Y with respect to normal
+DfY(1:Nn)=0;
+for nn=2:Nn-1
+    DfY(nn) = (Y(nn + 1) - Y(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+DfY(Nn)=DfY(Nn-1);
+DfY(1)=DfY(2);
+
+%Now calculate the density of Y from density of normal random variable
+%using change of probability derivative.
+pY(1:Nn)=0;
+for nn = 1:Nn    
+    pY(nn) = (normpdf(Z(nn),0, 1))/abs(DfY(nn));
+end
+
+plot(Y(1:Nn),pY(1:Nn),'b');
+title('Density of the Z-Series Variable with Fitted Moments');
+
+
+
+
+
+str=input('Look at the density of Z-series random variable')
+
+clf;
+plot(Y(1:Nn),pY(1:Nn),'b');
+
+clf;
+plot(Z(1:Nn),Y(1:Nn),'b');
+
+
+str=input('Look at the graph of Z-series random variable Vs Z itself')
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [bn] = FindInitialGuessForNewtonUnivariate(Zy,Zx,NDims,paths,Order)
+
+Var(1:Order)=0.0;
+
+for hh=1:Order
+    WW(1:paths,1)=1;
+    for kk1=1:NDims
+        WW(1:paths,kk1+1)=Zx(1:paths,kk1).^hh;
+    end
+    SS=NDims+1;
+    
+    Ymu(1:paths,1)=Zy(1:paths).^hh;
+
+    WWW=(WW'*WW);
+    
+    CoeffR=(WWW)$WW'*Ymu);
+    
+    cn(1:SS,hh)=CoeffR(1:SS,1);
+    
+    bn(1:SS,hh)=sign(cn(1:SS,hh)).*(abs(cn(1:SS,hh))).^(1/hh);
+    
+    for ss=2:SS
+        Var(hh)=Var(hh)+bn(ss,hh).^2;
+    end
+    
+    bn(1:SS-1,hh)=bn(2:SS,hh);
+    
+    bn(SS,hh)=abs(sqrt(1-Var(hh)));
+    
+
+    
+  %  bn
+    
+  %  hh
+  %  str=input("Look at bn inside the loop");
+    
+    
+    
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Coeff,Zy] = CalculateZSeriesFromData02GivenMedian(Yin,Order,ZI)
+
+Ndata=length(Yin);
+
+MeanYin=sum(Yin(1:Ndata))/Ndata;
+Ym(1:Ndata)=Yin(1:Ndata)-MeanYin;
+YmVar=sum(Ym(1:Ndata).^2)/Ndata;
+Y(1:Ndata)=Ym(1:Ndata)/sqrt(YmVar);
+
+[Yss,I]=sort(Y(1:Ndata));
+
+DataMedian=(Yss(Ndata/2)+Yss(Ndata/2+1))/2;
+
+Ys=Yss-DataMedian;
+
+for hh=1:Order
+    W(1:Ndata,hh)=ZI(1:Ndata).^(hh);
+end
+
+
+Ymu(1:Ndata,1)=Ys(1:Ndata);
+
+WW=(W'*W);
+
+coeff=(WW)$W'*Ymu);
+
+
+%Store in coefficietns array of all random varaibles
+Coeff(2:Order+1)= coeff(1:Order,1);
+Coeff(1)=DataMedian;
+%Store the associated Z in Z-array of all coefficients.   
+Zy(I(1:Ndata))=W(1:Ndata,1);
+
+
+Coeff(1:Order+1)=Coeff(1:Order+1).*sqrt(YmVar);
+Coeff(1)=Coeff(1)+MeanYin;
+
+clf;
+PlotZSeriesDensity(Coeff(1),Coeff(2:Order+1),'r');
+hold on
+
+NoOfBins=150;
+MaxCutOff=20;
+[XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(Yin,Ndata,NoOfBins,MaxCutOff );
+plot(IndexOut(1:IndexMax),XDensity(1:IndexMax),'b');
+
+str=input("Look at comparison of Density");
+
+
+end
+
+
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [CoeffR] = RegressYOnXGivenZx(Y,Zx,NData,Dim,Order)
+
+
+
+WW(1:NData,1:Order+1)=EvalHermiteArrayH0(Zx(1:NData,1),Order);
+
+
+%WW
+
+%str=input("Show me match of first EvalHermite Array0 with python")
+
+
+
+for mm=2:Dim
+    WW(1:NData,(mm-1)*Order+2:mm*Order+1)=EvalHermiteArrayH1(Zx(1:NData,mm),Order);
+    WW0(1:NData,1:Order)=EvalHermiteArrayH1(Zx(1:NData,mm),Order);
+    %WW0
+    %mm
+    
+ 
+    %str=input("Compare with EvalHermiteArray1")
+    
+    
+end
+
+
+
+
+Ymu(1:NData,1)=Y(1:NData);
+
+WWW=(WW'*WW);
+
+for mm=1:Dim*Order+1
+    WWW(mm,mm)=WWW(mm,mm)+.000001;
+end
+
+CoeffR=(WWW)$WW'*Ymu);
+
+
+WWW;
+
+str=input("Look at WWW--1111---222-3333");
+
+
+
+
+
+
+% 
+% for nn=1:NData
+%     YProjected(nn,1)=0.0;
+%    for mm=1:Dim*Order+1
+%    YProjected(nn,1)=YProjected(nn,1)+WW(nn,mm).*CoeffR(mm,1);    
+%     
+%    end
+% end
+% 
+%  STot=sum((Ymu(1:NData,1)-sum(Ymu(1:NData,1))/NData).^2);
+%  SRes=sum((Ymu(1:NData,1)-YProjected(1:NData,1)).^2);
+% % 
+%  RSquared=1-SRes/STot;
+% % 
+%  RSquared
+% % 
+% YRight=0.0;
+% YWrong=0.0;
+% YPRExp=0.0;
+% YNRExp=0.0;
+% YPWExp=0.0;
+% YNWExp=0.0;
+% for nn=1:NData
+%     
+%    for mm=1:Dim*Order+1
+%    YProjected(nn,1)=YProjected(nn,1)+WW(nn,mm).*CoeffR(mm,1);    
+%    end
+%    if(Ymu(nn,1)>=0)
+%        if(YProjected(nn,1)>=0)
+%            YRight=YRight+1;
+%            YPRExp=YPRExp+(Ymu(nn,1));
+%        else
+%            YWrong=YWrong+1;
+%            YPWExp=YPWExp+(Ymu(nn,1));
+%        end
+%    end
+%    if(Ymu(nn,1)<0)
+%        if(YProjected(nn,1)<0)
+%            YRight=YRight+1;
+%            YNRExp=YNRExp+(Ymu(nn,1));
+%        else
+%            YWrong=YWrong+1;
+%            YNWExp=YNWExp+Ymu(nn,1);
+%        end
+%    end
+% end
+% 
+% YRight
+% YWrong
+% 
+% YPRExp
+% YNRExp
+% 
+% YPWExp
+% YNWExp
+% 
+% abs(YPRExp)+abs(YNRExp)-abs(YPWExp)-abs(YNWExp)
+% 
+% str=input("Look at RSquared--0002")
+% 
+% 
+% 
+%  mdl=fitlm(WW,Ymu)    
+%     
+% str=input("Matlab's first regression")    
+% 
+% 
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [cnOptim] = OptimizeCorrFromHermitesNewtonNewAlgoZytilde(Zy,Zx,cn,NDims,paths,Order)
+
+
+NData=paths;
+
+%Order;Max Order of Hermites Calibration is seven.
+%Zx is paths X K array for joint values of Zx arranged for "paths" number of observations
+%Zy is paths X 1 array for Zy associated with each obsewrvation.
+
+%The function below calculates the first hermites till "Order" from data of
+%Zy. WHy is (paths X K) array. kth hermite associated with pth observation appears in
+%WHy(p,k)
+[WHy] = EvalHermiteArrayH1(Zy,Order);
+
+
+%The loop below repeats itself for optimization of correlation coefficients 
+%associated with highest power in each hermite. It repeatrs over all hermites one by one. 
+for nH=1:Order
+    WHyn(1:paths,1)=WHy(1:paths,nH);
+    %WHyn(1:paths,1)=Zy(1:paths).^(nH);
+    
+    if(nH==1)
+        WHy0=WHyn;
+        
+        Ymu(1:NData,1)=Zy';
+        
+        W=0;
+
+        W(1:NData,1)=Zx(1:NData,1);
+        W(1:NData,2)=Zx(1:NData,2);
+        W(1:NData,3)=Zx(1:NData,3);
+        W(1:NData,4)=Zx(1:NData,4);
+
+        WW=(W'*W);
+
+        coeff0=(WW)$W'*Ymu);
+
+        Zy2(1:paths,1)=Zy(1:paths)'-coeff0(1,1).*Zx(1:paths,1)-coeff0(2,1).*Zx(1:paths,2)-coeff0(3,1).*Zx(1:paths,3)-coeff0(4,1).*Zx(1:paths,4);
+
+        [ZI] = MomentMatchedStandardNormalDiscretizedDensity(NData);
+        
+        [c0,c(1:Order),FittedMoments,Zytilde0] = CalculateZSeriesDensityFromRawMoments02FromGuess02W(Zy2(1:NData,1),ZI);%,XCoeffZ(2:Order+1));
+ 
+        Zytilde(1:NData,1)=Zytilde0(1:NData)';
+        
+        
+        W=0;
+
+        W(1:NData,1)=Zx(1:NData,1);
+        W(1:NData,2)=Zx(1:NData,2);
+        W(1:NData,3)=Zx(1:NData,3);
+        W(1:NData,4)=Zx(1:NData,4);
+        W(1:NData,5)=Zytilde(1:NData,1);
+
+        WW=(W'*W);
+
+        coeff0=(WW)$W'*Ymu);
+        
+        
+        cnOptim(1:NDims+1,1)=coeff0(1:NDims+1,1);
+        
+    end
+
+    
+    if(nH>=2)
+        
+        [dHermite] = EvaluatePrevGaussPowersForHCorrsNew02(nH,cnOptim,Zx,Zytilde,NDims,paths);
+        
+        %dHermite
+        
+        %str=input
+        
+        WHy0=WHyn-dHermite;
+        
+        cn(1:NDims+1,1:nH-1)=cnOptim(1:NDims+1,1:nH-1);
+            
+    
+        Iterations=100;
+        
+        [bnbest,InitialObj,FinalObj] = OptimizenthHermiteGaussianWithNewtonNew01(cn,Zx,Zytilde,WHy0,nH,NDims,paths,Iterations)
+
+    
+        cnOptim(1:NDims+1,nH)=bnbest(1:NDims+1,1);
+    
+        InitialObj
+        FinalObj
+        str=input("Look at variables");
+
+    
+    end
+     
+end
+
+% cnOptim
+% InitialObj %Obj function at start of optimization of correlation coefficients for nH-th hermite
+% FinalObj%Obj function after optimization of correlation coefficients for nH-th hermite
+% str=input("Look at initial and Final Objs");
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [dHermite] = EvaluatePrevGaussPowersForHCorrsNew02(nH,ccn,Zx,Zytilde,NDims,paths)
+%OK
+%This function clculates the contribution of lower Gaussian powers of sum
+%of K correlated Zx's towards the value of higher hermites. Please note
+%that sign is reversed so they are basically added in the calling function
+%to subtract them.
+if(nH==1)
+    dHermite(1:paths,1)=0.0;
+    
+end
+
+if(nH==2)
+    dHermite(1:paths,1)=-1.0;
+    
+end
+
+if(nH==3)
+    nG1=1;
+    
+    [GaussPH1] = EvaluatenthGPowerGaussCorrs(ccn,nG1,Zx,Zytilde,NDims,paths);
+    dHermite(1:paths,1)=-3*GaussPH1(1:paths,1);
+       
+
+end
+
+if(nH==4)
+     nG1=2;
+    [GaussPH1] = EvaluatenthGPowerGaussCorrs(ccn,nG1,Zx,Zytilde,NDims,paths);
+    
+    dHermite(1:paths,1)=-6*GaussPH1(1:paths,1)+3;
+    
+     
+end
+
+if(nH==5)
+    nG1=1;
+    [GaussPH1] = EvaluatenthGPowerGaussCorrs(ccn,nG1,Zx,Zytilde,NDims,paths);
+    
+    nG2=3;
+    [GaussPH2] = EvaluatenthGPowerGaussCorrs(ccn,nG2,Zx,Zytilde,NDims,paths);
+    
+    dHermite(1:paths,1)=-10*GaussPH2(1:paths,1)+15*GaussPH1(1:paths,1);
+    
+      
+end
+
+if(nH==6)
+    nG1=2;
+     [GaussPH1] = EvaluatenthGPowerGaussCorrs(ccn,nG1,Zx,Zytilde,NDims,paths);
+    
+    
+    nG2=4;
+     [GaussPH2] = EvaluatenthGPowerGaussCorrs(ccn,nG2,Zx,Zytilde,NDims,paths);
+    
+    dHermite(1:paths,1)=-15*GaussPH2(1:paths,1)+45*GaussPH1(1:paths,1)-15;
+    
+end
+
+if(nH==7)
+    nG1=1;
+     [GaussPH1] = EvaluatenthGPowerGaussCorrs(ccn,nG1,Zx,Zytilde,NDims,paths);
+    
+    nG2=3;
+     [GaussPH2] = EvaluatenthGPowerGaussCorrs(ccn,nG2,Zx,Zytilde,NDims,paths);
+    
+    nG3=5;
+     [GaussPH3] = EvaluatenthGPowerGaussCorrs(ccn,nG3,Zx,Zytilde,NDims,paths);
+    
+    dHermite(1:paths,1)=-21*GaussPH3(1:paths,1)+105*GaussPH2(1:paths,1)-105*GaussPH1(1:paths,1);
+    
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [GaussPH] = EvaluatenthGPowerGaussCorrs(ccn,nH,Zx,Zytilde,NDims,paths)
+%OK
+
+%this function calculates the binomial expansion terms and their combined
+%expectations. The binaomial expansion is over G and zeta Z-tilde{y} as
+%described in Wilmott post. This function also calculates the sensitivities
+%of the Gaussian power terms expanded as binomial with respect to
+%correlation parameters.
+
+
+KK=NDims;
+
+GG1(1:paths,1)=0.0;
+%Below calculate the binomial expansion related to nH-th power of the sum
+%of correlated Gaussians
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+ccn(kk,nH).*Zx(1:paths,kk);
+end
+
+GG1(1:paths,1)=GG1(1:paths,1)+ccn(KK+1,nH).*Zytilde(1:paths,1);
+
+GaussPH=GG1(1:paths,1).^(nH);
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [bnbest,InitialObj,FinalObj] = OptimizenthHermiteGaussianWithNewtonNew01(cn,Zx,Zytilde,WHy0,nH,NDims,paths,Iterations)
+
+%Why0 in array of nth Hermite Values
+
+KK=NDims;
+
+bn(1:NDims+1,1)=cn(1:NDims+1,nH);
+%Below, Calculate the model contribution of lower Gaussian powers that have
+%already been calculated through associated lower hermites towards current
+%hermite polynomial.
+%[dHermite] = EvaluatePrevGaussPowersForHCorrs(nH,cn,Zx,NDims,paths,EZ);
+% [dHermite] = EvaluatePrevGaussPowersForHCorrsNew02(nH,ccn,Zx,Zytilde,NDims,paths);
+% 
+% 
+% %Remove the model contribution of lower Gaussian powers from data value of
+% %current hermite.
+% WHy0=WHyn+dHermite;
+
+
+
+%Below calculate the combined value of K correlated variables as described
+%on Wilmott post and Calculate G.
+GG1(1:paths,1)=0.0;
+for kk=1:KK
+    GG1(1:paths,1)=GG1(1:paths,1)+bn(kk,1).*Zx(1:paths,kk);
+end
+
+GG1(1:paths,1)=GG1(1:paths,1)+bn(KK+1,1).*Zytilde(1:paths,1);
+
+GaussPH=GG1(1:paths,1).^(nH);
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Starting ObjBest and calculations here
+%cnbest here
+bnbest(1:NDims+1,1)=bn(1:NDims+1);
+
+ObjSqrdBestNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+
+InitialObj=ObjSqrdBestNewton;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Below, enter the Newton loop.
+
+StallCount=0;
+iter=0;
+Mul=.25;
+ContinueIter=1;
+while ((iter 100)&&(StallCount>=5))
+        ContinueIter=0;
+    end
+%while ((iter =35)&&(rem(iter,4)==0))
+                StallCount=StallCount+1;
+            end
+            Mul=Mul*.75
+        
+        end
+        
+        ObjSqrdBestNewton=ObjSqrdNewton;
+        bnbest=bbn;
+    
+    else
+        if((iter>=35)&&(rem(iter,4)==0))
+            StallCount=StallCount+1;
+        end
+    %%%%change-step or Newton parameters
+    end
+    
+ObjSqrdBestNewton
+ObjSqrdNewton
+bnbest
+iter
+
+%str=input("Look at the solution");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5    
+
+end
+
+FinalObj=ObjSqrdBestNewton;
+
+
+
+    GG1(1:paths,1)=0.0;
+    for kk=1:KK
+        GG1(1:paths,1)=GG1(1:paths,1)+bnbest(kk,1).*Zx(1:paths,kk);
+    end
+
+    GG1(1:paths,1)=GG1(1:paths,1)+bnbest(KK+1,1).*Zytilde(1:paths,1);
+
+    GaussPH=GG1(1:paths,1).^(nH);
+
+    ObjSqrdNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+    
+    %ObjFourNewton=sum((GaussPH(:,1)-WHy0(:,1)).^2)/paths;
+
+    
+    ObjSqrdNewton
+    
+    
+    M2Model=sum(GaussPH(:,1).^2)/paths
+    
+    M2Gauss=sum(WHy0(:,1).^2)/paths
+    
+    
+    nH
+    str=input("Look at the difference of second moment on nth hermite");
+
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [c] = ConvertHermiteSeriesToZSeries01(ch,Order)
+
+c(1:Order+1)=0;
+[Hz] = HermitePoly(Order);
+for nn=1:Order+1
+    for mm=1:Order+1
+        c(mm)=c(mm)+ch(nn).*Hz(nn,mm);
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [mu1,cMu] = ConvertRawMomentsToCentralMoments(Mu,mOrder)
+
+%cu
+%mu
+% %mOrder
+%str=input('Look at numbers');
+mu1=Mu(1);
+for mm=2:mOrder
+    cMu(mm)=0;
+    for jj=0:mm
+        if(jj==0)
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*1*mu1.^(mm-jj);
+            
+        else
+            cMu(mm)=cMu(mm)+ (-1)^(mm-jj).*factorial(mm)/factorial(jj)/factorial(mm-jj)*Mu(jj)*mu1.^(mm-jj);
+            
+        end
+    end
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew] = MomentMatchedStandardNormalDiscretizedDensity(Ndata)
+
+[ZnNew] = StandardNormalIdealDesity02(Ndata,1);
+
+if((Ndata=30))
+    MOrder=6;
+
+
+alpha(1) =1.002706567896411;
+alpha(3)=-0.001341612601616;
+alpha(5)=0.000431803496557;
+
+
+elseif((Ndata>=250)&&(Ndata=2000)&&(Ndata=50000)&&(Ndata=150000)&&(Ndata=250000))
+    MOrder=12;  
+    
+    
+    alpha(1) =1.000899195470733;
+    alpha(3)=-0.000414380757501;
+  alpha(5)=0.000161271457889;
+  alpha(7)=0.000037987998807;
+  alpha(9)=0;%.000016308099635;
+  alpha(11)=0.;%000002045556572;                   0
+  alpha(13)=0;%.000000157715037;
+end
+
+
+%[ZnNew,alpha,Moment] = MatchMomentParametersOfIdealZhalfNew01(ZnNew,MOrder);
+
+% alpha(1)=0.998665620502348;
+% alpha(3)=0.000729818387735;
+% alpha(5)=0.000026530286747;
+% alpha(7)=0.000021718051556;
+% alpha(9)=0.000008734265559;
+% alpha(11)=-0.000000362716896;                  0
+% alpha(13)=-0.000000010818264;
+
+
+
+
+[ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(ZnNew,alpha,MOrder);
+
+
+% alpha
+% 
+% str=input("Look at alpha");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew,alpha] = NewtonRootSearchForMatchingMomentsOfGaussianVariates01(Zn,alpha,MOrder)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+Ndata=length(Zn);
+ 
+ %MOrder=12;
+ HOrder=MOrder-2;
+ 
+ EZ(1)=0;
+EZ(2)=1;
+for nn=3:MOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %EZ(nn)
+    end
+end
+
+TMoment(1:MOrder)=EZ(1:MOrder);
+ %CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder);
+ [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+ 
+% F
+% dF
+% str=input("Look at results");
+ 
+ 
+
+w(MOrder)=1;
+for nn=MOrder-2:-2:2
+w(nn)=w(nn+2).*(nn+2)*(nn+1);%*.5;    
+end
+%w(2)=w(2)*1024;
+%w(8)=w(8)*2;
+%w(10)=w(10)*sqrt(2);
+%w
+%str=input("Look at weights--12")
+
+
+[ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+end
+
+
+ObjFuncBest=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+%str=input("Look at ObjFuncBest");
+%b0Best=c0;
+alphaBest(1:HOrder+1)=alpha(1:HOrder+1);
+
+
+    
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+    
+
+nn=0;
+while((nn.000000000001) || (abs(F(2,1))>.000000000001) || (abs(F(3,1))>.000000000001)))% || (abs(F(4,1))>.00000000001)))%|| (abs(F(5,1))>.00000000001)))%|| (abs(F(6,1))>.00000000001)))%|| (abs(F(7,1))>.00000000001)|| (abs(F(8,1))>.00000000001)  ))
+
+    nn=nn+1;
+    %Below Newton matrix equation to improve the Z-series coefficients guess at previous step.
+    da=da-dF\F;
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        alpha(mm-1)=da(qq,1);
+    end
+    %b(1:SeriesOrder)=da(2:SeriesOrder+1,1);
+    
+ 
+    
+    [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+    
+    for mm=1:MOrder
+        Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    end
+
+  
+ 
+    ObjFuncNew=CalculateObjMoment(EZ,Moment,w,MOrder);
+
+ObjFuncBest
+ObjFuncNew
+%str=input("Look at objfunction--11--");
+
+%alpha
+
+%str=input("Look at alpha");
+
+    if(ObjFuncBest>ObjFuncNew)
+      
+       ObjFuncBest=ObjFuncNew;
+       alphaBest=alpha;
+       %bBest(1:SeriesOrder)=b(1:SeriesOrder);
+    end
+    
+    [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment);
+
+
+    qq=0;
+    for mm=2:2:MOrder
+        qq=qq+1;
+        da(qq,1)=alpha(mm-1);
+    end
+
+end
+alpha=alphaBest;%Best;
+
+
+   [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder);
+ 
+ 
+end
+```
+
+.
+
+.
+
+.
+
+
+```
+function [F,dF] = CalculateMomentsAndDerivativesOfIdealNormalGrid(Zn,alpha,MOrder,HOrder,TMoment)
+
+
+
+Ndata=length(Zn);
+
+
+
+[Hz] = HermitePoly(HOrder);
+
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    %Ndata
+    %nn
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+
+for mm=1:MOrder
+    Moment(mm)=sum(ZnNew(1:Ndata).^mm)/Ndata;
+    for nn=2:2:HOrder
+        HermiteZ(1:Ndata)=0;
+        for kk=1:2:(nn+1)
+            HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,kk).*ZZ(kk,1:Ndata);
+        end
+        dG(mm,nn)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1).*HermiteZ(1:Ndata))/Ndata;
+        
+    end
+    
+    dG0(mm)=sum(Zn(1:Ndata).^(mm).*mm.*HermiteSeries(1:Ndata).^(mm-1))/Ndata;
+    
+    G(mm,1)=Moment(mm)-TMoment(mm);
+end
+
+%dG0
+
+%str=input("Look at dG0");
+QQ=round(MOrder/2);
+qq=0;
+for nn=2:2:MOrder
+qq=qq+1;
+F(qq,1)=G(nn,1);
+dF(qq,1)=dG0(nn);
+dF(qq,2:QQ)=dG(nn,2:2:(2+(QQ-2)*2));
+end
+
+% F(1,1)=G(2,1);
+% F(2,1)=G(4,1);
+% F(3,1)=G(6,1);
+% F(4,1)=G(8,1);
+% F(5,1)=G(10,1);
+% F(6,1)=G(12,1);
+% 
+% dF(1,1)=dG0(2);
+% dF(2,1)=dG0(4);
+% dF(3,1)=dG0(6);
+% dF(4,1)=dG0(8);
+% dF(5,1)=dG0(10);
+% dF(6,1)=dG0(12);
+% 
+% dF(1,2)=dG(2,2);
+% dF(2,2)=dG(4,2);
+% dF(3,2)=dG(6,2);
+% dF(4,2)=dG(8,2);
+% dF(5,2)=dG(10,2);
+% dF(6,2)=dG(12,2);
+% 
+% dF(1,3)=dG(2,4);
+% dF(2,3)=dG(4,4);
+% dF(3,3)=dG(6,4);
+% dF(4,3)=dG(8,4);
+% dF(5,3)=dG(10,4);
+% dF(6,3)=dG(12,4);
+% 
+% dF(1,4)=dG(2,6);
+% dF(2,4)=dG(4,6);
+% dF(3,4)=dG(6,6);
+% dF(4,4)=dG(8,6);
+% dF(5,4)=dG(10,6);
+% dF(6,4)=dG(12,6);
+% 
+% dF(1,5)=dG(2,8);
+% dF(2,5)=dG(4,8);
+% dF(3,5)=dG(6,8);
+% dF(4,5)=dG(8,8);
+% dF(5,5)=dG(10,8);
+% dF(6,5)=dG(12,8);
+% 
+% dF(1,6)=dG(2,10);
+% dF(2,6)=dG(4,10);
+% dF(3,6)=dG(6,10);
+% dF(4,6)=dG(8,10);
+% dF(5,6)=dG(10,10);
+% dF(6,6)=dG(12,10);
+%Moment
+
+%dMoment
+
+% F
+% dF
+% dG
+% Moment
+% 
+% str=input("Look at moments and F");
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ObjMomentOut] = CalculateObjMoment(Moment0,Moment,w,MOrder)
+
+ObjMomentOut=0;
+for nn=1:MOrder
+    ObjMomentOut=ObjMomentOut+(Moment(nn)-Moment0(nn)).^2.*w(nn);
+end
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Hz] = HermitePoly(Order)
+Hz(1:Order+1,1:Order+1)=0.0;
+Hz(1,1)=1.0;
+for k=1:Order
+    for m=1:k
+       Hz(k+1,m+1)=Hz(k,m);
+       if (m>1)
+            Hz(k+1,m-1)=Hz(k+1,m-1)-(m-1)*Hz(k,m);
+       end
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [ZnNew] = CalculateZnAfterHermiteSeriesMultiplication(Zn,alpha,MOrder)
+
+HOrder=MOrder-2;
+
+Ndata=length(Zn);
+
+[Hz] = HermitePoly(HOrder);
+
+for nn=1:2:HOrder+1
+    ZZ(nn,1:Ndata)=Zn(1:Ndata).^(nn-1);
+end
+
+HermiteSeries(1:Ndata)=alpha(1);
+HermiteZ(1:Ndata,1:HOrder)=0;
+for nn=2:2:HOrder
+    Ndata;
+    nn;
+    HermiteZ(1:Ndata)=0;
+    for mm=1:2:(nn+1)
+        %HermiteZ(nn,:)=HermiteZ(nn,:)+Hz(nn+1,mm).*ZZ(mm,:);
+        HermiteZ(1:Ndata)=HermiteZ(1:Ndata)+Hz(nn+1,mm).*ZZ(mm,1:Ndata);
+    end
+    HermiteSeries(1:Ndata)=HermiteSeries(1:Ndata)+ alpha(nn+1).*HermiteZ(1:Ndata);
+end
+    
+ZnNew(1:Ndata)=Zn(1:Ndata).*HermiteSeries(1:Ndata);
+
+% Moment2=sum(ZnNew(1:Ndata).^2)*1/Ndata
+% Moment4=sum(ZnNew(1:Ndata).^4)*1/Ndata
+% Moment6=sum(ZnNew(1:Ndata).^6)*1/Ndata        
+% Moment8=sum(ZnNew(1:Ndata).^8)*1/Ndata
+% Moment10=sum(ZnNew(1:Ndata).^10)*1/Ndata
+% Moment12=sum(ZnNew(1:Ndata).^12)*1/Ndata 
+% Moment14=sum(ZnNew(1:Ndata).^14)*1/Ndata 
+
+
+
+plot((1:Ndata),Zn(1:Ndata),'g',(1:Ndata),ZnNew(1:Ndata),'r')
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [XDensity,IndexOut,IndexMax] = MakeDensityFromSimulation_Infiniti_NEW(X,Paths,NoOfBins,MaxCutOff )
+%Processes monte carlo paths to return a series Xdensity as a function of IndexOut. IndexMax is the maximum value of index.
+% 
+
+
+Xmin=0;
+Xmax=0;
+for p=1:Paths
+if(X(p)>MaxCutOff)
+X(p)=MaxCutOff;
+end
+%if(X(p)real(X(p)))
+Xmin=real(X(p));
+end
+if(XmaxIndexMax)
+index=IndexMax;
+end
+
+XDensity(index)=XDensity(index)+1.0/Paths/BinSize;
+
+end
+
+IndexOut(1:IndexMax)=Xmin+(0:(IndexMax-1))*BinSize;
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [Z] = CalculateZgivenXAndHSeriesCoeffs(X,Coeff,Order)
+
+%Finds Z given an array of X-values and Coeffs of hermite series.
+
+Z(1:length(X))=0;
+Hz=HermitePoly(Order);
+median=0;
+for nn=1:Order+1
+    median=median+Coeff(nn).*Hz(nn,1);
+end
+
+for nn=1:length(X)
+    Z(nn)=CalculateZgivenXAndHermiteSeriesBisection2(X(nn),Coeff,median,Hz,Order);
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Z]=CalculateZgivenXAndHermiteSeriesBisection2(Y,coeff,median,Hz,Order)
+%[Z]=CalculateZgivenXAndZSeriesBisection2C5(Y,c0,c);
+
+%This program takes a value of Y as input and returns the corresponding 
+%value of Z given the parameters of the Z-series.
+%It first see if the value of Y is greater than median or smaller than
+%median. If the value of Y is greater than median Z has to be greater than
+%zero and if the value of Y is smaller than median Z has to be negative.
+% Once we know whether Z is greater than Z or smaller than Zero, we divide
+% the program into two repeated if loops, one for Z greater than zero and 
+%one for Z smaller than zero. 
+%If Z is positive, we have to assign it a valid band of upper and
+%lower values between which it can be found. 
+%This is done sequentially by calculating Y(.5) at Z=.5, if Y is smaller 
+%than Y(.5), we know that true value of Y will lie between 0 and .5
+%so we assign a lower band value Za=0 and upper band value Zb=.5
+%If however Y is greater than Y(.5), we know that true Z should be larger 
+%than .5 and we again evaluate Y(1) at Z=1, If Y is smaller than Y(1), 
+%we know that true value of Z should be between .5 and 1, and we assign a 
+%lower band value Za=.5 and upper band value of Zb=1. Through repeated 
+%elseif we continue until we find an appropriate band value of Z.
+
+%Once we have determined the upper band value of Zb and lower band value of
+%Za, We find Zmid=(Za+Zb)/2. We then evaluate Y(Zmid) and if Y  Y(Zmid), we assign the lower band value equal to Zmid as Za=Zmid. In a
+% few iterations, this bisection procedure gets extremely close to true
+% value of Z for which Y(Z)=Y
+%EvalHermiteSeriesH0(Coeff,Z,Order,Hz)
+YdefectBest=Y-coeff(1);
+%Z=(Y-coeff(1))/coeff(2);
+ZtryBest=0.0;
+BracketSize=.5;
+if(Y>=median)
+    Ztry=.5;
+    ZtryBefore=0;
+    NotBracketed=1;
+    while((NotBracketed)&&(Ztry Ymid)
+            Za=Zmid;
+        end
+    Z=.5*Za+.5*Zb; %This can be taken out of the loop and does not 
+    %necessarily have to be calculated again and again. Has to be
+    %calculated at least once after the loop to determine the true value of
+    %Z.
+    
+    end
+    Z=ZtryBest;
+    
+end
+
+
+if(Y=-5))
+        [Ytry,dYtrydZ]= EvalHermiteSeriesH0(coeff,Ztry,Order,Hz); 
+        if((Y>= Ytry))
+            Za=Ztry;
+            Zb=ZtryBefore;
+            NotBracketed=0;
+             Ydefect=Y-Ytry;
+            if(abs(Ydefect) Ymid)|| (dYmiddZ<0))
+            Za=Zmid;
+        elseif(Y<  Ymid)
+            Zb=Zmid;
+        end
+    Z=.5*Za+.5*Zb; %This can be taken out of the loop and does not 
+    %necessarily have to be calculated again and again. Has to be
+    %calculated at least once after the loop to determine the true value of
+    %Z.
+    
+    end
+    Z=ZtryBest;
+end
+
+       
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [cH] = ConvertZSeriesToHermiteSeriesNew(c,Order)
+%Order is order of highest hermite.
+b(1:Order+1)=c(1:Order+1);
+[Hz] = HermitePoly(Order);
+if(b(Order+1)~= 0)
+    for nn=Order+1:-1:1
+        cH(nn)=b(nn);
+        if((nn-1)>0)
+            b(1:nn-1)=b(1:nn-1)-cH(nn).*Hz(nn,1:nn-1);
+        end
+    end
+    bH0=cH(1);
+    bH(1:Order)=cH(2:Order+1);
+end
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [c] = ConvertHermiteSeriesToZSeries01(ch,Order)
+
+c(1:Order+1)=0;
+[Hz] = HermitePoly(Order);
+for nn=1:Order+1
+    for mm=1:Order+1
+        c(mm)=c(mm)+ch(nn).*Hz(nn,mm);
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Wh] = EvalHermiteArrayH0(Z,Order)
+
+%Evaluates first Order-th hermites at the array of Z's. If input array of Z
+%has a size of 100 and Order is 4, it will return a 100 X 5 array.
+
+Hz=HermitePoly(Order);
+
+Wh(1:length(Z),1:Order+1)=0;
+for nn=1:Order+1
+    Wh(:,nn)=0;
+    for mm=1:nn
+        Wh(:,nn)=Wh(:,nn)+Hz(nn,mm).*Z(:).^(mm-1);
+    end
+end
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [Wh1] = EvalHermiteArrayH1(Z,Order)
+
+%Evaluates first Order-th hermites at the array of Z's. If input array of Z
+%has a size of 100 and Order is 4, it will return a 100 X 4 array without the first constant.
+
+Hz=HermitePoly(Order);
+
+Wh(1:length(Z),1:Order+1)=0;
+for nn=1:Order+1
+    Wh(:,nn)=0;
+    for mm=1:nn
+        Wh(:,nn)=Wh(:,nn)+Hz(nn,mm).*Z(:).^(mm-1);
+    end
+end
+
+Wh1(:,1:Order)=Wh(:,2:Order+1);
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [Moments] = CalculateMomentsOfZSeries(a0,a,SeriesOrder,NMoments)
+
+
+%aa0=a0;
+%a0=0;% ---1
+
+EZ(1)=0;
+EZ(2)=1;
+%LogEZ(2)=0;
+for nn=3:NMoments*SeriesOrder
+    if rem(nn,2)==1
+        EZ(nn)=0;
+    else
+        EZ(nn)=EZ(nn-2)*(nn-1);
+        %LogEZ(nn)=log(EZ(nn-2))+log(nn-1);
+        %EZ(nn);
+    end
+end
+%EZ
+%EZ(1:30)
+%str=input('Look at numbers')
+a(SeriesOrder+1:SeriesOrder*NMoments+1)=0;
+b0=a0;
+b=a;
+
+
+for mm=1:NMoments
+    if(mm>1)
+        %[b0,b] =SeriesProductLogarithmic(a0,a,b0,b,SeriesOrder*mm);
+        
+        [b0,b] =SeriesProduct(a0,a,b0,b,SeriesOrder*mm);
+        
+        %b0-bb0
+        
+        %b-bb
+        
+        %str=input('Look at two products')
+        
+        
+        b(SeriesOrder*mm+1:SeriesOrder*NMoments+1)=0;
+    end
+   % Logb=log(abs(b));
+   % Signb=sign(b);
+    EXZ(mm,1)=b0;
+    for pp2=1:SeriesOrder*mm
+        if rem(pp2,2)==0
+            %EXZ(mm,1)=EXZ(mm,1)+exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2);
+            EXZ(mm,1)=EXZ(mm,1)+b(pp2).*EZ(pp2);
+ %           b(pp2).*EZ(pp2)
+ %           exp(Logb(pp2)+LogEZ(pp2)).*Signb(pp2)
+ %           mm
+ %           pp2
+            %str=input('Look at moment values')
+        end
+    end
+end
+
+    
+for nn=1:NMoments
+    Moments(nn)=EXZ(nn,1);
+end
+
+
+
+end
+
+
+```
+
+.
+
+.
+
+.
+
+```
+function [c0,c] =SeriesProduct(a0,a,b0,b,SeriesOrder)
+
+
+c0=a0*b0;
+c(1:SeriesOrder)=0.0;
+for nn=1:SeriesOrder
+    c(nn)=c(nn)+a0*b(nn);
+    c(nn)=c(nn)+b0*a(nn);
+    for kk=1:nn-1
+        c(nn)=c(nn)+a(kk)*b(nn-kk);
+    end
+end
+
+end
+```
+
+.
+
+.
+
+.
+
+```
+function [] = PlotZSeriesDensity(c0,c,Color)
+
+Index=length(c);
+
+dNn=.1/2;   % Normal density subdivisions width. would change with number of subdivisions
+Nn=45*4;  % No of normal density subdivisions
+NnMid=((1+Nn)/2)*dNn;
+Z(1:Nn)=(((1:Nn)*dNn)-NnMid);
+%Z
+%str=input('Look at Z');
+%Now calculate Y as a function of normal random variable.
+Y(1:Nn)=c0;
+for nn=1:Index
+    Y(1:Nn)=Y(1:Nn)+c(nn)*Z(1:Nn).^nn;
+end
+
+%Now take change of densities derivative of Y with respect to normal
+DfY(1:Nn)=0;
+for nn=2:Nn-1
+    DfY(nn) = (Y(nn + 1) - Y(nn - 1))/(Z(nn + 1) - Z(nn - 1));
+    %Change of variable derivative for densities
+end
+DfY(Nn)=DfY(Nn-1);
+DfY(1)=DfY(2);
+
+%Now calculate the density of Y from density of normal random variable
+%using change of probability derivative.
+pY(1:Nn)=0;
+for nn = 1:Nn    
+    pY(nn) = (normpdf(Z(nn),0, 1))/abs(DfY(nn));
+end
+Y;
+%clf;
+plot(Y(1:Nn),pY(1:Nn),Color);
+title('Density of the Z-Series Variable with Fitted Moments');
+str=input('Look at density');
+
+% %clf;
+% plot(Z(1:Nn),Y(1:Nn),Color);
+% title('Graph of Z-Series Variable as a function of underlying standard normal');
+% str=input('Look at Graph of Z-Series Variable as a function of underlying standard normal');
+% 
+
+end
+
+
+```
+
+.
+
+.
+
+.
+```
+
+---
+
+## Error 63: Unbalanced $$: 9
+
+**Snippet:** `**Friends, I had some errors in this last post. Here corrected version.**    I a`
+
+**Full content:**
+
+```
+**Friends, I had some errors in this last post. Here corrected version.**
+
+
+
+I am just brainstorming since I cannot get myself to program today.
+
+
+
+Suppose Z-series of Y is given
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{Z_y}^m$$
+
+
+
+Suppose, we expand $Z_y$ around the expected conditional value $Z{\bar{y}}$ . We have to do this by expanding as (equation 1)
+
+
+
+$${Z_y}^m\,=\,{(\,\rho_{m} \, Z_{\bar{y}}\,+\,\zeta_{m}\,Z_{\tilde{y}})}^m$$
+
+
+
+Then
+
+
+
+$$Y\left(Z_{\bar{y}},Z_{\tilde{y}}\right)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{\left(\rho_m\, Z_{\bar{y}}\,+\,\zeta_m \,Z_{\tilde{y}}\right) }^m$$
+
+
+
+We then have
+
+
+
+$$Y|\left(\bar{Y}=Y_0\right)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{\left(\rho_m\, Z_{Y_0}\,+\,\zeta_m \,Z_{\tilde{y}}\right) }^m$$
+
+
+
+However, it will be interesting if we can have equations like following
+
+
+
+$$Y|\left(\bar{Y}>Y_1\right) \wedge \left(\bar{Y}
+```
+
+---
+
+## Error 64: Unbalanced $$: 9
+
+**Snippet:** `**Here corrected version of Last Technical Post.**    I am just brainstorming si`
+
+**Full content:**
+
+```
+**Here corrected version of Last Technical Post.**
+
+
+
+I am just brainstorming since I cannot get myself to program today.
+
+
+
+Suppose Z-series of Y is given
+
+
+
+$$Y(Z_y)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{Z_y}^m$$
+
+
+
+Suppose, we expand $Z_y$ around the expected conditional value $Z{\bar{y}}$ . We have to do this by expanding as (equation 1)
+
+
+
+$${Z_y}^m\,=\,{(\,\rho_{m} \, Z_{\bar{y}}\,+\,\zeta_{m}\,Z_{\tilde{y}})}^m$$
+
+
+
+Then
+
+
+
+$$Y\left(Z_{\bar{y}},Z_{\tilde{y}}\right)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{\left(\rho_m\, Z_{\bar{y}}\,+\,\zeta_m \,Z_{\tilde{y}}\right) }^m$$
+
+
+
+We then have
+
+
+
+$$Y|\left(\bar{Y}=Y_0\right)\,=\,\sum\limits_{m=0}^{m=7}\,a_m\,{\left(\rho_m\, Z_{Y_0}\,+\,\zeta_m \,Z_{\tilde{y}}\right) }^m$$
+
+
+
+However, it will be interesting if we can have equations like following
+
+
+
+$$Y|\left(\bar{Y}>Y_1\right) \wedge \left(\bar{Y}
 ```
 
 ---

@@ -1,6 +1,6 @@
 # Breakthrough in the theory of stochastic differential equations and their simulation
 
-**Page 57 of 59** — Posts #2801–#2850
+**Page 57 of 65** — Posts #2801–#2850
 
 [← Previous](page_056.md) | [Index](index.md) | [Next →](page_058.md)
 

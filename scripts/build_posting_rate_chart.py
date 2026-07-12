@@ -84,7 +84,7 @@ def build_chart(output: Path = OUTPUT) -> None:
         ax.text(
             0,
             1.01,
-            "Monthly posts · April 2016–January 2026",
+            f"Monthly posts · {months[0]:%B %Y}–{months[-1]:%B %Y}",
             transform=ax.transAxes,
             fontsize=11,
             color="#4f6662",

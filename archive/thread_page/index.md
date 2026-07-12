@@ -1,9 +1,9 @@
 # Breakthrough in the theory of stochastic differential equations and their simulation
 
 **Forum:** Wilmott Technical Forum
-**Total Posts:** 2913
-**Date Range:** April 17, 2016 — January 20, 2026
-**Pages:** 59
+**Total Posts:** 3227
+**Date Range:** April 17, 2016 — July 11, 2026
+**Pages:** 65
 
 ---
 
@@ -67,4 +67,10 @@
 - [Page 56](page_056.md) — Posts #2751–#2800 (Aug 24, 2025)
 - [Page 57](page_057.md) — Posts #2801–#2850 (Oct 02, 2025)
 - [Page 58](page_058.md) — Posts #2851–#2900 (Nov 07, 2025)
-- [Page 59](page_059.md) — Posts #2901–#2913 (Jan 13, 2026)
+- [Page 59](page_059.md) — Posts #2901–#2950 (Jan 13, 2026)
+- [Page 60](page_060.md) — Posts #2951–#3000 (Mar 01, 2026)
+- [Page 61](page_061.md) — Posts #3001–#3050 (Mar 16, 2026)
+- [Page 62](page_062.md) — Posts #3051–#3100 (Apr 18, 2026)
+- [Page 63](page_063.md) — Posts #3101–#3150 (May 21, 2026)
+- [Page 64](page_064.md) — Posts #3151–#3200 (Jun 15, 2026)
+- [Page 65](page_065.md) — Posts #3201–#3227 (Jul 01, 2026)

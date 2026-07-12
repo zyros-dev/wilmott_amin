@@ -12,7 +12,7 @@ import html
 import re
 import sys
 import textwrap
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Final
 from urllib.parse import urlparse
@@ -28,7 +28,7 @@ OUTPUT_DIR: Final[Path] = Path("./archive/thread_page")
 
 # Track translation errors during processing
 translation_errors: list[tuple[int, str, str, str]] = []  # (post_number, error, snippet, full_content)
-SCRAPE_DATE: Final[datetime] = datetime(2026, 1, 20)
+SCRAPE_DATE: Final[datetime] = datetime(2026, 7, 12)
 LINE_WIDTH: Final[int] = 120
 POSTS_PER_PAGE: Final[int] = 50
 THREAD_TITLE: Final[str] = "Breakthrough in the theory of stochastic differential equations and their simulation"
@@ -130,7 +130,7 @@ def parse_timestamp(timestamp_str: str) -> datetime:
     if timestamp_str.startswith("Yesterday,"):
         time_part = timestamp_str.replace("Yesterday,", "").strip()
         time_obj = datetime.strptime(time_part, "%I:%M %p")
-        yesterday = SCRAPE_DATE.replace(day=SCRAPE_DATE.day - 1)
+        yesterday = SCRAPE_DATE - timedelta(days=1)
         return yesterday.replace(
             hour=time_obj.hour,
             minute=time_obj.minute,

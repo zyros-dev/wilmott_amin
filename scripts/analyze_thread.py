@@ -7,7 +7,7 @@ Outputs a PDF report with visualizations.
 import re
 from pathlib import Path
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.backends.backend_pdf import PdfPages
@@ -23,6 +23,28 @@ except ImportError:
 
 RAW_DIR = Path("./archive/raw")
 OUTPUT_PDF = Path("./reports/wilmott_analysis.pdf")
+SCRAPE_DATE = datetime(2026, 7, 12)
+
+
+def parse_forum_timestamp(timestamp_str):
+    """Parse absolute and scrape-relative phpBB timestamps."""
+    if timestamp_str.startswith("Today,"):
+        time_part = timestamp_str.removeprefix("Today,").strip()
+        parsed_time = datetime.strptime(time_part, "%I:%M %p")
+        return SCRAPE_DATE.replace(hour=parsed_time.hour, minute=parsed_time.minute)
+    if timestamp_str.startswith("Yesterday,"):
+        time_part = timestamp_str.removeprefix("Yesterday,").strip()
+        parsed_time = datetime.strptime(time_part, "%I:%M %p")
+        yesterday = SCRAPE_DATE - timedelta(days=1)
+        return yesterday.replace(hour=parsed_time.hour, minute=parsed_time.minute)
+
+    ts = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', timestamp_str)
+    for format_string in ('%B %d, %Y, %I:%M %p', '%B %d, %Y, %I:%M%p'):
+        try:
+            return datetime.strptime(ts, format_string)
+        except ValueError:
+            continue
+    return None
 
 def parse_posts():
     """Extract posts with metadata from raw HTML files."""
@@ -65,18 +87,7 @@ def parse_posts():
             timestamp_str = match.group(2).strip()
             post_content = match.group(3)
 
-            # Parse timestamp: "April 17th, 2016, 12:24 pm"
-            timestamp = None
-            try:
-                # Remove ordinal suffixes
-                ts = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', timestamp_str)
-                timestamp = datetime.strptime(ts, '%B %d, %Y, %I:%M %p')
-            except:
-                try:
-                    ts = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', timestamp_str)
-                    timestamp = datetime.strptime(ts, '%B %d, %Y, %I:%M%p')
-                except:
-                    pass
+            timestamp = parse_forum_timestamp(timestamp_str)
 
             # Clean content: remove HTML tags, decode entities
             text = re.sub(r'<[^>]+>', ' ', post_content)

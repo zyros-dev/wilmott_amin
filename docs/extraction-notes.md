@@ -1,8 +1,8 @@
 # Wilmott LaTeX Extraction
 
 ## Status
-- 2913 posts extracted
-- 45 errors (1.5%) - unfixable source data issues (unbalanced delimiters in original posts)
+- 3227 posts extracted
+- 64 errors (2.0%) - unfixable source data issues (unbalanced delimiters in original posts)
 - 11/11 translator tests passing
 
 ## "go fix" workflow
@@ -13,13 +13,13 @@ while errors > 0:
     python scripts/latex_translator.py
 
 # when done, validate with samplers:
-spawn 3 haiku agents to sample pages 1-20, 21-40, 41-59
+sample pages 1-20, 21-40, 41-60, and 61-65
 ```
 
 ## Files
 - `scripts/latex_translator.py` - Transform pipeline
 - `scripts/extract_markdown.py` - Main script
-- `archive/thread_page/` - Output (59 pages)
+- `archive/thread_page/` - Output (65 pages)
 
 ## Transforms (in order)
 1. fix_sqrt_parens: `\sqrt()` → `\sqrt{}`

@@ -2,11 +2,11 @@
 
 Amin is a user on the quantitative finance forum, [Wilmott](https://forum.wilmott.com). He started off by proposing a [“breakthrough in the theory of stochastic differential equations”](https://forum.wilmott.com/viewtopic.php?f=4&t=99702), but was quickly disproven by other users. Then he began his rants about his delusions.
 
-What follows is a 2,913-post, decade-long monologue about invisible brain control, poisoned food and water, microwave weapons, intelligence agencies, psychiatric detention, antipsychotic injections, stolen underwear, compromised MATLAB programs, algorithmic-trading schemes, family crises, and the next world-changing breakthrough—always just one corrected program away.
+What follows is a 3,227-post, decade-long monologue about invisible brain control, poisoned food and water, microwave weapons, intelligence agencies, psychiatric detention, antipsychotic injections, stolen underwear, compromised MATLAB programs, algorithmic-trading schemes, family crises, and the next world-changing breakthrough—always just one corrected program away.
 
-![Monthly posting rate from April 2016 to January 2026](assets/posting_rate.png)
+![Monthly posting rate from April 2016 to July 2026](assets/posting_rate.png)
 
-The January 2017 spike is **249 posts in one month**. Of 2,913 archived posts, 2,910 have parseable timestamps.
+The January 2017 spike is **249 posts in one month**. The new six-month run adds another **314 posts**, 309 of them by Amin.
 
 ## In his own words
 
@@ -32,7 +32,7 @@ The January 2017 spike is **249 posts in one month**. Of 2,913 archived posts, 2
 
 ## Timeline
 
-This timeline was synthesized from six independent reading passes over all 59 cleaned Markdown pages. It maps the thread; it does not validate the mathematics or autobiographical claims.
+This timeline was synthesized from six independent reading passes over the original archive and a July 2026 review of the six new Markdown pages. It maps the thread; it does not validate the mathematics or autobiographical claims.
 
 | Date | Posts | Event |
 |---|---:|---|
@@ -43,7 +43,7 @@ This timeline was synthesized from six independent reading passes over all 59 cl
 | 2021–2022 | #1001–#1650 | **Detention, injections, code, repeat.** Amin describes psychiatric detention and medication that he says damages his mind, then resumes posting MATLAB within days. He alternates between caring for his mother, announcing breakthroughs, burning out, alleging attacks by intelligence and military agencies, and seeking venture capital for high-frequency trading. |
 | 2023 | #1651–#2150 | **The perfect miniature of the whole thread.** Amin says agents altered his MATLAB results. He later discovers that he reversed two arguments to `surf` and publicly retracts that accusation. Around it: money trouble, medication cycles, stock models, neural-network schemes, a funeral, a stolen wallet, and many more alleged conspiracies. |
 | 2024 | #2151–#2600 | **“Math AI.”** The newest breakthrough receives its grandest name yet. Amin mixes claims of instant mathematical intelligence with Bitcoin experiments, job and consulting appeals, injection complaints, political rants, and continuing accusations that governments and psychiatrists are sabotaging him. |
-| 2025–Jan 2026 | #2601–#2913 | **The final spiral.** After a night he attributes to microwave targeting, Amin turns the thread into a Lahore journal of meals, water, errands, and research. He says he is detained for nearly two months, returns heavily medicated, resumes coding, and posts through his mother's cancer surgery. The archive ends with him afraid to test his latest “solution” because agents may alter the program. |
+| 2025–Jul 2026 | #2601–#3227 | **The loop continues.** After a night he attributes to microwave targeting, Amin turns the thread into a Lahore journal, says he is detained for nearly two months, returns medicated, and posts through his mother's cancer surgery. Then come 314 more posts: another claimed breakthrough, hundreds of graphs, appeals to American defense about monthly Fluanxol injections, and a July allegation that the medicine is drugged “on the orders of Leprechauns of our army.” |
 
 ## Disclaimer
 
@@ -53,20 +53,20 @@ The thread also records genuine distress, psychiatric treatment, involuntary det
 
 ## Archive coverage
 
-- 2,913 posts
-- 59 cleaned Markdown pages
-- 195 raw HTML pages
-- Date range: April 17, 2016 to January 20, 2026
-- 1,117 locally archived images
-- Combined and split PDF editions
+- 3,227 posts
+- 65 cleaned Markdown pages
+- 216 raw HTML pages
+- Date range: April 17, 2016 to July 11, 2026
+- 1,291 locally archived images
+- Combined and split PDF editions of the January 2026 snapshot
 
-The Markdown archive begins at [`archive/thread_page/index.md`](archive/thread_page/index.md). The combined PDF is [`archive/pdfs/wilmott_thread.pdf`](archive/pdfs/wilmott_thread.pdf); three smaller parts are also included.
+The current Markdown archive begins at [`archive/thread_page/index.md`](archive/thread_page/index.md). The January snapshot's combined PDF is [`archive/pdfs/wilmott_thread.pdf`](archive/pdfs/wilmott_thread.pdf); three smaller parts are also included.
 
 ## Repository contents
 
 - `archive/raw/` — HTML responses captured from the forum
 - `archive/raw.zip` — compressed copy of the raw responses
-- `archive/thread_page/` — extracted and cleaned Markdown, split into 59 pages
+- `archive/thread_page/` — extracted and cleaned Markdown, split into 65 pages
 - `archive/images/` — images downloaded from links embedded in the posts
 - `archive/pdfs/` — combined and split rendered editions of the thread
 - `assets/` — README images and charts
@@ -78,7 +78,7 @@ See [`scripts/README.md`](scripts/README.md) for the utility index and commands.
 
 ## Extraction notes
 
-All 2,913 posts were extracted. The cleanup pipeline reports 45 posts (about 1.5%) with unbalanced LaTeX delimiters inherited from the source material. Those expressions were not guessed or silently rewritten where the author's intent was unclear.
+All 3,227 posts were extracted. The cleanup pipeline reports 64 posts (about 2.0%) with unbalanced LaTeX delimiters inherited from the source material. Those expressions were not guessed or silently rewritten where the author's intent was unclear.
 
 The raw HTML remains available when fidelity matters. Forum pages may have changed since this snapshot was collected.
 

@@ -56,7 +56,7 @@ def get_page_filename(start: int) -> Path:
     return RAW_DIR / f"page_start_{start:05d}.html"
 
 
-def fetch_page(start: int) -> tuple[int, bool, str]:
+def fetch_page(start: int, force_refresh: bool = False) -> tuple[int, bool, str]:
     """
     Fetch a single page with retry logic.
 
@@ -67,7 +67,7 @@ def fetch_page(start: int) -> tuple[int, bool, str]:
     filename = get_page_filename(start)
 
     # Check if already downloaded
-    if filename.exists() and filename.stat().st_size > 1000:
+    if not force_refresh and filename.exists() and filename.stat().st_size > 1000:
         return (start, True, "already exists")
 
     url = f"https://forum.wilmott.com/viewtopic.php?t={THREAD_ID}&start={start}"
@@ -144,7 +144,7 @@ def get_total_pages() -> int:
             response.raise_for_status()
 
             # Parse total posts from the HTML
-            # Look for pattern like "2913 posts" or page count
+            # Look for a post-count marker or page count
             import re
 
             # Try to find the last page number in pagination
@@ -197,13 +197,11 @@ def main():
     existing = sum(1 for offset in page_offsets if get_page_filename(offset).exists())
     print(f"\nTotal pages: {total_pages}")
     print(f"Already downloaded: {existing}")
+    refresh_offset = max(page_offsets)
     print(f"Remaining: {total_pages - existing}")
+    print(f"Refreshing current final page: start={refresh_offset}")
     print(f"Using {MAX_WORKERS} workers")
     print()
-
-    if existing == total_pages:
-        print("All pages already downloaded!")
-        return
 
     # Download pages in parallel
     completed = 0
@@ -211,7 +209,10 @@ def main():
     skipped = 0
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {executor.submit(fetch_page, offset): offset for offset in page_offsets}
+        futures = {
+            executor.submit(fetch_page, offset, offset == refresh_offset): offset
+            for offset in page_offsets
+        }
 
         for future in as_completed(futures):
             if should_exit:
